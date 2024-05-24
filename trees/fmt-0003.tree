@@ -1,0 +1,37 @@
+\title{monoidal categories}
+\author{frankt}
+\taxon{definition}
+\date{2024-05-24}
+
+\def\mkCat[arg]{
+  #{\mathcal{\arg}}
+}
+
+\def\Mor[mor][dom][cod]{#{\mor : \dom \to \cod}}
+
+\def\mProd{#{\otimes}}
+\def\mUnit{#{\mathbb{1}}}
+\def\mAssoctor{#{\alpha}}
+\def\mAssoctor[arg1][arg2][arg3]{
+  #{\mAssoctor_{\arg1,\arg2,\arg3}}
+}
+\def\mLUnitor{#{\lambda}}
+\def\mLUnitor[arg]{#{\mLUnitor_{\arg}}}
+\def\mRUnitor{#{\rho}}
+\def\mRUnitor[arg]{#{\mRUnitor_{\arg}}}
+
+\def\CCat{\mkCat{C}}
+
+
+\p{A \em{monoidal category} consists of the following data.}
+
+\ul{
+  \li{An underlying category \CCat.}
+  \li{A functor #{\mProd : \CCat \times \CCat \to \CCat} called the \em{monoidal product}.}
+  \li{An object #{\mUnit \in \CCat} called the \em{monoidal unit}.}
+  \li{A natural isomorphism #{\Mor{\mAssoctor{X}{Y}{Z}}{(X \mProd Y) \mProd Z}{X \mProd (Y \mProd Z)}} called the \em{associator}.}
+  \li{A natural isomorphism #{\Mor{\mLUnitor{X}}{\mUnit \mProd X}{X}} called the \em{left unitor}.}
+  \li{A natural isomorphism #{\Mor{\mRUnitor{X}}{X \mProd \mUnit}{X}} called the \em{right unitor}.}
+}
+
+\p{These data are subject to the following conditions...}
