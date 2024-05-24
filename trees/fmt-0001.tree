@@ -8,3 +8,44 @@
   \put\transclude/numbered{false}
   \transclude{fmt-0002}
 }
+
+\subtree{
+  \title{personal notes}
+  \query{
+    \query/and{
+      \query/author{frankmtischer}
+      \query/tag{note}
+    }
+  }
+}
+
+\subtree{
+  \title{other references}
+  \query{
+    \query/and{
+      \query/taxon{reference}
+      \query/tag{misc}
+    }
+  }
+}
+
+\subtree{
+  \title{deutsch 🇩🇪}
+  \query{
+    \query/tag{deutsch}
+  }
+}
+
+\subtree{
+  \title{svenska 🇸🇪}
+  \query{
+    \query/tag{svenska}
+  }
+}
+
+\subtree{
+  \title{interesting things}
+  \query{
+    \query/tag{interesting}
+  }
+}
