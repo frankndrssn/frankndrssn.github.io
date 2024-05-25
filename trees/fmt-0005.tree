@@ -1,6 +1,6 @@
-\title{unitor condition}
+\title{unity axiom}
 \author{frankt}
-\taxon{condition}
+\taxon{axiom}
 \date{2024-05-24}
 
 \import{fmt-0003}
@@ -21,3 +21,5 @@
     width = 3.5cm,
   }
 }
+
+\p{Moreover the equality #{\Mor{\mLUnitor{\mUnit} = \mRUnitor{\mUnit}}{\mUnit \mProd \mUnit}{\mUnit}} holds.}

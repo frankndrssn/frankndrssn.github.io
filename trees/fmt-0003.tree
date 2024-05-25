@@ -23,14 +23,14 @@
 
 \ul{
   \li{An underlying category \C.}
-  \li{A functor #{\mProd : \C \times \C \to \C} called the \em{monoidal product}.}
+  \li{A functor #{\Mor{\mProd}{\C \times \C}{\C}} called the \em{monoidal product}.}
   \li{An object #{\mUnit \in \C} called the \em{monoidal unit}.}
   \li{A natural isomorphism #{\Mor{\mAssoctor{X}{Y}{Z}}{(X \mProd Y) \mProd Z}{X \mProd (Y \mProd Z)}} called the \em{associator}.}
   \li{A natural isomorphism #{\Mor{\mLUnitor{X}}{\mUnit \mProd X}{X}} called the \em{left unitor}.}
   \li{A natural isomorphism #{\Mor{\mRUnitor{X}}{X \mProd \mUnit}{X}} called the \em{right unitor}.}
 }
 
-\p{These data are subject to the following conditions.}
+\p{These data are subject to the following axioms.}
 
 \transclude{fmt-0005}
 \transclude{fmt-0006}

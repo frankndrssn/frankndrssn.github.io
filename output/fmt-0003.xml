@@ -7,24 +7,24 @@ numbered="true"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>294</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>fmt-0003</fr:addr><fr:route>fmt-0003.xml</fr:route><fr:title>Monoidal categories</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>24</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>290</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>fmt-0003</fr:addr><fr:route>fmt-0003.xml</fr:route><fr:title>Monoidal categories</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>24</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankt.xml"
 type="local"
 addr="frankt">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>A <fr:em>monoidal category</fr:em> consists of the following data.</fr:p><fr:ul><fr:li>An underlying category 
   <fr:tex>\mathsf { C }</fr:tex>
 .</fr:li>
-  <fr:li>A functor <fr:tex>\otimes  :      \mathsf { C }     \times       \mathsf { C }     \to       \mathsf { C }  </fr:tex> called the <fr:em>monoidal product</fr:em>.</fr:li>
+  <fr:li>A functor <fr:tex>{ \otimes }:{     \mathsf { C }     \times       \mathsf { C }   } \xrightarrow {{}}{     \mathsf { C }   }</fr:tex> called the <fr:em>monoidal product</fr:em>.</fr:li>
   <fr:li>An object <fr:tex>\mathbb {1}   \in       \mathsf { C }  </fr:tex> called the <fr:em>monoidal unit</fr:em>.</fr:li>
   <fr:li>A natural isomorphism <fr:tex>{     \alpha _{ X , Y , Z }   }:{ (X  \otimes  Y)  \otimes  Z } \xrightarrow {{}}{ X  \otimes  (Y  \otimes  Z) }</fr:tex> called the <fr:em>associator</fr:em>.</fr:li>
   <fr:li>A natural isomorphism <fr:tex>{ \lambda _{ X } }:{ \mathbb {1}   \otimes  X } \xrightarrow {{}}{ X }</fr:tex> called the <fr:em>left unitor</fr:em>.</fr:li>
-  <fr:li>A natural isomorphism <fr:tex>{ \rho _{ X } }:{ X  \otimes   \mathbb {1} } \xrightarrow {{}}{ X }</fr:tex> called the <fr:em>right unitor</fr:em>.</fr:li></fr:ul><fr:p>These data are subject to the following conditions.</fr:p><fr:tree
+  <fr:li>A natural isomorphism <fr:tex>{ \rho _{ X } }:{ X  \otimes   \mathbb {1} } \xrightarrow {{}}{ X }</fr:tex> called the <fr:em>right unitor</fr:em>.</fr:li></fr:ul><fr:p>These data are subject to the following axioms.</fr:p><fr:tree
 xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
 numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>243</fr:anchor><fr:taxon>Condition</fr:taxon><fr:addr>fmt-0005</fr:addr><fr:route>fmt-0005.xml</fr:route><fr:title>Unitor condition</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>24</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>243</fr:anchor><fr:taxon>Axiom</fr:taxon><fr:addr>fmt-0005</fr:addr><fr:route>fmt-0005.xml</fr:route><fr:title>Unity axiom</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>24</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankt.xml"
 type="local"
 addr="frankt">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>The following diagram commutes.</fr:p>
@@ -327,14 +327,14 @@ hash="93bf47abaafe4737fdc6daaa6e18825e"><fr:embedded-tex-preamble>
   }
 </fr:embedded-tex-body></fr:embedded-tex>
  
-</fr:mainmatter></fr:tree><fr:tree
+<fr:p>Moreover the equality <fr:tex>{ \lambda _{ \mathbb {1} }  =  \rho _{ \mathbb {1} } }:{ \mathbb {1}   \otimes   \mathbb {1} } \xrightarrow {{}}{ \mathbb {1} }</fr:tex> holds.</fr:p></fr:mainmatter></fr:tree><fr:tree
 xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
 numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>245</fr:anchor><fr:taxon>Condition</fr:taxon><fr:addr>fmt-0006</fr:addr><fr:route>fmt-0006.xml</fr:route><fr:title>Associator condition</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>24</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>245</fr:anchor><fr:taxon>Axiom</fr:taxon><fr:addr>fmt-0006</fr:addr><fr:route>fmt-0006.xml</fr:route><fr:title>Pentagon axiom</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>24</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankt.xml"
 type="local"
 addr="frankt">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>The following diagram commutes... TODO.</fr:p></fr:mainmatter></fr:tree></fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context><fr:tree
@@ -344,18 +344,16 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>292</fr:anchor><fr:addr>fmt-0004</fr:addr><fr:route>fmt-0004.xml</fr:route><fr:title>Why <fr:link
+root="false"><fr:frontmatter><fr:anchor>288</fr:anchor><fr:addr>fmt-0004</fr:addr><fr:route>fmt-0004.xml</fr:route><fr:title>Why <fr:link
 href="forester.xml"
 type="local"
 addr="forester">Forester</fr:link></fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>24</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankt.xml"
 type="local"
-addr="frankt">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Most of my notes are either handwritten or burried somewhere in thousands of lines of LaTex. I like the <fr:link
-href="http://www.jonmsterling.com/tfmt-0001.xml"
-type="external">design principles</fr:link> of <fr:link
+addr="frankt">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>I am a dinosaur so I still prefer to hand write my notes and then tex them up in Emacs. As the number of notes increases over the years, I often find myself re-texing the same things over and over again because it is often faster than finding and referencing the corresponding notes, most of which are not even in the same <fr:code>tex</fr:code> file.</fr:p><fr:p><fr:link
 href="forester.xml"
 type="local"
-addr="forester">Forester</fr:link>, so I am trying this tool out.</fr:p><fr:p>I have managed to produced the following (incomplete) definition in <fr:link
+addr="forester">Forester</fr:link> allows me to link notes more easily. It also generates contexts, backlinks, and related links automatically. I think these features are what I am looking for, so I am trying out this tool.</fr:p><fr:p>I have managed to produce the following (incomplete) definition in <fr:link
 href="forester.xml"
 type="local"
 addr="forester">Forester</fr:link>. I have to spend some time digging through <fr:link
@@ -376,18 +374,18 @@ type="local"
 addr="frankt">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>A <fr:em>monoidal category</fr:em> consists of the following data.</fr:p><fr:ul><fr:li>An underlying category 
   <fr:tex>\mathsf { C }</fr:tex>
 .</fr:li>
-  <fr:li>A functor <fr:tex>\otimes  :      \mathsf { C }     \times       \mathsf { C }     \to       \mathsf { C }  </fr:tex> called the <fr:em>monoidal product</fr:em>.</fr:li>
+  <fr:li>A functor <fr:tex>{ \otimes }:{     \mathsf { C }     \times       \mathsf { C }   } \xrightarrow {{}}{     \mathsf { C }   }</fr:tex> called the <fr:em>monoidal product</fr:em>.</fr:li>
   <fr:li>An object <fr:tex>\mathbb {1}   \in       \mathsf { C }  </fr:tex> called the <fr:em>monoidal unit</fr:em>.</fr:li>
   <fr:li>A natural isomorphism <fr:tex>{     \alpha _{ X , Y , Z }   }:{ (X  \otimes  Y)  \otimes  Z } \xrightarrow {{}}{ X  \otimes  (Y  \otimes  Z) }</fr:tex> called the <fr:em>associator</fr:em>.</fr:li>
   <fr:li>A natural isomorphism <fr:tex>{ \lambda _{ X } }:{ \mathbb {1}   \otimes  X } \xrightarrow {{}}{ X }</fr:tex> called the <fr:em>left unitor</fr:em>.</fr:li>
-  <fr:li>A natural isomorphism <fr:tex>{ \rho _{ X } }:{ X  \otimes   \mathbb {1} } \xrightarrow {{}}{ X }</fr:tex> called the <fr:em>right unitor</fr:em>.</fr:li></fr:ul><fr:p>These data are subject to the following conditions.</fr:p><fr:tree
+  <fr:li>A natural isomorphism <fr:tex>{ \rho _{ X } }:{ X  \otimes   \mathbb {1} } \xrightarrow {{}}{ X }</fr:tex> called the <fr:em>right unitor</fr:em>.</fr:li></fr:ul><fr:p>These data are subject to the following axioms.</fr:p><fr:tree
 xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
 numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>243</fr:anchor><fr:taxon>Condition</fr:taxon><fr:addr>fmt-0005</fr:addr><fr:route>fmt-0005.xml</fr:route><fr:title>Unitor condition</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>24</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>243</fr:anchor><fr:taxon>Axiom</fr:taxon><fr:addr>fmt-0005</fr:addr><fr:route>fmt-0005.xml</fr:route><fr:title>Unity axiom</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>24</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankt.xml"
 type="local"
 addr="frankt">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>The following diagram commutes.</fr:p>
@@ -690,14 +688,14 @@ hash="93bf47abaafe4737fdc6daaa6e18825e"><fr:embedded-tex-preamble>
   }
 </fr:embedded-tex-body></fr:embedded-tex>
  
-</fr:mainmatter></fr:tree><fr:tree
+<fr:p>Moreover the equality <fr:tex>{ \lambda _{ \mathbb {1} }  =  \rho _{ \mathbb {1} } }:{ \mathbb {1}   \otimes   \mathbb {1} } \xrightarrow {{}}{ \mathbb {1} }</fr:tex> holds.</fr:p></fr:mainmatter></fr:tree><fr:tree
 xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
 numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>245</fr:anchor><fr:taxon>Condition</fr:taxon><fr:addr>fmt-0006</fr:addr><fr:route>fmt-0006.xml</fr:route><fr:title>Associator condition</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>24</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>245</fr:anchor><fr:taxon>Axiom</fr:taxon><fr:addr>fmt-0006</fr:addr><fr:route>fmt-0006.xml</fr:route><fr:title>Pentagon axiom</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>24</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankt.xml"
 type="local"
 addr="frankt">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>The following diagram commutes... TODO.</fr:p></fr:mainmatter></fr:tree></fr:mainmatter></fr:tree></fr:mainmatter></fr:tree></fr:context><fr:related></fr:related><fr:backlinks></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>
