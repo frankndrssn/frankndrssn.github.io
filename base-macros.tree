@@ -1,9 +1,0 @@
-\def\proof[body]{
-  \scope{
-    \put\transclude/toc{false}
-    \subtree{
-      \taxon{proof}
-      \body
-    }
-  }
-}

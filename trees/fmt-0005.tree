@@ -1,0 +1,23 @@
+\title{unitor condition}
+\author{frankt}
+\taxon{condition}
+\date{2024-05-24}
+
+\import{fmt-0003}
+
+\p{The following diagram commutes.}
+
+\texfig{
+  \DiagramSquare{
+    nw = (X \mProd \mUnit) \mProd Y,
+    sw = X \mProd Y,
+    se = X \mProd Y,
+    ne = X \mProd (\mUnit \mProd Y),
+    east = X \mProd \mLUnitor{Y},
+    west = \mRUnitor{X} \mProd Y,
+    north = \mAssoctor{X}{\mUnit}{Y},
+    south/style = {equal},
+    height = 1.5cm,
+    width = 3.5cm,
+  }
+}

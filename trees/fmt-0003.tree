@@ -3,11 +3,7 @@
 \taxon{definition}
 \date{2024-05-24}
 
-\def\mkCat[arg]{
-  #{\mathcal{\arg}}
-}
-
-\def\Mor[mor][dom][cod]{#{\mor : \dom \to \cod}}
+\export{base-macros}
 
 \def\mProd{#{\otimes}}
 \def\mUnit{#{\mathbb{1}}}
@@ -20,18 +16,21 @@
 \def\mRUnitor{#{\rho}}
 \def\mRUnitor[arg]{#{\mRUnitor_{\arg}}}
 
-\def\CCat{\mkCat{C}}
+\def\C{\mkCat{C}}
 
 
 \p{A \em{monoidal category} consists of the following data.}
 
 \ul{
-  \li{An underlying category \CCat.}
-  \li{A functor #{\mProd : \CCat \times \CCat \to \CCat} called the \em{monoidal product}.}
-  \li{An object #{\mUnit \in \CCat} called the \em{monoidal unit}.}
+  \li{An underlying category \C.}
+  \li{A functor #{\mProd : \C \times \C \to \C} called the \em{monoidal product}.}
+  \li{An object #{\mUnit \in \C} called the \em{monoidal unit}.}
   \li{A natural isomorphism #{\Mor{\mAssoctor{X}{Y}{Z}}{(X \mProd Y) \mProd Z}{X \mProd (Y \mProd Z)}} called the \em{associator}.}
   \li{A natural isomorphism #{\Mor{\mLUnitor{X}}{\mUnit \mProd X}{X}} called the \em{left unitor}.}
   \li{A natural isomorphism #{\Mor{\mRUnitor{X}}{X \mProd \mUnit}{X}} called the \em{right unitor}.}
 }
 
-\p{These data are subject to the following conditions...}
+\p{These data are subject to the following conditions.}
+
+\transclude{fmt-0005}
+\transclude{fmt-0006}
