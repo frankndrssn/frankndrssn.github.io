@@ -7,7 +7,7 @@ numbered="true"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>283</fr:anchor><fr:taxon>Institution</fr:taxon><fr:addr>gu</fr:addr><fr:route>gu.xml</fr:route><fr:title>Göteborgs universitet</fr:title><fr:meta
+root="false"><fr:frontmatter><fr:anchor>287</fr:anchor><fr:taxon>Institution</fr:taxon><fr:addr>gu</fr:addr><fr:route>gu.xml</fr:route><fr:title>Göteborgs universitet</fr:title><fr:meta
 name="external">https://www.gu.se/</fr:meta></fr:frontmatter><fr:mainmatter></fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context></fr:context><fr:related></fr:related><fr:backlinks><fr:tree
 xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
@@ -15,7 +15,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="true"><fr:frontmatter><fr:anchor>279</fr:anchor><fr:addr>fnd-0001</fr:addr><fr:route>index.xml</fr:route><fr:title>Frank Tsai</fr:title><fr:authors><fr:author><fr:link
+root="true"><fr:frontmatter><fr:anchor>283</fr:anchor><fr:addr>fnd-0001</fr:addr><fr:route>index.xml</fr:route><fr:title>Frank Tsai</fr:title><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors><fr:meta
@@ -61,7 +61,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>251</fr:anchor><fr:title>Personal math forest</fr:title><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>253</fr:anchor><fr:title>Personal math forest</fr:title><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors><fr:parent>fnd-0001</fr:parent></fr:frontmatter><fr:mainmatter><fr:tree
@@ -71,7 +71,7 @@ numbered="true"
 show-heading="false"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>250</fr:anchor></fr:frontmatter><fr:mainmatter><fr:tree
+root="false"><fr:frontmatter><fr:anchor>252</fr:anchor></fr:frontmatter><fr:mainmatter><fr:tree
 xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="false"
 numbered="false"
@@ -86,7 +86,7 @@ addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter
 .</fr:li>
   <fr:li>A functor <fr:tex>{ \otimes }:{     \mathsf { C }     \times       \mathsf { C }   } \xrightarrow {{}}{     \mathsf { C }   }</fr:tex> called the <fr:em>monoidal product</fr:em>.</fr:li>
   <fr:li>An object <fr:tex>\mathbb {1}   \in       \mathsf { C }  </fr:tex> called the <fr:em>monoidal unit</fr:em>.</fr:li>
-  <fr:li>A natural isomorphism <fr:tex>{     \alpha _{ X , Y , Z }   }:{ (X  \otimes  Y)  \otimes  Z } \xrightarrow {{}}{ X  \otimes  (Y  \otimes  Z) }</fr:tex> called the <fr:em>associator</fr:em>.</fr:li>
+  <fr:li>A natural isomorphism <fr:tex>{     \alpha _{{ X },{ Y },{ Z }}   }:{ (X  \otimes  Y)  \otimes  Z } \xrightarrow {{}}{ X  \otimes  (Y  \otimes  Z) }</fr:tex> called the <fr:em>associator</fr:em>.</fr:li>
   <fr:li>A natural isomorphism <fr:tex>{ \lambda _{ X } }:{ \mathbb {1}   \otimes  X } \xrightarrow {{}}{ X }</fr:tex> called the <fr:em>left unitor</fr:em>.</fr:li>
   <fr:li>A natural isomorphism <fr:tex>{ \rho _{ X } }:{ X  \otimes   \mathbb {1} } \xrightarrow {{}}{ X }</fr:tex> called the <fr:em>right unitor</fr:em>.</fr:li></fr:ul><fr:p>These data are subject to the following axioms.</fr:p><fr:tree
 xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
@@ -102,7 +102,7 @@ addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter
  
   
   <fr:embedded-tex
-hash="93bf47abaafe4737fdc6daaa6e18825e"><fr:embedded-tex-preamble>
+hash="2387d44db43ac0347b4ed1dcce65c7d7"><fr:embedded-tex-preamble>
     
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -390,7 +390,7 @@ hash="93bf47abaafe4737fdc6daaa6e18825e"><fr:embedded-tex-preamble>
     east = X  \otimes   \lambda _{ Y } ,
     west =  \rho _{ X }   \otimes  Y,
     north =  
-   \alpha _{ X , \mathbb {1} , Y } 
+   \alpha _{{ X },{ \mathbb {1} },{ Y }} 
  ,
     south/style = {equal},
     height = 1.5cm,
@@ -412,7 +412,7 @@ addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter
  
   
   <fr:embedded-tex
-hash="6006114b44e313ee0f692bfe8e509fa0"><fr:embedded-tex-preamble>
+hash="cf7abb071833fed69f82f0742a6b3301"><fr:embedded-tex-preamble>
     
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -699,19 +699,19 @@ hash="6006114b44e313ee0f692bfe8e509fa0"><fr:embedded-tex-preamble>
      \node  (sw) [below right=2.75cm and 1.25cm of w] {$(W  \otimes  (X  \otimes  Y))  \otimes  Z$};
      \node  (se) [below left=2.75cm and 1.25cm of e] {$W  \otimes  ((X  \otimes  Y)  \otimes  Z)$};
      \draw  [-&gt;] (w) to node[font= \small ,sloped,above] {$ 
-   \alpha _{ W  \otimes  X , Y , Z } 
+   \alpha _{{ W  \otimes  X },{ Y },{ Z }} 
  $} (n);
      \draw  [-&gt;] (w) to node[font= \small ,sloped,below] {$ 
-   \alpha _{ W , X , Y } 
+   \alpha _{{ W },{ X },{ Y }} 
    \otimes  Z$} (sw);
      \draw  [-&gt;] (n) to node[font= \small ,sloped,above] {$ 
-   \alpha _{ W , X , Y  \otimes  Z } 
+   \alpha _{{ W },{ X },{ Y  \otimes  Z }} 
  $} (e);
      \draw  [-&gt;] (sw) to node[font= \small ,sloped,below] {$ 
-   \alpha _{ W , X  \otimes  Y , Z } 
+   \alpha _{{ W },{ X  \otimes  Y },{ Z }} 
  $} (se);
      \draw  [-&gt;] (se) to node[font= \small ,sloped,below] {$W  \otimes   
-   \alpha _{ X , Y , Z } 
+   \alpha _{{ X },{ Y },{ Z }} 
  $} (e);
    \end {tikzpicture}
 </fr:embedded-tex-body></fr:embedded-tex>
@@ -730,7 +730,7 @@ addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter
  
   
   <fr:embedded-tex
-hash="6006114b44e313ee0f692bfe8e509fa0"><fr:embedded-tex-preamble>
+hash="cf7abb071833fed69f82f0742a6b3301"><fr:embedded-tex-preamble>
     
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -1017,19 +1017,19 @@ hash="6006114b44e313ee0f692bfe8e509fa0"><fr:embedded-tex-preamble>
      \node  (sw) [below right=2.75cm and 1.25cm of w] {$(W  \otimes  (X  \otimes  Y))  \otimes  Z$};
      \node  (se) [below left=2.75cm and 1.25cm of e] {$W  \otimes  ((X  \otimes  Y)  \otimes  Z)$};
      \draw  [-&gt;] (w) to node[font= \small ,sloped,above] {$ 
-   \alpha _{ W  \otimes  X , Y , Z } 
+   \alpha _{{ W  \otimes  X },{ Y },{ Z }} 
  $} (n);
      \draw  [-&gt;] (w) to node[font= \small ,sloped,below] {$ 
-   \alpha _{ W , X , Y } 
+   \alpha _{{ W },{ X },{ Y }} 
    \otimes  Z$} (sw);
      \draw  [-&gt;] (n) to node[font= \small ,sloped,above] {$ 
-   \alpha _{ W , X , Y  \otimes  Z } 
+   \alpha _{{ W },{ X },{ Y  \otimes  Z }} 
  $} (e);
      \draw  [-&gt;] (sw) to node[font= \small ,sloped,below] {$ 
-   \alpha _{ W , X  \otimes  Y , Z } 
+   \alpha _{{ W },{ X  \otimes  Y },{ Z }} 
  $} (se);
      \draw  [-&gt;] (se) to node[font= \small ,sloped,below] {$W  \otimes   
-   \alpha _{ X , Y , Z } 
+   \alpha _{{ X },{ Y },{ Z }} 
  $} (e);
    \end {tikzpicture}
 </fr:embedded-tex-body></fr:embedded-tex>
@@ -1041,14 +1041,27 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="false"
-root="false"><fr:frontmatter><fr:anchor>248</fr:anchor><fr:taxon>Axiom</fr:taxon><fr:addr>mnc-0002</fr:addr><fr:route>mnc-0002.xml</fr:route><fr:title>Unity axiom</fr:title><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>248</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>mnc-0004</fr:addr><fr:route>mnc-0004.xml</fr:route><fr:title>Strict monoidal category</fr:title><fr:authors><fr:author><fr:link
+href="frankndrssn.xml"
+type="local"
+addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>A <fr:link
+href="mnc-0001.xml"
+type="local"
+addr="mnc-0001">monoidal category</fr:link> is said to be <fr:em>strict</fr:em> if <fr:tex>\alpha</fr:tex>, <fr:tex>\lambda</fr:tex>, and <fr:tex>\rho</fr:tex> are all identities.</fr:p></fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"><fr:frontmatter><fr:anchor>250</fr:anchor><fr:taxon>Axiom</fr:taxon><fr:addr>mnc-0002</fr:addr><fr:route>mnc-0002.xml</fr:route><fr:title>Unity axiom</fr:title><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>The following diagram commutes.</fr:p>
  
   
   <fr:embedded-tex
-hash="93bf47abaafe4737fdc6daaa6e18825e"><fr:embedded-tex-preamble>
+hash="2387d44db43ac0347b4ed1dcce65c7d7"><fr:embedded-tex-preamble>
     
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -1336,7 +1349,7 @@ hash="93bf47abaafe4737fdc6daaa6e18825e"><fr:embedded-tex-preamble>
     east = X  \otimes   \lambda _{ Y } ,
     west =  \rho _{ X }   \otimes  Y,
     north =  
-   \alpha _{ X , \mathbb {1} , Y } 
+   \alpha _{{ X },{ \mathbb {1} },{ Y }} 
  ,
     south/style = {equal},
     height = 1.5cm,
@@ -1351,7 +1364,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>281</fr:anchor><fr:taxon>Person</fr:taxon><fr:addr>frankndrssn</fr:addr><fr:route>frankndrssn.xml</fr:route><fr:title>Frank Tsai</fr:title><fr:meta
+root="false"><fr:frontmatter><fr:anchor>285</fr:anchor><fr:taxon>Person</fr:taxon><fr:addr>frankndrssn</fr:addr><fr:route>frankndrssn.xml</fr:route><fr:title>Frank Tsai</fr:title><fr:meta
 name="external">https://frankndrssn.github.io/</fr:meta><fr:meta
 name="institution"><fr:link
 href="gu.xml"
@@ -1366,7 +1379,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>282</fr:anchor><fr:taxon>Person</fr:taxon><fr:addr>diliberti</fr:addr><fr:route>diliberti.xml</fr:route><fr:title>Ivan Di Liberti</fr:title><fr:meta
+root="false"><fr:frontmatter><fr:anchor>286</fr:anchor><fr:taxon>Person</fr:taxon><fr:addr>diliberti</fr:addr><fr:route>diliberti.xml</fr:route><fr:title>Ivan Di Liberti</fr:title><fr:meta
 name="external">https://diliberti.github.io/</fr:meta><fr:meta
 name="institution"><fr:link
 href="gu.xml"
