@@ -77,10 +77,10 @@ addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter
   <fr:tex>\mathsf { C }</fr:tex>
 .</fr:li>
   <fr:li>A functor <fr:tex>{ \otimes }:{     \mathsf { C }     \times       \mathsf { C }   } \xrightarrow {{}}{     \mathsf { C }   }</fr:tex> called the <fr:em>monoidal product</fr:em>.</fr:li>
-  <fr:li>An object <fr:tex>\mathbb {1}   \in       \mathsf { C }  </fr:tex> called the <fr:em>monoidal unit</fr:em>.</fr:li>
+  <fr:li>An object <fr:tex>1   \in       \mathsf { C }  </fr:tex> called the <fr:em>monoidal unit</fr:em>.</fr:li>
   <fr:li>A natural isomorphism <fr:tex>{     \alpha _{{ X },{ Y },{ Z }}   }:{ (X  \otimes  Y)  \otimes  Z } \xrightarrow {{}}{ X  \otimes  (Y  \otimes  Z) }</fr:tex> called the <fr:em>associator</fr:em>.</fr:li>
-  <fr:li>A natural isomorphism <fr:tex>{ \lambda _{ X } }:{ \mathbb {1}   \otimes  X } \xrightarrow {{}}{ X }</fr:tex> called the <fr:em>left unitor</fr:em>.</fr:li>
-  <fr:li>A natural isomorphism <fr:tex>{ \rho _{ X } }:{ X  \otimes   \mathbb {1} } \xrightarrow {{}}{ X }</fr:tex> called the <fr:em>right unitor</fr:em>.</fr:li></fr:ul><fr:p>These data are subject to the following axioms.</fr:p><fr:tree
+  <fr:li>A natural isomorphism <fr:tex>{ \lambda _{ X } }:{ 1   \otimes  X } \xrightarrow {{}}{ X }</fr:tex> called the <fr:em>left unitor</fr:em>.</fr:li>
+  <fr:li>A natural isomorphism <fr:tex>{ \rho _{ X } }:{ X  \otimes   1 } \xrightarrow {{}}{ X }</fr:tex> called the <fr:em>right unitor</fr:em>.</fr:li></fr:ul><fr:p>These data are subject to the following axioms.</fr:p><fr:tree
 xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
 numbered="true"
@@ -94,7 +94,7 @@ addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter
  
   
   <fr:embedded-tex
-hash="2387d44db43ac0347b4ed1dcce65c7d7"><fr:embedded-tex-preamble>
+hash="5ab3d3ac768564533b6fce7670ef61da"><fr:embedded-tex-preamble>
     
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -127,7 +127,7 @@ hash="2387d44db43ac0347b4ed1dcce65c7d7"><fr:embedded-tex-preamble>
   }
  
     
-    \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd, bbold}
+    \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd, quiver}
   \usetikzlibrary{matrix,arrows}
   \usetikzlibrary{backgrounds,fit,positioning,calc,shapes}
   \usetikzlibrary{decorations.pathreplacing}
@@ -269,10 +269,10 @@ hash="2387d44db43ac0347b4ed1dcce65c7d7"><fr:embedded-tex-preamble>
     square/south/.style = {-&gt;},
     square/west/.style = {-&gt;},
     square/east/.style = {-&gt;},
-    square/north/node/.style = {above},
-    square/south/node/.style = {below},
-    square/west/node/.style = {left},
-    square/east/node/.style = {right},
+    square/north/node/.style = {font=\small,above},
+    square/south/node/.style = {font=\small,below},
+    square/west/node/.style = {font=\small,left},
+    square/east/node/.style = {font=\small,right},
   }
 
   \ExplSyntaxOn
@@ -375,14 +375,14 @@ hash="2387d44db43ac0347b4ed1dcce65c7d7"><fr:embedded-tex-preamble>
  
   </fr:embedded-tex-preamble><fr:embedded-tex-body>
    \DiagramSquare {
-    nw = (X  \otimes   \mathbb {1} )  \otimes  Y,
+    nw = (X  \otimes   1 )  \otimes  Y,
     sw = X  \otimes  Y,
     se = X  \otimes  Y,
-    ne = X  \otimes  ( \mathbb {1}   \otimes  Y),
+    ne = X  \otimes  ( 1   \otimes  Y),
     east = X  \otimes   \lambda _{ Y } ,
     west =  \rho _{ X }   \otimes  Y,
     north =  
-   \alpha _{{ X },{ \mathbb {1} },{ Y }} 
+   \alpha _{{ X },{ 1 },{ Y }} 
  ,
     south/style = {equal},
     height = 1.5cm,
@@ -390,7 +390,7 @@ hash="2387d44db43ac0347b4ed1dcce65c7d7"><fr:embedded-tex-preamble>
   }
 </fr:embedded-tex-body></fr:embedded-tex>
  
-<fr:p>Moreover the equality <fr:tex>{ \lambda _{ \mathbb {1} }  =  \rho _{ \mathbb {1} } }:{ \mathbb {1}   \otimes   \mathbb {1} } \xrightarrow {{}}{ \mathbb {1} }</fr:tex> holds.</fr:p></fr:mainmatter></fr:tree><fr:tree
+<fr:p>Moreover the equality <fr:tex>{ \lambda _{ 1 }  =  \rho _{ 1 } }:{ 1   \otimes   1 } \xrightarrow {{}}{ 1 }</fr:tex> holds.</fr:p></fr:mainmatter></fr:tree><fr:tree
 xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
 numbered="true"
@@ -404,7 +404,7 @@ addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter
  
   
   <fr:embedded-tex
-hash="cf7abb071833fed69f82f0742a6b3301"><fr:embedded-tex-preamble>
+hash="427355f1f043c71823bcac937dc8ab14"><fr:embedded-tex-preamble>
     
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -437,7 +437,7 @@ hash="cf7abb071833fed69f82f0742a6b3301"><fr:embedded-tex-preamble>
   }
  
     
-    \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd, bbold}
+    \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd, quiver}
   \usetikzlibrary{matrix,arrows}
   \usetikzlibrary{backgrounds,fit,positioning,calc,shapes}
   \usetikzlibrary{decorations.pathreplacing}
@@ -579,10 +579,10 @@ hash="cf7abb071833fed69f82f0742a6b3301"><fr:embedded-tex-preamble>
     square/south/.style = {-&gt;},
     square/west/.style = {-&gt;},
     square/east/.style = {-&gt;},
-    square/north/node/.style = {above},
-    square/south/node/.style = {below},
-    square/west/node/.style = {left},
-    square/east/node/.style = {right},
+    square/north/node/.style = {font=\small,above},
+    square/south/node/.style = {font=\small,below},
+    square/west/node/.style = {font=\small,left},
+    square/east/node/.style = {font=\small,right},
   }
 
   \ExplSyntaxOn
@@ -686,23 +686,23 @@ hash="cf7abb071833fed69f82f0742a6b3301"><fr:embedded-tex-preamble>
   </fr:embedded-tex-preamble><fr:embedded-tex-body>
    \begin {tikzpicture}[diagram]
      \node  (n) {$(W  \otimes  X)  \otimes  (Y  \otimes  Z)$};
-     \node  (e) [below right=2cm and 4cm of n] {$W  \otimes  (X  \otimes  (Y  \otimes  Z))$};
-     \node  (w) [below left=2cm and 4cm of n] {$((W  \otimes  X)  \otimes  Y)  \otimes  Z$};
-     \node  (sw) [below right=2.75cm and 1.25cm of w] {$(W  \otimes  (X  \otimes  Y))  \otimes  Z$};
-     \node  (se) [below left=2.75cm and 1.25cm of e] {$W  \otimes  ((X  \otimes  Y)  \otimes  Z)$};
-     \draw  [-&gt;] (w) to node[font= \small ,sloped,above] {$ 
+     \node  (e) [below right=1.25cm and 3.5cm of n] {$W  \otimes  (X  \otimes  (Y  \otimes  Z))$};
+     \node  (w) [below left=1.25cm and 3.5cm of n] {$((W  \otimes  X)  \otimes  Y)  \otimes  Z$};
+     \node  (sw) [below right=2cm and 1cm of w] {$(W  \otimes  (X  \otimes  Y))  \otimes  Z$};
+     \node  (se) [below left=2cm and 1cm of e] {$W  \otimes  ((X  \otimes  Y)  \otimes  Z)$};
+     \draw  [-&gt;] (w) to node[font= \small ,xshift=-.5cm,above] {$ 
    \alpha _{{ W  \otimes  X },{ Y },{ Z }} 
  $} (n);
-     \draw  [-&gt;] (w) to node[font= \small ,sloped,below] {$ 
+     \draw  [-&gt;] (w) to node[font= \small ,xshift=-1cm,below] {$ 
    \alpha _{{ W },{ X },{ Y }} 
    \otimes  Z$} (sw);
-     \draw  [-&gt;] (n) to node[font= \small ,sloped,above] {$ 
+     \draw  [-&gt;] (n) to node[font= \small ,xshift=.5cm,above] {$ 
    \alpha _{{ W },{ X },{ Y  \otimes  Z }} 
  $} (e);
-     \draw  [-&gt;] (sw) to node[font= \small ,sloped,below] {$ 
+     \draw  [-&gt;] (sw) to node[font= \small ,below] {$ 
    \alpha _{{ W },{ X  \otimes  Y },{ Z }} 
  $} (se);
-     \draw  [-&gt;] (se) to node[font= \small ,sloped,below] {$W  \otimes   
+     \draw  [-&gt;] (se) to node[font= \small ,xshift=1cm,below] {$W  \otimes   
    \alpha _{{ X },{ Y },{ Z }} 
  $} (e);
    \end {tikzpicture}
@@ -722,7 +722,7 @@ addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter
  
   
   <fr:embedded-tex
-hash="cf7abb071833fed69f82f0742a6b3301"><fr:embedded-tex-preamble>
+hash="427355f1f043c71823bcac937dc8ab14"><fr:embedded-tex-preamble>
     
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -755,7 +755,7 @@ hash="cf7abb071833fed69f82f0742a6b3301"><fr:embedded-tex-preamble>
   }
  
     
-    \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd, bbold}
+    \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd, quiver}
   \usetikzlibrary{matrix,arrows}
   \usetikzlibrary{backgrounds,fit,positioning,calc,shapes}
   \usetikzlibrary{decorations.pathreplacing}
@@ -897,10 +897,10 @@ hash="cf7abb071833fed69f82f0742a6b3301"><fr:embedded-tex-preamble>
     square/south/.style = {-&gt;},
     square/west/.style = {-&gt;},
     square/east/.style = {-&gt;},
-    square/north/node/.style = {above},
-    square/south/node/.style = {below},
-    square/west/node/.style = {left},
-    square/east/node/.style = {right},
+    square/north/node/.style = {font=\small,above},
+    square/south/node/.style = {font=\small,below},
+    square/west/node/.style = {font=\small,left},
+    square/east/node/.style = {font=\small,right},
   }
 
   \ExplSyntaxOn
@@ -1004,23 +1004,23 @@ hash="cf7abb071833fed69f82f0742a6b3301"><fr:embedded-tex-preamble>
   </fr:embedded-tex-preamble><fr:embedded-tex-body>
    \begin {tikzpicture}[diagram]
      \node  (n) {$(W  \otimes  X)  \otimes  (Y  \otimes  Z)$};
-     \node  (e) [below right=2cm and 4cm of n] {$W  \otimes  (X  \otimes  (Y  \otimes  Z))$};
-     \node  (w) [below left=2cm and 4cm of n] {$((W  \otimes  X)  \otimes  Y)  \otimes  Z$};
-     \node  (sw) [below right=2.75cm and 1.25cm of w] {$(W  \otimes  (X  \otimes  Y))  \otimes  Z$};
-     \node  (se) [below left=2.75cm and 1.25cm of e] {$W  \otimes  ((X  \otimes  Y)  \otimes  Z)$};
-     \draw  [-&gt;] (w) to node[font= \small ,sloped,above] {$ 
+     \node  (e) [below right=1.25cm and 3.5cm of n] {$W  \otimes  (X  \otimes  (Y  \otimes  Z))$};
+     \node  (w) [below left=1.25cm and 3.5cm of n] {$((W  \otimes  X)  \otimes  Y)  \otimes  Z$};
+     \node  (sw) [below right=2cm and 1cm of w] {$(W  \otimes  (X  \otimes  Y))  \otimes  Z$};
+     \node  (se) [below left=2cm and 1cm of e] {$W  \otimes  ((X  \otimes  Y)  \otimes  Z)$};
+     \draw  [-&gt;] (w) to node[font= \small ,xshift=-.5cm,above] {$ 
    \alpha _{{ W  \otimes  X },{ Y },{ Z }} 
  $} (n);
-     \draw  [-&gt;] (w) to node[font= \small ,sloped,below] {$ 
+     \draw  [-&gt;] (w) to node[font= \small ,xshift=-1cm,below] {$ 
    \alpha _{{ W },{ X },{ Y }} 
    \otimes  Z$} (sw);
-     \draw  [-&gt;] (n) to node[font= \small ,sloped,above] {$ 
+     \draw  [-&gt;] (n) to node[font= \small ,xshift=.5cm,above] {$ 
    \alpha _{{ W },{ X },{ Y  \otimes  Z }} 
  $} (e);
-     \draw  [-&gt;] (sw) to node[font= \small ,sloped,below] {$ 
+     \draw  [-&gt;] (sw) to node[font= \small ,below] {$ 
    \alpha _{{ W },{ X  \otimes  Y },{ Z }} 
  $} (se);
-     \draw  [-&gt;] (se) to node[font= \small ,sloped,below] {$W  \otimes   
+     \draw  [-&gt;] (se) to node[font= \small ,xshift=1cm,below] {$W  \otimes   
    \alpha _{{ X },{ Y },{ Z }} 
  $} (e);
    \end {tikzpicture}
@@ -1053,7 +1053,7 @@ addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter
  
   
   <fr:embedded-tex
-hash="2387d44db43ac0347b4ed1dcce65c7d7"><fr:embedded-tex-preamble>
+hash="5ab3d3ac768564533b6fce7670ef61da"><fr:embedded-tex-preamble>
     
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -1086,7 +1086,7 @@ hash="2387d44db43ac0347b4ed1dcce65c7d7"><fr:embedded-tex-preamble>
   }
  
     
-    \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd, bbold}
+    \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd, quiver}
   \usetikzlibrary{matrix,arrows}
   \usetikzlibrary{backgrounds,fit,positioning,calc,shapes}
   \usetikzlibrary{decorations.pathreplacing}
@@ -1228,10 +1228,10 @@ hash="2387d44db43ac0347b4ed1dcce65c7d7"><fr:embedded-tex-preamble>
     square/south/.style = {-&gt;},
     square/west/.style = {-&gt;},
     square/east/.style = {-&gt;},
-    square/north/node/.style = {above},
-    square/south/node/.style = {below},
-    square/west/node/.style = {left},
-    square/east/node/.style = {right},
+    square/north/node/.style = {font=\small,above},
+    square/south/node/.style = {font=\small,below},
+    square/west/node/.style = {font=\small,left},
+    square/east/node/.style = {font=\small,right},
   }
 
   \ExplSyntaxOn
@@ -1334,14 +1334,14 @@ hash="2387d44db43ac0347b4ed1dcce65c7d7"><fr:embedded-tex-preamble>
  
   </fr:embedded-tex-preamble><fr:embedded-tex-body>
    \DiagramSquare {
-    nw = (X  \otimes   \mathbb {1} )  \otimes  Y,
+    nw = (X  \otimes   1 )  \otimes  Y,
     sw = X  \otimes  Y,
     se = X  \otimes  Y,
-    ne = X  \otimes  ( \mathbb {1}   \otimes  Y),
+    ne = X  \otimes  ( 1   \otimes  Y),
     east = X  \otimes   \lambda _{ Y } ,
     west =  \rho _{ X }   \otimes  Y,
     north =  
-   \alpha _{{ X },{ \mathbb {1} },{ Y }} 
+   \alpha _{{ X },{ 1 },{ Y }} 
  ,
     south/style = {equal},
     height = 1.5cm,
@@ -1349,7 +1349,7 @@ hash="2387d44db43ac0347b4ed1dcce65c7d7"><fr:embedded-tex-preamble>
   }
 </fr:embedded-tex-body></fr:embedded-tex>
  
-<fr:p>Moreover the equality <fr:tex>{ \lambda _{ \mathbb {1} }  =  \rho _{ \mathbb {1} } }:{ \mathbb {1}   \otimes   \mathbb {1} } \xrightarrow {{}}{ \mathbb {1} }</fr:tex> holds.</fr:p></fr:mainmatter></fr:tree></fr:mainmatter></fr:tree></fr:mainmatter></fr:tree></fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context></fr:context><fr:related><fr:tree
+<fr:p>Moreover the equality <fr:tex>{ \lambda _{ 1 }  =  \rho _{ 1 } }:{ 1   \otimes   1 } \xrightarrow {{}}{ 1 }</fr:tex> holds.</fr:p></fr:mainmatter></fr:tree></fr:mainmatter></fr:tree></fr:mainmatter></fr:tree></fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context></fr:context><fr:related><fr:tree
 xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
 numbered="false"
