@@ -7,14 +7,14 @@ numbered="true"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>282</fr:anchor><fr:taxon>Axiom</fr:taxon><fr:addr>mnc-0006</fr:addr><fr:route>mnc-0006.xml</fr:route><fr:title>Associativity</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>308</fr:anchor><fr:taxon>Axiom</fr:taxon><fr:addr>mnc-0008</fr:addr><fr:route>mnc-0008.xml</fr:route><fr:title>Right unity axiom</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>The following diagram commutes.</fr:p>
  
   
   <fr:embedded-tex
-hash="46fbd4644f11e1bb1c6cb8a4ab9179c6"><fr:embedded-tex-preamble>
+hash="4ba49d43681042fb887d2f5a88637755"><fr:embedded-tex-preamble>
     
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -294,24 +294,30 @@ hash="46fbd4644f11e1bb1c6cb8a4ab9179c6"><fr:embedded-tex-preamble>
   \ExplSyntaxOff
  
   </fr:embedded-tex-preamble><fr:embedded-tex-body>
-   \begin {tikzpicture}[diagram, node distance=2cm and 5cm]
-     \node  (l1) {$(FX  \otimes  FY)  \otimes  FZ$};
-     \node  [below= of l1] (l2) {$F(X  \otimes  Y)  \otimes  FZ$};
-     \node  [below= of l2] (l3) {$F((X  \otimes  Y)  \otimes  Z)$};
-     \node  [right= of l1] (r1) {$FX  \otimes  (FY  \otimes  FZ)$};
-     \node  [below= of r1] (r2) {$FX  \otimes  F(Y  \otimes  Z)$};
-     \node  [below= of r2] (r3) {$F(X  \otimes  (Y  \otimes  Z))$};
-     \draw  [-&gt;] (l1) to node [font= \small ,left] {$ \phi ^{2} _{ X , Y }   \otimes  FZ$} (l2);
-     \draw  [-&gt;] (l2) to node [font= \small ,left] {$ \phi ^{2} _{ X  \otimes  Y , Z } $} (l3);
-     \draw  [-&gt;] (l1) to node [font= \small ,above] {$ \alpha _{ 
+   \DiagramSquare {
+    nw = FX  \otimes   1 _{ 
    \mathsf { D } 
- }$} (r1);
-     \draw  [-&gt;] (r1) to node [font= \small ,right] {$FX  \otimes   \phi ^{2} _{ Y , Z } $} (r2);
-     \draw  [-&gt;] (r2) to node [font= \small ,right] {$ \phi ^{2} _{ X , Y  \otimes  Z } $} (r3);
-     \draw  [-&gt;] (l3) to node [font= \small ,below] {$F \alpha _{ 
+ },
+    sw = FX  \otimes  F 1 _{ 
    \mathsf { C } 
- }$} (r3);
-   \end {tikzpicture}
+ },
+    se = F(X  \otimes   1 _{ 
+   \mathsf { C } 
+ }),
+    ne = FX,
+    east = F \rho _{ 
+   \mathsf { C } 
+ },
+    west = FX  \otimes   \phi ^{1} ,
+    north =  \rho _{ 
+   \mathsf { D } 
+ },
+    south =  \phi ^{2} _{ X , 1 _{ 
+   \mathsf { C } 
+ } } ,
+    height = 2cm,
+    width = 3cm,
+  }
 </fr:embedded-tex-body></fr:embedded-tex>
  
 </fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context><fr:tree
@@ -321,7 +327,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>280</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>mnc-0005</fr:addr><fr:route>mnc-0005.xml</fr:route><fr:title>Monoidal functor</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>306</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>mnc-0005</fr:addr><fr:route>mnc-0005.xml</fr:route><fr:title>Monoidal functor</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Let 
