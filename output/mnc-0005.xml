@@ -7,14 +7,39 @@ numbered="true"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>339</fr:anchor><fr:taxon>Axiom</fr:taxon><fr:addr>mnc-0003</fr:addr><fr:route>mnc-0003.xml</fr:route><fr:title>Pentagon axiom</fr:title><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>335</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>mnc-0005</fr:addr><fr:route>mnc-0005.xml</fr:route><fr:title>Monoidal functor</fr:title><fr:authors><fr:author><fr:link
+href="frankndrssn.xml"
+type="local"
+addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Let 
+  <fr:tex>\mathsf { C }</fr:tex>
+ and 
+  <fr:tex>\mathsf { D }</fr:tex>
+ be <fr:link
+href="mnc-0001.xml"
+type="local"
+addr="mnc-0001">monoidal categories</fr:link>. A <fr:em>monoidal functor</fr:em> <fr:tex>{ F }:{     \mathsf { C }   } \to {     \mathsf { D }   }</fr:tex> consists of the following data.</fr:p><fr:ul><fr:li>
+    An underlying functor <fr:tex>{ F }:{     \mathsf { C }   } \to {     \mathsf { D }   }</fr:tex>.
+  </fr:li>
+  <fr:li>
+    A natural transformation <fr:tex>{ \phi ^{2} _{ X , Y } }:{ FX  \otimes  FY } \to { F(X  \otimes  Y) }</fr:tex>.
+  </fr:li>
+  <fr:li>
+    A morphism <fr:tex>{ \phi ^{1} }:{ 1 _{     \mathsf { C }   } } \to { F 1 _{     \mathsf { D }   } }</fr:tex>.
+  </fr:li></fr:ul><fr:p>These data are subject to the following axioms.</fr:p><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"><fr:frontmatter><fr:anchor>248</fr:anchor><fr:taxon>Axiom</fr:taxon><fr:addr>mnc-0006</fr:addr><fr:route>mnc-0006.xml</fr:route><fr:title>Associativity</fr:title><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>The following diagram commutes.</fr:p>
  
   
   <fr:embedded-tex
-hash="427355f1f043c71823bcac937dc8ab14"><fr:embedded-tex-preamble>
+hash="46fbd4644f11e1bb1c6cb8a4ab9179c6"><fr:embedded-tex-preamble>
     
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -294,38 +319,34 @@ hash="427355f1f043c71823bcac937dc8ab14"><fr:embedded-tex-preamble>
   \ExplSyntaxOff
  
   </fr:embedded-tex-preamble><fr:embedded-tex-body>
-   \begin {tikzpicture}[diagram]
-     \node  (n) {$(W  \otimes  X)  \otimes  (Y  \otimes  Z)$};
-     \node  (e) [below right=1.25cm and 3.5cm of n] {$W  \otimes  (X  \otimes  (Y  \otimes  Z))$};
-     \node  (w) [below left=1.25cm and 3.5cm of n] {$((W  \otimes  X)  \otimes  Y)  \otimes  Z$};
-     \node  (sw) [below right=2cm and 1cm of w] {$(W  \otimes  (X  \otimes  Y))  \otimes  Z$};
-     \node  (se) [below left=2cm and 1cm of e] {$W  \otimes  ((X  \otimes  Y)  \otimes  Z)$};
-     \draw  [-&gt;] (w) to node[font= \small ,xshift=-.5cm,above] {$ 
-   \alpha _{{ W  \otimes  X },{ Y },{ Z }} 
- $} (n);
-     \draw  [-&gt;] (w) to node[font= \small ,xshift=-1cm,below] {$ 
-   \alpha _{{ W },{ X },{ Y }} 
-   \otimes  Z$} (sw);
-     \draw  [-&gt;] (n) to node[font= \small ,xshift=.5cm,above] {$ 
-   \alpha _{{ W },{ X },{ Y  \otimes  Z }} 
- $} (e);
-     \draw  [-&gt;] (sw) to node[font= \small ,below] {$ 
-   \alpha _{{ W },{ X  \otimes  Y },{ Z }} 
- $} (se);
-     \draw  [-&gt;] (se) to node[font= \small ,xshift=1cm,below] {$W  \otimes   
-   \alpha _{{ X },{ Y },{ Z }} 
- $} (e);
+   \begin {tikzpicture}[diagram, node distance=2cm and 5cm]
+     \node  (l1) {$(FX  \otimes  FY)  \otimes  FZ$};
+     \node  [below= of l1] (l2) {$F(X  \otimes  Y)  \otimes  FZ$};
+     \node  [below= of l2] (l3) {$F((X  \otimes  Y)  \otimes  Z)$};
+     \node  [right= of l1] (r1) {$FX  \otimes  (FY  \otimes  FZ)$};
+     \node  [below= of r1] (r2) {$FX  \otimes  F(Y  \otimes  Z)$};
+     \node  [below= of r2] (r3) {$F(X  \otimes  (Y  \otimes  Z))$};
+     \draw  [-&gt;] (l1) to node [font= \small ,left] {$ \phi ^{2} _{ X , Y }   \otimes  FZ$} (l2);
+     \draw  [-&gt;] (l2) to node [font= \small ,left] {$ \phi ^{2} _{ X  \otimes  Y , Z } $} (l3);
+     \draw  [-&gt;] (l1) to node [font= \small ,above] {$ \alpha _{ 
+   \mathsf { D } 
+ }$} (r1);
+     \draw  [-&gt;] (r1) to node [font= \small ,right] {$FX  \otimes   \phi ^{2} _{ Y , Z } $} (r2);
+     \draw  [-&gt;] (r2) to node [font= \small ,right] {$ \phi ^{2} _{ X , Y  \otimes  Z } $} (r3);
+     \draw  [-&gt;] (l3) to node [font= \small ,below] {$F \alpha _{ 
+   \mathsf { C } 
+ }$} (r3);
    \end {tikzpicture}
 </fr:embedded-tex-body></fr:embedded-tex>
  
-</fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context><fr:tree
+</fr:mainmatter></fr:tree><fr:p>TODO</fr:p></fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context></fr:context><fr:related><fr:tree
 xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>337</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>mnc-0001</fr:addr><fr:route>mnc-0001.xml</fr:route><fr:title>Monoidal category</fr:title><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>333</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>mnc-0001</fr:addr><fr:route>mnc-0001.xml</fr:route><fr:title>Monoidal category</fr:title><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>A <fr:em>monoidal category</fr:em> consists of the following data.</fr:p><fr:ul><fr:li>An underlying category 
@@ -963,4 +984,4 @@ hash="427355f1f043c71823bcac937dc8ab14"><fr:embedded-tex-preamble>
    \end {tikzpicture}
 </fr:embedded-tex-body></fr:embedded-tex>
  
-</fr:mainmatter></fr:tree></fr:mainmatter></fr:tree></fr:context><fr:related></fr:related><fr:backlinks></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>
+</fr:mainmatter></fr:tree></fr:mainmatter></fr:tree></fr:related><fr:backlinks></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>

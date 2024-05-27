@@ -7,7 +7,7 @@ numbered="true"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>323</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>mnc-0004</fr:addr><fr:route>mnc-0004.xml</fr:route><fr:title>Strict monoidal category</fr:title><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>343</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>mnc-0004</fr:addr><fr:route>mnc-0004.xml</fr:route><fr:title>Strict monoidal category</fr:title><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>A <fr:link
@@ -20,24 +20,24 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>321</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>mnc-0001</fr:addr><fr:route>mnc-0001.xml</fr:route><fr:title>Monoidal category</fr:title><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>341</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>mnc-0001</fr:addr><fr:route>mnc-0001.xml</fr:route><fr:title>Monoidal category</fr:title><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>A <fr:em>monoidal category</fr:em> consists of the following data.</fr:p><fr:ul><fr:li>An underlying category 
   <fr:tex>\mathsf { C }</fr:tex>
 .</fr:li>
-  <fr:li>A functor <fr:tex>{ \otimes }:{     \mathsf { C }     \times       \mathsf { C }   } \xrightarrow {{}}{     \mathsf { C }   }</fr:tex> called the <fr:em>monoidal product</fr:em>.</fr:li>
+  <fr:li>A functor <fr:tex>{ \otimes }:{     \mathsf { C }     \times       \mathsf { C }   } \to {     \mathsf { C }   }</fr:tex> called the <fr:em>monoidal product</fr:em>.</fr:li>
   <fr:li>An object <fr:tex>1   \in       \mathsf { C }  </fr:tex> called the <fr:em>monoidal unit</fr:em>.</fr:li>
-  <fr:li>A natural isomorphism <fr:tex>{     \alpha _{{ X },{ Y },{ Z }}   }:{ (X  \otimes  Y)  \otimes  Z } \xrightarrow {{}}{ X  \otimes  (Y  \otimes  Z) }</fr:tex> called the <fr:em>associator</fr:em>.</fr:li>
-  <fr:li>A natural isomorphism <fr:tex>{ \lambda _{ X } }:{ 1   \otimes  X } \xrightarrow {{}}{ X }</fr:tex> called the <fr:em>left unitor</fr:em>.</fr:li>
-  <fr:li>A natural isomorphism <fr:tex>{ \rho _{ X } }:{ X  \otimes   1 } \xrightarrow {{}}{ X }</fr:tex> called the <fr:em>right unitor</fr:em>.</fr:li></fr:ul><fr:p>These data are subject to the following axioms.</fr:p><fr:tree
+  <fr:li>A natural isomorphism <fr:tex>{     \alpha _{{ X },{ Y },{ Z }}   }:{ (X  \otimes  Y)  \otimes  Z } \to { X  \otimes  (Y  \otimes  Z) }</fr:tex> called the <fr:em>associator</fr:em>.</fr:li>
+  <fr:li>A natural isomorphism <fr:tex>{ \lambda _{ X } }:{ 1   \otimes  X } \to { X }</fr:tex> called the <fr:em>left unitor</fr:em>.</fr:li>
+  <fr:li>A natural isomorphism <fr:tex>{ \rho _{ X } }:{ X  \otimes   1 } \to { X }</fr:tex> called the <fr:em>right unitor</fr:em>.</fr:li></fr:ul><fr:p>These data are subject to the following axioms.</fr:p><fr:tree
 xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
 numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>240</fr:anchor><fr:taxon>Axiom</fr:taxon><fr:addr>mnc-0002</fr:addr><fr:route>mnc-0002.xml</fr:route><fr:title>Unity axiom</fr:title><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>242</fr:anchor><fr:taxon>Axiom</fr:taxon><fr:addr>mnc-0002</fr:addr><fr:route>mnc-0002.xml</fr:route><fr:title>Unity axiom</fr:title><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>The following diagram commutes.</fr:p>
@@ -340,14 +340,14 @@ hash="5ab3d3ac768564533b6fce7670ef61da"><fr:embedded-tex-preamble>
   }
 </fr:embedded-tex-body></fr:embedded-tex>
  
-<fr:p>Moreover the equality <fr:tex>{ \lambda _{ 1 }  =  \rho _{ 1 } }:{ 1   \otimes   1 } \xrightarrow {{}}{ 1 }</fr:tex> holds.</fr:p></fr:mainmatter></fr:tree><fr:tree
+<fr:p>Moreover the equality <fr:tex>{ \lambda _{ 1 }  =  \rho _{ 1 } }:{ 1   \otimes   1 } \to { 1 }</fr:tex> holds.</fr:p></fr:mainmatter></fr:tree><fr:tree
 xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
 numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>242</fr:anchor><fr:taxon>Axiom</fr:taxon><fr:addr>mnc-0003</fr:addr><fr:route>mnc-0003.xml</fr:route><fr:title>Pentagon axiom</fr:title><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>244</fr:anchor><fr:taxon>Axiom</fr:taxon><fr:addr>mnc-0003</fr:addr><fr:route>mnc-0003.xml</fr:route><fr:title>Pentagon axiom</fr:title><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>The following diagram commutes.</fr:p>
