@@ -7,7 +7,7 @@ numbered="true"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>524</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>mnc-0004</fr:addr><fr:route>mnc-0004.xml</fr:route><fr:title>Strict <fr:link
+root="false"><fr:frontmatter><fr:anchor>546</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>mnc-0004</fr:addr><fr:route>mnc-0004.xml</fr:route><fr:title>Strict <fr:link
 href="mnc-0001.xml"
 type="local"
 addr="mnc-0001">monoidal category</fr:link></fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
@@ -23,7 +23,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>522</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>mnc-0001</fr:addr><fr:route>mnc-0001.xml</fr:route><fr:title>Monoidal category</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>544</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>mnc-0001</fr:addr><fr:route>mnc-0001.xml</fr:route><fr:title>Monoidal category</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>A <fr:em><fr:strong>monoidal category</fr:strong></fr:em> consists of the following data.</fr:p><fr:ul><fr:li>An underlying category 
@@ -40,14 +40,14 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>411</fr:anchor><fr:taxon>Axiom</fr:taxon><fr:addr>mnc-0002</fr:addr><fr:route>mnc-0002.xml</fr:route><fr:title>Unity axiom</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>429</fr:anchor><fr:taxon>Axiom</fr:taxon><fr:addr>mnc-0002</fr:addr><fr:route>mnc-0002.xml</fr:route><fr:title>Unity axiom</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>The following diagram commutes.</fr:p>
  
   
   <fr:embedded-tex
-hash="806e04cd9847ce58549ecebfdff9c1aa"><fr:embedded-tex-preamble>
+hash="21b74c660d5338a9d3c6cecf277736ac"><fr:embedded-tex-preamble>
     
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -87,49 +87,29 @@ hash="806e04cd9847ce58549ecebfdff9c1aa"><fr:embedded-tex-preamble>
   \usetikzlibrary{decorations.pathmorphing}
   \usetikzlibrary{decorations.markings}
 
+  % basic settings
   \tikzset{
-    morphism/.style={font=\scriptsize,inner sep=2pt},
-    desc/.style={sloped,fill=white},
-    upright desc/.style={fill=white},
+    diagram/.style = {
+      on grid,
+      node distance=2cm,
+      commutative diagrams/every diagram,
+      line width = .5pt,
+      every node/.append style = {
+        commutative diagrams/every cell,
+      },
+    },
+    morphism/.style = {node font=\scriptsize},
+    desc/.style = {fill=white,inner sep=2pt},
+    % /tikz/pos=&lt;fraction&gt; is a key already
+    offset/.style args = {#1} {commutative diagrams/shift right={#1}},
+  }
+
+  % pullback and pushout
+  \tikzset{
     pullback/.style = {
-      append after command={
+      append after command = {
         \pgfextra{
           \draw ($(\tikzlastnode) + (.2cm,-.5cm)$) -- ++(0.3cm,0) -- ++(0,0.3cm);
-        }
-      }
-    },
-    pullback 45/.style = {
-      append after command={
-        \pgfextra{
-          \draw[rotate = 45] ($(\tikzlastnode) + (.2cm,-.5cm)$) -- ++(0.3cm,0) -- ++(0,0.3cm);
-        }
-      }
-    },
-    ne pullback/.style = {
-      append after command={
-        \pgfextra{
-          \draw ($(\tikzlastnode) + (-.2cm,-.5cm)$) -- ++(-0.3cm,0) -- ++(0,0.3cm);
-        }
-      }
-    },
-    sw pullback/.style = {
-      append after command={
-        \pgfextra{
-          \draw ($(\tikzlastnode) + (.2cm,.5cm)$) -- ++(0.3cm,0) -- ++(0,-0.3cm);
-        }
-      }
-    },
-    dotted pullback/.style = {
-      append after command={
-        \pgfextra{
-          \draw [densely dotted] ($(\tikzlastnode) + (.2cm,-.5cm)$) -- ++(0.3cm,0) -- ++(0,0.3cm);
-        }
-      }
-    },
-    muted pullback/.style = {
-      append after command={
-        \pgfextra{
-          \draw [gray] ($(\tikzlastnode) + (.2cm,-.5cm)$) -- ++(0.3cm,0) -- ++(0,0.3cm);
         }
       }
     },
@@ -140,18 +120,10 @@ hash="806e04cd9847ce58549ecebfdff9c1aa"><fr:embedded-tex-preamble>
         }
       }
     },
-    between/.style args={#1 and #2}{
-      at = ($(#1)!0.5!(#2)$)
-    },
-    diagram/.style = {
-      on grid,
-      node distance=2cm,
-      commutative diagrams/every diagram,
-      line width = .5pt,
-      every node/.append style = {
-        commutative diagrams/every cell,
-      }
-    },
+  }
+
+  % arrow styles
+  \tikzset{
     fibration/.style = {
       -{Triangle[open]}
     },
@@ -193,10 +165,8 @@ hash="806e04cd9847ce58549ecebfdff9c1aa"><fr:embedded-tex-preamble>
     },
     equal/.style = {
       double
-    }
+    },
   }
-
-  \newenvironment{morphism}{\begin{scope}[every node/.style={morphism}]}{\end{scope}}
 
   \newlength{\dontworryaboutit}
 
@@ -393,8 +363,8 @@ hash="806e04cd9847ce58549ecebfdff9c1aa"><fr:embedded-tex-preamble>
       % gluing will be implemented when I need it
       \node (w) [adj/w] {$\l_fnd_tikz_adj_diagram_w$};
       \node (e) [right=\l_fnd_tikz_adj_diagram_width~of~w,adj/e] {$\l_fnd_tikz_adj_diagram_e$};
-        \draw [morphism,-&gt;] ([yshift=.15cm]e.west) to node[adj/left/node] (n) {$\l_fnd_tikz_adj_diagram_left$} ([yshift=.15cm]w.east);
-        \draw [morphism,-&gt;] ([yshift=-.15cm]w.east) to node[adj/right/node] (s) {$\l_fnd_tikz_adj_diagram_right$} ([yshift=-.15cm]e.west);
+        \draw [morphism,adj/left,offset=.15cm] (e) to node[adj/left/node] (n) {$\l_fnd_tikz_adj_diagram_left$} (w);
+        \draw [morphism,adj/right,offset=.15cm] (w) to node[adj/right/node] (s) {$\l_fnd_tikz_adj_diagram_right$} (e);
         \path [morphism] (s) to node[rotate=-90] {$\dashv$} (n);
     }
     \group_end:
@@ -434,14 +404,14 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>413</fr:anchor><fr:taxon>Axiom</fr:taxon><fr:addr>mnc-0003</fr:addr><fr:route>mnc-0003.xml</fr:route><fr:title>Pentagon axiom</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>431</fr:anchor><fr:taxon>Axiom</fr:taxon><fr:addr>mnc-0003</fr:addr><fr:route>mnc-0003.xml</fr:route><fr:title>Pentagon axiom</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>The following diagram commutes.</fr:p>
  
   
   <fr:embedded-tex
-hash="a89e2bc6a1915e9c6002166189948b5a"><fr:embedded-tex-preamble>
+hash="c7b061431bab941f88c0ece9abacbf74"><fr:embedded-tex-preamble>
     
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -481,49 +451,29 @@ hash="a89e2bc6a1915e9c6002166189948b5a"><fr:embedded-tex-preamble>
   \usetikzlibrary{decorations.pathmorphing}
   \usetikzlibrary{decorations.markings}
 
+  % basic settings
   \tikzset{
-    morphism/.style={font=\scriptsize,inner sep=2pt},
-    desc/.style={sloped,fill=white},
-    upright desc/.style={fill=white},
+    diagram/.style = {
+      on grid,
+      node distance=2cm,
+      commutative diagrams/every diagram,
+      line width = .5pt,
+      every node/.append style = {
+        commutative diagrams/every cell,
+      },
+    },
+    morphism/.style = {node font=\scriptsize},
+    desc/.style = {fill=white,inner sep=2pt},
+    % /tikz/pos=&lt;fraction&gt; is a key already
+    offset/.style args = {#1} {commutative diagrams/shift right={#1}},
+  }
+
+  % pullback and pushout
+  \tikzset{
     pullback/.style = {
-      append after command={
+      append after command = {
         \pgfextra{
           \draw ($(\tikzlastnode) + (.2cm,-.5cm)$) -- ++(0.3cm,0) -- ++(0,0.3cm);
-        }
-      }
-    },
-    pullback 45/.style = {
-      append after command={
-        \pgfextra{
-          \draw[rotate = 45] ($(\tikzlastnode) + (.2cm,-.5cm)$) -- ++(0.3cm,0) -- ++(0,0.3cm);
-        }
-      }
-    },
-    ne pullback/.style = {
-      append after command={
-        \pgfextra{
-          \draw ($(\tikzlastnode) + (-.2cm,-.5cm)$) -- ++(-0.3cm,0) -- ++(0,0.3cm);
-        }
-      }
-    },
-    sw pullback/.style = {
-      append after command={
-        \pgfextra{
-          \draw ($(\tikzlastnode) + (.2cm,.5cm)$) -- ++(0.3cm,0) -- ++(0,-0.3cm);
-        }
-      }
-    },
-    dotted pullback/.style = {
-      append after command={
-        \pgfextra{
-          \draw [densely dotted] ($(\tikzlastnode) + (.2cm,-.5cm)$) -- ++(0.3cm,0) -- ++(0,0.3cm);
-        }
-      }
-    },
-    muted pullback/.style = {
-      append after command={
-        \pgfextra{
-          \draw [gray] ($(\tikzlastnode) + (.2cm,-.5cm)$) -- ++(0.3cm,0) -- ++(0,0.3cm);
         }
       }
     },
@@ -534,18 +484,10 @@ hash="a89e2bc6a1915e9c6002166189948b5a"><fr:embedded-tex-preamble>
         }
       }
     },
-    between/.style args={#1 and #2}{
-      at = ($(#1)!0.5!(#2)$)
-    },
-    diagram/.style = {
-      on grid,
-      node distance=2cm,
-      commutative diagrams/every diagram,
-      line width = .5pt,
-      every node/.append style = {
-        commutative diagrams/every cell,
-      }
-    },
+  }
+
+  % arrow styles
+  \tikzset{
     fibration/.style = {
       -{Triangle[open]}
     },
@@ -587,10 +529,8 @@ hash="a89e2bc6a1915e9c6002166189948b5a"><fr:embedded-tex-preamble>
     },
     equal/.style = {
       double
-    }
+    },
   }
-
-  \newenvironment{morphism}{\begin{scope}[every node/.style={morphism}]}{\end{scope}}
 
   \newlength{\dontworryaboutit}
 
@@ -787,8 +727,8 @@ hash="a89e2bc6a1915e9c6002166189948b5a"><fr:embedded-tex-preamble>
       % gluing will be implemented when I need it
       \node (w) [adj/w] {$\l_fnd_tikz_adj_diagram_w$};
       \node (e) [right=\l_fnd_tikz_adj_diagram_width~of~w,adj/e] {$\l_fnd_tikz_adj_diagram_e$};
-        \draw [morphism,-&gt;] ([yshift=.15cm]e.west) to node[adj/left/node] (n) {$\l_fnd_tikz_adj_diagram_left$} ([yshift=.15cm]w.east);
-        \draw [morphism,-&gt;] ([yshift=-.15cm]w.east) to node[adj/right/node] (s) {$\l_fnd_tikz_adj_diagram_right$} ([yshift=-.15cm]e.west);
+        \draw [morphism,adj/left,offset=.15cm] (e) to node[adj/left/node] (n) {$\l_fnd_tikz_adj_diagram_left$} (w);
+        \draw [morphism,adj/right,offset=.15cm] (w) to node[adj/right/node] (s) {$\l_fnd_tikz_adj_diagram_right$} (e);
         \path [morphism] (s) to node[rotate=-90] {$\dashv$} (n);
     }
     \group_end:
@@ -811,23 +751,21 @@ hash="a89e2bc6a1915e9c6002166189948b5a"><fr:embedded-tex-preamble>
      \node  (w) [below left=1.25cm and 3.5cm of n] {$((W  \otimes  X)  \otimes  Y)  \otimes  Z$};
      \node  (sw) [below right=2cm and 1cm of w] {$(W  \otimes  (X  \otimes  Y))  \otimes  Z$};
      \node  (se) [below left=2cm and 1cm of e] {$W  \otimes  ((X  \otimes  Y)  \otimes  Z)$};
-     \begin {morphism}
-       \draw  [-&gt;] (w) to node[yshift=.25cm,left] {$ 
+     \draw  [-&gt;,morphism] (w) to node[yshift=.25cm,left] {$ 
    \alpha _{{ W  \otimes  X },{ Y },{ Z }} 
  $} (n);
-       \draw  [-&gt;] (w) to node[xshift=-.1cm,left] {$ 
+     \draw  [-&gt;,morphism] (w) to node[xshift=-.1cm,left] {$ 
    \alpha _{{ W },{ X },{ Y }} 
    \otimes  Z$} (sw);
-       \draw  [-&gt;] (n) to node[yshift=.25cm,right] {$ 
+     \draw  [-&gt;,morphism] (n) to node[yshift=.25cm,right] {$ 
    \alpha _{{ W },{ X },{ Y  \otimes  Z }} 
  $} (e);
-       \draw  [-&gt;] (sw) to node[below] {$ 
+     \draw  [-&gt;,morphism] (sw) to node[below] {$ 
    \alpha _{{ W },{ X  \otimes  Y },{ Z }} 
  $} (se);
-       \draw  [-&gt;] (se) to node[xshift=.1cm,right] {$W  \otimes   
+     \draw  [-&gt;,morphism] (se) to node[xshift=.1cm,right] {$W  \otimes   
    \alpha _{{ X },{ Y },{ Z }} 
  $} (e);
-     \end {morphism}
    \end {tikzpicture}
 </fr:embedded-tex-body></fr:embedded-tex>
  

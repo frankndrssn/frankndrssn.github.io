@@ -121,7 +121,7 @@ addr="topo-000D">dense</fr:link> subobject <fr:tex>m \colon  A  \rightarrowtail 
  
   
   <fr:embedded-tex
-hash="f687ad3d1700a56c82dd8da5310297ac"><fr:embedded-tex-preamble>
+hash="23c86ed816836eb47a25c750559f446d"><fr:embedded-tex-preamble>
     
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -161,49 +161,29 @@ hash="f687ad3d1700a56c82dd8da5310297ac"><fr:embedded-tex-preamble>
   \usetikzlibrary{decorations.pathmorphing}
   \usetikzlibrary{decorations.markings}
 
+  % basic settings
   \tikzset{
-    morphism/.style={font=\scriptsize,inner sep=2pt},
-    desc/.style={sloped,fill=white},
-    upright desc/.style={fill=white},
+    diagram/.style = {
+      on grid,
+      node distance=2cm,
+      commutative diagrams/every diagram,
+      line width = .5pt,
+      every node/.append style = {
+        commutative diagrams/every cell,
+      },
+    },
+    morphism/.style = {node font=\scriptsize},
+    desc/.style = {fill=white,inner sep=2pt},
+    % /tikz/pos=&lt;fraction&gt; is a key already
+    offset/.style args = {#1} {commutative diagrams/shift right={#1}},
+  }
+
+  % pullback and pushout
+  \tikzset{
     pullback/.style = {
-      append after command={
+      append after command = {
         \pgfextra{
           \draw ($(\tikzlastnode) + (.2cm,-.5cm)$) -- ++(0.3cm,0) -- ++(0,0.3cm);
-        }
-      }
-    },
-    pullback 45/.style = {
-      append after command={
-        \pgfextra{
-          \draw[rotate = 45] ($(\tikzlastnode) + (.2cm,-.5cm)$) -- ++(0.3cm,0) -- ++(0,0.3cm);
-        }
-      }
-    },
-    ne pullback/.style = {
-      append after command={
-        \pgfextra{
-          \draw ($(\tikzlastnode) + (-.2cm,-.5cm)$) -- ++(-0.3cm,0) -- ++(0,0.3cm);
-        }
-      }
-    },
-    sw pullback/.style = {
-      append after command={
-        \pgfextra{
-          \draw ($(\tikzlastnode) + (.2cm,.5cm)$) -- ++(0.3cm,0) -- ++(0,-0.3cm);
-        }
-      }
-    },
-    dotted pullback/.style = {
-      append after command={
-        \pgfextra{
-          \draw [densely dotted] ($(\tikzlastnode) + (.2cm,-.5cm)$) -- ++(0.3cm,0) -- ++(0,0.3cm);
-        }
-      }
-    },
-    muted pullback/.style = {
-      append after command={
-        \pgfextra{
-          \draw [gray] ($(\tikzlastnode) + (.2cm,-.5cm)$) -- ++(0.3cm,0) -- ++(0,0.3cm);
         }
       }
     },
@@ -214,18 +194,10 @@ hash="f687ad3d1700a56c82dd8da5310297ac"><fr:embedded-tex-preamble>
         }
       }
     },
-    between/.style args={#1 and #2}{
-      at = ($(#1)!0.5!(#2)$)
-    },
-    diagram/.style = {
-      on grid,
-      node distance=2cm,
-      commutative diagrams/every diagram,
-      line width = .5pt,
-      every node/.append style = {
-        commutative diagrams/every cell,
-      }
-    },
+  }
+
+  % arrow styles
+  \tikzset{
     fibration/.style = {
       -{Triangle[open]}
     },
@@ -267,10 +239,8 @@ hash="f687ad3d1700a56c82dd8da5310297ac"><fr:embedded-tex-preamble>
     },
     equal/.style = {
       double
-    }
+    },
   }
-
-  \newenvironment{morphism}{\begin{scope}[every node/.style={morphism}]}{\end{scope}}
 
   \newlength{\dontworryaboutit}
 
@@ -467,8 +437,8 @@ hash="f687ad3d1700a56c82dd8da5310297ac"><fr:embedded-tex-preamble>
       % gluing will be implemented when I need it
       \node (w) [adj/w] {$\l_fnd_tikz_adj_diagram_w$};
       \node (e) [right=\l_fnd_tikz_adj_diagram_width~of~w,adj/e] {$\l_fnd_tikz_adj_diagram_e$};
-        \draw [morphism,-&gt;] ([yshift=.15cm]e.west) to node[adj/left/node] (n) {$\l_fnd_tikz_adj_diagram_left$} ([yshift=.15cm]w.east);
-        \draw [morphism,-&gt;] ([yshift=-.15cm]w.east) to node[adj/right/node] (s) {$\l_fnd_tikz_adj_diagram_right$} ([yshift=-.15cm]e.west);
+        \draw [morphism,adj/left,offset=.15cm] (e) to node[adj/left/node] (n) {$\l_fnd_tikz_adj_diagram_left$} (w);
+        \draw [morphism,adj/right,offset=.15cm] (w) to node[adj/right/node] (s) {$\l_fnd_tikz_adj_diagram_right$} (e);
         \path [morphism] (s) to node[rotate=-90] {$\dashv$} (n);
     }
     \group_end:

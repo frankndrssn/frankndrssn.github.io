@@ -7,33 +7,44 @@ numbered="true"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>490</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-0006</fr:addr><fr:route>topo-0006.xml</fr:route><fr:title>Essential <fr:link
-href="topo-0003.xml"
-type="local"
-addr="topo-0003">geometric morphism</fr:link></fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>368</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>topo-000H</fr:addr><fr:route>topo-000H.xml</fr:route><fr:title>Subobjects of separated objects are separated</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
-addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>A <fr:link
-href="topo-0003.xml"
+addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>A</fr:tex> be a <fr:link
+href="topo-000E.xml"
 type="local"
-addr="topo-0003">geometric morphism</fr:link> <fr:tex>{ f } \colon {     \mathcal { E }   } \to {     \mathcal { F }   }</fr:tex> is said to be <fr:em><fr:strong>essential</fr:strong></fr:em> if its inverse image <fr:tex>f ^{{*}}</fr:tex> admits a left adjoint.</fr:p></fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context></fr:context><fr:related><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="true"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>488</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-0003</fr:addr><fr:route>topo-0003.xml</fr:route><fr:title>Geometric morphism</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
-href="frankndrssn.xml"
-type="local"
-addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>    \mathcal { E }  </fr:tex> and <fr:tex>    \mathcal { F }  </fr:tex> be <fr:link
+addr="topo-000E">separated</fr:link> object in a <fr:link
 href="topo-0001.xml"
 type="local"
-addr="topo-0001">topoi</fr:link>. A <fr:em><fr:strong>geometric morphism</fr:strong></fr:em> <fr:tex>{ f } \colon {     \mathcal { E }   } \to {     \mathcal { F }   }</fr:tex> is an adjoint pair of functors</fr:p>
+addr="topo-0001">topos</fr:link> <fr:tex>    \mathcal { E }  </fr:tex>. Any subobject <fr:tex>m \colon  A'  \rightarrowtail  A</fr:tex> is <fr:link
+href="topo-000E.xml"
+type="local"
+addr="topo-000E">separated</fr:link>.</fr:p>
+  
+    
+    <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="false"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"><fr:frontmatter><fr:anchor>298</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
+href="frankndrssn.xml"
+type="local"
+addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors><fr:parent>topo-000H</fr:parent></fr:frontmatter><fr:mainmatter>
+  Let <fr:tex>m' \colon  B'  \rightarrowtail  B</fr:tex> be a <fr:link
+href="topo-000D.xml"
+type="local"
+addr="topo-000D">dense</fr:link> subobject and <fr:tex>f \colon  B'  \to  A'</fr:tex> be any morphism. If <fr:tex>f = gm' = hm'</fr:tex> then <fr:tex>mf = mgm' = mhm'</fr:tex>. First, <fr:tex>mg = mh</fr:tex> because <fr:tex>A</fr:tex> is <fr:link
+href="topo-000E.xml"
+type="local"
+addr="topo-000E">separated</fr:link>. Then it follows that <fr:tex>g = h</fr:tex> because <fr:tex>m</fr:tex> is a monomorphism.
+  
  
   
   <fr:embedded-tex
-hash="841ab37702dbbc3cf7f27cf3ef0eb154"><fr:embedded-tex-preamble>
+hash="7ec35e1ebf0af4ed0b57378bce6688a8"><fr:embedded-tex-preamble>
     
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -367,16 +378,69 @@ hash="841ab37702dbbc3cf7f27cf3ef0eb154"><fr:embedded-tex-preamble>
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  
   </fr:embedded-tex-preamble><fr:embedded-tex-body>
-   \AdjDiagram {
-    w =  
-   \mathcal { E } 
- ,
-    e =  
-   \mathcal { F } 
- ,
-    left =  f ^{{*}} ,
-    right =  f _{{*}} ,
-  }
-</fr:embedded-tex-body></fr:embedded-tex>
+         \begin {tikzcd}
+      {B'} &amp;&amp; {A'} &amp;&amp; {A}  \\ 
+       \\ 
+      {B}
+       \arrow ["f", from=1-1, to=1-3]
+       \arrow ["{m'}"', tail, from=1-1, to=3-1]
+       \arrow ["m", tail, from=1-3, to=1-5]
+       \arrow ["g", shift left, from=3-1, to=1-3]
+       \arrow ["h"', shift right, from=3-1, to=1-3]
+       \arrow ["mg"{pos=0.7}, curve={height=6pt}, from=3-1, to=1-5]
+       \arrow ["mh"'{pos=0.8}, shift right=2, curve={height=6pt}, from=3-1, to=1-5]
+     \end {tikzcd}
+  </fr:embedded-tex-body></fr:embedded-tex>
  
-<fr:p>such that <fr:tex>f ^{{*}}</fr:tex> is left exact. The functors <fr:tex>f _{{*}}</fr:tex> and <fr:tex>f ^{{*}}</fr:tex> are called the <fr:em><fr:strong>direct image</fr:strong></fr:em> and the <fr:em><fr:strong>inverse image</fr:strong></fr:em> respectively.</fr:p></fr:mainmatter></fr:tree></fr:related><fr:backlinks></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>
+
+</fr:mainmatter></fr:tree>
+  
+</fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context></fr:context><fr:related><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="true"
+root="false"><fr:frontmatter><fr:anchor>362</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-000D</fr:addr><fr:route>topo-000D.xml</fr:route><fr:title>Dense subobject</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
+href="frankndrssn.xml"
+type="local"
+addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>j</fr:tex> be a <fr:link
+href="topo-000A.xml"
+type="local"
+addr="topo-000A">topology</fr:link> on a <fr:link
+href="topo-0001.xml"
+type="local"
+addr="topo-0001">topos</fr:link>. A subobject <fr:tex>m \colon  A  \rightarrowtail  B</fr:tex> is said to be <fr:em><fr:strong><fr:tex>j</fr:tex>-dense</fr:strong></fr:em> if its <fr:link
+href="topo-000C.xml"
+type="local"
+addr="topo-000C">closure</fr:link> is an isomorphism.</fr:p></fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="true"
+root="false"><fr:frontmatter><fr:anchor>364</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-000E</fr:addr><fr:route>topo-000E.xml</fr:route><fr:title>Separated object</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
+href="frankndrssn.xml"
+type="local"
+addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>j</fr:tex> be a <fr:link
+href="topo-000A.xml"
+type="local"
+addr="topo-000A">topology</fr:link> on a <fr:link
+href="topo-0001.xml"
+type="local"
+addr="topo-0001">topos</fr:link> <fr:tex>    \mathcal { E }  </fr:tex>. An object <fr:tex>S  \in       \mathcal { E }  </fr:tex> is said to be <fr:em><fr:strong><fr:tex>j</fr:tex>-separated</fr:strong></fr:em> if for any <fr:link
+href="topo-000D.xml"
+type="local"
+addr="topo-000D">dense</fr:link> subobject <fr:tex>m \colon  A  \rightarrowtail  B</fr:tex> and any morphism <fr:tex>f \colon  A  \to  S</fr:tex>, there is <fr:em>at most</fr:em> one morphism <fr:tex>g \colon  B  \to  S</fr:tex> such that <fr:tex>f = gm</fr:tex>.</fr:p></fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="true"
+root="false"><fr:frontmatter><fr:anchor>366</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-0001</fr:addr><fr:route>topo-0001.xml</fr:route><fr:title>Elementary topos</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
+href="frankndrssn.xml"
+type="local"
+addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>An <fr:em><fr:strong>(elementary) topos</fr:strong></fr:em> is a finitely complete and cartesian closed category equipped with a subobject classifier.</fr:p></fr:mainmatter></fr:tree></fr:related><fr:backlinks></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>
