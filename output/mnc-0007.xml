@@ -7,14 +7,14 @@ numbered="true"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>340</fr:anchor><fr:taxon>Axiom</fr:taxon><fr:addr>mnc-0007</fr:addr><fr:route>mnc-0007.xml</fr:route><fr:title>Left unity axiom</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>494</fr:anchor><fr:taxon>Axiom</fr:taxon><fr:addr>mnc-0007</fr:addr><fr:route>mnc-0007.xml</fr:route><fr:title>Left unity axiom</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>The following diagram commutes.</fr:p>
  
   
   <fr:embedded-tex
-hash="47d33db16d674415d8eb2d1fc86ee829"><fr:embedded-tex-preamble>
+hash="5b54594270e33dc7423e4b861d1e27f2"><fr:embedded-tex-preamble>
     
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -55,9 +55,9 @@ hash="47d33db16d674415d8eb2d1fc86ee829"><fr:embedded-tex-preamble>
   \usetikzlibrary{decorations.markings}
 
   \tikzset{
-    morphism/.style={font=\footnotesize,inner sep=2pt},
-    desc/.style={morphism,sloped,fill=white},
-    upright desc/.style={morphism,fill=white},
+    morphism/.style={font=\scriptsize,inner sep=2pt},
+    desc/.style={sloped,fill=white},
+    upright desc/.style={fill=white},
     pullback/.style = {
       append after command={
         \pgfextra{
@@ -182,7 +182,7 @@ hash="47d33db16d674415d8eb2d1fc86ee829"><fr:embedded-tex-preamble>
       }
     }
   }
-
+  
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   % Primitives for drawing commutative squares
   \tikzset{
@@ -268,25 +268,19 @@ hash="47d33db16d674415d8eb2d1fc86ee829"><fr:embedded-tex-preamble>
     \bool_if:nTF \l_jon_glue_west {
       \node (#1ne) [right = \l_jon_tikz_diagram_width~of~\l_jon_tikz_glue_target ne,square/ne] {$\l_jon_tikz_diagram_ne$};
       \node (#1se) [below = \l_jon_tikz_diagram_height~of~#1ne,square/se] {$\l_jon_tikz_diagram_se$};
-      \begin{morphism}
-        \draw[square/north] (\l_jon_tikz_glue_target ne) to node [square/north/node] {$\l_jon_tikz_diagram_north$} (#1ne);
-        \draw[square/east] (#1ne) to node [square/east/node] {$\l_jon_tikz_diagram_east$} (#1se);
-        \draw[square/south] (\l_jon_tikz_glue_target se) to node [square/south/node] {$\l_jon_tikz_diagram_south$} (#1se);
-      \end{morphism}
+      \draw[morphism,square/north] (\l_jon_tikz_glue_target ne) to node [square/north/node] {$\l_jon_tikz_diagram_north$} (#1ne);
+      \draw[morphism,square/east] (#1ne) to node [square/east/node] {$\l_jon_tikz_diagram_east$} (#1se);
+      \draw[morphism,square/south] (\l_jon_tikz_glue_target se) to node [square/south/node] {$\l_jon_tikz_diagram_south$} (#1se);
     } {
       \node (#1nw) [square/nw] {$\l_jon_tikz_diagram_nw$};
       \node (#1sw) [below = \l_jon_tikz_diagram_height~of~#1nw,square/sw] {$\l_jon_tikz_diagram_sw$};
-      \begin{morphism}
-        \draw[square/west] (#1nw) to node [square/west/node] {$\l_jon_tikz_diagram_west$} (#1sw);
-      \end{morphism}
+      \draw[morphism,square/west] (#1nw) to node [square/west/node] {$\l_jon_tikz_diagram_west$} (#1sw);
 
       \node (#1ne) [right = \l_jon_tikz_diagram_width~of~#1nw,square/ne] {$\l_jon_tikz_diagram_ne$};
       \node (#1se) [below = \l_jon_tikz_diagram_height~of~#1ne,square/se] {$\l_jon_tikz_diagram_se$};
-      \begin{morphism}
-        \draw[square/north] (#1nw) to node [square/north/node] {$\l_jon_tikz_diagram_north$} (#1ne);
-        \draw[square/east] (#1ne) to node [square/east/node] {$\l_jon_tikz_diagram_east$} (#1se);
-        \draw[square/south] (#1sw) to node [square/south/node] {$\l_jon_tikz_diagram_south$} (#1se);
-      \end{morphism}
+      \draw[morphism,square/north] (#1nw) to node [square/north/node] {$\l_jon_tikz_diagram_north$} (#1ne);
+      \draw[morphism,square/east] (#1ne) to node [square/east/node] {$\l_jon_tikz_diagram_east$} (#1se);
+      \draw[morphism,square/south] (#1sw) to node [square/south/node] {$\l_jon_tikz_diagram_south$} (#1se);
     }
     \group_end:
   }
@@ -362,24 +356,13 @@ hash="47d33db16d674415d8eb2d1fc86ee829"><fr:embedded-tex-preamble>
 
   \cs_new:Nn \__fnd_tikz_render_adj_diagram:n {
     \group_begin:
-    \keys_set:nn {fnd-tikz/adj-diagram} {#1}
-    % gluing will be implemented when I need it
-    \bool_if:nTF \l_fnd_glue_west {
+    \keys_set:nn {fnd-tikz/adj-diagram} {#1} {
+      % gluing will be implemented when I need it
       \node (w) [adj/w] {$\l_fnd_tikz_adj_diagram_w$};
       \node (e) [right=\l_fnd_tikz_adj_diagram_width~of~w,adj/e] {$\l_fnd_tikz_adj_diagram_e$};
-      \begin{morphism}
-        \draw [-&gt;] ([yshift=.15cm]e.west) to node[adj/left/node] (n) {$\l_fnd_tikz_adj_diagram_left$} ([yshift=.15cm]w.east);
-        \draw [-&gt;] ([yshift=-.15cm]w.east) to node[adj/right/node] (s) {$\l_fnd_tikz_adj_diagram_right$} ([yshift=-.15cm]e.west);
-        \path (s) to node[rotate=-90] {$\dashv$} (n);
-      \end{morphism}
-    } {
-      \node (w) [adj/w] {$\l_fnd_tikz_adj_diagram_w$};
-      \node (e) [right=\l_fnd_tikz_adj_diagram_width~of~w,adj/e] {$\l_fnd_tikz_adj_diagram_e$};
-      \begin{morphism}
-        \draw [-&gt;] ([yshift=.15cm]e.west) to node[adj/left/node] (n) {$\l_fnd_tikz_adj_diagram_left$} ([yshift=.15cm]w.east);
-        \draw [-&gt;] ([yshift=-.15cm]w.east) to node[adj/right/node] (s) {$\l_fnd_tikz_adj_diagram_right$} ([yshift=-.15cm]e.west);
-        \path (s) to node[rotate=-90] {$\dashv$} (n);
-      \end{morphism}
+        \draw [morphism,-&gt;] ([yshift=.15cm]e.west) to node[adj/left/node] (n) {$\l_fnd_tikz_adj_diagram_left$} ([yshift=.15cm]w.east);
+        \draw [morphism,-&gt;] ([yshift=-.15cm]w.east) to node[adj/right/node] (s) {$\l_fnd_tikz_adj_diagram_right$} ([yshift=-.15cm]e.west);
+        \path [morphism] (s) to node[rotate=-90] {$\dashv$} (n);
     }
     \group_end:
   }
@@ -397,24 +380,24 @@ hash="47d33db16d674415d8eb2d1fc86ee829"><fr:embedded-tex-preamble>
   </fr:embedded-tex-preamble><fr:embedded-tex-body>
    \DiagramSquare {
     nw =  1 _{ 
-   \mathsf { D } 
+   \mathcal { D } 
  }  \otimes  FX,
     sw = F 1 _{ 
-   \mathsf { C } 
+   \mathcal { C } 
  }  \otimes  FX,
     se = F( 1 _{ 
-   \mathsf { C } 
+   \mathcal { C } 
  }  \otimes  X),
     ne = FX,
     east = F \lambda _{ 
-   \mathsf { C } 
+   \mathcal { C } 
  },
     west =  \phi ^{1}   \otimes  FX,
     north =  \lambda _{ 
-   \mathsf { D } 
+   \mathcal { D } 
  },
     south =  \phi ^{2} _{ 1 _{ 
-   \mathsf { C } 
+   \mathcal { C } 
  } , X } ,
     height = 2cm,
     width = 3cm,
@@ -428,24 +411,24 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>338</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>mnc-0005</fr:addr><fr:route>mnc-0005.xml</fr:route><fr:title>Monoidal functor</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>492</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>mnc-0005</fr:addr><fr:route>mnc-0005.xml</fr:route><fr:title>Monoidal functor</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Let 
-  <fr:tex>\mathsf { C }</fr:tex>
+  <fr:tex>\mathcal { C }</fr:tex>
  and 
-  <fr:tex>\mathsf { D }</fr:tex>
+  <fr:tex>\mathcal { D }</fr:tex>
  be <fr:link
 href="mnc-0001.xml"
 type="local"
-addr="mnc-0001">monoidal categories</fr:link>. A <fr:em><fr:strong>monoidal functor</fr:strong></fr:em> <fr:tex>{ F }:{     \mathsf { C }   } \to {     \mathsf { D }   }</fr:tex> consists of the following data.</fr:p><fr:ul><fr:li>
-    An underlying functor <fr:tex>{ F }:{     \mathsf { C }   } \to {     \mathsf { D }   }</fr:tex>.
+addr="mnc-0001">monoidal categories</fr:link>. A <fr:em><fr:strong>monoidal functor</fr:strong></fr:em> <fr:tex>{ F } \colon {     \mathcal { C }   } \to {     \mathcal { D }   }</fr:tex> consists of the following data.</fr:p><fr:ul><fr:li>
+    An underlying functor <fr:tex>{ F } \colon {     \mathcal { C }   } \to {     \mathcal { D }   }</fr:tex>.
   </fr:li>
   <fr:li>
-    A natural transformation <fr:tex>{ \phi ^{2} _{ X , Y } }:{ FX  \otimes  FY } \to { F(X  \otimes  Y) }</fr:tex>.
+    A natural transformation <fr:tex>{ \phi ^{2} _{ X , Y } } \colon { FX  \otimes  FY } \to { F(X  \otimes  Y) }</fr:tex>.
   </fr:li>
   <fr:li>
-    A morphism <fr:tex>{ \phi ^{1} }:{ 1 _{     \mathsf { D }   } } \to { F 1 _{     \mathsf { C }   } }</fr:tex>.
+    A morphism <fr:tex>{ \phi ^{1} } \colon { 1 _{     \mathcal { D }   } } \to { F 1 _{     \mathcal { C }   } }</fr:tex>.
   </fr:li></fr:ul><fr:p>These data are subject to the following axioms.</fr:p><fr:tree
 xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
@@ -453,14 +436,14 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>279</fr:anchor><fr:taxon>Axiom</fr:taxon><fr:addr>mnc-0006</fr:addr><fr:route>mnc-0006.xml</fr:route><fr:title>Associativity</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>417</fr:anchor><fr:taxon>Axiom</fr:taxon><fr:addr>mnc-0006</fr:addr><fr:route>mnc-0006.xml</fr:route><fr:title>Associativity</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>The following diagram commutes.</fr:p>
  
   
   <fr:embedded-tex
-hash="b811216bfc6da9b63f59c2163e69da11"><fr:embedded-tex-preamble>
+hash="9604ec6e7aae140d2a6a47e61d5739c2"><fr:embedded-tex-preamble>
     
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -501,9 +484,9 @@ hash="b811216bfc6da9b63f59c2163e69da11"><fr:embedded-tex-preamble>
   \usetikzlibrary{decorations.markings}
 
   \tikzset{
-    morphism/.style={font=\footnotesize,inner sep=2pt},
-    desc/.style={morphism,sloped,fill=white},
-    upright desc/.style={morphism,fill=white},
+    morphism/.style={font=\scriptsize,inner sep=2pt},
+    desc/.style={sloped,fill=white},
+    upright desc/.style={fill=white},
     pullback/.style = {
       append after command={
         \pgfextra{
@@ -628,7 +611,7 @@ hash="b811216bfc6da9b63f59c2163e69da11"><fr:embedded-tex-preamble>
       }
     }
   }
-
+  
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   % Primitives for drawing commutative squares
   \tikzset{
@@ -714,25 +697,19 @@ hash="b811216bfc6da9b63f59c2163e69da11"><fr:embedded-tex-preamble>
     \bool_if:nTF \l_jon_glue_west {
       \node (#1ne) [right = \l_jon_tikz_diagram_width~of~\l_jon_tikz_glue_target ne,square/ne] {$\l_jon_tikz_diagram_ne$};
       \node (#1se) [below = \l_jon_tikz_diagram_height~of~#1ne,square/se] {$\l_jon_tikz_diagram_se$};
-      \begin{morphism}
-        \draw[square/north] (\l_jon_tikz_glue_target ne) to node [square/north/node] {$\l_jon_tikz_diagram_north$} (#1ne);
-        \draw[square/east] (#1ne) to node [square/east/node] {$\l_jon_tikz_diagram_east$} (#1se);
-        \draw[square/south] (\l_jon_tikz_glue_target se) to node [square/south/node] {$\l_jon_tikz_diagram_south$} (#1se);
-      \end{morphism}
+      \draw[morphism,square/north] (\l_jon_tikz_glue_target ne) to node [square/north/node] {$\l_jon_tikz_diagram_north$} (#1ne);
+      \draw[morphism,square/east] (#1ne) to node [square/east/node] {$\l_jon_tikz_diagram_east$} (#1se);
+      \draw[morphism,square/south] (\l_jon_tikz_glue_target se) to node [square/south/node] {$\l_jon_tikz_diagram_south$} (#1se);
     } {
       \node (#1nw) [square/nw] {$\l_jon_tikz_diagram_nw$};
       \node (#1sw) [below = \l_jon_tikz_diagram_height~of~#1nw,square/sw] {$\l_jon_tikz_diagram_sw$};
-      \begin{morphism}
-        \draw[square/west] (#1nw) to node [square/west/node] {$\l_jon_tikz_diagram_west$} (#1sw);
-      \end{morphism}
+      \draw[morphism,square/west] (#1nw) to node [square/west/node] {$\l_jon_tikz_diagram_west$} (#1sw);
 
       \node (#1ne) [right = \l_jon_tikz_diagram_width~of~#1nw,square/ne] {$\l_jon_tikz_diagram_ne$};
       \node (#1se) [below = \l_jon_tikz_diagram_height~of~#1ne,square/se] {$\l_jon_tikz_diagram_se$};
-      \begin{morphism}
-        \draw[square/north] (#1nw) to node [square/north/node] {$\l_jon_tikz_diagram_north$} (#1ne);
-        \draw[square/east] (#1ne) to node [square/east/node] {$\l_jon_tikz_diagram_east$} (#1se);
-        \draw[square/south] (#1sw) to node [square/south/node] {$\l_jon_tikz_diagram_south$} (#1se);
-      \end{morphism}
+      \draw[morphism,square/north] (#1nw) to node [square/north/node] {$\l_jon_tikz_diagram_north$} (#1ne);
+      \draw[morphism,square/east] (#1ne) to node [square/east/node] {$\l_jon_tikz_diagram_east$} (#1se);
+      \draw[morphism,square/south] (#1sw) to node [square/south/node] {$\l_jon_tikz_diagram_south$} (#1se);
     }
     \group_end:
   }
@@ -808,24 +785,13 @@ hash="b811216bfc6da9b63f59c2163e69da11"><fr:embedded-tex-preamble>
 
   \cs_new:Nn \__fnd_tikz_render_adj_diagram:n {
     \group_begin:
-    \keys_set:nn {fnd-tikz/adj-diagram} {#1}
-    % gluing will be implemented when I need it
-    \bool_if:nTF \l_fnd_glue_west {
+    \keys_set:nn {fnd-tikz/adj-diagram} {#1} {
+      % gluing will be implemented when I need it
       \node (w) [adj/w] {$\l_fnd_tikz_adj_diagram_w$};
       \node (e) [right=\l_fnd_tikz_adj_diagram_width~of~w,adj/e] {$\l_fnd_tikz_adj_diagram_e$};
-      \begin{morphism}
-        \draw [-&gt;] ([yshift=.15cm]e.west) to node[adj/left/node] (n) {$\l_fnd_tikz_adj_diagram_left$} ([yshift=.15cm]w.east);
-        \draw [-&gt;] ([yshift=-.15cm]w.east) to node[adj/right/node] (s) {$\l_fnd_tikz_adj_diagram_right$} ([yshift=-.15cm]e.west);
-        \path (s) to node[rotate=-90] {$\dashv$} (n);
-      \end{morphism}
-    } {
-      \node (w) [adj/w] {$\l_fnd_tikz_adj_diagram_w$};
-      \node (e) [right=\l_fnd_tikz_adj_diagram_width~of~w,adj/e] {$\l_fnd_tikz_adj_diagram_e$};
-      \begin{morphism}
-        \draw [-&gt;] ([yshift=.15cm]e.west) to node[adj/left/node] (n) {$\l_fnd_tikz_adj_diagram_left$} ([yshift=.15cm]w.east);
-        \draw [-&gt;] ([yshift=-.15cm]w.east) to node[adj/right/node] (s) {$\l_fnd_tikz_adj_diagram_right$} ([yshift=-.15cm]e.west);
-        \path (s) to node[rotate=-90] {$\dashv$} (n);
-      \end{morphism}
+        \draw [morphism,-&gt;] ([yshift=.15cm]e.west) to node[adj/left/node] (n) {$\l_fnd_tikz_adj_diagram_left$} ([yshift=.15cm]w.east);
+        \draw [morphism,-&gt;] ([yshift=-.15cm]w.east) to node[adj/right/node] (s) {$\l_fnd_tikz_adj_diagram_right$} ([yshift=-.15cm]e.west);
+        \path [morphism] (s) to node[rotate=-90] {$\dashv$} (n);
     }
     \group_end:
   }
@@ -852,12 +818,12 @@ hash="b811216bfc6da9b63f59c2163e69da11"><fr:embedded-tex-preamble>
        \draw  [-&gt;] (l1) to node [left] {$ \phi ^{2} _{ X , Y }   \otimes  FZ$} (l2);
        \draw  [-&gt;] (l2) to node [left] {$ \phi ^{2} _{ X  \otimes  Y , Z } $} (l3);
        \draw  [-&gt;] (l1) to node [above] {$ \alpha _{ 
-   \mathsf { D } 
+   \mathcal { D } 
  }$} (r1);
        \draw  [-&gt;] (r1) to node [right] {$FX  \otimes   \phi ^{2} _{ Y , Z } $} (r2);
        \draw  [-&gt;] (r2) to node [right] {$ \phi ^{2} _{ X , Y  \otimes  Z } $} (r3);
        \draw  [-&gt;] (l3) to node [below] {$F \alpha _{ 
-   \mathsf { C } 
+   \mathcal { C } 
  }$} (r3);
      \end {morphism}
    \end {tikzpicture}
@@ -870,14 +836,14 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>281</fr:anchor><fr:taxon>Axiom</fr:taxon><fr:addr>mnc-0007</fr:addr><fr:route>mnc-0007.xml</fr:route><fr:title>Left unity axiom</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>419</fr:anchor><fr:taxon>Axiom</fr:taxon><fr:addr>mnc-0007</fr:addr><fr:route>mnc-0007.xml</fr:route><fr:title>Left unity axiom</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>The following diagram commutes.</fr:p>
  
   
   <fr:embedded-tex
-hash="47d33db16d674415d8eb2d1fc86ee829"><fr:embedded-tex-preamble>
+hash="5b54594270e33dc7423e4b861d1e27f2"><fr:embedded-tex-preamble>
     
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -918,9 +884,9 @@ hash="47d33db16d674415d8eb2d1fc86ee829"><fr:embedded-tex-preamble>
   \usetikzlibrary{decorations.markings}
 
   \tikzset{
-    morphism/.style={font=\footnotesize,inner sep=2pt},
-    desc/.style={morphism,sloped,fill=white},
-    upright desc/.style={morphism,fill=white},
+    morphism/.style={font=\scriptsize,inner sep=2pt},
+    desc/.style={sloped,fill=white},
+    upright desc/.style={fill=white},
     pullback/.style = {
       append after command={
         \pgfextra{
@@ -1045,7 +1011,7 @@ hash="47d33db16d674415d8eb2d1fc86ee829"><fr:embedded-tex-preamble>
       }
     }
   }
-
+  
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   % Primitives for drawing commutative squares
   \tikzset{
@@ -1131,25 +1097,19 @@ hash="47d33db16d674415d8eb2d1fc86ee829"><fr:embedded-tex-preamble>
     \bool_if:nTF \l_jon_glue_west {
       \node (#1ne) [right = \l_jon_tikz_diagram_width~of~\l_jon_tikz_glue_target ne,square/ne] {$\l_jon_tikz_diagram_ne$};
       \node (#1se) [below = \l_jon_tikz_diagram_height~of~#1ne,square/se] {$\l_jon_tikz_diagram_se$};
-      \begin{morphism}
-        \draw[square/north] (\l_jon_tikz_glue_target ne) to node [square/north/node] {$\l_jon_tikz_diagram_north$} (#1ne);
-        \draw[square/east] (#1ne) to node [square/east/node] {$\l_jon_tikz_diagram_east$} (#1se);
-        \draw[square/south] (\l_jon_tikz_glue_target se) to node [square/south/node] {$\l_jon_tikz_diagram_south$} (#1se);
-      \end{morphism}
+      \draw[morphism,square/north] (\l_jon_tikz_glue_target ne) to node [square/north/node] {$\l_jon_tikz_diagram_north$} (#1ne);
+      \draw[morphism,square/east] (#1ne) to node [square/east/node] {$\l_jon_tikz_diagram_east$} (#1se);
+      \draw[morphism,square/south] (\l_jon_tikz_glue_target se) to node [square/south/node] {$\l_jon_tikz_diagram_south$} (#1se);
     } {
       \node (#1nw) [square/nw] {$\l_jon_tikz_diagram_nw$};
       \node (#1sw) [below = \l_jon_tikz_diagram_height~of~#1nw,square/sw] {$\l_jon_tikz_diagram_sw$};
-      \begin{morphism}
-        \draw[square/west] (#1nw) to node [square/west/node] {$\l_jon_tikz_diagram_west$} (#1sw);
-      \end{morphism}
+      \draw[morphism,square/west] (#1nw) to node [square/west/node] {$\l_jon_tikz_diagram_west$} (#1sw);
 
       \node (#1ne) [right = \l_jon_tikz_diagram_width~of~#1nw,square/ne] {$\l_jon_tikz_diagram_ne$};
       \node (#1se) [below = \l_jon_tikz_diagram_height~of~#1ne,square/se] {$\l_jon_tikz_diagram_se$};
-      \begin{morphism}
-        \draw[square/north] (#1nw) to node [square/north/node] {$\l_jon_tikz_diagram_north$} (#1ne);
-        \draw[square/east] (#1ne) to node [square/east/node] {$\l_jon_tikz_diagram_east$} (#1se);
-        \draw[square/south] (#1sw) to node [square/south/node] {$\l_jon_tikz_diagram_south$} (#1se);
-      \end{morphism}
+      \draw[morphism,square/north] (#1nw) to node [square/north/node] {$\l_jon_tikz_diagram_north$} (#1ne);
+      \draw[morphism,square/east] (#1ne) to node [square/east/node] {$\l_jon_tikz_diagram_east$} (#1se);
+      \draw[morphism,square/south] (#1sw) to node [square/south/node] {$\l_jon_tikz_diagram_south$} (#1se);
     }
     \group_end:
   }
@@ -1225,24 +1185,13 @@ hash="47d33db16d674415d8eb2d1fc86ee829"><fr:embedded-tex-preamble>
 
   \cs_new:Nn \__fnd_tikz_render_adj_diagram:n {
     \group_begin:
-    \keys_set:nn {fnd-tikz/adj-diagram} {#1}
-    % gluing will be implemented when I need it
-    \bool_if:nTF \l_fnd_glue_west {
+    \keys_set:nn {fnd-tikz/adj-diagram} {#1} {
+      % gluing will be implemented when I need it
       \node (w) [adj/w] {$\l_fnd_tikz_adj_diagram_w$};
       \node (e) [right=\l_fnd_tikz_adj_diagram_width~of~w,adj/e] {$\l_fnd_tikz_adj_diagram_e$};
-      \begin{morphism}
-        \draw [-&gt;] ([yshift=.15cm]e.west) to node[adj/left/node] (n) {$\l_fnd_tikz_adj_diagram_left$} ([yshift=.15cm]w.east);
-        \draw [-&gt;] ([yshift=-.15cm]w.east) to node[adj/right/node] (s) {$\l_fnd_tikz_adj_diagram_right$} ([yshift=-.15cm]e.west);
-        \path (s) to node[rotate=-90] {$\dashv$} (n);
-      \end{morphism}
-    } {
-      \node (w) [adj/w] {$\l_fnd_tikz_adj_diagram_w$};
-      \node (e) [right=\l_fnd_tikz_adj_diagram_width~of~w,adj/e] {$\l_fnd_tikz_adj_diagram_e$};
-      \begin{morphism}
-        \draw [-&gt;] ([yshift=.15cm]e.west) to node[adj/left/node] (n) {$\l_fnd_tikz_adj_diagram_left$} ([yshift=.15cm]w.east);
-        \draw [-&gt;] ([yshift=-.15cm]w.east) to node[adj/right/node] (s) {$\l_fnd_tikz_adj_diagram_right$} ([yshift=-.15cm]e.west);
-        \path (s) to node[rotate=-90] {$\dashv$} (n);
-      \end{morphism}
+        \draw [morphism,-&gt;] ([yshift=.15cm]e.west) to node[adj/left/node] (n) {$\l_fnd_tikz_adj_diagram_left$} ([yshift=.15cm]w.east);
+        \draw [morphism,-&gt;] ([yshift=-.15cm]w.east) to node[adj/right/node] (s) {$\l_fnd_tikz_adj_diagram_right$} ([yshift=-.15cm]e.west);
+        \path [morphism] (s) to node[rotate=-90] {$\dashv$} (n);
     }
     \group_end:
   }
@@ -1260,24 +1209,24 @@ hash="47d33db16d674415d8eb2d1fc86ee829"><fr:embedded-tex-preamble>
   </fr:embedded-tex-preamble><fr:embedded-tex-body>
    \DiagramSquare {
     nw =  1 _{ 
-   \mathsf { D } 
+   \mathcal { D } 
  }  \otimes  FX,
     sw = F 1 _{ 
-   \mathsf { C } 
+   \mathcal { C } 
  }  \otimes  FX,
     se = F( 1 _{ 
-   \mathsf { C } 
+   \mathcal { C } 
  }  \otimes  X),
     ne = FX,
     east = F \lambda _{ 
-   \mathsf { C } 
+   \mathcal { C } 
  },
     west =  \phi ^{1}   \otimes  FX,
     north =  \lambda _{ 
-   \mathsf { D } 
+   \mathcal { D } 
  },
     south =  \phi ^{2} _{ 1 _{ 
-   \mathsf { C } 
+   \mathcal { C } 
  } , X } ,
     height = 2cm,
     width = 3cm,
@@ -1291,14 +1240,14 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>283</fr:anchor><fr:taxon>Axiom</fr:taxon><fr:addr>mnc-0008</fr:addr><fr:route>mnc-0008.xml</fr:route><fr:title>Right unity axiom</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>421</fr:anchor><fr:taxon>Axiom</fr:taxon><fr:addr>mnc-0008</fr:addr><fr:route>mnc-0008.xml</fr:route><fr:title>Right unity axiom</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>The following diagram commutes.</fr:p>
  
   
   <fr:embedded-tex
-hash="58fc43e1f8d92373ed4e90c400e1421c"><fr:embedded-tex-preamble>
+hash="cfb414168f68c6eb4e21a5003f0574e2"><fr:embedded-tex-preamble>
     
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -1339,9 +1288,9 @@ hash="58fc43e1f8d92373ed4e90c400e1421c"><fr:embedded-tex-preamble>
   \usetikzlibrary{decorations.markings}
 
   \tikzset{
-    morphism/.style={font=\footnotesize,inner sep=2pt},
-    desc/.style={morphism,sloped,fill=white},
-    upright desc/.style={morphism,fill=white},
+    morphism/.style={font=\scriptsize,inner sep=2pt},
+    desc/.style={sloped,fill=white},
+    upright desc/.style={fill=white},
     pullback/.style = {
       append after command={
         \pgfextra{
@@ -1466,7 +1415,7 @@ hash="58fc43e1f8d92373ed4e90c400e1421c"><fr:embedded-tex-preamble>
       }
     }
   }
-
+  
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   % Primitives for drawing commutative squares
   \tikzset{
@@ -1552,25 +1501,19 @@ hash="58fc43e1f8d92373ed4e90c400e1421c"><fr:embedded-tex-preamble>
     \bool_if:nTF \l_jon_glue_west {
       \node (#1ne) [right = \l_jon_tikz_diagram_width~of~\l_jon_tikz_glue_target ne,square/ne] {$\l_jon_tikz_diagram_ne$};
       \node (#1se) [below = \l_jon_tikz_diagram_height~of~#1ne,square/se] {$\l_jon_tikz_diagram_se$};
-      \begin{morphism}
-        \draw[square/north] (\l_jon_tikz_glue_target ne) to node [square/north/node] {$\l_jon_tikz_diagram_north$} (#1ne);
-        \draw[square/east] (#1ne) to node [square/east/node] {$\l_jon_tikz_diagram_east$} (#1se);
-        \draw[square/south] (\l_jon_tikz_glue_target se) to node [square/south/node] {$\l_jon_tikz_diagram_south$} (#1se);
-      \end{morphism}
+      \draw[morphism,square/north] (\l_jon_tikz_glue_target ne) to node [square/north/node] {$\l_jon_tikz_diagram_north$} (#1ne);
+      \draw[morphism,square/east] (#1ne) to node [square/east/node] {$\l_jon_tikz_diagram_east$} (#1se);
+      \draw[morphism,square/south] (\l_jon_tikz_glue_target se) to node [square/south/node] {$\l_jon_tikz_diagram_south$} (#1se);
     } {
       \node (#1nw) [square/nw] {$\l_jon_tikz_diagram_nw$};
       \node (#1sw) [below = \l_jon_tikz_diagram_height~of~#1nw,square/sw] {$\l_jon_tikz_diagram_sw$};
-      \begin{morphism}
-        \draw[square/west] (#1nw) to node [square/west/node] {$\l_jon_tikz_diagram_west$} (#1sw);
-      \end{morphism}
+      \draw[morphism,square/west] (#1nw) to node [square/west/node] {$\l_jon_tikz_diagram_west$} (#1sw);
 
       \node (#1ne) [right = \l_jon_tikz_diagram_width~of~#1nw,square/ne] {$\l_jon_tikz_diagram_ne$};
       \node (#1se) [below = \l_jon_tikz_diagram_height~of~#1ne,square/se] {$\l_jon_tikz_diagram_se$};
-      \begin{morphism}
-        \draw[square/north] (#1nw) to node [square/north/node] {$\l_jon_tikz_diagram_north$} (#1ne);
-        \draw[square/east] (#1ne) to node [square/east/node] {$\l_jon_tikz_diagram_east$} (#1se);
-        \draw[square/south] (#1sw) to node [square/south/node] {$\l_jon_tikz_diagram_south$} (#1se);
-      \end{morphism}
+      \draw[morphism,square/north] (#1nw) to node [square/north/node] {$\l_jon_tikz_diagram_north$} (#1ne);
+      \draw[morphism,square/east] (#1ne) to node [square/east/node] {$\l_jon_tikz_diagram_east$} (#1se);
+      \draw[morphism,square/south] (#1sw) to node [square/south/node] {$\l_jon_tikz_diagram_south$} (#1se);
     }
     \group_end:
   }
@@ -1646,24 +1589,13 @@ hash="58fc43e1f8d92373ed4e90c400e1421c"><fr:embedded-tex-preamble>
 
   \cs_new:Nn \__fnd_tikz_render_adj_diagram:n {
     \group_begin:
-    \keys_set:nn {fnd-tikz/adj-diagram} {#1}
-    % gluing will be implemented when I need it
-    \bool_if:nTF \l_fnd_glue_west {
+    \keys_set:nn {fnd-tikz/adj-diagram} {#1} {
+      % gluing will be implemented when I need it
       \node (w) [adj/w] {$\l_fnd_tikz_adj_diagram_w$};
       \node (e) [right=\l_fnd_tikz_adj_diagram_width~of~w,adj/e] {$\l_fnd_tikz_adj_diagram_e$};
-      \begin{morphism}
-        \draw [-&gt;] ([yshift=.15cm]e.west) to node[adj/left/node] (n) {$\l_fnd_tikz_adj_diagram_left$} ([yshift=.15cm]w.east);
-        \draw [-&gt;] ([yshift=-.15cm]w.east) to node[adj/right/node] (s) {$\l_fnd_tikz_adj_diagram_right$} ([yshift=-.15cm]e.west);
-        \path (s) to node[rotate=-90] {$\dashv$} (n);
-      \end{morphism}
-    } {
-      \node (w) [adj/w] {$\l_fnd_tikz_adj_diagram_w$};
-      \node (e) [right=\l_fnd_tikz_adj_diagram_width~of~w,adj/e] {$\l_fnd_tikz_adj_diagram_e$};
-      \begin{morphism}
-        \draw [-&gt;] ([yshift=.15cm]e.west) to node[adj/left/node] (n) {$\l_fnd_tikz_adj_diagram_left$} ([yshift=.15cm]w.east);
-        \draw [-&gt;] ([yshift=-.15cm]w.east) to node[adj/right/node] (s) {$\l_fnd_tikz_adj_diagram_right$} ([yshift=-.15cm]e.west);
-        \path (s) to node[rotate=-90] {$\dashv$} (n);
-      \end{morphism}
+        \draw [morphism,-&gt;] ([yshift=.15cm]e.west) to node[adj/left/node] (n) {$\l_fnd_tikz_adj_diagram_left$} ([yshift=.15cm]w.east);
+        \draw [morphism,-&gt;] ([yshift=-.15cm]w.east) to node[adj/right/node] (s) {$\l_fnd_tikz_adj_diagram_right$} ([yshift=-.15cm]e.west);
+        \path [morphism] (s) to node[rotate=-90] {$\dashv$} (n);
     }
     \group_end:
   }
@@ -1681,24 +1613,24 @@ hash="58fc43e1f8d92373ed4e90c400e1421c"><fr:embedded-tex-preamble>
   </fr:embedded-tex-preamble><fr:embedded-tex-body>
    \DiagramSquare {
     nw = FX  \otimes   1 _{ 
-   \mathsf { D } 
+   \mathcal { D } 
  },
     sw = FX  \otimes  F 1 _{ 
-   \mathsf { C } 
+   \mathcal { C } 
  },
     se = F(X  \otimes   1 _{ 
-   \mathsf { C } 
+   \mathcal { C } 
  }),
     ne = FX,
     east = F \rho _{ 
-   \mathsf { C } 
+   \mathcal { C } 
  },
     west = FX  \otimes   \phi ^{1} ,
     north =  \rho _{ 
-   \mathsf { D } 
+   \mathcal { D } 
  },
     south =  \phi ^{2} _{ X , 1 _{ 
-   \mathsf { C } 
+   \mathcal { C } 
  } } ,
     height = 2cm,
     width = 3cm,

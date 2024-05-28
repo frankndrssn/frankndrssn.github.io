@@ -7,30 +7,33 @@ numbered="true"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>320</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-0006</fr:addr><fr:route>topo-0006.xml</fr:route><fr:title>Essential geometric morphism</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>474</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-0006</fr:addr><fr:route>topo-0006.xml</fr:route><fr:title>Essential <fr:link
+href="topo-0003.xml"
+type="local"
+addr="topo-0003">geometric morphism</fr:link></fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>A <fr:link
 href="topo-0003.xml"
 type="local"
-addr="topo-0003">geometric morphism</fr:link> <fr:tex>{ f }:{     \mathsf { E }   } \to {     \mathsf { F }   }</fr:tex> is said to be <fr:em><fr:strong>essential</fr:strong></fr:em> if its inverse image <fr:tex>f ^{{*}}</fr:tex> admits a left adjoint.</fr:p></fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context></fr:context><fr:related><fr:tree
+addr="topo-0003">geometric morphism</fr:link> <fr:tex>{ f } \colon {     \mathcal { E }   } \to {     \mathcal { F }   }</fr:tex> is said to be <fr:em><fr:strong>essential</fr:strong></fr:em> if its inverse image <fr:tex>f ^{{*}}</fr:tex> admits a left adjoint.</fr:p></fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context></fr:context><fr:related><fr:tree
 xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>318</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-0003</fr:addr><fr:route>topo-0003.xml</fr:route><fr:title>Geometric morphism</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>472</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-0003</fr:addr><fr:route>topo-0003.xml</fr:route><fr:title>Geometric morphism</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
-addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>    \mathsf { E }  </fr:tex> and <fr:tex>    \mathsf { F }  </fr:tex> be <fr:link
+addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>    \mathcal { E }  </fr:tex> and <fr:tex>    \mathcal { F }  </fr:tex> be <fr:link
 href="topo-0001.xml"
 type="local"
-addr="topo-0001">topoi</fr:link>. A <fr:em><fr:strong>geometric morphism</fr:strong></fr:em> <fr:tex>{ f }:{     \mathsf { E }   } \to {     \mathsf { F }   }</fr:tex> is an adjoint pair of functors</fr:p>
+addr="topo-0001">topoi</fr:link>. A <fr:em><fr:strong>geometric morphism</fr:strong></fr:em> <fr:tex>{ f } \colon {     \mathcal { E }   } \to {     \mathcal { F }   }</fr:tex> is an adjoint pair of functors</fr:p>
  
   
   <fr:embedded-tex
-hash="490d4ebf50c5560eb68aace8464c7bfb"><fr:embedded-tex-preamble>
+hash="d02bc9317602f9bc796983a052af1f93"><fr:embedded-tex-preamble>
     
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -71,9 +74,9 @@ hash="490d4ebf50c5560eb68aace8464c7bfb"><fr:embedded-tex-preamble>
   \usetikzlibrary{decorations.markings}
 
   \tikzset{
-    morphism/.style={font=\footnotesize,inner sep=2pt},
-    desc/.style={morphism,sloped,fill=white},
-    upright desc/.style={morphism,fill=white},
+    morphism/.style={font=\scriptsize,inner sep=2pt},
+    desc/.style={sloped,fill=white},
+    upright desc/.style={fill=white},
     pullback/.style = {
       append after command={
         \pgfextra{
@@ -198,7 +201,7 @@ hash="490d4ebf50c5560eb68aace8464c7bfb"><fr:embedded-tex-preamble>
       }
     }
   }
-
+  
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   % Primitives for drawing commutative squares
   \tikzset{
@@ -284,25 +287,19 @@ hash="490d4ebf50c5560eb68aace8464c7bfb"><fr:embedded-tex-preamble>
     \bool_if:nTF \l_jon_glue_west {
       \node (#1ne) [right = \l_jon_tikz_diagram_width~of~\l_jon_tikz_glue_target ne,square/ne] {$\l_jon_tikz_diagram_ne$};
       \node (#1se) [below = \l_jon_tikz_diagram_height~of~#1ne,square/se] {$\l_jon_tikz_diagram_se$};
-      \begin{morphism}
-        \draw[square/north] (\l_jon_tikz_glue_target ne) to node [square/north/node] {$\l_jon_tikz_diagram_north$} (#1ne);
-        \draw[square/east] (#1ne) to node [square/east/node] {$\l_jon_tikz_diagram_east$} (#1se);
-        \draw[square/south] (\l_jon_tikz_glue_target se) to node [square/south/node] {$\l_jon_tikz_diagram_south$} (#1se);
-      \end{morphism}
+      \draw[morphism,square/north] (\l_jon_tikz_glue_target ne) to node [square/north/node] {$\l_jon_tikz_diagram_north$} (#1ne);
+      \draw[morphism,square/east] (#1ne) to node [square/east/node] {$\l_jon_tikz_diagram_east$} (#1se);
+      \draw[morphism,square/south] (\l_jon_tikz_glue_target se) to node [square/south/node] {$\l_jon_tikz_diagram_south$} (#1se);
     } {
       \node (#1nw) [square/nw] {$\l_jon_tikz_diagram_nw$};
       \node (#1sw) [below = \l_jon_tikz_diagram_height~of~#1nw,square/sw] {$\l_jon_tikz_diagram_sw$};
-      \begin{morphism}
-        \draw[square/west] (#1nw) to node [square/west/node] {$\l_jon_tikz_diagram_west$} (#1sw);
-      \end{morphism}
+      \draw[morphism,square/west] (#1nw) to node [square/west/node] {$\l_jon_tikz_diagram_west$} (#1sw);
 
       \node (#1ne) [right = \l_jon_tikz_diagram_width~of~#1nw,square/ne] {$\l_jon_tikz_diagram_ne$};
       \node (#1se) [below = \l_jon_tikz_diagram_height~of~#1ne,square/se] {$\l_jon_tikz_diagram_se$};
-      \begin{morphism}
-        \draw[square/north] (#1nw) to node [square/north/node] {$\l_jon_tikz_diagram_north$} (#1ne);
-        \draw[square/east] (#1ne) to node [square/east/node] {$\l_jon_tikz_diagram_east$} (#1se);
-        \draw[square/south] (#1sw) to node [square/south/node] {$\l_jon_tikz_diagram_south$} (#1se);
-      \end{morphism}
+      \draw[morphism,square/north] (#1nw) to node [square/north/node] {$\l_jon_tikz_diagram_north$} (#1ne);
+      \draw[morphism,square/east] (#1ne) to node [square/east/node] {$\l_jon_tikz_diagram_east$} (#1se);
+      \draw[morphism,square/south] (#1sw) to node [square/south/node] {$\l_jon_tikz_diagram_south$} (#1se);
     }
     \group_end:
   }
@@ -378,24 +375,13 @@ hash="490d4ebf50c5560eb68aace8464c7bfb"><fr:embedded-tex-preamble>
 
   \cs_new:Nn \__fnd_tikz_render_adj_diagram:n {
     \group_begin:
-    \keys_set:nn {fnd-tikz/adj-diagram} {#1}
-    % gluing will be implemented when I need it
-    \bool_if:nTF \l_fnd_glue_west {
+    \keys_set:nn {fnd-tikz/adj-diagram} {#1} {
+      % gluing will be implemented when I need it
       \node (w) [adj/w] {$\l_fnd_tikz_adj_diagram_w$};
       \node (e) [right=\l_fnd_tikz_adj_diagram_width~of~w,adj/e] {$\l_fnd_tikz_adj_diagram_e$};
-      \begin{morphism}
-        \draw [-&gt;] ([yshift=.15cm]e.west) to node[adj/left/node] (n) {$\l_fnd_tikz_adj_diagram_left$} ([yshift=.15cm]w.east);
-        \draw [-&gt;] ([yshift=-.15cm]w.east) to node[adj/right/node] (s) {$\l_fnd_tikz_adj_diagram_right$} ([yshift=-.15cm]e.west);
-        \path (s) to node[rotate=-90] {$\dashv$} (n);
-      \end{morphism}
-    } {
-      \node (w) [adj/w] {$\l_fnd_tikz_adj_diagram_w$};
-      \node (e) [right=\l_fnd_tikz_adj_diagram_width~of~w,adj/e] {$\l_fnd_tikz_adj_diagram_e$};
-      \begin{morphism}
-        \draw [-&gt;] ([yshift=.15cm]e.west) to node[adj/left/node] (n) {$\l_fnd_tikz_adj_diagram_left$} ([yshift=.15cm]w.east);
-        \draw [-&gt;] ([yshift=-.15cm]w.east) to node[adj/right/node] (s) {$\l_fnd_tikz_adj_diagram_right$} ([yshift=-.15cm]e.west);
-        \path (s) to node[rotate=-90] {$\dashv$} (n);
-      \end{morphism}
+        \draw [morphism,-&gt;] ([yshift=.15cm]e.west) to node[adj/left/node] (n) {$\l_fnd_tikz_adj_diagram_left$} ([yshift=.15cm]w.east);
+        \draw [morphism,-&gt;] ([yshift=-.15cm]w.east) to node[adj/right/node] (s) {$\l_fnd_tikz_adj_diagram_right$} ([yshift=-.15cm]e.west);
+        \path [morphism] (s) to node[rotate=-90] {$\dashv$} (n);
     }
     \group_end:
   }
@@ -413,10 +399,10 @@ hash="490d4ebf50c5560eb68aace8464c7bfb"><fr:embedded-tex-preamble>
   </fr:embedded-tex-preamble><fr:embedded-tex-body>
    \AdjDiagram {
     w =  
-   \mathsf { E } 
+   \mathcal { E } 
  ,
     e =  
-   \mathsf { F } 
+   \mathcal { F } 
  ,
     left =  f ^{{*}} ,
     right =  f _{{*}} ,

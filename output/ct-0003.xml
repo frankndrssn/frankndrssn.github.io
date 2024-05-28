@@ -7,17 +7,14 @@ numbered="true"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>484</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-0003</fr:addr><fr:route>topo-0003.xml</fr:route><fr:title>Geometric morphism</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>348</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>ct-0003</fr:addr><fr:route>ct-0003.xml</fr:route><fr:title>Transitive relation</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
-addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>    \mathcal { E }  </fr:tex> and <fr:tex>    \mathcal { F }  </fr:tex> be <fr:link
-href="topo-0001.xml"
-type="local"
-addr="topo-0001">topoi</fr:link>. A <fr:em><fr:strong>geometric morphism</fr:strong></fr:em> <fr:tex>{ f } \colon {     \mathcal { E }   } \to {     \mathcal { F }   }</fr:tex> is an adjoint pair of functors</fr:p>
+addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>(a,b) \colon  R  \rightarrowtail  A  \times  A</fr:tex> be a relation in a category with finite limits. <fr:tex>(a,b)</fr:tex> is said to be <fr:em><fr:strong>transitive</fr:strong></fr:em> if the relation <fr:tex>(ap,bq) \colon  R  \times _{A} R  \rightarrowtail  A  \times  A</fr:tex> factors through <fr:tex>(a,b)</fr:tex>, i.e., there is a map <fr:tex>\tau \colon  R  \times _{A} R  \to  R</fr:tex> such that <fr:tex>a \tau  = ap</fr:tex> and <fr:tex>b \tau  = bq</fr:tex>, where <fr:tex>p</fr:tex> and <fr:tex>q</fr:tex> are the projection maps of the following pullback.</fr:p>
  
   
   <fr:embedded-tex
-hash="d02bc9317602f9bc796983a052af1f93"><fr:embedded-tex-preamble>
+hash="3a6e37a1305b52c7e7bd76a334fdf644"><fr:embedded-tex-preamble>
     
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -381,71 +378,36 @@ hash="d02bc9317602f9bc796983a052af1f93"><fr:embedded-tex-preamble>
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  
   </fr:embedded-tex-preamble><fr:embedded-tex-body>
-   \AdjDiagram {
-    w =  
-   \mathcal { E } 
- ,
-    e =  
-   \mathcal { F } 
- ,
-    left =  f ^{{*}} ,
-    right =  f _{{*}} ,
+   \DiagramSquare {
+    nw = R  \times _{A} R,
+    ne = R,
+    sw = R,
+    se = A,
+    nw/style = pullback,
+    north = q,
+    west = p,
+    south = b,
+    east = a,
   }
 </fr:embedded-tex-body></fr:embedded-tex>
  
-<fr:p>such that <fr:tex>f ^{{*}}</fr:tex> is left exact. The functors <fr:tex>f _{{*}}</fr:tex> and <fr:tex>f ^{{*}}</fr:tex> are called the <fr:em><fr:strong>direct image</fr:strong></fr:em> and the <fr:em><fr:strong>inverse image</fr:strong></fr:em> respectively.</fr:p></fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context></fr:context><fr:related><fr:tree
+</fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context></fr:context><fr:related></fr:related><fr:backlinks><fr:tree
 xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>482</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-0001</fr:addr><fr:route>topo-0001.xml</fr:route><fr:title>Elementary topos</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>346</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>ct-0004</fr:addr><fr:route>ct-0004.xml</fr:route><fr:title>Equivalence relation</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
-addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>An <fr:em><fr:strong>(elementary) topos</fr:strong></fr:em> is a finitely complete and cartesian closed category equipped with a subobject classifier.</fr:p></fr:mainmatter></fr:tree></fr:related><fr:backlinks><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="true"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>476</fr:anchor><fr:taxon>Remark</fr:taxon><fr:addr>topo-0005</fr:addr><fr:route>topo-0005.xml</fr:route><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
-href="frankndrssn.xml"
+addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>(a,b) \colon  R  \rightarrowtail  A  \times  A</fr:tex> be a relation in a category with finite limits. <fr:tex>(a,b)</fr:tex> is said to be an <fr:em><fr:strong>equivalence relation</fr:strong></fr:em> if it is <fr:link
+href="ct-0001.xml"
 type="local"
-addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Any natural transformation <fr:tex>{ f _{{*}} } \to { g _{{*}} }</fr:tex> between the direct image part of the given <fr:link
-href="topo-0003.xml"
+addr="ct-0001">reflexive</fr:link>, <fr:link
+href="ct-0002.xml"
 type="local"
-addr="topo-0003">geometric morphisms</fr:link>, <fr:tex>f</fr:tex> and <fr:tex>g</fr:tex>, corresponds to a unique natural transformation <fr:tex>{ f ^{{*}} } \to { g ^{{*}} }</fr:tex> under the adjunctions <fr:tex>f ^{{*}}   \dashv   f _{{*}}</fr:tex> and <fr:tex>g ^{{*}}   \dashv   g _{{*}}</fr:tex>. Thus, a <fr:link
-href="topo-0004.xml"
+addr="ct-0002">symmetric</fr:link>, and <fr:link
+href="ct-0003.xml"
 type="local"
-addr="topo-0004">geometric transformation</fr:link> <fr:tex>{ f } \to { g }</fr:tex> can be equivalently defined as a natural transformation <fr:tex>{ f ^{{*}} } \to { g ^{{*}} }</fr:tex>.</fr:p></fr:mainmatter></fr:tree><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="true"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>478</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-0006</fr:addr><fr:route>topo-0006.xml</fr:route><fr:title>Essential <fr:link
-href="topo-0003.xml"
-type="local"
-addr="topo-0003">geometric morphism</fr:link></fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
-href="frankndrssn.xml"
-type="local"
-addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>A <fr:link
-href="topo-0003.xml"
-type="local"
-addr="topo-0003">geometric morphism</fr:link> <fr:tex>{ f } \colon {     \mathcal { E }   } \to {     \mathcal { F }   }</fr:tex> is said to be <fr:em><fr:strong>essential</fr:strong></fr:em> if its inverse image <fr:tex>f ^{{*}}</fr:tex> admits a left adjoint.</fr:p></fr:mainmatter></fr:tree><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="true"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>480</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-0004</fr:addr><fr:route>topo-0004.xml</fr:route><fr:title>Geometric transformation</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
-href="frankndrssn.xml"
-type="local"
-addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>{ f,g } \colon {     \mathcal { E }   } \to {     \mathcal { F }   }</fr:tex> be a pair of <fr:link
-href="topo-0003.xml"
-type="local"
-addr="topo-0003">geometric morphisms</fr:link>. A <fr:em><fr:strong>geometric transformation</fr:strong></fr:em> <fr:tex>{ \alpha } \colon { f } \to { g }</fr:tex> is a natural transformation <fr:tex>{ \alpha } \colon { f _{{*}} } \to { g _{{*}} }</fr:tex>.</fr:p></fr:mainmatter></fr:tree></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>
+addr="ct-0003">transitive</fr:link>.</fr:p></fr:mainmatter></fr:tree></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>

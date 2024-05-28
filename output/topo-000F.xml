@@ -7,17 +7,23 @@ numbered="true"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>484</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-0003</fr:addr><fr:route>topo-0003.xml</fr:route><fr:title>Geometric morphism</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>340</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-000F</fr:addr><fr:route>topo-000F.xml</fr:route><fr:title>Sheaf</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
-addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>    \mathcal { E }  </fr:tex> and <fr:tex>    \mathcal { F }  </fr:tex> be <fr:link
+addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>j</fr:tex> be a <fr:link
+href="topo-000A.xml"
+type="local"
+addr="topo-000A">topology</fr:link> on a <fr:link
 href="topo-0001.xml"
 type="local"
-addr="topo-0001">topoi</fr:link>. A <fr:em><fr:strong>geometric morphism</fr:strong></fr:em> <fr:tex>{ f } \colon {     \mathcal { E }   } \to {     \mathcal { F }   }</fr:tex> is an adjoint pair of functors</fr:p>
+addr="topo-0001">topos</fr:link> <fr:tex>    \mathcal { E }  </fr:tex>. An object <fr:tex>S  \in       \mathcal { E }  </fr:tex> is said to be a <fr:em><fr:strong><fr:tex>j</fr:tex>-sheaf</fr:strong></fr:em> if for any <fr:link
+href="topo-000D.xml"
+type="local"
+addr="topo-000D">dense</fr:link> subobject <fr:tex>m \colon  A  \rightarrowtail  B</fr:tex> and any morphism <fr:tex>f \colon  A  \to  S</fr:tex>, there is <fr:em>exactly</fr:em> one morphism <fr:tex>g \colon  B  \to  S</fr:tex> such that <fr:tex>f = gm</fr:tex>.</fr:p>
  
   
   <fr:embedded-tex
-hash="d02bc9317602f9bc796983a052af1f93"><fr:embedded-tex-preamble>
+hash="f687ad3d1700a56c82dd8da5310297ac"><fr:embedded-tex-preamble>
     
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -381,71 +387,58 @@ hash="d02bc9317602f9bc796983a052af1f93"><fr:embedded-tex-preamble>
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  
   </fr:embedded-tex-preamble><fr:embedded-tex-body>
-   \AdjDiagram {
-    w =  
-   \mathcal { E } 
- ,
-    e =  
-   \mathcal { F } 
- ,
-    left =  f ^{{*}} ,
-    right =  f _{{*}} ,
-  }
+   \begin {tikzpicture}[diagram]
+     \node  (n) {$A$};
+     \node  [below= of n] (s) {$B$};
+     \node  [right= of n] (e) {$S$};
+     \draw  [morphism,&gt;-&gt;] (n) to node [left] {$m$} (s);
+     \draw  [morphism,-&gt;] (n) to node [above] {$f$} (e);
+     \draw  [morphism,-&gt;,exists] (s) to node [yshift=-2pt,right] {$g$} (e);
+   \end {tikzpicture}
 </fr:embedded-tex-body></fr:embedded-tex>
  
-<fr:p>such that <fr:tex>f ^{{*}}</fr:tex> is left exact. The functors <fr:tex>f _{{*}}</fr:tex> and <fr:tex>f ^{{*}}</fr:tex> are called the <fr:em><fr:strong>direct image</fr:strong></fr:em> and the <fr:em><fr:strong>inverse image</fr:strong></fr:em> respectively.</fr:p></fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context></fr:context><fr:related><fr:tree
+</fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context></fr:context><fr:related><fr:tree
 xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>482</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-0001</fr:addr><fr:route>topo-0001.xml</fr:route><fr:title>Elementary topos</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>334</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-000A</fr:addr><fr:route>topo-000A.xml</fr:route><fr:title>Lawvere-Tierney topology</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
-addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>An <fr:em><fr:strong>(elementary) topos</fr:strong></fr:em> is a finitely complete and cartesian closed category equipped with a subobject classifier.</fr:p></fr:mainmatter></fr:tree></fr:related><fr:backlinks><fr:tree
+addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>A <fr:em><fr:strong>(Lawvere-Tierney) topology</fr:strong></fr:em> on a <fr:link
+href="topo-0001.xml"
+type="local"
+addr="topo-0001">topos</fr:link> <fr:tex>    \mathcal { E }  </fr:tex> is a morphism <fr:tex>j \colon   \Omega   \to   \Omega</fr:tex> satisfying the following equations.</fr:p><fr:ol><fr:li><fr:tex>j \top  =  \top</fr:tex></fr:li>
+  <fr:li><fr:tex>jj = j</fr:tex></fr:li>
+  <fr:li><fr:tex>j \wedge  =  \wedge (j  \times  j)</fr:tex></fr:li></fr:ol></fr:mainmatter></fr:tree><fr:tree
 xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>476</fr:anchor><fr:taxon>Remark</fr:taxon><fr:addr>topo-0005</fr:addr><fr:route>topo-0005.xml</fr:route><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>336</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-000D</fr:addr><fr:route>topo-000D.xml</fr:route><fr:title>Dense subobject</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
-addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Any natural transformation <fr:tex>{ f _{{*}} } \to { g _{{*}} }</fr:tex> between the direct image part of the given <fr:link
-href="topo-0003.xml"
+addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>j</fr:tex> be a <fr:link
+href="topo-000A.xml"
 type="local"
-addr="topo-0003">geometric morphisms</fr:link>, <fr:tex>f</fr:tex> and <fr:tex>g</fr:tex>, corresponds to a unique natural transformation <fr:tex>{ f ^{{*}} } \to { g ^{{*}} }</fr:tex> under the adjunctions <fr:tex>f ^{{*}}   \dashv   f _{{*}}</fr:tex> and <fr:tex>g ^{{*}}   \dashv   g _{{*}}</fr:tex>. Thus, a <fr:link
-href="topo-0004.xml"
+addr="topo-000A">topology</fr:link> on a <fr:link
+href="topo-0001.xml"
 type="local"
-addr="topo-0004">geometric transformation</fr:link> <fr:tex>{ f } \to { g }</fr:tex> can be equivalently defined as a natural transformation <fr:tex>{ f ^{{*}} } \to { g ^{{*}} }</fr:tex>.</fr:p></fr:mainmatter></fr:tree><fr:tree
+addr="topo-0001">topos</fr:link>. A subobject <fr:tex>m \colon  A  \rightarrowtail  B</fr:tex> is said to be <fr:em><fr:strong><fr:tex>j</fr:tex>-dense</fr:strong></fr:em> if its <fr:link
+href="topo-000C.xml"
+type="local"
+addr="topo-000C">closure</fr:link> is an isomorphism.</fr:p></fr:mainmatter></fr:tree><fr:tree
 xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>478</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-0006</fr:addr><fr:route>topo-0006.xml</fr:route><fr:title>Essential <fr:link
-href="topo-0003.xml"
-type="local"
-addr="topo-0003">geometric morphism</fr:link></fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>338</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-0001</fr:addr><fr:route>topo-0001.xml</fr:route><fr:title>Elementary topos</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
-addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>A <fr:link
-href="topo-0003.xml"
-type="local"
-addr="topo-0003">geometric morphism</fr:link> <fr:tex>{ f } \colon {     \mathcal { E }   } \to {     \mathcal { F }   }</fr:tex> is said to be <fr:em><fr:strong>essential</fr:strong></fr:em> if its inverse image <fr:tex>f ^{{*}}</fr:tex> admits a left adjoint.</fr:p></fr:mainmatter></fr:tree><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="true"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>480</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-0004</fr:addr><fr:route>topo-0004.xml</fr:route><fr:title>Geometric transformation</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
-href="frankndrssn.xml"
-type="local"
-addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>{ f,g } \colon {     \mathcal { E }   } \to {     \mathcal { F }   }</fr:tex> be a pair of <fr:link
-href="topo-0003.xml"
-type="local"
-addr="topo-0003">geometric morphisms</fr:link>. A <fr:em><fr:strong>geometric transformation</fr:strong></fr:em> <fr:tex>{ \alpha } \colon { f } \to { g }</fr:tex> is a natural transformation <fr:tex>{ \alpha } \colon { f _{{*}} } \to { g _{{*}} }</fr:tex>.</fr:p></fr:mainmatter></fr:tree></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>
+addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>An <fr:em><fr:strong>(elementary) topos</fr:strong></fr:em> is a finitely complete and cartesian closed category equipped with a subobject classifier.</fr:p></fr:mainmatter></fr:tree></fr:related><fr:backlinks></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>
