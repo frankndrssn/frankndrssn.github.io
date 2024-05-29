@@ -7,7 +7,7 @@ numbered="true"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>570</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>mnc-0004</fr:addr><fr:route>mnc-0004.xml</fr:route><fr:title>Strict <fr:link
+root="false"><fr:frontmatter><fr:anchor>631</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>mnc-0004</fr:addr><fr:route>mnc-0004.xml</fr:route><fr:title>Strict <fr:link
 href="mnc-0001.xml"
 type="local"
 addr="mnc-0001">monoidal category</fr:link></fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
@@ -23,7 +23,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>568</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>mnc-0001</fr:addr><fr:route>mnc-0001.xml</fr:route><fr:title>Monoidal category</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>629</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>mnc-0001</fr:addr><fr:route>mnc-0001.xml</fr:route><fr:title>Monoidal category</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>A <fr:em><fr:strong>monoidal category</fr:strong></fr:em> consists of the following data.</fr:p><fr:ul><fr:li>An underlying category 
@@ -40,15 +40,15 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>449</fr:anchor><fr:taxon>Axiom</fr:taxon><fr:addr>mnc-0002</fr:addr><fr:route>mnc-0002.xml</fr:route><fr:title>Unity axiom</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>508</fr:anchor><fr:taxon>Axiom</fr:taxon><fr:addr>mnc-0002</fr:addr><fr:route>mnc-0002.xml</fr:route><fr:title>Unity axiom</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>The following diagram commutes.</fr:p>
- 
   
-  <fr:embedded-tex
-hash="fb8be2baa366f48357f42440363646a0"><fr:embedded-tex-preamble>
     
+    <fr:embedded-tex
+hash="df147f6f6ca084d491264e3b4e0b6b79"><fr:embedded-tex-preamble>
+       
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
    \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
@@ -79,7 +79,7 @@ hash="fb8be2baa366f48357f42440363646a0"><fr:embedded-tex-preamble>
      \path [spath/save = #1south] (#1sw) to (#1se);
   }
  
-    
+       
     \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd, quiver}
   \usetikzlibrary{matrix,arrows}
   \usetikzlibrary{backgrounds,fit,positioning,calc,shapes}
@@ -102,7 +102,7 @@ hash="fb8be2baa366f48357f42440363646a0"><fr:embedded-tex-preamble>
       auto=left,
       font=\scriptsize,
     },
-    desc/.style = {centered,fill=white,inner sep=2pt},
+    desc/.style = {anchor=center,fill=white,inner sep=3pt},
     % /tikz/pos=&lt;fraction&gt; is a key already
     offset/.style args = {#1} {commutative diagrams/shift right={#1}},
   }
@@ -383,7 +383,7 @@ hash="fb8be2baa366f48357f42440363646a0"><fr:embedded-tex-preamble>
   %
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  
-  </fr:embedded-tex-preamble><fr:embedded-tex-body>
+    </fr:embedded-tex-preamble><fr:embedded-tex-body>
    \DiagramSquare {
     nw = (X  \otimes   1 )  \otimes  Y,
     sw = X  \otimes  Y,
@@ -399,7 +399,7 @@ hash="fb8be2baa366f48357f42440363646a0"><fr:embedded-tex-preamble>
     width = 3.5cm,
   }
 </fr:embedded-tex-body></fr:embedded-tex>
- 
+  
 <fr:p>Moreover the equality <fr:tex>{ \lambda _{ 1 }  =  \rho _{ 1 } } \colon { 1   \otimes   1 } \to { 1 }</fr:tex> holds.</fr:p></fr:mainmatter></fr:tree><fr:tree
 xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
@@ -407,15 +407,15 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>451</fr:anchor><fr:taxon>Axiom</fr:taxon><fr:addr>mnc-0003</fr:addr><fr:route>mnc-0003.xml</fr:route><fr:title>Pentagon axiom</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>510</fr:anchor><fr:taxon>Axiom</fr:taxon><fr:addr>mnc-0003</fr:addr><fr:route>mnc-0003.xml</fr:route><fr:title>Pentagon axiom</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>The following diagram commutes.</fr:p>
- 
   
-  <fr:embedded-tex
-hash="7f0a610f1520acffff8f3f69cd8403e0"><fr:embedded-tex-preamble>
     
+    <fr:embedded-tex
+hash="0f247d766152ad9bad451f49752fcbd9"><fr:embedded-tex-preamble>
+       
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
    \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
@@ -446,7 +446,7 @@ hash="7f0a610f1520acffff8f3f69cd8403e0"><fr:embedded-tex-preamble>
      \path [spath/save = #1south] (#1sw) to (#1se);
   }
  
-    
+       
     \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd, quiver}
   \usetikzlibrary{matrix,arrows}
   \usetikzlibrary{backgrounds,fit,positioning,calc,shapes}
@@ -469,7 +469,7 @@ hash="7f0a610f1520acffff8f3f69cd8403e0"><fr:embedded-tex-preamble>
       auto=left,
       font=\scriptsize,
     },
-    desc/.style = {centered,fill=white,inner sep=2pt},
+    desc/.style = {anchor=center,fill=white,inner sep=3pt},
     % /tikz/pos=&lt;fraction&gt; is a key already
     offset/.style args = {#1} {commutative diagrams/shift right={#1}},
   }
@@ -750,7 +750,7 @@ hash="7f0a610f1520acffff8f3f69cd8403e0"><fr:embedded-tex-preamble>
   %
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  
-  </fr:embedded-tex-preamble><fr:embedded-tex-body>
+    </fr:embedded-tex-preamble><fr:embedded-tex-body>
    \begin {tikzpicture}[diagram]
      \node  (1) at (90:3cm) {$(W  \otimes  X)  \otimes  (Y  \otimes  Z)$};
      \node  (2) at (90+72:4cm) {$((W  \otimes  X)  \otimes  Y)  \otimes  Z$};
@@ -774,5 +774,5 @@ hash="7f0a610f1520acffff8f3f69cd8403e0"><fr:embedded-tex-preamble>
  $} (5);
    \end {tikzpicture}
 </fr:embedded-tex-body></fr:embedded-tex>
- 
+  
 </fr:mainmatter></fr:tree></fr:mainmatter></fr:tree></fr:related><fr:backlinks></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>

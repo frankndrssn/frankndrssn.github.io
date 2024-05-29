@@ -7,7 +7,7 @@ numbered="true"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>514</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-0006</fr:addr><fr:route>topo-0006.xml</fr:route><fr:title>Essential <fr:link
+root="false"><fr:frontmatter><fr:anchor>575</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-0006</fr:addr><fr:route>topo-0006.xml</fr:route><fr:title>Essential <fr:link
 href="topo-0003.xml"
 type="local"
 addr="topo-0003">geometric morphism</fr:link></fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
@@ -23,18 +23,18 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>512</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-0003</fr:addr><fr:route>topo-0003.xml</fr:route><fr:title>Geometric morphism</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>573</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-0003</fr:addr><fr:route>topo-0003.xml</fr:route><fr:title>Geometric morphism</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>    \mathcal { E }  </fr:tex> and <fr:tex>    \mathcal { F }  </fr:tex> be <fr:link
 href="topo-0001.xml"
 type="local"
 addr="topo-0001">topoi</fr:link>. A <fr:em><fr:strong>geometric morphism</fr:strong></fr:em> <fr:tex>{ f } \colon {     \mathcal { E }   } \to {     \mathcal { F }   }</fr:tex> is an adjoint pair of functors</fr:p>
- 
   
-  <fr:embedded-tex
-hash="c199513cb9e8a7ccb5faedc8c60ed42a"><fr:embedded-tex-preamble>
     
+    <fr:embedded-tex
+hash="a68f36d038b488010faa4427ccc5623b"><fr:embedded-tex-preamble>
+       
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
    \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
@@ -65,7 +65,7 @@ hash="c199513cb9e8a7ccb5faedc8c60ed42a"><fr:embedded-tex-preamble>
      \path [spath/save = #1south] (#1sw) to (#1se);
   }
  
-    
+       
     \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd, quiver}
   \usetikzlibrary{matrix,arrows}
   \usetikzlibrary{backgrounds,fit,positioning,calc,shapes}
@@ -88,7 +88,7 @@ hash="c199513cb9e8a7ccb5faedc8c60ed42a"><fr:embedded-tex-preamble>
       auto=left,
       font=\scriptsize,
     },
-    desc/.style = {centered,fill=white,inner sep=2pt},
+    desc/.style = {anchor=center,fill=white,inner sep=3pt},
     % /tikz/pos=&lt;fraction&gt; is a key already
     offset/.style args = {#1} {commutative diagrams/shift right={#1}},
   }
@@ -369,7 +369,7 @@ hash="c199513cb9e8a7ccb5faedc8c60ed42a"><fr:embedded-tex-preamble>
   %
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  
-  </fr:embedded-tex-preamble><fr:embedded-tex-body>
+    </fr:embedded-tex-preamble><fr:embedded-tex-body>
    \AdjDiagram {
     w =  
    \mathcal { E } 
@@ -381,5 +381,5 @@ hash="c199513cb9e8a7ccb5faedc8c60ed42a"><fr:embedded-tex-preamble>
     right =  f _{{*}} ,
   }
 </fr:embedded-tex-body></fr:embedded-tex>
- 
+  
 <fr:p>such that <fr:tex>f ^{{*}}</fr:tex> is left exact. The functors <fr:tex>f _{{*}}</fr:tex> and <fr:tex>f ^{{*}}</fr:tex> are called the <fr:em><fr:strong>direct image</fr:strong></fr:em> and the <fr:em><fr:strong>inverse image</fr:strong></fr:em> respectively.</fr:p></fr:mainmatter></fr:tree></fr:related><fr:backlinks></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>

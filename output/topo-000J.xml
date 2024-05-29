@@ -7,7 +7,7 @@ numbered="true"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>254</fr:anchor><fr:taxon>Terminology</fr:taxon><fr:addr>topo-000J</fr:addr><fr:route>topo-000J.xml</fr:route><fr:title>Name</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>291</fr:anchor><fr:taxon>Terminology</fr:taxon><fr:addr>topo-000J</fr:addr><fr:route>topo-000J.xml</fr:route><fr:title>Name</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>m \colon  R  \rightarrowtail  A  \times  B</fr:tex> be a relation in a <fr:link
@@ -20,17 +20,20 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>252</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-0001</fr:addr><fr:route>topo-0001.xml</fr:route><fr:title>Elementary topos</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>289</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-0001</fr:addr><fr:route>topo-0001.xml</fr:route><fr:title>Elementary topos</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
-addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>An <fr:em><fr:strong>(elementary) topos</fr:strong></fr:em> is a finitely complete and cartesian closed category equipped with a subobject classifier.</fr:p></fr:mainmatter></fr:tree></fr:related><fr:backlinks><fr:tree
+addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>An <fr:em><fr:strong>(elementary) topos</fr:strong></fr:em> is a finitely complete and cartesian closed category equipped with a <fr:link
+href="ct-0009.xml"
+type="local"
+addr="ct-0009">subobject classifier</fr:link>.</fr:p></fr:mainmatter></fr:tree></fr:related><fr:backlinks><fr:tree
 xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>250</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>topo-000I</fr:addr><fr:route>topo-000I.xml</fr:route><fr:title>Singleton maps are monomorphisms</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>287</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>topo-000I</fr:addr><fr:route>topo-000I.xml</fr:route><fr:title>Singleton maps are monomorphisms</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>A</fr:tex> be any object in a <fr:link
@@ -49,7 +52,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>246</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>279</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors><fr:parent>topo-000I</fr:parent></fr:frontmatter><fr:mainmatter>
@@ -58,11 +61,11 @@ addr="topo-0009"
 href="topo-0009.xml"
 taxon="Lemma"></fr:ref>, the following square is a pullback.
   
- 
   
-  <fr:embedded-tex
-hash="0d83768fb1a3c4e940606ce4dfe52c03"><fr:embedded-tex-preamble>
     
+    <fr:embedded-tex
+hash="3b3c98023d2d819172c62233053c5670"><fr:embedded-tex-preamble>
+       
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
    \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
@@ -93,7 +96,7 @@ hash="0d83768fb1a3c4e940606ce4dfe52c03"><fr:embedded-tex-preamble>
      \path [spath/save = #1south] (#1sw) to (#1se);
   }
  
-    
+       
     \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd, quiver}
   \usetikzlibrary{matrix,arrows}
   \usetikzlibrary{backgrounds,fit,positioning,calc,shapes}
@@ -116,7 +119,7 @@ hash="0d83768fb1a3c4e940606ce4dfe52c03"><fr:embedded-tex-preamble>
       auto=left,
       font=\scriptsize,
     },
-    desc/.style = {centered,fill=white,inner sep=2pt},
+    desc/.style = {anchor=center,fill=white,inner sep=3pt},
     % /tikz/pos=&lt;fraction&gt; is a key already
     offset/.style args = {#1} {commutative diagrams/shift right={#1}},
   }
@@ -397,7 +400,7 @@ hash="0d83768fb1a3c4e940606ce4dfe52c03"><fr:embedded-tex-preamble>
   %
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  
-  </fr:embedded-tex-preamble><fr:embedded-tex-body>
+    </fr:embedded-tex-preamble><fr:embedded-tex-body>
      \DiagramSquare {
       nw = A,
       ne = A,
@@ -410,7 +413,7 @@ hash="0d83768fb1a3c4e940606ce4dfe52c03"><fr:embedded-tex-preamble>
       south =  \{ \} ,
     }
   </fr:embedded-tex-body></fr:embedded-tex>
- 
+  
 
   Thus, <fr:tex>\{ \}</fr:tex> is a monomorphism.
 </fr:mainmatter></fr:tree>

@@ -7,56 +7,119 @@ numbered="true"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>639</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>mnc-0009</fr:addr><fr:route>mnc-0009.xml</fr:route><fr:title>Strong <fr:link
-href="mnc-0005.xml"
-type="local"
-addr="mnc-0005">monoidal functor</fr:link></fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>299</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>ct-0008</fr:addr><fr:route>ct-0008.xml</fr:route><fr:title>Pasting lemma of pullbacks</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
-addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>A <fr:link
-href="mnc-0005.xml"
+addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter>
+  
+    
+    <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="false"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"><fr:frontmatter><fr:anchor>238</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:authors><fr:author><fr:link
+href="frankndrssn.xml"
 type="local"
-addr="mnc-0005">monoidal functor</fr:link> is said to be <fr:em><fr:strong>strong</fr:strong></fr:em> if <fr:tex>\phi ^{2}</fr:tex> and <fr:tex>\phi ^{1}</fr:tex> are isomorphisms.</fr:p></fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context></fr:context><fr:related><fr:tree
+addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors><fr:parent>ct-0008</fr:parent></fr:frontmatter><fr:mainmatter>
+  <fr:link
+href="todo.xml"
+type="local"
+addr="todo">TODO</fr:link>
+</fr:mainmatter></fr:tree>
+  
+</fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context></fr:context><fr:related><fr:tree
 xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>637</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>mnc-0005</fr:addr><fr:route>mnc-0005.xml</fr:route><fr:title>Monoidal functor</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>297</fr:anchor><fr:addr>todo</fr:addr><fr:route>todo.xml</fr:route><fr:title>TODO</fr:title><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
-addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Let 
-  <fr:tex>\mathcal { C }</fr:tex>
- and 
-  <fr:tex>\mathcal { D }</fr:tex>
- be <fr:link
-href="mnc-0001.xml"
+addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p><fr:ul><fr:li>Clean up <fr:link
+href="base-macros.xml"
 type="local"
-addr="mnc-0001">monoidal categories</fr:link>. A <fr:em><fr:strong>monoidal functor</fr:strong></fr:em> <fr:tex>{ F } \colon {     \mathcal { C }   } \to {     \mathcal { D }   }</fr:tex> consists of the following data.</fr:p><fr:ul><fr:li>
-    An underlying functor <fr:tex>{ F } \colon {     \mathcal { C }   } \to {     \mathcal { D }   }</fr:tex>.
-  </fr:li>
-  <fr:li>
-    A natural transformation <fr:tex>{ \phi ^{2} _{ X , Y } } \colon { FX  \otimes  FY } \to { F(X  \otimes  Y) }</fr:tex>.
-  </fr:li>
-  <fr:li>
-    A morphism <fr:tex>{ \phi ^{1} } \colon { 1 _{     \mathcal { D }   } } \to { F 1 _{     \mathcal { C }   } }</fr:tex>.
-  </fr:li></fr:ul><fr:p>These data are subject to the following axioms.</fr:p><fr:tree
+addr="base-macros">basic macros</fr:link> and <fr:link
+href="math-macros.xml"
+type="local"
+addr="math-macros">math macros</fr:link>.</fr:li></fr:ul></fr:p></fr:mainmatter></fr:tree></fr:related><fr:backlinks><fr:tree
 xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="true"
+root="false"><fr:frontmatter><fr:anchor>293</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>ct-0007</fr:addr><fr:route>ct-0007.xml</fr:route><fr:title><fr:link
+href="ct-0006.xml"
+type="local"
+addr="ct-0006">Subobject</fr:link> pseudofunctor</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:authors><fr:author><fr:link
+href="frankndrssn.xml"
+type="local"
+addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>If <fr:tex>\mathcal { C }</fr:tex> has pullbacks then the assignment <fr:tex>A  \mapsto   \mathsf { Sub } (A)</fr:tex> can be extended to a pseudofunctor <fr:tex>\mathsf { Sub } \colon   \mathcal { C } ^ \mathrm {op}   \to   \mathsf { CAT }</fr:tex>.</fr:p>
+    
+      
+      <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="false"
 numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>514</fr:anchor><fr:taxon>Axiom</fr:taxon><fr:addr>mnc-0006</fr:addr><fr:route>mnc-0006.xml</fr:route><fr:title>Associativity</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>244</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
-addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>The following diagram commutes.</fr:p>
-  
+addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors><fr:parent>ct-0007</fr:parent></fr:frontmatter><fr:mainmatter>
+  It suffices to specify an action on morphisms. Let <fr:tex>f \colon  A  \to  B</fr:tex> be an arbitrary morphism. Since monomorphisms are stable under pullback, the pullback functor <fr:tex>f ^{*} \colon   \mathcal { C } _{/ B }   \to   \mathcal { C } _{/ A }</fr:tex> restricts to a functor <fr:tex>f ^{*} \colon   \mathsf { Sub } (B)  \to   \mathsf { Sub } (A)</fr:tex>. Then pseudofunctoriality follows from the following facts:
+  <fr:ul><fr:li>Let <fr:tex>f \colon  A  \to  B</fr:tex>, <fr:tex>g \colon  B  \to  C</fr:tex>, and <fr:tex>m \colon  C'  \rightarrowtail  C</fr:tex> be given. By the <fr:link
+href="ct-0008.xml"
+type="local"
+addr="ct-0008">pasting lemma of pullbacks</fr:link>, the pullback <fr:tex>f ^{*} g ^{*} (m)</fr:tex> is also a pullback along <fr:tex>gf</fr:tex>. Thus, the universal property of pullbacks guarantees that <fr:tex>(gf) ^{*} (m)  \cong   f ^{*} g ^{*} (m)</fr:tex> in <fr:tex>\mathsf { Sub } (A)</fr:tex>.</fr:li>
+    <fr:li>The pullback against the identity is always an isomorphism. Thus, for any <fr:tex>m \colon  A'  \rightarrowtail  A</fr:tex>, <fr:tex>\mathsf {id} _{ A } ^{*} (m)  \cong  m</fr:tex> in <fr:tex>\mathsf { Sub } (A)</fr:tex>.</fr:li></fr:ul>
+</fr:mainmatter></fr:tree>
     
-    <fr:embedded-tex
-hash="d446d432f75297eb1851e2772fef57b7"><fr:embedded-tex-preamble>
-       
+  </fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="true"
+root="false"><fr:frontmatter><fr:anchor>295</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>ct-0009</fr:addr><fr:route>ct-0009.xml</fr:route><fr:title><fr:link
+href="ct-0006.xml"
+type="local"
+addr="ct-0006">Subobject</fr:link> classifier</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:authors><fr:author><fr:link
+href="frankndrssn.xml"
+type="local"
+addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>\mathcal { C }</fr:tex> be a cartesian category. The <fr:em><fr:strong>subobject classifier</fr:strong></fr:em> of <fr:tex>\mathcal { C }</fr:tex> is the terminal object (if it exists) of the category <fr:tex>\mathcal { S } _{ \mathcal { C } }</fr:tex> defined by the following data:</fr:p>
+  <html:table
+xmlns:html="http://www.w3.org/1999/xhtml">
+  
+  <html:tr>
+    
+  <html:th>Objects</html:th>
+
+    
+  <html:th>Morphisms</html:th>
+
+  </html:tr>
+
+  
+  <html:tr>
+    
+  <html:td>An object of <fr:tex>\mathcal { S } _{ \mathcal { C } }</fr:tex> is a pair <fr:tex>(A, m)</fr:tex>, where <fr:tex>A</fr:tex> is an object in <fr:tex>\mathcal { C }</fr:tex> and <fr:tex>m \colon  A'  \rightarrowtail  A</fr:tex> is a subobject.</html:td>
+
+    
+  <html:td>A morphism <fr:tex>(A,m)  \to  (B,n)</fr:tex> is a morphism <fr:tex>f \colon  A  \to  B</fr:tex> in <fr:tex>\mathcal { C }</fr:tex> such that the following square is a pullback.
+      
+    
+      
+      <fr:embedded-tex
+hash="8af428247e3f04c43427be58917e1473"><fr:embedded-tex-preamble>
+         
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
    \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
@@ -87,7 +150,7 @@ hash="d446d432f75297eb1851e2772fef57b7"><fr:embedded-tex-preamble>
      \path [spath/save = #1south] (#1sw) to (#1se);
   }
  
-       
+         
     \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd, quiver}
   \usetikzlibrary{matrix,arrows}
   \usetikzlibrary{backgrounds,fit,positioning,calc,shapes}
@@ -391,43 +454,66 @@ hash="d446d432f75297eb1851e2772fef57b7"><fr:embedded-tex-preamble>
   %
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  
-    </fr:embedded-tex-preamble><fr:embedded-tex-body>
-   \begin {tikzpicture}[diagram, node distance=2cm and 5cm]
-     \node  (l1) {$(FX  \otimes  FY)  \otimes  FZ$};
-     \node  [below= of l1] (l2) {$F(X  \otimes  Y)  \otimes  FZ$};
-     \node  [below= of l2] (l3) {$F((X  \otimes  Y)  \otimes  Z)$};
-     \node  [right= of l1] (r1) {$FX  \otimes  (FY  \otimes  FZ)$};
-     \node  [below= of r1] (r2) {$FX  \otimes  F(Y  \otimes  Z)$};
-     \node  [below= of r2] (r3) {$F(X  \otimes  (Y  \otimes  Z))$};
-     \draw  [-&gt;,morphism] (l1) to node [left] {$ \phi ^{2} _{ X , Y }   \otimes  FZ$} (l2);
-     \draw  [-&gt;,morphism] (l2) to node [left] {$ \phi ^{2} _{ X  \otimes  Y , Z } $} (l3);
-     \draw  [-&gt;,morphism] (l1) to node [above] {$ \alpha _{ 
-   \mathcal { D } 
- }$} (r1);
-     \draw  [-&gt;,morphism] (r1) to node [right] {$FX  \otimes   \phi ^{2} _{ Y , Z } $} (r2);
-     \draw  [-&gt;,morphism] (r2) to node [right] {$ \phi ^{2} _{ X , Y  \otimes  Z } $} (r3);
-     \draw  [-&gt;,morphism] (l3) to node [below] {$F \alpha _{ 
-   \mathcal { C } 
- }$} (r3);
-   \end {tikzpicture}
-</fr:embedded-tex-body></fr:embedded-tex>
+      </fr:embedded-tex-preamble><fr:embedded-tex-body>
+         \DiagramSquare {
+          nw = A',
+          nw/style = pullback,
+          ne = B',
+          sw = A,
+          se = B,
+          south = f,
+          west = m,
+          west/style = {&gt;-&gt;},
+          east = n,
+          east/style = {&gt;-&gt;},
+        }
+      </fr:embedded-tex-body></fr:embedded-tex>
+    
   
-</fr:mainmatter></fr:tree><fr:tree
+    </html:td>
+ 
+  </html:tr>
+
+</html:table>
+<fr:p>Identities and compositions of <fr:tex>\mathcal { S } _{ \mathcal { C } }</fr:tex> are inherited from <fr:tex>\mathcal { C }</fr:tex>.</fr:p>
+    
+      
+      <fr:tree
 xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
-toc="true"
+toc="false"
 numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>516</fr:anchor><fr:taxon>Axiom</fr:taxon><fr:addr>mnc-0007</fr:addr><fr:route>mnc-0007.xml</fr:route><fr:title>Left unity axiom</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>267</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
-addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>The following diagram commutes.</fr:p>
-  
+addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors><fr:parent>ct-0009</fr:parent></fr:frontmatter><fr:mainmatter>
+  For the definition to make sense, we need to show that <fr:tex>\mathcal { S } _{ \mathcal { C } }</fr:tex> is a category.
+  Since identities and compositions are inherited from <fr:tex>\mathcal { C }</fr:tex>, it suffices to show the followings:
+  <fr:ol><fr:li>
+      For any object <fr:tex>A  \in   \mathcal { C }</fr:tex> and any subobject <fr:tex>m \colon  A'  \rightarrowtail  A</fr:tex>, the identity morphism <fr:tex>\mathsf {id} _{ A }</fr:tex> gives the required pullback.
+      
     
-    <fr:embedded-tex
-hash="c30c4749563bc736bd885e60a7adf363"><fr:embedded-tex-preamble>
-       
+      
+      <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="false"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"><fr:frontmatter><fr:anchor>263</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:authors><fr:author><fr:link
+href="frankndrssn.xml"
+type="local"
+addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors><fr:parent>ct-0009</fr:parent></fr:frontmatter><fr:mainmatter>
+        The following diagram is a pullback.
+        
+    
+      
+      <fr:embedded-tex
+hash="7f6b7727a0db5e0bfeb72c800a1c7dbe"><fr:embedded-tex-preamble>
+         
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
    \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
@@ -458,7 +544,7 @@ hash="c30c4749563bc736bd885e60a7adf363"><fr:embedded-tex-preamble>
      \path [spath/save = #1south] (#1sw) to (#1se);
   }
  
-       
+         
     \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd, quiver}
   \usetikzlibrary{matrix,arrows}
   \usetikzlibrary{backgrounds,fit,positioning,calc,shapes}
@@ -762,49 +848,47 @@ hash="c30c4749563bc736bd885e60a7adf363"><fr:embedded-tex-preamble>
   %
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  
-    </fr:embedded-tex-preamble><fr:embedded-tex-body>
-   \DiagramSquare {
-    nw =  1 _{ 
-   \mathcal { D } 
- }  \otimes  FX,
-    sw = F 1 _{ 
-   \mathcal { C } 
- }  \otimes  FX,
-    se = F( 1 _{ 
-   \mathcal { C } 
- }  \otimes  X),
-    ne = FX,
-    east = F \lambda _{ 
-   \mathcal { C } 
- },
-    west =  \phi ^{1}   \otimes  FX,
-    north =  \lambda _{ 
-   \mathcal { D } 
- },
-    south =  \phi ^{2} _{ 1 _{ 
-   \mathcal { C } 
- } , X } ,
-    height = 2cm,
-    width = 3cm,
-  }
-</fr:embedded-tex-body></fr:embedded-tex>
+      </fr:embedded-tex-preamble><fr:embedded-tex-body>
+           \DiagramSquare {
+            nw = A',
+            nw/style = pullback,
+            ne = A',
+            sw = A,
+            se = A,
+            north/style = {double},
+            south/style = {double},
+            east = m,
+            west = m,
+            east/style = {&gt;-&gt;},
+            west/style = {&gt;-&gt;},
+          }
+        </fr:embedded-tex-body></fr:embedded-tex>
+    
   
-</fr:mainmatter></fr:tree><fr:tree
+      </fr:mainmatter></fr:tree></fr:li>
+    <fr:li>
+      For any <fr:tex>f \colon  (A,m)  \to  (B,n)</fr:tex> and any <fr:tex>g \colon  (B,n)  \to  (C,o)</fr:tex>, the composite <fr:tex>gf</fr:tex> gives the required pullback.
+      
+    
+      
+      <fr:tree
 xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
-toc="true"
+toc="false"
 numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>518</fr:anchor><fr:taxon>Axiom</fr:taxon><fr:addr>mnc-0008</fr:addr><fr:route>mnc-0008.xml</fr:route><fr:title>Right unity axiom</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>265</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
-addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>The following diagram commutes.</fr:p>
-  
+addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors><fr:parent>ct-0009</fr:parent></fr:frontmatter><fr:mainmatter>
+        By definition, the two inner squares of the following diagram are pullbacks.
+        
     
-    <fr:embedded-tex
-hash="f8201c773fbd25c8fd8341aee7eb78a5"><fr:embedded-tex-preamble>
-       
+      
+      <fr:embedded-tex
+hash="6b8fe8ed19ec3c6a88a386506285bc90"><fr:embedded-tex-preamble>
+         
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
    \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
@@ -835,7 +919,7 @@ hash="f8201c773fbd25c8fd8341aee7eb78a5"><fr:embedded-tex-preamble>
      \path [spath/save = #1south] (#1sw) to (#1se);
   }
  
-       
+         
     \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd, quiver}
   \usetikzlibrary{matrix,arrows}
   \usetikzlibrary{backgrounds,fit,positioning,calc,shapes}
@@ -1139,31 +1223,36 @@ hash="f8201c773fbd25c8fd8341aee7eb78a5"><fr:embedded-tex-preamble>
   %
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  
-    </fr:embedded-tex-preamble><fr:embedded-tex-body>
-   \DiagramSquare {
-    nw = FX  \otimes   1 _{ 
-   \mathcal { D } 
- },
-    sw = FX  \otimes  F 1 _{ 
-   \mathcal { C } 
- },
-    se = F(X  \otimes   1 _{ 
-   \mathcal { C } 
- }),
-    ne = FX,
-    east = F \rho _{ 
-   \mathcal { C } 
- },
-    west = FX  \otimes   \phi ^{1} ,
-    north =  \rho _{ 
-   \mathcal { D } 
- },
-    south =  \phi ^{2} _{ X , 1 _{ 
-   \mathcal { C } 
- } } ,
-    height = 2cm,
-    width = 3cm,
-  }
-</fr:embedded-tex-body></fr:embedded-tex>
+      </fr:embedded-tex-preamble><fr:embedded-tex-body>
+           \begin {tikzpicture}[diagram]
+             \SpliceDiagramSquare {
+              nw = B',
+              nw/style = pullback,
+              ne = C',
+              sw = B,
+              se = C,
+              south = g,
+              west = n,
+              west/style = {&gt;-&gt;},
+              west/node/style = {desc},
+              east = o,
+              east/style = {&gt;-&gt;},
+            }
+             \node  [left = of nw, pullback] (A') {$A'$};
+             \node  [left = of sw] (A) {$A$};
+             \draw  [-&gt;,morphism] (A') to (nw);
+             \draw  [&gt;-&gt;,morphism] (A') to node[swap] {$m$} (A);
+             \draw  [-&gt;,morphism] (A) to node[swap] {$f$} (sw);
+           \end {tikzpicture}
+          
+        </fr:embedded-tex-body></fr:embedded-tex>
+    
   
-</fr:mainmatter></fr:tree></fr:mainmatter></fr:tree></fr:related><fr:backlinks></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>
+        Then by the <fr:link
+href="ct-0008.xml"
+type="local"
+addr="ct-0008">pasting lemma of pullbacks</fr:link>, the outer rectangle is also a pullback.
+      </fr:mainmatter></fr:tree></fr:li></fr:ol>
+</fr:mainmatter></fr:tree>
+    
+  </fr:mainmatter></fr:tree></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>

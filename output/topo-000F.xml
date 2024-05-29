@@ -7,7 +7,7 @@ numbered="true"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>378</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-000F</fr:addr><fr:route>topo-000F.xml</fr:route><fr:title>Sheaf</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>429</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-000F</fr:addr><fr:route>topo-000F.xml</fr:route><fr:title>Sheaf</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>j</fr:tex> be a <fr:link
@@ -20,11 +20,11 @@ addr="topo-0001">topos</fr:link> <fr:tex>    \mathcal { E }  </fr:tex>. An objec
 href="topo-000D.xml"
 type="local"
 addr="topo-000D">dense</fr:link> subobject <fr:tex>m \colon  A  \rightarrowtail  B</fr:tex> and any morphism <fr:tex>f \colon  A  \to  S</fr:tex>, there is <fr:em>exactly</fr:em> one morphism <fr:tex>g \colon  B  \to  S</fr:tex> such that <fr:tex>f = gm</fr:tex>.</fr:p>
- 
   
-  <fr:embedded-tex
-hash="042e34b726ea73a5d0f3dbbdc0ce2377"><fr:embedded-tex-preamble>
     
+    <fr:embedded-tex
+hash="e30033dbcc2fa3c8f0023c490e509d44"><fr:embedded-tex-preamble>
+       
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
    \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
@@ -55,7 +55,7 @@ hash="042e34b726ea73a5d0f3dbbdc0ce2377"><fr:embedded-tex-preamble>
      \path [spath/save = #1south] (#1sw) to (#1se);
   }
  
-    
+       
     \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd, quiver}
   \usetikzlibrary{matrix,arrows}
   \usetikzlibrary{backgrounds,fit,positioning,calc,shapes}
@@ -78,7 +78,7 @@ hash="042e34b726ea73a5d0f3dbbdc0ce2377"><fr:embedded-tex-preamble>
       auto=left,
       font=\scriptsize,
     },
-    desc/.style = {centered,fill=white,inner sep=2pt},
+    desc/.style = {anchor=center,fill=white,inner sep=3pt},
     % /tikz/pos=&lt;fraction&gt; is a key already
     offset/.style args = {#1} {commutative diagrams/shift right={#1}},
   }
@@ -359,7 +359,7 @@ hash="042e34b726ea73a5d0f3dbbdc0ce2377"><fr:embedded-tex-preamble>
   %
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  
-  </fr:embedded-tex-preamble><fr:embedded-tex-body>
+    </fr:embedded-tex-preamble><fr:embedded-tex-body>
    \begin {tikzpicture}[diagram]
      \node  (n) {$A$};
      \node  [below= of n] (s) {$B$};
@@ -369,7 +369,7 @@ hash="042e34b726ea73a5d0f3dbbdc0ce2377"><fr:embedded-tex-preamble>
      \draw  [morphism,-&gt;,exists] (s) to node [yshift=-2pt,right] {$g$} (e);
    \end {tikzpicture}
 </fr:embedded-tex-body></fr:embedded-tex>
- 
+  
 </fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context></fr:context><fr:related><fr:tree
 xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
@@ -377,7 +377,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>372</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-000A</fr:addr><fr:route>topo-000A.xml</fr:route><fr:title>Lawvere-Tierney topology</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>423</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-000A</fr:addr><fr:route>topo-000A.xml</fr:route><fr:title>Lawvere-Tierney topology</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>A <fr:em><fr:strong>(Lawvere-Tierney) topology</fr:strong></fr:em> on a <fr:link
@@ -392,7 +392,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>374</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-000D</fr:addr><fr:route>topo-000D.xml</fr:route><fr:title>Dense subobject</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>425</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-000D</fr:addr><fr:route>topo-000D.xml</fr:route><fr:title>Dense subobject</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>j</fr:tex> be a <fr:link
@@ -411,7 +411,10 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>376</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-0001</fr:addr><fr:route>topo-0001.xml</fr:route><fr:title>Elementary topos</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>427</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-0001</fr:addr><fr:route>topo-0001.xml</fr:route><fr:title>Elementary topos</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
-addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>An <fr:em><fr:strong>(elementary) topos</fr:strong></fr:em> is a finitely complete and cartesian closed category equipped with a subobject classifier.</fr:p></fr:mainmatter></fr:tree></fr:related><fr:backlinks></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>
+addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>An <fr:em><fr:strong>(elementary) topos</fr:strong></fr:em> is a finitely complete and cartesian closed category equipped with a <fr:link
+href="ct-0009.xml"
+type="local"
+addr="ct-0009">subobject classifier</fr:link>.</fr:p></fr:mainmatter></fr:tree></fr:related><fr:backlinks></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>

@@ -7,49 +7,51 @@ numbered="true"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>510</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-0001</fr:addr><fr:route>topo-0001.xml</fr:route><fr:title>Elementary topos</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>571</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-0001</fr:addr><fr:route>topo-0001.xml</fr:route><fr:title>Elementary topos</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
-addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>An <fr:em><fr:strong>(elementary) topos</fr:strong></fr:em> is a finitely complete and cartesian closed category equipped with a subobject classifier.</fr:p></fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context></fr:context><fr:related></fr:related><fr:backlinks><fr:tree
+addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>An <fr:em><fr:strong>(elementary) topos</fr:strong></fr:em> is a finitely complete and cartesian closed category equipped with a <fr:link
+href="ct-0009.xml"
+type="local"
+addr="ct-0009">subobject classifier</fr:link>.</fr:p></fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context></fr:context><fr:related><fr:tree
 xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>482</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>topo-000I</fr:addr><fr:route>topo-000I.xml</fr:route><fr:title>Singleton maps are monomorphisms</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>569</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>ct-0009</fr:addr><fr:route>ct-0009.xml</fr:route><fr:title><fr:link
+href="ct-0006.xml"
+type="local"
+addr="ct-0006">Subobject</fr:link> classifier</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
-addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>A</fr:tex> be any object in a <fr:link
-href="topo-0001.xml"
-type="local"
-addr="topo-0001">topos</fr:link> and let <fr:tex>\{ \} \colon  A  \to   \Omega ^{A}</fr:tex> be the <fr:link
-href="topo-000J.xml"
-type="local"
-addr="topo-000J">name</fr:link> of the diagonal relation <fr:tex>\Delta \colon  A  \rightarrowtail  A  \times  A</fr:tex>. <fr:tex>\{ \}</fr:tex> is a monomorphism.</fr:p>
+addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>\mathcal { C }</fr:tex> be a cartesian category. The <fr:em><fr:strong>subobject classifier</fr:strong></fr:em> of <fr:tex>\mathcal { C }</fr:tex> is the terminal object (if it exists) of the category <fr:tex>\mathcal { S } _{ \mathcal { C } }</fr:tex> defined by the following data:</fr:p>
+  <html:table
+xmlns:html="http://www.w3.org/1999/xhtml">
   
+  <html:tr>
     
-    <fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
-toc="false"
-numbered="true"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>246</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:authors><fr:author><fr:link
-href="frankndrssn.xml"
-type="local"
-addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors><fr:parent>topo-000I</fr:parent></fr:frontmatter><fr:mainmatter>
-  By <fr:ref
-addr="topo-0009"
-href="topo-0009.xml"
-taxon="Lemma"></fr:ref>, the following square is a pullback.
-  
- 
-  
-  <fr:embedded-tex
-hash="0d83768fb1a3c4e940606ce4dfe52c03"><fr:embedded-tex-preamble>
+  <html:th>Objects</html:th>
+
     
+  <html:th>Morphisms</html:th>
+
+  </html:tr>
+
+  
+  <html:tr>
+    
+  <html:td>An object of <fr:tex>\mathcal { S } _{ \mathcal { C } }</fr:tex> is a pair <fr:tex>(A, m)</fr:tex>, where <fr:tex>A</fr:tex> is an object in <fr:tex>\mathcal { C }</fr:tex> and <fr:tex>m \colon  A'  \rightarrowtail  A</fr:tex> is a subobject.</html:td>
+
+    
+  <html:td>A morphism <fr:tex>(A,m)  \to  (B,n)</fr:tex> is a morphism <fr:tex>f \colon  A  \to  B</fr:tex> in <fr:tex>\mathcal { C }</fr:tex> such that the following square is a pullback.
+      
+    
+      
+      <fr:embedded-tex
+hash="8af428247e3f04c43427be58917e1473"><fr:embedded-tex-preamble>
+         
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
    \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
@@ -80,7 +82,7 @@ hash="0d83768fb1a3c4e940606ce4dfe52c03"><fr:embedded-tex-preamble>
      \path [spath/save = #1south] (#1sw) to (#1se);
   }
  
-    
+         
     \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd, quiver}
   \usetikzlibrary{matrix,arrows}
   \usetikzlibrary{backgrounds,fit,positioning,calc,shapes}
@@ -103,7 +105,7 @@ hash="0d83768fb1a3c4e940606ce4dfe52c03"><fr:embedded-tex-preamble>
       auto=left,
       font=\scriptsize,
     },
-    desc/.style = {centered,fill=white,inner sep=2pt},
+    desc/.style = {anchor=center,fill=white,inner sep=3pt},
     % /tikz/pos=&lt;fraction&gt; is a key already
     offset/.style args = {#1} {commutative diagrams/shift right={#1}},
   }
@@ -384,7 +386,1182 @@ hash="0d83768fb1a3c4e940606ce4dfe52c03"><fr:embedded-tex-preamble>
   %
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  
-  </fr:embedded-tex-preamble><fr:embedded-tex-body>
+      </fr:embedded-tex-preamble><fr:embedded-tex-body>
+         \DiagramSquare {
+          nw = A',
+          nw/style = pullback,
+          ne = B',
+          sw = A,
+          se = B,
+          south = f,
+          west = m,
+          west/style = {&gt;-&gt;},
+          east = n,
+          east/style = {&gt;-&gt;},
+        }
+      </fr:embedded-tex-body></fr:embedded-tex>
+    
+  
+    </html:td>
+ 
+  </html:tr>
+
+</html:table>
+<fr:p>Identities and compositions of <fr:tex>\mathcal { S } _{ \mathcal { C } }</fr:tex> are inherited from <fr:tex>\mathcal { C }</fr:tex>.</fr:p>
+    
+      
+      <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="false"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"><fr:frontmatter><fr:anchor>267</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:authors><fr:author><fr:link
+href="frankndrssn.xml"
+type="local"
+addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors><fr:parent>ct-0009</fr:parent></fr:frontmatter><fr:mainmatter>
+  For the definition to make sense, we need to show that <fr:tex>\mathcal { S } _{ \mathcal { C } }</fr:tex> is a category.
+  Since identities and compositions are inherited from <fr:tex>\mathcal { C }</fr:tex>, it suffices to show the followings:
+  <fr:ol><fr:li>
+      For any object <fr:tex>A  \in   \mathcal { C }</fr:tex> and any subobject <fr:tex>m \colon  A'  \rightarrowtail  A</fr:tex>, the identity morphism <fr:tex>\mathsf {id} _{ A }</fr:tex> gives the required pullback.
+      
+    
+      
+      <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="false"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"><fr:frontmatter><fr:anchor>263</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:authors><fr:author><fr:link
+href="frankndrssn.xml"
+type="local"
+addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors><fr:parent>ct-0009</fr:parent></fr:frontmatter><fr:mainmatter>
+        The following diagram is a pullback.
+        
+    
+      
+      <fr:embedded-tex
+hash="7f6b7727a0db5e0bfeb72c800a1c7dbe"><fr:embedded-tex-preamble>
+         
+   \RequirePackage {tikz}
+   \RequirePackage {amsmath}
+   \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
+
+   \definecolor {catccolor}{RGB}{255,244,138}
+   \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
+   \tikzstyle {catc}=[catccolor!60]
+   \tikzstyle {catd}=[orange!40]
+   \tikzstyle {cate}=[red!40]
+   \tikzstyle {catf}=[blue!10]
+   \tikzstyle {catg}=[green!25]
+
+
+   \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
+   \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
+
+   \NewDocumentCommand \CreateRect {D&lt;&gt;{} m m}{
+     \path 
+      coordinate (#1nw)
+      ++(#2,-#3) coordinate (#1se)
+      coordinate (#1sw) at (#1se -| #1nw)
+      coordinate (#1ne) at (#1nw -| #1se)
+    ;
+
+     \path [spath/save = #1north] (#1nw) to (#1ne);
+     \path [spath/save = #1west] (#1nw) to (#1sw);
+     \path [spath/save = #1east] (#1ne) to (#1se);
+     \path [spath/save = #1south] (#1sw) to (#1se);
+  }
+ 
+         
+    \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd, quiver}
+  \usetikzlibrary{matrix,arrows}
+  \usetikzlibrary{backgrounds,fit,positioning,calc,shapes}
+  \usetikzlibrary{decorations.pathreplacing}
+  \usetikzlibrary{decorations.pathmorphing}
+  \usetikzlibrary{decorations.markings}
+
+  % basic settings
+  \tikzset{
+    diagram/.style = {
+      on grid,
+      node distance=2cm,
+      commutative diagrams/every diagram,
+      line width = .5pt,
+      every node/.append style = {
+        commutative diagrams/every cell,
+      },
+    },
+    morphism/.style = {
+      auto=left,
+      font=\scriptsize,
+    },
+    desc/.style = {anchor=center,fill=white,inner sep=3pt},
+    % /tikz/pos=&lt;fraction&gt; is a key already
+    offset/.style args = {#1} {commutative diagrams/shift right={#1}},
+  }
+
+  % pullback and pushout
+  \tikzset{
+    pullback/.style = {
+      append after command = {
+        \pgfextra{
+          \draw ($(\tikzlastnode) + (.2cm,-.5cm)$) -- ++(0.3cm,0) -- ++(0,0.3cm);
+        }
+      }
+    },
+    pushout/.style = {
+      append after command={
+        \pgfextra{
+          \draw ($(\tikzlastnode) + (-.2cm,.5cm)$) -- ++(-0.3cm,0) -- ++(0,-0.3cm);
+        }
+      }
+    },
+  }
+
+  % arrow styles
+  \tikzset{
+    fibration/.style = {
+      -{Triangle[open]}
+    },
+    etale/.style = {
+      -{Triangle[open]}
+    },
+    etale cover/.style= {
+      &gt;={Triangle[open]},-&gt;.&gt;
+    },
+    opfibration/.style = {
+      -{Triangle}
+    },
+    lies over/.style = {
+      |-{Triangle[open]}
+    },
+    op lies over/.style = {
+      |-{Triangle}
+    },
+    embedding/.style = {
+      {right hook}-&gt;
+    },
+    open immersion/.style = {
+      {right hook}-{Triangle[open]}
+    },
+    closed immersion/.style = {
+      {right hook}-{Triangle}
+    },
+    closed immersion*/.style = {
+      {left hook}-{Triangle}
+    },
+    embedding*/.style = {
+      {left hook}-&gt;
+    },
+    open immersion*/.style = {
+      {left hook}-{Triangle[open]}
+    },
+    exists/.style = {
+      densely dashed
+    },
+    equal/.style = {
+      double
+    },
+  }
+
+  \newlength{\dontworryaboutit}
+
+  \tikzset{
+    inline diagram/.style = {
+      commutative diagrams/every diagram,
+      commutative diagrams/cramped,
+      line width = .5pt,
+      every node/.append style = {
+        commutative diagrams/every cell,
+        anchor = base,
+        inner sep = 0pt
+      },
+      every path/.append style = {
+        outer xsep = 2pt
+      }
+    }
+  }
+  
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  % Primitives for drawing commutative squares
+  \tikzset{
+    square/nw/.style = {},
+    square/ne/.style = {},
+    square/se/.style = {},
+    square/sw/.style = {},
+    square/north/.style = {-&gt;},
+    square/south/.style = {-&gt;},
+    square/west/.style = {-&gt;},
+    square/east/.style = {-&gt;},
+    square/north/node/.style = {above},
+    square/south/node/.style = {below},
+    square/west/node/.style = {left},
+    square/east/node/.style = {right},
+  }
+
+  \ExplSyntaxOn
+
+  \bool_new:N \l_jon_glue_west
+
+  \keys_define:nn { jon-tikz/diagram } {
+    nw .tl_set:N = \l_jon_tikz_diagram_nw,
+    sw .tl_set:N = \l_jon_tikz_diagram_sw,
+    ne .tl_set:N = \l_jon_tikz_diagram_ne,
+    se .tl_set:N = \l_jon_tikz_diagram_se,
+
+    width .tl_set:N = \l_jon_tikz_diagram_width,
+    height .tl_set:N = \l_jon_tikz_diagram_height,
+
+    north .tl_set:N = \l_jon_tikz_diagram_north,
+    south .tl_set:N = \l_jon_tikz_diagram_south,
+    west .tl_set:N = \l_jon_tikz_diagram_west,
+    east .tl_set:N = \l_jon_tikz_diagram_east,
+
+    nw/style .code:n = {\tikzset{square/nw/.style = {#1}}},
+    sw/style .code:n = {\tikzset{square/sw/.style = {#1}}},
+    ne/style .code:n = {\tikzset{square/ne/.style = {#1}}},
+    se/style .code:n = {\tikzset{square/se/.style = {#1}}},
+
+    glue .choice:,
+    glue / west .code:n = {\bool_set:Nn \l_jon_glue_west \c_true_bool},
+
+    glue~target .tl_set:N = \l_jon_tikz_glue_target,
+
+    north/style .code:n = {\tikzset{square/north/.style = {#1}}},
+    north/node/style .code:n = {\tikzset{square/north/node/.style = {#1}}},
+    south/style .code:n = {\tikzset{square/south/.style = {#1}}},
+    south/node/style .code:n = {\tikzset{square/south/node/.style = {#1}}},
+    west/style .code:n = {\tikzset{square/west/.style = {#1}}},
+    west/node/style .code:n = {\tikzset{square/west/node/.style = {#1}}},
+    east/style .code:n = {\tikzset{square/east/.style = {#1}}},
+    east/node/style .code:n = {\tikzset{square/east/node/.style = {#1}}},
+
+    draft .meta:n = {
+      nw = {\__jon_tikz_diagram_fmt_placeholder:n {nw}},
+      sw = {\__jon_tikz_diagram_fmt_placeholder:n {sw}},
+      se = {\__jon_tikz_diagram_fmt_placeholder:n {se}},
+      ne = {\__jon_tikz_diagram_fmt_placeholder:n {ne}},
+      north = {\__jon_tikz_diagram_fmt_placeholder:n {north}},
+      south = {\__jon_tikz_diagram_fmt_placeholder:n {south}},
+      west = {\__jon_tikz_diagram_fmt_placeholder:n {west}},
+      east = {\__jon_tikz_diagram_fmt_placeholder:n {east}},
+    }
+  }
+
+  \tl_set:Nn \l_jon_tikz_diagram_width { 2cm }
+  \tl_set:Nn \l_jon_tikz_diagram_height { 2cm }
+
+
+  \cs_new:Npn \__jon_tikz_diagram_fmt_placeholder:n #1 {
+    \texttt{\textcolor{red}{#1}}
+  }
+
+  \keys_set:nn { jon-tikz/diagram } {
+    glue~target = {},
+  }
+
+
+  \cs_new:Nn \__jon_tikz_render_square:nn {
+    \group_begin:
+    \keys_set:nn {jon-tikz/diagram} {#2}
+    \bool_if:nTF \l_jon_glue_west {
+      \node (#1ne) [right = \l_jon_tikz_diagram_width~of~\l_jon_tikz_glue_target ne,square/ne] {$\l_jon_tikz_diagram_ne$};
+      \node (#1se) [below = \l_jon_tikz_diagram_height~of~#1ne,square/se] {$\l_jon_tikz_diagram_se$};
+      \draw[morphism,square/north] (\l_jon_tikz_glue_target ne) to node [square/north/node] {$\l_jon_tikz_diagram_north$} (#1ne);
+      \draw[morphism,square/east] (#1ne) to node [square/east/node] {$\l_jon_tikz_diagram_east$} (#1se);
+      \draw[morphism,square/south] (\l_jon_tikz_glue_target se) to node [square/south/node] {$\l_jon_tikz_diagram_south$} (#1se);
+    } {
+      \node (#1nw) [square/nw] {$\l_jon_tikz_diagram_nw$};
+      \node (#1sw) [below = \l_jon_tikz_diagram_height~of~#1nw,square/sw] {$\l_jon_tikz_diagram_sw$};
+      \draw[morphism,square/west] (#1nw) to node [square/west/node] {$\l_jon_tikz_diagram_west$} (#1sw);
+
+      \node (#1ne) [right = \l_jon_tikz_diagram_width~of~#1nw,square/ne] {$\l_jon_tikz_diagram_ne$};
+      \node (#1se) [below = \l_jon_tikz_diagram_height~of~#1ne,square/se] {$\l_jon_tikz_diagram_se$};
+      \draw[morphism,square/north] (#1nw) to node [square/north/node] {$\l_jon_tikz_diagram_north$} (#1ne);
+      \draw[morphism,square/east] (#1ne) to node [square/east/node] {$\l_jon_tikz_diagram_east$} (#1se);
+      \draw[morphism,square/south] (#1sw) to node [square/south/node] {$\l_jon_tikz_diagram_south$} (#1se);
+    }
+    \group_end:
+  }
+
+  \NewDocumentCommand\SpliceDiagramSquare{D&lt;&gt;{}m}{
+    \__jon_tikz_render_square:nn {#1} {#2}
+  }
+
+
+  \NewDocumentCommand\DiagramSquare{D&lt;&gt;{}O{}m}{
+    \begin{tikzpicture}[diagram,#2,baseline=(#1sw.base)]
+      \__jon_tikz_render_square:nn {#1} {#3}
+    \end{tikzpicture}
+  }
+
+  \ExplSyntaxOff
+  %
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  % Primitives for drawing adjunction diagrams
+  \tikzset{
+    adj/w/.style = {},
+    adj/e/.style = {},
+    adj/left/.style = {-&gt;},
+    adj/right/.style = {-&gt;},
+    adj/left/node/.style = {above},
+    adj/right/node/.style = {below},
+  }
+
+  \ExplSyntaxOn
+
+  \bool_new:N \l_fnd_glue_west
+
+  \keys_define:nn { fnd-tikz/adj-diagram } {
+    w .tl_set:N = \l_fnd_tikz_adj_diagram_w,
+    e .tl_set:N = \l_fnd_tikz_adj_diagram_e,
+
+    width .tl_set:N = \l_fnd_tikz_adj_diagram_width,
+
+    left .tl_set:N = \l_fnd_tikz_adj_diagram_left,
+    right .tl_set:N = \l_fnd_tikz_adj_diagram_right,
+
+    glue .choice:,
+    glue / west .code:n = {\bool_set:Nn \l_fnd_glue_west \c_true_bool},
+    glue~target .tl_set:N = \l_fnd_tikz_glue_target,
+
+    w/style .code:n = {\tikzset{adj/w/.style = {#1}}},
+    e/style .code:n = {\tikzset{adj/e/.style = {#1}}},
+
+    left/style .code:n = {\tikzset{adj/left/.style = {#1}}},
+    left/node/style .code:n = {\tikzset{adj/left/node/.style = {#1}}},
+    right/style .code:n = {\tikzset{adj/right/.style = {#1}}},
+    right/node/style .code:n = {\tikzset{adj/right/node/.style = {#1}}},
+
+    draft .meta:n = {
+      e = {\__fnd_tikz_adj_diagram_fmt_placeholder:n {e}},
+      w = {\__fnd_tikz_adj_diagram_fmt_placeholder:n {w}},
+      left = {\__fnd_tikz_adj_diagram_fmt_placeholder:n {left}},
+      right = {\__fnd_tikz_adj_diagram_fmt_placeholder:n {right}},
+    }
+  }
+
+  \tl_set:Nn \l_fnd_tikz_adj_diagram_width { 2cm }
+
+  \cs_new:Npn \__fnd_tikz_adj_diagram_fmt_placeholder:n #1 {
+    \texttt{\textcolor{red}{#1}}
+  }
+
+  \keys_set:nn { fnd-tikz/adj-diagram } {
+    glue~target = {},
+  }
+
+  \cs_new:Nn \__fnd_tikz_render_adj_diagram:n {
+    \group_begin:
+    \keys_set:nn {fnd-tikz/adj-diagram} {#1} {
+      % gluing will be implemented when I need it
+      \node (w) [adj/w] {$\l_fnd_tikz_adj_diagram_w$};
+      \node (e) [right=\l_fnd_tikz_adj_diagram_width~of~w,adj/e] {$\l_fnd_tikz_adj_diagram_e$};
+        \draw [morphism,adj/left,offset=.15cm] (e) to node[adj/left/node] (n) {$\l_fnd_tikz_adj_diagram_left$} (w);
+        \draw [morphism,adj/right,offset=.15cm] (w) to node[adj/right/node] (s) {$\l_fnd_tikz_adj_diagram_right$} (e);
+        \path [morphism] (s) to node[rotate=-90] {$\dashv$} (n);
+    }
+    \group_end:
+  }
+
+  \NewDocumentCommand\AdjDiagram{m}{
+    \begin{tikzpicture}[diagram]
+      \__fnd_tikz_render_adj_diagram:n {#1}
+    \end{tikzpicture}
+  }
+  
+  \ExplSyntaxOff
+  %
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
+      </fr:embedded-tex-preamble><fr:embedded-tex-body>
+           \DiagramSquare {
+            nw = A',
+            nw/style = pullback,
+            ne = A',
+            sw = A,
+            se = A,
+            north/style = {double},
+            south/style = {double},
+            east = m,
+            west = m,
+            east/style = {&gt;-&gt;},
+            west/style = {&gt;-&gt;},
+          }
+        </fr:embedded-tex-body></fr:embedded-tex>
+    
+  
+      </fr:mainmatter></fr:tree></fr:li>
+    <fr:li>
+      For any <fr:tex>f \colon  (A,m)  \to  (B,n)</fr:tex> and any <fr:tex>g \colon  (B,n)  \to  (C,o)</fr:tex>, the composite <fr:tex>gf</fr:tex> gives the required pullback.
+      
+    
+      
+      <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="false"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"><fr:frontmatter><fr:anchor>265</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:authors><fr:author><fr:link
+href="frankndrssn.xml"
+type="local"
+addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors><fr:parent>ct-0009</fr:parent></fr:frontmatter><fr:mainmatter>
+        By definition, the two inner squares of the following diagram are pullbacks.
+        
+    
+      
+      <fr:embedded-tex
+hash="6b8fe8ed19ec3c6a88a386506285bc90"><fr:embedded-tex-preamble>
+         
+   \RequirePackage {tikz}
+   \RequirePackage {amsmath}
+   \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
+
+   \definecolor {catccolor}{RGB}{255,244,138}
+   \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
+   \tikzstyle {catc}=[catccolor!60]
+   \tikzstyle {catd}=[orange!40]
+   \tikzstyle {cate}=[red!40]
+   \tikzstyle {catf}=[blue!10]
+   \tikzstyle {catg}=[green!25]
+
+
+   \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
+   \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
+
+   \NewDocumentCommand \CreateRect {D&lt;&gt;{} m m}{
+     \path 
+      coordinate (#1nw)
+      ++(#2,-#3) coordinate (#1se)
+      coordinate (#1sw) at (#1se -| #1nw)
+      coordinate (#1ne) at (#1nw -| #1se)
+    ;
+
+     \path [spath/save = #1north] (#1nw) to (#1ne);
+     \path [spath/save = #1west] (#1nw) to (#1sw);
+     \path [spath/save = #1east] (#1ne) to (#1se);
+     \path [spath/save = #1south] (#1sw) to (#1se);
+  }
+ 
+         
+    \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd, quiver}
+  \usetikzlibrary{matrix,arrows}
+  \usetikzlibrary{backgrounds,fit,positioning,calc,shapes}
+  \usetikzlibrary{decorations.pathreplacing}
+  \usetikzlibrary{decorations.pathmorphing}
+  \usetikzlibrary{decorations.markings}
+
+  % basic settings
+  \tikzset{
+    diagram/.style = {
+      on grid,
+      node distance=2cm,
+      commutative diagrams/every diagram,
+      line width = .5pt,
+      every node/.append style = {
+        commutative diagrams/every cell,
+      },
+    },
+    morphism/.style = {
+      auto=left,
+      font=\scriptsize,
+    },
+    desc/.style = {anchor=center,fill=white,inner sep=3pt},
+    % /tikz/pos=&lt;fraction&gt; is a key already
+    offset/.style args = {#1} {commutative diagrams/shift right={#1}},
+  }
+
+  % pullback and pushout
+  \tikzset{
+    pullback/.style = {
+      append after command = {
+        \pgfextra{
+          \draw ($(\tikzlastnode) + (.2cm,-.5cm)$) -- ++(0.3cm,0) -- ++(0,0.3cm);
+        }
+      }
+    },
+    pushout/.style = {
+      append after command={
+        \pgfextra{
+          \draw ($(\tikzlastnode) + (-.2cm,.5cm)$) -- ++(-0.3cm,0) -- ++(0,-0.3cm);
+        }
+      }
+    },
+  }
+
+  % arrow styles
+  \tikzset{
+    fibration/.style = {
+      -{Triangle[open]}
+    },
+    etale/.style = {
+      -{Triangle[open]}
+    },
+    etale cover/.style= {
+      &gt;={Triangle[open]},-&gt;.&gt;
+    },
+    opfibration/.style = {
+      -{Triangle}
+    },
+    lies over/.style = {
+      |-{Triangle[open]}
+    },
+    op lies over/.style = {
+      |-{Triangle}
+    },
+    embedding/.style = {
+      {right hook}-&gt;
+    },
+    open immersion/.style = {
+      {right hook}-{Triangle[open]}
+    },
+    closed immersion/.style = {
+      {right hook}-{Triangle}
+    },
+    closed immersion*/.style = {
+      {left hook}-{Triangle}
+    },
+    embedding*/.style = {
+      {left hook}-&gt;
+    },
+    open immersion*/.style = {
+      {left hook}-{Triangle[open]}
+    },
+    exists/.style = {
+      densely dashed
+    },
+    equal/.style = {
+      double
+    },
+  }
+
+  \newlength{\dontworryaboutit}
+
+  \tikzset{
+    inline diagram/.style = {
+      commutative diagrams/every diagram,
+      commutative diagrams/cramped,
+      line width = .5pt,
+      every node/.append style = {
+        commutative diagrams/every cell,
+        anchor = base,
+        inner sep = 0pt
+      },
+      every path/.append style = {
+        outer xsep = 2pt
+      }
+    }
+  }
+  
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  % Primitives for drawing commutative squares
+  \tikzset{
+    square/nw/.style = {},
+    square/ne/.style = {},
+    square/se/.style = {},
+    square/sw/.style = {},
+    square/north/.style = {-&gt;},
+    square/south/.style = {-&gt;},
+    square/west/.style = {-&gt;},
+    square/east/.style = {-&gt;},
+    square/north/node/.style = {above},
+    square/south/node/.style = {below},
+    square/west/node/.style = {left},
+    square/east/node/.style = {right},
+  }
+
+  \ExplSyntaxOn
+
+  \bool_new:N \l_jon_glue_west
+
+  \keys_define:nn { jon-tikz/diagram } {
+    nw .tl_set:N = \l_jon_tikz_diagram_nw,
+    sw .tl_set:N = \l_jon_tikz_diagram_sw,
+    ne .tl_set:N = \l_jon_tikz_diagram_ne,
+    se .tl_set:N = \l_jon_tikz_diagram_se,
+
+    width .tl_set:N = \l_jon_tikz_diagram_width,
+    height .tl_set:N = \l_jon_tikz_diagram_height,
+
+    north .tl_set:N = \l_jon_tikz_diagram_north,
+    south .tl_set:N = \l_jon_tikz_diagram_south,
+    west .tl_set:N = \l_jon_tikz_diagram_west,
+    east .tl_set:N = \l_jon_tikz_diagram_east,
+
+    nw/style .code:n = {\tikzset{square/nw/.style = {#1}}},
+    sw/style .code:n = {\tikzset{square/sw/.style = {#1}}},
+    ne/style .code:n = {\tikzset{square/ne/.style = {#1}}},
+    se/style .code:n = {\tikzset{square/se/.style = {#1}}},
+
+    glue .choice:,
+    glue / west .code:n = {\bool_set:Nn \l_jon_glue_west \c_true_bool},
+
+    glue~target .tl_set:N = \l_jon_tikz_glue_target,
+
+    north/style .code:n = {\tikzset{square/north/.style = {#1}}},
+    north/node/style .code:n = {\tikzset{square/north/node/.style = {#1}}},
+    south/style .code:n = {\tikzset{square/south/.style = {#1}}},
+    south/node/style .code:n = {\tikzset{square/south/node/.style = {#1}}},
+    west/style .code:n = {\tikzset{square/west/.style = {#1}}},
+    west/node/style .code:n = {\tikzset{square/west/node/.style = {#1}}},
+    east/style .code:n = {\tikzset{square/east/.style = {#1}}},
+    east/node/style .code:n = {\tikzset{square/east/node/.style = {#1}}},
+
+    draft .meta:n = {
+      nw = {\__jon_tikz_diagram_fmt_placeholder:n {nw}},
+      sw = {\__jon_tikz_diagram_fmt_placeholder:n {sw}},
+      se = {\__jon_tikz_diagram_fmt_placeholder:n {se}},
+      ne = {\__jon_tikz_diagram_fmt_placeholder:n {ne}},
+      north = {\__jon_tikz_diagram_fmt_placeholder:n {north}},
+      south = {\__jon_tikz_diagram_fmt_placeholder:n {south}},
+      west = {\__jon_tikz_diagram_fmt_placeholder:n {west}},
+      east = {\__jon_tikz_diagram_fmt_placeholder:n {east}},
+    }
+  }
+
+  \tl_set:Nn \l_jon_tikz_diagram_width { 2cm }
+  \tl_set:Nn \l_jon_tikz_diagram_height { 2cm }
+
+
+  \cs_new:Npn \__jon_tikz_diagram_fmt_placeholder:n #1 {
+    \texttt{\textcolor{red}{#1}}
+  }
+
+  \keys_set:nn { jon-tikz/diagram } {
+    glue~target = {},
+  }
+
+
+  \cs_new:Nn \__jon_tikz_render_square:nn {
+    \group_begin:
+    \keys_set:nn {jon-tikz/diagram} {#2}
+    \bool_if:nTF \l_jon_glue_west {
+      \node (#1ne) [right = \l_jon_tikz_diagram_width~of~\l_jon_tikz_glue_target ne,square/ne] {$\l_jon_tikz_diagram_ne$};
+      \node (#1se) [below = \l_jon_tikz_diagram_height~of~#1ne,square/se] {$\l_jon_tikz_diagram_se$};
+      \draw[morphism,square/north] (\l_jon_tikz_glue_target ne) to node [square/north/node] {$\l_jon_tikz_diagram_north$} (#1ne);
+      \draw[morphism,square/east] (#1ne) to node [square/east/node] {$\l_jon_tikz_diagram_east$} (#1se);
+      \draw[morphism,square/south] (\l_jon_tikz_glue_target se) to node [square/south/node] {$\l_jon_tikz_diagram_south$} (#1se);
+    } {
+      \node (#1nw) [square/nw] {$\l_jon_tikz_diagram_nw$};
+      \node (#1sw) [below = \l_jon_tikz_diagram_height~of~#1nw,square/sw] {$\l_jon_tikz_diagram_sw$};
+      \draw[morphism,square/west] (#1nw) to node [square/west/node] {$\l_jon_tikz_diagram_west$} (#1sw);
+
+      \node (#1ne) [right = \l_jon_tikz_diagram_width~of~#1nw,square/ne] {$\l_jon_tikz_diagram_ne$};
+      \node (#1se) [below = \l_jon_tikz_diagram_height~of~#1ne,square/se] {$\l_jon_tikz_diagram_se$};
+      \draw[morphism,square/north] (#1nw) to node [square/north/node] {$\l_jon_tikz_diagram_north$} (#1ne);
+      \draw[morphism,square/east] (#1ne) to node [square/east/node] {$\l_jon_tikz_diagram_east$} (#1se);
+      \draw[morphism,square/south] (#1sw) to node [square/south/node] {$\l_jon_tikz_diagram_south$} (#1se);
+    }
+    \group_end:
+  }
+
+  \NewDocumentCommand\SpliceDiagramSquare{D&lt;&gt;{}m}{
+    \__jon_tikz_render_square:nn {#1} {#2}
+  }
+
+
+  \NewDocumentCommand\DiagramSquare{D&lt;&gt;{}O{}m}{
+    \begin{tikzpicture}[diagram,#2,baseline=(#1sw.base)]
+      \__jon_tikz_render_square:nn {#1} {#3}
+    \end{tikzpicture}
+  }
+
+  \ExplSyntaxOff
+  %
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  % Primitives for drawing adjunction diagrams
+  \tikzset{
+    adj/w/.style = {},
+    adj/e/.style = {},
+    adj/left/.style = {-&gt;},
+    adj/right/.style = {-&gt;},
+    adj/left/node/.style = {above},
+    adj/right/node/.style = {below},
+  }
+
+  \ExplSyntaxOn
+
+  \bool_new:N \l_fnd_glue_west
+
+  \keys_define:nn { fnd-tikz/adj-diagram } {
+    w .tl_set:N = \l_fnd_tikz_adj_diagram_w,
+    e .tl_set:N = \l_fnd_tikz_adj_diagram_e,
+
+    width .tl_set:N = \l_fnd_tikz_adj_diagram_width,
+
+    left .tl_set:N = \l_fnd_tikz_adj_diagram_left,
+    right .tl_set:N = \l_fnd_tikz_adj_diagram_right,
+
+    glue .choice:,
+    glue / west .code:n = {\bool_set:Nn \l_fnd_glue_west \c_true_bool},
+    glue~target .tl_set:N = \l_fnd_tikz_glue_target,
+
+    w/style .code:n = {\tikzset{adj/w/.style = {#1}}},
+    e/style .code:n = {\tikzset{adj/e/.style = {#1}}},
+
+    left/style .code:n = {\tikzset{adj/left/.style = {#1}}},
+    left/node/style .code:n = {\tikzset{adj/left/node/.style = {#1}}},
+    right/style .code:n = {\tikzset{adj/right/.style = {#1}}},
+    right/node/style .code:n = {\tikzset{adj/right/node/.style = {#1}}},
+
+    draft .meta:n = {
+      e = {\__fnd_tikz_adj_diagram_fmt_placeholder:n {e}},
+      w = {\__fnd_tikz_adj_diagram_fmt_placeholder:n {w}},
+      left = {\__fnd_tikz_adj_diagram_fmt_placeholder:n {left}},
+      right = {\__fnd_tikz_adj_diagram_fmt_placeholder:n {right}},
+    }
+  }
+
+  \tl_set:Nn \l_fnd_tikz_adj_diagram_width { 2cm }
+
+  \cs_new:Npn \__fnd_tikz_adj_diagram_fmt_placeholder:n #1 {
+    \texttt{\textcolor{red}{#1}}
+  }
+
+  \keys_set:nn { fnd-tikz/adj-diagram } {
+    glue~target = {},
+  }
+
+  \cs_new:Nn \__fnd_tikz_render_adj_diagram:n {
+    \group_begin:
+    \keys_set:nn {fnd-tikz/adj-diagram} {#1} {
+      % gluing will be implemented when I need it
+      \node (w) [adj/w] {$\l_fnd_tikz_adj_diagram_w$};
+      \node (e) [right=\l_fnd_tikz_adj_diagram_width~of~w,adj/e] {$\l_fnd_tikz_adj_diagram_e$};
+        \draw [morphism,adj/left,offset=.15cm] (e) to node[adj/left/node] (n) {$\l_fnd_tikz_adj_diagram_left$} (w);
+        \draw [morphism,adj/right,offset=.15cm] (w) to node[adj/right/node] (s) {$\l_fnd_tikz_adj_diagram_right$} (e);
+        \path [morphism] (s) to node[rotate=-90] {$\dashv$} (n);
+    }
+    \group_end:
+  }
+
+  \NewDocumentCommand\AdjDiagram{m}{
+    \begin{tikzpicture}[diagram]
+      \__fnd_tikz_render_adj_diagram:n {#1}
+    \end{tikzpicture}
+  }
+  
+  \ExplSyntaxOff
+  %
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
+      </fr:embedded-tex-preamble><fr:embedded-tex-body>
+           \begin {tikzpicture}[diagram]
+             \SpliceDiagramSquare {
+              nw = B',
+              nw/style = pullback,
+              ne = C',
+              sw = B,
+              se = C,
+              south = g,
+              west = n,
+              west/style = {&gt;-&gt;},
+              west/node/style = {desc},
+              east = o,
+              east/style = {&gt;-&gt;},
+            }
+             \node  [left = of nw, pullback] (A') {$A'$};
+             \node  [left = of sw] (A) {$A$};
+             \draw  [-&gt;,morphism] (A') to (nw);
+             \draw  [&gt;-&gt;,morphism] (A') to node[swap] {$m$} (A);
+             \draw  [-&gt;,morphism] (A) to node[swap] {$f$} (sw);
+           \end {tikzpicture}
+          
+        </fr:embedded-tex-body></fr:embedded-tex>
+    
+  
+        Then by the <fr:link
+href="ct-0008.xml"
+type="local"
+addr="ct-0008">pasting lemma of pullbacks</fr:link>, the outer rectangle is also a pullback.
+      </fr:mainmatter></fr:tree></fr:li></fr:ol>
+</fr:mainmatter></fr:tree>
+    
+  </fr:mainmatter></fr:tree></fr:related><fr:backlinks><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="true"
+root="false"><fr:frontmatter><fr:anchor>541</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>topo-000I</fr:addr><fr:route>topo-000I.xml</fr:route><fr:title>Singleton maps are monomorphisms</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:authors><fr:author><fr:link
+href="frankndrssn.xml"
+type="local"
+addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>A</fr:tex> be any object in a <fr:link
+href="topo-0001.xml"
+type="local"
+addr="topo-0001">topos</fr:link> and let <fr:tex>\{ \} \colon  A  \to   \Omega ^{A}</fr:tex> be the <fr:link
+href="topo-000J.xml"
+type="local"
+addr="topo-000J">name</fr:link> of the diagonal relation <fr:tex>\Delta \colon  A  \rightarrowtail  A  \times  A</fr:tex>. <fr:tex>\{ \}</fr:tex> is a monomorphism.</fr:p>
+  
+    
+    <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="false"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"><fr:frontmatter><fr:anchor>279</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:authors><fr:author><fr:link
+href="frankndrssn.xml"
+type="local"
+addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors><fr:parent>topo-000I</fr:parent></fr:frontmatter><fr:mainmatter>
+  By <fr:ref
+addr="topo-0009"
+href="topo-0009.xml"
+taxon="Lemma"></fr:ref>, the following square is a pullback.
+  
+  
+    
+    <fr:embedded-tex
+hash="3b3c98023d2d819172c62233053c5670"><fr:embedded-tex-preamble>
+       
+   \RequirePackage {tikz}
+   \RequirePackage {amsmath}
+   \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
+
+   \definecolor {catccolor}{RGB}{255,244,138}
+   \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
+   \tikzstyle {catc}=[catccolor!60]
+   \tikzstyle {catd}=[orange!40]
+   \tikzstyle {cate}=[red!40]
+   \tikzstyle {catf}=[blue!10]
+   \tikzstyle {catg}=[green!25]
+
+
+   \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
+   \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
+
+   \NewDocumentCommand \CreateRect {D&lt;&gt;{} m m}{
+     \path 
+      coordinate (#1nw)
+      ++(#2,-#3) coordinate (#1se)
+      coordinate (#1sw) at (#1se -| #1nw)
+      coordinate (#1ne) at (#1nw -| #1se)
+    ;
+
+     \path [spath/save = #1north] (#1nw) to (#1ne);
+     \path [spath/save = #1west] (#1nw) to (#1sw);
+     \path [spath/save = #1east] (#1ne) to (#1se);
+     \path [spath/save = #1south] (#1sw) to (#1se);
+  }
+ 
+       
+    \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd, quiver}
+  \usetikzlibrary{matrix,arrows}
+  \usetikzlibrary{backgrounds,fit,positioning,calc,shapes}
+  \usetikzlibrary{decorations.pathreplacing}
+  \usetikzlibrary{decorations.pathmorphing}
+  \usetikzlibrary{decorations.markings}
+
+  % basic settings
+  \tikzset{
+    diagram/.style = {
+      on grid,
+      node distance=2cm,
+      commutative diagrams/every diagram,
+      line width = .5pt,
+      every node/.append style = {
+        commutative diagrams/every cell,
+      },
+    },
+    morphism/.style = {
+      auto=left,
+      font=\scriptsize,
+    },
+    desc/.style = {anchor=center,fill=white,inner sep=3pt},
+    % /tikz/pos=&lt;fraction&gt; is a key already
+    offset/.style args = {#1} {commutative diagrams/shift right={#1}},
+  }
+
+  % pullback and pushout
+  \tikzset{
+    pullback/.style = {
+      append after command = {
+        \pgfextra{
+          \draw ($(\tikzlastnode) + (.2cm,-.5cm)$) -- ++(0.3cm,0) -- ++(0,0.3cm);
+        }
+      }
+    },
+    pushout/.style = {
+      append after command={
+        \pgfextra{
+          \draw ($(\tikzlastnode) + (-.2cm,.5cm)$) -- ++(-0.3cm,0) -- ++(0,-0.3cm);
+        }
+      }
+    },
+  }
+
+  % arrow styles
+  \tikzset{
+    fibration/.style = {
+      -{Triangle[open]}
+    },
+    etale/.style = {
+      -{Triangle[open]}
+    },
+    etale cover/.style= {
+      &gt;={Triangle[open]},-&gt;.&gt;
+    },
+    opfibration/.style = {
+      -{Triangle}
+    },
+    lies over/.style = {
+      |-{Triangle[open]}
+    },
+    op lies over/.style = {
+      |-{Triangle}
+    },
+    embedding/.style = {
+      {right hook}-&gt;
+    },
+    open immersion/.style = {
+      {right hook}-{Triangle[open]}
+    },
+    closed immersion/.style = {
+      {right hook}-{Triangle}
+    },
+    closed immersion*/.style = {
+      {left hook}-{Triangle}
+    },
+    embedding*/.style = {
+      {left hook}-&gt;
+    },
+    open immersion*/.style = {
+      {left hook}-{Triangle[open]}
+    },
+    exists/.style = {
+      densely dashed
+    },
+    equal/.style = {
+      double
+    },
+  }
+
+  \newlength{\dontworryaboutit}
+
+  \tikzset{
+    inline diagram/.style = {
+      commutative diagrams/every diagram,
+      commutative diagrams/cramped,
+      line width = .5pt,
+      every node/.append style = {
+        commutative diagrams/every cell,
+        anchor = base,
+        inner sep = 0pt
+      },
+      every path/.append style = {
+        outer xsep = 2pt
+      }
+    }
+  }
+  
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  % Primitives for drawing commutative squares
+  \tikzset{
+    square/nw/.style = {},
+    square/ne/.style = {},
+    square/se/.style = {},
+    square/sw/.style = {},
+    square/north/.style = {-&gt;},
+    square/south/.style = {-&gt;},
+    square/west/.style = {-&gt;},
+    square/east/.style = {-&gt;},
+    square/north/node/.style = {above},
+    square/south/node/.style = {below},
+    square/west/node/.style = {left},
+    square/east/node/.style = {right},
+  }
+
+  \ExplSyntaxOn
+
+  \bool_new:N \l_jon_glue_west
+
+  \keys_define:nn { jon-tikz/diagram } {
+    nw .tl_set:N = \l_jon_tikz_diagram_nw,
+    sw .tl_set:N = \l_jon_tikz_diagram_sw,
+    ne .tl_set:N = \l_jon_tikz_diagram_ne,
+    se .tl_set:N = \l_jon_tikz_diagram_se,
+
+    width .tl_set:N = \l_jon_tikz_diagram_width,
+    height .tl_set:N = \l_jon_tikz_diagram_height,
+
+    north .tl_set:N = \l_jon_tikz_diagram_north,
+    south .tl_set:N = \l_jon_tikz_diagram_south,
+    west .tl_set:N = \l_jon_tikz_diagram_west,
+    east .tl_set:N = \l_jon_tikz_diagram_east,
+
+    nw/style .code:n = {\tikzset{square/nw/.style = {#1}}},
+    sw/style .code:n = {\tikzset{square/sw/.style = {#1}}},
+    ne/style .code:n = {\tikzset{square/ne/.style = {#1}}},
+    se/style .code:n = {\tikzset{square/se/.style = {#1}}},
+
+    glue .choice:,
+    glue / west .code:n = {\bool_set:Nn \l_jon_glue_west \c_true_bool},
+
+    glue~target .tl_set:N = \l_jon_tikz_glue_target,
+
+    north/style .code:n = {\tikzset{square/north/.style = {#1}}},
+    north/node/style .code:n = {\tikzset{square/north/node/.style = {#1}}},
+    south/style .code:n = {\tikzset{square/south/.style = {#1}}},
+    south/node/style .code:n = {\tikzset{square/south/node/.style = {#1}}},
+    west/style .code:n = {\tikzset{square/west/.style = {#1}}},
+    west/node/style .code:n = {\tikzset{square/west/node/.style = {#1}}},
+    east/style .code:n = {\tikzset{square/east/.style = {#1}}},
+    east/node/style .code:n = {\tikzset{square/east/node/.style = {#1}}},
+
+    draft .meta:n = {
+      nw = {\__jon_tikz_diagram_fmt_placeholder:n {nw}},
+      sw = {\__jon_tikz_diagram_fmt_placeholder:n {sw}},
+      se = {\__jon_tikz_diagram_fmt_placeholder:n {se}},
+      ne = {\__jon_tikz_diagram_fmt_placeholder:n {ne}},
+      north = {\__jon_tikz_diagram_fmt_placeholder:n {north}},
+      south = {\__jon_tikz_diagram_fmt_placeholder:n {south}},
+      west = {\__jon_tikz_diagram_fmt_placeholder:n {west}},
+      east = {\__jon_tikz_diagram_fmt_placeholder:n {east}},
+    }
+  }
+
+  \tl_set:Nn \l_jon_tikz_diagram_width { 2cm }
+  \tl_set:Nn \l_jon_tikz_diagram_height { 2cm }
+
+
+  \cs_new:Npn \__jon_tikz_diagram_fmt_placeholder:n #1 {
+    \texttt{\textcolor{red}{#1}}
+  }
+
+  \keys_set:nn { jon-tikz/diagram } {
+    glue~target = {},
+  }
+
+
+  \cs_new:Nn \__jon_tikz_render_square:nn {
+    \group_begin:
+    \keys_set:nn {jon-tikz/diagram} {#2}
+    \bool_if:nTF \l_jon_glue_west {
+      \node (#1ne) [right = \l_jon_tikz_diagram_width~of~\l_jon_tikz_glue_target ne,square/ne] {$\l_jon_tikz_diagram_ne$};
+      \node (#1se) [below = \l_jon_tikz_diagram_height~of~#1ne,square/se] {$\l_jon_tikz_diagram_se$};
+      \draw[morphism,square/north] (\l_jon_tikz_glue_target ne) to node [square/north/node] {$\l_jon_tikz_diagram_north$} (#1ne);
+      \draw[morphism,square/east] (#1ne) to node [square/east/node] {$\l_jon_tikz_diagram_east$} (#1se);
+      \draw[morphism,square/south] (\l_jon_tikz_glue_target se) to node [square/south/node] {$\l_jon_tikz_diagram_south$} (#1se);
+    } {
+      \node (#1nw) [square/nw] {$\l_jon_tikz_diagram_nw$};
+      \node (#1sw) [below = \l_jon_tikz_diagram_height~of~#1nw,square/sw] {$\l_jon_tikz_diagram_sw$};
+      \draw[morphism,square/west] (#1nw) to node [square/west/node] {$\l_jon_tikz_diagram_west$} (#1sw);
+
+      \node (#1ne) [right = \l_jon_tikz_diagram_width~of~#1nw,square/ne] {$\l_jon_tikz_diagram_ne$};
+      \node (#1se) [below = \l_jon_tikz_diagram_height~of~#1ne,square/se] {$\l_jon_tikz_diagram_se$};
+      \draw[morphism,square/north] (#1nw) to node [square/north/node] {$\l_jon_tikz_diagram_north$} (#1ne);
+      \draw[morphism,square/east] (#1ne) to node [square/east/node] {$\l_jon_tikz_diagram_east$} (#1se);
+      \draw[morphism,square/south] (#1sw) to node [square/south/node] {$\l_jon_tikz_diagram_south$} (#1se);
+    }
+    \group_end:
+  }
+
+  \NewDocumentCommand\SpliceDiagramSquare{D&lt;&gt;{}m}{
+    \__jon_tikz_render_square:nn {#1} {#2}
+  }
+
+
+  \NewDocumentCommand\DiagramSquare{D&lt;&gt;{}O{}m}{
+    \begin{tikzpicture}[diagram,#2,baseline=(#1sw.base)]
+      \__jon_tikz_render_square:nn {#1} {#3}
+    \end{tikzpicture}
+  }
+
+  \ExplSyntaxOff
+  %
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  % Primitives for drawing adjunction diagrams
+  \tikzset{
+    adj/w/.style = {},
+    adj/e/.style = {},
+    adj/left/.style = {-&gt;},
+    adj/right/.style = {-&gt;},
+    adj/left/node/.style = {above},
+    adj/right/node/.style = {below},
+  }
+
+  \ExplSyntaxOn
+
+  \bool_new:N \l_fnd_glue_west
+
+  \keys_define:nn { fnd-tikz/adj-diagram } {
+    w .tl_set:N = \l_fnd_tikz_adj_diagram_w,
+    e .tl_set:N = \l_fnd_tikz_adj_diagram_e,
+
+    width .tl_set:N = \l_fnd_tikz_adj_diagram_width,
+
+    left .tl_set:N = \l_fnd_tikz_adj_diagram_left,
+    right .tl_set:N = \l_fnd_tikz_adj_diagram_right,
+
+    glue .choice:,
+    glue / west .code:n = {\bool_set:Nn \l_fnd_glue_west \c_true_bool},
+    glue~target .tl_set:N = \l_fnd_tikz_glue_target,
+
+    w/style .code:n = {\tikzset{adj/w/.style = {#1}}},
+    e/style .code:n = {\tikzset{adj/e/.style = {#1}}},
+
+    left/style .code:n = {\tikzset{adj/left/.style = {#1}}},
+    left/node/style .code:n = {\tikzset{adj/left/node/.style = {#1}}},
+    right/style .code:n = {\tikzset{adj/right/.style = {#1}}},
+    right/node/style .code:n = {\tikzset{adj/right/node/.style = {#1}}},
+
+    draft .meta:n = {
+      e = {\__fnd_tikz_adj_diagram_fmt_placeholder:n {e}},
+      w = {\__fnd_tikz_adj_diagram_fmt_placeholder:n {w}},
+      left = {\__fnd_tikz_adj_diagram_fmt_placeholder:n {left}},
+      right = {\__fnd_tikz_adj_diagram_fmt_placeholder:n {right}},
+    }
+  }
+
+  \tl_set:Nn \l_fnd_tikz_adj_diagram_width { 2cm }
+
+  \cs_new:Npn \__fnd_tikz_adj_diagram_fmt_placeholder:n #1 {
+    \texttt{\textcolor{red}{#1}}
+  }
+
+  \keys_set:nn { fnd-tikz/adj-diagram } {
+    glue~target = {},
+  }
+
+  \cs_new:Nn \__fnd_tikz_render_adj_diagram:n {
+    \group_begin:
+    \keys_set:nn {fnd-tikz/adj-diagram} {#1} {
+      % gluing will be implemented when I need it
+      \node (w) [adj/w] {$\l_fnd_tikz_adj_diagram_w$};
+      \node (e) [right=\l_fnd_tikz_adj_diagram_width~of~w,adj/e] {$\l_fnd_tikz_adj_diagram_e$};
+        \draw [morphism,adj/left,offset=.15cm] (e) to node[adj/left/node] (n) {$\l_fnd_tikz_adj_diagram_left$} (w);
+        \draw [morphism,adj/right,offset=.15cm] (w) to node[adj/right/node] (s) {$\l_fnd_tikz_adj_diagram_right$} (e);
+        \path [morphism] (s) to node[rotate=-90] {$\dashv$} (n);
+    }
+    \group_end:
+  }
+
+  \NewDocumentCommand\AdjDiagram{m}{
+    \begin{tikzpicture}[diagram]
+      \__fnd_tikz_render_adj_diagram:n {#1}
+    \end{tikzpicture}
+  }
+  
+  \ExplSyntaxOff
+  %
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
+    </fr:embedded-tex-preamble><fr:embedded-tex-body>
      \DiagramSquare {
       nw = A,
       ne = A,
@@ -397,7 +1574,7 @@ hash="0d83768fb1a3c4e940606ce4dfe52c03"><fr:embedded-tex-preamble>
       south =  \{ \} ,
     }
   </fr:embedded-tex-body></fr:embedded-tex>
- 
+  
 
   Thus, <fr:tex>\{ \}</fr:tex> is a monomorphism.
 </fr:mainmatter></fr:tree>
@@ -409,7 +1586,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>484</fr:anchor><fr:taxon>Terminology</fr:taxon><fr:addr>topo-000J</fr:addr><fr:route>topo-000J.xml</fr:route><fr:title>Name</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>543</fr:anchor><fr:taxon>Terminology</fr:taxon><fr:addr>topo-000J</fr:addr><fr:route>topo-000J.xml</fr:route><fr:title>Name</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>m \colon  R  \rightarrowtail  A  \times  B</fr:tex> be a relation in a <fr:link
@@ -422,7 +1599,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>486</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>topo-0008</fr:addr><fr:route>topo-0008.xml</fr:route><fr:title><fr:link
+root="false"><fr:frontmatter><fr:anchor>545</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>topo-0008</fr:addr><fr:route>topo-0008.xml</fr:route><fr:title><fr:link
 href="topo-0001.xml"
 type="local"
 addr="topo-0001">Topoi</fr:link> are balanced</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
@@ -441,7 +1618,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>262</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>313</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors><fr:parent>topo-0008</fr:parent></fr:frontmatter><fr:mainmatter>
@@ -458,7 +1635,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>488</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>topo-000G</fr:addr><fr:route>topo-000G.xml</fr:route><fr:title><fr:link
+root="false"><fr:frontmatter><fr:anchor>547</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>topo-000G</fr:addr><fr:route>topo-000G.xml</fr:route><fr:title><fr:link
 href="topo-000E.xml"
 type="local"
 addr="topo-000E">Separated</fr:link> objects correspond to <fr:link
@@ -486,7 +1663,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>274</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>325</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors><fr:parent>topo-000G</fr:parent></fr:frontmatter><fr:mainmatter>
@@ -503,7 +1680,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>490</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-000A</fr:addr><fr:route>topo-000A.xml</fr:route><fr:title>Lawvere-Tierney topology</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>549</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-000A</fr:addr><fr:route>topo-000A.xml</fr:route><fr:title>Lawvere-Tierney topology</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>A <fr:em><fr:strong>(Lawvere-Tierney) topology</fr:strong></fr:em> on a <fr:link
@@ -518,7 +1695,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>492</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-000B</fr:addr><fr:route>topo-000B.xml</fr:route><fr:title>Closed subobject</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>551</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-000B</fr:addr><fr:route>topo-000B.xml</fr:route><fr:title>Closed subobject</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>j</fr:tex> be a <fr:link
@@ -537,7 +1714,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>494</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-000C</fr:addr><fr:route>topo-000C.xml</fr:route><fr:title>Closure</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>553</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-000C</fr:addr><fr:route>topo-000C.xml</fr:route><fr:title>Closure</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>j</fr:tex> be a <fr:link
@@ -553,7 +1730,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>496</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-000D</fr:addr><fr:route>topo-000D.xml</fr:route><fr:title>Dense subobject</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>555</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-000D</fr:addr><fr:route>topo-000D.xml</fr:route><fr:title>Dense subobject</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>j</fr:tex> be a <fr:link
@@ -572,7 +1749,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>498</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-000E</fr:addr><fr:route>topo-000E.xml</fr:route><fr:title>Separated object</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>557</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-000E</fr:addr><fr:route>topo-000E.xml</fr:route><fr:title>Separated object</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>j</fr:tex> be a <fr:link
@@ -591,7 +1768,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>500</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-000F</fr:addr><fr:route>topo-000F.xml</fr:route><fr:title>Sheaf</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>559</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-000F</fr:addr><fr:route>topo-000F.xml</fr:route><fr:title>Sheaf</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>j</fr:tex> be a <fr:link
@@ -604,11 +1781,11 @@ addr="topo-0001">topos</fr:link> <fr:tex>    \mathcal { E }  </fr:tex>. An objec
 href="topo-000D.xml"
 type="local"
 addr="topo-000D">dense</fr:link> subobject <fr:tex>m \colon  A  \rightarrowtail  B</fr:tex> and any morphism <fr:tex>f \colon  A  \to  S</fr:tex>, there is <fr:em>exactly</fr:em> one morphism <fr:tex>g \colon  B  \to  S</fr:tex> such that <fr:tex>f = gm</fr:tex>.</fr:p>
- 
   
-  <fr:embedded-tex
-hash="042e34b726ea73a5d0f3dbbdc0ce2377"><fr:embedded-tex-preamble>
     
+    <fr:embedded-tex
+hash="e30033dbcc2fa3c8f0023c490e509d44"><fr:embedded-tex-preamble>
+       
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
    \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
@@ -639,7 +1816,7 @@ hash="042e34b726ea73a5d0f3dbbdc0ce2377"><fr:embedded-tex-preamble>
      \path [spath/save = #1south] (#1sw) to (#1se);
   }
  
-    
+       
     \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd, quiver}
   \usetikzlibrary{matrix,arrows}
   \usetikzlibrary{backgrounds,fit,positioning,calc,shapes}
@@ -662,7 +1839,7 @@ hash="042e34b726ea73a5d0f3dbbdc0ce2377"><fr:embedded-tex-preamble>
       auto=left,
       font=\scriptsize,
     },
-    desc/.style = {centered,fill=white,inner sep=2pt},
+    desc/.style = {anchor=center,fill=white,inner sep=3pt},
     % /tikz/pos=&lt;fraction&gt; is a key already
     offset/.style args = {#1} {commutative diagrams/shift right={#1}},
   }
@@ -943,7 +2120,7 @@ hash="042e34b726ea73a5d0f3dbbdc0ce2377"><fr:embedded-tex-preamble>
   %
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  
-  </fr:embedded-tex-preamble><fr:embedded-tex-body>
+    </fr:embedded-tex-preamble><fr:embedded-tex-body>
    \begin {tikzpicture}[diagram]
      \node  (n) {$A$};
      \node  [below= of n] (s) {$B$};
@@ -953,7 +2130,7 @@ hash="042e34b726ea73a5d0f3dbbdc0ce2377"><fr:embedded-tex-preamble>
      \draw  [morphism,-&gt;,exists] (s) to node [yshift=-2pt,right] {$g$} (e);
    \end {tikzpicture}
 </fr:embedded-tex-body></fr:embedded-tex>
- 
+  
 </fr:mainmatter></fr:tree><fr:tree
 xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
@@ -961,7 +2138,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>502</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>topo-000H</fr:addr><fr:route>topo-000H.xml</fr:route><fr:title>Subobjects of separated objects are separated</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>561</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>topo-000H</fr:addr><fr:route>topo-000H.xml</fr:route><fr:title>Subobjects of separated objects are separated</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>A</fr:tex> be a <fr:link
@@ -983,7 +2160,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>316</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>367</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors><fr:parent>topo-000H</fr:parent></fr:frontmatter><fr:mainmatter>
@@ -995,11 +2172,11 @@ href="topo-000E.xml"
 type="local"
 addr="topo-000E">separated</fr:link>. Then it follows that <fr:tex>g = h</fr:tex> because <fr:tex>m</fr:tex> is a monomorphism.
   
- 
   
-  <fr:embedded-tex
-hash="4a60bbc41e00aa60caff28e7f4474c35"><fr:embedded-tex-preamble>
     
+    <fr:embedded-tex
+hash="51b3d8f8ea7bd0409292afab1a9a4417"><fr:embedded-tex-preamble>
+       
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
    \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
@@ -1030,7 +2207,7 @@ hash="4a60bbc41e00aa60caff28e7f4474c35"><fr:embedded-tex-preamble>
      \path [spath/save = #1south] (#1sw) to (#1se);
   }
  
-    
+       
     \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd, quiver}
   \usetikzlibrary{matrix,arrows}
   \usetikzlibrary{backgrounds,fit,positioning,calc,shapes}
@@ -1053,7 +2230,7 @@ hash="4a60bbc41e00aa60caff28e7f4474c35"><fr:embedded-tex-preamble>
       auto=left,
       font=\scriptsize,
     },
-    desc/.style = {centered,fill=white,inner sep=2pt},
+    desc/.style = {anchor=center,fill=white,inner sep=3pt},
     % /tikz/pos=&lt;fraction&gt; is a key already
     offset/.style args = {#1} {commutative diagrams/shift right={#1}},
   }
@@ -1334,7 +2511,7 @@ hash="4a60bbc41e00aa60caff28e7f4474c35"><fr:embedded-tex-preamble>
   %
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  
-  </fr:embedded-tex-preamble><fr:embedded-tex-body>
+    </fr:embedded-tex-preamble><fr:embedded-tex-body>
          \begin {tikzcd}
       {B'} &amp;&amp; {A'} &amp;&amp; {A}  \\ 
        \\ 
@@ -1348,7 +2525,7 @@ hash="4a60bbc41e00aa60caff28e7f4474c35"><fr:embedded-tex-preamble>
        \arrow ["mh"'{pos=0.8}, shift right=2, curve={height=6pt}, from=3-1, to=1-5]
      \end {tikzcd}
   </fr:embedded-tex-body></fr:embedded-tex>
- 
+  
 
 </fr:mainmatter></fr:tree>
   
@@ -1359,18 +2536,18 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>504</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-0003</fr:addr><fr:route>topo-0003.xml</fr:route><fr:title>Geometric morphism</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>563</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-0003</fr:addr><fr:route>topo-0003.xml</fr:route><fr:title>Geometric morphism</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>    \mathcal { E }  </fr:tex> and <fr:tex>    \mathcal { F }  </fr:tex> be <fr:link
 href="topo-0001.xml"
 type="local"
 addr="topo-0001">topoi</fr:link>. A <fr:em><fr:strong>geometric morphism</fr:strong></fr:em> <fr:tex>{ f } \colon {     \mathcal { E }   } \to {     \mathcal { F }   }</fr:tex> is an adjoint pair of functors</fr:p>
- 
   
-  <fr:embedded-tex
-hash="c199513cb9e8a7ccb5faedc8c60ed42a"><fr:embedded-tex-preamble>
     
+    <fr:embedded-tex
+hash="a68f36d038b488010faa4427ccc5623b"><fr:embedded-tex-preamble>
+       
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
    \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
@@ -1401,7 +2578,7 @@ hash="c199513cb9e8a7ccb5faedc8c60ed42a"><fr:embedded-tex-preamble>
      \path [spath/save = #1south] (#1sw) to (#1se);
   }
  
-    
+       
     \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd, quiver}
   \usetikzlibrary{matrix,arrows}
   \usetikzlibrary{backgrounds,fit,positioning,calc,shapes}
@@ -1424,7 +2601,7 @@ hash="c199513cb9e8a7ccb5faedc8c60ed42a"><fr:embedded-tex-preamble>
       auto=left,
       font=\scriptsize,
     },
-    desc/.style = {centered,fill=white,inner sep=2pt},
+    desc/.style = {anchor=center,fill=white,inner sep=3pt},
     % /tikz/pos=&lt;fraction&gt; is a key already
     offset/.style args = {#1} {commutative diagrams/shift right={#1}},
   }
@@ -1705,7 +2882,7 @@ hash="c199513cb9e8a7ccb5faedc8c60ed42a"><fr:embedded-tex-preamble>
   %
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  
-  </fr:embedded-tex-preamble><fr:embedded-tex-body>
+    </fr:embedded-tex-preamble><fr:embedded-tex-body>
    \AdjDiagram {
     w =  
    \mathcal { E } 
@@ -1717,7 +2894,7 @@ hash="c199513cb9e8a7ccb5faedc8c60ed42a"><fr:embedded-tex-preamble>
     right =  f _{{*}} ,
   }
 </fr:embedded-tex-body></fr:embedded-tex>
- 
+  
 <fr:p>such that <fr:tex>f ^{{*}}</fr:tex> is left exact. The functors <fr:tex>f _{{*}}</fr:tex> and <fr:tex>f ^{{*}}</fr:tex> are called the <fr:em><fr:strong>direct image</fr:strong></fr:em> and the <fr:em><fr:strong>inverse image</fr:strong></fr:em> respectively.</fr:p></fr:mainmatter></fr:tree><fr:tree
 xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
@@ -1725,7 +2902,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>506</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-0002</fr:addr><fr:route>topo-0002.xml</fr:route><fr:title>Logical functor</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>565</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-0002</fr:addr><fr:route>topo-0002.xml</fr:route><fr:title>Logical functor</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>    \mathcal { E }  </fr:tex> and <fr:tex>    \mathcal { F }  </fr:tex> be <fr:link
@@ -1738,7 +2915,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>508</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>topo-0007</fr:addr><fr:route>topo-0007.xml</fr:route><fr:title>Monomorphisms are equalizers in a <fr:link
+root="false"><fr:frontmatter><fr:anchor>567</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>topo-0007</fr:addr><fr:route>topo-0007.xml</fr:route><fr:title>Monomorphisms are equalizers in a <fr:link
 href="topo-0001.xml"
 type="local"
 addr="topo-0001">topos</fr:link></fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
@@ -1757,11 +2934,11 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>258</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>309</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors><fr:parent>topo-0007</fr:parent></fr:frontmatter><fr:mainmatter>
-  Since <fr:tex>{ \top } \colon { 1 } \to { \Omega }</fr:tex> is a split monomorphism, it is the equalizer of <fr:tex>\mathsf {id}_{{ \Omega }}</fr:tex> and <fr:tex>\Omega   \xrightarrow {{ \mathsf {!}_{{ \Omega }} }}  1  \xrightarrow {{ \top }}   \Omega</fr:tex>.
+  Since <fr:tex>{ \top } \colon { 1 } \to { \Omega }</fr:tex> is a split monomorphism, it is the equalizer of <fr:tex>\mathsf {id}_{ \Omega }</fr:tex> and <fr:tex>\Omega   \xrightarrow {{ \mathsf {!}_{ \Omega } }}  1  \xrightarrow {{ \top }}   \Omega</fr:tex>.
   Since every monomorphism is a pullback against <fr:tex>\top</fr:tex>, it follows that every monomorphism is an equalizer.
 </fr:mainmatter></fr:tree>
   
