@@ -7,7 +7,7 @@ numbered="true"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>490</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-0006</fr:addr><fr:route>topo-0006.xml</fr:route><fr:title>Essential <fr:link
+root="false"><fr:frontmatter><fr:anchor>514</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-0006</fr:addr><fr:route>topo-0006.xml</fr:route><fr:title>Essential <fr:link
 href="topo-0003.xml"
 type="local"
 addr="topo-0003">geometric morphism</fr:link></fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
@@ -23,7 +23,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>488</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-0003</fr:addr><fr:route>topo-0003.xml</fr:route><fr:title>Geometric morphism</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>512</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-0003</fr:addr><fr:route>topo-0003.xml</fr:route><fr:title>Geometric morphism</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>    \mathcal { E }  </fr:tex> and <fr:tex>    \mathcal { F }  </fr:tex> be <fr:link
@@ -33,7 +33,7 @@ addr="topo-0001">topoi</fr:link>. A <fr:em><fr:strong>geometric morphism</fr:str
  
   
   <fr:embedded-tex
-hash="841ab37702dbbc3cf7f27cf3ef0eb154"><fr:embedded-tex-preamble>
+hash="c199513cb9e8a7ccb5faedc8c60ed42a"><fr:embedded-tex-preamble>
     
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -84,8 +84,11 @@ hash="841ab37702dbbc3cf7f27cf3ef0eb154"><fr:embedded-tex-preamble>
         commutative diagrams/every cell,
       },
     },
-    morphism/.style = {node font=\scriptsize},
-    desc/.style = {fill=white,inner sep=2pt},
+    morphism/.style = {
+      auto=left,
+      font=\scriptsize,
+    },
+    desc/.style = {centered,fill=white,inner sep=2pt},
     % /tikz/pos=&lt;fraction&gt; is a key already
     offset/.style args = {#1} {commutative diagrams/shift right={#1}},
   }

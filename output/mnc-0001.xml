@@ -7,7 +7,7 @@ numbered="true"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>520</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>mnc-0001</fr:addr><fr:route>mnc-0001.xml</fr:route><fr:title>Monoidal category</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>544</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>mnc-0001</fr:addr><fr:route>mnc-0001.xml</fr:route><fr:title>Monoidal category</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>A <fr:em><fr:strong>monoidal category</fr:strong></fr:em> consists of the following data.</fr:p><fr:ul><fr:li>An underlying category 
@@ -24,14 +24,14 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>429</fr:anchor><fr:taxon>Axiom</fr:taxon><fr:addr>mnc-0002</fr:addr><fr:route>mnc-0002.xml</fr:route><fr:title>Unity axiom</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>449</fr:anchor><fr:taxon>Axiom</fr:taxon><fr:addr>mnc-0002</fr:addr><fr:route>mnc-0002.xml</fr:route><fr:title>Unity axiom</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>The following diagram commutes.</fr:p>
  
   
   <fr:embedded-tex
-hash="21b74c660d5338a9d3c6cecf277736ac"><fr:embedded-tex-preamble>
+hash="fb8be2baa366f48357f42440363646a0"><fr:embedded-tex-preamble>
     
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -82,8 +82,11 @@ hash="21b74c660d5338a9d3c6cecf277736ac"><fr:embedded-tex-preamble>
         commutative diagrams/every cell,
       },
     },
-    morphism/.style = {node font=\scriptsize},
-    desc/.style = {fill=white,inner sep=2pt},
+    morphism/.style = {
+      auto=left,
+      font=\scriptsize,
+    },
+    desc/.style = {centered,fill=white,inner sep=2pt},
     % /tikz/pos=&lt;fraction&gt; is a key already
     offset/.style args = {#1} {commutative diagrams/shift right={#1}},
   }
@@ -388,14 +391,14 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>431</fr:anchor><fr:taxon>Axiom</fr:taxon><fr:addr>mnc-0003</fr:addr><fr:route>mnc-0003.xml</fr:route><fr:title>Pentagon axiom</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>451</fr:anchor><fr:taxon>Axiom</fr:taxon><fr:addr>mnc-0003</fr:addr><fr:route>mnc-0003.xml</fr:route><fr:title>Pentagon axiom</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>The following diagram commutes.</fr:p>
  
   
   <fr:embedded-tex
-hash="c7b061431bab941f88c0ece9abacbf74"><fr:embedded-tex-preamble>
+hash="7f0a610f1520acffff8f3f69cd8403e0"><fr:embedded-tex-preamble>
     
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -446,8 +449,11 @@ hash="c7b061431bab941f88c0ece9abacbf74"><fr:embedded-tex-preamble>
         commutative diagrams/every cell,
       },
     },
-    morphism/.style = {node font=\scriptsize},
-    desc/.style = {fill=white,inner sep=2pt},
+    morphism/.style = {
+      auto=left,
+      font=\scriptsize,
+    },
+    desc/.style = {centered,fill=white,inner sep=2pt},
     % /tikz/pos=&lt;fraction&gt; is a key already
     offset/.style args = {#1} {commutative diagrams/shift right={#1}},
   }
@@ -730,26 +736,26 @@ hash="c7b061431bab941f88c0ece9abacbf74"><fr:embedded-tex-preamble>
  
   </fr:embedded-tex-preamble><fr:embedded-tex-body>
    \begin {tikzpicture}[diagram]
-     \node  (n) {$(W  \otimes  X)  \otimes  (Y  \otimes  Z)$};
-     \node  (e) [below right=1.25cm and 3.5cm of n] {$W  \otimes  (X  \otimes  (Y  \otimes  Z))$};
-     \node  (w) [below left=1.25cm and 3.5cm of n] {$((W  \otimes  X)  \otimes  Y)  \otimes  Z$};
-     \node  (sw) [below right=2cm and 1cm of w] {$(W  \otimes  (X  \otimes  Y))  \otimes  Z$};
-     \node  (se) [below left=2cm and 1cm of e] {$W  \otimes  ((X  \otimes  Y)  \otimes  Z)$};
-     \draw  [-&gt;,morphism] (w) to node[yshift=.25cm,left] {$ 
+     \node  (1) at (90:3cm) {$(W  \otimes  X)  \otimes  (Y  \otimes  Z)$};
+     \node  (2) at (90+72:4cm) {$((W  \otimes  X)  \otimes  Y)  \otimes  Z$};
+     \node  (3) at (90+2*72-30:1.5cm) { \makebox [3ex][r]{$(W  \otimes  (X  \otimes  Y))  \otimes  Z$}};
+     \node  (4) at (90+3*72+30:1.5cm) { \makebox [3ex][l]{$W  \otimes  ((X  \otimes  Y)  \otimes  Z)$}};
+     \node  (5) at (90+4*72:4cm) {$W  \otimes  (X  \otimes  (Y  \otimes  Z))$};
+     \draw  [-&gt;,morphism] (2) to node {$ 
    \alpha _{{ W  \otimes  X },{ Y },{ Z }} 
- $} (n);
-     \draw  [-&gt;,morphism] (w) to node[xshift=-.1cm,left] {$ 
-   \alpha _{{ W },{ X },{ Y }} 
-   \otimes  Z$} (sw);
-     \draw  [-&gt;,morphism] (n) to node[yshift=.25cm,right] {$ 
+ $} (1);
+     \draw  [-&gt;,morphism] (1) to node {$ 
    \alpha _{{ W },{ X },{ Y  \otimes  Z }} 
- $} (e);
-     \draw  [-&gt;,morphism] (sw) to node[below] {$ 
+ $} (5);
+     \draw  [-&gt;,morphism] (2) to node[swap] {$ 
+   \alpha _{{ W },{ X },{ Y }} 
+   \otimes  Z$} (3);
+     \draw  [-&gt;,morphism] (3) to node[swap] {$ 
    \alpha _{{ W },{ X  \otimes  Y },{ Z }} 
- $} (se);
-     \draw  [-&gt;,morphism] (se) to node[xshift=.1cm,right] {$W  \otimes   
+ $} (4);
+     \draw  [-&gt;,morphism] (4) to node[swap] {$W  \otimes   
    \alpha _{{ X },{ Y },{ Z }} 
- $} (e);
+ $} (5);
    \end {tikzpicture}
 </fr:embedded-tex-body></fr:embedded-tex>
  
@@ -760,7 +766,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>516</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>mnc-0005</fr:addr><fr:route>mnc-0005.xml</fr:route><fr:title>Monoidal functor</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>540</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>mnc-0005</fr:addr><fr:route>mnc-0005.xml</fr:route><fr:title>Monoidal functor</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Let 
@@ -785,14 +791,14 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>435</fr:anchor><fr:taxon>Axiom</fr:taxon><fr:addr>mnc-0006</fr:addr><fr:route>mnc-0006.xml</fr:route><fr:title>Associativity</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>455</fr:anchor><fr:taxon>Axiom</fr:taxon><fr:addr>mnc-0006</fr:addr><fr:route>mnc-0006.xml</fr:route><fr:title>Associativity</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>The following diagram commutes.</fr:p>
  
   
   <fr:embedded-tex
-hash="070a352f3a3512dea0e80e55e825785f"><fr:embedded-tex-preamble>
+hash="15dd689fd7f0a4b17bbb7d48a5158a50"><fr:embedded-tex-preamble>
     
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -843,8 +849,11 @@ hash="070a352f3a3512dea0e80e55e825785f"><fr:embedded-tex-preamble>
         commutative diagrams/every cell,
       },
     },
-    morphism/.style = {node font=\scriptsize},
-    desc/.style = {fill=white,inner sep=2pt},
+    morphism/.style = {
+      auto=left,
+      font=\scriptsize,
+    },
+    desc/.style = {centered,fill=white,inner sep=2pt},
     % /tikz/pos=&lt;fraction&gt; is a key already
     offset/.style args = {#1} {commutative diagrams/shift right={#1}},
   }
@@ -1153,14 +1162,14 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>437</fr:anchor><fr:taxon>Axiom</fr:taxon><fr:addr>mnc-0007</fr:addr><fr:route>mnc-0007.xml</fr:route><fr:title>Left unity axiom</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>457</fr:anchor><fr:taxon>Axiom</fr:taxon><fr:addr>mnc-0007</fr:addr><fr:route>mnc-0007.xml</fr:route><fr:title>Left unity axiom</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>The following diagram commutes.</fr:p>
  
   
   <fr:embedded-tex
-hash="c1ff6732252f7a149e20243b4af33b1d"><fr:embedded-tex-preamble>
+hash="0d6b86eb50faece4843e231d4ca826e5"><fr:embedded-tex-preamble>
     
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -1211,8 +1220,11 @@ hash="c1ff6732252f7a149e20243b4af33b1d"><fr:embedded-tex-preamble>
         commutative diagrams/every cell,
       },
     },
-    morphism/.style = {node font=\scriptsize},
-    desc/.style = {fill=white,inner sep=2pt},
+    morphism/.style = {
+      auto=left,
+      font=\scriptsize,
+    },
+    desc/.style = {centered,fill=white,inner sep=2pt},
     % /tikz/pos=&lt;fraction&gt; is a key already
     offset/.style args = {#1} {commutative diagrams/shift right={#1}},
   }
@@ -1527,14 +1539,14 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>439</fr:anchor><fr:taxon>Axiom</fr:taxon><fr:addr>mnc-0008</fr:addr><fr:route>mnc-0008.xml</fr:route><fr:title>Right unity axiom</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>459</fr:anchor><fr:taxon>Axiom</fr:taxon><fr:addr>mnc-0008</fr:addr><fr:route>mnc-0008.xml</fr:route><fr:title>Right unity axiom</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>The following diagram commutes.</fr:p>
  
   
   <fr:embedded-tex
-hash="4e0e7739030bf59a58865a49076e1184"><fr:embedded-tex-preamble>
+hash="8fd2d144b2e8edfd709f8efaed8f3288"><fr:embedded-tex-preamble>
     
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -1585,8 +1597,11 @@ hash="4e0e7739030bf59a58865a49076e1184"><fr:embedded-tex-preamble>
         commutative diagrams/every cell,
       },
     },
-    morphism/.style = {node font=\scriptsize},
-    desc/.style = {fill=white,inner sep=2pt},
+    morphism/.style = {
+      auto=left,
+      font=\scriptsize,
+    },
+    desc/.style = {centered,fill=white,inner sep=2pt},
     % /tikz/pos=&lt;fraction&gt; is a key already
     offset/.style args = {#1} {commutative diagrams/shift right={#1}},
   }
@@ -1901,7 +1916,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>518</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>mnc-0004</fr:addr><fr:route>mnc-0004.xml</fr:route><fr:title>Strict <fr:link
+root="false"><fr:frontmatter><fr:anchor>542</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>mnc-0004</fr:addr><fr:route>mnc-0004.xml</fr:route><fr:title>Strict <fr:link
 href="mnc-0001.xml"
 type="local"
 addr="mnc-0001">monoidal category</fr:link></fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
