@@ -17,9 +17,9 @@ addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter
 href="topo-0001.xml"
 type="local"
 addr="topo-0001">topos</fr:link> is balanced.</fr:p>
-  
     
-    <fr:tree
+      
+      <fr:tree
 xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="false"
 numbered="true"
@@ -35,8 +35,8 @@ addr="topo-0007"
 href="topo-0007.xml"
 taxon="Lemma"></fr:ref>, every monomorphism is regular. Thus, any epic monomorphism is automatically an isomorphism.
 </fr:mainmatter></fr:tree>
-  
-</fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context></fr:context><fr:related><fr:tree
+    
+  </fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context></fr:context><fr:related><fr:tree
 xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
 numbered="false"
@@ -66,9 +66,9 @@ addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter
 href="topo-0001.xml"
 type="local"
 addr="topo-0001">topos</fr:link>, every monomorphism is an equalizer.</fr:p>
-  
     
-    <fr:tree
+      
+      <fr:tree
 xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="false"
 numbered="true"
@@ -79,8 +79,8 @@ root="false"><fr:frontmatter><fr:anchor>357</fr:anchor><fr:taxon>Proof</fr:taxon
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors><fr:parent>topo-0007</fr:parent></fr:frontmatter><fr:mainmatter>
-  Since <fr:tex>{ \top } \colon { 1 } \to { \Omega }</fr:tex> is a split monomorphism, it is the equalizer of <fr:tex>\mathsf {id}_{ \Omega }</fr:tex> and <fr:tex>\Omega   \xrightarrow {{ \mathsf {!}_{ \Omega } }}  1  \xrightarrow {{ \top }}   \Omega</fr:tex>.
-  Since every monomorphism is a pullback against <fr:tex>\top</fr:tex>, it follows that every monomorphism is an equalizer.
+  Since <fr:tex>\Mor { \topoTop }{1}{ \topoOmega }</fr:tex> is a split monomorphism, it is the equalizer of <fr:tex>\mathsf {id} _{ \topoOmega }</fr:tex> and <fr:tex>\topoOmega   \xto { \unq { \topoOmega }} 1  \xto { \topoTop }  \topoOmega</fr:tex>.
+  Since every monomorphism is a pullback against <fr:tex>\topoTop</fr:tex>, it follows that every monomorphism is an equalizer.
 </fr:mainmatter></fr:tree>
-  
-</fr:mainmatter></fr:tree></fr:related><fr:backlinks></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>
+    
+  </fr:mainmatter></fr:tree></fr:related><fr:backlinks></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>

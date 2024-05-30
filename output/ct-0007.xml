@@ -27,7 +27,7 @@ root="false"><fr:frontmatter><fr:anchor>293</fr:anchor><fr:taxon>Proof</fr:taxon
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors><fr:parent>ct-0007</fr:parent></fr:frontmatter><fr:mainmatter>
-  It suffices to specify an action on morphisms. Let <fr:tex>f \colon  A  \to  B</fr:tex> be an arbitrary morphism. Since monomorphisms are stable under pullback, the pullback functor <fr:tex>f ^{*} \colon   \mathcal { C } _{/ B }   \to   \mathcal { C } _{/ A }</fr:tex> restricts to a functor <fr:tex>f ^{*} \colon   \mathsf { Sub } (B)  \to   \mathsf { Sub } (A)</fr:tex>. Then pseudofunctoriality follows from the following facts:
+  It suffices to specify an action on morphisms. Let <fr:tex>f \colon A \to B</fr:tex> be an arbitrary morphism. Since monomorphisms are stable under pullback, the pullback functor <fr:tex>f ^{*} \colon \mathcal { C } _{/ B } \to \mathcal { C } _{/ A }</fr:tex> restricts to a functor <fr:tex>f ^{*} \colon \mathsf { Sub } (B) \to \mathsf { Sub } (A)</fr:tex>. Then pseudofunctoriality follows from the following facts:
   <fr:ul><fr:li>Let <fr:tex>f \colon  A  \to  B</fr:tex>, <fr:tex>g \colon  B  \to  C</fr:tex>, and <fr:tex>m \colon  C'  \rightarrowtail  C</fr:tex> be given. By the <fr:link
 href="ct-0008.xml"
 type="local"
@@ -46,9 +46,9 @@ root="false"><fr:frontmatter><fr:anchor>289</fr:anchor><fr:taxon>Lemma</fr:taxon
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter>
-  
     
-    <fr:tree
+      
+      <fr:tree
 xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="false"
 numbered="true"
@@ -64,8 +64,8 @@ href="todo.xml"
 type="local"
 addr="todo">TODO</fr:link>
 </fr:mainmatter></fr:tree>
-  
-</fr:mainmatter></fr:tree><fr:tree
+    
+  </fr:mainmatter></fr:tree><fr:tree
 xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
 numbered="false"
@@ -75,4 +75,4 @@ expanded="true"
 root="false"><fr:frontmatter><fr:anchor>291</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>ct-0006</fr:addr><fr:route>ct-0006.xml</fr:route><fr:title>Subobject</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
-addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>B</fr:tex> be an object in a category <fr:tex>    \mathcal { C }  </fr:tex>. A <fr:em><fr:strong>subobject</fr:strong></fr:em> of <fr:tex>B</fr:tex> is a monomorphism <fr:tex>m \colon  A  \rightarrowtail  B</fr:tex>. The <fr:em><fr:strong>category of subobjects of <fr:tex>B</fr:tex></fr:strong></fr:em>, denoted as <fr:tex>\mathsf {Sub}( B )</fr:tex>, is the full subcategory of <fr:tex>    \mathcal { C }   _{/ B }</fr:tex> spanned by monomorphisms.</fr:p></fr:mainmatter></fr:tree></fr:related><fr:backlinks></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>
+addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>B</fr:tex> be an object in a category <fr:tex>\mathcal { C }</fr:tex>. A <fr:em><fr:strong>subobject</fr:strong></fr:em> of <fr:tex>B</fr:tex> is a monomorphism <fr:tex>m \colon  A  \rightarrowtail  B</fr:tex>. The <fr:em><fr:strong>category of subobjects of <fr:tex>B</fr:tex></fr:strong></fr:em>, denoted as <fr:tex>\mathsf { Sub } (B)</fr:tex>, is the full subcategory of <fr:tex>\mathcal { C } _{/ B }</fr:tex> spanned by monomorphisms.</fr:p></fr:mainmatter></fr:tree></fr:related><fr:backlinks></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>

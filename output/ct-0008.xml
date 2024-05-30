@@ -11,9 +11,9 @@ root="false"><fr:frontmatter><fr:anchor>345</fr:anchor><fr:taxon>Lemma</fr:taxon
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter>
-  
     
-    <fr:tree
+      
+      <fr:tree
 xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="false"
 numbered="true"
@@ -29,8 +29,8 @@ href="todo.xml"
 type="local"
 addr="todo">TODO</fr:link>
 </fr:mainmatter></fr:tree>
-  
-</fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context></fr:context><fr:related><fr:tree
+    
+  </fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context></fr:context><fr:related><fr:tree
 xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
 numbered="false"
@@ -40,13 +40,7 @@ expanded="true"
 root="false"><fr:frontmatter><fr:anchor>343</fr:anchor><fr:addr>todo</fr:addr><fr:route>todo.xml</fr:route><fr:title>TODO</fr:title><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
-addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p><fr:ul><fr:li>Clean up <fr:link
-href="base-macros.xml"
-type="local"
-addr="base-macros">basic macros</fr:link> and <fr:link
-href="math-macros.xml"
-type="local"
-addr="math-macros">math macros</fr:link>.</fr:li></fr:ul></fr:p></fr:mainmatter></fr:tree></fr:related><fr:backlinks><fr:tree
+addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter></fr:mainmatter></fr:tree></fr:related><fr:backlinks><fr:tree
 xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
 numbered="false"
@@ -59,7 +53,7 @@ type="local"
 addr="ct-000A">generic subobject</fr:link> is terminal</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
-addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>\top \colon   \Omega '  \rightarrowtail   \Omega</fr:tex> be the generic subobject of a category <fr:tex>\mathcal { C }</fr:tex> with pullbacks, then <fr:tex>\Omega '</fr:tex> is terminal.</fr:p>
+addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>\top \colon \Omega ' \to \Omega</fr:tex> be the generic subobject of a category <fr:tex>\mathcal { C }</fr:tex> with pullbacks, then <fr:tex>\Omega '</fr:tex> is terminal.</fr:p>
     
       
       <fr:tree
@@ -91,7 +85,7 @@ taxon="Definition"></fr:ref>, there is a pullback square</fr:p>
     
       
       <fr:embedded-tex
-hash="3b9c4a8513f3894c0c071728fb543d69"><fr:embedded-tex-preamble>
+hash="fccf21acbc7c61477dd10a1f11e2b844"><fr:embedded-tex-preamble>
          
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -124,7 +118,8 @@ hash="3b9c4a8513f3894c0c071728fb543d69"><fr:embedded-tex-preamble>
   }
  
          
-    \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd, quiver}
+   % appears to be necessary
+  \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd}
   \usetikzlibrary{matrix,arrows}
   \usetikzlibrary{backgrounds,fit,positioning,calc,shapes}
   \usetikzlibrary{decorations.pathreplacing}
@@ -144,11 +139,23 @@ hash="3b9c4a8513f3894c0c071728fb543d69"><fr:embedded-tex-preamble>
     },
     morphism/.style = {
       auto=left,
-      font=\scriptsize,
+      node font=\scriptsize,
+    },
+    phantom/.style = {
+      commutative diagrams/phantom,
+      node font=\scriptsize,
+      sloped,
     },
     desc/.style = {anchor=center,fill=white,inner sep=3pt},
-    % /tikz/pos=&lt;fraction&gt; is a key already
     offset/.style args = {#1} {commutative diagrams/shift right={#1}},
+    cross over/.style = {
+      commutative diagrams/crossing over
+    },
+  }
+
+  % macro that draws the adjunction symbol in a diagram
+  \NewDocumentCommand\DrawAdj{mm}{
+    \draw [phantom] (#1) to node[rotate=180] {$\dashv$} (#2);
   }
 
   % pullback and pushout
@@ -171,51 +178,12 @@ hash="3b9c4a8513f3894c0c071728fb543d69"><fr:embedded-tex-preamble>
 
   % arrow styles
   \tikzset{
-    fibration/.style = {
-      -{Triangle[open]}
-    },
-    etale/.style = {
-      -{Triangle[open]}
-    },
-    etale cover/.style= {
-      &gt;={Triangle[open]},-&gt;.&gt;
-    },
-    opfibration/.style = {
-      -{Triangle}
-    },
-    lies over/.style = {
-      |-{Triangle[open]}
-    },
-    op lies over/.style = {
-      |-{Triangle}
-    },
-    embedding/.style = {
-      {right hook}-&gt;
-    },
-    open immersion/.style = {
-      {right hook}-{Triangle[open]}
-    },
-    closed immersion/.style = {
-      {right hook}-{Triangle}
-    },
-    closed immersion*/.style = {
-      {left hook}-{Triangle}
-    },
-    embedding*/.style = {
-      {left hook}-&gt;
-    },
-    open immersion*/.style = {
-      {left hook}-{Triangle[open]}
-    },
     exists/.style = {
       densely dashed
     },
-    equal/.style = {
-      double
-    },
   }
 
-  \newlength{\dontworryaboutit}
+  \newlength{\dontworryaboutit} % no idea what it does
 
   \tikzset{
     inline diagram/.style = {
@@ -233,8 +201,8 @@ hash="3b9c4a8513f3894c0c071728fb543d69"><fr:embedded-tex-preamble>
     }
   }
   
-  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  % Primitives for drawing commutative squares
+  % macros for drawing commutative squares
+  % adapted from Jon Sterling's macros (https://git.sr.ht/~jonsterling/article-template/tree/main/item/local-tikz.sty)
   \tikzset{
     square/nw/.style = {},
     square/ne/.style = {},
@@ -251,9 +219,6 @@ hash="3b9c4a8513f3894c0c071728fb543d69"><fr:embedded-tex-preamble>
   }
 
   \ExplSyntaxOn
-
-  \bool_new:N \l_jon_glue_west
-
   \keys_define:nn { jon-tikz/diagram } {
     nw .tl_set:N = \l_jon_tikz_diagram_nw,
     sw .tl_set:N = \l_jon_tikz_diagram_sw,
@@ -273,11 +238,6 @@ hash="3b9c4a8513f3894c0c071728fb543d69"><fr:embedded-tex-preamble>
     ne/style .code:n = {\tikzset{square/ne/.style = {#1}}},
     se/style .code:n = {\tikzset{square/se/.style = {#1}}},
 
-    glue .choice:,
-    glue / west .code:n = {\bool_set:Nn \l_jon_glue_west \c_true_bool},
-
-    glue~target .tl_set:N = \l_jon_tikz_glue_target,
-
     north/style .code:n = {\tikzset{square/north/.style = {#1}}},
     north/node/style .code:n = {\tikzset{square/north/node/.style = {#1}}},
     south/style .code:n = {\tikzset{square/south/.style = {#1}}},
@@ -288,14 +248,14 @@ hash="3b9c4a8513f3894c0c071728fb543d69"><fr:embedded-tex-preamble>
     east/node/style .code:n = {\tikzset{square/east/node/.style = {#1}}},
 
     draft .meta:n = {
-      nw = {\__jon_tikz_diagram_fmt_placeholder:n {nw}},
-      sw = {\__jon_tikz_diagram_fmt_placeholder:n {sw}},
-      se = {\__jon_tikz_diagram_fmt_placeholder:n {se}},
-      ne = {\__jon_tikz_diagram_fmt_placeholder:n {ne}},
-      north = {\__jon_tikz_diagram_fmt_placeholder:n {north}},
-      south = {\__jon_tikz_diagram_fmt_placeholder:n {south}},
-      west = {\__jon_tikz_diagram_fmt_placeholder:n {west}},
-      east = {\__jon_tikz_diagram_fmt_placeholder:n {east}},
+      nw = {nw},
+      sw = {sw},
+      se = {se},
+      ne = {ne},
+      north = {north},
+      south = {south},
+      west = {west},
+      east = {east},
     }
   }
 
@@ -303,25 +263,9 @@ hash="3b9c4a8513f3894c0c071728fb543d69"><fr:embedded-tex-preamble>
   \tl_set:Nn \l_jon_tikz_diagram_height { 2cm }
 
 
-  \cs_new:Npn \__jon_tikz_diagram_fmt_placeholder:n #1 {
-    \texttt{\textcolor{red}{#1}}
-  }
-
-  \keys_set:nn { jon-tikz/diagram } {
-    glue~target = {},
-  }
-
-
   \cs_new:Nn \__jon_tikz_render_square:nn {
     \group_begin:
-    \keys_set:nn {jon-tikz/diagram} {#2}
-    \bool_if:nTF \l_jon_glue_west {
-      \node (#1ne) [right = \l_jon_tikz_diagram_width~of~\l_jon_tikz_glue_target ne,square/ne] {$\l_jon_tikz_diagram_ne$};
-      \node (#1se) [below = \l_jon_tikz_diagram_height~of~#1ne,square/se] {$\l_jon_tikz_diagram_se$};
-      \draw[morphism,square/north] (\l_jon_tikz_glue_target ne) to node [square/north/node] {$\l_jon_tikz_diagram_north$} (#1ne);
-      \draw[morphism,square/east] (#1ne) to node [square/east/node] {$\l_jon_tikz_diagram_east$} (#1se);
-      \draw[morphism,square/south] (\l_jon_tikz_glue_target se) to node [square/south/node] {$\l_jon_tikz_diagram_south$} (#1se);
-    } {
+    \keys_set:nn {jon-tikz/diagram} {#2} {
       \node (#1nw) [square/nw] {$\l_jon_tikz_diagram_nw$};
       \node (#1sw) [below = \l_jon_tikz_diagram_height~of~#1nw,square/sw] {$\l_jon_tikz_diagram_sw$};
       \draw[morphism,square/west] (#1nw) to node [square/west/node] {$\l_jon_tikz_diagram_west$} (#1sw);
@@ -335,97 +279,17 @@ hash="3b9c4a8513f3894c0c071728fb543d69"><fr:embedded-tex-preamble>
     \group_end:
   }
 
-  \NewDocumentCommand\SpliceDiagramSquare{D&lt;&gt;{}m}{
+  % the optional argument allows one to specify a prefix to positions
+  \NewDocumentCommand\SpliceDiagramSquare{O{}m}{
     \__jon_tikz_render_square:nn {#1} {#2}
   }
 
-
-  \NewDocumentCommand\DiagramSquare{D&lt;&gt;{}O{}m}{
+  \NewDocumentCommand\DiagramSquare{O{}O{}m}{
     \begin{tikzpicture}[diagram,#2,baseline=(#1sw.base)]
       \__jon_tikz_render_square:nn {#1} {#3}
     \end{tikzpicture}
   }
-
   \ExplSyntaxOff
-  %
-  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  % Primitives for drawing adjunction diagrams
-  \tikzset{
-    adj/w/.style = {},
-    adj/e/.style = {},
-    adj/left/.style = {-&gt;},
-    adj/right/.style = {-&gt;},
-    adj/left/node/.style = {above},
-    adj/right/node/.style = {below},
-  }
-
-  \ExplSyntaxOn
-
-  \bool_new:N \l_fnd_glue_west
-
-  \keys_define:nn { fnd-tikz/adj-diagram } {
-    w .tl_set:N = \l_fnd_tikz_adj_diagram_w,
-    e .tl_set:N = \l_fnd_tikz_adj_diagram_e,
-
-    width .tl_set:N = \l_fnd_tikz_adj_diagram_width,
-
-    left .tl_set:N = \l_fnd_tikz_adj_diagram_left,
-    right .tl_set:N = \l_fnd_tikz_adj_diagram_right,
-
-    glue .choice:,
-    glue / west .code:n = {\bool_set:Nn \l_fnd_glue_west \c_true_bool},
-    glue~target .tl_set:N = \l_fnd_tikz_glue_target,
-
-    w/style .code:n = {\tikzset{adj/w/.style = {#1}}},
-    e/style .code:n = {\tikzset{adj/e/.style = {#1}}},
-
-    left/style .code:n = {\tikzset{adj/left/.style = {#1}}},
-    left/node/style .code:n = {\tikzset{adj/left/node/.style = {#1}}},
-    right/style .code:n = {\tikzset{adj/right/.style = {#1}}},
-    right/node/style .code:n = {\tikzset{adj/right/node/.style = {#1}}},
-
-    draft .meta:n = {
-      e = {\__fnd_tikz_adj_diagram_fmt_placeholder:n {e}},
-      w = {\__fnd_tikz_adj_diagram_fmt_placeholder:n {w}},
-      left = {\__fnd_tikz_adj_diagram_fmt_placeholder:n {left}},
-      right = {\__fnd_tikz_adj_diagram_fmt_placeholder:n {right}},
-    }
-  }
-
-  \tl_set:Nn \l_fnd_tikz_adj_diagram_width { 2cm }
-
-  \cs_new:Npn \__fnd_tikz_adj_diagram_fmt_placeholder:n #1 {
-    \texttt{\textcolor{red}{#1}}
-  }
-
-  \keys_set:nn { fnd-tikz/adj-diagram } {
-    glue~target = {},
-  }
-
-  \cs_new:Nn \__fnd_tikz_render_adj_diagram:n {
-    \group_begin:
-    \keys_set:nn {fnd-tikz/adj-diagram} {#1} {
-      % gluing will be implemented when I need it
-      \node (w) [adj/w] {$\l_fnd_tikz_adj_diagram_w$};
-      \node (e) [right=\l_fnd_tikz_adj_diagram_width~of~w,adj/e] {$\l_fnd_tikz_adj_diagram_e$};
-        \draw [morphism,adj/left,offset=.15cm] (e) to node[adj/left/node] (n) {$\l_fnd_tikz_adj_diagram_left$} (w);
-        \draw [morphism,adj/right,offset=.15cm] (w) to node[adj/right/node] (s) {$\l_fnd_tikz_adj_diagram_right$} (e);
-        \path [morphism] (s) to node[rotate=-90] {$\dashv$} (n);
-    }
-    \group_end:
-  }
-
-  \NewDocumentCommand\AdjDiagram{m}{
-    \begin{tikzpicture}[diagram]
-      \__fnd_tikz_render_adj_diagram:n {#1}
-    \end{tikzpicture}
-  }
-  
-  \ExplSyntaxOff
-  %
-  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  
       </fr:embedded-tex-preamble><fr:embedded-tex-body>
        \DiagramSquare {
@@ -452,7 +316,7 @@ expanded="true"
 root="false"><fr:frontmatter><fr:anchor>240</fr:anchor><fr:taxon>Uniqueness</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
-addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors><fr:parent>ct-000B</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Suppose that <fr:tex>f,g \colon  A  \rightrightarrows   \Omega '</fr:tex>. We need to show that <fr:tex>f = g</fr:tex>. To this end, it suffices to show <fr:tex>\top  f =  \top  g</fr:tex> since <fr:tex>\top</fr:tex> is monic.</fr:p><fr:p>Consider the subobject classified by <fr:tex>\top  f</fr:tex>. Note that by the <fr:link
+addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors><fr:parent>ct-000B</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Suppose that <fr:tex>f , g \colon A \rightrightarrows \Omega '</fr:tex>. We need to show that <fr:tex>f = g</fr:tex>. To this end, it suffices to show <fr:tex>\top  f =  \top  g</fr:tex> since <fr:tex>\top</fr:tex> is monic.</fr:p><fr:p>Consider the subobject classified by <fr:tex>\top  f</fr:tex>. Note that by the <fr:link
 href="ct-0008.xml"
 type="local"
 addr="ct-0008">pasting lemma</fr:link>, this subobject is isomorphic to <fr:tex>f ^{*} ( \top ^{*} ( \top ))</fr:tex> in <fr:tex>\mathsf { Sub } (A)</fr:tex>. Since <fr:tex>\top</fr:tex> is monic, <fr:tex>\top ^{*} ( \top )</fr:tex> is an isomorphism. Then since isomorphisms are stable under pullback, the subobject classified by <fr:tex>\top  f</fr:tex> is an isomorphism. Thus, <fr:tex>( \top  f) ^{*} ( \top )  \cong   \mathsf {id} _{ A }</fr:tex> in <fr:tex>\mathsf { Sub } (A)</fr:tex>. Analogously, we have <fr:tex>( \top  g) ^{*} ( \top )  \cong   \mathsf {id} _{ A }</fr:tex> in <fr:tex>\mathsf { Sub } (A)</fr:tex>, so we can conclude that <fr:tex>\top  f</fr:tex> and <fr:tex>\top  g</fr:tex> classify isomorphic subobjects.</fr:p><fr:p>Now apply <fr:ref
@@ -488,7 +352,7 @@ root="false"><fr:frontmatter><fr:anchor>293</fr:anchor><fr:taxon>Proof</fr:taxon
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors><fr:parent>ct-0007</fr:parent></fr:frontmatter><fr:mainmatter>
-  It suffices to specify an action on morphisms. Let <fr:tex>f \colon  A  \to  B</fr:tex> be an arbitrary morphism. Since monomorphisms are stable under pullback, the pullback functor <fr:tex>f ^{*} \colon   \mathcal { C } _{/ B }   \to   \mathcal { C } _{/ A }</fr:tex> restricts to a functor <fr:tex>f ^{*} \colon   \mathsf { Sub } (B)  \to   \mathsf { Sub } (A)</fr:tex>. Then pseudofunctoriality follows from the following facts:
+  It suffices to specify an action on morphisms. Let <fr:tex>f \colon A \to B</fr:tex> be an arbitrary morphism. Since monomorphisms are stable under pullback, the pullback functor <fr:tex>f ^{*} \colon \mathcal { C } _{/ B } \to \mathcal { C } _{/ A }</fr:tex> restricts to a functor <fr:tex>f ^{*} \colon \mathsf { Sub } (B) \to \mathsf { Sub } (A)</fr:tex>. Then pseudofunctoriality follows from the following facts:
   <fr:ul><fr:li>Let <fr:tex>f \colon  A  \to  B</fr:tex>, <fr:tex>g \colon  B  \to  C</fr:tex>, and <fr:tex>m \colon  C'  \rightarrowtail  C</fr:tex> be given. By the <fr:link
 href="ct-0008.xml"
 type="local"
@@ -533,7 +397,7 @@ xmlns:html="http://www.w3.org/1999/xhtml">
     
       
       <fr:embedded-tex
-hash="8af428247e3f04c43427be58917e1473"><fr:embedded-tex-preamble>
+hash="31e9bdf8afa3f6c87aeca3f3cbc17dde"><fr:embedded-tex-preamble>
          
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -566,7 +430,8 @@ hash="8af428247e3f04c43427be58917e1473"><fr:embedded-tex-preamble>
   }
  
          
-    \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd, quiver}
+   % appears to be necessary
+  \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd}
   \usetikzlibrary{matrix,arrows}
   \usetikzlibrary{backgrounds,fit,positioning,calc,shapes}
   \usetikzlibrary{decorations.pathreplacing}
@@ -586,11 +451,23 @@ hash="8af428247e3f04c43427be58917e1473"><fr:embedded-tex-preamble>
     },
     morphism/.style = {
       auto=left,
-      font=\scriptsize,
+      node font=\scriptsize,
+    },
+    phantom/.style = {
+      commutative diagrams/phantom,
+      node font=\scriptsize,
+      sloped,
     },
     desc/.style = {anchor=center,fill=white,inner sep=3pt},
-    % /tikz/pos=&lt;fraction&gt; is a key already
     offset/.style args = {#1} {commutative diagrams/shift right={#1}},
+    cross over/.style = {
+      commutative diagrams/crossing over
+    },
+  }
+
+  % macro that draws the adjunction symbol in a diagram
+  \NewDocumentCommand\DrawAdj{mm}{
+    \draw [phantom] (#1) to node[rotate=180] {$\dashv$} (#2);
   }
 
   % pullback and pushout
@@ -613,51 +490,12 @@ hash="8af428247e3f04c43427be58917e1473"><fr:embedded-tex-preamble>
 
   % arrow styles
   \tikzset{
-    fibration/.style = {
-      -{Triangle[open]}
-    },
-    etale/.style = {
-      -{Triangle[open]}
-    },
-    etale cover/.style= {
-      &gt;={Triangle[open]},-&gt;.&gt;
-    },
-    opfibration/.style = {
-      -{Triangle}
-    },
-    lies over/.style = {
-      |-{Triangle[open]}
-    },
-    op lies over/.style = {
-      |-{Triangle}
-    },
-    embedding/.style = {
-      {right hook}-&gt;
-    },
-    open immersion/.style = {
-      {right hook}-{Triangle[open]}
-    },
-    closed immersion/.style = {
-      {right hook}-{Triangle}
-    },
-    closed immersion*/.style = {
-      {left hook}-{Triangle}
-    },
-    embedding*/.style = {
-      {left hook}-&gt;
-    },
-    open immersion*/.style = {
-      {left hook}-{Triangle[open]}
-    },
     exists/.style = {
       densely dashed
     },
-    equal/.style = {
-      double
-    },
   }
 
-  \newlength{\dontworryaboutit}
+  \newlength{\dontworryaboutit} % no idea what it does
 
   \tikzset{
     inline diagram/.style = {
@@ -675,8 +513,8 @@ hash="8af428247e3f04c43427be58917e1473"><fr:embedded-tex-preamble>
     }
   }
   
-  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  % Primitives for drawing commutative squares
+  % macros for drawing commutative squares
+  % adapted from Jon Sterling's macros (https://git.sr.ht/~jonsterling/article-template/tree/main/item/local-tikz.sty)
   \tikzset{
     square/nw/.style = {},
     square/ne/.style = {},
@@ -693,9 +531,6 @@ hash="8af428247e3f04c43427be58917e1473"><fr:embedded-tex-preamble>
   }
 
   \ExplSyntaxOn
-
-  \bool_new:N \l_jon_glue_west
-
   \keys_define:nn { jon-tikz/diagram } {
     nw .tl_set:N = \l_jon_tikz_diagram_nw,
     sw .tl_set:N = \l_jon_tikz_diagram_sw,
@@ -715,11 +550,6 @@ hash="8af428247e3f04c43427be58917e1473"><fr:embedded-tex-preamble>
     ne/style .code:n = {\tikzset{square/ne/.style = {#1}}},
     se/style .code:n = {\tikzset{square/se/.style = {#1}}},
 
-    glue .choice:,
-    glue / west .code:n = {\bool_set:Nn \l_jon_glue_west \c_true_bool},
-
-    glue~target .tl_set:N = \l_jon_tikz_glue_target,
-
     north/style .code:n = {\tikzset{square/north/.style = {#1}}},
     north/node/style .code:n = {\tikzset{square/north/node/.style = {#1}}},
     south/style .code:n = {\tikzset{square/south/.style = {#1}}},
@@ -730,14 +560,14 @@ hash="8af428247e3f04c43427be58917e1473"><fr:embedded-tex-preamble>
     east/node/style .code:n = {\tikzset{square/east/node/.style = {#1}}},
 
     draft .meta:n = {
-      nw = {\__jon_tikz_diagram_fmt_placeholder:n {nw}},
-      sw = {\__jon_tikz_diagram_fmt_placeholder:n {sw}},
-      se = {\__jon_tikz_diagram_fmt_placeholder:n {se}},
-      ne = {\__jon_tikz_diagram_fmt_placeholder:n {ne}},
-      north = {\__jon_tikz_diagram_fmt_placeholder:n {north}},
-      south = {\__jon_tikz_diagram_fmt_placeholder:n {south}},
-      west = {\__jon_tikz_diagram_fmt_placeholder:n {west}},
-      east = {\__jon_tikz_diagram_fmt_placeholder:n {east}},
+      nw = {nw},
+      sw = {sw},
+      se = {se},
+      ne = {ne},
+      north = {north},
+      south = {south},
+      west = {west},
+      east = {east},
     }
   }
 
@@ -745,25 +575,9 @@ hash="8af428247e3f04c43427be58917e1473"><fr:embedded-tex-preamble>
   \tl_set:Nn \l_jon_tikz_diagram_height { 2cm }
 
 
-  \cs_new:Npn \__jon_tikz_diagram_fmt_placeholder:n #1 {
-    \texttt{\textcolor{red}{#1}}
-  }
-
-  \keys_set:nn { jon-tikz/diagram } {
-    glue~target = {},
-  }
-
-
   \cs_new:Nn \__jon_tikz_render_square:nn {
     \group_begin:
-    \keys_set:nn {jon-tikz/diagram} {#2}
-    \bool_if:nTF \l_jon_glue_west {
-      \node (#1ne) [right = \l_jon_tikz_diagram_width~of~\l_jon_tikz_glue_target ne,square/ne] {$\l_jon_tikz_diagram_ne$};
-      \node (#1se) [below = \l_jon_tikz_diagram_height~of~#1ne,square/se] {$\l_jon_tikz_diagram_se$};
-      \draw[morphism,square/north] (\l_jon_tikz_glue_target ne) to node [square/north/node] {$\l_jon_tikz_diagram_north$} (#1ne);
-      \draw[morphism,square/east] (#1ne) to node [square/east/node] {$\l_jon_tikz_diagram_east$} (#1se);
-      \draw[morphism,square/south] (\l_jon_tikz_glue_target se) to node [square/south/node] {$\l_jon_tikz_diagram_south$} (#1se);
-    } {
+    \keys_set:nn {jon-tikz/diagram} {#2} {
       \node (#1nw) [square/nw] {$\l_jon_tikz_diagram_nw$};
       \node (#1sw) [below = \l_jon_tikz_diagram_height~of~#1nw,square/sw] {$\l_jon_tikz_diagram_sw$};
       \draw[morphism,square/west] (#1nw) to node [square/west/node] {$\l_jon_tikz_diagram_west$} (#1sw);
@@ -777,97 +591,17 @@ hash="8af428247e3f04c43427be58917e1473"><fr:embedded-tex-preamble>
     \group_end:
   }
 
-  \NewDocumentCommand\SpliceDiagramSquare{D&lt;&gt;{}m}{
+  % the optional argument allows one to specify a prefix to positions
+  \NewDocumentCommand\SpliceDiagramSquare{O{}m}{
     \__jon_tikz_render_square:nn {#1} {#2}
   }
 
-
-  \NewDocumentCommand\DiagramSquare{D&lt;&gt;{}O{}m}{
+  \NewDocumentCommand\DiagramSquare{O{}O{}m}{
     \begin{tikzpicture}[diagram,#2,baseline=(#1sw.base)]
       \__jon_tikz_render_square:nn {#1} {#3}
     \end{tikzpicture}
   }
-
   \ExplSyntaxOff
-  %
-  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  % Primitives for drawing adjunction diagrams
-  \tikzset{
-    adj/w/.style = {},
-    adj/e/.style = {},
-    adj/left/.style = {-&gt;},
-    adj/right/.style = {-&gt;},
-    adj/left/node/.style = {above},
-    adj/right/node/.style = {below},
-  }
-
-  \ExplSyntaxOn
-
-  \bool_new:N \l_fnd_glue_west
-
-  \keys_define:nn { fnd-tikz/adj-diagram } {
-    w .tl_set:N = \l_fnd_tikz_adj_diagram_w,
-    e .tl_set:N = \l_fnd_tikz_adj_diagram_e,
-
-    width .tl_set:N = \l_fnd_tikz_adj_diagram_width,
-
-    left .tl_set:N = \l_fnd_tikz_adj_diagram_left,
-    right .tl_set:N = \l_fnd_tikz_adj_diagram_right,
-
-    glue .choice:,
-    glue / west .code:n = {\bool_set:Nn \l_fnd_glue_west \c_true_bool},
-    glue~target .tl_set:N = \l_fnd_tikz_glue_target,
-
-    w/style .code:n = {\tikzset{adj/w/.style = {#1}}},
-    e/style .code:n = {\tikzset{adj/e/.style = {#1}}},
-
-    left/style .code:n = {\tikzset{adj/left/.style = {#1}}},
-    left/node/style .code:n = {\tikzset{adj/left/node/.style = {#1}}},
-    right/style .code:n = {\tikzset{adj/right/.style = {#1}}},
-    right/node/style .code:n = {\tikzset{adj/right/node/.style = {#1}}},
-
-    draft .meta:n = {
-      e = {\__fnd_tikz_adj_diagram_fmt_placeholder:n {e}},
-      w = {\__fnd_tikz_adj_diagram_fmt_placeholder:n {w}},
-      left = {\__fnd_tikz_adj_diagram_fmt_placeholder:n {left}},
-      right = {\__fnd_tikz_adj_diagram_fmt_placeholder:n {right}},
-    }
-  }
-
-  \tl_set:Nn \l_fnd_tikz_adj_diagram_width { 2cm }
-
-  \cs_new:Npn \__fnd_tikz_adj_diagram_fmt_placeholder:n #1 {
-    \texttt{\textcolor{red}{#1}}
-  }
-
-  \keys_set:nn { fnd-tikz/adj-diagram } {
-    glue~target = {},
-  }
-
-  \cs_new:Nn \__fnd_tikz_render_adj_diagram:n {
-    \group_begin:
-    \keys_set:nn {fnd-tikz/adj-diagram} {#1} {
-      % gluing will be implemented when I need it
-      \node (w) [adj/w] {$\l_fnd_tikz_adj_diagram_w$};
-      \node (e) [right=\l_fnd_tikz_adj_diagram_width~of~w,adj/e] {$\l_fnd_tikz_adj_diagram_e$};
-        \draw [morphism,adj/left,offset=.15cm] (e) to node[adj/left/node] (n) {$\l_fnd_tikz_adj_diagram_left$} (w);
-        \draw [morphism,adj/right,offset=.15cm] (w) to node[adj/right/node] (s) {$\l_fnd_tikz_adj_diagram_right$} (e);
-        \path [morphism] (s) to node[rotate=-90] {$\dashv$} (n);
-    }
-    \group_end:
-  }
-
-  \NewDocumentCommand\AdjDiagram{m}{
-    \begin{tikzpicture}[diagram]
-      \__fnd_tikz_render_adj_diagram:n {#1}
-    \end{tikzpicture}
-  }
-  
-  \ExplSyntaxOff
-  %
-  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  
       </fr:embedded-tex-preamble><fr:embedded-tex-body>
          \DiagramSquare {
@@ -927,7 +661,7 @@ addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors><fr:parent>ct-00
     
       
       <fr:embedded-tex
-hash="7f6b7727a0db5e0bfeb72c800a1c7dbe"><fr:embedded-tex-preamble>
+hash="acfaaa823126b76c04c5c27109f299a4"><fr:embedded-tex-preamble>
          
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -960,7 +694,8 @@ hash="7f6b7727a0db5e0bfeb72c800a1c7dbe"><fr:embedded-tex-preamble>
   }
  
          
-    \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd, quiver}
+   % appears to be necessary
+  \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd}
   \usetikzlibrary{matrix,arrows}
   \usetikzlibrary{backgrounds,fit,positioning,calc,shapes}
   \usetikzlibrary{decorations.pathreplacing}
@@ -980,11 +715,23 @@ hash="7f6b7727a0db5e0bfeb72c800a1c7dbe"><fr:embedded-tex-preamble>
     },
     morphism/.style = {
       auto=left,
-      font=\scriptsize,
+      node font=\scriptsize,
+    },
+    phantom/.style = {
+      commutative diagrams/phantom,
+      node font=\scriptsize,
+      sloped,
     },
     desc/.style = {anchor=center,fill=white,inner sep=3pt},
-    % /tikz/pos=&lt;fraction&gt; is a key already
     offset/.style args = {#1} {commutative diagrams/shift right={#1}},
+    cross over/.style = {
+      commutative diagrams/crossing over
+    },
+  }
+
+  % macro that draws the adjunction symbol in a diagram
+  \NewDocumentCommand\DrawAdj{mm}{
+    \draw [phantom] (#1) to node[rotate=180] {$\dashv$} (#2);
   }
 
   % pullback and pushout
@@ -1007,51 +754,12 @@ hash="7f6b7727a0db5e0bfeb72c800a1c7dbe"><fr:embedded-tex-preamble>
 
   % arrow styles
   \tikzset{
-    fibration/.style = {
-      -{Triangle[open]}
-    },
-    etale/.style = {
-      -{Triangle[open]}
-    },
-    etale cover/.style= {
-      &gt;={Triangle[open]},-&gt;.&gt;
-    },
-    opfibration/.style = {
-      -{Triangle}
-    },
-    lies over/.style = {
-      |-{Triangle[open]}
-    },
-    op lies over/.style = {
-      |-{Triangle}
-    },
-    embedding/.style = {
-      {right hook}-&gt;
-    },
-    open immersion/.style = {
-      {right hook}-{Triangle[open]}
-    },
-    closed immersion/.style = {
-      {right hook}-{Triangle}
-    },
-    closed immersion*/.style = {
-      {left hook}-{Triangle}
-    },
-    embedding*/.style = {
-      {left hook}-&gt;
-    },
-    open immersion*/.style = {
-      {left hook}-{Triangle[open]}
-    },
     exists/.style = {
       densely dashed
     },
-    equal/.style = {
-      double
-    },
   }
 
-  \newlength{\dontworryaboutit}
+  \newlength{\dontworryaboutit} % no idea what it does
 
   \tikzset{
     inline diagram/.style = {
@@ -1069,8 +777,8 @@ hash="7f6b7727a0db5e0bfeb72c800a1c7dbe"><fr:embedded-tex-preamble>
     }
   }
   
-  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  % Primitives for drawing commutative squares
+  % macros for drawing commutative squares
+  % adapted from Jon Sterling's macros (https://git.sr.ht/~jonsterling/article-template/tree/main/item/local-tikz.sty)
   \tikzset{
     square/nw/.style = {},
     square/ne/.style = {},
@@ -1087,9 +795,6 @@ hash="7f6b7727a0db5e0bfeb72c800a1c7dbe"><fr:embedded-tex-preamble>
   }
 
   \ExplSyntaxOn
-
-  \bool_new:N \l_jon_glue_west
-
   \keys_define:nn { jon-tikz/diagram } {
     nw .tl_set:N = \l_jon_tikz_diagram_nw,
     sw .tl_set:N = \l_jon_tikz_diagram_sw,
@@ -1109,11 +814,6 @@ hash="7f6b7727a0db5e0bfeb72c800a1c7dbe"><fr:embedded-tex-preamble>
     ne/style .code:n = {\tikzset{square/ne/.style = {#1}}},
     se/style .code:n = {\tikzset{square/se/.style = {#1}}},
 
-    glue .choice:,
-    glue / west .code:n = {\bool_set:Nn \l_jon_glue_west \c_true_bool},
-
-    glue~target .tl_set:N = \l_jon_tikz_glue_target,
-
     north/style .code:n = {\tikzset{square/north/.style = {#1}}},
     north/node/style .code:n = {\tikzset{square/north/node/.style = {#1}}},
     south/style .code:n = {\tikzset{square/south/.style = {#1}}},
@@ -1124,14 +824,14 @@ hash="7f6b7727a0db5e0bfeb72c800a1c7dbe"><fr:embedded-tex-preamble>
     east/node/style .code:n = {\tikzset{square/east/node/.style = {#1}}},
 
     draft .meta:n = {
-      nw = {\__jon_tikz_diagram_fmt_placeholder:n {nw}},
-      sw = {\__jon_tikz_diagram_fmt_placeholder:n {sw}},
-      se = {\__jon_tikz_diagram_fmt_placeholder:n {se}},
-      ne = {\__jon_tikz_diagram_fmt_placeholder:n {ne}},
-      north = {\__jon_tikz_diagram_fmt_placeholder:n {north}},
-      south = {\__jon_tikz_diagram_fmt_placeholder:n {south}},
-      west = {\__jon_tikz_diagram_fmt_placeholder:n {west}},
-      east = {\__jon_tikz_diagram_fmt_placeholder:n {east}},
+      nw = {nw},
+      sw = {sw},
+      se = {se},
+      ne = {ne},
+      north = {north},
+      south = {south},
+      west = {west},
+      east = {east},
     }
   }
 
@@ -1139,25 +839,9 @@ hash="7f6b7727a0db5e0bfeb72c800a1c7dbe"><fr:embedded-tex-preamble>
   \tl_set:Nn \l_jon_tikz_diagram_height { 2cm }
 
 
-  \cs_new:Npn \__jon_tikz_diagram_fmt_placeholder:n #1 {
-    \texttt{\textcolor{red}{#1}}
-  }
-
-  \keys_set:nn { jon-tikz/diagram } {
-    glue~target = {},
-  }
-
-
   \cs_new:Nn \__jon_tikz_render_square:nn {
     \group_begin:
-    \keys_set:nn {jon-tikz/diagram} {#2}
-    \bool_if:nTF \l_jon_glue_west {
-      \node (#1ne) [right = \l_jon_tikz_diagram_width~of~\l_jon_tikz_glue_target ne,square/ne] {$\l_jon_tikz_diagram_ne$};
-      \node (#1se) [below = \l_jon_tikz_diagram_height~of~#1ne,square/se] {$\l_jon_tikz_diagram_se$};
-      \draw[morphism,square/north] (\l_jon_tikz_glue_target ne) to node [square/north/node] {$\l_jon_tikz_diagram_north$} (#1ne);
-      \draw[morphism,square/east] (#1ne) to node [square/east/node] {$\l_jon_tikz_diagram_east$} (#1se);
-      \draw[morphism,square/south] (\l_jon_tikz_glue_target se) to node [square/south/node] {$\l_jon_tikz_diagram_south$} (#1se);
-    } {
+    \keys_set:nn {jon-tikz/diagram} {#2} {
       \node (#1nw) [square/nw] {$\l_jon_tikz_diagram_nw$};
       \node (#1sw) [below = \l_jon_tikz_diagram_height~of~#1nw,square/sw] {$\l_jon_tikz_diagram_sw$};
       \draw[morphism,square/west] (#1nw) to node [square/west/node] {$\l_jon_tikz_diagram_west$} (#1sw);
@@ -1171,97 +855,17 @@ hash="7f6b7727a0db5e0bfeb72c800a1c7dbe"><fr:embedded-tex-preamble>
     \group_end:
   }
 
-  \NewDocumentCommand\SpliceDiagramSquare{D&lt;&gt;{}m}{
+  % the optional argument allows one to specify a prefix to positions
+  \NewDocumentCommand\SpliceDiagramSquare{O{}m}{
     \__jon_tikz_render_square:nn {#1} {#2}
   }
 
-
-  \NewDocumentCommand\DiagramSquare{D&lt;&gt;{}O{}m}{
+  \NewDocumentCommand\DiagramSquare{O{}O{}m}{
     \begin{tikzpicture}[diagram,#2,baseline=(#1sw.base)]
       \__jon_tikz_render_square:nn {#1} {#3}
     \end{tikzpicture}
   }
-
   \ExplSyntaxOff
-  %
-  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  % Primitives for drawing adjunction diagrams
-  \tikzset{
-    adj/w/.style = {},
-    adj/e/.style = {},
-    adj/left/.style = {-&gt;},
-    adj/right/.style = {-&gt;},
-    adj/left/node/.style = {above},
-    adj/right/node/.style = {below},
-  }
-
-  \ExplSyntaxOn
-
-  \bool_new:N \l_fnd_glue_west
-
-  \keys_define:nn { fnd-tikz/adj-diagram } {
-    w .tl_set:N = \l_fnd_tikz_adj_diagram_w,
-    e .tl_set:N = \l_fnd_tikz_adj_diagram_e,
-
-    width .tl_set:N = \l_fnd_tikz_adj_diagram_width,
-
-    left .tl_set:N = \l_fnd_tikz_adj_diagram_left,
-    right .tl_set:N = \l_fnd_tikz_adj_diagram_right,
-
-    glue .choice:,
-    glue / west .code:n = {\bool_set:Nn \l_fnd_glue_west \c_true_bool},
-    glue~target .tl_set:N = \l_fnd_tikz_glue_target,
-
-    w/style .code:n = {\tikzset{adj/w/.style = {#1}}},
-    e/style .code:n = {\tikzset{adj/e/.style = {#1}}},
-
-    left/style .code:n = {\tikzset{adj/left/.style = {#1}}},
-    left/node/style .code:n = {\tikzset{adj/left/node/.style = {#1}}},
-    right/style .code:n = {\tikzset{adj/right/.style = {#1}}},
-    right/node/style .code:n = {\tikzset{adj/right/node/.style = {#1}}},
-
-    draft .meta:n = {
-      e = {\__fnd_tikz_adj_diagram_fmt_placeholder:n {e}},
-      w = {\__fnd_tikz_adj_diagram_fmt_placeholder:n {w}},
-      left = {\__fnd_tikz_adj_diagram_fmt_placeholder:n {left}},
-      right = {\__fnd_tikz_adj_diagram_fmt_placeholder:n {right}},
-    }
-  }
-
-  \tl_set:Nn \l_fnd_tikz_adj_diagram_width { 2cm }
-
-  \cs_new:Npn \__fnd_tikz_adj_diagram_fmt_placeholder:n #1 {
-    \texttt{\textcolor{red}{#1}}
-  }
-
-  \keys_set:nn { fnd-tikz/adj-diagram } {
-    glue~target = {},
-  }
-
-  \cs_new:Nn \__fnd_tikz_render_adj_diagram:n {
-    \group_begin:
-    \keys_set:nn {fnd-tikz/adj-diagram} {#1} {
-      % gluing will be implemented when I need it
-      \node (w) [adj/w] {$\l_fnd_tikz_adj_diagram_w$};
-      \node (e) [right=\l_fnd_tikz_adj_diagram_width~of~w,adj/e] {$\l_fnd_tikz_adj_diagram_e$};
-        \draw [morphism,adj/left,offset=.15cm] (e) to node[adj/left/node] (n) {$\l_fnd_tikz_adj_diagram_left$} (w);
-        \draw [morphism,adj/right,offset=.15cm] (w) to node[adj/right/node] (s) {$\l_fnd_tikz_adj_diagram_right$} (e);
-        \path [morphism] (s) to node[rotate=-90] {$\dashv$} (n);
-    }
-    \group_end:
-  }
-
-  \NewDocumentCommand\AdjDiagram{m}{
-    \begin{tikzpicture}[diagram]
-      \__fnd_tikz_render_adj_diagram:n {#1}
-    \end{tikzpicture}
-  }
-  
-  \ExplSyntaxOff
-  %
-  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  
       </fr:embedded-tex-preamble><fr:embedded-tex-body>
            \DiagramSquare {
@@ -1302,7 +906,7 @@ addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors><fr:parent>ct-00
     
       
       <fr:embedded-tex
-hash="6b8fe8ed19ec3c6a88a386506285bc90"><fr:embedded-tex-preamble>
+hash="424c85f27c3fc45f64f9e3ecda082a7d"><fr:embedded-tex-preamble>
          
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -1335,7 +939,8 @@ hash="6b8fe8ed19ec3c6a88a386506285bc90"><fr:embedded-tex-preamble>
   }
  
          
-    \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd, quiver}
+   % appears to be necessary
+  \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd}
   \usetikzlibrary{matrix,arrows}
   \usetikzlibrary{backgrounds,fit,positioning,calc,shapes}
   \usetikzlibrary{decorations.pathreplacing}
@@ -1355,11 +960,23 @@ hash="6b8fe8ed19ec3c6a88a386506285bc90"><fr:embedded-tex-preamble>
     },
     morphism/.style = {
       auto=left,
-      font=\scriptsize,
+      node font=\scriptsize,
+    },
+    phantom/.style = {
+      commutative diagrams/phantom,
+      node font=\scriptsize,
+      sloped,
     },
     desc/.style = {anchor=center,fill=white,inner sep=3pt},
-    % /tikz/pos=&lt;fraction&gt; is a key already
     offset/.style args = {#1} {commutative diagrams/shift right={#1}},
+    cross over/.style = {
+      commutative diagrams/crossing over
+    },
+  }
+
+  % macro that draws the adjunction symbol in a diagram
+  \NewDocumentCommand\DrawAdj{mm}{
+    \draw [phantom] (#1) to node[rotate=180] {$\dashv$} (#2);
   }
 
   % pullback and pushout
@@ -1382,51 +999,12 @@ hash="6b8fe8ed19ec3c6a88a386506285bc90"><fr:embedded-tex-preamble>
 
   % arrow styles
   \tikzset{
-    fibration/.style = {
-      -{Triangle[open]}
-    },
-    etale/.style = {
-      -{Triangle[open]}
-    },
-    etale cover/.style= {
-      &gt;={Triangle[open]},-&gt;.&gt;
-    },
-    opfibration/.style = {
-      -{Triangle}
-    },
-    lies over/.style = {
-      |-{Triangle[open]}
-    },
-    op lies over/.style = {
-      |-{Triangle}
-    },
-    embedding/.style = {
-      {right hook}-&gt;
-    },
-    open immersion/.style = {
-      {right hook}-{Triangle[open]}
-    },
-    closed immersion/.style = {
-      {right hook}-{Triangle}
-    },
-    closed immersion*/.style = {
-      {left hook}-{Triangle}
-    },
-    embedding*/.style = {
-      {left hook}-&gt;
-    },
-    open immersion*/.style = {
-      {left hook}-{Triangle[open]}
-    },
     exists/.style = {
       densely dashed
     },
-    equal/.style = {
-      double
-    },
   }
 
-  \newlength{\dontworryaboutit}
+  \newlength{\dontworryaboutit} % no idea what it does
 
   \tikzset{
     inline diagram/.style = {
@@ -1444,8 +1022,8 @@ hash="6b8fe8ed19ec3c6a88a386506285bc90"><fr:embedded-tex-preamble>
     }
   }
   
-  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  % Primitives for drawing commutative squares
+  % macros for drawing commutative squares
+  % adapted from Jon Sterling's macros (https://git.sr.ht/~jonsterling/article-template/tree/main/item/local-tikz.sty)
   \tikzset{
     square/nw/.style = {},
     square/ne/.style = {},
@@ -1462,9 +1040,6 @@ hash="6b8fe8ed19ec3c6a88a386506285bc90"><fr:embedded-tex-preamble>
   }
 
   \ExplSyntaxOn
-
-  \bool_new:N \l_jon_glue_west
-
   \keys_define:nn { jon-tikz/diagram } {
     nw .tl_set:N = \l_jon_tikz_diagram_nw,
     sw .tl_set:N = \l_jon_tikz_diagram_sw,
@@ -1484,11 +1059,6 @@ hash="6b8fe8ed19ec3c6a88a386506285bc90"><fr:embedded-tex-preamble>
     ne/style .code:n = {\tikzset{square/ne/.style = {#1}}},
     se/style .code:n = {\tikzset{square/se/.style = {#1}}},
 
-    glue .choice:,
-    glue / west .code:n = {\bool_set:Nn \l_jon_glue_west \c_true_bool},
-
-    glue~target .tl_set:N = \l_jon_tikz_glue_target,
-
     north/style .code:n = {\tikzset{square/north/.style = {#1}}},
     north/node/style .code:n = {\tikzset{square/north/node/.style = {#1}}},
     south/style .code:n = {\tikzset{square/south/.style = {#1}}},
@@ -1499,14 +1069,14 @@ hash="6b8fe8ed19ec3c6a88a386506285bc90"><fr:embedded-tex-preamble>
     east/node/style .code:n = {\tikzset{square/east/node/.style = {#1}}},
 
     draft .meta:n = {
-      nw = {\__jon_tikz_diagram_fmt_placeholder:n {nw}},
-      sw = {\__jon_tikz_diagram_fmt_placeholder:n {sw}},
-      se = {\__jon_tikz_diagram_fmt_placeholder:n {se}},
-      ne = {\__jon_tikz_diagram_fmt_placeholder:n {ne}},
-      north = {\__jon_tikz_diagram_fmt_placeholder:n {north}},
-      south = {\__jon_tikz_diagram_fmt_placeholder:n {south}},
-      west = {\__jon_tikz_diagram_fmt_placeholder:n {west}},
-      east = {\__jon_tikz_diagram_fmt_placeholder:n {east}},
+      nw = {nw},
+      sw = {sw},
+      se = {se},
+      ne = {ne},
+      north = {north},
+      south = {south},
+      west = {west},
+      east = {east},
     }
   }
 
@@ -1514,25 +1084,9 @@ hash="6b8fe8ed19ec3c6a88a386506285bc90"><fr:embedded-tex-preamble>
   \tl_set:Nn \l_jon_tikz_diagram_height { 2cm }
 
 
-  \cs_new:Npn \__jon_tikz_diagram_fmt_placeholder:n #1 {
-    \texttt{\textcolor{red}{#1}}
-  }
-
-  \keys_set:nn { jon-tikz/diagram } {
-    glue~target = {},
-  }
-
-
   \cs_new:Nn \__jon_tikz_render_square:nn {
     \group_begin:
-    \keys_set:nn {jon-tikz/diagram} {#2}
-    \bool_if:nTF \l_jon_glue_west {
-      \node (#1ne) [right = \l_jon_tikz_diagram_width~of~\l_jon_tikz_glue_target ne,square/ne] {$\l_jon_tikz_diagram_ne$};
-      \node (#1se) [below = \l_jon_tikz_diagram_height~of~#1ne,square/se] {$\l_jon_tikz_diagram_se$};
-      \draw[morphism,square/north] (\l_jon_tikz_glue_target ne) to node [square/north/node] {$\l_jon_tikz_diagram_north$} (#1ne);
-      \draw[morphism,square/east] (#1ne) to node [square/east/node] {$\l_jon_tikz_diagram_east$} (#1se);
-      \draw[morphism,square/south] (\l_jon_tikz_glue_target se) to node [square/south/node] {$\l_jon_tikz_diagram_south$} (#1se);
-    } {
+    \keys_set:nn {jon-tikz/diagram} {#2} {
       \node (#1nw) [square/nw] {$\l_jon_tikz_diagram_nw$};
       \node (#1sw) [below = \l_jon_tikz_diagram_height~of~#1nw,square/sw] {$\l_jon_tikz_diagram_sw$};
       \draw[morphism,square/west] (#1nw) to node [square/west/node] {$\l_jon_tikz_diagram_west$} (#1sw);
@@ -1546,97 +1100,17 @@ hash="6b8fe8ed19ec3c6a88a386506285bc90"><fr:embedded-tex-preamble>
     \group_end:
   }
 
-  \NewDocumentCommand\SpliceDiagramSquare{D&lt;&gt;{}m}{
+  % the optional argument allows one to specify a prefix to positions
+  \NewDocumentCommand\SpliceDiagramSquare{O{}m}{
     \__jon_tikz_render_square:nn {#1} {#2}
   }
 
-
-  \NewDocumentCommand\DiagramSquare{D&lt;&gt;{}O{}m}{
+  \NewDocumentCommand\DiagramSquare{O{}O{}m}{
     \begin{tikzpicture}[diagram,#2,baseline=(#1sw.base)]
       \__jon_tikz_render_square:nn {#1} {#3}
     \end{tikzpicture}
   }
-
   \ExplSyntaxOff
-  %
-  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  % Primitives for drawing adjunction diagrams
-  \tikzset{
-    adj/w/.style = {},
-    adj/e/.style = {},
-    adj/left/.style = {-&gt;},
-    adj/right/.style = {-&gt;},
-    adj/left/node/.style = {above},
-    adj/right/node/.style = {below},
-  }
-
-  \ExplSyntaxOn
-
-  \bool_new:N \l_fnd_glue_west
-
-  \keys_define:nn { fnd-tikz/adj-diagram } {
-    w .tl_set:N = \l_fnd_tikz_adj_diagram_w,
-    e .tl_set:N = \l_fnd_tikz_adj_diagram_e,
-
-    width .tl_set:N = \l_fnd_tikz_adj_diagram_width,
-
-    left .tl_set:N = \l_fnd_tikz_adj_diagram_left,
-    right .tl_set:N = \l_fnd_tikz_adj_diagram_right,
-
-    glue .choice:,
-    glue / west .code:n = {\bool_set:Nn \l_fnd_glue_west \c_true_bool},
-    glue~target .tl_set:N = \l_fnd_tikz_glue_target,
-
-    w/style .code:n = {\tikzset{adj/w/.style = {#1}}},
-    e/style .code:n = {\tikzset{adj/e/.style = {#1}}},
-
-    left/style .code:n = {\tikzset{adj/left/.style = {#1}}},
-    left/node/style .code:n = {\tikzset{adj/left/node/.style = {#1}}},
-    right/style .code:n = {\tikzset{adj/right/.style = {#1}}},
-    right/node/style .code:n = {\tikzset{adj/right/node/.style = {#1}}},
-
-    draft .meta:n = {
-      e = {\__fnd_tikz_adj_diagram_fmt_placeholder:n {e}},
-      w = {\__fnd_tikz_adj_diagram_fmt_placeholder:n {w}},
-      left = {\__fnd_tikz_adj_diagram_fmt_placeholder:n {left}},
-      right = {\__fnd_tikz_adj_diagram_fmt_placeholder:n {right}},
-    }
-  }
-
-  \tl_set:Nn \l_fnd_tikz_adj_diagram_width { 2cm }
-
-  \cs_new:Npn \__fnd_tikz_adj_diagram_fmt_placeholder:n #1 {
-    \texttt{\textcolor{red}{#1}}
-  }
-
-  \keys_set:nn { fnd-tikz/adj-diagram } {
-    glue~target = {},
-  }
-
-  \cs_new:Nn \__fnd_tikz_render_adj_diagram:n {
-    \group_begin:
-    \keys_set:nn {fnd-tikz/adj-diagram} {#1} {
-      % gluing will be implemented when I need it
-      \node (w) [adj/w] {$\l_fnd_tikz_adj_diagram_w$};
-      \node (e) [right=\l_fnd_tikz_adj_diagram_width~of~w,adj/e] {$\l_fnd_tikz_adj_diagram_e$};
-        \draw [morphism,adj/left,offset=.15cm] (e) to node[adj/left/node] (n) {$\l_fnd_tikz_adj_diagram_left$} (w);
-        \draw [morphism,adj/right,offset=.15cm] (w) to node[adj/right/node] (s) {$\l_fnd_tikz_adj_diagram_right$} (e);
-        \path [morphism] (s) to node[rotate=-90] {$\dashv$} (n);
-    }
-    \group_end:
-  }
-
-  \NewDocumentCommand\AdjDiagram{m}{
-    \begin{tikzpicture}[diagram]
-      \__fnd_tikz_render_adj_diagram:n {#1}
-    \end{tikzpicture}
-  }
-  
-  \ExplSyntaxOff
-  %
-  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  
       </fr:embedded-tex-preamble><fr:embedded-tex-body>
            \begin {tikzpicture}[diagram]
