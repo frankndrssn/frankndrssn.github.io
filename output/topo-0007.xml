@@ -7,7 +7,7 @@ numbered="true"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>673</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>topo-0007</fr:addr><fr:route>topo-0007.xml</fr:route><fr:title>Monomorphisms are equalizers in a <fr:link
+root="false"><fr:frontmatter><fr:anchor>737</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>topo-0007</fr:addr><fr:route>topo-0007.xml</fr:route><fr:title>Monomorphisms are equalizers in a <fr:link
 href="topo-0001.xml"
 type="local"
 addr="topo-0001">topos</fr:link></fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
@@ -26,12 +26,14 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>357</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>325</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors><fr:parent>topo-0007</fr:parent></fr:frontmatter><fr:mainmatter>
-  Since <fr:tex>\Mor { \topoTop }{1}{ \topoOmega }</fr:tex> is a split monomorphism, it is the equalizer of <fr:tex>\mathsf {id} _{ \topoOmega }</fr:tex> and <fr:tex>\topoOmega   \xto { \unq { \topoOmega }} 1  \xto { \topoTop }  \topoOmega</fr:tex>.
-  Since every monomorphism is a pullback against <fr:tex>\topoTop</fr:tex>, it follows that every monomorphism is an equalizer.
+  This is an immediate consequence of <fr:ref
+addr="ct-000E"
+href="ct-000E.xml"
+taxon="Lemma"></fr:ref>.
 </fr:mainmatter></fr:tree>
     
   </fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context></fr:context><fr:related><fr:tree
@@ -41,7 +43,39 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>671</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-0001</fr:addr><fr:route>topo-0001.xml</fr:route><fr:title>Elementary topos</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>733</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>ct-000E</fr:addr><fr:route>ct-000E.xml</fr:route><fr:title>Monomorphisms in a category equipped with a <fr:link
+href="ct-0009.xml"
+type="local"
+addr="ct-0009">subobject classifier</fr:link> are regular</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:authors><fr:author><fr:link
+href="frankndrssn.xml"
+type="local"
+addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>\mathcal { C }</fr:tex> be a cartesian category equipped with a subobject classifier. Every monomorphism in <fr:tex>\mathcal { C }</fr:tex> is regular.</fr:p>
+    
+      
+      <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="false"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"><fr:frontmatter><fr:anchor>331</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:authors><fr:author><fr:link
+href="frankndrssn.xml"
+type="local"
+addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors><fr:parent>ct-000E</fr:parent></fr:frontmatter><fr:mainmatter>
+  Note that the generic subobject <fr:tex>\top \colon 1 \rightarrowtail \Omega</fr:tex> is a split monomorphism, so it is also a regular monomorphism. Explicitly, <fr:tex>\top</fr:tex> is the equalizer of <fr:tex>\mathsf {id} _{ \Omega }</fr:tex> and <fr:tex>\Omega   \xrightarrow { \mathsf {!} _{ \Omega } }  1  \xrightarrow { \top }   \Omega</fr:tex>.
+  
+  <fr:p>Since every monomorphism in <fr:tex>\mathcal { C }</fr:tex> is a pullback against <fr:tex>\top</fr:tex> and regular monomorphisms are stable under pullback, it follows that every monomorphism in <fr:tex>\mathcal { C }</fr:tex> is regular.</fr:p>
+</fr:mainmatter></fr:tree>
+    
+  </fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="true"
+root="false"><fr:frontmatter><fr:anchor>735</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-0001</fr:addr><fr:route>topo-0001.xml</fr:route><fr:title>Elementary topos</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>An <fr:em><fr:strong>(elementary) topos</fr:strong></fr:em> is a finitely complete and cartesian closed category equipped with a <fr:link
@@ -54,7 +88,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>669</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>topo-0008</fr:addr><fr:route>topo-0008.xml</fr:route><fr:title><fr:link
+root="false"><fr:frontmatter><fr:anchor>731</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>topo-0008</fr:addr><fr:route>topo-0008.xml</fr:route><fr:title><fr:link
 href="topo-0001.xml"
 type="local"
 addr="topo-0001">Topoi</fr:link> are balanced</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
@@ -73,14 +107,14 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>361</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>413</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors><fr:parent>topo-0008</fr:parent></fr:frontmatter><fr:mainmatter>
   By <fr:ref
 addr="topo-0007"
 href="topo-0007.xml"
-taxon="Lemma"></fr:ref>, every monomorphism is regular. Thus, any epic monomorphism is automatically an isomorphism.
+taxon="Corollary"></fr:ref>, every monomorphism is regular. Thus, any epic monomorphism is automatically an isomorphism.
 </fr:mainmatter></fr:tree>
     
   </fr:mainmatter></fr:tree></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>

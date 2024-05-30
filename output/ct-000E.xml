@@ -7,266 +7,69 @@ numbered="true"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>761</fr:anchor><fr:taxon>Axiom</fr:taxon><fr:addr>mnc-0002</fr:addr><fr:route>mnc-0002.xml</fr:route><fr:title>Unity axiom</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>333</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>ct-000E</fr:addr><fr:route>ct-000E.xml</fr:route><fr:title>Monomorphisms in a category equipped with a <fr:link
+href="ct-0009.xml"
+type="local"
+addr="ct-0009">subobject classifier</fr:link> are regular</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
-addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>The following diagram commutes.</fr:p>
+addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>\mathcal { C }</fr:tex> be a cartesian category equipped with a subobject classifier. Every monomorphism in <fr:tex>\mathcal { C }</fr:tex> is regular.</fr:p>
     
       
-      <fr:embedded-tex
-hash="4288b3ca6bf8d799188ffad796b76413"><fr:embedded-tex-preamble>
-         
-   \RequirePackage {tikz}
-   \RequirePackage {amsmath}
-   \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
-
-   \definecolor {catccolor}{RGB}{255,244,138}
-   \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
-   \tikzstyle {catc}=[catccolor!60]
-   \tikzstyle {catd}=[orange!40]
-   \tikzstyle {cate}=[red!40]
-   \tikzstyle {catf}=[blue!10]
-   \tikzstyle {catg}=[green!25]
-
-
-   \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
-   \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
-
-   \NewDocumentCommand \CreateRect {D&lt;&gt;{} m m}{
-     \path 
-      coordinate (#1nw)
-      ++(#2,-#3) coordinate (#1se)
-      coordinate (#1sw) at (#1se -| #1nw)
-      coordinate (#1ne) at (#1nw -| #1se)
-    ;
-
-     \path [spath/save = #1north] (#1nw) to (#1ne);
-     \path [spath/save = #1west] (#1nw) to (#1sw);
-     \path [spath/save = #1east] (#1ne) to (#1se);
-     \path [spath/save = #1south] (#1sw) to (#1se);
-  }
- 
-         
-   % appears to be necessary
-  \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd}
-  \usetikzlibrary{matrix,arrows}
-  \usetikzlibrary{backgrounds,fit,positioning,calc,shapes}
-  \usetikzlibrary{decorations.pathreplacing}
-  \usetikzlibrary{decorations.pathmorphing}
-  \usetikzlibrary{decorations.markings}
-
-  % basic settings
-  \tikzset{
-    diagram/.style = {
-      on grid,
-      node distance=2cm,
-      commutative diagrams/every diagram,
-      line width = .5pt,
-      every node/.append style = {
-        commutative diagrams/every cell,
-      },
-    },
-    morphism/.style = {
-      auto=left,
-      node font=\scriptsize,
-    },
-    phantom/.style = {
-      commutative diagrams/phantom,
-      node font=\scriptsize,
-      sloped,
-    },
-    desc/.style = {anchor=center,fill=white,inner sep=3pt},
-    offset/.style args = {#1} {commutative diagrams/shift right={#1}},
-    cross over/.style = {
-      commutative diagrams/crossing over
-    },
-  }
-
-  % macro that draws the adjunction symbol in a diagram
-  \NewDocumentCommand\DrawAdj{mm}{
-    \draw [phantom] (#1) to node[rotate=180] {$\dashv$} (#2);
-  }
-
-  % pullback and pushout
-  \tikzset{
-    pullback/.style = {
-      append after command = {
-        \pgfextra{
-          \draw ($(\tikzlastnode) + (.2cm,-.5cm)$) -- ++(0.3cm,0) -- ++(0,0.3cm);
-        }
-      }
-    },
-    pushout/.style = {
-      append after command={
-        \pgfextra{
-          \draw ($(\tikzlastnode) + (-.2cm,.5cm)$) -- ++(-0.3cm,0) -- ++(0,-0.3cm);
-        }
-      }
-    },
-  }
-
-  % arrow styles
-  \tikzset{
-    exists/.style = {
-      densely dashed
-    },
-  }
-
-  \newlength{\dontworryaboutit} % no idea what it does
-
-  \tikzset{
-    inline diagram/.style = {
-      commutative diagrams/every diagram,
-      commutative diagrams/cramped,
-      line width = .5pt,
-      every node/.append style = {
-        commutative diagrams/every cell,
-        anchor = base,
-        inner sep = 0pt
-      },
-      every path/.append style = {
-        outer xsep = 2pt
-      }
-    }
-  }
+      <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="false"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"><fr:frontmatter><fr:anchor>331</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:authors><fr:author><fr:link
+href="frankndrssn.xml"
+type="local"
+addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors><fr:parent>ct-000E</fr:parent></fr:frontmatter><fr:mainmatter>
+  Note that the generic subobject <fr:tex>\top \colon 1 \rightarrowtail \Omega</fr:tex> is a split monomorphism, so it is also a regular monomorphism. Explicitly, <fr:tex>\top</fr:tex> is the equalizer of <fr:tex>\mathsf {id} _{ \Omega }</fr:tex> and <fr:tex>\Omega   \xrightarrow { \mathsf {!} _{ \Omega } }  1  \xrightarrow { \top }   \Omega</fr:tex>.
   
-  % macros for drawing commutative squares
-  % adapted from Jon Sterling's macros (https://git.sr.ht/~jonsterling/article-template/tree/main/item/local-tikz.sty)
-  \tikzset{
-    square/nw/.style = {},
-    square/ne/.style = {},
-    square/se/.style = {},
-    square/sw/.style = {},
-    square/north/.style = {-&gt;},
-    square/south/.style = {-&gt;},
-    square/west/.style = {-&gt;},
-    square/east/.style = {-&gt;},
-    square/north/node/.style = {above},
-    square/south/node/.style = {below},
-    square/west/node/.style = {left},
-    square/east/node/.style = {right},
-  }
-
-  \ExplSyntaxOn
-  \keys_define:nn { jon-tikz/diagram } {
-    nw .tl_set:N = \l_jon_tikz_diagram_nw,
-    sw .tl_set:N = \l_jon_tikz_diagram_sw,
-    ne .tl_set:N = \l_jon_tikz_diagram_ne,
-    se .tl_set:N = \l_jon_tikz_diagram_se,
-
-    width .tl_set:N = \l_jon_tikz_diagram_width,
-    height .tl_set:N = \l_jon_tikz_diagram_height,
-
-    north .tl_set:N = \l_jon_tikz_diagram_north,
-    south .tl_set:N = \l_jon_tikz_diagram_south,
-    west .tl_set:N = \l_jon_tikz_diagram_west,
-    east .tl_set:N = \l_jon_tikz_diagram_east,
-
-    nw/style .code:n = {\tikzset{square/nw/.style = {#1}}},
-    sw/style .code:n = {\tikzset{square/sw/.style = {#1}}},
-    ne/style .code:n = {\tikzset{square/ne/.style = {#1}}},
-    se/style .code:n = {\tikzset{square/se/.style = {#1}}},
-
-    north/style .code:n = {\tikzset{square/north/.style = {#1}}},
-    north/node/style .code:n = {\tikzset{square/north/node/.style = {#1}}},
-    south/style .code:n = {\tikzset{square/south/.style = {#1}}},
-    south/node/style .code:n = {\tikzset{square/south/node/.style = {#1}}},
-    west/style .code:n = {\tikzset{square/west/.style = {#1}}},
-    west/node/style .code:n = {\tikzset{square/west/node/.style = {#1}}},
-    east/style .code:n = {\tikzset{square/east/.style = {#1}}},
-    east/node/style .code:n = {\tikzset{square/east/node/.style = {#1}}},
-
-    draft .meta:n = {
-      nw = {nw},
-      sw = {sw},
-      se = {se},
-      ne = {ne},
-      north = {north},
-      south = {south},
-      west = {west},
-      east = {east},
-    }
-  }
-
-  \tl_set:Nn \l_jon_tikz_diagram_width { 2cm }
-  \tl_set:Nn \l_jon_tikz_diagram_height { 2cm }
-
-
-  \cs_new:Nn \__jon_tikz_render_square:nn {
-    \group_begin:
-    \keys_set:nn {jon-tikz/diagram} {#2} {
-      \node (#1nw) [square/nw] {$\l_jon_tikz_diagram_nw$};
-      \node (#1sw) [below = \l_jon_tikz_diagram_height~of~#1nw,square/sw] {$\l_jon_tikz_diagram_sw$};
-      \draw[morphism,square/west] (#1nw) to node [square/west/node] {$\l_jon_tikz_diagram_west$} (#1sw);
-
-      \node (#1ne) [right = \l_jon_tikz_diagram_width~of~#1nw,square/ne] {$\l_jon_tikz_diagram_ne$};
-      \node (#1se) [below = \l_jon_tikz_diagram_height~of~#1ne,square/se] {$\l_jon_tikz_diagram_se$};
-      \draw[morphism,square/north] (#1nw) to node [square/north/node] {$\l_jon_tikz_diagram_north$} (#1ne);
-      \draw[morphism,square/east] (#1ne) to node [square/east/node] {$\l_jon_tikz_diagram_east$} (#1se);
-      \draw[morphism,square/south] (#1sw) to node [square/south/node] {$\l_jon_tikz_diagram_south$} (#1se);
-    }
-    \group_end:
-  }
-
-  % the optional argument allows one to specify a prefix to positions
-  \NewDocumentCommand\SpliceDiagramSquare{O{}m}{
-    \__jon_tikz_render_square:nn {#1} {#2}
-  }
-
-  \NewDocumentCommand\DiagramSquare{O{}O{}m}{
-    \begin{tikzpicture}[diagram,#2,baseline=(#1sw.base)]
-      \__jon_tikz_render_square:nn {#1} {#3}
-    \end{tikzpicture}
-  }
-  \ExplSyntaxOff
- 
-      </fr:embedded-tex-preamble><fr:embedded-tex-body>
-   \DiagramSquare {
-    nw = (X  \otimes   1 )  \otimes  Y,
-    sw = X  \otimes  Y,
-    se = X  \otimes  Y,
-    ne = X  \otimes  ( 1   \otimes  Y),
-    east = X  \otimes   \lambda _{ Y } ,
-    west =  \rho _{ X }   \otimes  Y,
-    north =  
-   \alpha _{{ X },{ 1 },{ Y }} 
- ,
-    south/style = {double},
-    height = 1.5cm,
-    width = 3.5cm,
-  }
-</fr:embedded-tex-body></fr:embedded-tex>
+  <fr:p>Since every monomorphism in <fr:tex>\mathcal { C }</fr:tex> is a pullback against <fr:tex>\top</fr:tex> and regular monomorphisms are stable under pullback, it follows that every monomorphism in <fr:tex>\mathcal { C }</fr:tex> is regular.</fr:p>
+</fr:mainmatter></fr:tree>
     
-  <fr:p>Moreover the equality <fr:tex>\lambda _{ 1 }  =  \rho _{ 1 } \colon 1   \otimes   1 \to 1</fr:tex> holds.</fr:p></fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context><fr:tree
+  </fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context></fr:context><fr:related><fr:tree
 xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>759</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>mnc-0001</fr:addr><fr:route>mnc-0001.xml</fr:route><fr:title>Monoidal category</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>329</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>ct-0009</fr:addr><fr:route>ct-0009.xml</fr:route><fr:title><fr:link
+href="ct-0006.xml"
+type="local"
+addr="ct-0006">Subobject</fr:link> classifier</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
-addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>A <fr:em><fr:strong>monoidal category</fr:strong></fr:em> consists of the following data.</fr:p><fr:ul><fr:li>An underlying category <fr:tex>\mathcal { C }</fr:tex>.</fr:li>
-  <fr:li>A functor <fr:tex>\otimes \colon \mathcal { C }   \times   \mathcal { C } \to \mathcal { C }</fr:tex> called the <fr:em><fr:strong>monoidal product</fr:strong></fr:em>.</fr:li>
-  <fr:li>An object <fr:tex>1   \in   \mathcal { C }</fr:tex> called the <fr:em><fr:strong>monoidal unit</fr:strong></fr:em>.</fr:li>
-  <fr:li>A natural isomorphism <fr:tex>    \alpha _{{ X },{ Y },{ Z }}   \colon (X  \otimes  Y)  \otimes  Z \to X  \otimes  (Y  \otimes  Z)</fr:tex> called the <fr:em><fr:strong>associator</fr:strong></fr:em>.</fr:li>
-  <fr:li>A natural isomorphism <fr:tex>\lambda _{ X } \colon 1   \otimes  X \to X</fr:tex> called the <fr:em><fr:strong>left unitor</fr:strong></fr:em>.</fr:li>
-  <fr:li>A natural isomorphism <fr:tex>\rho _{ X } \colon X  \otimes   1 \to X</fr:tex> called the <fr:em><fr:strong>right unitor</fr:strong></fr:em>.</fr:li></fr:ul><fr:p>These data are subject to the following axioms.</fr:p><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
-toc="true"
-numbered="true"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>618</fr:anchor><fr:taxon>Axiom</fr:taxon><fr:addr>mnc-0002</fr:addr><fr:route>mnc-0002.xml</fr:route><fr:title>Unity axiom</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
-href="frankndrssn.xml"
-type="local"
-addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>The following diagram commutes.</fr:p>
+addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>\mathcal { C }</fr:tex> be a category with pullbacks. The <fr:em><fr:strong>subobject classifier</fr:strong></fr:em> of <fr:tex>\mathcal { C }</fr:tex> is the terminal object (if it exists) of the category <fr:tex>\mathcal { S } _{ \mathcal { C } }</fr:tex> defined by the following data:</fr:p>
+  <html:table
+xmlns:html="http://www.w3.org/1999/xhtml">
+  
+  <html:tr>
+    
+  <html:th>Objects</html:th>
+
+    
+  <html:th>Morphisms</html:th>
+
+  </html:tr>
+
+  
+  <html:tr>
+    
+  <html:td>An object of <fr:tex>\mathcal { S } _{ \mathcal { C } }</fr:tex> is a pair <fr:tex>(A, m)</fr:tex>, where <fr:tex>A</fr:tex> is an object in <fr:tex>\mathcal { C }</fr:tex> and <fr:tex>m \colon  A'  \rightarrowtail  A</fr:tex> is a subobject.</html:td>
+
+    
+  <html:td>A morphism <fr:tex>(A,m)  \to  (B,n)</fr:tex> is a morphism <fr:tex>f \colon  A  \to  B</fr:tex> in <fr:tex>\mathcal { C }</fr:tex> such that <fr:tex>m</fr:tex> is a pullback against <fr:tex>n</fr:tex> along <fr:tex>f</fr:tex>. In other words, <fr:tex>m</fr:tex> is isomorphic to the canonical pullback <fr:tex>f ^{*} (n)</fr:tex> in <fr:tex>\mathsf { Sub } (A)</fr:tex>.
+      
     
       
       <fr:embedded-tex
-hash="4288b3ca6bf8d799188ffad796b76413"><fr:embedded-tex-preamble>
+hash="31e9bdf8afa3f6c87aeca3f3cbc17dde"><fr:embedded-tex-preamble>
          
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -473,37 +276,64 @@ hash="4288b3ca6bf8d799188ffad796b76413"><fr:embedded-tex-preamble>
   \ExplSyntaxOff
  
       </fr:embedded-tex-preamble><fr:embedded-tex-body>
-   \DiagramSquare {
-    nw = (X  \otimes   1 )  \otimes  Y,
-    sw = X  \otimes  Y,
-    se = X  \otimes  Y,
-    ne = X  \otimes  ( 1   \otimes  Y),
-    east = X  \otimes   \lambda _{ Y } ,
-    west =  \rho _{ X }   \otimes  Y,
-    north =  
-   \alpha _{{ X },{ 1 },{ Y }} 
- ,
-    south/style = {double},
-    height = 1.5cm,
-    width = 3.5cm,
-  }
-</fr:embedded-tex-body></fr:embedded-tex>
+         \DiagramSquare {
+          nw = A',
+          nw/style = pullback,
+          ne = B',
+          sw = A,
+          se = B,
+          south = f,
+          west = m,
+          west/style = {&gt;-&gt;},
+          east = n,
+          east/style = {&gt;-&gt;},
+        }
+      </fr:embedded-tex-body></fr:embedded-tex>
     
-  <fr:p>Moreover the equality <fr:tex>\lambda _{ 1 }  =  \rho _{ 1 } \colon 1   \otimes   1 \to 1</fr:tex> holds.</fr:p></fr:mainmatter></fr:tree><fr:tree
+  
+    </html:td>
+ 
+  </html:tr>
+
+</html:table>
+<fr:p>Identities and compositions of <fr:tex>\mathcal { S } _{ \mathcal { C } }</fr:tex> are inherited from <fr:tex>\mathcal { C }</fr:tex>.</fr:p>
+    
+      
+      <fr:tree
 xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
-toc="true"
+toc="false"
 numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>620</fr:anchor><fr:taxon>Axiom</fr:taxon><fr:addr>mnc-0003</fr:addr><fr:route>mnc-0003.xml</fr:route><fr:title>Pentagon axiom</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>283</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
-addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>The following diagram commutes.</fr:p>
+addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors><fr:parent>ct-0009</fr:parent></fr:frontmatter><fr:mainmatter>
+  For the definition to make sense, we need to show that <fr:tex>\mathcal { S } _{ \mathcal { C } }</fr:tex> is a category.
+  Since identities and compositions are inherited from <fr:tex>\mathcal { C }</fr:tex>, it suffices to show the followings:
+  <fr:ol><fr:li>
+      For any object <fr:tex>A  \in   \mathcal { C }</fr:tex> and any subobject <fr:tex>m \colon  A'  \rightarrowtail  A</fr:tex>, the identity morphism <fr:tex>\mathsf {id} _{ A }</fr:tex> gives the required pullback.
+      
+    
+      
+      <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="false"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"><fr:frontmatter><fr:anchor>279</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:authors><fr:author><fr:link
+href="frankndrssn.xml"
+type="local"
+addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors><fr:parent>ct-0009</fr:parent></fr:frontmatter><fr:mainmatter>
+        The following diagram is a pullback.
+        
     
       
       <fr:embedded-tex
-hash="2424eec97df9f095132a9c68007f9707"><fr:embedded-tex-preamble>
+hash="acfaaa823126b76c04c5c27109f299a4"><fr:embedded-tex-preamble>
          
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -710,28 +540,316 @@ hash="2424eec97df9f095132a9c68007f9707"><fr:embedded-tex-preamble>
   \ExplSyntaxOff
  
       </fr:embedded-tex-preamble><fr:embedded-tex-body>
-   \begin {tikzpicture}[diagram]
-     \node  (1) at (90:3cm) {$(W  \otimes  X)  \otimes  (Y  \otimes  Z)$};
-     \node  (2) at (90+72:4cm) {$((W  \otimes  X)  \otimes  Y)  \otimes  Z$};
-     \node  (3) at (90+2*72-30:1.5cm) { \makebox [3ex][r]{$(W  \otimes  (X  \otimes  Y))  \otimes  Z$}};
-     \node  (4) at (90+3*72+30:1.5cm) { \makebox [3ex][l]{$W  \otimes  ((X  \otimes  Y)  \otimes  Z)$}};
-     \node  (5) at (90+4*72:4cm) {$W  \otimes  (X  \otimes  (Y  \otimes  Z))$};
-     \draw  [-&gt;,morphism] (2) to node {$ 
-   \alpha _{{ W  \otimes  X },{ Y },{ Z }} 
- $} (1);
-     \draw  [-&gt;,morphism] (1) to node {$ 
-   \alpha _{{ W },{ X },{ Y  \otimes  Z }} 
- $} (5);
-     \draw  [-&gt;,morphism] (2) to node[swap] {$ 
-   \alpha _{{ W },{ X },{ Y }} 
-   \otimes  Z$} (3);
-     \draw  [-&gt;,morphism] (3) to node[swap] {$ 
-   \alpha _{{ W },{ X  \otimes  Y },{ Z }} 
- $} (4);
-     \draw  [-&gt;,morphism] (4) to node[swap] {$W  \otimes   
-   \alpha _{{ X },{ Y },{ Z }} 
- $} (5);
-   \end {tikzpicture}
-</fr:embedded-tex-body></fr:embedded-tex>
+           \DiagramSquare {
+            nw = A',
+            nw/style = pullback,
+            ne = A',
+            sw = A,
+            se = A,
+            north/style = {double},
+            south/style = {double},
+            east = m,
+            west = m,
+            east/style = {&gt;-&gt;},
+            west/style = {&gt;-&gt;},
+          }
+        </fr:embedded-tex-body></fr:embedded-tex>
     
-  </fr:mainmatter></fr:tree></fr:mainmatter></fr:tree></fr:context><fr:related></fr:related><fr:backlinks></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>
+  
+      </fr:mainmatter></fr:tree></fr:li>
+    <fr:li>
+      For any <fr:tex>f \colon  (A,m)  \to  (B,n)</fr:tex> and any <fr:tex>g \colon  (B,n)  \to  (C,o)</fr:tex>, the composite <fr:tex>gf</fr:tex> gives the required pullback.
+      
+    
+      
+      <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="false"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"><fr:frontmatter><fr:anchor>281</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:authors><fr:author><fr:link
+href="frankndrssn.xml"
+type="local"
+addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors><fr:parent>ct-0009</fr:parent></fr:frontmatter><fr:mainmatter>
+        By definition, the two inner squares of the following diagram are pullbacks.
+        
+    
+      
+      <fr:embedded-tex
+hash="424c85f27c3fc45f64f9e3ecda082a7d"><fr:embedded-tex-preamble>
+         
+   \RequirePackage {tikz}
+   \RequirePackage {amsmath}
+   \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
+
+   \definecolor {catccolor}{RGB}{255,244,138}
+   \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
+   \tikzstyle {catc}=[catccolor!60]
+   \tikzstyle {catd}=[orange!40]
+   \tikzstyle {cate}=[red!40]
+   \tikzstyle {catf}=[blue!10]
+   \tikzstyle {catg}=[green!25]
+
+
+   \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
+   \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
+
+   \NewDocumentCommand \CreateRect {D&lt;&gt;{} m m}{
+     \path 
+      coordinate (#1nw)
+      ++(#2,-#3) coordinate (#1se)
+      coordinate (#1sw) at (#1se -| #1nw)
+      coordinate (#1ne) at (#1nw -| #1se)
+    ;
+
+     \path [spath/save = #1north] (#1nw) to (#1ne);
+     \path [spath/save = #1west] (#1nw) to (#1sw);
+     \path [spath/save = #1east] (#1ne) to (#1se);
+     \path [spath/save = #1south] (#1sw) to (#1se);
+  }
+ 
+         
+   % appears to be necessary
+  \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd}
+  \usetikzlibrary{matrix,arrows}
+  \usetikzlibrary{backgrounds,fit,positioning,calc,shapes}
+  \usetikzlibrary{decorations.pathreplacing}
+  \usetikzlibrary{decorations.pathmorphing}
+  \usetikzlibrary{decorations.markings}
+
+  % basic settings
+  \tikzset{
+    diagram/.style = {
+      on grid,
+      node distance=2cm,
+      commutative diagrams/every diagram,
+      line width = .5pt,
+      every node/.append style = {
+        commutative diagrams/every cell,
+      },
+    },
+    morphism/.style = {
+      auto=left,
+      node font=\scriptsize,
+    },
+    phantom/.style = {
+      commutative diagrams/phantom,
+      node font=\scriptsize,
+      sloped,
+    },
+    desc/.style = {anchor=center,fill=white,inner sep=3pt},
+    offset/.style args = {#1} {commutative diagrams/shift right={#1}},
+    cross over/.style = {
+      commutative diagrams/crossing over
+    },
+  }
+
+  % macro that draws the adjunction symbol in a diagram
+  \NewDocumentCommand\DrawAdj{mm}{
+    \draw [phantom] (#1) to node[rotate=180] {$\dashv$} (#2);
+  }
+
+  % pullback and pushout
+  \tikzset{
+    pullback/.style = {
+      append after command = {
+        \pgfextra{
+          \draw ($(\tikzlastnode) + (.2cm,-.5cm)$) -- ++(0.3cm,0) -- ++(0,0.3cm);
+        }
+      }
+    },
+    pushout/.style = {
+      append after command={
+        \pgfextra{
+          \draw ($(\tikzlastnode) + (-.2cm,.5cm)$) -- ++(-0.3cm,0) -- ++(0,-0.3cm);
+        }
+      }
+    },
+  }
+
+  % arrow styles
+  \tikzset{
+    exists/.style = {
+      densely dashed
+    },
+  }
+
+  \newlength{\dontworryaboutit} % no idea what it does
+
+  \tikzset{
+    inline diagram/.style = {
+      commutative diagrams/every diagram,
+      commutative diagrams/cramped,
+      line width = .5pt,
+      every node/.append style = {
+        commutative diagrams/every cell,
+        anchor = base,
+        inner sep = 0pt
+      },
+      every path/.append style = {
+        outer xsep = 2pt
+      }
+    }
+  }
+  
+  % macros for drawing commutative squares
+  % adapted from Jon Sterling's macros (https://git.sr.ht/~jonsterling/article-template/tree/main/item/local-tikz.sty)
+  \tikzset{
+    square/nw/.style = {},
+    square/ne/.style = {},
+    square/se/.style = {},
+    square/sw/.style = {},
+    square/north/.style = {-&gt;},
+    square/south/.style = {-&gt;},
+    square/west/.style = {-&gt;},
+    square/east/.style = {-&gt;},
+    square/north/node/.style = {above},
+    square/south/node/.style = {below},
+    square/west/node/.style = {left},
+    square/east/node/.style = {right},
+  }
+
+  \ExplSyntaxOn
+  \keys_define:nn { jon-tikz/diagram } {
+    nw .tl_set:N = \l_jon_tikz_diagram_nw,
+    sw .tl_set:N = \l_jon_tikz_diagram_sw,
+    ne .tl_set:N = \l_jon_tikz_diagram_ne,
+    se .tl_set:N = \l_jon_tikz_diagram_se,
+
+    width .tl_set:N = \l_jon_tikz_diagram_width,
+    height .tl_set:N = \l_jon_tikz_diagram_height,
+
+    north .tl_set:N = \l_jon_tikz_diagram_north,
+    south .tl_set:N = \l_jon_tikz_diagram_south,
+    west .tl_set:N = \l_jon_tikz_diagram_west,
+    east .tl_set:N = \l_jon_tikz_diagram_east,
+
+    nw/style .code:n = {\tikzset{square/nw/.style = {#1}}},
+    sw/style .code:n = {\tikzset{square/sw/.style = {#1}}},
+    ne/style .code:n = {\tikzset{square/ne/.style = {#1}}},
+    se/style .code:n = {\tikzset{square/se/.style = {#1}}},
+
+    north/style .code:n = {\tikzset{square/north/.style = {#1}}},
+    north/node/style .code:n = {\tikzset{square/north/node/.style = {#1}}},
+    south/style .code:n = {\tikzset{square/south/.style = {#1}}},
+    south/node/style .code:n = {\tikzset{square/south/node/.style = {#1}}},
+    west/style .code:n = {\tikzset{square/west/.style = {#1}}},
+    west/node/style .code:n = {\tikzset{square/west/node/.style = {#1}}},
+    east/style .code:n = {\tikzset{square/east/.style = {#1}}},
+    east/node/style .code:n = {\tikzset{square/east/node/.style = {#1}}},
+
+    draft .meta:n = {
+      nw = {nw},
+      sw = {sw},
+      se = {se},
+      ne = {ne},
+      north = {north},
+      south = {south},
+      west = {west},
+      east = {east},
+    }
+  }
+
+  \tl_set:Nn \l_jon_tikz_diagram_width { 2cm }
+  \tl_set:Nn \l_jon_tikz_diagram_height { 2cm }
+
+
+  \cs_new:Nn \__jon_tikz_render_square:nn {
+    \group_begin:
+    \keys_set:nn {jon-tikz/diagram} {#2} {
+      \node (#1nw) [square/nw] {$\l_jon_tikz_diagram_nw$};
+      \node (#1sw) [below = \l_jon_tikz_diagram_height~of~#1nw,square/sw] {$\l_jon_tikz_diagram_sw$};
+      \draw[morphism,square/west] (#1nw) to node [square/west/node] {$\l_jon_tikz_diagram_west$} (#1sw);
+
+      \node (#1ne) [right = \l_jon_tikz_diagram_width~of~#1nw,square/ne] {$\l_jon_tikz_diagram_ne$};
+      \node (#1se) [below = \l_jon_tikz_diagram_height~of~#1ne,square/se] {$\l_jon_tikz_diagram_se$};
+      \draw[morphism,square/north] (#1nw) to node [square/north/node] {$\l_jon_tikz_diagram_north$} (#1ne);
+      \draw[morphism,square/east] (#1ne) to node [square/east/node] {$\l_jon_tikz_diagram_east$} (#1se);
+      \draw[morphism,square/south] (#1sw) to node [square/south/node] {$\l_jon_tikz_diagram_south$} (#1se);
+    }
+    \group_end:
+  }
+
+  % the optional argument allows one to specify a prefix to positions
+  \NewDocumentCommand\SpliceDiagramSquare{O{}m}{
+    \__jon_tikz_render_square:nn {#1} {#2}
+  }
+
+  \NewDocumentCommand\DiagramSquare{O{}O{}m}{
+    \begin{tikzpicture}[diagram,#2,baseline=(#1sw.base)]
+      \__jon_tikz_render_square:nn {#1} {#3}
+    \end{tikzpicture}
+  }
+  \ExplSyntaxOff
+ 
+      </fr:embedded-tex-preamble><fr:embedded-tex-body>
+           \begin {tikzpicture}[diagram]
+             \SpliceDiagramSquare {
+              nw = B',
+              nw/style = pullback,
+              ne = C',
+              sw = B,
+              se = C,
+              south = g,
+              west = n,
+              west/style = {&gt;-&gt;},
+              west/node/style = {desc},
+              east = o,
+              east/style = {&gt;-&gt;},
+            }
+             \node  [left = of nw, pullback] (A') {$A'$};
+             \node  [left = of sw] (A) {$A$};
+             \draw  [-&gt;,morphism] (A') to (nw);
+             \draw  [&gt;-&gt;,morphism] (A') to node[swap] {$m$} (A);
+             \draw  [-&gt;,morphism] (A) to node[swap] {$f$} (sw);
+           \end {tikzpicture}
+          
+        </fr:embedded-tex-body></fr:embedded-tex>
+    
+  
+        Then by the <fr:link
+href="ct-0008.xml"
+type="local"
+addr="ct-0008">pasting lemma of pullbacks</fr:link>, the outer rectangle is also a pullback.
+      </fr:mainmatter></fr:tree></fr:li></fr:ol>
+</fr:mainmatter></fr:tree>
+    
+  </fr:mainmatter></fr:tree></fr:related><fr:backlinks><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="true"
+root="false"><fr:frontmatter><fr:anchor>327</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>topo-0007</fr:addr><fr:route>topo-0007.xml</fr:route><fr:title>Monomorphisms are equalizers in a <fr:link
+href="topo-0001.xml"
+type="local"
+addr="topo-0001">topos</fr:link></fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
+href="frankndrssn.xml"
+type="local"
+addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>In a <fr:link
+href="topo-0001.xml"
+type="local"
+addr="topo-0001">topos</fr:link>, every monomorphism is an equalizer.</fr:p>
+    
+      
+      <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="false"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"><fr:frontmatter><fr:anchor>325</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
+href="frankndrssn.xml"
+type="local"
+addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors><fr:parent>topo-0007</fr:parent></fr:frontmatter><fr:mainmatter>
+  This is an immediate consequence of <fr:ref
+addr="ct-000E"
+href="ct-000E.xml"
+taxon="Lemma"></fr:ref>.
+</fr:mainmatter></fr:tree>
+    
+  </fr:mainmatter></fr:tree></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>
