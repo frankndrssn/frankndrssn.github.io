@@ -7,7 +7,7 @@ numbered="true"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>386</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>topo-000I</fr:addr><fr:route>topo-000I.xml</fr:route><fr:title>Singleton maps are monomorphisms</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>404</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>topo-000I</fr:addr><fr:route>topo-000I.xml</fr:route><fr:title>Singleton maps are monomorphisms</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>A</fr:tex> be any object in a <fr:link
@@ -26,7 +26,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>384</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>402</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors><fr:parent>topo-000I</fr:parent></fr:frontmatter><fr:mainmatter>
@@ -38,7 +38,7 @@ taxon="Lemma"></fr:ref>, the following square is a pullback.
     
       
       <fr:embedded-tex
-hash="eeb7eb40c3ae4b74fdedf7e322468a0c"><fr:embedded-tex-preamble>
+hash="67ff5f4eb715033d150da855b9efa3e8"><fr:embedded-tex-preamble>
          
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -107,8 +107,12 @@ hash="eeb7eb40c3ae4b74fdedf7e322468a0c"><fr:embedded-tex-preamble>
   }
 
   % macro that draws the adjunction symbol in a diagram
-  \NewDocumentCommand\DrawAdj{mm}{
-    \draw [phantom] (#1) to node[rotate=180] {$\dashv$} (#2);
+  \NewDocumentCommand\DrawAdj{smm}{
+    \IfBooleanTF {#1}{
+      \draw [phantom] (#2) to node {$\dashv$} (#3);
+    }{
+      \draw [phantom] (#2) to node[rotate=180] {$\dashv$} (#3);
+    }
   }
 
   % pullback and pushout
@@ -134,6 +138,9 @@ hash="eeb7eb40c3ae4b74fdedf7e322468a0c"><fr:embedded-tex-preamble>
     exists/.style = {
       densely dashed
     },
+    embedding/.style = {
+      {right hook}-&gt;
+    }
   }
 
   \newlength{\dontworryaboutit} % no idea what it does
@@ -269,7 +276,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>376</fr:anchor><fr:taxon>Terminology</fr:taxon><fr:addr>topo-000J</fr:addr><fr:route>topo-000J.xml</fr:route><fr:title>Name</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>394</fr:anchor><fr:taxon>Terminology</fr:taxon><fr:addr>topo-000J</fr:addr><fr:route>topo-000J.xml</fr:route><fr:title>Name</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>m \colon  R  \mono  A  \times  B</fr:tex> be a relation in a <fr:link
@@ -282,7 +289,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>380</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>topo-0009</fr:addr><fr:route>topo-0009.xml</fr:route><fr:title>Every <fr:link
+root="false"><fr:frontmatter><fr:anchor>398</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>topo-0009</fr:addr><fr:route>topo-0009.xml</fr:route><fr:title>Every <fr:link
 href="ct-0004.xml"
 type="local"
 addr="ct-0004">equivalence relation</fr:link> in a topos is <fr:link
@@ -301,7 +308,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>378</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>396</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors><fr:parent>topo-0009</fr:parent></fr:frontmatter><fr:mainmatter>
@@ -318,7 +325,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>382</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-0001</fr:addr><fr:route>topo-0001.xml</fr:route><fr:title>Elementary topos</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>400</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-0001</fr:addr><fr:route>topo-0001.xml</fr:route><fr:title>Elementary topos</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>An <fr:em><fr:strong>(elementary) topos</fr:strong></fr:em> is a finitely complete and cartesian closed category equipped with a <fr:link

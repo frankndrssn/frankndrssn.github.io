@@ -7,7 +7,7 @@ numbered="true"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>766</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>mnc-000A</fr:addr><fr:route>mnc-000A.xml</fr:route><fr:title>Strict <fr:link
+root="false"><fr:frontmatter><fr:anchor>788</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>mnc-000A</fr:addr><fr:route>mnc-000A.xml</fr:route><fr:title>Strict <fr:link
 href="mnc-0005.xml"
 type="local"
 addr="mnc-0005">monoidal functor</fr:link></fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
@@ -23,7 +23,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>764</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>mnc-0005</fr:addr><fr:route>mnc-0005.xml</fr:route><fr:title>Monoidal functor</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>786</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>mnc-0005</fr:addr><fr:route>mnc-0005.xml</fr:route><fr:title>Monoidal functor</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>\mathcal { C }</fr:tex> and <fr:tex>\mathcal { D }</fr:tex> be <fr:link
@@ -44,14 +44,14 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>637</fr:anchor><fr:taxon>Axiom</fr:taxon><fr:addr>mnc-0006</fr:addr><fr:route>mnc-0006.xml</fr:route><fr:title>Associativity</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>659</fr:anchor><fr:taxon>Axiom</fr:taxon><fr:addr>mnc-0006</fr:addr><fr:route>mnc-0006.xml</fr:route><fr:title>Associativity</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>The following diagram commutes.</fr:p>
     
       
       <fr:embedded-tex
-hash="a479892fef658050227c169babbdbeee"><fr:embedded-tex-preamble>
+hash="f82b9646e1f55a9328ab20d2fbc6f683"><fr:embedded-tex-preamble>
          
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -120,8 +120,12 @@ hash="a479892fef658050227c169babbdbeee"><fr:embedded-tex-preamble>
   }
 
   % macro that draws the adjunction symbol in a diagram
-  \NewDocumentCommand\DrawAdj{mm}{
-    \draw [phantom] (#1) to node[rotate=180] {$\dashv$} (#2);
+  \NewDocumentCommand\DrawAdj{smm}{
+    \IfBooleanTF {#1}{
+      \draw [phantom] (#2) to node {$\dashv$} (#3);
+    }{
+      \draw [phantom] (#2) to node[rotate=180] {$\dashv$} (#3);
+    }
   }
 
   % pullback and pushout
@@ -147,6 +151,9 @@ hash="a479892fef658050227c169babbdbeee"><fr:embedded-tex-preamble>
     exists/.style = {
       densely dashed
     },
+    embedding/.style = {
+      {right hook}-&gt;
+    }
   }
 
   \newlength{\dontworryaboutit} % no idea what it does
@@ -281,14 +288,14 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>639</fr:anchor><fr:taxon>Axiom</fr:taxon><fr:addr>mnc-0007</fr:addr><fr:route>mnc-0007.xml</fr:route><fr:title>Left unity axiom</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>661</fr:anchor><fr:taxon>Axiom</fr:taxon><fr:addr>mnc-0007</fr:addr><fr:route>mnc-0007.xml</fr:route><fr:title>Left unity axiom</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>The following diagram commutes.</fr:p>
     
       
       <fr:embedded-tex
-hash="6129a77294cc76a490206a43b6594387"><fr:embedded-tex-preamble>
+hash="23ff7e7cfbe238e576627e60a7d92890"><fr:embedded-tex-preamble>
          
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -357,8 +364,12 @@ hash="6129a77294cc76a490206a43b6594387"><fr:embedded-tex-preamble>
   }
 
   % macro that draws the adjunction symbol in a diagram
-  \NewDocumentCommand\DrawAdj{mm}{
-    \draw [phantom] (#1) to node[rotate=180] {$\dashv$} (#2);
+  \NewDocumentCommand\DrawAdj{smm}{
+    \IfBooleanTF {#1}{
+      \draw [phantom] (#2) to node {$\dashv$} (#3);
+    }{
+      \draw [phantom] (#2) to node[rotate=180] {$\dashv$} (#3);
+    }
   }
 
   % pullback and pushout
@@ -384,6 +395,9 @@ hash="6129a77294cc76a490206a43b6594387"><fr:embedded-tex-preamble>
     exists/.style = {
       densely dashed
     },
+    embedding/.style = {
+      {right hook}-&gt;
+    }
   }
 
   \newlength{\dontworryaboutit} % no idea what it does
@@ -516,14 +530,14 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>641</fr:anchor><fr:taxon>Axiom</fr:taxon><fr:addr>mnc-0008</fr:addr><fr:route>mnc-0008.xml</fr:route><fr:title>Right unity axiom</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>663</fr:anchor><fr:taxon>Axiom</fr:taxon><fr:addr>mnc-0008</fr:addr><fr:route>mnc-0008.xml</fr:route><fr:title>Right unity axiom</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>The following diagram commutes.</fr:p>
     
       
       <fr:embedded-tex
-hash="33a345dadf0f438a449e6d50226a7849"><fr:embedded-tex-preamble>
+hash="f3bd871a2aab79d6a360399c9dd3d166"><fr:embedded-tex-preamble>
          
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -592,8 +606,12 @@ hash="33a345dadf0f438a449e6d50226a7849"><fr:embedded-tex-preamble>
   }
 
   % macro that draws the adjunction symbol in a diagram
-  \NewDocumentCommand\DrawAdj{mm}{
-    \draw [phantom] (#1) to node[rotate=180] {$\dashv$} (#2);
+  \NewDocumentCommand\DrawAdj{smm}{
+    \IfBooleanTF {#1}{
+      \draw [phantom] (#2) to node {$\dashv$} (#3);
+    }{
+      \draw [phantom] (#2) to node[rotate=180] {$\dashv$} (#3);
+    }
   }
 
   % pullback and pushout
@@ -619,6 +637,9 @@ hash="33a345dadf0f438a449e6d50226a7849"><fr:embedded-tex-preamble>
     exists/.style = {
       densely dashed
     },
+    embedding/.style = {
+      {right hook}-&gt;
+    }
   }
 
   \newlength{\dontworryaboutit} % no idea what it does

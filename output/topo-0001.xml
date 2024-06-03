@@ -7,7 +7,7 @@ numbered="true"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>694</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-0001</fr:addr><fr:route>topo-0001.xml</fr:route><fr:title>Elementary topos</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>716</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-0001</fr:addr><fr:route>topo-0001.xml</fr:route><fr:title>Elementary topos</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>An <fr:em><fr:strong>(elementary) topos</fr:strong></fr:em> is a finitely complete and cartesian closed category equipped with a <fr:link
@@ -20,7 +20,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>692</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>ct-0009</fr:addr><fr:route>ct-0009.xml</fr:route><fr:title><fr:link
+root="false"><fr:frontmatter><fr:anchor>714</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>ct-0009</fr:addr><fr:route>ct-0009.xml</fr:route><fr:title><fr:link
 href="ct-0006.xml"
 type="local"
 addr="ct-0006">Subobject</fr:link> classifier</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:authors><fr:author><fr:link
@@ -50,7 +50,7 @@ xmlns:html="http://www.w3.org/1999/xhtml">
     
       
       <fr:embedded-tex
-hash="31e9bdf8afa3f6c87aeca3f3cbc17dde"><fr:embedded-tex-preamble>
+hash="e88e13062a5a65e5f5f52e394afea87e"><fr:embedded-tex-preamble>
          
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -119,8 +119,12 @@ hash="31e9bdf8afa3f6c87aeca3f3cbc17dde"><fr:embedded-tex-preamble>
   }
 
   % macro that draws the adjunction symbol in a diagram
-  \NewDocumentCommand\DrawAdj{mm}{
-    \draw [phantom] (#1) to node[rotate=180] {$\dashv$} (#2);
+  \NewDocumentCommand\DrawAdj{smm}{
+    \IfBooleanTF {#1}{
+      \draw [phantom] (#2) to node {$\dashv$} (#3);
+    }{
+      \draw [phantom] (#2) to node[rotate=180] {$\dashv$} (#3);
+    }
   }
 
   % pullback and pushout
@@ -146,6 +150,9 @@ hash="31e9bdf8afa3f6c87aeca3f3cbc17dde"><fr:embedded-tex-preamble>
     exists/.style = {
       densely dashed
     },
+    embedding/.style = {
+      {right hook}-&gt;
+    }
   }
 
   \newlength{\dontworryaboutit} % no idea what it does
@@ -287,7 +294,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>296</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>314</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors><fr:parent>ct-0009</fr:parent></fr:frontmatter><fr:mainmatter>
@@ -305,7 +312,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>292</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>310</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors><fr:parent>ct-0009</fr:parent></fr:frontmatter><fr:mainmatter>
@@ -314,7 +321,7 @@ addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors><fr:parent>ct-00
     
       
       <fr:embedded-tex
-hash="acfaaa823126b76c04c5c27109f299a4"><fr:embedded-tex-preamble>
+hash="b31fb0e66534b2b9050a959f1baa350f"><fr:embedded-tex-preamble>
          
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -383,8 +390,12 @@ hash="acfaaa823126b76c04c5c27109f299a4"><fr:embedded-tex-preamble>
   }
 
   % macro that draws the adjunction symbol in a diagram
-  \NewDocumentCommand\DrawAdj{mm}{
-    \draw [phantom] (#1) to node[rotate=180] {$\dashv$} (#2);
+  \NewDocumentCommand\DrawAdj{smm}{
+    \IfBooleanTF {#1}{
+      \draw [phantom] (#2) to node {$\dashv$} (#3);
+    }{
+      \draw [phantom] (#2) to node[rotate=180] {$\dashv$} (#3);
+    }
   }
 
   % pullback and pushout
@@ -410,6 +421,9 @@ hash="acfaaa823126b76c04c5c27109f299a4"><fr:embedded-tex-preamble>
     exists/.style = {
       densely dashed
     },
+    embedding/.style = {
+      {right hook}-&gt;
+    }
   }
 
   \newlength{\dontworryaboutit} % no idea what it does
@@ -550,7 +564,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>294</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>312</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors><fr:parent>ct-0009</fr:parent></fr:frontmatter><fr:mainmatter>
@@ -559,7 +573,7 @@ addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors><fr:parent>ct-00
     
       
       <fr:embedded-tex
-hash="424c85f27c3fc45f64f9e3ecda082a7d"><fr:embedded-tex-preamble>
+hash="692164cfb071ccb0ec1a7f125c43cce0"><fr:embedded-tex-preamble>
          
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -628,8 +642,12 @@ hash="424c85f27c3fc45f64f9e3ecda082a7d"><fr:embedded-tex-preamble>
   }
 
   % macro that draws the adjunction symbol in a diagram
-  \NewDocumentCommand\DrawAdj{mm}{
-    \draw [phantom] (#1) to node[rotate=180] {$\dashv$} (#2);
+  \NewDocumentCommand\DrawAdj{smm}{
+    \IfBooleanTF {#1}{
+      \draw [phantom] (#2) to node {$\dashv$} (#3);
+    }{
+      \draw [phantom] (#2) to node[rotate=180] {$\dashv$} (#3);
+    }
   }
 
   % pullback and pushout
@@ -655,6 +673,9 @@ hash="424c85f27c3fc45f64f9e3ecda082a7d"><fr:embedded-tex-preamble>
     exists/.style = {
       densely dashed
     },
+    embedding/.style = {
+      {right hook}-&gt;
+    }
   }
 
   \newlength{\dontworryaboutit} % no idea what it does
@@ -804,7 +825,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>664</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>topo-000I</fr:addr><fr:route>topo-000I.xml</fr:route><fr:title>Singleton maps are monomorphisms</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>686</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>topo-000I</fr:addr><fr:route>topo-000I.xml</fr:route><fr:title>Singleton maps are monomorphisms</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>A</fr:tex> be any object in a <fr:link
@@ -823,7 +844,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>384</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>402</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors><fr:parent>topo-000I</fr:parent></fr:frontmatter><fr:mainmatter>
@@ -835,7 +856,7 @@ taxon="Lemma"></fr:ref>, the following square is a pullback.
     
       
       <fr:embedded-tex
-hash="eeb7eb40c3ae4b74fdedf7e322468a0c"><fr:embedded-tex-preamble>
+hash="67ff5f4eb715033d150da855b9efa3e8"><fr:embedded-tex-preamble>
          
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -904,8 +925,12 @@ hash="eeb7eb40c3ae4b74fdedf7e322468a0c"><fr:embedded-tex-preamble>
   }
 
   % macro that draws the adjunction symbol in a diagram
-  \NewDocumentCommand\DrawAdj{mm}{
-    \draw [phantom] (#1) to node[rotate=180] {$\dashv$} (#2);
+  \NewDocumentCommand\DrawAdj{smm}{
+    \IfBooleanTF {#1}{
+      \draw [phantom] (#2) to node {$\dashv$} (#3);
+    }{
+      \draw [phantom] (#2) to node[rotate=180] {$\dashv$} (#3);
+    }
   }
 
   % pullback and pushout
@@ -931,6 +956,9 @@ hash="eeb7eb40c3ae4b74fdedf7e322468a0c"><fr:embedded-tex-preamble>
     exists/.style = {
       densely dashed
     },
+    embedding/.style = {
+      {right hook}-&gt;
+    }
   }
 
   \newlength{\dontworryaboutit} % no idea what it does
@@ -1066,7 +1094,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>666</fr:anchor><fr:taxon>Terminology</fr:taxon><fr:addr>topo-000J</fr:addr><fr:route>topo-000J.xml</fr:route><fr:title>Name</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>688</fr:anchor><fr:taxon>Terminology</fr:taxon><fr:addr>topo-000J</fr:addr><fr:route>topo-000J.xml</fr:route><fr:title>Name</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>m \colon  R  \mono  A  \times  B</fr:tex> be a relation in a <fr:link
@@ -1079,7 +1107,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>668</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>topo-0008</fr:addr><fr:route>topo-0008.xml</fr:route><fr:title><fr:link
+root="false"><fr:frontmatter><fr:anchor>690</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>topo-0008</fr:addr><fr:route>topo-0008.xml</fr:route><fr:title><fr:link
 href="topo-0001.xml"
 type="local"
 addr="topo-0001">Topoi</fr:link> are balanced</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
@@ -1098,7 +1126,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>426</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>444</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors><fr:parent>topo-0008</fr:parent></fr:frontmatter><fr:mainmatter>
@@ -1115,7 +1143,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>670</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>topo-000G</fr:addr><fr:route>topo-000G.xml</fr:route><fr:title><fr:link
+root="false"><fr:frontmatter><fr:anchor>692</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>topo-000G</fr:addr><fr:route>topo-000G.xml</fr:route><fr:title><fr:link
 href="topo-000E.xml"
 type="local"
 addr="topo-000E">Separated</fr:link> objects correspond to <fr:link
@@ -1143,7 +1171,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>438</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>456</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors><fr:parent>topo-000G</fr:parent></fr:frontmatter><fr:mainmatter>
@@ -1160,7 +1188,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>672</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-000A</fr:addr><fr:route>topo-000A.xml</fr:route><fr:title>Lawvere-Tierney topology</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>694</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-000A</fr:addr><fr:route>topo-000A.xml</fr:route><fr:title>Lawvere-Tierney topology</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>A <fr:em><fr:strong>(Lawvere-Tierney) topology</fr:strong></fr:em> on a <fr:link
@@ -1175,7 +1203,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>674</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-000B</fr:addr><fr:route>topo-000B.xml</fr:route><fr:title>Closed subobject</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>696</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-000B</fr:addr><fr:route>topo-000B.xml</fr:route><fr:title>Closed subobject</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>j</fr:tex> be a <fr:link
@@ -1194,7 +1222,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>676</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-000C</fr:addr><fr:route>topo-000C.xml</fr:route><fr:title>Closure</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>698</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-000C</fr:addr><fr:route>topo-000C.xml</fr:route><fr:title>Closure</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>j</fr:tex> be a <fr:link
@@ -1210,7 +1238,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>678</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-000D</fr:addr><fr:route>topo-000D.xml</fr:route><fr:title>Dense subobject</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>700</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-000D</fr:addr><fr:route>topo-000D.xml</fr:route><fr:title>Dense subobject</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>j</fr:tex> be a <fr:link
@@ -1229,7 +1257,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>680</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-000E</fr:addr><fr:route>topo-000E.xml</fr:route><fr:title>Separated object</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>702</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-000E</fr:addr><fr:route>topo-000E.xml</fr:route><fr:title>Separated object</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>j</fr:tex> be a <fr:link
@@ -1248,7 +1276,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>682</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-000F</fr:addr><fr:route>topo-000F.xml</fr:route><fr:title>Sheaf</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>704</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-000F</fr:addr><fr:route>topo-000F.xml</fr:route><fr:title>Sheaf</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>j</fr:tex> be a <fr:link
@@ -1264,7 +1292,7 @@ addr="topo-000D">dense</fr:link> subobject <fr:tex>m \colon  A  \rightarrowtail 
     
       
       <fr:embedded-tex
-hash="53df511e18e5773d5e5068cfa86c276f"><fr:embedded-tex-preamble>
+hash="5d7338b32fdba2da840e56e67aa3a31e"><fr:embedded-tex-preamble>
          
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -1333,8 +1361,12 @@ hash="53df511e18e5773d5e5068cfa86c276f"><fr:embedded-tex-preamble>
   }
 
   % macro that draws the adjunction symbol in a diagram
-  \NewDocumentCommand\DrawAdj{mm}{
-    \draw [phantom] (#1) to node[rotate=180] {$\dashv$} (#2);
+  \NewDocumentCommand\DrawAdj{smm}{
+    \IfBooleanTF {#1}{
+      \draw [phantom] (#2) to node {$\dashv$} (#3);
+    }{
+      \draw [phantom] (#2) to node[rotate=180] {$\dashv$} (#3);
+    }
   }
 
   % pullback and pushout
@@ -1360,6 +1392,9 @@ hash="53df511e18e5773d5e5068cfa86c276f"><fr:embedded-tex-preamble>
     exists/.style = {
       densely dashed
     },
+    embedding/.style = {
+      {right hook}-&gt;
+    }
   }
 
   \newlength{\dontworryaboutit} % no idea what it does
@@ -1488,7 +1523,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>684</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>topo-000H</fr:addr><fr:route>topo-000H.xml</fr:route><fr:title>Subobjects of separated objects are separated</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>706</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>topo-000H</fr:addr><fr:route>topo-000H.xml</fr:route><fr:title>Subobjects of separated objects are separated</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>A</fr:tex> be a <fr:link
@@ -1510,7 +1545,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>480</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>498</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors><fr:parent>topo-000H</fr:parent></fr:frontmatter><fr:mainmatter>
@@ -1530,7 +1565,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>686</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-0003</fr:addr><fr:route>topo-0003.xml</fr:route><fr:title>Geometric morphism</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>708</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-0003</fr:addr><fr:route>topo-0003.xml</fr:route><fr:title>Geometric morphism</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>\mathcal { E }</fr:tex> and <fr:tex>\mathcal { F }</fr:tex> be <fr:link
@@ -1540,7 +1575,7 @@ addr="topo-0001">topoi</fr:link>. A <fr:em><fr:strong>geometric morphism</fr:str
     
       
       <fr:embedded-tex
-hash="8ed1401dfacc10a7e5ff793695be8c0d"><fr:embedded-tex-preamble>
+hash="d3faba851ba09399de42feb423c30ded"><fr:embedded-tex-preamble>
          
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -1609,8 +1644,12 @@ hash="8ed1401dfacc10a7e5ff793695be8c0d"><fr:embedded-tex-preamble>
   }
 
   % macro that draws the adjunction symbol in a diagram
-  \NewDocumentCommand\DrawAdj{mm}{
-    \draw [phantom] (#1) to node[rotate=180] {$\dashv$} (#2);
+  \NewDocumentCommand\DrawAdj{smm}{
+    \IfBooleanTF {#1}{
+      \draw [phantom] (#2) to node {$\dashv$} (#3);
+    }{
+      \draw [phantom] (#2) to node[rotate=180] {$\dashv$} (#3);
+    }
   }
 
   % pullback and pushout
@@ -1636,6 +1675,9 @@ hash="8ed1401dfacc10a7e5ff793695be8c0d"><fr:embedded-tex-preamble>
     exists/.style = {
       densely dashed
     },
+    embedding/.style = {
+      {right hook}-&gt;
+    }
   }
 
   \newlength{\dontworryaboutit} % no idea what it does
@@ -1763,7 +1805,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>688</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-0002</fr:addr><fr:route>topo-0002.xml</fr:route><fr:title>Logical functor</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>710</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-0002</fr:addr><fr:route>topo-0002.xml</fr:route><fr:title>Logical functor</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>\mathcal { E }</fr:tex> and <fr:tex>\mathcal { F }</fr:tex> be <fr:link
@@ -1776,7 +1818,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>690</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>topo-0007</fr:addr><fr:route>topo-0007.xml</fr:route><fr:title>Monomorphisms are equalizers in a <fr:link
+root="false"><fr:frontmatter><fr:anchor>712</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>topo-0007</fr:addr><fr:route>topo-0007.xml</fr:route><fr:title>Monomorphisms are equalizers in a <fr:link
 href="topo-0001.xml"
 type="local"
 addr="topo-0001">topos</fr:link></fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
@@ -1795,7 +1837,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>338</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>356</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors><fr:parent>topo-0007</fr:parent></fr:frontmatter><fr:mainmatter>

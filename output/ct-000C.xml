@@ -7,7 +7,7 @@ numbered="true"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>330</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>ct-000C</fr:addr><fr:route>ct-000C.xml</fr:route><fr:title>Isomorphic <fr:link
+root="false"><fr:frontmatter><fr:anchor>348</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>ct-000C</fr:addr><fr:route>ct-000C.xml</fr:route><fr:title>Isomorphic <fr:link
 href="ct-0006.xml"
 type="local"
 addr="ct-0006">subobjects</fr:link> have the same <fr:link
@@ -26,7 +26,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>306</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>324</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors><fr:parent>ct-000C</fr:parent></fr:frontmatter><fr:mainmatter>
@@ -35,7 +35,7 @@ addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors><fr:parent>ct-00
     
       
       <fr:embedded-tex
-hash="90fd5ccd038aafb6795becdda51cddd8"><fr:embedded-tex-preamble>
+hash="1f56311a1a7c0cb74d22c9ebf1ea2bcd"><fr:embedded-tex-preamble>
          
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -104,8 +104,12 @@ hash="90fd5ccd038aafb6795becdda51cddd8"><fr:embedded-tex-preamble>
   }
 
   % macro that draws the adjunction symbol in a diagram
-  \NewDocumentCommand\DrawAdj{mm}{
-    \draw [phantom] (#1) to node[rotate=180] {$\dashv$} (#2);
+  \NewDocumentCommand\DrawAdj{smm}{
+    \IfBooleanTF {#1}{
+      \draw [phantom] (#2) to node {$\dashv$} (#3);
+    }{
+      \draw [phantom] (#2) to node[rotate=180] {$\dashv$} (#3);
+    }
   }
 
   % pullback and pushout
@@ -131,6 +135,9 @@ hash="90fd5ccd038aafb6795becdda51cddd8"><fr:embedded-tex-preamble>
     exists/.style = {
       densely dashed
     },
+    embedding/.style = {
+      {right hook}-&gt;
+    }
   }
 
   \newlength{\dontworryaboutit} % no idea what it does
@@ -267,7 +274,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>326</fr:anchor><fr:taxon>Remark</fr:taxon><fr:addr>ct-000A</fr:addr><fr:route>ct-000A.xml</fr:route><fr:title>Explicit description of the <fr:link
+root="false"><fr:frontmatter><fr:anchor>344</fr:anchor><fr:taxon>Remark</fr:taxon><fr:addr>ct-000A</fr:addr><fr:route>ct-000A.xml</fr:route><fr:title>Explicit description of the <fr:link
 href="ct-0009.xml"
 type="local"
 addr="ct-0009">subobject classifier</fr:link></fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:authors><fr:author><fr:link
@@ -277,7 +284,7 @@ addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter
     
       
       <fr:embedded-tex
-hash="edd10b2aa3cccd276f5ec204494fcff8"><fr:embedded-tex-preamble>
+hash="a4a58194c73f8e08b1f286b08850b4a5"><fr:embedded-tex-preamble>
          
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -346,8 +353,12 @@ hash="edd10b2aa3cccd276f5ec204494fcff8"><fr:embedded-tex-preamble>
   }
 
   % macro that draws the adjunction symbol in a diagram
-  \NewDocumentCommand\DrawAdj{mm}{
-    \draw [phantom] (#1) to node[rotate=180] {$\dashv$} (#2);
+  \NewDocumentCommand\DrawAdj{smm}{
+    \IfBooleanTF {#1}{
+      \draw [phantom] (#2) to node {$\dashv$} (#3);
+    }{
+      \draw [phantom] (#2) to node[rotate=180] {$\dashv$} (#3);
+    }
   }
 
   % pullback and pushout
@@ -373,6 +384,9 @@ hash="edd10b2aa3cccd276f5ec204494fcff8"><fr:embedded-tex-preamble>
     exists/.style = {
       densely dashed
     },
+    embedding/.style = {
+      {right hook}-&gt;
+    }
   }
 
   \newlength{\dontworryaboutit} % no idea what it does
@@ -506,7 +520,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>328</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>ct-0006</fr:addr><fr:route>ct-0006.xml</fr:route><fr:title>Subobject</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>346</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>ct-0006</fr:addr><fr:route>ct-0006.xml</fr:route><fr:title>Subobject</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>B</fr:tex> be an object in a category <fr:tex>\mathcal { C }</fr:tex>. A <fr:em><fr:strong>subobject</fr:strong></fr:em> of <fr:tex>B</fr:tex> is a monomorphism <fr:tex>m \colon  A  \rightarrowtail  B</fr:tex>. The <fr:em><fr:strong>category of subobjects of <fr:tex>B</fr:tex></fr:strong></fr:em>, denoted as <fr:tex>\mathsf { Sub } (B)</fr:tex>, is the full subcategory of <fr:tex>{ \mathcal { C } _{/ B }}</fr:tex> spanned by monomorphisms.</fr:p></fr:mainmatter></fr:tree></fr:related><fr:backlinks><fr:tree
@@ -516,7 +530,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>324</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>ct-000B</fr:addr><fr:route>ct-000B.xml</fr:route><fr:title>Domain of the <fr:link
+root="false"><fr:frontmatter><fr:anchor>342</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>ct-000B</fr:addr><fr:route>ct-000B.xml</fr:route><fr:title>Domain of the <fr:link
 href="ct-000A.xml"
 type="local"
 addr="ct-000A">generic subobject</fr:link> is terminal</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:authors><fr:author><fr:link
@@ -532,7 +546,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>281</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>299</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors><fr:parent>ct-000B</fr:parent></fr:frontmatter><fr:mainmatter>
@@ -544,7 +558,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>277</fr:anchor><fr:taxon>Existence</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>295</fr:anchor><fr:taxon>Existence</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors><fr:parent>ct-000B</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Consider <fr:tex>(A, \mathsf {id} _{ A } )</fr:tex>. By <fr:ref
@@ -554,7 +568,7 @@ taxon="Definition"></fr:ref>, there is a pullback square</fr:p>
     
       
       <fr:embedded-tex
-hash="fccf21acbc7c61477dd10a1f11e2b844"><fr:embedded-tex-preamble>
+hash="1d43e92d1609eaa3a3e761b54e06d18b"><fr:embedded-tex-preamble>
          
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -623,8 +637,12 @@ hash="fccf21acbc7c61477dd10a1f11e2b844"><fr:embedded-tex-preamble>
   }
 
   % macro that draws the adjunction symbol in a diagram
-  \NewDocumentCommand\DrawAdj{mm}{
-    \draw [phantom] (#1) to node[rotate=180] {$\dashv$} (#2);
+  \NewDocumentCommand\DrawAdj{smm}{
+    \IfBooleanTF {#1}{
+      \draw [phantom] (#2) to node {$\dashv$} (#3);
+    }{
+      \draw [phantom] (#2) to node[rotate=180] {$\dashv$} (#3);
+    }
   }
 
   % pullback and pushout
@@ -650,6 +668,9 @@ hash="fccf21acbc7c61477dd10a1f11e2b844"><fr:embedded-tex-preamble>
     exists/.style = {
       densely dashed
     },
+    embedding/.style = {
+      {right hook}-&gt;
+    }
   }
 
   \newlength{\dontworryaboutit} % no idea what it does
@@ -782,7 +803,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>279</fr:anchor><fr:taxon>Uniqueness</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>297</fr:anchor><fr:taxon>Uniqueness</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors><fr:parent>ct-000B</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Suppose that <fr:tex>f , g \colon A \rightrightarrows \Omega '</fr:tex>. We need to show that <fr:tex>f = g</fr:tex>. To this end, it suffices to show <fr:tex>\top  f =  \top  g</fr:tex> since <fr:tex>\top</fr:tex> is monic.</fr:p><fr:p>Consider the subobject classified by <fr:tex>\top  f</fr:tex>. Note that by the <fr:link

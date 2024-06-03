@@ -7,7 +7,7 @@ numbered="true"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>714</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-0003</fr:addr><fr:route>topo-0003.xml</fr:route><fr:title>Geometric morphism</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>736</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-0003</fr:addr><fr:route>topo-0003.xml</fr:route><fr:title>Geometric morphism</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>\mathcal { E }</fr:tex> and <fr:tex>\mathcal { F }</fr:tex> be <fr:link
@@ -17,7 +17,7 @@ addr="topo-0001">topoi</fr:link>. A <fr:em><fr:strong>geometric morphism</fr:str
     
       
       <fr:embedded-tex
-hash="8ed1401dfacc10a7e5ff793695be8c0d"><fr:embedded-tex-preamble>
+hash="d3faba851ba09399de42feb423c30ded"><fr:embedded-tex-preamble>
          
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -86,8 +86,12 @@ hash="8ed1401dfacc10a7e5ff793695be8c0d"><fr:embedded-tex-preamble>
   }
 
   % macro that draws the adjunction symbol in a diagram
-  \NewDocumentCommand\DrawAdj{mm}{
-    \draw [phantom] (#1) to node[rotate=180] {$\dashv$} (#2);
+  \NewDocumentCommand\DrawAdj{smm}{
+    \IfBooleanTF {#1}{
+      \draw [phantom] (#2) to node {$\dashv$} (#3);
+    }{
+      \draw [phantom] (#2) to node[rotate=180] {$\dashv$} (#3);
+    }
   }
 
   % pullback and pushout
@@ -113,6 +117,9 @@ hash="8ed1401dfacc10a7e5ff793695be8c0d"><fr:embedded-tex-preamble>
     exists/.style = {
       densely dashed
     },
+    embedding/.style = {
+      {right hook}-&gt;
+    }
   }
 
   \newlength{\dontworryaboutit} % no idea what it does
@@ -240,7 +247,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>712</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-0001</fr:addr><fr:route>topo-0001.xml</fr:route><fr:title>Elementary topos</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>734</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-0001</fr:addr><fr:route>topo-0001.xml</fr:route><fr:title>Elementary topos</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>An <fr:em><fr:strong>(elementary) topos</fr:strong></fr:em> is a finitely complete and cartesian closed category equipped with a <fr:link
@@ -253,7 +260,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>706</fr:anchor><fr:taxon>Remark</fr:taxon><fr:addr>topo-0005</fr:addr><fr:route>topo-0005.xml</fr:route><fr:title>Equivalent definition of <fr:link
+root="false"><fr:frontmatter><fr:anchor>728</fr:anchor><fr:taxon>Remark</fr:taxon><fr:addr>topo-0005</fr:addr><fr:route>topo-0005.xml</fr:route><fr:title>Equivalent definition of <fr:link
 href="topo-0004.xml"
 type="local"
 addr="topo-0004">geometric transformation</fr:link></fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
@@ -269,7 +276,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>708</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-0006</fr:addr><fr:route>topo-0006.xml</fr:route><fr:title>Essential <fr:link
+root="false"><fr:frontmatter><fr:anchor>730</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-0006</fr:addr><fr:route>topo-0006.xml</fr:route><fr:title>Essential <fr:link
 href="topo-0003.xml"
 type="local"
 addr="topo-0003">geometric morphism</fr:link></fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
@@ -285,7 +292,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>710</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-0004</fr:addr><fr:route>topo-0004.xml</fr:route><fr:title>Geometric transformation</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>732</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-0004</fr:addr><fr:route>topo-0004.xml</fr:route><fr:title>Geometric transformation</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>f , g \colon \mathcal { E } \rightrightarrows \mathcal { F }</fr:tex> be a pair of <fr:link
