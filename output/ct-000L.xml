@@ -7,7 +7,7 @@ numbered="true"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>271</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>ct-000L</fr:addr><fr:route>ct-000L.xml</fr:route><fr:title>Equivalent condition for the existence of <fr:link
+root="false"><fr:frontmatter><fr:anchor>269</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>ct-000L</fr:addr><fr:route>ct-000L.xml</fr:route><fr:title>Equivalent condition for the existence of <fr:link
 href="ct-000K.xml"
 type="local"
 addr="ct-000K">images</fr:link></fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>2</fr:day></fr:date><fr:authors><fr:author><fr:link
@@ -23,14 +23,10 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>269</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>2</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>267</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>2</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors><fr:parent>ct-000L</fr:parent></fr:frontmatter><fr:mainmatter>
-  <fr:link
-href="todo.xml"
-type="local"
-addr="todo">TODO</fr:link>
   <fr:p>By <fr:ref
 addr="ct-000J"
 href="ct-000J.xml"
@@ -42,7 +38,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>265</fr:anchor><fr:taxon>If</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>2</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>263</fr:anchor><fr:taxon>If</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>2</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors><fr:parent>ct-000L</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>g \colon B' \rightarrowtail B</fr:tex> be an arbitrary object in <fr:tex>\mathsf { Sub } (B)</fr:tex>. We need to construct a functor <fr:tex>\mathsf { Img } \colon { \mathcal { C } _{/ B }} \to \mathsf { Sub } (B)</fr:tex> so that each morphism <fr:tex>f  \to  g</fr:tex> in <fr:tex>{ \mathcal { C } _{/ B }}</fr:tex> corresponds to a unique morphism <fr:tex>\mathsf { Img } (f)  \to  g</fr:tex> in <fr:tex>\mathsf { Sub } (B)</fr:tex>.</fr:p><fr:p>Let <fr:tex>f  \to  g</fr:tex> be an arbitrary morphism in <fr:tex>{ \mathcal { C } _{/ B }}</fr:tex>. Then this corresponds to a unique morphism <fr:tex>\mathsf {id} _{ A }   \to   f ^{*} (g)</fr:tex> as follows:</fr:p>
@@ -559,7 +555,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>267</fr:anchor><fr:taxon>Only if</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>2</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>265</fr:anchor><fr:taxon>Only if</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>2</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors><fr:parent>ct-000L</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>If <fr:tex>\mathcal { C }</fr:tex> has images, then we may define <fr:tex>\exists _{f} \colon \mathsf { Sub } (A) \to \mathsf { Sub } (B)</fr:tex> as the following composite:</fr:p><fr:tex
@@ -1862,14 +1858,4 @@ hash="34dcab7b011aaabc03ec1f7100eee4cd"><fr:embedded-tex-preamble>
 display="block">        \begin {align*}          \varepsilon _{g} f ^{*} ( \varepsilon _{g}) \eta _{ f ^{*} (g)} &amp;=  \varepsilon _{g} \varepsilon _{f  \circ   f ^{*} (g)} \eta _{ f ^{*} (g)} &amp;&amp;  \text {by the construction of }  f ^{*} \\                                                      &amp;=  \varepsilon _{g} \mathsf {id}  &amp;&amp;  \text {by the construction of }  \eta \\                                                      &amp;=  \varepsilon _{g}        \end {align*}     </fr:tex><fr:p>Thus, <fr:tex>f ^{*} ( \varepsilon _{g}) \eta _{ f ^{*} (g)}</fr:tex> corresponds to the same cone over <fr:tex>f</fr:tex> and <fr:tex>g</fr:tex> as <fr:tex>\mathsf {id} _{ f ^{*} (g) }</fr:tex>. Then uniqueness implies that they are equal.</fr:p></fr:mainmatter></fr:tree>
 </fr:mainmatter></fr:tree>
     
-  </fr:mainmatter></fr:tree><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="true"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>255</fr:anchor><fr:addr>todo</fr:addr><fr:route>todo.xml</fr:route><fr:title>TODO</fr:title><fr:authors><fr:author><fr:link
-href="frankndrssn.xml"
-type="local"
-addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter></fr:mainmatter></fr:tree></fr:related><fr:backlinks></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>
+  </fr:mainmatter></fr:tree></fr:related><fr:backlinks></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>
