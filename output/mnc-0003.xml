@@ -7,14 +7,14 @@ numbered="true"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>854</fr:anchor><fr:taxon>Axiom</fr:taxon><fr:addr>mnc-0003</fr:addr><fr:route>mnc-0003.xml</fr:route><fr:title>Pentagon axiom</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>878</fr:anchor><fr:taxon>Axiom</fr:taxon><fr:addr>mnc-0003</fr:addr><fr:route>mnc-0003.xml</fr:route><fr:title>Pentagon axiom</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>The following diagram commutes.</fr:p>
     
       
       <fr:embedded-tex
-hash="df703192df4aa7bbb28834c63692ba48"><fr:embedded-tex-preamble>
+hash="77fae100d0da8d3052cef63b8ae4d23a"><fr:embedded-tex-preamble>
          
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -75,6 +75,9 @@ hash="df703192df4aa7bbb28834c63692ba48"><fr:embedded-tex-preamble>
       node font=\scriptsize,
       sloped,
     },
+    between/.style args = {#1 and #2}{
+      at = ($(#1)!0.5!(#2)$)
+    },
     desc/.style = {anchor=center,fill=white,inner sep=3pt},
     offset/.style args = {#1} {commutative diagrams/shift right={#1}},
     cross over/.style = {
@@ -116,7 +119,10 @@ hash="df703192df4aa7bbb28834c63692ba48"><fr:embedded-tex-preamble>
     },
     embedding/.style = {
       {right hook}-&gt;
-    }
+    },
+    cover/.style = {
+      -{Triangle[open]}
+    },
   }
 
   \newlength{\dontworryaboutit} % no idea what it does
@@ -259,7 +265,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>852</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>mnc-0001</fr:addr><fr:route>mnc-0001.xml</fr:route><fr:title>Monoidal category</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>876</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>mnc-0001</fr:addr><fr:route>mnc-0001.xml</fr:route><fr:title>Monoidal category</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>A <fr:em><fr:strong>monoidal category</fr:strong></fr:em> consists of the following data.</fr:p><fr:ul><fr:li>An underlying category <fr:tex>\mathcal { C }</fr:tex>.</fr:li>
@@ -274,14 +280,14 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>731</fr:anchor><fr:taxon>Axiom</fr:taxon><fr:addr>mnc-0002</fr:addr><fr:route>mnc-0002.xml</fr:route><fr:title>Unity axiom</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>755</fr:anchor><fr:taxon>Axiom</fr:taxon><fr:addr>mnc-0002</fr:addr><fr:route>mnc-0002.xml</fr:route><fr:title>Unity axiom</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>The following diagram commutes.</fr:p>
     
       
       <fr:embedded-tex
-hash="f9f070ac37a086b21159ef3d82d516f3"><fr:embedded-tex-preamble>
+hash="be9cf1e1433160ed2f1b5bc575b31be0"><fr:embedded-tex-preamble>
          
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -342,6 +348,9 @@ hash="f9f070ac37a086b21159ef3d82d516f3"><fr:embedded-tex-preamble>
       node font=\scriptsize,
       sloped,
     },
+    between/.style args = {#1 and #2}{
+      at = ($(#1)!0.5!(#2)$)
+    },
     desc/.style = {anchor=center,fill=white,inner sep=3pt},
     offset/.style args = {#1} {commutative diagrams/shift right={#1}},
     cross over/.style = {
@@ -383,7 +392,10 @@ hash="f9f070ac37a086b21159ef3d82d516f3"><fr:embedded-tex-preamble>
     },
     embedding/.style = {
       {right hook}-&gt;
-    }
+    },
+    cover/.style = {
+      -{Triangle[open]}
+    },
   }
 
   \newlength{\dontworryaboutit} % no idea what it does
@@ -518,14 +530,14 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>733</fr:anchor><fr:taxon>Axiom</fr:taxon><fr:addr>mnc-0003</fr:addr><fr:route>mnc-0003.xml</fr:route><fr:title>Pentagon axiom</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>757</fr:anchor><fr:taxon>Axiom</fr:taxon><fr:addr>mnc-0003</fr:addr><fr:route>mnc-0003.xml</fr:route><fr:title>Pentagon axiom</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>The following diagram commutes.</fr:p>
     
       
       <fr:embedded-tex
-hash="df703192df4aa7bbb28834c63692ba48"><fr:embedded-tex-preamble>
+hash="77fae100d0da8d3052cef63b8ae4d23a"><fr:embedded-tex-preamble>
          
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -586,6 +598,9 @@ hash="df703192df4aa7bbb28834c63692ba48"><fr:embedded-tex-preamble>
       node font=\scriptsize,
       sloped,
     },
+    between/.style args = {#1 and #2}{
+      at = ($(#1)!0.5!(#2)$)
+    },
     desc/.style = {anchor=center,fill=white,inner sep=3pt},
     offset/.style args = {#1} {commutative diagrams/shift right={#1}},
     cross over/.style = {
@@ -627,7 +642,10 @@ hash="df703192df4aa7bbb28834c63692ba48"><fr:embedded-tex-preamble>
     },
     embedding/.style = {
       {right hook}-&gt;
-    }
+    },
+    cover/.style = {
+      -{Triangle[open]}
+    },
   }
 
   \newlength{\dontworryaboutit} % no idea what it does

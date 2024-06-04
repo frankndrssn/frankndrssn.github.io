@@ -7,7 +7,7 @@ numbered="true"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>804</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-0006</fr:addr><fr:route>topo-0006.xml</fr:route><fr:title>Essential <fr:link
+root="false"><fr:frontmatter><fr:anchor>828</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-0006</fr:addr><fr:route>topo-0006.xml</fr:route><fr:title>Essential <fr:link
 href="topo-0003.xml"
 type="local"
 addr="topo-0003">geometric morphism</fr:link></fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
@@ -23,7 +23,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>802</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-0003</fr:addr><fr:route>topo-0003.xml</fr:route><fr:title>Geometric morphism</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>826</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-0003</fr:addr><fr:route>topo-0003.xml</fr:route><fr:title>Geometric morphism</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>\mathcal { E }</fr:tex> and <fr:tex>\mathcal { F }</fr:tex> be <fr:link
@@ -33,7 +33,7 @@ addr="topo-0001">topoi</fr:link>. A <fr:em><fr:strong>geometric morphism</fr:str
     
       
       <fr:embedded-tex
-hash="d3faba851ba09399de42feb423c30ded"><fr:embedded-tex-preamble>
+hash="b2c28b9d4ac3bf01a04d310b4958779c"><fr:embedded-tex-preamble>
          
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -94,6 +94,9 @@ hash="d3faba851ba09399de42feb423c30ded"><fr:embedded-tex-preamble>
       node font=\scriptsize,
       sloped,
     },
+    between/.style args = {#1 and #2}{
+      at = ($(#1)!0.5!(#2)$)
+    },
     desc/.style = {anchor=center,fill=white,inner sep=3pt},
     offset/.style args = {#1} {commutative diagrams/shift right={#1}},
     cross over/.style = {
@@ -135,7 +138,10 @@ hash="d3faba851ba09399de42feb423c30ded"><fr:embedded-tex-preamble>
     },
     embedding/.style = {
       {right hook}-&gt;
-    }
+    },
+    cover/.style = {
+      -{Triangle[open]}
+    },
   }
 
   \newlength{\dontworryaboutit} % no idea what it does

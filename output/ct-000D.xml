@@ -7,7 +7,7 @@ numbered="true"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>388</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>ct-000D</fr:addr><fr:route>ct-000D.xml</fr:route><fr:title>Categories with a <fr:link
+root="false"><fr:frontmatter><fr:anchor>410</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>ct-000D</fr:addr><fr:route>ct-000D.xml</fr:route><fr:title>Categories with a <fr:link
 href="ct-0009.xml"
 type="local"
 addr="ct-0009">subobject classifier</fr:link> are cartesian</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:authors><fr:author><fr:link
@@ -23,7 +23,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>386</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>408</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors><fr:parent>ct-000D</fr:parent></fr:frontmatter><fr:mainmatter>
@@ -40,7 +40,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>369</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>ct-000B</fr:addr><fr:route>ct-000B.xml</fr:route><fr:title>Domain of the <fr:link
+root="false"><fr:frontmatter><fr:anchor>391</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>ct-000B</fr:addr><fr:route>ct-000B.xml</fr:route><fr:title>Domain of the <fr:link
 href="ct-000A.xml"
 type="local"
 addr="ct-000A">generic subobject</fr:link> is terminal</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:authors><fr:author><fr:link
@@ -56,7 +56,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>367</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>389</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors><fr:parent>ct-000B</fr:parent></fr:frontmatter><fr:mainmatter>
@@ -68,7 +68,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>363</fr:anchor><fr:taxon>Existence</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>385</fr:anchor><fr:taxon>Existence</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors><fr:parent>ct-000B</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Consider <fr:tex>(A, \mathsf {id} _{ A } )</fr:tex>. By <fr:ref
@@ -78,7 +78,7 @@ taxon="Definition"></fr:ref>, there is a pullback square</fr:p>
     
       
       <fr:embedded-tex
-hash="1d43e92d1609eaa3a3e761b54e06d18b"><fr:embedded-tex-preamble>
+hash="91385f63437f70dc4c4779deb678ac91"><fr:embedded-tex-preamble>
          
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -139,6 +139,9 @@ hash="1d43e92d1609eaa3a3e761b54e06d18b"><fr:embedded-tex-preamble>
       node font=\scriptsize,
       sloped,
     },
+    between/.style args = {#1 and #2}{
+      at = ($(#1)!0.5!(#2)$)
+    },
     desc/.style = {anchor=center,fill=white,inner sep=3pt},
     offset/.style args = {#1} {commutative diagrams/shift right={#1}},
     cross over/.style = {
@@ -180,7 +183,10 @@ hash="1d43e92d1609eaa3a3e761b54e06d18b"><fr:embedded-tex-preamble>
     },
     embedding/.style = {
       {right hook}-&gt;
-    }
+    },
+    cover/.style = {
+      -{Triangle[open]}
+    },
   }
 
   \newlength{\dontworryaboutit} % no idea what it does
@@ -313,7 +319,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>365</fr:anchor><fr:taxon>Uniqueness</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>387</fr:anchor><fr:taxon>Uniqueness</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors><fr:parent>ct-000B</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Suppose that <fr:tex>f , g \colon A \rightrightarrows \Omega '</fr:tex>. We need to show that <fr:tex>f = g</fr:tex>. To this end, it suffices to show <fr:tex>\top  f =  \top  g</fr:tex> since <fr:tex>\top</fr:tex> is monic.</fr:p><fr:p>Consider the subobject classified by <fr:tex>\top  f</fr:tex>. Note that by the <fr:link
@@ -332,7 +338,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>384</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>ct-0009</fr:addr><fr:route>ct-0009.xml</fr:route><fr:title><fr:link
+root="false"><fr:frontmatter><fr:anchor>406</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>ct-0009</fr:addr><fr:route>ct-0009.xml</fr:route><fr:title><fr:link
 href="ct-0006.xml"
 type="local"
 addr="ct-0006">Subobject</fr:link> classifier</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:authors><fr:author><fr:link
@@ -362,7 +368,7 @@ xmlns:html="http://www.w3.org/1999/xhtml">
     
       
       <fr:embedded-tex
-hash="e88e13062a5a65e5f5f52e394afea87e"><fr:embedded-tex-preamble>
+hash="a6365355de36939e543bdb20c269ae58"><fr:embedded-tex-preamble>
          
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -423,6 +429,9 @@ hash="e88e13062a5a65e5f5f52e394afea87e"><fr:embedded-tex-preamble>
       node font=\scriptsize,
       sloped,
     },
+    between/.style args = {#1 and #2}{
+      at = ($(#1)!0.5!(#2)$)
+    },
     desc/.style = {anchor=center,fill=white,inner sep=3pt},
     offset/.style args = {#1} {commutative diagrams/shift right={#1}},
     cross over/.style = {
@@ -464,7 +473,10 @@ hash="e88e13062a5a65e5f5f52e394afea87e"><fr:embedded-tex-preamble>
     },
     embedding/.style = {
       {right hook}-&gt;
-    }
+    },
+    cover/.style = {
+      -{Triangle[open]}
+    },
   }
 
   \newlength{\dontworryaboutit} % no idea what it does
@@ -606,7 +618,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>382</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>404</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors><fr:parent>ct-0009</fr:parent></fr:frontmatter><fr:mainmatter>
@@ -624,7 +636,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>378</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>400</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors><fr:parent>ct-0009</fr:parent></fr:frontmatter><fr:mainmatter>
@@ -633,7 +645,7 @@ addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors><fr:parent>ct-00
     
       
       <fr:embedded-tex
-hash="b31fb0e66534b2b9050a959f1baa350f"><fr:embedded-tex-preamble>
+hash="60d22f51fc48954279e52f61661372d2"><fr:embedded-tex-preamble>
          
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -694,6 +706,9 @@ hash="b31fb0e66534b2b9050a959f1baa350f"><fr:embedded-tex-preamble>
       node font=\scriptsize,
       sloped,
     },
+    between/.style args = {#1 and #2}{
+      at = ($(#1)!0.5!(#2)$)
+    },
     desc/.style = {anchor=center,fill=white,inner sep=3pt},
     offset/.style args = {#1} {commutative diagrams/shift right={#1}},
     cross over/.style = {
@@ -735,7 +750,10 @@ hash="b31fb0e66534b2b9050a959f1baa350f"><fr:embedded-tex-preamble>
     },
     embedding/.style = {
       {right hook}-&gt;
-    }
+    },
+    cover/.style = {
+      -{Triangle[open]}
+    },
   }
 
   \newlength{\dontworryaboutit} % no idea what it does
@@ -876,7 +894,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>380</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>402</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors><fr:parent>ct-0009</fr:parent></fr:frontmatter><fr:mainmatter>
@@ -885,7 +903,7 @@ addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors><fr:parent>ct-00
     
       
       <fr:embedded-tex
-hash="692164cfb071ccb0ec1a7f125c43cce0"><fr:embedded-tex-preamble>
+hash="c7b67a8ddff7ebe25aae82bf8ef91fd8"><fr:embedded-tex-preamble>
          
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -946,6 +964,9 @@ hash="692164cfb071ccb0ec1a7f125c43cce0"><fr:embedded-tex-preamble>
       node font=\scriptsize,
       sloped,
     },
+    between/.style args = {#1 and #2}{
+      at = ($(#1)!0.5!(#2)$)
+    },
     desc/.style = {anchor=center,fill=white,inner sep=3pt},
     offset/.style args = {#1} {commutative diagrams/shift right={#1}},
     cross over/.style = {
@@ -987,7 +1008,10 @@ hash="692164cfb071ccb0ec1a7f125c43cce0"><fr:embedded-tex-preamble>
     },
     embedding/.style = {
       {right hook}-&gt;
-    }
+    },
+    cover/.style = {
+      -{Triangle[open]}
+    },
   }
 
   \newlength{\dontworryaboutit} % no idea what it does

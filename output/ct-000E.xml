@@ -7,7 +7,7 @@ numbered="true"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>432</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>ct-000E</fr:addr><fr:route>ct-000E.xml</fr:route><fr:title>Monomorphisms in a category equipped with a <fr:link
+root="false"><fr:frontmatter><fr:anchor>452</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>ct-000E</fr:addr><fr:route>ct-000E.xml</fr:route><fr:title>Monomorphisms in a category equipped with a <fr:link
 href="ct-0009.xml"
 type="local"
 addr="ct-0009">subobject classifier</fr:link> are regular</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:authors><fr:author><fr:link
@@ -23,7 +23,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>430</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>450</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors><fr:parent>ct-000E</fr:parent></fr:frontmatter><fr:mainmatter>
@@ -39,7 +39,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>428</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>ct-0009</fr:addr><fr:route>ct-0009.xml</fr:route><fr:title><fr:link
+root="false"><fr:frontmatter><fr:anchor>448</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>ct-0009</fr:addr><fr:route>ct-0009.xml</fr:route><fr:title><fr:link
 href="ct-0006.xml"
 type="local"
 addr="ct-0006">Subobject</fr:link> classifier</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:authors><fr:author><fr:link
@@ -69,7 +69,7 @@ xmlns:html="http://www.w3.org/1999/xhtml">
     
       
       <fr:embedded-tex
-hash="e88e13062a5a65e5f5f52e394afea87e"><fr:embedded-tex-preamble>
+hash="a6365355de36939e543bdb20c269ae58"><fr:embedded-tex-preamble>
          
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -130,6 +130,9 @@ hash="e88e13062a5a65e5f5f52e394afea87e"><fr:embedded-tex-preamble>
       node font=\scriptsize,
       sloped,
     },
+    between/.style args = {#1 and #2}{
+      at = ($(#1)!0.5!(#2)$)
+    },
     desc/.style = {anchor=center,fill=white,inner sep=3pt},
     offset/.style args = {#1} {commutative diagrams/shift right={#1}},
     cross over/.style = {
@@ -171,7 +174,10 @@ hash="e88e13062a5a65e5f5f52e394afea87e"><fr:embedded-tex-preamble>
     },
     embedding/.style = {
       {right hook}-&gt;
-    }
+    },
+    cover/.style = {
+      -{Triangle[open]}
+    },
   }
 
   \newlength{\dontworryaboutit} % no idea what it does
@@ -313,7 +319,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>382</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>404</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors><fr:parent>ct-0009</fr:parent></fr:frontmatter><fr:mainmatter>
@@ -331,7 +337,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>378</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>400</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors><fr:parent>ct-0009</fr:parent></fr:frontmatter><fr:mainmatter>
@@ -340,7 +346,7 @@ addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors><fr:parent>ct-00
     
       
       <fr:embedded-tex
-hash="b31fb0e66534b2b9050a959f1baa350f"><fr:embedded-tex-preamble>
+hash="60d22f51fc48954279e52f61661372d2"><fr:embedded-tex-preamble>
          
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -401,6 +407,9 @@ hash="b31fb0e66534b2b9050a959f1baa350f"><fr:embedded-tex-preamble>
       node font=\scriptsize,
       sloped,
     },
+    between/.style args = {#1 and #2}{
+      at = ($(#1)!0.5!(#2)$)
+    },
     desc/.style = {anchor=center,fill=white,inner sep=3pt},
     offset/.style args = {#1} {commutative diagrams/shift right={#1}},
     cross over/.style = {
@@ -442,7 +451,10 @@ hash="b31fb0e66534b2b9050a959f1baa350f"><fr:embedded-tex-preamble>
     },
     embedding/.style = {
       {right hook}-&gt;
-    }
+    },
+    cover/.style = {
+      -{Triangle[open]}
+    },
   }
 
   \newlength{\dontworryaboutit} % no idea what it does
@@ -583,7 +595,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>380</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>402</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors><fr:parent>ct-0009</fr:parent></fr:frontmatter><fr:mainmatter>
@@ -592,7 +604,7 @@ addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors><fr:parent>ct-00
     
       
       <fr:embedded-tex
-hash="692164cfb071ccb0ec1a7f125c43cce0"><fr:embedded-tex-preamble>
+hash="c7b67a8ddff7ebe25aae82bf8ef91fd8"><fr:embedded-tex-preamble>
          
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -653,6 +665,9 @@ hash="692164cfb071ccb0ec1a7f125c43cce0"><fr:embedded-tex-preamble>
       node font=\scriptsize,
       sloped,
     },
+    between/.style args = {#1 and #2}{
+      at = ($(#1)!0.5!(#2)$)
+    },
     desc/.style = {anchor=center,fill=white,inner sep=3pt},
     offset/.style args = {#1} {commutative diagrams/shift right={#1}},
     cross over/.style = {
@@ -694,7 +709,10 @@ hash="692164cfb071ccb0ec1a7f125c43cce0"><fr:embedded-tex-preamble>
     },
     embedding/.style = {
       {right hook}-&gt;
-    }
+    },
+    cover/.style = {
+      -{Triangle[open]}
+    },
   }
 
   \newlength{\dontworryaboutit} % no idea what it does
@@ -844,7 +862,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>426</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>topo-0007</fr:addr><fr:route>topo-0007.xml</fr:route><fr:title>Monomorphisms are equalizers in a <fr:link
+root="false"><fr:frontmatter><fr:anchor>446</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>topo-0007</fr:addr><fr:route>topo-0007.xml</fr:route><fr:title>Monomorphisms are equalizers in a <fr:link
 href="topo-0001.xml"
 type="local"
 addr="topo-0001">topos</fr:link></fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
@@ -863,7 +881,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>424</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>444</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors><fr:parent>topo-0007</fr:parent></fr:frontmatter><fr:mainmatter>

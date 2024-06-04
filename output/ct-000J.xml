@@ -7,7 +7,7 @@ numbered="true"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>361</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>ct-000J</fr:addr><fr:route>ct-000J.xml</fr:route><fr:title><fr:link
+root="false"><fr:frontmatter><fr:anchor>383</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>ct-000J</fr:addr><fr:route>ct-000J.xml</fr:route><fr:title><fr:link
 href="ct-000I.xml"
 type="local"
 addr="ct-000I">Slice comparison functor</fr:link> of a <fr:link
@@ -29,7 +29,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>303</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>339</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors><fr:parent>ct-000J</fr:parent></fr:frontmatter><fr:mainmatter>
@@ -45,14 +45,14 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>292</fr:anchor><fr:taxon>If</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>328</fr:anchor><fr:taxon>If</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors><fr:parent>ct-000J</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Suppose that <fr:tex>\Sigma _{f}  \dashv   f ^{*}</fr:tex> for any <fr:tex>f</fr:tex>. We show that the following diagram</fr:p>
     
       
       <fr:embedded-tex
-hash="3f09d35bd48786fac0d08e2d9a8a00c8"><fr:embedded-tex-preamble>
+hash="40abdd63c37e50d38dd9cb7930784f7a"><fr:embedded-tex-preamble>
          
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -113,6 +113,9 @@ hash="3f09d35bd48786fac0d08e2d9a8a00c8"><fr:embedded-tex-preamble>
       node font=\scriptsize,
       sloped,
     },
+    between/.style args = {#1 and #2}{
+      at = ($(#1)!0.5!(#2)$)
+    },
     desc/.style = {anchor=center,fill=white,inner sep=3pt},
     offset/.style args = {#1} {commutative diagrams/shift right={#1}},
     cross over/.style = {
@@ -154,7 +157,10 @@ hash="3f09d35bd48786fac0d08e2d9a8a00c8"><fr:embedded-tex-preamble>
     },
     embedding/.style = {
       {right hook}-&gt;
-    }
+    },
+    cover/.style = {
+      -{Triangle[open]}
+    },
   }
 
   \newlength{\dontworryaboutit} % no idea what it does
@@ -287,7 +293,7 @@ hash="3f09d35bd48786fac0d08e2d9a8a00c8"><fr:embedded-tex-preamble>
     
       
       <fr:embedded-tex
-hash="5f27ff41ca6be270f984df6f74f2d3ec"><fr:embedded-tex-preamble>
+hash="e516c313a9b4631172fa8038bc0eaf20"><fr:embedded-tex-preamble>
          
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -348,6 +354,9 @@ hash="5f27ff41ca6be270f984df6f74f2d3ec"><fr:embedded-tex-preamble>
       node font=\scriptsize,
       sloped,
     },
+    between/.style args = {#1 and #2}{
+      at = ($(#1)!0.5!(#2)$)
+    },
     desc/.style = {anchor=center,fill=white,inner sep=3pt},
     offset/.style args = {#1} {commutative diagrams/shift right={#1}},
     cross over/.style = {
@@ -389,7 +398,10 @@ hash="5f27ff41ca6be270f984df6f74f2d3ec"><fr:embedded-tex-preamble>
     },
     embedding/.style = {
       {right hook}-&gt;
-    }
+    },
+    cover/.style = {
+      -{Triangle[open]}
+    },
   }
 
   \newlength{\dontworryaboutit} % no idea what it does
@@ -535,7 +547,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>301</fr:anchor><fr:taxon>Only if</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>337</fr:anchor><fr:taxon>Only if</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors><fr:parent>ct-000J</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Suppose that <fr:tex>\mathcal { C }</fr:tex> has pullbacks. Then we can take <fr:tex>f ^{*}</fr:tex> to be the pullback functor. It remains to check that <fr:tex>\Sigma _{f}  \dashv   f ^{*}</fr:tex>.</fr:p>
@@ -560,7 +572,7 @@ xmlns:html="http://www.w3.org/1999/xhtml">
     
       
       <fr:embedded-tex
-hash="b0dde229f47898063400d525d6b95c61"><fr:embedded-tex-preamble>
+hash="53653e31de9c9ffad1f631d0be6eb51f"><fr:embedded-tex-preamble>
          
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -621,6 +633,9 @@ hash="b0dde229f47898063400d525d6b95c61"><fr:embedded-tex-preamble>
       node font=\scriptsize,
       sloped,
     },
+    between/.style args = {#1 and #2}{
+      at = ($(#1)!0.5!(#2)$)
+    },
     desc/.style = {anchor=center,fill=white,inner sep=3pt},
     offset/.style args = {#1} {commutative diagrams/shift right={#1}},
     cross over/.style = {
@@ -662,7 +677,10 @@ hash="b0dde229f47898063400d525d6b95c61"><fr:embedded-tex-preamble>
     },
     embedding/.style = {
       {right hook}-&gt;
-    }
+    },
+    cover/.style = {
+      -{Triangle[open]}
+    },
   }
 
   \newlength{\dontworryaboutit} % no idea what it does
@@ -805,7 +823,7 @@ hash="b0dde229f47898063400d525d6b95c61"><fr:embedded-tex-preamble>
     
       
       <fr:embedded-tex
-hash="cb2addbf24638668f06d44b3b29f471f"><fr:embedded-tex-preamble>
+hash="0a5a1abd71fb69b248c2b3abace515a0"><fr:embedded-tex-preamble>
          
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -866,6 +884,9 @@ hash="cb2addbf24638668f06d44b3b29f471f"><fr:embedded-tex-preamble>
       node font=\scriptsize,
       sloped,
     },
+    between/.style args = {#1 and #2}{
+      at = ($(#1)!0.5!(#2)$)
+    },
     desc/.style = {anchor=center,fill=white,inner sep=3pt},
     offset/.style args = {#1} {commutative diagrams/shift right={#1}},
     cross over/.style = {
@@ -907,7 +928,10 @@ hash="cb2addbf24638668f06d44b3b29f471f"><fr:embedded-tex-preamble>
     },
     embedding/.style = {
       {right hook}-&gt;
-    }
+    },
+    cover/.style = {
+      -{Triangle[open]}
+    },
   }
 
   \newlength{\dontworryaboutit} % no idea what it does
@@ -1038,7 +1062,7 @@ hash="cb2addbf24638668f06d44b3b29f471f"><fr:embedded-tex-preamble>
     
       
       <fr:embedded-tex
-hash="34dcab7b011aaabc03ec1f7100eee4cd"><fr:embedded-tex-preamble>
+hash="158ca743443dfa0a4b7aba8d253b69fb"><fr:embedded-tex-preamble>
          
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -1099,6 +1123,9 @@ hash="34dcab7b011aaabc03ec1f7100eee4cd"><fr:embedded-tex-preamble>
       node font=\scriptsize,
       sloped,
     },
+    between/.style args = {#1 and #2}{
+      at = ($(#1)!0.5!(#2)$)
+    },
     desc/.style = {anchor=center,fill=white,inner sep=3pt},
     offset/.style args = {#1} {commutative diagrams/shift right={#1}},
     cross over/.style = {
@@ -1140,7 +1167,10 @@ hash="34dcab7b011aaabc03ec1f7100eee4cd"><fr:embedded-tex-preamble>
     },
     embedding/.style = {
       {right hook}-&gt;
-    }
+    },
+    cover/.style = {
+      -{Triangle[open]}
+    },
   }
 
   \newlength{\dontworryaboutit} % no idea what it does
@@ -1290,7 +1320,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>345</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>ct-000H</fr:addr><fr:route>ct-000H.xml</fr:route><fr:title><fr:link
+root="false"><fr:frontmatter><fr:anchor>367</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>ct-000H</fr:addr><fr:route>ct-000H.xml</fr:route><fr:title><fr:link
 href="ct-000G.xml"
 type="local"
 addr="ct-000G">Locally cartesian categories</fr:link> have pullbacks</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:authors><fr:author><fr:link
@@ -1306,7 +1336,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>339</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>361</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors><fr:parent>ct-000H</fr:parent></fr:frontmatter><fr:mainmatter>
@@ -1321,7 +1351,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>347</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>ct-000G</fr:addr><fr:route>ct-000G.xml</fr:route><fr:title>Locally cartesian category</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>369</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>ct-000G</fr:addr><fr:route>ct-000G.xml</fr:route><fr:title>Locally cartesian category</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>A category <fr:tex>\mathcal { C }</fr:tex> is said to be <fr:em><fr:strong>locally cartesian</fr:strong></fr:em> if for any object <fr:tex>A  \in   \mathcal { C }</fr:tex>, the slice <fr:tex>{ \mathcal { C } _{/ A }}</fr:tex> is cartesian.</fr:p></fr:mainmatter></fr:tree><fr:tree
@@ -1331,7 +1361,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>359</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>ct-000I</fr:addr><fr:route>ct-000I.xml</fr:route><fr:title>Slice comparison functor</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>381</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>ct-000I</fr:addr><fr:route>ct-000I.xml</fr:route><fr:title>Slice comparison functor</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>\mathcal { C }</fr:tex> be an arbitrary category and <fr:tex>f \colon A \to B</fr:tex> be a morphism. There is a faithful functor <fr:tex>\Sigma _{f} \colon { \mathcal { C } _{/ A }} \to { \mathcal { C } _{/ B }}</fr:tex> whose action on objects is the assignment <fr:tex>g  \mapsto  fg</fr:tex>.</fr:p>
@@ -1344,7 +1374,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>357</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>379</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors><fr:parent>ct-000I</fr:parent></fr:frontmatter><fr:mainmatter>
@@ -1371,7 +1401,7 @@ style="white-space: nowrap"><fr:tex>f</fr:tex>.</html:span>
     
       
       <fr:embedded-tex
-hash="b0e546c44783932c8f75ea039127dd24"><fr:embedded-tex-preamble>
+hash="4cfff10ca86628fba3938b2860a68ac5"><fr:embedded-tex-preamble>
          
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -1432,6 +1462,9 @@ hash="b0e546c44783932c8f75ea039127dd24"><fr:embedded-tex-preamble>
       node font=\scriptsize,
       sloped,
     },
+    between/.style args = {#1 and #2}{
+      at = ($(#1)!0.5!(#2)$)
+    },
     desc/.style = {anchor=center,fill=white,inner sep=3pt},
     offset/.style args = {#1} {commutative diagrams/shift right={#1}},
     cross over/.style = {
@@ -1473,7 +1506,10 @@ hash="b0e546c44783932c8f75ea039127dd24"><fr:embedded-tex-preamble>
     },
     embedding/.style = {
       {right hook}-&gt;
-    }
+    },
+    cover/.style = {
+      -{Triangle[open]}
+    },
   }
 
   \newlength{\dontworryaboutit} % no idea what it does
@@ -1606,7 +1642,7 @@ hash="b0e546c44783932c8f75ea039127dd24"><fr:embedded-tex-preamble>
     
       
       <fr:embedded-tex
-hash="ed68dfcb98c3bbe9e133304bdbf34028"><fr:embedded-tex-preamble>
+hash="225ad0013e906ce93f47b660f5ab685e"><fr:embedded-tex-preamble>
          
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -1667,6 +1703,9 @@ hash="ed68dfcb98c3bbe9e133304bdbf34028"><fr:embedded-tex-preamble>
       node font=\scriptsize,
       sloped,
     },
+    between/.style args = {#1 and #2}{
+      at = ($(#1)!0.5!(#2)$)
+    },
     desc/.style = {anchor=center,fill=white,inner sep=3pt},
     offset/.style args = {#1} {commutative diagrams/shift right={#1}},
     cross over/.style = {
@@ -1708,7 +1747,10 @@ hash="ed68dfcb98c3bbe9e133304bdbf34028"><fr:embedded-tex-preamble>
     },
     embedding/.style = {
       {right hook}-&gt;
-    }
+    },
+    cover/.style = {
+      -{Triangle[open]}
+    },
   }
 
   \newlength{\dontworryaboutit} % no idea what it does
@@ -1848,7 +1890,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>343</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>ct-000L</fr:addr><fr:route>ct-000L.xml</fr:route><fr:title>Equivalent condition for the existence of <fr:link
+root="false"><fr:frontmatter><fr:anchor>365</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>ct-000L</fr:addr><fr:route>ct-000L.xml</fr:route><fr:title>Equivalent condition for the existence of <fr:link
 href="ct-000K.xml"
 type="local"
 addr="ct-000K">images</fr:link></fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>2</fr:day></fr:date><fr:authors><fr:author><fr:link
@@ -1864,7 +1906,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>319</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>2</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>274</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>2</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors><fr:parent>ct-000L</fr:parent></fr:frontmatter><fr:mainmatter>
@@ -1879,14 +1921,14 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>315</fr:anchor><fr:taxon>If</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>2</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>270</fr:anchor><fr:taxon>If</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>2</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors><fr:parent>ct-000L</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>g \colon B' \rightarrowtail B</fr:tex> be an arbitrary object in <fr:tex>\mathsf { Sub } (B)</fr:tex>. We need to construct a functor <fr:tex>\mathsf { Img } \colon { \mathcal { C } _{/ B }} \to \mathsf { Sub } (B)</fr:tex> so that each morphism <fr:tex>f  \to  g</fr:tex> in <fr:tex>{ \mathcal { C } _{/ B }}</fr:tex> corresponds to a unique morphism <fr:tex>\mathsf { Img } (f)  \to  g</fr:tex> in <fr:tex>\mathsf { Sub } (B)</fr:tex>.</fr:p><fr:p>Let <fr:tex>f  \to  g</fr:tex> be an arbitrary morphism in <fr:tex>{ \mathcal { C } _{/ B }}</fr:tex>. Then this corresponds to a unique morphism <fr:tex>\mathsf {id} _{ A }   \to   f ^{*} (g)</fr:tex> as follows:</fr:p>
     
       
       <fr:embedded-tex
-hash="cd918e0cb8287cd14944737ac36c0ed9"><fr:embedded-tex-preamble>
+hash="04f7ec969d657e47c59ecf0ccef4ca09"><fr:embedded-tex-preamble>
          
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -1947,6 +1989,9 @@ hash="cd918e0cb8287cd14944737ac36c0ed9"><fr:embedded-tex-preamble>
       node font=\scriptsize,
       sloped,
     },
+    between/.style args = {#1 and #2}{
+      at = ($(#1)!0.5!(#2)$)
+    },
     desc/.style = {anchor=center,fill=white,inner sep=3pt},
     offset/.style args = {#1} {commutative diagrams/shift right={#1}},
     cross over/.style = {
@@ -1988,7 +2033,10 @@ hash="cd918e0cb8287cd14944737ac36c0ed9"><fr:embedded-tex-preamble>
     },
     embedding/.style = {
       {right hook}-&gt;
-    }
+    },
+    cover/.style = {
+      -{Triangle[open]}
+    },
   }
 
   \newlength{\dontworryaboutit} % no idea what it does
@@ -2125,7 +2173,7 @@ hash="cd918e0cb8287cd14944737ac36c0ed9"><fr:embedded-tex-preamble>
     
       
       <fr:embedded-tex
-hash="84605762c568177f2e11a78d97729b1d"><fr:embedded-tex-preamble>
+hash="433ae3eb6685090449634cd1915b0988"><fr:embedded-tex-preamble>
          
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -2186,6 +2234,9 @@ hash="84605762c568177f2e11a78d97729b1d"><fr:embedded-tex-preamble>
       node font=\scriptsize,
       sloped,
     },
+    between/.style args = {#1 and #2}{
+      at = ($(#1)!0.5!(#2)$)
+    },
     desc/.style = {anchor=center,fill=white,inner sep=3pt},
     offset/.style args = {#1} {commutative diagrams/shift right={#1}},
     cross over/.style = {
@@ -2227,7 +2278,10 @@ hash="84605762c568177f2e11a78d97729b1d"><fr:embedded-tex-preamble>
     },
     embedding/.style = {
       {right hook}-&gt;
-    }
+    },
+    cover/.style = {
+      -{Triangle[open]}
+    },
   }
 
   \newlength{\dontworryaboutit} % no idea what it does
@@ -2380,7 +2434,7 @@ style="white-space: nowrap"><fr:tex>\exists _{f}  \dashv   f ^{*}</fr:tex></html
     
       
       <fr:embedded-tex
-hash="21f84e4142b7ac43e3d117f1588a5ed3"><fr:embedded-tex-preamble>
+hash="7413c0eb49293e57e30fcab9877924e2"><fr:embedded-tex-preamble>
          
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -2441,6 +2495,9 @@ hash="21f84e4142b7ac43e3d117f1588a5ed3"><fr:embedded-tex-preamble>
       node font=\scriptsize,
       sloped,
     },
+    between/.style args = {#1 and #2}{
+      at = ($(#1)!0.5!(#2)$)
+    },
     desc/.style = {anchor=center,fill=white,inner sep=3pt},
     offset/.style args = {#1} {commutative diagrams/shift right={#1}},
     cross over/.style = {
@@ -2482,7 +2539,10 @@ hash="21f84e4142b7ac43e3d117f1588a5ed3"><fr:embedded-tex-preamble>
     },
     embedding/.style = {
       {right hook}-&gt;
-    }
+    },
+    cover/.style = {
+      -{Triangle[open]}
+    },
   }
 
   \newlength{\dontworryaboutit} % no idea what it does
@@ -2631,7 +2691,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>317</fr:anchor><fr:taxon>Only if</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>2</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>272</fr:anchor><fr:taxon>Only if</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>2</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors><fr:parent>ct-000L</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>If <fr:tex>\mathcal { C }</fr:tex> has images, then we may define <fr:tex>\exists _{f} \colon \mathsf { Sub } (A) \to \mathsf { Sub } (B)</fr:tex> as the following composite:</fr:p><fr:tex

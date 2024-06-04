@@ -7,7 +7,7 @@ numbered="true"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>794</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-0001</fr:addr><fr:route>topo-0001.xml</fr:route><fr:title>Elementary topos</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>818</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-0001</fr:addr><fr:route>topo-0001.xml</fr:route><fr:title>Elementary topos</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>An <fr:em><fr:strong>(elementary) topos</fr:strong></fr:em> is a finitely complete and cartesian closed category equipped with a <fr:link
@@ -20,7 +20,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>792</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>ct-0009</fr:addr><fr:route>ct-0009.xml</fr:route><fr:title><fr:link
+root="false"><fr:frontmatter><fr:anchor>816</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>ct-0009</fr:addr><fr:route>ct-0009.xml</fr:route><fr:title><fr:link
 href="ct-0006.xml"
 type="local"
 addr="ct-0006">Subobject</fr:link> classifier</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:authors><fr:author><fr:link
@@ -50,7 +50,7 @@ xmlns:html="http://www.w3.org/1999/xhtml">
     
       
       <fr:embedded-tex
-hash="e88e13062a5a65e5f5f52e394afea87e"><fr:embedded-tex-preamble>
+hash="a6365355de36939e543bdb20c269ae58"><fr:embedded-tex-preamble>
          
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -111,6 +111,9 @@ hash="e88e13062a5a65e5f5f52e394afea87e"><fr:embedded-tex-preamble>
       node font=\scriptsize,
       sloped,
     },
+    between/.style args = {#1 and #2}{
+      at = ($(#1)!0.5!(#2)$)
+    },
     desc/.style = {anchor=center,fill=white,inner sep=3pt},
     offset/.style args = {#1} {commutative diagrams/shift right={#1}},
     cross over/.style = {
@@ -152,7 +155,10 @@ hash="e88e13062a5a65e5f5f52e394afea87e"><fr:embedded-tex-preamble>
     },
     embedding/.style = {
       {right hook}-&gt;
-    }
+    },
+    cover/.style = {
+      -{Triangle[open]}
+    },
   }
 
   \newlength{\dontworryaboutit} % no idea what it does
@@ -294,7 +300,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>382</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>404</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors><fr:parent>ct-0009</fr:parent></fr:frontmatter><fr:mainmatter>
@@ -312,7 +318,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>378</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>400</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors><fr:parent>ct-0009</fr:parent></fr:frontmatter><fr:mainmatter>
@@ -321,7 +327,7 @@ addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors><fr:parent>ct-00
     
       
       <fr:embedded-tex
-hash="b31fb0e66534b2b9050a959f1baa350f"><fr:embedded-tex-preamble>
+hash="60d22f51fc48954279e52f61661372d2"><fr:embedded-tex-preamble>
          
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -382,6 +388,9 @@ hash="b31fb0e66534b2b9050a959f1baa350f"><fr:embedded-tex-preamble>
       node font=\scriptsize,
       sloped,
     },
+    between/.style args = {#1 and #2}{
+      at = ($(#1)!0.5!(#2)$)
+    },
     desc/.style = {anchor=center,fill=white,inner sep=3pt},
     offset/.style args = {#1} {commutative diagrams/shift right={#1}},
     cross over/.style = {
@@ -423,7 +432,10 @@ hash="b31fb0e66534b2b9050a959f1baa350f"><fr:embedded-tex-preamble>
     },
     embedding/.style = {
       {right hook}-&gt;
-    }
+    },
+    cover/.style = {
+      -{Triangle[open]}
+    },
   }
 
   \newlength{\dontworryaboutit} % no idea what it does
@@ -564,7 +576,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>380</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>402</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors><fr:parent>ct-0009</fr:parent></fr:frontmatter><fr:mainmatter>
@@ -573,7 +585,7 @@ addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors><fr:parent>ct-00
     
       
       <fr:embedded-tex
-hash="692164cfb071ccb0ec1a7f125c43cce0"><fr:embedded-tex-preamble>
+hash="c7b67a8ddff7ebe25aae82bf8ef91fd8"><fr:embedded-tex-preamble>
          
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -634,6 +646,9 @@ hash="692164cfb071ccb0ec1a7f125c43cce0"><fr:embedded-tex-preamble>
       node font=\scriptsize,
       sloped,
     },
+    between/.style args = {#1 and #2}{
+      at = ($(#1)!0.5!(#2)$)
+    },
     desc/.style = {anchor=center,fill=white,inner sep=3pt},
     offset/.style args = {#1} {commutative diagrams/shift right={#1}},
     cross over/.style = {
@@ -675,7 +690,10 @@ hash="692164cfb071ccb0ec1a7f125c43cce0"><fr:embedded-tex-preamble>
     },
     embedding/.style = {
       {right hook}-&gt;
-    }
+    },
+    cover/.style = {
+      -{Triangle[open]}
+    },
   }
 
   \newlength{\dontworryaboutit} % no idea what it does
@@ -825,7 +843,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>764</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>topo-000I</fr:addr><fr:route>topo-000I.xml</fr:route><fr:title>Singleton maps are monomorphisms</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>788</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>topo-000I</fr:addr><fr:route>topo-000I.xml</fr:route><fr:title>Singleton maps are monomorphisms</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>A</fr:tex> be any object in a <fr:link
@@ -844,7 +862,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>470</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>490</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors><fr:parent>topo-000I</fr:parent></fr:frontmatter><fr:mainmatter>
@@ -856,7 +874,7 @@ taxon="Lemma"></fr:ref>, the following square is a pullback.
     
       
       <fr:embedded-tex
-hash="67ff5f4eb715033d150da855b9efa3e8"><fr:embedded-tex-preamble>
+hash="6602a14b6299c6905254874d590d1685"><fr:embedded-tex-preamble>
          
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -917,6 +935,9 @@ hash="67ff5f4eb715033d150da855b9efa3e8"><fr:embedded-tex-preamble>
       node font=\scriptsize,
       sloped,
     },
+    between/.style args = {#1 and #2}{
+      at = ($(#1)!0.5!(#2)$)
+    },
     desc/.style = {anchor=center,fill=white,inner sep=3pt},
     offset/.style args = {#1} {commutative diagrams/shift right={#1}},
     cross over/.style = {
@@ -958,7 +979,10 @@ hash="67ff5f4eb715033d150da855b9efa3e8"><fr:embedded-tex-preamble>
     },
     embedding/.style = {
       {right hook}-&gt;
-    }
+    },
+    cover/.style = {
+      -{Triangle[open]}
+    },
   }
 
   \newlength{\dontworryaboutit} % no idea what it does
@@ -1094,7 +1118,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>766</fr:anchor><fr:taxon>Terminology</fr:taxon><fr:addr>topo-000J</fr:addr><fr:route>topo-000J.xml</fr:route><fr:title>Name</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>790</fr:anchor><fr:taxon>Terminology</fr:taxon><fr:addr>topo-000J</fr:addr><fr:route>topo-000J.xml</fr:route><fr:title>Name</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>m \colon  R  \mono  A  \times  B</fr:tex> be a relation in a <fr:link
@@ -1107,7 +1131,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>768</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>topo-0008</fr:addr><fr:route>topo-0008.xml</fr:route><fr:title><fr:link
+root="false"><fr:frontmatter><fr:anchor>792</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>topo-0008</fr:addr><fr:route>topo-0008.xml</fr:route><fr:title><fr:link
 href="topo-0001.xml"
 type="local"
 addr="topo-0001">Topoi</fr:link> are balanced</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
@@ -1126,7 +1150,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>512</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>534</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors><fr:parent>topo-0008</fr:parent></fr:frontmatter><fr:mainmatter>
@@ -1143,7 +1167,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>770</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>topo-000G</fr:addr><fr:route>topo-000G.xml</fr:route><fr:title><fr:link
+root="false"><fr:frontmatter><fr:anchor>794</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>topo-000G</fr:addr><fr:route>topo-000G.xml</fr:route><fr:title><fr:link
 href="topo-000E.xml"
 type="local"
 addr="topo-000E">Separated</fr:link> objects correspond to <fr:link
@@ -1171,7 +1195,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>524</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>546</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors><fr:parent>topo-000G</fr:parent></fr:frontmatter><fr:mainmatter>
@@ -1188,7 +1212,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>772</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-000A</fr:addr><fr:route>topo-000A.xml</fr:route><fr:title>Lawvere-Tierney topology</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>796</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-000A</fr:addr><fr:route>topo-000A.xml</fr:route><fr:title>Lawvere-Tierney topology</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>A <fr:em><fr:strong>(Lawvere-Tierney) topology</fr:strong></fr:em> on a <fr:link
@@ -1203,7 +1227,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>774</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-000B</fr:addr><fr:route>topo-000B.xml</fr:route><fr:title>Closed subobject</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>798</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-000B</fr:addr><fr:route>topo-000B.xml</fr:route><fr:title>Closed subobject</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>j</fr:tex> be a <fr:link
@@ -1222,7 +1246,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>776</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-000C</fr:addr><fr:route>topo-000C.xml</fr:route><fr:title>Closure</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>800</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-000C</fr:addr><fr:route>topo-000C.xml</fr:route><fr:title>Closure</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>j</fr:tex> be a <fr:link
@@ -1238,7 +1262,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>778</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-000D</fr:addr><fr:route>topo-000D.xml</fr:route><fr:title>Dense subobject</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>802</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-000D</fr:addr><fr:route>topo-000D.xml</fr:route><fr:title>Dense subobject</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>j</fr:tex> be a <fr:link
@@ -1257,7 +1281,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>780</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-000E</fr:addr><fr:route>topo-000E.xml</fr:route><fr:title>Separated object</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>804</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-000E</fr:addr><fr:route>topo-000E.xml</fr:route><fr:title>Separated object</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>j</fr:tex> be a <fr:link
@@ -1276,7 +1300,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>782</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-000F</fr:addr><fr:route>topo-000F.xml</fr:route><fr:title>Sheaf</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>806</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-000F</fr:addr><fr:route>topo-000F.xml</fr:route><fr:title>Sheaf</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>j</fr:tex> be a <fr:link
@@ -1292,7 +1316,7 @@ addr="topo-000D">dense</fr:link> subobject <fr:tex>m \colon  A  \rightarrowtail 
     
       
       <fr:embedded-tex
-hash="5d7338b32fdba2da840e56e67aa3a31e"><fr:embedded-tex-preamble>
+hash="4440e9af2f20f45a7b0511ca83bf12de"><fr:embedded-tex-preamble>
          
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -1353,6 +1377,9 @@ hash="5d7338b32fdba2da840e56e67aa3a31e"><fr:embedded-tex-preamble>
       node font=\scriptsize,
       sloped,
     },
+    between/.style args = {#1 and #2}{
+      at = ($(#1)!0.5!(#2)$)
+    },
     desc/.style = {anchor=center,fill=white,inner sep=3pt},
     offset/.style args = {#1} {commutative diagrams/shift right={#1}},
     cross over/.style = {
@@ -1394,7 +1421,10 @@ hash="5d7338b32fdba2da840e56e67aa3a31e"><fr:embedded-tex-preamble>
     },
     embedding/.style = {
       {right hook}-&gt;
-    }
+    },
+    cover/.style = {
+      -{Triangle[open]}
+    },
   }
 
   \newlength{\dontworryaboutit} % no idea what it does
@@ -1523,7 +1553,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>784</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>topo-000H</fr:addr><fr:route>topo-000H.xml</fr:route><fr:title>Subobjects of separated objects are separated</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>808</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>topo-000H</fr:addr><fr:route>topo-000H.xml</fr:route><fr:title>Subobjects of separated objects are separated</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>A</fr:tex> be a <fr:link
@@ -1545,7 +1575,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>566</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>588</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors><fr:parent>topo-000H</fr:parent></fr:frontmatter><fr:mainmatter>
@@ -1565,7 +1595,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>786</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-0003</fr:addr><fr:route>topo-0003.xml</fr:route><fr:title>Geometric morphism</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>810</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-0003</fr:addr><fr:route>topo-0003.xml</fr:route><fr:title>Geometric morphism</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>\mathcal { E }</fr:tex> and <fr:tex>\mathcal { F }</fr:tex> be <fr:link
@@ -1575,7 +1605,7 @@ addr="topo-0001">topoi</fr:link>. A <fr:em><fr:strong>geometric morphism</fr:str
     
       
       <fr:embedded-tex
-hash="d3faba851ba09399de42feb423c30ded"><fr:embedded-tex-preamble>
+hash="b2c28b9d4ac3bf01a04d310b4958779c"><fr:embedded-tex-preamble>
          
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -1636,6 +1666,9 @@ hash="d3faba851ba09399de42feb423c30ded"><fr:embedded-tex-preamble>
       node font=\scriptsize,
       sloped,
     },
+    between/.style args = {#1 and #2}{
+      at = ($(#1)!0.5!(#2)$)
+    },
     desc/.style = {anchor=center,fill=white,inner sep=3pt},
     offset/.style args = {#1} {commutative diagrams/shift right={#1}},
     cross over/.style = {
@@ -1677,7 +1710,10 @@ hash="d3faba851ba09399de42feb423c30ded"><fr:embedded-tex-preamble>
     },
     embedding/.style = {
       {right hook}-&gt;
-    }
+    },
+    cover/.style = {
+      -{Triangle[open]}
+    },
   }
 
   \newlength{\dontworryaboutit} % no idea what it does
@@ -1805,7 +1841,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>788</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-0002</fr:addr><fr:route>topo-0002.xml</fr:route><fr:title>Logical functor</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>812</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-0002</fr:addr><fr:route>topo-0002.xml</fr:route><fr:title>Logical functor</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>\mathcal { E }</fr:tex> and <fr:tex>\mathcal { F }</fr:tex> be <fr:link
@@ -1818,7 +1854,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>790</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>topo-0007</fr:addr><fr:route>topo-0007.xml</fr:route><fr:title>Monomorphisms are equalizers in a <fr:link
+root="false"><fr:frontmatter><fr:anchor>814</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>topo-0007</fr:addr><fr:route>topo-0007.xml</fr:route><fr:title>Monomorphisms are equalizers in a <fr:link
 href="topo-0001.xml"
 type="local"
 addr="topo-0001">topos</fr:link></fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
@@ -1837,7 +1873,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>424</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>444</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors><fr:parent>topo-0007</fr:parent></fr:frontmatter><fr:mainmatter>

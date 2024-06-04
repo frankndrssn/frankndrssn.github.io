@@ -7,14 +7,14 @@ numbered="true"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>824</fr:anchor><fr:taxon>Axiom</fr:taxon><fr:addr>mnc-0007</fr:addr><fr:route>mnc-0007.xml</fr:route><fr:title>Left unity axiom</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>848</fr:anchor><fr:taxon>Axiom</fr:taxon><fr:addr>mnc-0007</fr:addr><fr:route>mnc-0007.xml</fr:route><fr:title>Left unity axiom</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>The following diagram commutes.</fr:p>
     
       
       <fr:embedded-tex
-hash="23ff7e7cfbe238e576627e60a7d92890"><fr:embedded-tex-preamble>
+hash="da7d42fb1f4b86a3d14c63e1ec87911f"><fr:embedded-tex-preamble>
          
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -75,6 +75,9 @@ hash="23ff7e7cfbe238e576627e60a7d92890"><fr:embedded-tex-preamble>
       node font=\scriptsize,
       sloped,
     },
+    between/.style args = {#1 and #2}{
+      at = ($(#1)!0.5!(#2)$)
+    },
     desc/.style = {anchor=center,fill=white,inner sep=3pt},
     offset/.style args = {#1} {commutative diagrams/shift right={#1}},
     cross over/.style = {
@@ -116,7 +119,10 @@ hash="23ff7e7cfbe238e576627e60a7d92890"><fr:embedded-tex-preamble>
     },
     embedding/.style = {
       {right hook}-&gt;
-    }
+    },
+    cover/.style = {
+      -{Triangle[open]}
+    },
   }
 
   \newlength{\dontworryaboutit} % no idea what it does
@@ -249,7 +255,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>822</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>mnc-0005</fr:addr><fr:route>mnc-0005.xml</fr:route><fr:title>Monoidal functor</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>846</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>mnc-0005</fr:addr><fr:route>mnc-0005.xml</fr:route><fr:title>Monoidal functor</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>\mathcal { C }</fr:tex> and <fr:tex>\mathcal { D }</fr:tex> be <fr:link
@@ -270,14 +276,14 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>737</fr:anchor><fr:taxon>Axiom</fr:taxon><fr:addr>mnc-0006</fr:addr><fr:route>mnc-0006.xml</fr:route><fr:title>Associativity</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>761</fr:anchor><fr:taxon>Axiom</fr:taxon><fr:addr>mnc-0006</fr:addr><fr:route>mnc-0006.xml</fr:route><fr:title>Associativity</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>The following diagram commutes.</fr:p>
     
       
       <fr:embedded-tex
-hash="f82b9646e1f55a9328ab20d2fbc6f683"><fr:embedded-tex-preamble>
+hash="4abec21ef7861cd38c35ba4ec4492052"><fr:embedded-tex-preamble>
          
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -338,6 +344,9 @@ hash="f82b9646e1f55a9328ab20d2fbc6f683"><fr:embedded-tex-preamble>
       node font=\scriptsize,
       sloped,
     },
+    between/.style args = {#1 and #2}{
+      at = ($(#1)!0.5!(#2)$)
+    },
     desc/.style = {anchor=center,fill=white,inner sep=3pt},
     offset/.style args = {#1} {commutative diagrams/shift right={#1}},
     cross over/.style = {
@@ -379,7 +388,10 @@ hash="f82b9646e1f55a9328ab20d2fbc6f683"><fr:embedded-tex-preamble>
     },
     embedding/.style = {
       {right hook}-&gt;
-    }
+    },
+    cover/.style = {
+      -{Triangle[open]}
+    },
   }
 
   \newlength{\dontworryaboutit} % no idea what it does
@@ -514,14 +526,14 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>739</fr:anchor><fr:taxon>Axiom</fr:taxon><fr:addr>mnc-0007</fr:addr><fr:route>mnc-0007.xml</fr:route><fr:title>Left unity axiom</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>763</fr:anchor><fr:taxon>Axiom</fr:taxon><fr:addr>mnc-0007</fr:addr><fr:route>mnc-0007.xml</fr:route><fr:title>Left unity axiom</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>The following diagram commutes.</fr:p>
     
       
       <fr:embedded-tex
-hash="23ff7e7cfbe238e576627e60a7d92890"><fr:embedded-tex-preamble>
+hash="da7d42fb1f4b86a3d14c63e1ec87911f"><fr:embedded-tex-preamble>
          
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -582,6 +594,9 @@ hash="23ff7e7cfbe238e576627e60a7d92890"><fr:embedded-tex-preamble>
       node font=\scriptsize,
       sloped,
     },
+    between/.style args = {#1 and #2}{
+      at = ($(#1)!0.5!(#2)$)
+    },
     desc/.style = {anchor=center,fill=white,inner sep=3pt},
     offset/.style args = {#1} {commutative diagrams/shift right={#1}},
     cross over/.style = {
@@ -623,7 +638,10 @@ hash="23ff7e7cfbe238e576627e60a7d92890"><fr:embedded-tex-preamble>
     },
     embedding/.style = {
       {right hook}-&gt;
-    }
+    },
+    cover/.style = {
+      -{Triangle[open]}
+    },
   }
 
   \newlength{\dontworryaboutit} % no idea what it does
@@ -756,14 +774,14 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>741</fr:anchor><fr:taxon>Axiom</fr:taxon><fr:addr>mnc-0008</fr:addr><fr:route>mnc-0008.xml</fr:route><fr:title>Right unity axiom</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>765</fr:anchor><fr:taxon>Axiom</fr:taxon><fr:addr>mnc-0008</fr:addr><fr:route>mnc-0008.xml</fr:route><fr:title>Right unity axiom</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>The following diagram commutes.</fr:p>
     
       
       <fr:embedded-tex
-hash="f3bd871a2aab79d6a360399c9dd3d166"><fr:embedded-tex-preamble>
+hash="45e17891ac492479c1bd6e5dbed0dcf8"><fr:embedded-tex-preamble>
          
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -824,6 +842,9 @@ hash="f3bd871a2aab79d6a360399c9dd3d166"><fr:embedded-tex-preamble>
       node font=\scriptsize,
       sloped,
     },
+    between/.style args = {#1 and #2}{
+      at = ($(#1)!0.5!(#2)$)
+    },
     desc/.style = {anchor=center,fill=white,inner sep=3pt},
     offset/.style args = {#1} {commutative diagrams/shift right={#1}},
     cross over/.style = {
@@ -865,7 +886,10 @@ hash="f3bd871a2aab79d6a360399c9dd3d166"><fr:embedded-tex-preamble>
     },
     embedding/.style = {
       {right hook}-&gt;
-    }
+    },
+    cover/.style = {
+      -{Triangle[open]}
+    },
   }
 
   \newlength{\dontworryaboutit} % no idea what it does
