@@ -36,7 +36,7 @@ href="ct-000N.xml"
 taxon="Lemma"></fr:ref>.</fr:p>
 
   <fr:p>
-    To show the second half of the lemma, it suffices to show that every cover-mono factorization of a morphism <fr:tex>f</fr:tex> is isomorphic to <fr:tex>\mathsf { Img } (f) \vartheta _{f}</fr:tex>. Let <fr:tex>hg</fr:tex> be a cover-mono factorization of <fr:tex>f</fr:tex>. Then since <fr:tex>\vartheta _{f}</fr:tex> is a split epimorphism, there is a morphism <fr:tex>s</fr:tex> such that <fr:tex>hs =  \mathsf { Img } (f)</fr:tex>. Then, it follows that <fr:tex>s</fr:tex> is monic.
+    To show the second half of the lemma, it suffices to show that every cover-mono factorization of a morphism <fr:tex>f</fr:tex> is isomorphic to <fr:tex>\mathsf { Img } (f) \vartheta _{f}</fr:tex>. Let <fr:tex>hg</fr:tex> be a cover-mono factorization of <fr:tex>f</fr:tex>. Then since <fr:tex>\vartheta _{f}</fr:tex> is a split epimorphism, there is a morphism <fr:tex>s</fr:tex> such that <fr:tex>hs =  \mathsf { Img } (f)</fr:tex> and that <fr:tex>s \vartheta _{f} = g</fr:tex>. Then, it follows that <fr:tex>s</fr:tex> is monic.
   </fr:p>
   
     
@@ -301,7 +301,7 @@ type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>\mathcal { C }</fr:tex> be a category with images. The underlying morphism of the unit <fr:tex>\vartheta _{f} \colon f \to \mathsf { Img } (f)</fr:tex> is an <fr:link
 href="ct-000M.xml"
 type="local"
-addr="ct-000M">extremal epimorphism</fr:link> for all <fr:tex>f  \in   { \mathcal { C } _{/ B }}</fr:tex>. In fact, it is a split epimorphism.</fr:p>
+addr="ct-000M">extremal epimorphism</fr:link> for all <fr:tex>f  \in   { \mathcal { C } _{/ B }}</fr:tex>.</fr:p>
     
       
       <fr:tree
@@ -315,9 +315,10 @@ root="false"><fr:frontmatter><fr:anchor>246</fr:anchor><fr:taxon>Proof</fr:taxon
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors><fr:parent>ct-000N</fr:parent></fr:frontmatter><fr:mainmatter>
-  <fr:p>
-    Since <fr:tex>\mathsf { Img }</fr:tex> maps each morphism <fr:tex>f  \to  f'</fr:tex> in <fr:tex>{ \mathcal { C } _{/ B }}</fr:tex> to the unique morphism <fr:tex>\mathsf { Img } (f)  \to   \mathsf { Img } (f')</fr:tex> in the preorder <fr:tex>\mathsf { Sub } (B)</fr:tex>, it is trivially full. Thus, the unit <fr:tex>\vartheta _{f}</fr:tex> is a split epimorphism. Note that every split epimorphism is automatically an extremal epimorphism.
-  </fr:p>
+  <fr:link
+href="todo.xml"
+type="local"
+addr="todo">TODO</fr:link>
 </fr:mainmatter></fr:tree>
     
   </fr:mainmatter></fr:tree><fr:tree
