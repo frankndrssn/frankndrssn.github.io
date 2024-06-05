@@ -7,33 +7,20 @@ numbered="true"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>835</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-0006</fr:addr><fr:route>topo-0006.xml</fr:route><fr:title>Essential <fr:link
-href="topo-0003.xml"
-type="local"
-addr="topo-0003">geometric morphism</fr:link></fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>293</fr:anchor><fr:taxon>Intuition</fr:taxon><fr:addr>ct-000V</fr:addr><fr:route>ct-000V.xml</fr:route><fr:title>Presentation</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>4</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
-addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>A <fr:link
-href="topo-0003.xml"
-type="local"
-addr="topo-0003">geometric morphism</fr:link> <fr:tex>f \colon \mathcal { E } \to \mathcal { F }</fr:tex> is said to be <fr:em><fr:strong>essential</fr:strong></fr:em> if its inverse image <fr:tex>f ^{*}</fr:tex> admits a left adjoint.</fr:p></fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context></fr:context><fr:related><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="true"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>833</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-0003</fr:addr><fr:route>topo-0003.xml</fr:route><fr:title>Geometric morphism</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
-href="frankndrssn.xml"
-type="local"
-addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>\mathcal { E }</fr:tex> and <fr:tex>\mathcal { F }</fr:tex> be <fr:link
-href="topo-0001.xml"
-type="local"
-addr="topo-0001">topoi</fr:link>. A <fr:em><fr:strong>geometric morphism</fr:strong></fr:em> <fr:tex>f \colon \mathcal { E } \to \mathcal { F }</fr:tex> is an adjoint pair of functors</fr:p>
+addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p>
+  Given a pair of functors <fr:tex>U \colon \mathcal { C } \to \mathcal { D }</fr:tex> and <fr:tex>F \colon \mathcal { D } \to \mathcal { C }</fr:tex> such that <fr:tex>F  \dashv  U</fr:tex>.
+  We may considered <fr:tex>F</fr:tex> as a free construction of <fr:tex>\mathcal { D }</fr:tex> in <fr:tex>\mathcal { C }</fr:tex>.
+  For any object <fr:tex>c  \in   \mathcal { C }</fr:tex>, the <fr:em><fr:strong>category of presentations of <fr:tex>c</fr:tex></fr:strong></fr:em> is the comma category <fr:tex>{ F } \downarrow { c }</fr:tex>.
+  The <fr:em><fr:strong>representation</fr:strong></fr:em> of <fr:tex>c</fr:tex> is the terminal object of <fr:tex>{ F } \downarrow { c }</fr:tex>.
+  This is precisely the object <fr:tex>(Uc, \varepsilon _{c} \colon FUc \to c )</fr:tex>, where <fr:tex>\varepsilon</fr:tex> is the counit of the adjunction.
+</fr:p>
     
       
       <fr:embedded-tex
-hash="b2c28b9d4ac3bf01a04d310b4958779c"><fr:embedded-tex-preamble>
+hash="a45011fe2a33eb459b921a858ebf2d74"><fr:embedded-tex-preamble>
          
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -254,12 +241,13 @@ hash="b2c28b9d4ac3bf01a04d310b4958779c"><fr:embedded-tex-preamble>
  
       </fr:embedded-tex-preamble><fr:embedded-tex-body>
    \begin {tikzpicture}[diagram]
-     \node  (w) {$ \mathcal { E } $};
-     \node  [right = of w] (e) {$ \mathcal { F } $};
-     \draw  [-&gt;,morphism,offset=1.5] (w) to node[swap] (s) {$ f _{*} $} (e);
-     \draw  [-&gt;,morphism,offset=1.5] (e) to node[swap] (n) {$ f ^{*} $} (w);
-     \DrawAdj {n}{s}
+     \node  (1) {$FUc$};
+     \node  [right = of 1] (2) {$c$};
+     \node  [below = of 1] (3) {$Fd$};
+     \draw  [-&gt;,morphism] (1) to node {$ \varepsilon _{c}$} (2);
+     \draw  [-&gt;,morphism] (3) to (2);
+     \draw  [-&gt;,morphism,exists] (3) to (1);
    \end {tikzpicture}
 </fr:embedded-tex-body></fr:embedded-tex>
     
-  <fr:p>such that <fr:tex>f ^{*}</fr:tex> is left exact. The functors <fr:tex>f _{*}</fr:tex> and <fr:tex>f ^{*}</fr:tex> are called the <fr:em><fr:strong>direct image</fr:strong></fr:em> and the <fr:em><fr:strong>inverse image</fr:strong></fr:em> respectively.</fr:p></fr:mainmatter></fr:tree></fr:related><fr:backlinks></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>
+  </fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context></fr:context><fr:related></fr:related><fr:backlinks></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>
