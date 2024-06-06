@@ -4,13 +4,12 @@
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
   xmlns:f="http://www.jonmsterling.com/jms-005P.xml">
 
-  <xsl:output method="text" encoding="utf-8" indent="yes" doctype-public="" doctype-system="" />
+  <xsl:output method="text" encoding="utf-8" />
   
   <xsl:template match="/">
     <xsl:text>\documentclass[oneside,a4paper]{book}</xsl:text>
     <xsl:text>\usepackage[final]{microtype}</xsl:text>
     <xsl:text>\usepackage{amsthm,mathtools}</xsl:text>
-    <!-- <xsl:text>\usepackage[inline]{showlabels}</xsl:text> -->
     <xsl:text>\usepackage{xcolor}</xsl:text>
     <xsl:text>\usepackage[colorlinks=true,linkcolor={blue!30!black}]{hyperref}</xsl:text>
     <xsl:text>\newtheorem{theorem}{Theorem}[chapter]</xsl:text>
@@ -86,6 +85,10 @@
     <xsl:text>}</xsl:text>
   </xsl:template>
 
+  <xsl:template match="/f:tree/f:frontmatter/f:title">
+    <xsl:value-of select="." />
+  </xsl:template>
+  
   <xsl:template match="/f:tree/f:mainmatter/f:tree[not(f:frontmatter/f:taxon)]/f:frontmatter/f:title">
     <xsl:text>\chapter{</xsl:text>
     <xsl:apply-templates />
@@ -180,7 +183,7 @@
   </xsl:template>
 
   <xsl:template match="f:mainmatter">
-    <xsl:apply-templates select="f:p|f:tex|f:ol|f:ul|f:tree" />
+    <xsl:apply-templates select="f:p|f:tex|f:ol|f:ul|f:tree|f:embedded-tex" />
   </xsl:template>
 
   <xsl:template match="f:p">
