@@ -7,7 +7,7 @@ numbered="true"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>731</fr:anchor><fr:addr>todo</fr:addr><fr:route>todo.xml</fr:route><fr:title>TODO</fr:title><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>755</fr:anchor><fr:addr>todo</fr:addr><fr:route>todo.xml</fr:route><fr:title>TODO</fr:title><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:p><fr:ul><fr:li>Write down the definition of <fr:link
@@ -26,21 +26,21 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>728</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>ct-0001</fr:addr><fr:route>ct-0001.xml</fr:route><fr:title>Reflexive relation</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>(a,b) \colon  R  \rightarrowtail  A  \times  A</fr:tex> be a relation in a category with finite limits. <fr:tex>(a,b)</fr:tex> is said to be <fr:em><fr:strong>reflexive</fr:strong></fr:em> if the diagonal relation <fr:tex>\Delta \colon  A  \rightarrowtail  A  \times  A</fr:tex> factors through <fr:tex>(a,b)</fr:tex>, i.e., there is a map <fr:tex>\rho \colon  A  \to  R</fr:tex> such that <fr:tex>a \rho  = b \rho  =  \mathsf {id} _{ A }</fr:tex>.</fr:p></fr:mainmatter></fr:tree><fr:tree
+root="false"><fr:frontmatter><fr:anchor>752</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>ct-0001</fr:addr><fr:route>ct-0001.xml</fr:route><fr:title>Reflexive relation</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>(a,b) \colon  R  \rightarrowtail  A  \times  A</fr:tex> be a relation in a category with finite limits. <fr:tex>(a,b)</fr:tex> is said to be <fr:em><fr:strong>reflexive</fr:strong></fr:em> if the diagonal relation <fr:tex>\Delta \colon  A  \rightarrowtail  A  \times  A</fr:tex> factors through <fr:tex>(a,b)</fr:tex>, i.e., there is a map <fr:tex>\rho \colon  A  \to  R</fr:tex> such that <fr:tex>a \rho  = b \rho  =  \mathsf {id} _{ A }</fr:tex>.</fr:p></fr:mainmatter></fr:tree><fr:tree
 xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>729</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>ct-0002</fr:addr><fr:route>ct-0002.xml</fr:route><fr:title>Symmetric relation</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>(a,b) \colon  R  \rightarrowtail  A  \times  A</fr:tex> be a relation in a category with finite limits. <fr:tex>(a,b)</fr:tex> is said to be <fr:em><fr:strong>symmetric</fr:strong></fr:em> if the <fr:em>twisted</fr:em> relation <fr:tex>(b,a)</fr:tex> factors through <fr:tex>(a,b)</fr:tex>, i.e., there is a map <fr:tex>\sigma \colon  R  \to  R</fr:tex> such that <fr:tex>a \sigma  = b</fr:tex> and <fr:tex>b \sigma  = a</fr:tex>.</fr:p></fr:mainmatter></fr:tree><fr:tree
+root="false"><fr:frontmatter><fr:anchor>753</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>ct-0002</fr:addr><fr:route>ct-0002.xml</fr:route><fr:title>Symmetric relation</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>(a,b) \colon  R  \rightarrowtail  A  \times  A</fr:tex> be a relation in a category with finite limits. <fr:tex>(a,b)</fr:tex> is said to be <fr:em><fr:strong>symmetric</fr:strong></fr:em> if the <fr:em>twisted</fr:em> relation <fr:tex>(b,a)</fr:tex> factors through <fr:tex>(a,b)</fr:tex>, i.e., there is a map <fr:tex>\sigma \colon  R  \to  R</fr:tex> such that <fr:tex>a \sigma  = b</fr:tex> and <fr:tex>b \sigma  = a</fr:tex>.</fr:p></fr:mainmatter></fr:tree><fr:tree
 xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>730</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>ct-0003</fr:addr><fr:route>ct-0003.xml</fr:route><fr:title>Transitive relation</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>(a,b) \colon  R  \rightarrowtail  A  \times  A</fr:tex> be a relation in a category with finite limits. <fr:tex>(a,b)</fr:tex> is said to be <fr:em><fr:strong>transitive</fr:strong></fr:em> if the relation <fr:tex>(ap,bq) \colon  R  \times _{A} R  \rightarrowtail  A  \times  A</fr:tex> factors through <fr:tex>(a,b)</fr:tex>, i.e., there is a map <fr:tex>\tau \colon  R  \times _{A} R  \to  R</fr:tex> such that <fr:tex>a \tau  = ap</fr:tex> and <fr:tex>b \tau  = bq</fr:tex>, where <fr:tex>p</fr:tex> and <fr:tex>q</fr:tex> are the projection maps of the following pullback.</fr:p>
+root="false"><fr:frontmatter><fr:anchor>754</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>ct-0003</fr:addr><fr:route>ct-0003.xml</fr:route><fr:title>Transitive relation</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>(a,b) \colon  R  \rightarrowtail  A  \times  A</fr:tex> be a relation in a category with finite limits. <fr:tex>(a,b)</fr:tex> is said to be <fr:em><fr:strong>transitive</fr:strong></fr:em> if the relation <fr:tex>(ap,bq) \colon  R  \times _{A} R  \rightarrowtail  A  \times  A</fr:tex> factors through <fr:tex>(a,b)</fr:tex>, i.e., there is a map <fr:tex>\tau \colon  R  \times _{A} R  \to  R</fr:tex> such that <fr:tex>a \tau  = ap</fr:tex> and <fr:tex>b \tau  = bq</fr:tex>, where <fr:tex>p</fr:tex> and <fr:tex>q</fr:tex> are the projection maps of the following pullback.</fr:p>
     
       
       <fr:embedded-tex
@@ -284,7 +284,312 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>724</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>mnc-000B</fr:addr><fr:route>mnc-000B.xml</fr:route><fr:title>Quantale</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>5</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
+root="false"><fr:frontmatter><fr:anchor>746</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>ct-000Z</fr:addr><fr:route>ct-000Z.xml</fr:route><fr:title><fr:link
+href="ct-000X.xml"
+type="local"
+addr="ct-000X">Coherent categories</fr:link> have initial object</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>7</fr:day></fr:date></fr:frontmatter><fr:mainmatter>
+    
+      
+      <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="false"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"><fr:frontmatter><fr:anchor>241</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>7</fr:day></fr:date><fr:parent>ct-000Z</fr:parent></fr:frontmatter><fr:mainmatter>
+  <fr:p><fr:link
+href="todo.xml"
+type="local"
+addr="todo">TODO</fr:link></fr:p>
+</fr:mainmatter></fr:tree>
+    
+  </fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="true"
+root="false"><fr:frontmatter><fr:anchor>747</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>ct-0010</fr:addr><fr:route>ct-0010.xml</fr:route><fr:title>Strictness of the least subterminal object in a <fr:link
+href="ct-000X.xml"
+type="local"
+addr="ct-000X">coherent category</fr:link></fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>7</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
+  Let <fr:tex>\mathcal { C }</fr:tex> be a coherent category and <fr:tex>0  \rightarrowtail  1</fr:tex> be the initial object in <fr:tex>\mathsf { Sub } (1)</fr:tex>.
+  Then any morphism <fr:tex>f \colon A \to 0</fr:tex> in <fr:tex>\mathcal { C }</fr:tex> is an isomorphism.
+</fr:p>
+    
+      
+      <fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="false"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"><fr:frontmatter><fr:anchor>244</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>7</fr:day></fr:date><fr:parent>ct-0010</fr:parent></fr:frontmatter><fr:mainmatter>
+  <fr:p>
+    By definition, the pullback of the least subterminal object along the unique morphism <fr:tex>\mathsf {!} _{ A } \colon A \to 1</fr:tex> is the initial object in <fr:tex>\mathsf { Sub } (A)</fr:tex>.
+  </fr:p>
+  
+    
+      
+      <fr:embedded-tex
+hash="93cc16d5efa5bf417c6630ef42846e1e"><fr:embedded-tex-preamble>
+         
+   \RequirePackage {tikz}
+   \RequirePackage {amsmath}
+   \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
+
+   \definecolor {catccolor}{RGB}{255,244,138}
+   \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
+   \tikzstyle {catc}=[catccolor!60]
+   \tikzstyle {catd}=[orange!40]
+   \tikzstyle {cate}=[red!40]
+   \tikzstyle {catf}=[blue!10]
+   \tikzstyle {catg}=[green!25]
+
+
+   \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
+   \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
+
+   \NewDocumentCommand \CreateRect {D&lt;&gt;{} m m}{
+     \path 
+      coordinate (#1nw)
+      ++(#2,-#3) coordinate (#1se)
+      coordinate (#1sw) at (#1se -| #1nw)
+      coordinate (#1ne) at (#1nw -| #1se)
+    ;
+
+     \path [spath/save = #1north] (#1nw) to (#1ne);
+     \path [spath/save = #1west] (#1nw) to (#1sw);
+     \path [spath/save = #1east] (#1ne) to (#1se);
+     \path [spath/save = #1south] (#1sw) to (#1se);
+  }
+ 
+         
+   % appears to be necessary
+  \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd}
+  \usetikzlibrary{matrix,arrows}
+  \usetikzlibrary{backgrounds,fit,positioning,calc,shapes}
+  \usetikzlibrary{decorations.pathreplacing}
+  \usetikzlibrary{decorations.pathmorphing}
+  \usetikzlibrary{decorations.markings}
+
+  % basic settings
+  \tikzset{
+    diagram/.style = {
+      on grid,
+      node distance=2cm,
+      commutative diagrams/every diagram,
+      line width = .5pt,
+      every node/.append style = {
+        commutative diagrams/every cell,
+      },
+    },
+    morphism/.style = {
+      auto=left,
+      node font=\scriptsize,
+    },
+    phantom/.style = {
+      commutative diagrams/phantom,
+      node font=\scriptsize,
+      sloped,
+    },
+    between/.style args = {#1 and #2}{
+      at = ($(#1)!0.5!(#2)$)
+    },
+    desc/.style = {anchor=center,fill=white,inner sep=3pt},
+    offset/.style args = {#1} {commutative diagrams/shift right={#1}},
+    cross over/.style = {
+      commutative diagrams/crossing over
+    },
+  }
+
+  % macro that draws the adjunction symbol in a diagram
+  \NewDocumentCommand\DrawAdj{smm}{
+    \IfBooleanTF {#1}{
+      \draw [phantom] (#2) to node {$\dashv$} (#3);
+    }{
+      \draw [phantom] (#2) to node[rotate=180] {$\dashv$} (#3);
+    }
+  }
+
+  % pullback and pushout
+  \tikzset{
+    pullback/.style = {
+      append after command = {
+        \pgfextra{
+          \draw ($(\tikzlastnode) + (.2cm,-.5cm)$) -- ++(0.3cm,0) -- ++(0,0.3cm);
+        }
+      }
+    },
+    pushout/.style = {
+      append after command={
+        \pgfextra{
+          \draw ($(\tikzlastnode) + (-.2cm,.5cm)$) -- ++(-0.3cm,0) -- ++(0,-0.3cm);
+        }
+      }
+    },
+  }
+
+  % arrow styles
+  \tikzset{
+    exists/.style = {
+      densely dashed
+    },
+    embedding/.style = {
+      {right hook}-&gt;
+    },
+    cover/.style = {
+      -{Triangle[open]}
+    },
+  }
+
+  \newlength{\dontworryaboutit} % no idea what it does
+
+  \tikzset{
+    inline diagram/.style = {
+      commutative diagrams/every diagram,
+      commutative diagrams/cramped,
+      line width = .5pt,
+      every node/.append style = {
+        commutative diagrams/every cell,
+        anchor = base,
+        inner sep = 0pt
+      },
+      every path/.append style = {
+        outer xsep = 2pt
+      }
+    }
+  }
+  
+  % macros for drawing commutative squares
+  % adapted from Jon Sterling's macros (https://git.sr.ht/~jonsterling/article-template/tree/main/item/local-tikz.sty)
+  \tikzset{
+    square/nw/.style = {},
+    square/ne/.style = {},
+    square/se/.style = {},
+    square/sw/.style = {},
+    square/north/.style = {-&gt;},
+    square/south/.style = {-&gt;},
+    square/west/.style = {-&gt;},
+    square/east/.style = {-&gt;},
+    square/north/node/.style = {above},
+    square/south/node/.style = {below},
+    square/west/node/.style = {left},
+    square/east/node/.style = {right},
+  }
+
+  \ExplSyntaxOn
+  \keys_define:nn { jon-tikz/diagram } {
+    nw .tl_set:N = \l_jon_tikz_diagram_nw,
+    sw .tl_set:N = \l_jon_tikz_diagram_sw,
+    ne .tl_set:N = \l_jon_tikz_diagram_ne,
+    se .tl_set:N = \l_jon_tikz_diagram_se,
+
+    width .tl_set:N = \l_jon_tikz_diagram_width,
+    height .tl_set:N = \l_jon_tikz_diagram_height,
+
+    north .tl_set:N = \l_jon_tikz_diagram_north,
+    south .tl_set:N = \l_jon_tikz_diagram_south,
+    west .tl_set:N = \l_jon_tikz_diagram_west,
+    east .tl_set:N = \l_jon_tikz_diagram_east,
+
+    nw/style .code:n = {\tikzset{square/nw/.style = {#1}}},
+    sw/style .code:n = {\tikzset{square/sw/.style = {#1}}},
+    ne/style .code:n = {\tikzset{square/ne/.style = {#1}}},
+    se/style .code:n = {\tikzset{square/se/.style = {#1}}},
+
+    north/style .code:n = {\tikzset{square/north/.style = {#1}}},
+    north/node/style .code:n = {\tikzset{square/north/node/.style = {#1}}},
+    south/style .code:n = {\tikzset{square/south/.style = {#1}}},
+    south/node/style .code:n = {\tikzset{square/south/node/.style = {#1}}},
+    west/style .code:n = {\tikzset{square/west/.style = {#1}}},
+    west/node/style .code:n = {\tikzset{square/west/node/.style = {#1}}},
+    east/style .code:n = {\tikzset{square/east/.style = {#1}}},
+    east/node/style .code:n = {\tikzset{square/east/node/.style = {#1}}},
+
+    draft .meta:n = {
+      nw = {nw},
+      sw = {sw},
+      se = {se},
+      ne = {ne},
+      north = {north},
+      south = {south},
+      west = {west},
+      east = {east},
+    }
+  }
+
+  \tl_set:Nn \l_jon_tikz_diagram_width { 2cm }
+  \tl_set:Nn \l_jon_tikz_diagram_height { 2cm }
+
+
+  \cs_new:Nn \__jon_tikz_render_square:nn {
+    \group_begin:
+    \keys_set:nn {jon-tikz/diagram} {#2} {
+      \node (#1nw) [square/nw] {$\l_jon_tikz_diagram_nw$};
+      \node (#1sw) [below = \l_jon_tikz_diagram_height~of~#1nw,square/sw] {$\l_jon_tikz_diagram_sw$};
+      \draw[morphism,square/west] (#1nw) to node [square/west/node] {$\l_jon_tikz_diagram_west$} (#1sw);
+
+      \node (#1ne) [right = \l_jon_tikz_diagram_width~of~#1nw,square/ne] {$\l_jon_tikz_diagram_ne$};
+      \node (#1se) [below = \l_jon_tikz_diagram_height~of~#1ne,square/se] {$\l_jon_tikz_diagram_se$};
+      \draw[morphism,square/north] (#1nw) to node [square/north/node] {$\l_jon_tikz_diagram_north$} (#1ne);
+      \draw[morphism,square/east] (#1ne) to node [square/east/node] {$\l_jon_tikz_diagram_east$} (#1se);
+      \draw[morphism,square/south] (#1sw) to node [square/south/node] {$\l_jon_tikz_diagram_south$} (#1se);
+    }
+    \group_end:
+  }
+
+  % the optional argument allows one to specify a prefix to positions
+  \NewDocumentCommand\SpliceDiagramSquare{O{}m}{
+    \__jon_tikz_render_square:nn {#1} {#2}
+  }
+
+  \NewDocumentCommand\DiagramSquare{O{}O{}m}{
+    \begin{tikzpicture}[diagram,#2,baseline=(#1sw.base)]
+      \__jon_tikz_render_square:nn {#1} {#3}
+    \end{tikzpicture}
+  }
+  \ExplSyntaxOff
+ 
+      </fr:embedded-tex-preamble><fr:embedded-tex-body>
+     \begin {tikzpicture}[diagram]
+       \SpliceDiagramSquare {
+        nw = {0_{A}},
+        nw/style = {pullback},
+        ne = 0,
+        sw = A,
+        se = 1,
+        west = { \cong },
+        west/style = {&gt;-&gt;},
+        west/node/style = {desc},
+        south = { \mathsf {!} _{ A } },
+        east/style = {&gt;-&gt;},
+      }
+       \node  [above left = of nw] (a) {$A$};
+       \draw  [double,morphism,bend right] (a) to (sw);
+       \draw  [-&gt;,morphism,exists] (a) to node[desc] {$s$} (nw);
+       \draw  [-&gt;,morphism,bend left] (a) to node {$f$} (ne);
+     \end {tikzpicture}
+  </fr:embedded-tex-body></fr:embedded-tex>
+    
+  
+  <fr:link
+href="todo.xml"
+type="local"
+addr="todo">TODO</fr:link>
+</fr:mainmatter></fr:tree>
+    
+  </fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="true"
+root="false"><fr:frontmatter><fr:anchor>748</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>mnc-000B</fr:addr><fr:route>mnc-000B.xml</fr:route><fr:title>Quantale</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>5</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
   A <fr:em><fr:strong>quantale</fr:strong></fr:em> is a <fr:link
 href="todo.xml"
 type="local"
@@ -299,7 +604,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>725</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>ct-0008</fr:addr><fr:route>ct-0008.xml</fr:route><fr:title>Pasting lemma of pullbacks</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date></fr:frontmatter><fr:mainmatter>
+root="false"><fr:frontmatter><fr:anchor>749</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>ct-0008</fr:addr><fr:route>ct-0008.xml</fr:route><fr:title>Pasting lemma of pullbacks</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date></fr:frontmatter><fr:mainmatter>
     
       
       <fr:tree
@@ -309,7 +614,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>282</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:parent>ct-0008</fr:parent></fr:frontmatter><fr:mainmatter>
+root="false"><fr:frontmatter><fr:anchor>298</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:parent>ct-0008</fr:parent></fr:frontmatter><fr:mainmatter>
   <fr:link
 href="todo.xml"
 type="local"
@@ -323,7 +628,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>726</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>topo-000G</fr:addr><fr:route>topo-000G.xml</fr:route><fr:title><fr:link
+root="false"><fr:frontmatter><fr:anchor>750</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>topo-000G</fr:addr><fr:route>topo-000G.xml</fr:route><fr:title><fr:link
 href="topo-000E.xml"
 type="local"
 addr="topo-000E">Separated</fr:link> objects correspond to <fr:link
@@ -348,7 +653,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>439</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:parent>topo-000G</fr:parent></fr:frontmatter><fr:mainmatter>
+root="false"><fr:frontmatter><fr:anchor>457</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:parent>topo-000G</fr:parent></fr:frontmatter><fr:mainmatter>
   <fr:link
 href="todo.xml"
 type="local"
@@ -362,7 +667,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>727</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>topo-0009</fr:addr><fr:route>topo-0009.xml</fr:route><fr:title>Every <fr:link
+root="false"><fr:frontmatter><fr:anchor>751</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>topo-0009</fr:addr><fr:route>topo-0009.xml</fr:route><fr:title>Every <fr:link
 href="ct-0004.xml"
 type="local"
 addr="ct-0004">equivalence relation</fr:link> in a topos is <fr:link
@@ -378,7 +683,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>405</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:parent>topo-0009</fr:parent></fr:frontmatter><fr:mainmatter>
+root="false"><fr:frontmatter><fr:anchor>423</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:parent>topo-0009</fr:parent></fr:frontmatter><fr:mainmatter>
   <fr:link
 href="todo.xml"
 type="local"
