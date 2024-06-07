@@ -7,14 +7,14 @@ numbered="true"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>383</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>ct-000G</fr:addr><fr:route>ct-000G.xml</fr:route><fr:title>Locally cartesian category</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>A category <fr:tex>\mathcal { C }</fr:tex> is said to be <fr:em><fr:strong>locally cartesian</fr:strong></fr:em> if for any object <fr:tex>A  \in   \mathcal { C }</fr:tex>, the slice <fr:tex>{ \mathcal { C } _{/ A }}</fr:tex> is cartesian.</fr:p></fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context></fr:context><fr:related></fr:related><fr:backlinks><fr:tree
+root="false"><fr:frontmatter><fr:anchor>386</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>ct-000G</fr:addr><fr:route>ct-000G.xml</fr:route><fr:title>Locally cartesian category</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>A category <fr:tex>\mathcal { C }</fr:tex> is said to be <fr:em><fr:strong>locally cartesian</fr:strong></fr:em> if for any object <fr:tex>A  \in   \mathcal { C }</fr:tex>, the slice <fr:tex>{ \mathcal { C } _{/{ A }}}</fr:tex> is cartesian.</fr:p></fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context></fr:context><fr:related></fr:related><fr:backlinks><fr:tree
 xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>381</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>ct-000H</fr:addr><fr:route>ct-000H.xml</fr:route><fr:title><fr:link
+root="false"><fr:frontmatter><fr:anchor>384</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>ct-000H</fr:addr><fr:route>ct-000H.xml</fr:route><fr:title><fr:link
 href="ct-000G.xml"
 type="local"
 addr="ct-000G">Locally cartesian categories</fr:link> have pullbacks</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>A category <fr:tex>\mathcal { C }</fr:tex> is locally cartesian iff it has pullbacks.</fr:p>
@@ -27,9 +27,9 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>335</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:parent>ct-000H</fr:parent></fr:frontmatter><fr:mainmatter>
-  <fr:p>If <fr:tex>\mathcal { C }</fr:tex> is locally cartesian, then <fr:tex>{ \mathcal { C } _{/ A }}</fr:tex> has products for any object <fr:tex>A  \in   \mathcal { C }</fr:tex>. But, products in <fr:tex>{ \mathcal { C } _{/ A }}</fr:tex> are pullbacks over <fr:tex>A</fr:tex>. Thus, <fr:tex>\mathcal { C }</fr:tex> has pullbacks.</fr:p>
-  <fr:p>Conversely, assume that <fr:tex>\mathcal { C }</fr:tex> has pullbacks. Then since the forgetful functor <fr:tex>\Sigma _{A} \colon { \mathcal { C } _{/ A }} \to \mathcal { C }</fr:tex> creates connected limits for any object <fr:tex>A  \in   \mathcal { C }</fr:tex>, the slice <fr:tex>{ \mathcal { C } _{/ A }}</fr:tex> has pullbacks. Moreover, <fr:tex>\mathsf {id} _{ A }</fr:tex> is the terminal object in <fr:tex>{ \mathcal { C } _{/ A }}</fr:tex>. Thus, <fr:tex>{ \mathcal { C } _{/ A }}</fr:tex> is cartesian.</fr:p>
+root="false"><fr:frontmatter><fr:anchor>338</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:parent>ct-000H</fr:parent></fr:frontmatter><fr:mainmatter>
+  <fr:p>If <fr:tex>\mathcal { C }</fr:tex> is locally cartesian, then <fr:tex>{ \mathcal { C } _{/{ A }}}</fr:tex> has products for any object <fr:tex>A  \in   \mathcal { C }</fr:tex>. But, products in <fr:tex>{ \mathcal { C } _{/{ A }}}</fr:tex> are pullbacks over <fr:tex>A</fr:tex>. Thus, <fr:tex>\mathcal { C }</fr:tex> has pullbacks.</fr:p>
+  <fr:p>Conversely, assume that <fr:tex>\mathcal { C }</fr:tex> has pullbacks. Then since the forgetful functor <fr:tex>\Sigma _{A} \colon { \mathcal { C } _{/{ A }}} \to \mathcal { C }</fr:tex> creates connected limits for any object <fr:tex>A  \in   \mathcal { C }</fr:tex>, the slice <fr:tex>{ \mathcal { C } _{/{ A }}}</fr:tex> has pullbacks. Moreover, <fr:tex>\mathsf {id} _{ A }</fr:tex> is the terminal object in <fr:tex>{ \mathcal { C } _{/{ A }}}</fr:tex>. Thus, <fr:tex>{ \mathcal { C } _{/{ A }}}</fr:tex> is cartesian.</fr:p>
 </fr:mainmatter></fr:tree>
     
   </fr:mainmatter></fr:tree><fr:tree
@@ -39,7 +39,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>382</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>ct-000J</fr:addr><fr:route>ct-000J.xml</fr:route><fr:title><fr:link
+root="false"><fr:frontmatter><fr:anchor>385</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>ct-000J</fr:addr><fr:route>ct-000J.xml</fr:route><fr:title><fr:link
 href="ct-000I.xml"
 type="local"
 addr="ct-000I">Slice comparison functor</fr:link> of a <fr:link
@@ -58,7 +58,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>324</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:parent>ct-000J</fr:parent></fr:frontmatter><fr:mainmatter>
+root="false"><fr:frontmatter><fr:anchor>327</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:parent>ct-000J</fr:parent></fr:frontmatter><fr:mainmatter>
   <fr:p>By <fr:ref
 addr="ct-000H"
 href="ct-000H.xml"
@@ -71,7 +71,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>315</fr:anchor><fr:taxon>If</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:parent>ct-000J</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Suppose that <fr:tex>\Sigma _{f}  \dashv   f ^{*}</fr:tex> for any <fr:tex>f</fr:tex>. We show that the following diagram</fr:p>
+root="false"><fr:frontmatter><fr:anchor>318</fr:anchor><fr:taxon>If</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:parent>ct-000J</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Suppose that <fr:tex>\Sigma _{f}  \dashv   f ^{*}</fr:tex> for any <fr:tex>f</fr:tex>. We show that the following diagram</fr:p>
     
       
       <fr:embedded-tex
@@ -557,7 +557,7 @@ hash="e516c313a9b4631172fa8038bc0eaf20"><fr:embedded-tex-preamble>
        \end {tikzpicture}
     </fr:embedded-tex-body></fr:embedded-tex>
     
-  <fr:p>Note that <fr:tex>h</fr:tex> is a morphism <fr:tex>h \colon \Sigma _{f}(h') \to g</fr:tex> in <fr:tex>{ \mathcal { C } _{/ B }}</fr:tex>. Thus, it corresponds to a unique morphism <fr:tex>h ^{ \dag } \colon h' \to f ^{*} (g)</fr:tex> under the adjunction.</fr:p><fr:p>The transpose of <fr:tex>h ^{ \dag }</fr:tex> can be computed as <fr:tex>\varepsilon _{g}  \circ   \Sigma _{f}(h ^{ \dag } )</fr:tex>. Since <fr:tex>\Sigma _{f}</fr:tex> is the identity on morphisms, we have
+  <fr:p>Note that <fr:tex>h</fr:tex> is a morphism <fr:tex>h \colon \Sigma _{f}(h') \to g</fr:tex> in <fr:tex>{ \mathcal { C } _{/{ B }}}</fr:tex>. Thus, it corresponds to a unique morphism <fr:tex>h ^{ \dag } \colon h' \to f ^{*} (g)</fr:tex> under the adjunction.</fr:p><fr:p>The transpose of <fr:tex>h ^{ \dag }</fr:tex> can be computed as <fr:tex>\varepsilon _{g}  \circ   \Sigma _{f}(h ^{ \dag } )</fr:tex>. Since <fr:tex>\Sigma _{f}</fr:tex> is the identity on morphisms, we have
       <fr:tex
 display="block">         (h ^{ \dag } ) ^{ \dag }  =  \varepsilon _{g}  \circ   \Sigma _{f}(h ^{ \dag } ) =  \varepsilon _{g}  \circ  h ^{ \dag }  = h       </fr:tex>
       Thus, the top triangle also commutes.
@@ -570,7 +570,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>323</fr:anchor><fr:taxon>Only if</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:parent>ct-000J</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Suppose that <fr:tex>\mathcal { C }</fr:tex> has pullbacks. Then we can take <fr:tex>f ^{*}</fr:tex> to be the pullback functor. It remains to check that <fr:tex>\Sigma _{f}  \dashv   f ^{*}</fr:tex>.</fr:p>
+root="false"><fr:frontmatter><fr:anchor>326</fr:anchor><fr:taxon>Only if</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:parent>ct-000J</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Suppose that <fr:tex>\mathcal { C }</fr:tex> has pullbacks. Then we can take <fr:tex>f ^{*}</fr:tex> to be the pullback functor. It remains to check that <fr:tex>\Sigma _{f}  \dashv   f ^{*}</fr:tex>.</fr:p>
   <html:table
 xmlns:html="http://www.w3.org/1999/xhtml">
       
@@ -587,7 +587,7 @@ xmlns:html="http://www.w3.org/1999/xhtml">
   <html:tr>
         
   <html:td>
-          Let <fr:tex>h  \in   { \mathcal { C } _{/ A }}</fr:tex> be an object, we take <fr:tex>\eta _{h} \colon h \to f ^{*} ( \Sigma _{f}(h))</fr:tex> to be the unique morphism given by the following pullback:
+          Let <fr:tex>h  \in   { \mathcal { C } _{/{ A }}}</fr:tex> be an object, we take <fr:tex>\eta _{h} \colon h \to f ^{*} ( \Sigma _{f}(h))</fr:tex> to be the unique morphism given by the following pullback:
           
     
       
@@ -838,7 +838,7 @@ hash="53653e31de9c9ffad1f631d0be6eb51f"><fr:embedded-tex-preamble>
         </html:td>
 
         
-  <html:td>Let <fr:tex>g  \in   { \mathcal { C } _{/ B }}</fr:tex> be an object. We take <fr:tex>\varepsilon _{g} \colon \Sigma _{f}( f ^{*} (g)) \to g</fr:tex> to be the following morphism.
+  <html:td>Let <fr:tex>g  \in   { \mathcal { C } _{/{ B }}}</fr:tex> be an object. We take <fr:tex>\varepsilon _{g} \colon \Sigma _{f}( f ^{*} (g)) \to g</fr:tex> to be the following morphism.
           
     
       
@@ -1077,7 +1077,7 @@ hash="0a5a1abd71fb69b248c2b3abace515a0"><fr:embedded-tex-preamble>
           </fr:embedded-tex-body></fr:embedded-tex>
     
   
-          Let <fr:tex>\alpha \colon g \to g'</fr:tex> be a morphism in <fr:tex>{ \mathcal { C } _{/ B }}</fr:tex>. By the construction of <fr:tex>f ^{*}</fr:tex>, we have the following commutative diagram.
+          Let <fr:tex>\alpha \colon g \to g'</fr:tex> be a morphism in <fr:tex>{ \mathcal { C } _{/{ B }}}</fr:tex>. By the construction of <fr:tex>f ^{*}</fr:tex>, we have the following commutative diagram.
           
     
       
@@ -1329,7 +1329,7 @@ hash="158ca743443dfa0a4b7aba8d253b69fb"><fr:embedded-tex-preamble>
       </html:tr>
 
     </html:table>
-<fr:p>By construction, <fr:tex>\varepsilon _{ \Sigma _{f}} \eta  =  \mathsf {id} _{ \Sigma _{f} }</fr:tex>. Thus, it remains to verify the other triangle equality.</fr:p><fr:p>Let <fr:tex>g  \in   { \mathcal { C } _{/ B }}</fr:tex> be an object. We need to show that <fr:tex>f ^{*} ( \varepsilon _{g}) \eta _{ f ^{*} (g)} =  \mathsf {id} _{ f ^{*} (g) }</fr:tex>. Note that <fr:tex>f ^{*} (g) f ^{*} ( \varepsilon _{g}) \eta _{ f ^{*} (g)} =  f ^{*} (g)</fr:tex> by the construction of <fr:tex>f ^{*}</fr:tex>. Moreover, we also have the following equation.</fr:p><fr:tex
+<fr:p>By construction, <fr:tex>\varepsilon _{ \Sigma _{f}} \eta  =  \mathsf {id} _{ \Sigma _{f} }</fr:tex>. Thus, it remains to verify the other triangle equality.</fr:p><fr:p>Let <fr:tex>g  \in   { \mathcal { C } _{/{ B }}}</fr:tex> be an object. We need to show that <fr:tex>f ^{*} ( \varepsilon _{g}) \eta _{ f ^{*} (g)} =  \mathsf {id} _{ f ^{*} (g) }</fr:tex>. Note that <fr:tex>f ^{*} (g) f ^{*} ( \varepsilon _{g}) \eta _{ f ^{*} (g)} =  f ^{*} (g)</fr:tex> by the construction of <fr:tex>f ^{*}</fr:tex>. Moreover, we also have the following equation.</fr:p><fr:tex
 display="block">        \begin {align*}          \varepsilon _{g} f ^{*} ( \varepsilon _{g}) \eta _{ f ^{*} (g)} &amp;=  \varepsilon _{g} \varepsilon _{f  \circ   f ^{*} (g)} \eta _{ f ^{*} (g)} &amp;&amp;  \text {by the construction of }  f ^{*} \\                                                      &amp;=  \varepsilon _{g} \mathsf {id}  &amp;&amp;  \text {by the construction of }  \eta \\                                                      &amp;=  \varepsilon _{g}        \end {align*}     </fr:tex><fr:p>Thus, <fr:tex>f ^{*} ( \varepsilon _{g}) \eta _{ f ^{*} (g)}</fr:tex> corresponds to the same cone over <fr:tex>f</fr:tex> and <fr:tex>g</fr:tex> as <fr:tex>\mathsf {id} _{ f ^{*} (g) }</fr:tex>. Then uniqueness implies that they are equal.</fr:p></fr:mainmatter></fr:tree>
 </fr:mainmatter></fr:tree>
     

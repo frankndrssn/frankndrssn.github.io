@@ -7,11 +7,11 @@ numbered="true"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>292</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>ct-000N</fr:addr><fr:route>ct-000N.xml</fr:route><fr:title><fr:link
+root="false"><fr:frontmatter><fr:anchor>294</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>ct-000N</fr:addr><fr:route>ct-000N.xml</fr:route><fr:title><fr:link
 href="ct-000K.xml"
 type="local"
 addr="ct-000K">Image</fr:link> embedding</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>3</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
-  Let <fr:tex>\mathcal { C }</fr:tex> be a category with images. Then for any object <fr:tex>f  \in   { \mathcal { C } _{/ B }}</fr:tex>, the underlying morphism of the unit <fr:tex>\vartheta _{f} \colon f \to \mathsf { Img } (f)</fr:tex> has the property that if <fr:tex>\vartheta _{f} = mg</fr:tex> and <fr:tex>m</fr:tex> is monic, then <fr:tex>m</fr:tex> is an isomorphism.
+  Let <fr:tex>\mathcal { C }</fr:tex> be a category with images. Then for any object <fr:tex>f  \in   { \mathcal { C } _{/{ B }}}</fr:tex>, the underlying morphism of the unit <fr:tex>\vartheta _{f} \colon f \to \mathsf { Img } (f)</fr:tex> has the property that if <fr:tex>\vartheta _{f} = mg</fr:tex> and <fr:tex>m</fr:tex> is monic, then <fr:tex>m</fr:tex> is an isomorphism.
   Moreover, if <fr:tex>\mathcal { C }</fr:tex> has equalizers then <fr:tex>\vartheta _{f}</fr:tex> is an <fr:link
 href="ct-000M.xml"
 type="local"
@@ -26,7 +26,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>258</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>3</fr:day></fr:date><fr:parent>ct-000N</fr:parent></fr:frontmatter><fr:mainmatter>
+root="false"><fr:frontmatter><fr:anchor>260</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>3</fr:day></fr:date><fr:parent>ct-000N</fr:parent></fr:frontmatter><fr:mainmatter>
   <fr:p>
     Let <fr:tex>f \colon A \to B</fr:tex>.
     Suppose that there are morphisms <fr:tex>h \colon A \to C</fr:tex> and <fr:tex>g \colon C \rightarrowtail B</fr:tex> such that <html:span
@@ -779,21 +779,21 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>290</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>ct-000M</fr:addr><fr:route>ct-000M.xml</fr:route><fr:title>Extremal epimorphism</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>3</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>An epimorphism <fr:tex>f \colon A \twoheadrightarrow B</fr:tex> is said to be <fr:em><fr:strong>extremal</fr:strong></fr:em> (also called a <fr:em><fr:strong>cover</fr:strong></fr:em>) if for any monomorphism <fr:tex>m \colon C \rightarrowtail B</fr:tex> and any morphism <fr:tex>g \colon A \to C</fr:tex> such that <fr:tex>f = mg</fr:tex>, then <fr:tex>m</fr:tex> is an isomorphism.</fr:p></fr:mainmatter></fr:tree><fr:tree
+root="false"><fr:frontmatter><fr:anchor>292</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>ct-000M</fr:addr><fr:route>ct-000M.xml</fr:route><fr:title>Extremal epimorphism</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>3</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>An epimorphism <fr:tex>f \colon A \twoheadrightarrow B</fr:tex> is said to be <fr:em><fr:strong>extremal</fr:strong></fr:em> (also called a <fr:em><fr:strong>cover</fr:strong></fr:em>) if for any monomorphism <fr:tex>m \colon C \rightarrowtail B</fr:tex> and any morphism <fr:tex>g \colon A \to C</fr:tex> such that <fr:tex>f = mg</fr:tex>, then <fr:tex>m</fr:tex> is an isomorphism.</fr:p></fr:mainmatter></fr:tree><fr:tree
 xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>291</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>ct-000K</fr:addr><fr:route>ct-000K.xml</fr:route><fr:title>Image</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>2</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>A category <fr:tex>\mathcal { C }</fr:tex> is said to have <fr:em><fr:strong>images</fr:strong></fr:em> if the inclusion functor <fr:tex>\mathsf { Sub } (A)  \hookrightarrow   { \mathcal { C } _{/ A }}</fr:tex> admits a left adjoint <fr:tex>\mathsf { Img } \colon { \mathcal { C } _{/ A }} \to \mathsf { Sub } (A)</fr:tex> for all objects <fr:tex>A  \in   \mathcal { C }</fr:tex>.</fr:p></fr:mainmatter></fr:tree></fr:related><fr:backlinks><fr:tree
+root="false"><fr:frontmatter><fr:anchor>293</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>ct-000K</fr:addr><fr:route>ct-000K.xml</fr:route><fr:title>Image</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>2</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>A category <fr:tex>\mathcal { C }</fr:tex> is said to have <fr:em><fr:strong>images</fr:strong></fr:em> if the inclusion functor <fr:tex>\mathsf { Sub } (A)  \hookrightarrow   { \mathcal { C } _{/{ A }}}</fr:tex> admits a left adjoint <fr:tex>\mathsf { Img } \colon { \mathcal { C } _{/{ A }}} \to \mathsf { Sub } (A)</fr:tex> for all objects <fr:tex>A  \in   \mathcal { C }</fr:tex>.</fr:p></fr:mainmatter></fr:tree></fr:related><fr:backlinks><fr:tree
 xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>288</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>ct-000Q</fr:addr><fr:route>ct-000Q.xml</fr:route><fr:title><fr:link
+root="false"><fr:frontmatter><fr:anchor>290</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>ct-000Q</fr:addr><fr:route>ct-000Q.xml</fr:route><fr:title><fr:link
 href="ct-000M.xml"
 type="local"
 addr="ct-000M">Cover</fr:link>-mono factorization</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>4</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>\mathcal { C }</fr:tex> be a category with <fr:link
@@ -809,7 +809,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>262</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>4</fr:day></fr:date><fr:parent>ct-000Q</fr:parent></fr:frontmatter><fr:mainmatter>
+root="false"><fr:frontmatter><fr:anchor>264</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>4</fr:day></fr:date><fr:parent>ct-000Q</fr:parent></fr:frontmatter><fr:mainmatter>
   <fr:p>By the construction of images, every morphism <fr:tex>f \colon A \to B</fr:tex> can be factored as <fr:tex>\mathsf { Img } (f) \vartheta _{f}</fr:tex>, where <fr:tex>\vartheta</fr:tex> is the unit of the image adjunction. <fr:tex>\mathsf { Img } (f)</fr:tex> is monic by construction and <fr:tex>\vartheta _{f}</fr:tex> is a cover by <fr:ref
 addr="ct-000N"
 href="ct-000N.xml"
@@ -1072,17 +1072,17 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>289</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>ct-000P</fr:addr><fr:route>ct-000P.xml</fr:route><fr:title>Equivalent condition for <fr:link
+root="false"><fr:frontmatter><fr:anchor>291</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>ct-000P</fr:addr><fr:route>ct-000P.xml</fr:route><fr:title>Equivalent condition for <fr:link
 href="ct-000O.xml"
 type="local"
 addr="ct-000O">regular categories</fr:link></fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>3</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>A category <fr:tex>\mathcal { C }</fr:tex> is regular iff it is cartesian and has <fr:link
 href="ct-000K.xml"
 type="local"
-addr="ct-000K">images</fr:link> that commute with pullbacks, i.e., the following diagram commutes up to isomorphism for any object <fr:tex>f  \in   { \mathcal { C } _{/ B }}</fr:tex>.</fr:p>
+addr="ct-000K">images</fr:link> that commute with pullbacks, i.e., the following diagram commutes up to isomorphism for any object <fr:tex>f  \in   { \mathcal { C } _{/{ B }}}</fr:tex>.</fr:p>
     
       
       <fr:embedded-tex
-hash="324ab8c7c3a46e9fdbbef0413efd9963"><fr:embedded-tex-preamble>
+hash="1d318bc555be92b16d8861b98e79f6fb"><fr:embedded-tex-preamble>
          
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -1303,8 +1303,8 @@ hash="324ab8c7c3a46e9fdbbef0413efd9963"><fr:embedded-tex-preamble>
  
       </fr:embedded-tex-preamble><fr:embedded-tex-body>
    \DiagramSquare {
-    nw =  { \mathcal { C } _{/ B }} ,
-    sw =  { \mathcal { C } _{/ A }} ,
+    nw =  { \mathcal { C } _{/{ B }}} ,
+    sw =  { \mathcal { C } _{/{ A }}} ,
     ne =  \mathsf { Sub } (B),
     se =  \mathsf { Sub } (A),
     north =  \mathsf { Img } ,
@@ -1595,7 +1595,7 @@ taxon="Lemma"></fr:ref>, the unit <fr:tex>\vartheta \colon \mathsf {id} \to \mat
 href="ct-000M.xml"
 type="local"
 addr="ct-000M">covers</fr:link>.
-      Let <fr:tex>f \colon A \to B</fr:tex> be any morphism in <fr:tex>\mathcal { C }</fr:tex> and <fr:tex>g \colon B' \to B</fr:tex> be an object in <fr:tex>{ \mathcal { C } _{/ B }}</fr:tex>.
+      Let <fr:tex>f \colon A \to B</fr:tex> be any morphism in <fr:tex>\mathcal { C }</fr:tex> and <fr:tex>g \colon B' \to B</fr:tex> be an object in <fr:tex>{ \mathcal { C } _{/{ B }}}</fr:tex>.
       By <fr:ref
 addr="ct-000Q"
 href="ct-000Q.xml"
@@ -1605,7 +1605,7 @@ taxon="Lemma"></fr:ref>, <fr:tex>g</fr:tex> can be factored as <fr:tex>\vartheta
       Then by the <fr:link
 href="ct-0008.xml"
 type="local"
-addr="ct-0008">pasting lemma</fr:link>, the composite <fr:tex>f ^{*} ( \mathsf { Img } (g))  \circ   \widehat { \vartheta _{g}}</fr:tex> is isomorphic to <fr:tex>f ^{*} (g)</fr:tex> in <fr:tex>{ \mathcal { C } _{/ A }}</fr:tex>.
+addr="ct-0008">pasting lemma</fr:link>, the composite <fr:tex>f ^{*} ( \mathsf { Img } (g))  \circ   \widehat { \vartheta _{g}}</fr:tex> is isomorphic to <fr:tex>f ^{*} (g)</fr:tex> in <fr:tex>{ \mathcal { C } _{/{ A }}}</fr:tex>.
     </fr:p>
     
       
