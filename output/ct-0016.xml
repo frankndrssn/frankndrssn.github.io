@@ -7,27 +7,31 @@ numbered="true"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>710</fr:anchor><fr:taxon>Remark</fr:taxon><fr:addr>topo-0005</fr:addr><fr:route>topo-0005.xml</fr:route><fr:title>Equivalent definition of <fr:link
-href="topo-0004.xml"
+root="false"><fr:frontmatter><fr:anchor>247</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>ct-0016</fr:addr><fr:route>ct-0016.xml</fr:route><fr:title>Kernel pairs are <fr:link
+href="ct-0004.xml"
 type="local"
-addr="topo-0004">geometric transformation</fr:link></fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>Any natural transformation <fr:tex>f _{*}   \to   g _{*}</fr:tex> between the direct image part of the given <fr:link
-href="topo-0003.xml"
-type="local"
-addr="topo-0003">geometric morphisms</fr:link>, <fr:tex>f</fr:tex> and <fr:tex>g</fr:tex>, corresponds to a unique natural transformation <fr:tex>f ^{*}   \to   g ^{*}</fr:tex> under the adjunctions <fr:tex>f ^{*}   \dashv   f _{*}</fr:tex> and <fr:tex>g ^{*}   \dashv   g _{*}</fr:tex>. Thus, a geometric transformation <fr:tex>f  \to  g</fr:tex> can be equivalently defined as a natural transformation <fr:tex>f ^{*}   \to   g ^{*}</fr:tex>.</fr:p></fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context></fr:context><fr:related><fr:tree
+addr="ct-0004">equivalence relations</fr:link></fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>11</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
+  Let <fr:tex>f \colon A \to B</fr:tex> be a morphism in a cartesian category.
+  Then its kernel pair is an equivalence relation.
+</fr:p>
+    
+      
+      <fr:tree
 xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
-toc="true"
-numbered="false"
+toc="false"
+numbered="true"
 show-heading="true"
-show-metadata="true"
+show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>708</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-0003</fr:addr><fr:route>topo-0003.xml</fr:route><fr:title>Geometric morphism</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>\mathcal { E }</fr:tex> and <fr:tex>\mathcal { F }</fr:tex> be <fr:link
-href="topo-0001.xml"
-type="local"
-addr="topo-0001">topoi</fr:link>. A <fr:em><fr:strong>geometric morphism</fr:strong></fr:em> <fr:tex>f \colon \mathcal { E } \to \mathcal { F }</fr:tex> is an adjoint pair of functors</fr:p>
+root="false"><fr:frontmatter><fr:anchor>246</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>11</fr:day></fr:date><fr:parent>ct-0016</fr:parent></fr:frontmatter><fr:mainmatter>
+  <fr:p>
+    The required morphisms are given by the universal property of pullbacks as follows.
+  </fr:p>
+  
     
       
       <fr:embedded-tex
-hash="b2c28b9d4ac3bf01a04d310b4958779c"><fr:embedded-tex-preamble>
+hash="5400d3c122fb07dd7b4d779883de2a36"><fr:embedded-tex-preamble>
          
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -247,23 +251,81 @@ hash="b2c28b9d4ac3bf01a04d310b4958779c"><fr:embedded-tex-preamble>
   \ExplSyntaxOff
  
       </fr:embedded-tex-preamble><fr:embedded-tex-body>
-   \begin {tikzpicture}[diagram]
-     \node  (w) {$ \mathcal { E } $};
-     \node  [right = of w] (e) {$ \mathcal { F } $};
-     \draw  [-&gt;,morphism,offset=1.5] (w) to node[swap] (s) {$ f _{*} $} (e);
-     \draw  [-&gt;,morphism,offset=1.5] (e) to node[swap] (n) {$ f ^{*} $} (w);
-     \DrawAdj {n}{s}
-   \end {tikzpicture}
-</fr:embedded-tex-body></fr:embedded-tex>
+     \begin {tikzpicture}[diagram]
+       \SpliceDiagramSquare {
+        nw = R,
+        nw/style = {pullback},
+        ne = A,
+        sw = A,
+        se = B,
+        north = b,
+        west = a,
+        south = f,
+        east = f,
+      }
+       \node  [above left = of nw] (a) {$A$};
+       \draw  [-&gt;,morphism,bend right] (a) to node[swap] {$ \mathsf {id} _{ A } $} (sw);
+       \draw  [-&gt;,morphism,exists] (a) to node[desc] {$ \rho $} (nw);
+       \draw  [-&gt;,morphism,bend left] (a) to node {$ \mathsf {id} _{ A } $} (ne);
+     \end {tikzpicture}
+     \qquad 
+     \begin {tikzpicture}[diagram]
+       \SpliceDiagramSquare {
+        nw = R,
+        nw/style = {pullback},
+        ne = A,
+        sw = A,
+        se = B,
+        north = b,
+        west = a,
+        south = f,
+        east = f,
+      }
+       \node  [above left = of nw] (r) {$R$};
+       \draw  [-&gt;,morphism,bend right] (r) to node[swap] {$b$} (sw);
+       \draw  [-&gt;,morphism,exists] (r) to node[desc] {$ \sigma $} (nw);
+       \draw  [-&gt;,morphism,bend left] (r) to node {$a$} (ne);
+     \end {tikzpicture}
+     \qquad 
+     \begin {tikzpicture}[diagram]
+       \SpliceDiagramSquare {
+        nw = R,
+        nw/style = {pullback},
+        ne = A,
+        sw = A,
+        se = B,
+        north = b,
+        west = a,
+        south = f,
+        east = f,
+      }
+       \node  [above left = of nw] (rr) {$R  \times _{A} R$};
+       \draw  [-&gt;,morphism,bend right] (rr) to node[swap] {$ap$} (sw);
+       \draw  [-&gt;,morphism,exists] (rr) to node[desc] {$ \tau $} (nw);
+       \draw  [-&gt;,morphism,bend left] (rr) to node {$bq$} (ne);
+     \end {tikzpicture}
+  </fr:embedded-tex-body></fr:embedded-tex>
     
-  <fr:p>such that <fr:tex>f ^{*}</fr:tex> is left exact. The functors <fr:tex>f _{*}</fr:tex> and <fr:tex>f ^{*}</fr:tex> are called the <fr:em><fr:strong>direct image</fr:strong></fr:em> and the <fr:em><fr:strong>inverse image</fr:strong></fr:em> respectively.</fr:p></fr:mainmatter></fr:tree><fr:tree
+  
+</fr:mainmatter></fr:tree>
+    
+  </fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context></fr:context><fr:related><fr:tree
 xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>709</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-0004</fr:addr><fr:route>topo-0004.xml</fr:route><fr:title>Geometric transformation</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>f , g \colon \mathcal { E } \rightrightarrows \mathcal { F }</fr:tex> be a pair of <fr:link
-href="topo-0003.xml"
+root="false"><fr:frontmatter><fr:anchor>245</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>ct-0004</fr:addr><fr:route>ct-0004.xml</fr:route><fr:title>Equivalence relation</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
+  Let <fr:tex>(a,b) \colon R \rightarrowtail A  \times  A</fr:tex> be a relation in a cartesian category.
+  <fr:tex>(a,b)</fr:tex> is said to be an <fr:em><fr:strong>equivalence relation</fr:strong></fr:em> if it is <fr:link
+href="ct-0001.xml"
 type="local"
-addr="topo-0003">geometric morphisms</fr:link>. A <fr:em><fr:strong>geometric transformation</fr:strong></fr:em> <fr:tex>\alpha \colon f \to g</fr:tex> is a natural transformation <fr:tex>\alpha \colon f _{*} \to g _{*}</fr:tex>.</fr:p></fr:mainmatter></fr:tree></fr:related><fr:backlinks></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>
+addr="ct-0001">reflexive</fr:link>, <fr:link
+href="ct-0002.xml"
+type="local"
+addr="ct-0002">symmetric</fr:link>, and <fr:link
+href="ct-0003.xml"
+type="local"
+addr="ct-0003">transitive</fr:link>.
+</fr:p></fr:mainmatter></fr:tree></fr:related><fr:backlinks></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>
