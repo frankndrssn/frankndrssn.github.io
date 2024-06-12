@@ -7,7 +7,7 @@ numbered="true"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>327</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>ct-000X</fr:addr><fr:route>ct-000X.xml</fr:route><fr:title>Coherent category</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>7</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
+root="false"><fr:frontmatter><fr:anchor>332</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>ct-000X</fr:addr><fr:route>ct-000X.xml</fr:route><fr:title>Coherent category</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>7</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
   A <fr:link
 href="ct-000O.xml"
 type="local"
@@ -26,7 +26,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>325</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>ct-000O</fr:addr><fr:route>ct-000O.xml</fr:route><fr:title>Regular category</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>3</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
+root="false"><fr:frontmatter><fr:anchor>330</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>ct-000O</fr:addr><fr:route>ct-000O.xml</fr:route><fr:title>Regular category</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>3</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
   A category <fr:tex>\mathcal { C }</fr:tex> is said to be <fr:em><fr:strong>regular</fr:strong></fr:em> if it is cartesian, has <fr:link
 href="ct-000K.xml"
 type="local"
@@ -65,7 +65,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>326</fr:anchor><fr:taxon>Terminology</fr:taxon><fr:addr>ct-000F</fr:addr><fr:route>ct-000F.xml</fr:route><fr:title>Intersection and union</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>Products and coproducts in <fr:link
+root="false"><fr:frontmatter><fr:anchor>331</fr:anchor><fr:taxon>Terminology</fr:taxon><fr:addr>ct-000F</fr:addr><fr:route>ct-000F.xml</fr:route><fr:title>Intersection and union</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>Products and coproducts in <fr:link
 href="ct-0006.xml"
 type="local"
 addr="ct-0006"><fr:tex>\mathsf { Sub } (A)</fr:tex></fr:link> are called <fr:em><fr:strong>intersections</fr:strong></fr:em> and <fr:em><fr:strong>unions</fr:strong></fr:em> respectively.</fr:p></fr:mainmatter></fr:tree></fr:related><fr:backlinks><fr:tree
@@ -75,7 +75,23 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>319</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>ct-0015</fr:addr><fr:route>ct-0015.xml</fr:route><fr:title>Disjoint unions are coproducts</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>11</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
+root="false"><fr:frontmatter><fr:anchor>323</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>ct-0019</fr:addr><fr:route>ct-0019.xml</fr:route><fr:title>Heyting category</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>12</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
+  A <fr:link
+href="ct-000X.xml"
+type="local"
+addr="ct-000X">coherent category</fr:link> <fr:tex>\mathcal { C }</fr:tex> is a <fr:em><fr:strong>Heyting category</fr:strong></fr:em> if for every morphism <fr:tex>f \colon A \to B</fr:tex> of <fr:tex>\mathcal { C }</fr:tex>, the pullback functor <fr:tex>f ^{*} \colon \mathsf { Sub } (B) \to \mathsf { Sub } (A)</fr:tex> admits a right adjoint <fr:tex>\forall _{f} \colon \mathsf { Sub } (A) \to \mathsf { Sub } (B)</fr:tex>.
+  A <fr:em><fr:strong>Heyting functor</fr:strong></fr:em> between Heyting categories is a coherent functor preserving the right adjoints <fr:tex>\forall _{f}</fr:tex> in the following sense:
+</fr:p><fr:link
+href="todo.xml"
+type="local"
+addr="todo">TODO</fr:link></fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="true"
+root="false"><fr:frontmatter><fr:anchor>324</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>ct-0015</fr:addr><fr:route>ct-0015.xml</fr:route><fr:title>Disjoint unions are coproducts</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>11</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
   Let <fr:tex>A_{1}</fr:tex> and <fr:tex>A_{2}</fr:tex> be subobjects of <fr:tex>A</fr:tex> in a <fr:link
 href="ct-000X.xml"
 type="local"
@@ -95,7 +111,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>261</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>11</fr:day></fr:date><fr:parent>ct-0015</fr:parent></fr:frontmatter><fr:mainmatter>
+root="false"><fr:frontmatter><fr:anchor>265</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>11</fr:day></fr:date><fr:parent>ct-0015</fr:parent></fr:frontmatter><fr:mainmatter>
   <fr:p>
     By <fr:ref
 addr="ct-0012"
@@ -351,7 +367,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>320</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>ct-0011</fr:addr><fr:route>ct-0011.xml</fr:route><fr:title><fr:link
+root="false"><fr:frontmatter><fr:anchor>325</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>ct-0011</fr:addr><fr:route>ct-0011.xml</fr:route><fr:title><fr:link
 href="ct-000X.xml"
 type="local"
 addr="ct-000X">Coherent categories</fr:link> admit distributive law</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>10</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
@@ -368,7 +384,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>287</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>10</fr:day></fr:date><fr:parent>ct-0011</fr:parent></fr:frontmatter><fr:mainmatter>
+root="false"><fr:frontmatter><fr:anchor>291</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>10</fr:day></fr:date><fr:parent>ct-0011</fr:parent></fr:frontmatter><fr:mainmatter>
   Let <fr:tex>m \colon A_{1} \rightarrowtail A</fr:tex> be a subobject of <fr:tex>\mathcal { C }</fr:tex>.
   Then by <fr:ref
 addr="ct-000L"
@@ -385,7 +401,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>321</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>ct-0014</fr:addr><fr:route>ct-0014.xml</fr:route><fr:title>Positive <fr:link
+root="false"><fr:frontmatter><fr:anchor>326</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>ct-0014</fr:addr><fr:route>ct-0014.xml</fr:route><fr:title>Positive <fr:link
 href="ct-000X.xml"
 type="local"
 addr="ct-000X">coherent category</fr:link></fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>10</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
@@ -400,7 +416,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>322</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>ct-0012</fr:addr><fr:route>ct-0012.xml</fr:route><fr:title>Union as a pushout of intersection</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>10</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
+root="false"><fr:frontmatter><fr:anchor>327</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>ct-0012</fr:addr><fr:route>ct-0012.xml</fr:route><fr:title>Union as a pushout of intersection</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>10</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
   Let <fr:tex>\mathcal { C }</fr:tex> be a <fr:link
 href="ct-000X.xml"
 type="local"
@@ -658,7 +674,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>256</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>10</fr:day></fr:date><fr:parent>ct-0012</fr:parent></fr:frontmatter><fr:mainmatter>
+root="false"><fr:frontmatter><fr:anchor>260</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>10</fr:day></fr:date><fr:parent>ct-0012</fr:parent></fr:frontmatter><fr:mainmatter>
   <fr:p>
     The diagram commutes since <fr:tex>\mathsf { Sub } (A)</fr:tex> is a preorder: any two morphisms <fr:tex>A_{1}  \cap  A_{2}  \rightrightarrows  A_{1}  \cup  A_{2}</fr:tex> in <fr:tex>\mathsf { Sub } (A)</fr:tex> are equal.
     Moreover, this diagram is a pullback in <fr:tex>\mathsf { Sub } (A)</fr:tex> as the pullback of <fr:tex>u_{2}</fr:tex> along <fr:tex>u_{1}</fr:tex> is just the largest subobject contained in both <fr:tex>A_{1}</fr:tex> and <fr:tex>A_{2}</fr:tex>, i.e., the intersection.
@@ -2015,7 +2031,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>323</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>ct-000Z</fr:addr><fr:route>ct-000Z.xml</fr:route><fr:title><fr:link
+root="false"><fr:frontmatter><fr:anchor>328</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>ct-000Z</fr:addr><fr:route>ct-000Z.xml</fr:route><fr:title><fr:link
 href="ct-000X.xml"
 type="local"
 addr="ct-000X">Coherent categories</fr:link> have an initial object</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>7</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
@@ -2034,7 +2050,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>258</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>7</fr:day></fr:date><fr:parent>ct-000Z</fr:parent></fr:frontmatter><fr:mainmatter>
+root="false"><fr:frontmatter><fr:anchor>262</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>7</fr:day></fr:date><fr:parent>ct-000Z</fr:parent></fr:frontmatter><fr:mainmatter>
   <fr:p>
     We claim that the domain <fr:tex>0</fr:tex> of the least subterminal object of <fr:tex>\mathcal { C }</fr:tex> is the initial object.
     First, by <fr:ref
@@ -2296,7 +2312,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>324</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>ct-0010</fr:addr><fr:route>ct-0010.xml</fr:route><fr:title>Strictness of the least subterminal object in a <fr:link
+root="false"><fr:frontmatter><fr:anchor>329</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>ct-0010</fr:addr><fr:route>ct-0010.xml</fr:route><fr:title>Strictness of the least subterminal object in a <fr:link
 href="ct-000X.xml"
 type="local"
 addr="ct-000X">coherent category</fr:link></fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>7</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
@@ -2312,7 +2328,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>316</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>7</fr:day></fr:date><fr:parent>ct-0010</fr:parent></fr:frontmatter><fr:mainmatter>
+root="false"><fr:frontmatter><fr:anchor>320</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>7</fr:day></fr:date><fr:parent>ct-0010</fr:parent></fr:frontmatter><fr:mainmatter>
   <fr:p>
     By definition, the pullback of the least subterminal object along the unique morphism <fr:tex>\mathsf {!} _{ A } \colon A \to 1</fr:tex> is the initial object <fr:tex>q</fr:tex> in <fr:tex>\mathsf { Sub } (A)</fr:tex>.
     Suppose that there is a morphism <fr:tex>f \colon A \to 0</fr:tex>.
