@@ -7,42 +7,50 @@ numbered="true"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>804</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>mnc-000A</fr:addr><fr:route>mnc-000A.xml</fr:route><fr:title>Strict <fr:link
-href="mnc-0005.xml"
-type="local"
-addr="mnc-0005">monoidal functor</fr:link></fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>A <fr:link
-href="mnc-0005.xml"
-type="local"
-addr="mnc-0005">monoidal functor</fr:link> is said to be <fr:em><fr:strong>strict</fr:strong></fr:em> if <fr:tex>\phi ^{2}</fr:tex> and <fr:tex>\phi ^{1}</fr:tex> are identities.</fr:p></fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context></fr:context><fr:related><fr:tree
+root="false"><fr:frontmatter><fr:anchor>266</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>ct-001C</fr:addr><fr:route>ct-001C.xml</fr:route><fr:title>Heyting implication</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>13</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
+  Let <fr:tex>A_{1}</fr:tex> and <fr:tex>A_{2}</fr:tex> be two subobjects of <fr:tex>A</fr:tex>.
+  The <fr:em><fr:strong>Heyting implication</fr:strong></fr:em> <fr:tex>A_{1}  \Rightarrow  A_{2}</fr:tex> is the largest subobject of <fr:tex>A</fr:tex> such that <fr:tex>A_{1}  \cap  (A_{1}  \Rightarrow  A_{2})</fr:tex> is contained in <fr:tex>A_{2}</fr:tex>.
+</fr:p></fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context></fr:context><fr:related></fr:related><fr:backlinks><fr:tree
 xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>803</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>mnc-0005</fr:addr><fr:route>mnc-0005.xml</fr:route><fr:title>Monoidal functor</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>\mathcal { C }</fr:tex> and <fr:tex>\mathcal { D }</fr:tex> be <fr:link
-href="mnc-0001.xml"
+root="false"><fr:frontmatter><fr:anchor>265</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>ct-001D</fr:addr><fr:route>ct-001D.xml</fr:route><fr:title><fr:link
+href="ct-0019.xml"
 type="local"
-addr="mnc-0001">monoidal categories</fr:link>. A <fr:em><fr:strong>monoidal functor</fr:strong></fr:em> <fr:tex>F \colon \mathcal { C } \to \mathcal { D }</fr:tex> consists of the following data.</fr:p><fr:ul><fr:li>
-    An underlying functor <fr:tex>F \colon \mathcal { C } \to \mathcal { D }</fr:tex>.
-  </fr:li>
-  <fr:li>
-    A natural transformation <fr:tex>\phi ^{2} _{ X , Y } \colon FX  \otimes  FY \to F(X  \otimes  Y)</fr:tex>.
-  </fr:li>
-  <fr:li>
-    A morphism <fr:tex>\phi ^{1} \colon 1 _{ \mathcal { D } } \to F 1 _{ \mathcal { C } }</fr:tex>.
-  </fr:li></fr:ul><fr:p>These data are subject to the following axioms.</fr:p><fr:tree
+addr="ct-0019">Heyting categories</fr:link> admit <fr:link
+href="ct-001C.xml"
+type="local"
+addr="ct-001C">Heyting implications</fr:link></fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>13</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
+  Let <fr:tex>A_{1}</fr:tex> and <fr:tex>A_{2}</fr:tex> be two subobjects of <fr:tex>A</fr:tex> in a Heyting category.
+  Then the Heyting implication <fr:tex>A_{1}  \Rightarrow  A_{2}</fr:tex> exists.
+  Moreover, for any morphism <fr:tex>f \colon B \to A</fr:tex>, <fr:tex>f ^{*} (A_{1}  \Rightarrow  A_{2})  \cong   f ^{*} (A_{1})  \Rightarrow   f ^{*} (A_{2})</fr:tex> in <fr:tex>\mathsf { Sub } (B)</fr:tex>.
+</fr:p>
+    
+      
+      <fr:tree
 xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
-toc="true"
+toc="false"
 numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>702</fr:anchor><fr:taxon>Axiom</fr:taxon><fr:addr>mnc-0006</fr:addr><fr:route>mnc-0006.xml</fr:route><fr:title>Associativity</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>The following diagram commutes.</fr:p>
+root="false"><fr:frontmatter><fr:anchor>244</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>13</fr:day></fr:date><fr:parent>ct-001D</fr:parent></fr:frontmatter><fr:mainmatter>
+  <fr:p>
+    Fix a subobject <fr:tex>m \colon A_{1} \rightarrowtail A</fr:tex>.
+    Recall from <fr:ref
+addr="ct-0011"
+href="ct-0011.xml"
+taxon="Lemma"></fr:ref> that <fr:tex>A_{1}  \cap  ( \mathord { \hspace {1pt} \text {--} \hspace {1pt}} )</fr:tex> may be described as <fr:tex>\exists _{m} m ^{*}</fr:tex>.
+    Then take <fr:tex>A_{1}  \Rightarrow  ( \mathord { \hspace {1pt} \text {--} \hspace {1pt}} )</fr:tex> to be the right adjoint of <fr:tex>A_{1}  \cap  ( \mathord { \hspace {1pt} \text {--} \hspace {1pt}} )</fr:tex> given as follows:
+  </fr:p>
+  
     
       
       <fr:embedded-tex
-hash="4abec21ef7861cd38c35ba4ec4492052"><fr:embedded-tex-preamble>
+hash="6df384905380221ef274ce17471a37ac"><fr:embedded-tex-preamble>
          
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -262,34 +270,33 @@ hash="4abec21ef7861cd38c35ba4ec4492052"><fr:embedded-tex-preamble>
   \ExplSyntaxOff
  
       </fr:embedded-tex-preamble><fr:embedded-tex-body>
-   \begin {tikzpicture}[diagram, node distance=2cm and 5cm]
-     \node  (l1) {$(FX  \otimes  FY)  \otimes  FZ$};
-     \node  [below= of l1] (l2) {$F(X  \otimes  Y)  \otimes  FZ$};
-     \node  [below= of l2] (l3) {$F((X  \otimes  Y)  \otimes  Z)$};
-     \node  [right= of l1] (r1) {$FX  \otimes  (FY  \otimes  FZ)$};
-     \node  [below= of r1] (r2) {$FX  \otimes  F(Y  \otimes  Z)$};
-     \node  [below= of r2] (r3) {$F(X  \otimes  (Y  \otimes  Z))$};
-     \draw  [-&gt;,morphism] (l1) to node [left] {$ \phi ^{2} _{ X , Y }   \otimes  FZ$} (l2);
-     \draw  [-&gt;,morphism] (l2) to node [left] {$ \phi ^{2} _{ X  \otimes  Y , Z } $} (l3);
-     \draw  [-&gt;,morphism] (l1) to node [above] {$ \alpha _{ \mathcal { D } }$} (r1);
-     \draw  [-&gt;,morphism] (r1) to node [right] {$FX  \otimes   \phi ^{2} _{ Y , Z } $} (r2);
-     \draw  [-&gt;,morphism] (r2) to node [right] {$ \phi ^{2} _{ X , Y  \otimes  Z } $} (r3);
-     \draw  [-&gt;,morphism] (l3) to node [below] {$F \alpha _{ \mathcal { C } }$} (r3);
-   \end {tikzpicture}
-</fr:embedded-tex-body></fr:embedded-tex>
+     \begin {tikzpicture}[diagram,node distance=3cm]
+       \node  (1) {$ \mathsf { Sub } (A)$};
+       \node  [right = of 1] (2) {$ \mathsf { Sub } (A_{1})$};
+       \node  [right = of 2] (3) {$ \mathsf { Sub } (A)$};
+       \draw  [-&gt;,morphism,offset=1.5] (1) to node[swap] (r1) {$ m ^{*} $} (2);
+       \draw  [-&gt;,morphism,offset=1.5] (2) to node[swap] (r2) {$ \forall _{m}$} (3);
+       \draw  [-&gt;,morphism,offset=1.5] (2) to node[swap] (l1) {$ \exists _{m}$} (1);
+       \draw  [-&gt;,morphism,offset=1.5] (3) to node[swap] (l2) {$ m ^{*} $} (2);
+       \DrawAdj {l1}{r1}
+       \DrawAdj {l2}{r2}
+     \end {tikzpicture}
+  </fr:embedded-tex-body></fr:embedded-tex>
     
-  </fr:mainmatter></fr:tree><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
-toc="true"
-numbered="true"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>703</fr:anchor><fr:taxon>Axiom</fr:taxon><fr:addr>mnc-0007</fr:addr><fr:route>mnc-0007.xml</fr:route><fr:title>Left unity axiom</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>The following diagram commutes.</fr:p>
+  
+  <fr:p>
+    Then for any subobject <fr:tex>A_{2}  \in   \mathsf { Sub } (A)</fr:tex> the counit of the adjunction <fr:tex>\varepsilon _{A_{2}} \colon A_{1}  \cap  (A_{1}  \Rightarrow  A_{2}) \to A_{2}</fr:tex> says precisely that <fr:tex>A_{1}  \cap  (A_{1}  \Rightarrow  A_{2})</fr:tex> is contained in <fr:tex>A_{2}</fr:tex>.
+    And <fr:tex>A_{1}  \Rightarrow  A_{2}</fr:tex> is the largest such subobject by the universal property of right adjoint.
+  </fr:p>
+  <fr:p>
+    Let <fr:tex>f \colon B \to A</fr:tex> be a morphism.
+    Form the following pullback.
+  </fr:p>
+  
     
       
       <fr:embedded-tex
-hash="da7d42fb1f4b86a3d14c63e1ec87911f"><fr:embedded-tex-preamble>
+hash="89df8400dfbde2bb4d61385c85f8b853"><fr:embedded-tex-preamble>
          
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -509,263 +516,30 @@ hash="da7d42fb1f4b86a3d14c63e1ec87911f"><fr:embedded-tex-preamble>
   \ExplSyntaxOff
  
       </fr:embedded-tex-preamble><fr:embedded-tex-body>
-   \DiagramSquare {
-    nw =  1 _{ \mathcal { D } }  \otimes  FX,
-    sw = F 1 _{ \mathcal { C } }  \otimes  FX,
-    se = F( 1 _{ \mathcal { C } }  \otimes  X),
-    ne = FX,
-    east = F \lambda _{ \mathcal { C } },
-    west =  \phi ^{1}   \otimes  FX,
-    north =  \lambda _{ \mathcal { D } },
-    south =  \phi ^{2} _{ 1 _{ \mathcal { C } } , X } ,
-    height = 2cm,
-    width = 3cm,
-  }
-</fr:embedded-tex-body></fr:embedded-tex>
-    
-  </fr:mainmatter></fr:tree><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
-toc="true"
-numbered="true"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>704</fr:anchor><fr:taxon>Axiom</fr:taxon><fr:addr>mnc-0008</fr:addr><fr:route>mnc-0008.xml</fr:route><fr:title>Right unity axiom</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>The following diagram commutes.</fr:p>
-    
-      
-      <fr:embedded-tex
-hash="45e17891ac492479c1bd6e5dbed0dcf8"><fr:embedded-tex-preamble>
-         
-   \RequirePackage {tikz}
-   \RequirePackage {amsmath}
-   \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
-
-   \definecolor {catccolor}{RGB}{255,244,138}
-   \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
-   \tikzstyle {catc}=[catccolor!60]
-   \tikzstyle {catd}=[orange!40]
-   \tikzstyle {cate}=[red!40]
-   \tikzstyle {catf}=[blue!10]
-   \tikzstyle {catg}=[green!25]
-
-
-   \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
-   \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
-
-   \NewDocumentCommand \CreateRect {D&lt;&gt;{} m m}{
-     \path 
-      coordinate (#1nw)
-      ++(#2,-#3) coordinate (#1se)
-      coordinate (#1sw) at (#1se -| #1nw)
-      coordinate (#1ne) at (#1nw -| #1se)
-    ;
-
-     \path [spath/save = #1north] (#1nw) to (#1ne);
-     \path [spath/save = #1west] (#1nw) to (#1sw);
-     \path [spath/save = #1east] (#1ne) to (#1se);
-     \path [spath/save = #1south] (#1sw) to (#1se);
-  }
- 
-         
-   % appears to be necessary
-  \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd}
-  \usetikzlibrary{matrix,arrows}
-  \usetikzlibrary{backgrounds,fit,positioning,calc,shapes}
-  \usetikzlibrary{decorations.pathreplacing}
-  \usetikzlibrary{decorations.pathmorphing}
-  \usetikzlibrary{decorations.markings}
-
-  % basic settings
-  \tikzset{
-    diagram/.style = {
-      on grid,
-      node distance=2cm,
-      commutative diagrams/every diagram,
-      line width = .5pt,
-      every node/.append style = {
-        commutative diagrams/every cell,
-      },
-    },
-    morphism/.style = {
-      auto=left,
-      node font=\scriptsize,
-    },
-    phantom/.style = {
-      commutative diagrams/phantom,
-      node font=\scriptsize,
-      sloped,
-    },
-    between/.style args = {#1 and #2}{
-      at = ($(#1)!0.5!(#2)$)
-    },
-    desc/.style = {anchor=center,fill=white,inner sep=3pt},
-    offset/.style args = {#1} {commutative diagrams/shift right={#1}},
-    cross over/.style = {
-      commutative diagrams/crossing over
-    },
-  }
-
-  % macro that draws the adjunction symbol in a diagram
-  \NewDocumentCommand\DrawAdj{smm}{
-    \IfBooleanTF {#1}{
-      \draw [phantom] (#2) to node {$\dashv$} (#3);
-    }{
-      \draw [phantom] (#2) to node[rotate=180] {$\dashv$} (#3);
+     \DiagramSquare {
+      nw = { f ^{*} (A_{1})},
+      nw/style = {pullback},
+      ne = {A_{1}},
+      sw = B,
+      se = A,
+      north = g,
+      east = m,
+      east/style = {&gt;-&gt;},
+      south = f,
+      west = {n},
+      west/style = {&gt;-&gt;},
     }
-  }
-
-  % pullback and pushout
-  \tikzset{
-    pullback/.style = {
-      append after command = {
-        \pgfextra{
-          \draw ($(\tikzlastnode) + (.2cm,-.5cm)$) -- ++(0.3cm,0) -- ++(0,0.3cm);
-        }
-      }
-    },
-    pushout/.style = {
-      append after command={
-        \pgfextra{
-          \draw ($(\tikzlastnode) + (-.2cm,.5cm)$) -- ++(-0.3cm,0) -- ++(0,-0.3cm);
-        }
-      }
-    },
-  }
-
-  % arrow styles
-  \tikzset{
-    exists/.style = {
-      densely dashed
-    },
-    embedding/.style = {
-      {right hook}-&gt;
-    },
-    cover/.style = {
-      -{Triangle[open]}
-    },
-  }
-
-  \newlength{\dontworryaboutit} % no idea what it does
-
-  \tikzset{
-    inline diagram/.style = {
-      commutative diagrams/every diagram,
-      commutative diagrams/cramped,
-      line width = .5pt,
-      every node/.append style = {
-        commutative diagrams/every cell,
-        anchor = base,
-        inner sep = 0pt
-      },
-      every path/.append style = {
-        outer xsep = 2pt
-      }
-    }
-  }
+  </fr:embedded-tex-body></fr:embedded-tex>
+    
   
-  % macros for drawing commutative squares
-  % adapted from Jon Sterling's macros (https://git.sr.ht/~jonsterling/article-template/tree/main/item/local-tikz.sty)
-  \tikzset{
-    square/nw/.style = {},
-    square/ne/.style = {},
-    square/se/.style = {},
-    square/sw/.style = {},
-    square/north/.style = {-&gt;},
-    square/south/.style = {-&gt;},
-    square/west/.style = {-&gt;},
-    square/east/.style = {-&gt;},
-    square/north/node/.style = {above},
-    square/south/node/.style = {below},
-    square/west/node/.style = {left},
-    square/east/node/.style = {right},
-  }
-
-  \ExplSyntaxOn
-  \keys_define:nn { jon-tikz/diagram } {
-    nw .tl_set:N = \l_jon_tikz_diagram_nw,
-    sw .tl_set:N = \l_jon_tikz_diagram_sw,
-    ne .tl_set:N = \l_jon_tikz_diagram_ne,
-    se .tl_set:N = \l_jon_tikz_diagram_se,
-
-    width .tl_set:N = \l_jon_tikz_diagram_width,
-    height .tl_set:N = \l_jon_tikz_diagram_height,
-
-    north .tl_set:N = \l_jon_tikz_diagram_north,
-    south .tl_set:N = \l_jon_tikz_diagram_south,
-    west .tl_set:N = \l_jon_tikz_diagram_west,
-    east .tl_set:N = \l_jon_tikz_diagram_east,
-
-    nw/style .code:n = {\tikzset{square/nw/.style = {#1}}},
-    sw/style .code:n = {\tikzset{square/sw/.style = {#1}}},
-    ne/style .code:n = {\tikzset{square/ne/.style = {#1}}},
-    se/style .code:n = {\tikzset{square/se/.style = {#1}}},
-
-    north/style .code:n = {\tikzset{square/north/.style = {#1}}},
-    north/node/style .code:n = {\tikzset{square/north/node/.style = {#1}}},
-    south/style .code:n = {\tikzset{square/south/.style = {#1}}},
-    south/node/style .code:n = {\tikzset{square/south/node/.style = {#1}}},
-    west/style .code:n = {\tikzset{square/west/.style = {#1}}},
-    west/node/style .code:n = {\tikzset{square/west/node/.style = {#1}}},
-    east/style .code:n = {\tikzset{square/east/.style = {#1}}},
-    east/node/style .code:n = {\tikzset{square/east/node/.style = {#1}}},
-
-    draft .meta:n = {
-      nw = {nw},
-      sw = {sw},
-      se = {se},
-      ne = {ne},
-      north = {north},
-      south = {south},
-      west = {west},
-      east = {east},
-    }
-  }
-
-  \tl_set:Nn \l_jon_tikz_diagram_width { 2cm }
-  \tl_set:Nn \l_jon_tikz_diagram_height { 2cm }
-
-
-  \cs_new:Nn \__jon_tikz_render_square:nn {
-    \group_begin:
-    \keys_set:nn {jon-tikz/diagram} {#2} {
-      \node (#1nw) [square/nw] {$\l_jon_tikz_diagram_nw$};
-      \node (#1sw) [below = \l_jon_tikz_diagram_height~of~#1nw,square/sw] {$\l_jon_tikz_diagram_sw$};
-      \draw[morphism,square/west] (#1nw) to node [square/west/node] {$\l_jon_tikz_diagram_west$} (#1sw);
-
-      \node (#1ne) [right = \l_jon_tikz_diagram_width~of~#1nw,square/ne] {$\l_jon_tikz_diagram_ne$};
-      \node (#1se) [below = \l_jon_tikz_diagram_height~of~#1ne,square/se] {$\l_jon_tikz_diagram_se$};
-      \draw[morphism,square/north] (#1nw) to node [square/north/node] {$\l_jon_tikz_diagram_north$} (#1ne);
-      \draw[morphism,square/east] (#1ne) to node [square/east/node] {$\l_jon_tikz_diagram_east$} (#1se);
-      \draw[morphism,square/south] (#1sw) to node [square/south/node] {$\l_jon_tikz_diagram_south$} (#1se);
-    }
-    \group_end:
-  }
-
-  % the optional argument allows one to specify a prefix to positions
-  \NewDocumentCommand\SpliceDiagramSquare{O{}m}{
-    \__jon_tikz_render_square:nn {#1} {#2}
-  }
-
-  \NewDocumentCommand\DiagramSquare{O{}O{}m}{
-    \begin{tikzpicture}[diagram,#2,baseline=(#1sw.base)]
-      \__jon_tikz_render_square:nn {#1} {#3}
-    \end{tikzpicture}
-  }
-  \ExplSyntaxOff
- 
-      </fr:embedded-tex-preamble><fr:embedded-tex-body>
-   \DiagramSquare {
-    nw = FX  \otimes   1 _{ \mathcal { D } },
-    sw = FX  \otimes  F 1 _{ \mathcal { C } },
-    se = F(X  \otimes   1 _{ \mathcal { C } }),
-    ne = FX,
-    east = F \rho _{ \mathcal { C } },
-    west = FX  \otimes   \phi ^{1} ,
-    north =  \rho _{ \mathcal { D } },
-    south =  \phi ^{2} _{ X , 1 _{ \mathcal { C } } } ,
-    height = 2cm,
-    width = 3cm,
-  }
-</fr:embedded-tex-body></fr:embedded-tex>
+  <fr:p>
+    Then by <fr:link
+href="ct-001A.xml"
+type="local"
+addr="ct-001A">Beck-Chevalley</fr:link> condition we have
+  </fr:p>
+  <fr:tex
+display="block">      \begin {align*}        f ^{*} (A_{1}  \Rightarrow  A_{2}) &amp;:=  f ^{*} \forall _{m} m ^{*} (A_{2}) \\                                        &amp; \cong   \forall _{n} g ^{*} m ^{*} (A_{2}) &amp;&amp;  \text {since $mg = fn$} \\                                        &amp; \cong   \forall _{n} n ^{*} f ^{*} (A_{2}) \\                                        &amp;=:  f ^{*} (A_{1})  \Rightarrow   f ^{*} (A_{2})      \end {align*}   </fr:tex>
+</fr:mainmatter></fr:tree>
     
-  </fr:mainmatter></fr:tree></fr:mainmatter></fr:tree></fr:related><fr:backlinks></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>
+  </fr:mainmatter></fr:tree></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>
