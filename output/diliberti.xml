@@ -1814,7 +1814,7 @@ type="local"
 addr="ct-001A">Beck-Chevalley</fr:link> condition we have
   </fr:p>
   <fr:tex
-display="block">      \begin {align*}        f ^{*} (A_{1}  \Rightarrow  A_{2}) &amp;:=  f ^{*} \forall _{m} m ^{*} (A_{2}) \\                                        &amp; \cong   \forall _{n} g ^{*} m ^{*} (A_{2}) &amp;&amp;  \text {since $mg = fn$} \\                                        &amp; \cong   \forall _{n} n ^{*} f ^{*} (A_{2}) \\                                        &amp;=:  f ^{*} (A_{1})  \Rightarrow   f ^{*} (A_{2})      \end {align*}   </fr:tex>
+display="block">      \begin {aligned}        f ^{*} (A_{1}  \Rightarrow  A_{2}) &amp;:=  f ^{*} \forall _{m} m ^{*} (A_{2}) \\                                        &amp; \cong   \forall _{n} g ^{*} m ^{*} (A_{2}) &amp;&amp;  \text {since $mg = fn$} \\                                        &amp; \cong   \forall _{n} n ^{*} f ^{*} (A_{2}) \\                                        &amp;=:  f ^{*} (A_{1})  \Rightarrow   f ^{*} (A_{2})      \end {aligned}   </fr:tex>
 </fr:mainmatter></fr:tree>
     
   </fr:mainmatter></fr:tree><fr:tree
@@ -20957,7 +20957,9 @@ expanded="false"
 root="false"><fr:frontmatter><fr:anchor>776</fr:anchor><fr:addr>todo</fr:addr><fr:route>todo.xml</fr:route><fr:title>TODO</fr:title><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
-addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter></fr:mainmatter></fr:tree><fr:tree
+addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:ul><fr:li>
+    Make the adjunction macro more robust.
+  </fr:li></fr:ul></fr:mainmatter></fr:tree><fr:tree
 xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="false"
 numbered="false"
