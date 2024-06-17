@@ -31,7 +31,7 @@ root="false"><fr:frontmatter><fr:anchor>344</fr:anchor><fr:taxon>Proof</fr:taxon
     
       
       <fr:embedded-tex
-hash="5400d3c122fb07dd7b4d779883de2a36"><fr:embedded-tex-preamble>
+hash="6684c9805a0829fe4a42669fad917d5a"><fr:embedded-tex-preamble>
          
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -100,15 +100,12 @@ hash="5400d3c122fb07dd7b4d779883de2a36"><fr:embedded-tex-preamble>
     cross over/.style = {
       commutative diagrams/crossing over
     },
-  }
-
-  % macro that draws the adjunction symbol in a diagram
-  \NewDocumentCommand\DrawAdj{smm}{
-    \IfBooleanTF {#1}{
-      \draw [phantom] (#2) to node {$\dashv$} (#3);
-    }{
-      \draw [phantom] (#2) to node[rotate=180] {$\dashv$} (#3);
-    }
+    adjoint/.style = {
+      phantom,
+      every to/.append style = {
+        edge node = {node [sloped,allow upside down,auto=false] {$\dashv$}}
+      }
+    },
   }
 
   % pullback and pushout

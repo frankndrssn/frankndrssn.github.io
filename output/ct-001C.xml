@@ -50,7 +50,7 @@ taxon="Lemma"></fr:ref> that <fr:tex>A_{1}  \cap  ( \mathord { \hspace {1pt} \te
     
       
       <fr:embedded-tex
-hash="6df384905380221ef274ce17471a37ac"><fr:embedded-tex-preamble>
+hash="50f5ae1333033d3240e012a8a6ff2909"><fr:embedded-tex-preamble>
          
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -119,15 +119,12 @@ hash="6df384905380221ef274ce17471a37ac"><fr:embedded-tex-preamble>
     cross over/.style = {
       commutative diagrams/crossing over
     },
-  }
-
-  % macro that draws the adjunction symbol in a diagram
-  \NewDocumentCommand\DrawAdj{smm}{
-    \IfBooleanTF {#1}{
-      \draw [phantom] (#2) to node {$\dashv$} (#3);
-    }{
-      \draw [phantom] (#2) to node[rotate=180] {$\dashv$} (#3);
-    }
+    adjoint/.style = {
+      phantom,
+      every to/.append style = {
+        edge node = {node [sloped,allow upside down,auto=false] {$\dashv$}}
+      }
+    },
   }
 
   % pullback and pushout
@@ -278,8 +275,8 @@ hash="6df384905380221ef274ce17471a37ac"><fr:embedded-tex-preamble>
        \draw  [-&gt;,morphism,offset=1.5] (2) to node[swap] (r2) {$ \forall _{m}$} (3);
        \draw  [-&gt;,morphism,offset=1.5] (2) to node[swap] (l1) {$ \exists _{m}$} (1);
        \draw  [-&gt;,morphism,offset=1.5] (3) to node[swap] (l2) {$ m ^{*} $} (2);
-       \DrawAdj {l1}{r1}
-       \DrawAdj {l2}{r2}
+       \draw  [adjoint] (l1) to (r1);
+       \draw  [adjoint] (l2) to (r2);
      \end {tikzpicture}
   </fr:embedded-tex-body></fr:embedded-tex>
     
@@ -296,7 +293,7 @@ hash="6df384905380221ef274ce17471a37ac"><fr:embedded-tex-preamble>
     
       
       <fr:embedded-tex
-hash="89df8400dfbde2bb4d61385c85f8b853"><fr:embedded-tex-preamble>
+hash="87b591d622739d18b31669cbe13a0e24"><fr:embedded-tex-preamble>
          
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -365,15 +362,12 @@ hash="89df8400dfbde2bb4d61385c85f8b853"><fr:embedded-tex-preamble>
     cross over/.style = {
       commutative diagrams/crossing over
     },
-  }
-
-  % macro that draws the adjunction symbol in a diagram
-  \NewDocumentCommand\DrawAdj{smm}{
-    \IfBooleanTF {#1}{
-      \draw [phantom] (#2) to node {$\dashv$} (#3);
-    }{
-      \draw [phantom] (#2) to node[rotate=180] {$\dashv$} (#3);
-    }
+    adjoint/.style = {
+      phantom,
+      every to/.append style = {
+        edge node = {node [sloped,allow upside down,auto=false] {$\dashv$}}
+      }
+    },
   }
 
   % pullback and pushout

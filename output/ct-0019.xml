@@ -73,7 +73,7 @@ taxon="Lemma"></fr:ref> that <fr:tex>A_{1}  \cap  ( \mathord { \hspace {1pt} \te
     
       
       <fr:embedded-tex
-hash="6df384905380221ef274ce17471a37ac"><fr:embedded-tex-preamble>
+hash="50f5ae1333033d3240e012a8a6ff2909"><fr:embedded-tex-preamble>
          
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -142,15 +142,12 @@ hash="6df384905380221ef274ce17471a37ac"><fr:embedded-tex-preamble>
     cross over/.style = {
       commutative diagrams/crossing over
     },
-  }
-
-  % macro that draws the adjunction symbol in a diagram
-  \NewDocumentCommand\DrawAdj{smm}{
-    \IfBooleanTF {#1}{
-      \draw [phantom] (#2) to node {$\dashv$} (#3);
-    }{
-      \draw [phantom] (#2) to node[rotate=180] {$\dashv$} (#3);
-    }
+    adjoint/.style = {
+      phantom,
+      every to/.append style = {
+        edge node = {node [sloped,allow upside down,auto=false] {$\dashv$}}
+      }
+    },
   }
 
   % pullback and pushout
@@ -301,8 +298,8 @@ hash="6df384905380221ef274ce17471a37ac"><fr:embedded-tex-preamble>
        \draw  [-&gt;,morphism,offset=1.5] (2) to node[swap] (r2) {$ \forall _{m}$} (3);
        \draw  [-&gt;,morphism,offset=1.5] (2) to node[swap] (l1) {$ \exists _{m}$} (1);
        \draw  [-&gt;,morphism,offset=1.5] (3) to node[swap] (l2) {$ m ^{*} $} (2);
-       \DrawAdj {l1}{r1}
-       \DrawAdj {l2}{r2}
+       \draw  [adjoint] (l1) to (r1);
+       \draw  [adjoint] (l2) to (r2);
      \end {tikzpicture}
   </fr:embedded-tex-body></fr:embedded-tex>
     
@@ -319,7 +316,7 @@ hash="6df384905380221ef274ce17471a37ac"><fr:embedded-tex-preamble>
     
       
       <fr:embedded-tex
-hash="89df8400dfbde2bb4d61385c85f8b853"><fr:embedded-tex-preamble>
+hash="87b591d622739d18b31669cbe13a0e24"><fr:embedded-tex-preamble>
          
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -388,15 +385,12 @@ hash="89df8400dfbde2bb4d61385c85f8b853"><fr:embedded-tex-preamble>
     cross over/.style = {
       commutative diagrams/crossing over
     },
-  }
-
-  % macro that draws the adjunction symbol in a diagram
-  \NewDocumentCommand\DrawAdj{smm}{
-    \IfBooleanTF {#1}{
-      \draw [phantom] (#2) to node {$\dashv$} (#3);
-    }{
-      \draw [phantom] (#2) to node[rotate=180] {$\dashv$} (#3);
-    }
+    adjoint/.style = {
+      phantom,
+      every to/.append style = {
+        edge node = {node [sloped,allow upside down,auto=false] {$\dashv$}}
+      }
+    },
   }
 
   % pullback and pushout
@@ -581,7 +575,7 @@ addr="ct-0019">Heyting category</fr:link> and the following square be a pullback
     
       
       <fr:embedded-tex
-hash="9c1adf06da7ca4885f08717549c829af"><fr:embedded-tex-preamble>
+hash="d43b61c12e748e3e99ee5d69a9f0f5fc"><fr:embedded-tex-preamble>
          
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -650,15 +644,12 @@ hash="9c1adf06da7ca4885f08717549c829af"><fr:embedded-tex-preamble>
     cross over/.style = {
       commutative diagrams/crossing over
     },
-  }
-
-  % macro that draws the adjunction symbol in a diagram
-  \NewDocumentCommand\DrawAdj{smm}{
-    \IfBooleanTF {#1}{
-      \draw [phantom] (#2) to node {$\dashv$} (#3);
-    }{
-      \draw [phantom] (#2) to node[rotate=180] {$\dashv$} (#3);
-    }
+    adjoint/.style = {
+      phantom,
+      every to/.append style = {
+        edge node = {node [sloped,allow upside down,auto=false] {$\dashv$}}
+      }
+    },
   }
 
   % pullback and pushout
@@ -820,7 +811,7 @@ hash="9c1adf06da7ca4885f08717549c829af"><fr:embedded-tex-preamble>
     
       
       <fr:embedded-tex
-hash="48080de7291813b054b15b583e914874"><fr:embedded-tex-preamble>
+hash="b47aafc527ddb01a89f87ae8b0d66be1"><fr:embedded-tex-preamble>
          
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -889,15 +880,12 @@ hash="48080de7291813b054b15b583e914874"><fr:embedded-tex-preamble>
     cross over/.style = {
       commutative diagrams/crossing over
     },
-  }
-
-  % macro that draws the adjunction symbol in a diagram
-  \NewDocumentCommand\DrawAdj{smm}{
-    \IfBooleanTF {#1}{
-      \draw [phantom] (#2) to node {$\dashv$} (#3);
-    }{
-      \draw [phantom] (#2) to node[rotate=180] {$\dashv$} (#3);
-    }
+    adjoint/.style = {
+      phantom,
+      every to/.append style = {
+        edge node = {node [sloped,allow upside down,auto=false] {$\dashv$}}
+      }
+    },
   }
 
   % pullback and pushout
@@ -1070,7 +1058,7 @@ root="false"><fr:frontmatter><fr:anchor>277</fr:anchor><fr:taxon>Proof</fr:taxon
     
       
       <fr:embedded-tex
-hash="2cf7cf3a052b6b795bf76d16794257c6"><fr:embedded-tex-preamble>
+hash="354b4e5e217dfb373e08275b6a1c51a0"><fr:embedded-tex-preamble>
          
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -1139,15 +1127,12 @@ hash="2cf7cf3a052b6b795bf76d16794257c6"><fr:embedded-tex-preamble>
     cross over/.style = {
       commutative diagrams/crossing over
     },
-  }
-
-  % macro that draws the adjunction symbol in a diagram
-  \NewDocumentCommand\DrawAdj{smm}{
-    \IfBooleanTF {#1}{
-      \draw [phantom] (#2) to node {$\dashv$} (#3);
-    }{
-      \draw [phantom] (#2) to node[rotate=180] {$\dashv$} (#3);
-    }
+    adjoint/.style = {
+      phantom,
+      every to/.append style = {
+        edge node = {node [sloped,allow upside down,auto=false] {$\dashv$}}
+      }
+    },
   }
 
   % pullback and pushout
@@ -1322,7 +1307,7 @@ addr="ct-0008">pasting lemma</fr:link>, <fr:tex>f ^{*} \Sigma _{g}(m)  \cong   \
     
       
       <fr:embedded-tex
-hash="e88cee04e1b64493a85b487425e2aa61"><fr:embedded-tex-preamble>
+hash="d5cbb3189407d0f2c7a7349dd19f970a"><fr:embedded-tex-preamble>
          
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -1391,15 +1376,12 @@ hash="e88cee04e1b64493a85b487425e2aa61"><fr:embedded-tex-preamble>
     cross over/.style = {
       commutative diagrams/crossing over
     },
-  }
-
-  % macro that draws the adjunction symbol in a diagram
-  \NewDocumentCommand\DrawAdj{smm}{
-    \IfBooleanTF {#1}{
-      \draw [phantom] (#2) to node {$\dashv$} (#3);
-    }{
-      \draw [phantom] (#2) to node[rotate=180] {$\dashv$} (#3);
-    }
+    adjoint/.style = {
+      phantom,
+      every to/.append style = {
+        edge node = {node [sloped,allow upside down,auto=false] {$\dashv$}}
+      }
+    },
   }
 
   % pullback and pushout

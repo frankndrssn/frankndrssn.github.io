@@ -103,7 +103,7 @@ addr="topo-000D">dense</fr:link> subobject <fr:tex>m \colon  A  \rightarrowtail 
     
       
       <fr:embedded-tex
-hash="4440e9af2f20f45a7b0511ca83bf12de"><fr:embedded-tex-preamble>
+hash="20dfe84fb120500843461fee7c9b918d"><fr:embedded-tex-preamble>
          
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -172,15 +172,12 @@ hash="4440e9af2f20f45a7b0511ca83bf12de"><fr:embedded-tex-preamble>
     cross over/.style = {
       commutative diagrams/crossing over
     },
-  }
-
-  % macro that draws the adjunction symbol in a diagram
-  \NewDocumentCommand\DrawAdj{smm}{
-    \IfBooleanTF {#1}{
-      \draw [phantom] (#2) to node {$\dashv$} (#3);
-    }{
-      \draw [phantom] (#2) to node[rotate=180] {$\dashv$} (#3);
-    }
+    adjoint/.style = {
+      phantom,
+      every to/.append style = {
+        edge node = {node [sloped,allow upside down,auto=false] {$\dashv$}}
+      }
+    },
   }
 
   % pullback and pushout

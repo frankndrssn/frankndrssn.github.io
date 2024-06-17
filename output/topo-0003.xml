@@ -14,7 +14,7 @@ addr="topo-0001">topoi</fr:link>. A <fr:em><fr:strong>geometric morphism</fr:str
     
       
       <fr:embedded-tex
-hash="b2c28b9d4ac3bf01a04d310b4958779c"><fr:embedded-tex-preamble>
+hash="4a915af0a8d1705ac76cc0e8b5bf8bb9"><fr:embedded-tex-preamble>
          
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -83,15 +83,12 @@ hash="b2c28b9d4ac3bf01a04d310b4958779c"><fr:embedded-tex-preamble>
     cross over/.style = {
       commutative diagrams/crossing over
     },
-  }
-
-  % macro that draws the adjunction symbol in a diagram
-  \NewDocumentCommand\DrawAdj{smm}{
-    \IfBooleanTF {#1}{
-      \draw [phantom] (#2) to node {$\dashv$} (#3);
-    }{
-      \draw [phantom] (#2) to node[rotate=180] {$\dashv$} (#3);
-    }
+    adjoint/.style = {
+      phantom,
+      every to/.append style = {
+        edge node = {node [sloped,allow upside down,auto=false] {$\dashv$}}
+      }
+    },
   }
 
   % pullback and pushout
@@ -237,9 +234,9 @@ hash="b2c28b9d4ac3bf01a04d310b4958779c"><fr:embedded-tex-preamble>
    \begin {tikzpicture}[diagram]
      \node  (w) {$ \mathcal { E } $};
      \node  [right = of w] (e) {$ \mathcal { F } $};
-     \draw  [-&gt;,morphism,offset=1.5] (w) to node[swap] (s) {$ f _{*} $} (e);
-     \draw  [-&gt;,morphism,offset=1.5] (e) to node[swap] (n) {$ f ^{*} $} (w);
-     \DrawAdj {n}{s}
+     \draw  [-&gt;,morphism,offset=1.5] (w) to node[swap] (r) {$ f _{*} $} (e);
+     \draw  [-&gt;,morphism,offset=1.5] (e) to node[swap] (l) {$ f ^{*} $} (w);
+     \draw  [adjoint] (l) to (r);
    \end {tikzpicture}
 </fr:embedded-tex-body></fr:embedded-tex>
     

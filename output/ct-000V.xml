@@ -17,7 +17,7 @@ root="false"><fr:frontmatter><fr:anchor>438</fr:anchor><fr:taxon>Intuition</fr:t
     
       
       <fr:embedded-tex
-hash="a45011fe2a33eb459b921a858ebf2d74"><fr:embedded-tex-preamble>
+hash="8dde1e8654fa6d00bbb899caa8481e2a"><fr:embedded-tex-preamble>
          
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -86,15 +86,12 @@ hash="a45011fe2a33eb459b921a858ebf2d74"><fr:embedded-tex-preamble>
     cross over/.style = {
       commutative diagrams/crossing over
     },
-  }
-
-  % macro that draws the adjunction symbol in a diagram
-  \NewDocumentCommand\DrawAdj{smm}{
-    \IfBooleanTF {#1}{
-      \draw [phantom] (#2) to node {$\dashv$} (#3);
-    }{
-      \draw [phantom] (#2) to node[rotate=180] {$\dashv$} (#3);
-    }
+    adjoint/.style = {
+      phantom,
+      every to/.append style = {
+        edge node = {node [sloped,allow upside down,auto=false] {$\dashv$}}
+      }
+    },
   }
 
   % pullback and pushout

@@ -29,7 +29,7 @@ root="false"><fr:frontmatter><fr:anchor>737</fr:anchor><fr:taxon>Axiom</fr:taxon
     
       
       <fr:embedded-tex
-hash="4abec21ef7861cd38c35ba4ec4492052"><fr:embedded-tex-preamble>
+hash="5daa7218890052b474f77f8b5bbf3715"><fr:embedded-tex-preamble>
          
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -98,15 +98,12 @@ hash="4abec21ef7861cd38c35ba4ec4492052"><fr:embedded-tex-preamble>
     cross over/.style = {
       commutative diagrams/crossing over
     },
-  }
-
-  % macro that draws the adjunction symbol in a diagram
-  \NewDocumentCommand\DrawAdj{smm}{
-    \IfBooleanTF {#1}{
-      \draw [phantom] (#2) to node {$\dashv$} (#3);
-    }{
-      \draw [phantom] (#2) to node[rotate=180] {$\dashv$} (#3);
-    }
+    adjoint/.style = {
+      phantom,
+      every to/.append style = {
+        edge node = {node [sloped,allow upside down,auto=false] {$\dashv$}}
+      }
+    },
   }
 
   % pullback and pushout
@@ -276,7 +273,7 @@ root="false"><fr:frontmatter><fr:anchor>738</fr:anchor><fr:taxon>Axiom</fr:taxon
     
       
       <fr:embedded-tex
-hash="da7d42fb1f4b86a3d14c63e1ec87911f"><fr:embedded-tex-preamble>
+hash="b4dd116b471b76be8a8709341ff0f3f0"><fr:embedded-tex-preamble>
          
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -345,15 +342,12 @@ hash="da7d42fb1f4b86a3d14c63e1ec87911f"><fr:embedded-tex-preamble>
     cross over/.style = {
       commutative diagrams/crossing over
     },
-  }
-
-  % macro that draws the adjunction symbol in a diagram
-  \NewDocumentCommand\DrawAdj{smm}{
-    \IfBooleanTF {#1}{
-      \draw [phantom] (#2) to node {$\dashv$} (#3);
-    }{
-      \draw [phantom] (#2) to node[rotate=180] {$\dashv$} (#3);
-    }
+    adjoint/.style = {
+      phantom,
+      every to/.append style = {
+        edge node = {node [sloped,allow upside down,auto=false] {$\dashv$}}
+      }
+    },
   }
 
   % pullback and pushout
@@ -521,7 +515,7 @@ root="false"><fr:frontmatter><fr:anchor>739</fr:anchor><fr:taxon>Axiom</fr:taxon
     
       
       <fr:embedded-tex
-hash="45e17891ac492479c1bd6e5dbed0dcf8"><fr:embedded-tex-preamble>
+hash="f7d36dd7ce4dd7c0a5f467a40baa268d"><fr:embedded-tex-preamble>
          
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -590,15 +584,12 @@ hash="45e17891ac492479c1bd6e5dbed0dcf8"><fr:embedded-tex-preamble>
     cross over/.style = {
       commutative diagrams/crossing over
     },
-  }
-
-  % macro that draws the adjunction symbol in a diagram
-  \NewDocumentCommand\DrawAdj{smm}{
-    \IfBooleanTF {#1}{
-      \draw [phantom] (#2) to node {$\dashv$} (#3);
-    }{
-      \draw [phantom] (#2) to node[rotate=180] {$\dashv$} (#3);
-    }
+    adjoint/.style = {
+      phantom,
+      every to/.append style = {
+        edge node = {node [sloped,allow upside down,auto=false] {$\dashv$}}
+      }
+    },
   }
 
   % pullback and pushout
@@ -778,7 +769,7 @@ root="false"><fr:frontmatter><fr:anchor>407</fr:anchor><fr:taxon>Axiom</fr:taxon
     
       
       <fr:embedded-tex
-hash="be9cf1e1433160ed2f1b5bc575b31be0"><fr:embedded-tex-preamble>
+hash="2c737a99ce51d0a02d05a1ee89edd276"><fr:embedded-tex-preamble>
          
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -847,15 +838,12 @@ hash="be9cf1e1433160ed2f1b5bc575b31be0"><fr:embedded-tex-preamble>
     cross over/.style = {
       commutative diagrams/crossing over
     },
-  }
-
-  % macro that draws the adjunction symbol in a diagram
-  \NewDocumentCommand\DrawAdj{smm}{
-    \IfBooleanTF {#1}{
-      \draw [phantom] (#2) to node {$\dashv$} (#3);
-    }{
-      \draw [phantom] (#2) to node[rotate=180] {$\dashv$} (#3);
-    }
+    adjoint/.style = {
+      phantom,
+      every to/.append style = {
+        edge node = {node [sloped,allow upside down,auto=false] {$\dashv$}}
+      }
+    },
   }
 
   % pullback and pushout
@@ -1025,7 +1013,7 @@ root="false"><fr:frontmatter><fr:anchor>408</fr:anchor><fr:taxon>Axiom</fr:taxon
     
       
       <fr:embedded-tex
-hash="77fae100d0da8d3052cef63b8ae4d23a"><fr:embedded-tex-preamble>
+hash="7b24b9d072b11970c4629a8a8b6d54e8"><fr:embedded-tex-preamble>
          
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -1094,15 +1082,12 @@ hash="77fae100d0da8d3052cef63b8ae4d23a"><fr:embedded-tex-preamble>
     cross over/.style = {
       commutative diagrams/crossing over
     },
-  }
-
-  % macro that draws the adjunction symbol in a diagram
-  \NewDocumentCommand\DrawAdj{smm}{
-    \IfBooleanTF {#1}{
-      \draw [phantom] (#2) to node {$\dashv$} (#3);
-    }{
-      \draw [phantom] (#2) to node[rotate=180] {$\dashv$} (#3);
-    }
+    adjoint/.style = {
+      phantom,
+      every to/.append style = {
+        edge node = {node [sloped,allow upside down,auto=false] {$\dashv$}}
+      }
+    },
   }
 
   % pullback and pushout

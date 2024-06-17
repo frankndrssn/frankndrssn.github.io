@@ -17,7 +17,7 @@ addr="topo-000K">pretopos</fr:link></fr:title><fr:date><fr:year>2024</fr:year><f
     
       
       <fr:embedded-tex
-hash="fb0569b0d3efb615237f78039047173f"><fr:embedded-tex-preamble>
+hash="b3cb8407d020c9da55ebb2b4b4081bf0"><fr:embedded-tex-preamble>
          
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -86,15 +86,12 @@ hash="fb0569b0d3efb615237f78039047173f"><fr:embedded-tex-preamble>
     cross over/.style = {
       commutative diagrams/crossing over
     },
-  }
-
-  % macro that draws the adjunction symbol in a diagram
-  \NewDocumentCommand\DrawAdj{smm}{
-    \IfBooleanTF {#1}{
-      \draw [phantom] (#2) to node {$\dashv$} (#3);
-    }{
-      \draw [phantom] (#2) to node[rotate=180] {$\dashv$} (#3);
-    }
+    adjoint/.style = {
+      phantom,
+      every to/.append style = {
+        edge node = {node [sloped,allow upside down,auto=false] {$\dashv$}}
+      }
+    },
   }
 
   % pullback and pushout
@@ -322,7 +319,7 @@ taxon="Lemma"></fr:ref> the following diagram is a pushout.
     
       
       <fr:embedded-tex
-hash="c1b6b5f6b3cdf69a456a686a85d09cff"><fr:embedded-tex-preamble>
+hash="51ee634f714f9650d56816d8a6108ce8"><fr:embedded-tex-preamble>
          
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -391,15 +388,12 @@ hash="c1b6b5f6b3cdf69a456a686a85d09cff"><fr:embedded-tex-preamble>
     cross over/.style = {
       commutative diagrams/crossing over
     },
-  }
-
-  % macro that draws the adjunction symbol in a diagram
-  \NewDocumentCommand\DrawAdj{smm}{
-    \IfBooleanTF {#1}{
-      \draw [phantom] (#2) to node {$\dashv$} (#3);
-    }{
-      \draw [phantom] (#2) to node[rotate=180] {$\dashv$} (#3);
-    }
+    adjoint/.style = {
+      phantom,
+      every to/.append style = {
+        edge node = {node [sloped,allow upside down,auto=false] {$\dashv$}}
+      }
+    },
   }
 
   % pullback and pushout
@@ -631,7 +625,7 @@ taxon="Lemma"></fr:ref>, there is a pullback square
     
       
       <fr:embedded-tex
-hash="3b3a698507392c895799ee87218b478d"><fr:embedded-tex-preamble>
+hash="fd3947848ce53841a7ed71a945e48053"><fr:embedded-tex-preamble>
          
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -700,15 +694,12 @@ hash="3b3a698507392c895799ee87218b478d"><fr:embedded-tex-preamble>
     cross over/.style = {
       commutative diagrams/crossing over
     },
-  }
-
-  % macro that draws the adjunction symbol in a diagram
-  \NewDocumentCommand\DrawAdj{smm}{
-    \IfBooleanTF {#1}{
-      \draw [phantom] (#2) to node {$\dashv$} (#3);
-    }{
-      \draw [phantom] (#2) to node[rotate=180] {$\dashv$} (#3);
-    }
+    adjoint/.style = {
+      phantom,
+      every to/.append style = {
+        edge node = {node [sloped,allow upside down,auto=false] {$\dashv$}}
+      }
+    },
   }
 
   % pullback and pushout

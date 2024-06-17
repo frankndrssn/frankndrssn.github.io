@@ -71,7 +71,7 @@ taxon="Lemma"></fr:ref>, it suffices to show that <fr:tex>(a,b)</fr:tex> is a ke
     
       
       <fr:embedded-tex
-hash="3eaa9a9396a1a46b514914c7117517d1"><fr:embedded-tex-preamble>
+hash="ccc1f3df54af7949342fe8c2f1278905"><fr:embedded-tex-preamble>
          
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -140,15 +140,12 @@ hash="3eaa9a9396a1a46b514914c7117517d1"><fr:embedded-tex-preamble>
     cross over/.style = {
       commutative diagrams/crossing over
     },
-  }
-
-  % macro that draws the adjunction symbol in a diagram
-  \NewDocumentCommand\DrawAdj{smm}{
-    \IfBooleanTF {#1}{
-      \draw [phantom] (#2) to node {$\dashv$} (#3);
-    }{
-      \draw [phantom] (#2) to node[rotate=180] {$\dashv$} (#3);
-    }
+    adjoint/.style = {
+      phantom,
+      every to/.append style = {
+        edge node = {node [sloped,allow upside down,auto=false] {$\dashv$}}
+      }
+    },
   }
 
   % pullback and pushout
@@ -316,7 +313,7 @@ hash="3eaa9a9396a1a46b514914c7117517d1"><fr:embedded-tex-preamble>
     
       
       <fr:embedded-tex
-hash="ef4ee2a16f79ad5f3f477d6fb867e120"><fr:embedded-tex-preamble>
+hash="4e6fcaa989b29abdeae6a26ee728e3a5"><fr:embedded-tex-preamble>
          
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -385,15 +382,12 @@ hash="ef4ee2a16f79ad5f3f477d6fb867e120"><fr:embedded-tex-preamble>
     cross over/.style = {
       commutative diagrams/crossing over
     },
-  }
-
-  % macro that draws the adjunction symbol in a diagram
-  \NewDocumentCommand\DrawAdj{smm}{
-    \IfBooleanTF {#1}{
-      \draw [phantom] (#2) to node {$\dashv$} (#3);
-    }{
-      \draw [phantom] (#2) to node[rotate=180] {$\dashv$} (#3);
-    }
+    adjoint/.style = {
+      phantom,
+      every to/.append style = {
+        edge node = {node [sloped,allow upside down,auto=false] {$\dashv$}}
+      }
+    },
   }
 
   % pullback and pushout
