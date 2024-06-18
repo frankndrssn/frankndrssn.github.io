@@ -7,7 +7,7 @@ numbered="true"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>283</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>log-0002</fr:addr><fr:route>log-0002.xml</fr:route><fr:title>Terms</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>14</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
+root="false"><fr:frontmatter><fr:anchor>320</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>log-0002</fr:addr><fr:route>log-0002.xml</fr:route><fr:title>Terms</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>14</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
   Let <fr:tex>\Sigma</fr:tex> be a <fr:link
 href="log-0001.xml"
 type="local"
@@ -26,7 +26,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>282</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>log-0001</fr:addr><fr:route>log-0001.xml</fr:route><fr:title>Signature</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>14</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
+root="false"><fr:frontmatter><fr:anchor>319</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>log-0001</fr:addr><fr:route>log-0001.xml</fr:route><fr:title>Signature</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>14</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
   A <fr:em><fr:strong>(first-order) signature</fr:strong></fr:em> <fr:tex>\Sigma</fr:tex> consists of the following data:
 </fr:p><fr:ul><fr:li>
     A collection of <fr:em><fr:strong>sorts</fr:strong></fr:em>.
@@ -47,4 +47,25 @@ display="block">       R  \rightarrowtail  A_{1}, \ldots ,A_{n}     </fr:tex>
   </fr:li></fr:ul><fr:p>
   Each sort comes with a collection of <fr:em><fr:strong>variables</fr:strong></fr:em>.
   We assume that given any collection of variables of sort <fr:tex>A</fr:tex>, there is a variable of sort <fr:tex>A</fr:tex> not in the given collection.
-</fr:p></fr:mainmatter></fr:tree></fr:related><fr:backlinks></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>
+</fr:p></fr:mainmatter></fr:tree></fr:related><fr:backlinks><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="true"
+root="false"><fr:frontmatter><fr:anchor>318</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>log-0007</fr:addr><fr:route>log-0007.xml</fr:route><fr:title>Interpretation of <fr:link
+href="log-0002.xml"
+type="local"
+addr="log-0002">terms</fr:link></fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>18</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
+  Let <fr:tex>\mathcal { C }</fr:tex> be a category with sufficient structure and <fr:tex>\Gamma  =  x_{1} \colon B_{1} , \ldots , x_{m} \colon B_{m}</fr:tex> be a context over a signature <fr:tex>\Sigma</fr:tex>.
+  Given a <fr:link
+href="log-0006.xml"
+type="local"
+addr="log-0006"><fr:tex>\Sigma</fr:tex>-structure</fr:link> <fr:tex>M</fr:tex> in <fr:tex>\mathcal { C }</fr:tex>, the interpretation of a term-in-context <fr:tex>\Gamma .t</fr:tex> of sort <fr:tex>B</fr:tex> in <fr:tex>M</fr:tex> is a morphism <fr:tex>{ \mathopen {} \llbracket \Gamma .t \rrbracket \mathclose {}} _{ M } \colon M(B_{1}, \ldots ,B_{m}) \to MB</fr:tex> defined recursively on the structure of <fr:tex>t</fr:tex> as follow:
+</fr:p><fr:ul><fr:li><fr:tex>{ \mathopen {} \llbracket \Gamma .x_{i} \rrbracket \mathclose {}} _{ M }</fr:tex> is the <fr:tex>i</fr:tex>-th projection <fr:tex>\pi _{i} \colon M(B_{1}, \ldots ,B_{m}) \to MB_{i}</fr:tex>.
+  </fr:li>
+  <fr:li>
+    If <fr:tex>f \colon A_{1}, \ldots ,A_{n} \to B</fr:tex> is a function symbol and <fr:tex>t_{1}, \ldots ,t_{n}</fr:tex> are terms of appropriate sorts then <fr:tex>{ \mathopen {} \llbracket \Gamma .f(t_{1}, \ldots ,t_{n}) \rrbracket \mathclose {}} _{ M }</fr:tex> is the composite
+    <fr:tex
+display="block">       M(B_{1}, \ldots ,B_{m})  \xrightarrow { ( { \mathopen {} \llbracket \Gamma .t_{1} \rrbracket \mathclose {}} _{ M } , \ldots , { \mathopen {} \llbracket \Gamma .t_{n} \rrbracket \mathclose {}} _{ M } ) }  M(A_{1}, \ldots ,A_{n})  \xrightarrow { Mf }  MB     </fr:tex></fr:li></fr:ul></fr:mainmatter></fr:tree></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>

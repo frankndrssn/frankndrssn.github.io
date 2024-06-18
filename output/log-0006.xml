@@ -7,33 +7,533 @@ numbered="true"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>241</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>log-0006</fr:addr><fr:route>log-0006.xml</fr:route><fr:title><fr:tex>\Sigma</fr:tex> structure</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>17</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:link
-href="todo.xml"
-type="local"
-addr="todo">TODO</fr:link><fr:p>
+root="false"><fr:frontmatter><fr:anchor>272</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>log-0006</fr:addr><fr:route>log-0006.xml</fr:route><fr:title><fr:tex>\Sigma</fr:tex>-structure</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>17</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
   Let <fr:tex>\mathcal { C }</fr:tex> be a category with finite products and <fr:tex>\Sigma</fr:tex> be a <fr:link
 href="log-0001.xml"
 type="local"
 addr="log-0001">signature</fr:link>.
-  A <fr:em><fr:strong><fr:tex>\Sigma</fr:tex>-structure</fr:strong></fr:em> <fr:tex>M</fr:tex> in <fr:tex>\mathcal { C }</fr:tex> consists of the following data:
-</fr:p><fr:ul><fr:li>
-    Each sort <fr:tex>A</fr:tex> in <fr:tex>\Sigma</fr:tex> is associated with an object <fr:tex>MA</fr:tex> in <fr:tex>\mathcal { C }</fr:tex>.
-    This is extended to any finite string of sorts by <fr:tex>M(A_{1}, \ldots ,A_{n})  \mapsto  MA_{1}  \times   \cdots   \times  MA_{n}</fr:tex>.
-    The empty string is associated with the terminal object <fr:tex>1</fr:tex> of <fr:tex>\mathcal { C }</fr:tex>.
-  </fr:li>
-  <fr:li>
-    Each function symbol <fr:tex>f \colon A_{1}, \ldots ,A_{n} \to B</fr:tex> is associated with a morphism <fr:tex>Mf \colon M(A_{1}, \ldots ,A_{n}) \to MB</fr:tex> in <fr:tex>\mathcal { C }</fr:tex>.
-  </fr:li>
-  <fr:li>
-    Each relation symbol <fr:tex>R  \rightarrowtail  A_{1}, \ldots ,A_{n}</fr:tex> is associated with a subobject of <fr:tex>M(A_{1}, \ldots ,A_{n})</fr:tex> in <fr:tex>\mathcal { C }</fr:tex>.
-  </fr:li></fr:ul></fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context></fr:context><fr:related><fr:tree
+  The category of <fr:em><fr:strong><fr:tex>\Sigma</fr:tex>-structures</fr:strong></fr:em> in <fr:tex>\mathcal { C }</fr:tex>, denoted as <fr:tex>\Sigma \text {-} \mathsf {Str} ( \mathcal { C } )</fr:tex>, consists of the following data:
+</fr:p>
+  <html:table
+xmlns:html="http://www.w3.org/1999/xhtml">
+  
+  <html:tr>
+    
+  <html:th>Objects</html:th>
+
+    
+  <html:th>Morphisms</html:th>
+
+  </html:tr>
+
+  
+  <html:tr>
+    
+  <html:td>
+      A <fr:tex>\Sigma</fr:tex>-structure consists of the following data:
+      <fr:ul><fr:li>
+          Each sort <fr:tex>A</fr:tex> in <fr:tex>\Sigma</fr:tex> is associated with an object <fr:tex>MA</fr:tex> in <fr:tex>\mathcal { C }</fr:tex>.
+          This is extended to any finite string of sorts by the assignment <fr:tex>M(A_{1}, \ldots ,A_{n})  \mapsto  MA_{1}  \times   \cdots   \times  MA_{n}</fr:tex>.
+          The empty string is associated with the terminal object <fr:tex>1</fr:tex> of <fr:tex>\mathcal { C }</fr:tex>.
+        </fr:li>
+        <fr:li>
+          Each function symbol <fr:tex>f \colon A_{1}, \ldots ,A_{n} \to B</fr:tex> is associated with a morphism <fr:tex>Mf \colon M(A_{1}, \ldots ,A_{n}) \to MB</fr:tex> in <fr:tex>\mathcal { C }</fr:tex>.
+        </fr:li>
+        <fr:li>
+          Each relation symbol <fr:tex>R  \rightarrowtail  A_{1}, \ldots ,A_{n}</fr:tex> is associated with a subobject of <fr:tex>M(A_{1}, \ldots ,A_{n})</fr:tex> in <fr:tex>\mathcal { C }</fr:tex>.
+        </fr:li></fr:ul>
+    </html:td>
+
+    
+  <html:td>
+      Let <fr:tex>M</fr:tex> and <fr:tex>N</fr:tex> be <fr:tex>\Sigma</fr:tex>-structures.
+      A <fr:em><fr:strong>homomorphism</fr:strong></fr:em> <fr:tex>h \colon M \to N</fr:tex> consists of an indexed family of morphisms <fr:tex>h_{A} \colon MA \to NA</fr:tex> for each sort <fr:tex>A</fr:tex>.
+      This data is subject to the following conditions:
+      <fr:ul><fr:li>
+          For each function symbol <fr:tex>f \colon A_{1}, \ldots ,A_{n} \to B</fr:tex>, the following square commutes:
+          
+    
+      
+      <fr:embedded-tex
+hash="cdf919dc9f3e5cb141be3e4223e132ef"><fr:embedded-tex-preamble>
+         
+   \RequirePackage {tikz}
+   \RequirePackage {amsmath}
+   \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
+
+   \definecolor {catccolor}{RGB}{255,244,138}
+   \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
+   \tikzstyle {catc}=[catccolor!60]
+   \tikzstyle {catd}=[orange!40]
+   \tikzstyle {cate}=[red!40]
+   \tikzstyle {catf}=[blue!10]
+   \tikzstyle {catg}=[green!25]
+
+
+   \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
+   \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
+
+   \NewDocumentCommand \CreateRect {D&lt;&gt;{} m m}{
+     \path 
+      coordinate (#1nw)
+      ++(#2,-#3) coordinate (#1se)
+      coordinate (#1sw) at (#1se -| #1nw)
+      coordinate (#1ne) at (#1nw -| #1se)
+    ;
+
+     \path [spath/save = #1north] (#1nw) to (#1ne);
+     \path [spath/save = #1west] (#1nw) to (#1sw);
+     \path [spath/save = #1east] (#1ne) to (#1se);
+     \path [spath/save = #1south] (#1sw) to (#1se);
+  }
+ 
+         
+   % appears to be necessary
+  \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd}
+  \usetikzlibrary{matrix,arrows}
+  \usetikzlibrary{backgrounds,fit,positioning,calc,shapes}
+  \usetikzlibrary{decorations.pathreplacing}
+  \usetikzlibrary{decorations.pathmorphing}
+  \usetikzlibrary{decorations.markings}
+
+  % basic settings
+  \tikzset{
+    diagram/.style = {
+      on grid,
+      node distance=2cm,
+      commutative diagrams/every diagram,
+      line width = .5pt,
+      every node/.append style = {
+        commutative diagrams/every cell,
+      },
+    },
+    morphism/.style = {
+      auto=left,
+      node font=\scriptsize,
+    },
+    phantom/.style = {
+      commutative diagrams/phantom,
+      node font=\scriptsize,
+      sloped,
+    },
+    between/.style args = {#1 and #2}{
+      at = ($(#1)!0.5!(#2)$)
+    },
+    desc/.style = {anchor=center,fill=white,inner sep=3pt},
+    offset/.style args = {#1} {commutative diagrams/shift right={#1}},
+    cross over/.style = {
+      commutative diagrams/crossing over
+    },
+    adjoint/.style = {
+      phantom,
+      every to/.append style = {
+        edge node = {node [sloped,allow upside down,auto=false] {$\dashv$}}
+      }
+    },
+  }
+
+  % pullback and pushout
+  \tikzset{
+    pullback/.style = {
+      append after command = {
+        \pgfextra{
+          \draw ($(\tikzlastnode) + (.2cm,-.5cm)$) -- ++(0.3cm,0) -- ++(0,0.3cm);
+        }
+      }
+    },
+    pushout/.style = {
+      append after command={
+        \pgfextra{
+          \draw ($(\tikzlastnode) + (-.2cm,.5cm)$) -- ++(-0.3cm,0) -- ++(0,-0.3cm);
+        }
+      }
+    },
+  }
+
+  % arrow styles
+  \tikzset{
+    exists/.style = {
+      densely dashed
+    },
+    embedding/.style = {
+      {right hook}-&gt;
+    },
+    cover/.style = {
+      -{Triangle[open]}
+    },
+  }
+
+  \newlength{\dontworryaboutit} % no idea what it does
+
+  \tikzset{
+    inline diagram/.style = {
+      commutative diagrams/every diagram,
+      commutative diagrams/cramped,
+      line width = .5pt,
+      every node/.append style = {
+        commutative diagrams/every cell,
+        anchor = base,
+        inner sep = 0pt
+      },
+      every path/.append style = {
+        outer xsep = 2pt
+      }
+    }
+  }
+  
+  % macros for drawing commutative squares
+  % adapted from Jon Sterling's macros (https://git.sr.ht/~jonsterling/article-template/tree/main/item/local-tikz.sty)
+  \tikzset{
+    square/nw/.style = {},
+    square/ne/.style = {},
+    square/se/.style = {},
+    square/sw/.style = {},
+    square/north/.style = {-&gt;},
+    square/south/.style = {-&gt;},
+    square/west/.style = {-&gt;},
+    square/east/.style = {-&gt;},
+    square/north/node/.style = {above},
+    square/south/node/.style = {below},
+    square/west/node/.style = {left},
+    square/east/node/.style = {right},
+  }
+
+  \ExplSyntaxOn
+  \keys_define:nn { jon-tikz/diagram } {
+    nw .tl_set:N = \l_jon_tikz_diagram_nw,
+    sw .tl_set:N = \l_jon_tikz_diagram_sw,
+    ne .tl_set:N = \l_jon_tikz_diagram_ne,
+    se .tl_set:N = \l_jon_tikz_diagram_se,
+
+    width .tl_set:N = \l_jon_tikz_diagram_width,
+    height .tl_set:N = \l_jon_tikz_diagram_height,
+
+    north .tl_set:N = \l_jon_tikz_diagram_north,
+    south .tl_set:N = \l_jon_tikz_diagram_south,
+    west .tl_set:N = \l_jon_tikz_diagram_west,
+    east .tl_set:N = \l_jon_tikz_diagram_east,
+
+    nw/style .code:n = {\tikzset{square/nw/.style = {#1}}},
+    sw/style .code:n = {\tikzset{square/sw/.style = {#1}}},
+    ne/style .code:n = {\tikzset{square/ne/.style = {#1}}},
+    se/style .code:n = {\tikzset{square/se/.style = {#1}}},
+
+    north/style .code:n = {\tikzset{square/north/.style = {#1}}},
+    north/node/style .code:n = {\tikzset{square/north/node/.style = {#1}}},
+    south/style .code:n = {\tikzset{square/south/.style = {#1}}},
+    south/node/style .code:n = {\tikzset{square/south/node/.style = {#1}}},
+    west/style .code:n = {\tikzset{square/west/.style = {#1}}},
+    west/node/style .code:n = {\tikzset{square/west/node/.style = {#1}}},
+    east/style .code:n = {\tikzset{square/east/.style = {#1}}},
+    east/node/style .code:n = {\tikzset{square/east/node/.style = {#1}}},
+
+    draft .meta:n = {
+      nw = {nw},
+      sw = {sw},
+      se = {se},
+      ne = {ne},
+      north = {north},
+      south = {south},
+      west = {west},
+      east = {east},
+    }
+  }
+
+  \tl_set:Nn \l_jon_tikz_diagram_width { 2cm }
+  \tl_set:Nn \l_jon_tikz_diagram_height { 2cm }
+
+
+  \cs_new:Nn \__jon_tikz_render_square:nn {
+    \group_begin:
+    \keys_set:nn {jon-tikz/diagram} {#2} {
+      \node (#1nw) [square/nw] {$\l_jon_tikz_diagram_nw$};
+      \node (#1sw) [below = \l_jon_tikz_diagram_height~of~#1nw,square/sw] {$\l_jon_tikz_diagram_sw$};
+      \draw[morphism,square/west] (#1nw) to node [square/west/node] {$\l_jon_tikz_diagram_west$} (#1sw);
+
+      \node (#1ne) [right = \l_jon_tikz_diagram_width~of~#1nw,square/ne] {$\l_jon_tikz_diagram_ne$};
+      \node (#1se) [below = \l_jon_tikz_diagram_height~of~#1ne,square/se] {$\l_jon_tikz_diagram_se$};
+      \draw[morphism,square/north] (#1nw) to node [square/north/node] {$\l_jon_tikz_diagram_north$} (#1ne);
+      \draw[morphism,square/east] (#1ne) to node [square/east/node] {$\l_jon_tikz_diagram_east$} (#1se);
+      \draw[morphism,square/south] (#1sw) to node [square/south/node] {$\l_jon_tikz_diagram_south$} (#1se);
+    }
+    \group_end:
+  }
+
+  % the optional argument allows one to specify a prefix to positions
+  \NewDocumentCommand\SpliceDiagramSquare{O{}m}{
+    \__jon_tikz_render_square:nn {#1} {#2}
+  }
+
+  \NewDocumentCommand\DiagramSquare{O{}O{}m}{
+    \begin{tikzpicture}[diagram,#2,baseline=(#1sw.base)]
+      \__jon_tikz_render_square:nn {#1} {#3}
+    \end{tikzpicture}
+  }
+  \ExplSyntaxOff
+ 
+      </fr:embedded-tex-preamble><fr:embedded-tex-body>
+             \DiagramSquare {
+              width = 3cm,
+              nw = {M(A_{1}, \ldots ,A_{n})},
+              ne = MB,
+              sw = {N(A_{1}, \ldots ,A_{n})},
+              se = NB,
+              north = Mf,
+              south = Nf,
+              west = {h_{A_{1}}  \times   \cdots   \times  h_{A_{n}}},
+              east = {h_{B}},
+            }
+          </fr:embedded-tex-body></fr:embedded-tex></fr:li>
+        <fr:li>
+          For each relation symbol <fr:tex>R  \rightarrowtail  A_{1}, \ldots ,A_{n}</fr:tex>, there is a morphism <fr:tex>g \colon MR \to NR</fr:tex> such that the following diagram commutes:
+          
+    
+      
+      <fr:embedded-tex
+hash="d796826e99417cbc357bd2edd3858825"><fr:embedded-tex-preamble>
+         
+   \RequirePackage {tikz}
+   \RequirePackage {amsmath}
+   \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
+
+   \definecolor {catccolor}{RGB}{255,244,138}
+   \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
+   \tikzstyle {catc}=[catccolor!60]
+   \tikzstyle {catd}=[orange!40]
+   \tikzstyle {cate}=[red!40]
+   \tikzstyle {catf}=[blue!10]
+   \tikzstyle {catg}=[green!25]
+
+
+   \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
+   \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
+
+   \NewDocumentCommand \CreateRect {D&lt;&gt;{} m m}{
+     \path 
+      coordinate (#1nw)
+      ++(#2,-#3) coordinate (#1se)
+      coordinate (#1sw) at (#1se -| #1nw)
+      coordinate (#1ne) at (#1nw -| #1se)
+    ;
+
+     \path [spath/save = #1north] (#1nw) to (#1ne);
+     \path [spath/save = #1west] (#1nw) to (#1sw);
+     \path [spath/save = #1east] (#1ne) to (#1se);
+     \path [spath/save = #1south] (#1sw) to (#1se);
+  }
+ 
+         
+   % appears to be necessary
+  \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd}
+  \usetikzlibrary{matrix,arrows}
+  \usetikzlibrary{backgrounds,fit,positioning,calc,shapes}
+  \usetikzlibrary{decorations.pathreplacing}
+  \usetikzlibrary{decorations.pathmorphing}
+  \usetikzlibrary{decorations.markings}
+
+  % basic settings
+  \tikzset{
+    diagram/.style = {
+      on grid,
+      node distance=2cm,
+      commutative diagrams/every diagram,
+      line width = .5pt,
+      every node/.append style = {
+        commutative diagrams/every cell,
+      },
+    },
+    morphism/.style = {
+      auto=left,
+      node font=\scriptsize,
+    },
+    phantom/.style = {
+      commutative diagrams/phantom,
+      node font=\scriptsize,
+      sloped,
+    },
+    between/.style args = {#1 and #2}{
+      at = ($(#1)!0.5!(#2)$)
+    },
+    desc/.style = {anchor=center,fill=white,inner sep=3pt},
+    offset/.style args = {#1} {commutative diagrams/shift right={#1}},
+    cross over/.style = {
+      commutative diagrams/crossing over
+    },
+    adjoint/.style = {
+      phantom,
+      every to/.append style = {
+        edge node = {node [sloped,allow upside down,auto=false] {$\dashv$}}
+      }
+    },
+  }
+
+  % pullback and pushout
+  \tikzset{
+    pullback/.style = {
+      append after command = {
+        \pgfextra{
+          \draw ($(\tikzlastnode) + (.2cm,-.5cm)$) -- ++(0.3cm,0) -- ++(0,0.3cm);
+        }
+      }
+    },
+    pushout/.style = {
+      append after command={
+        \pgfextra{
+          \draw ($(\tikzlastnode) + (-.2cm,.5cm)$) -- ++(-0.3cm,0) -- ++(0,-0.3cm);
+        }
+      }
+    },
+  }
+
+  % arrow styles
+  \tikzset{
+    exists/.style = {
+      densely dashed
+    },
+    embedding/.style = {
+      {right hook}-&gt;
+    },
+    cover/.style = {
+      -{Triangle[open]}
+    },
+  }
+
+  \newlength{\dontworryaboutit} % no idea what it does
+
+  \tikzset{
+    inline diagram/.style = {
+      commutative diagrams/every diagram,
+      commutative diagrams/cramped,
+      line width = .5pt,
+      every node/.append style = {
+        commutative diagrams/every cell,
+        anchor = base,
+        inner sep = 0pt
+      },
+      every path/.append style = {
+        outer xsep = 2pt
+      }
+    }
+  }
+  
+  % macros for drawing commutative squares
+  % adapted from Jon Sterling's macros (https://git.sr.ht/~jonsterling/article-template/tree/main/item/local-tikz.sty)
+  \tikzset{
+    square/nw/.style = {},
+    square/ne/.style = {},
+    square/se/.style = {},
+    square/sw/.style = {},
+    square/north/.style = {-&gt;},
+    square/south/.style = {-&gt;},
+    square/west/.style = {-&gt;},
+    square/east/.style = {-&gt;},
+    square/north/node/.style = {above},
+    square/south/node/.style = {below},
+    square/west/node/.style = {left},
+    square/east/node/.style = {right},
+  }
+
+  \ExplSyntaxOn
+  \keys_define:nn { jon-tikz/diagram } {
+    nw .tl_set:N = \l_jon_tikz_diagram_nw,
+    sw .tl_set:N = \l_jon_tikz_diagram_sw,
+    ne .tl_set:N = \l_jon_tikz_diagram_ne,
+    se .tl_set:N = \l_jon_tikz_diagram_se,
+
+    width .tl_set:N = \l_jon_tikz_diagram_width,
+    height .tl_set:N = \l_jon_tikz_diagram_height,
+
+    north .tl_set:N = \l_jon_tikz_diagram_north,
+    south .tl_set:N = \l_jon_tikz_diagram_south,
+    west .tl_set:N = \l_jon_tikz_diagram_west,
+    east .tl_set:N = \l_jon_tikz_diagram_east,
+
+    nw/style .code:n = {\tikzset{square/nw/.style = {#1}}},
+    sw/style .code:n = {\tikzset{square/sw/.style = {#1}}},
+    ne/style .code:n = {\tikzset{square/ne/.style = {#1}}},
+    se/style .code:n = {\tikzset{square/se/.style = {#1}}},
+
+    north/style .code:n = {\tikzset{square/north/.style = {#1}}},
+    north/node/style .code:n = {\tikzset{square/north/node/.style = {#1}}},
+    south/style .code:n = {\tikzset{square/south/.style = {#1}}},
+    south/node/style .code:n = {\tikzset{square/south/node/.style = {#1}}},
+    west/style .code:n = {\tikzset{square/west/.style = {#1}}},
+    west/node/style .code:n = {\tikzset{square/west/node/.style = {#1}}},
+    east/style .code:n = {\tikzset{square/east/.style = {#1}}},
+    east/node/style .code:n = {\tikzset{square/east/node/.style = {#1}}},
+
+    draft .meta:n = {
+      nw = {nw},
+      sw = {sw},
+      se = {se},
+      ne = {ne},
+      north = {north},
+      south = {south},
+      west = {west},
+      east = {east},
+    }
+  }
+
+  \tl_set:Nn \l_jon_tikz_diagram_width { 2cm }
+  \tl_set:Nn \l_jon_tikz_diagram_height { 2cm }
+
+
+  \cs_new:Nn \__jon_tikz_render_square:nn {
+    \group_begin:
+    \keys_set:nn {jon-tikz/diagram} {#2} {
+      \node (#1nw) [square/nw] {$\l_jon_tikz_diagram_nw$};
+      \node (#1sw) [below = \l_jon_tikz_diagram_height~of~#1nw,square/sw] {$\l_jon_tikz_diagram_sw$};
+      \draw[morphism,square/west] (#1nw) to node [square/west/node] {$\l_jon_tikz_diagram_west$} (#1sw);
+
+      \node (#1ne) [right = \l_jon_tikz_diagram_width~of~#1nw,square/ne] {$\l_jon_tikz_diagram_ne$};
+      \node (#1se) [below = \l_jon_tikz_diagram_height~of~#1ne,square/se] {$\l_jon_tikz_diagram_se$};
+      \draw[morphism,square/north] (#1nw) to node [square/north/node] {$\l_jon_tikz_diagram_north$} (#1ne);
+      \draw[morphism,square/east] (#1ne) to node [square/east/node] {$\l_jon_tikz_diagram_east$} (#1se);
+      \draw[morphism,square/south] (#1sw) to node [square/south/node] {$\l_jon_tikz_diagram_south$} (#1se);
+    }
+    \group_end:
+  }
+
+  % the optional argument allows one to specify a prefix to positions
+  \NewDocumentCommand\SpliceDiagramSquare{O{}m}{
+    \__jon_tikz_render_square:nn {#1} {#2}
+  }
+
+  \NewDocumentCommand\DiagramSquare{O{}O{}m}{
+    \begin{tikzpicture}[diagram,#2,baseline=(#1sw.base)]
+      \__jon_tikz_render_square:nn {#1} {#3}
+    \end{tikzpicture}
+  }
+  \ExplSyntaxOff
+ 
+      </fr:embedded-tex-preamble><fr:embedded-tex-body>
+             \DiagramSquare {
+              width = 3cm,
+              nw = {MR},
+              ne = {M(A_{1}, \ldots ,A_{n})},
+              sw = {NR},
+              se = {N(A_{1}, \ldots ,A_{n})},
+              north/style = {&gt;-&gt;},
+              south/style = {&gt;-&gt;},
+              east = {h_{A_{1}}  \times   \cdots   \times  h_{A_{n}}},
+              west = {g},
+            }
+          </fr:embedded-tex-body></fr:embedded-tex></fr:li></fr:ul>
+    </html:td>
+
+  </html:tr>
+
+</html:table>
+<fr:p>
+  Composition and identities are defined componentwise from those in <fr:tex>\mathcal { C }</fr:tex>.
+</fr:p></fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context></fr:context><fr:related><fr:tree
 xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>238</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>log-0001</fr:addr><fr:route>log-0001.xml</fr:route><fr:title>Signature</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>14</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
+root="false"><fr:frontmatter><fr:anchor>271</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>log-0001</fr:addr><fr:route>log-0001.xml</fr:route><fr:title>Signature</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>14</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
   A <fr:em><fr:strong>(first-order) signature</fr:strong></fr:em> <fr:tex>\Sigma</fr:tex> consists of the following data:
 </fr:p><fr:ul><fr:li>
     A collection of <fr:em><fr:strong>sorts</fr:strong></fr:em>.
@@ -54,14 +554,834 @@ display="block">       R  \rightarrowtail  A_{1}, \ldots ,A_{n}     </fr:tex>
   </fr:li></fr:ul><fr:p>
   Each sort comes with a collection of <fr:em><fr:strong>variables</fr:strong></fr:em>.
   We assume that given any collection of variables of sort <fr:tex>A</fr:tex>, there is a variable of sort <fr:tex>A</fr:tex> not in the given collection.
-</fr:p></fr:mainmatter></fr:tree><fr:tree
+</fr:p></fr:mainmatter></fr:tree></fr:related><fr:backlinks><fr:tree
 xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>239</fr:anchor><fr:addr>todo</fr:addr><fr:route>todo.xml</fr:route><fr:title>TODO</fr:title><fr:authors><fr:author><fr:link
-href="frankndrssn.xml"
+root="false"><fr:frontmatter><fr:anchor>267</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>log-0009</fr:addr><fr:route>log-0009.xml</fr:route><fr:title>Elementary morphism</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>18</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
+  Let <fr:tex>h \colon M \to N</fr:tex> be a <fr:link
+href="log-0006.xml"
 type="local"
-addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter></fr:mainmatter></fr:tree></fr:related><fr:backlinks></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>
+addr="log-0006">homomorphism</fr:link> between <fr:link
+href="log-0006.xml"
+type="local"
+addr="log-0006"><fr:tex>\Sigma</fr:tex>-structures</fr:link> in a <fr:link
+href="ct-0019.xml"
+type="local"
+addr="ct-0019">Heyting category</fr:link> <fr:tex>\mathcal { C }</fr:tex>.
+</fr:p><fr:ul><fr:li>
+    The homomorphism <fr:tex>h</fr:tex> is called an <fr:em><fr:strong>elementary morphism</fr:strong></fr:em> if for all <fr:link
+href="log-0003.xml"
+type="local"
+addr="log-0003">first-order formulas</fr:link>-in-context <fr:tex>\Gamma . \varphi</fr:tex>, there is a morphism <fr:tex>g \colon { \mathopen {} \llbracket \Gamma . \varphi \rrbracket \mathclose {}} _{ M } \to { \mathopen {} \llbracket \Gamma . \varphi \rrbracket \mathclose {}} _{ N }</fr:tex> such that the following square commutes:
+    
+    
+      
+      <fr:embedded-tex
+hash="12e03aaea7438020e050d0e2b31b4e4d"><fr:embedded-tex-preamble>
+         
+   \RequirePackage {tikz}
+   \RequirePackage {amsmath}
+   \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
+
+   \definecolor {catccolor}{RGB}{255,244,138}
+   \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
+   \tikzstyle {catc}=[catccolor!60]
+   \tikzstyle {catd}=[orange!40]
+   \tikzstyle {cate}=[red!40]
+   \tikzstyle {catf}=[blue!10]
+   \tikzstyle {catg}=[green!25]
+
+
+   \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
+   \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
+
+   \NewDocumentCommand \CreateRect {D&lt;&gt;{} m m}{
+     \path 
+      coordinate (#1nw)
+      ++(#2,-#3) coordinate (#1se)
+      coordinate (#1sw) at (#1se -| #1nw)
+      coordinate (#1ne) at (#1nw -| #1se)
+    ;
+
+     \path [spath/save = #1north] (#1nw) to (#1ne);
+     \path [spath/save = #1west] (#1nw) to (#1sw);
+     \path [spath/save = #1east] (#1ne) to (#1se);
+     \path [spath/save = #1south] (#1sw) to (#1se);
+  }
+ 
+         
+   % appears to be necessary
+  \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd}
+  \usetikzlibrary{matrix,arrows}
+  \usetikzlibrary{backgrounds,fit,positioning,calc,shapes}
+  \usetikzlibrary{decorations.pathreplacing}
+  \usetikzlibrary{decorations.pathmorphing}
+  \usetikzlibrary{decorations.markings}
+
+  % basic settings
+  \tikzset{
+    diagram/.style = {
+      on grid,
+      node distance=2cm,
+      commutative diagrams/every diagram,
+      line width = .5pt,
+      every node/.append style = {
+        commutative diagrams/every cell,
+      },
+    },
+    morphism/.style = {
+      auto=left,
+      node font=\scriptsize,
+    },
+    phantom/.style = {
+      commutative diagrams/phantom,
+      node font=\scriptsize,
+      sloped,
+    },
+    between/.style args = {#1 and #2}{
+      at = ($(#1)!0.5!(#2)$)
+    },
+    desc/.style = {anchor=center,fill=white,inner sep=3pt},
+    offset/.style args = {#1} {commutative diagrams/shift right={#1}},
+    cross over/.style = {
+      commutative diagrams/crossing over
+    },
+    adjoint/.style = {
+      phantom,
+      every to/.append style = {
+        edge node = {node [sloped,allow upside down,auto=false] {$\dashv$}}
+      }
+    },
+  }
+
+  % pullback and pushout
+  \tikzset{
+    pullback/.style = {
+      append after command = {
+        \pgfextra{
+          \draw ($(\tikzlastnode) + (.2cm,-.5cm)$) -- ++(0.3cm,0) -- ++(0,0.3cm);
+        }
+      }
+    },
+    pushout/.style = {
+      append after command={
+        \pgfextra{
+          \draw ($(\tikzlastnode) + (-.2cm,.5cm)$) -- ++(-0.3cm,0) -- ++(0,-0.3cm);
+        }
+      }
+    },
+  }
+
+  % arrow styles
+  \tikzset{
+    exists/.style = {
+      densely dashed
+    },
+    embedding/.style = {
+      {right hook}-&gt;
+    },
+    cover/.style = {
+      -{Triangle[open]}
+    },
+  }
+
+  \newlength{\dontworryaboutit} % no idea what it does
+
+  \tikzset{
+    inline diagram/.style = {
+      commutative diagrams/every diagram,
+      commutative diagrams/cramped,
+      line width = .5pt,
+      every node/.append style = {
+        commutative diagrams/every cell,
+        anchor = base,
+        inner sep = 0pt
+      },
+      every path/.append style = {
+        outer xsep = 2pt
+      }
+    }
+  }
+  
+  % macros for drawing commutative squares
+  % adapted from Jon Sterling's macros (https://git.sr.ht/~jonsterling/article-template/tree/main/item/local-tikz.sty)
+  \tikzset{
+    square/nw/.style = {},
+    square/ne/.style = {},
+    square/se/.style = {},
+    square/sw/.style = {},
+    square/north/.style = {-&gt;},
+    square/south/.style = {-&gt;},
+    square/west/.style = {-&gt;},
+    square/east/.style = {-&gt;},
+    square/north/node/.style = {above},
+    square/south/node/.style = {below},
+    square/west/node/.style = {left},
+    square/east/node/.style = {right},
+  }
+
+  \ExplSyntaxOn
+  \keys_define:nn { jon-tikz/diagram } {
+    nw .tl_set:N = \l_jon_tikz_diagram_nw,
+    sw .tl_set:N = \l_jon_tikz_diagram_sw,
+    ne .tl_set:N = \l_jon_tikz_diagram_ne,
+    se .tl_set:N = \l_jon_tikz_diagram_se,
+
+    width .tl_set:N = \l_jon_tikz_diagram_width,
+    height .tl_set:N = \l_jon_tikz_diagram_height,
+
+    north .tl_set:N = \l_jon_tikz_diagram_north,
+    south .tl_set:N = \l_jon_tikz_diagram_south,
+    west .tl_set:N = \l_jon_tikz_diagram_west,
+    east .tl_set:N = \l_jon_tikz_diagram_east,
+
+    nw/style .code:n = {\tikzset{square/nw/.style = {#1}}},
+    sw/style .code:n = {\tikzset{square/sw/.style = {#1}}},
+    ne/style .code:n = {\tikzset{square/ne/.style = {#1}}},
+    se/style .code:n = {\tikzset{square/se/.style = {#1}}},
+
+    north/style .code:n = {\tikzset{square/north/.style = {#1}}},
+    north/node/style .code:n = {\tikzset{square/north/node/.style = {#1}}},
+    south/style .code:n = {\tikzset{square/south/.style = {#1}}},
+    south/node/style .code:n = {\tikzset{square/south/node/.style = {#1}}},
+    west/style .code:n = {\tikzset{square/west/.style = {#1}}},
+    west/node/style .code:n = {\tikzset{square/west/node/.style = {#1}}},
+    east/style .code:n = {\tikzset{square/east/.style = {#1}}},
+    east/node/style .code:n = {\tikzset{square/east/node/.style = {#1}}},
+
+    draft .meta:n = {
+      nw = {nw},
+      sw = {sw},
+      se = {se},
+      ne = {ne},
+      north = {north},
+      south = {south},
+      west = {west},
+      east = {east},
+    }
+  }
+
+  \tl_set:Nn \l_jon_tikz_diagram_width { 2cm }
+  \tl_set:Nn \l_jon_tikz_diagram_height { 2cm }
+
+
+  \cs_new:Nn \__jon_tikz_render_square:nn {
+    \group_begin:
+    \keys_set:nn {jon-tikz/diagram} {#2} {
+      \node (#1nw) [square/nw] {$\l_jon_tikz_diagram_nw$};
+      \node (#1sw) [below = \l_jon_tikz_diagram_height~of~#1nw,square/sw] {$\l_jon_tikz_diagram_sw$};
+      \draw[morphism,square/west] (#1nw) to node [square/west/node] {$\l_jon_tikz_diagram_west$} (#1sw);
+
+      \node (#1ne) [right = \l_jon_tikz_diagram_width~of~#1nw,square/ne] {$\l_jon_tikz_diagram_ne$};
+      \node (#1se) [below = \l_jon_tikz_diagram_height~of~#1ne,square/se] {$\l_jon_tikz_diagram_se$};
+      \draw[morphism,square/north] (#1nw) to node [square/north/node] {$\l_jon_tikz_diagram_north$} (#1ne);
+      \draw[morphism,square/east] (#1ne) to node [square/east/node] {$\l_jon_tikz_diagram_east$} (#1se);
+      \draw[morphism,square/south] (#1sw) to node [square/south/node] {$\l_jon_tikz_diagram_south$} (#1se);
+    }
+    \group_end:
+  }
+
+  % the optional argument allows one to specify a prefix to positions
+  \NewDocumentCommand\SpliceDiagramSquare{O{}m}{
+    \__jon_tikz_render_square:nn {#1} {#2}
+  }
+
+  \NewDocumentCommand\DiagramSquare{O{}O{}m}{
+    \begin{tikzpicture}[diagram,#2,baseline=(#1sw.base)]
+      \__jon_tikz_render_square:nn {#1} {#3}
+    \end{tikzpicture}
+  }
+  \ExplSyntaxOff
+ 
+      </fr:embedded-tex-preamble><fr:embedded-tex-body>
+       \DiagramSquare {
+        nw = { { \mathopen {} \llbracket \Gamma . \varphi \rrbracket \mathclose {}} _{ M } },
+        ne = {M( \Gamma )},
+        sw = { { \mathopen {} \llbracket \Gamma . \varphi \rrbracket \mathclose {}} _{ N } },
+        se = {N( \Gamma )},
+        north/style = {&gt;-&gt;},
+        south/style = {&gt;-&gt;},
+        east = {h_{ \Gamma }},
+        west = g,
+      }
+    </fr:embedded-tex-body></fr:embedded-tex>
+    
+  
+    Here, <fr:tex>h_{ \Gamma }</fr:tex> is a shorthand for <fr:tex>h_{A_{1}}  \times   \cdots   \times  h_{A_{n}}</fr:tex>, where <fr:tex>A_{1}, \ldots ,A_{n}</fr:tex> are sorts appearing in the context <fr:tex>\Gamma</fr:tex>.
+  </fr:li>
+  <fr:li>
+    The homomorphism <fr:tex>h</fr:tex> is called an <fr:em><fr:strong>embedding</fr:strong></fr:em> (alternatively, <fr:tex>M</fr:tex> is a <fr:em><fr:strong>substructure</fr:strong></fr:em> of <fr:tex>N</fr:tex>) if the square above is a pullback for all <fr:link
+href="log-0003.xml"
+type="local"
+addr="log-0003">atomic formulas</fr:link>.
+  </fr:li>
+  <fr:li>
+    The homomorphism <fr:tex>h</fr:tex> is called an <fr:em><fr:strong>elementary embedding</fr:strong></fr:em> if the square above is a pullback for all first-order formulas.
+  </fr:li></fr:ul></fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="true"
+root="false"><fr:frontmatter><fr:anchor>268</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>log-0007</fr:addr><fr:route>log-0007.xml</fr:route><fr:title>Interpretation of <fr:link
+href="log-0002.xml"
+type="local"
+addr="log-0002">terms</fr:link></fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>18</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
+  Let <fr:tex>\mathcal { C }</fr:tex> be a category with sufficient structure and <fr:tex>\Gamma  =  x_{1} \colon B_{1} , \ldots , x_{m} \colon B_{m}</fr:tex> be a context over a signature <fr:tex>\Sigma</fr:tex>.
+  Given a <fr:link
+href="log-0006.xml"
+type="local"
+addr="log-0006"><fr:tex>\Sigma</fr:tex>-structure</fr:link> <fr:tex>M</fr:tex> in <fr:tex>\mathcal { C }</fr:tex>, the interpretation of a term-in-context <fr:tex>\Gamma .t</fr:tex> of sort <fr:tex>B</fr:tex> in <fr:tex>M</fr:tex> is a morphism <fr:tex>{ \mathopen {} \llbracket \Gamma .t \rrbracket \mathclose {}} _{ M } \colon M(B_{1}, \ldots ,B_{m}) \to MB</fr:tex> defined recursively on the structure of <fr:tex>t</fr:tex> as follow:
+</fr:p><fr:ul><fr:li><fr:tex>{ \mathopen {} \llbracket \Gamma .x_{i} \rrbracket \mathclose {}} _{ M }</fr:tex> is the <fr:tex>i</fr:tex>-th projection <fr:tex>\pi _{i} \colon M(B_{1}, \ldots ,B_{m}) \to MB_{i}</fr:tex>.
+  </fr:li>
+  <fr:li>
+    If <fr:tex>f \colon A_{1}, \ldots ,A_{n} \to B</fr:tex> is a function symbol and <fr:tex>t_{1}, \ldots ,t_{n}</fr:tex> are terms of appropriate sorts then <fr:tex>{ \mathopen {} \llbracket \Gamma .f(t_{1}, \ldots ,t_{n}) \rrbracket \mathclose {}} _{ M }</fr:tex> is the composite
+    <fr:tex
+display="block">       M(B_{1}, \ldots ,B_{m})  \xrightarrow { ( { \mathopen {} \llbracket \Gamma .t_{1} \rrbracket \mathclose {}} _{ M } , \ldots , { \mathopen {} \llbracket \Gamma .t_{n} \rrbracket \mathclose {}} _{ M } ) }  M(A_{1}, \ldots ,A_{n})  \xrightarrow { Mf }  MB     </fr:tex></fr:li></fr:ul></fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="true"
+root="false"><fr:frontmatter><fr:anchor>269</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>log-0008</fr:addr><fr:route>log-0008.xml</fr:route><fr:title>Interpretation of <fr:link
+href="log-0003.xml"
+type="local"
+addr="log-0003">formulas</fr:link></fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>18</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
+  Let <fr:tex>\mathcal { C }</fr:tex> be a category with sufficient structure and <fr:tex>\Gamma  =  x_{1} \colon B_{1} , \ldots , x_{m} \colon B_{m}</fr:tex> be a context over a signature <fr:tex>\Sigma</fr:tex>.
+  Given a <fr:link
+href="log-0006.xml"
+type="local"
+addr="log-0006"><fr:tex>\Sigma</fr:tex>-structure</fr:link> <fr:tex>M</fr:tex> in <fr:tex>\mathcal { C }</fr:tex>, the interpretation of a formula-in-context <fr:tex>\Gamma . \varphi</fr:tex> in <fr:tex>M</fr:tex> is a subobject <fr:tex>{ \mathopen {} \llbracket \Gamma . \varphi \rrbracket \mathclose {}} _{ M }   \rightarrowtail  M(B_{1}, \ldots ,B_{m})</fr:tex> defined recursively on the structure of <fr:tex>\varphi</fr:tex> as follow:
+</fr:p><fr:ul><fr:li>
+    If <fr:tex>R  \rightarrowtail  A_{1}, \ldots ,A_{n}</fr:tex> is a relation symbol and <fr:tex>t_{1}, \ldots ,t_{n}</fr:tex> are terms of appropriate sorts, then <fr:tex>{ \mathopen {} \llbracket \Gamma .R(t_{1}, \ldots ,t_{n}) \rrbracket \mathclose {}} _{ M }</fr:tex> is the following pullback:
+    
+    
+      
+      <fr:embedded-tex
+hash="0d7b3ab23385f3aaaea3a8e17a699096"><fr:embedded-tex-preamble>
+         
+   \RequirePackage {tikz}
+   \RequirePackage {amsmath}
+   \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
+
+   \definecolor {catccolor}{RGB}{255,244,138}
+   \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
+   \tikzstyle {catc}=[catccolor!60]
+   \tikzstyle {catd}=[orange!40]
+   \tikzstyle {cate}=[red!40]
+   \tikzstyle {catf}=[blue!10]
+   \tikzstyle {catg}=[green!25]
+
+
+   \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
+   \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
+
+   \NewDocumentCommand \CreateRect {D&lt;&gt;{} m m}{
+     \path 
+      coordinate (#1nw)
+      ++(#2,-#3) coordinate (#1se)
+      coordinate (#1sw) at (#1se -| #1nw)
+      coordinate (#1ne) at (#1nw -| #1se)
+    ;
+
+     \path [spath/save = #1north] (#1nw) to (#1ne);
+     \path [spath/save = #1west] (#1nw) to (#1sw);
+     \path [spath/save = #1east] (#1ne) to (#1se);
+     \path [spath/save = #1south] (#1sw) to (#1se);
+  }
+ 
+         
+   % appears to be necessary
+  \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd}
+  \usetikzlibrary{matrix,arrows}
+  \usetikzlibrary{backgrounds,fit,positioning,calc,shapes}
+  \usetikzlibrary{decorations.pathreplacing}
+  \usetikzlibrary{decorations.pathmorphing}
+  \usetikzlibrary{decorations.markings}
+
+  % basic settings
+  \tikzset{
+    diagram/.style = {
+      on grid,
+      node distance=2cm,
+      commutative diagrams/every diagram,
+      line width = .5pt,
+      every node/.append style = {
+        commutative diagrams/every cell,
+      },
+    },
+    morphism/.style = {
+      auto=left,
+      node font=\scriptsize,
+    },
+    phantom/.style = {
+      commutative diagrams/phantom,
+      node font=\scriptsize,
+      sloped,
+    },
+    between/.style args = {#1 and #2}{
+      at = ($(#1)!0.5!(#2)$)
+    },
+    desc/.style = {anchor=center,fill=white,inner sep=3pt},
+    offset/.style args = {#1} {commutative diagrams/shift right={#1}},
+    cross over/.style = {
+      commutative diagrams/crossing over
+    },
+    adjoint/.style = {
+      phantom,
+      every to/.append style = {
+        edge node = {node [sloped,allow upside down,auto=false] {$\dashv$}}
+      }
+    },
+  }
+
+  % pullback and pushout
+  \tikzset{
+    pullback/.style = {
+      append after command = {
+        \pgfextra{
+          \draw ($(\tikzlastnode) + (.2cm,-.5cm)$) -- ++(0.3cm,0) -- ++(0,0.3cm);
+        }
+      }
+    },
+    pushout/.style = {
+      append after command={
+        \pgfextra{
+          \draw ($(\tikzlastnode) + (-.2cm,.5cm)$) -- ++(-0.3cm,0) -- ++(0,-0.3cm);
+        }
+      }
+    },
+  }
+
+  % arrow styles
+  \tikzset{
+    exists/.style = {
+      densely dashed
+    },
+    embedding/.style = {
+      {right hook}-&gt;
+    },
+    cover/.style = {
+      -{Triangle[open]}
+    },
+  }
+
+  \newlength{\dontworryaboutit} % no idea what it does
+
+  \tikzset{
+    inline diagram/.style = {
+      commutative diagrams/every diagram,
+      commutative diagrams/cramped,
+      line width = .5pt,
+      every node/.append style = {
+        commutative diagrams/every cell,
+        anchor = base,
+        inner sep = 0pt
+      },
+      every path/.append style = {
+        outer xsep = 2pt
+      }
+    }
+  }
+  
+  % macros for drawing commutative squares
+  % adapted from Jon Sterling's macros (https://git.sr.ht/~jonsterling/article-template/tree/main/item/local-tikz.sty)
+  \tikzset{
+    square/nw/.style = {},
+    square/ne/.style = {},
+    square/se/.style = {},
+    square/sw/.style = {},
+    square/north/.style = {-&gt;},
+    square/south/.style = {-&gt;},
+    square/west/.style = {-&gt;},
+    square/east/.style = {-&gt;},
+    square/north/node/.style = {above},
+    square/south/node/.style = {below},
+    square/west/node/.style = {left},
+    square/east/node/.style = {right},
+  }
+
+  \ExplSyntaxOn
+  \keys_define:nn { jon-tikz/diagram } {
+    nw .tl_set:N = \l_jon_tikz_diagram_nw,
+    sw .tl_set:N = \l_jon_tikz_diagram_sw,
+    ne .tl_set:N = \l_jon_tikz_diagram_ne,
+    se .tl_set:N = \l_jon_tikz_diagram_se,
+
+    width .tl_set:N = \l_jon_tikz_diagram_width,
+    height .tl_set:N = \l_jon_tikz_diagram_height,
+
+    north .tl_set:N = \l_jon_tikz_diagram_north,
+    south .tl_set:N = \l_jon_tikz_diagram_south,
+    west .tl_set:N = \l_jon_tikz_diagram_west,
+    east .tl_set:N = \l_jon_tikz_diagram_east,
+
+    nw/style .code:n = {\tikzset{square/nw/.style = {#1}}},
+    sw/style .code:n = {\tikzset{square/sw/.style = {#1}}},
+    ne/style .code:n = {\tikzset{square/ne/.style = {#1}}},
+    se/style .code:n = {\tikzset{square/se/.style = {#1}}},
+
+    north/style .code:n = {\tikzset{square/north/.style = {#1}}},
+    north/node/style .code:n = {\tikzset{square/north/node/.style = {#1}}},
+    south/style .code:n = {\tikzset{square/south/.style = {#1}}},
+    south/node/style .code:n = {\tikzset{square/south/node/.style = {#1}}},
+    west/style .code:n = {\tikzset{square/west/.style = {#1}}},
+    west/node/style .code:n = {\tikzset{square/west/node/.style = {#1}}},
+    east/style .code:n = {\tikzset{square/east/.style = {#1}}},
+    east/node/style .code:n = {\tikzset{square/east/node/.style = {#1}}},
+
+    draft .meta:n = {
+      nw = {nw},
+      sw = {sw},
+      se = {se},
+      ne = {ne},
+      north = {north},
+      south = {south},
+      west = {west},
+      east = {east},
+    }
+  }
+
+  \tl_set:Nn \l_jon_tikz_diagram_width { 2cm }
+  \tl_set:Nn \l_jon_tikz_diagram_height { 2cm }
+
+
+  \cs_new:Nn \__jon_tikz_render_square:nn {
+    \group_begin:
+    \keys_set:nn {jon-tikz/diagram} {#2} {
+      \node (#1nw) [square/nw] {$\l_jon_tikz_diagram_nw$};
+      \node (#1sw) [below = \l_jon_tikz_diagram_height~of~#1nw,square/sw] {$\l_jon_tikz_diagram_sw$};
+      \draw[morphism,square/west] (#1nw) to node [square/west/node] {$\l_jon_tikz_diagram_west$} (#1sw);
+
+      \node (#1ne) [right = \l_jon_tikz_diagram_width~of~#1nw,square/ne] {$\l_jon_tikz_diagram_ne$};
+      \node (#1se) [below = \l_jon_tikz_diagram_height~of~#1ne,square/se] {$\l_jon_tikz_diagram_se$};
+      \draw[morphism,square/north] (#1nw) to node [square/north/node] {$\l_jon_tikz_diagram_north$} (#1ne);
+      \draw[morphism,square/east] (#1ne) to node [square/east/node] {$\l_jon_tikz_diagram_east$} (#1se);
+      \draw[morphism,square/south] (#1sw) to node [square/south/node] {$\l_jon_tikz_diagram_south$} (#1se);
+    }
+    \group_end:
+  }
+
+  % the optional argument allows one to specify a prefix to positions
+  \NewDocumentCommand\SpliceDiagramSquare{O{}m}{
+    \__jon_tikz_render_square:nn {#1} {#2}
+  }
+
+  \NewDocumentCommand\DiagramSquare{O{}O{}m}{
+    \begin{tikzpicture}[diagram,#2,baseline=(#1sw.base)]
+      \__jon_tikz_render_square:nn {#1} {#3}
+    \end{tikzpicture}
+  }
+  \ExplSyntaxOff
+ 
+      </fr:embedded-tex-preamble><fr:embedded-tex-body>
+       \DiagramSquare {
+        width = 6cm,
+        nw = { { \mathopen {} \llbracket \Gamma .R(t_{1}, \ldots ,t_{n}) \rrbracket \mathclose {}} _{ M } },
+        nw/style = {pullback},
+        ne = MR,
+        sw = {M(B_{1}, \ldots ,B_{m})},
+        se = {M(A_{1}, \ldots ,A_{n})},
+        west/style = {&gt;-&gt;},
+        east/style = {&gt;-&gt;},
+        south = {( { \mathopen {} \llbracket \Gamma .t_{1} \rrbracket \mathclose {}} _{ M } , \ldots , { \mathopen {} \llbracket \Gamma .t_{n} \rrbracket \mathclose {}} _{ M } )},
+      }
+    </fr:embedded-tex-body></fr:embedded-tex></fr:li>
+  <fr:li>
+    If <fr:tex>s</fr:tex> and <fr:tex>t</fr:tex> are terms of the same sort <fr:tex>A</fr:tex>, then <fr:tex>{ \mathopen {} \llbracket \Gamma .s=t \rrbracket \mathclose {}} _{ M }</fr:tex> is the following equalizer:
+    
+    
+      
+      <fr:embedded-tex
+hash="bf2ee2e0d7bc27b4e126e183705b2e41"><fr:embedded-tex-preamble>
+         
+   \RequirePackage {tikz}
+   \RequirePackage {amsmath}
+   \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
+
+   \definecolor {catccolor}{RGB}{255,244,138}
+   \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
+   \tikzstyle {catc}=[catccolor!60]
+   \tikzstyle {catd}=[orange!40]
+   \tikzstyle {cate}=[red!40]
+   \tikzstyle {catf}=[blue!10]
+   \tikzstyle {catg}=[green!25]
+
+
+   \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
+   \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
+
+   \NewDocumentCommand \CreateRect {D&lt;&gt;{} m m}{
+     \path 
+      coordinate (#1nw)
+      ++(#2,-#3) coordinate (#1se)
+      coordinate (#1sw) at (#1se -| #1nw)
+      coordinate (#1ne) at (#1nw -| #1se)
+    ;
+
+     \path [spath/save = #1north] (#1nw) to (#1ne);
+     \path [spath/save = #1west] (#1nw) to (#1sw);
+     \path [spath/save = #1east] (#1ne) to (#1se);
+     \path [spath/save = #1south] (#1sw) to (#1se);
+  }
+ 
+         
+   % appears to be necessary
+  \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd}
+  \usetikzlibrary{matrix,arrows}
+  \usetikzlibrary{backgrounds,fit,positioning,calc,shapes}
+  \usetikzlibrary{decorations.pathreplacing}
+  \usetikzlibrary{decorations.pathmorphing}
+  \usetikzlibrary{decorations.markings}
+
+  % basic settings
+  \tikzset{
+    diagram/.style = {
+      on grid,
+      node distance=2cm,
+      commutative diagrams/every diagram,
+      line width = .5pt,
+      every node/.append style = {
+        commutative diagrams/every cell,
+      },
+    },
+    morphism/.style = {
+      auto=left,
+      node font=\scriptsize,
+    },
+    phantom/.style = {
+      commutative diagrams/phantom,
+      node font=\scriptsize,
+      sloped,
+    },
+    between/.style args = {#1 and #2}{
+      at = ($(#1)!0.5!(#2)$)
+    },
+    desc/.style = {anchor=center,fill=white,inner sep=3pt},
+    offset/.style args = {#1} {commutative diagrams/shift right={#1}},
+    cross over/.style = {
+      commutative diagrams/crossing over
+    },
+    adjoint/.style = {
+      phantom,
+      every to/.append style = {
+        edge node = {node [sloped,allow upside down,auto=false] {$\dashv$}}
+      }
+    },
+  }
+
+  % pullback and pushout
+  \tikzset{
+    pullback/.style = {
+      append after command = {
+        \pgfextra{
+          \draw ($(\tikzlastnode) + (.2cm,-.5cm)$) -- ++(0.3cm,0) -- ++(0,0.3cm);
+        }
+      }
+    },
+    pushout/.style = {
+      append after command={
+        \pgfextra{
+          \draw ($(\tikzlastnode) + (-.2cm,.5cm)$) -- ++(-0.3cm,0) -- ++(0,-0.3cm);
+        }
+      }
+    },
+  }
+
+  % arrow styles
+  \tikzset{
+    exists/.style = {
+      densely dashed
+    },
+    embedding/.style = {
+      {right hook}-&gt;
+    },
+    cover/.style = {
+      -{Triangle[open]}
+    },
+  }
+
+  \newlength{\dontworryaboutit} % no idea what it does
+
+  \tikzset{
+    inline diagram/.style = {
+      commutative diagrams/every diagram,
+      commutative diagrams/cramped,
+      line width = .5pt,
+      every node/.append style = {
+        commutative diagrams/every cell,
+        anchor = base,
+        inner sep = 0pt
+      },
+      every path/.append style = {
+        outer xsep = 2pt
+      }
+    }
+  }
+  
+  % macros for drawing commutative squares
+  % adapted from Jon Sterling's macros (https://git.sr.ht/~jonsterling/article-template/tree/main/item/local-tikz.sty)
+  \tikzset{
+    square/nw/.style = {},
+    square/ne/.style = {},
+    square/se/.style = {},
+    square/sw/.style = {},
+    square/north/.style = {-&gt;},
+    square/south/.style = {-&gt;},
+    square/west/.style = {-&gt;},
+    square/east/.style = {-&gt;},
+    square/north/node/.style = {above},
+    square/south/node/.style = {below},
+    square/west/node/.style = {left},
+    square/east/node/.style = {right},
+  }
+
+  \ExplSyntaxOn
+  \keys_define:nn { jon-tikz/diagram } {
+    nw .tl_set:N = \l_jon_tikz_diagram_nw,
+    sw .tl_set:N = \l_jon_tikz_diagram_sw,
+    ne .tl_set:N = \l_jon_tikz_diagram_ne,
+    se .tl_set:N = \l_jon_tikz_diagram_se,
+
+    width .tl_set:N = \l_jon_tikz_diagram_width,
+    height .tl_set:N = \l_jon_tikz_diagram_height,
+
+    north .tl_set:N = \l_jon_tikz_diagram_north,
+    south .tl_set:N = \l_jon_tikz_diagram_south,
+    west .tl_set:N = \l_jon_tikz_diagram_west,
+    east .tl_set:N = \l_jon_tikz_diagram_east,
+
+    nw/style .code:n = {\tikzset{square/nw/.style = {#1}}},
+    sw/style .code:n = {\tikzset{square/sw/.style = {#1}}},
+    ne/style .code:n = {\tikzset{square/ne/.style = {#1}}},
+    se/style .code:n = {\tikzset{square/se/.style = {#1}}},
+
+    north/style .code:n = {\tikzset{square/north/.style = {#1}}},
+    north/node/style .code:n = {\tikzset{square/north/node/.style = {#1}}},
+    south/style .code:n = {\tikzset{square/south/.style = {#1}}},
+    south/node/style .code:n = {\tikzset{square/south/node/.style = {#1}}},
+    west/style .code:n = {\tikzset{square/west/.style = {#1}}},
+    west/node/style .code:n = {\tikzset{square/west/node/.style = {#1}}},
+    east/style .code:n = {\tikzset{square/east/.style = {#1}}},
+    east/node/style .code:n = {\tikzset{square/east/node/.style = {#1}}},
+
+    draft .meta:n = {
+      nw = {nw},
+      sw = {sw},
+      se = {se},
+      ne = {ne},
+      north = {north},
+      south = {south},
+      west = {west},
+      east = {east},
+    }
+  }
+
+  \tl_set:Nn \l_jon_tikz_diagram_width { 2cm }
+  \tl_set:Nn \l_jon_tikz_diagram_height { 2cm }
+
+
+  \cs_new:Nn \__jon_tikz_render_square:nn {
+    \group_begin:
+    \keys_set:nn {jon-tikz/diagram} {#2} {
+      \node (#1nw) [square/nw] {$\l_jon_tikz_diagram_nw$};
+      \node (#1sw) [below = \l_jon_tikz_diagram_height~of~#1nw,square/sw] {$\l_jon_tikz_diagram_sw$};
+      \draw[morphism,square/west] (#1nw) to node [square/west/node] {$\l_jon_tikz_diagram_west$} (#1sw);
+
+      \node (#1ne) [right = \l_jon_tikz_diagram_width~of~#1nw,square/ne] {$\l_jon_tikz_diagram_ne$};
+      \node (#1se) [below = \l_jon_tikz_diagram_height~of~#1ne,square/se] {$\l_jon_tikz_diagram_se$};
+      \draw[morphism,square/north] (#1nw) to node [square/north/node] {$\l_jon_tikz_diagram_north$} (#1ne);
+      \draw[morphism,square/east] (#1ne) to node [square/east/node] {$\l_jon_tikz_diagram_east$} (#1se);
+      \draw[morphism,square/south] (#1sw) to node [square/south/node] {$\l_jon_tikz_diagram_south$} (#1se);
+    }
+    \group_end:
+  }
+
+  % the optional argument allows one to specify a prefix to positions
+  \NewDocumentCommand\SpliceDiagramSquare{O{}m}{
+    \__jon_tikz_render_square:nn {#1} {#2}
+  }
+
+  \NewDocumentCommand\DiagramSquare{O{}O{}m}{
+    \begin{tikzpicture}[diagram,#2,baseline=(#1sw.base)]
+      \__jon_tikz_render_square:nn {#1} {#3}
+    \end{tikzpicture}
+  }
+  \ExplSyntaxOff
+ 
+      </fr:embedded-tex-preamble><fr:embedded-tex-body>
+       \begin {tikzpicture}[diagram,node distance=3cm]
+         \node  (1) {$M(B_{1}, \ldots ,B_{m})$};
+         \node  [right = of 1] (2) {$MA$};
+         \node  [left = of 1] (e) {$ { \mathopen {} \llbracket \Gamma .s=t \rrbracket \mathclose {}} _{ M } $};
+         \draw  [&gt;-&gt;,morphism] (e) to (1);
+         \draw  [-&gt;,morphism,offset=-1.5] (1) to node {$ { \mathopen {} \llbracket \Gamma .s \rrbracket \mathclose {}} _{ M } $} (2);
+         \draw  [-&gt;,morphism,offset=1.5] (1) to node[swap] {$ { \mathopen {} \llbracket \Gamma .t \rrbracket \mathclose {}} _{ M } $} (2);
+       \end {tikzpicture}
+    </fr:embedded-tex-body></fr:embedded-tex></fr:li>
+  <fr:li><fr:tex>{ \mathopen {} \llbracket \Gamma . \top \rrbracket \mathclose {}} _{ M }</fr:tex> is the terminal object of <fr:tex>\mathsf { Sub } (M(B_{1}, \ldots ,B_{m}))</fr:tex>.
+  </fr:li>
+  <fr:li><fr:tex>{ \mathopen {} \llbracket \Gamma . \varphi   \wedge   \psi \rrbracket \mathclose {}} _{ M }</fr:tex> is the intersection of <fr:tex>{ \mathopen {} \llbracket \Gamma . \varphi \rrbracket \mathclose {}} _{ M }</fr:tex> and <fr:tex>{ \mathopen {} \llbracket \Gamma . \psi \rrbracket \mathclose {}} _{ M }</fr:tex> in <fr:tex>\mathsf { Sub } (M(B_{1}, \ldots ,B_{m}))</fr:tex>.
+  </fr:li>
+  <fr:li><fr:tex>{ \mathopen {} \llbracket \Gamma . \varphi   \vee   \psi \rrbracket \mathclose {}} _{ M }</fr:tex> is the union of <fr:tex>{ \mathopen {} \llbracket \Gamma . \varphi \rrbracket \mathclose {}} _{ M }</fr:tex> and <fr:tex>{ \mathopen {} \llbracket \Gamma . \psi \rrbracket \mathclose {}} _{ M }</fr:tex> in <fr:tex>\mathsf { Sub } (M(B_{1}, \ldots ,B_{m}))</fr:tex>.
+  </fr:li>
+  <fr:li><fr:tex>{ \mathopen {} \llbracket \Gamma . \varphi   \Rightarrow   \psi \rrbracket \mathclose {}} _{ M }</fr:tex> is the <fr:link
+href="ct-001C.xml"
+type="local"
+addr="ct-001C">Heyting implication</fr:link> <fr:tex>{ \mathopen {} \llbracket \Gamma . \varphi \rrbracket \mathclose {}} _{ M }   \Rightarrow   { \mathopen {} \llbracket \Gamma . \psi \rrbracket \mathclose {}} _{ M }</fr:tex> in <fr:tex>\mathsf { Sub } (M(B_{1}, \ldots ,B_{m}))</fr:tex>. 
+  </fr:li>
+  <fr:li><fr:tex>{ \mathopen {} \llbracket \Gamma . \lnot \varphi \rrbracket \mathclose {}} _{ M }</fr:tex> is the Heyting negation of <fr:tex>{ \mathopen {} \llbracket \Gamma . \varphi \rrbracket \mathclose {}} _{ M }</fr:tex> in <fr:tex>\mathsf { Sub } (M(B_{1}, \ldots ,B_{m}))</fr:tex>.
+  </fr:li>
+  <fr:li><fr:tex>{ \mathopen {} \llbracket \Gamma . \exists x \colon A . \mkern5mu \varphi \rrbracket \mathclose {}} _{ M }</fr:tex> is the <fr:link
+href="ct-000K.xml"
+type="local"
+addr="ct-000K">image</fr:link> of the following composite:
+    <fr:tex
+display="block">        { \mathopen {} \llbracket \Gamma , x \colon A . \varphi \rrbracket \mathclose {}} _{ M }   \rightarrowtail  M(B_{1}, \ldots ,B_{m},A)  \xrightarrow { \pi }  M(B_{1}, \ldots ,B_{m})     </fr:tex>
+    where <fr:tex>\pi</fr:tex> is the projection of the first <fr:tex>m</fr:tex> factors.
+  </fr:li>
+  <fr:li><fr:tex>{ \mathopen {} \llbracket \Gamma . \forall x \colon A . \mkern5mu \varphi \rrbracket \mathclose {}} _{ M }</fr:tex> is <fr:tex>\forall _{ \pi }( { \mathopen {} \llbracket \Gamma , x \colon A . \varphi \rrbracket \mathclose {}} _{ M } )</fr:tex>, where <fr:tex>\forall _{ \pi }</fr:tex> is the right adjoint associated with a <fr:link
+href="ct-0019.xml"
+type="local"
+addr="ct-0019">Heyting category</fr:link> and <fr:tex>\pi \colon M(B_{1}, \ldots ,B_{m},A) \to M(B_{1}, \ldots ,B_{m})</fr:tex> is the projection of the first <fr:tex>m</fr:tex> factors.
+  </fr:li>
+  <fr:li><fr:tex>{ \mathopen {} \llbracket \Gamma . \bigvee _{i  \in  I} \varphi _{i} \rrbracket \mathclose {}} _{ M }</fr:tex> is the arbitrary union of each <fr:tex>{ \mathopen {} \llbracket \Gamma . \varphi _{i} \rrbracket \mathclose {}} _{ M }</fr:tex> in <fr:tex>\mathsf { Sub } (M(B_{1}, \ldots ,B_{m}))</fr:tex>.
+  </fr:li>
+  <fr:li><fr:tex>{ \mathopen {} \llbracket \Gamma . \bigwedge _{i  \in  I} \varphi _{i} \rrbracket \mathclose {}} _{ M }</fr:tex> is the arbitrary intersection of each <fr:tex>{ \mathopen {} \llbracket \Gamma . \varphi _{i} \rrbracket \mathclose {}} _{ M }</fr:tex> in <fr:tex>\mathsf { Sub } (M(B_{1}, \ldots ,B_{m}))</fr:tex>.
+  </fr:li></fr:ul></fr:mainmatter></fr:tree><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="true"
+root="false"><fr:frontmatter><fr:anchor>270</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>log-000B</fr:addr><fr:route>log-000B.xml</fr:route><fr:title>Model</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>18</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
+  Let <fr:tex>M</fr:tex> be a <fr:link
+href="log-0006.xml"
+type="local"
+addr="log-0006"><fr:tex>\Sigma</fr:tex>-structure</fr:link> in a category <fr:tex>\mathcal { C }</fr:tex>.
+</fr:p><fr:ul><fr:li>
+    Let <fr:tex>\sigma  =  \Gamma | \varphi   \vdash   \psi</fr:tex> be a <fr:link
+href="log-0005.xml"
+type="local"
+addr="log-0005">sequent</fr:link> interpretable in <fr:tex>\mathcal { C }</fr:tex>.
+    <fr:tex>\sigma</fr:tex> is <fr:em><fr:strong>satisfied in</fr:strong></fr:em> <fr:tex>M</fr:tex>, denoted as <fr:tex>M  \vDash   \sigma</fr:tex>, if <fr:tex>{ \mathopen {} \llbracket \Gamma . \varphi \rrbracket \mathclose {}} _{ M }   \leq   { \mathopen {} \llbracket \Gamma . \psi \rrbracket \mathclose {}} _{ M }</fr:tex> in the preorder <fr:tex>\mathsf { Sub } (M( \Gamma ))</fr:tex>.
+  </fr:li>
+  <fr:li>
+    Fix an <fr:link
+href="log-000A.xml"
+type="local"
+addr="log-000A">axiomatization</fr:link> of a theory <fr:tex>\mathscr { T }</fr:tex>.
+    <fr:tex>M</fr:tex> is a <fr:em><fr:strong>model</fr:strong></fr:em> of <fr:tex>\mathscr { T }</fr:tex>, denoted as <fr:tex>M  \vDash   \mathscr { T }</fr:tex>, if every axiom of (the given axiomatization of) <fr:tex>\mathscr { T }</fr:tex> is satisfied.
+  </fr:li></fr:ul><fr:p>
+  The category <fr:tex>\mathscr { T } \text {-} \mathsf {Mod} ( \mathcal { C } )</fr:tex> is the full subcategory of <fr:tex>\Sigma \text {-} \mathsf {Str} ( \mathcal { C } )</fr:tex> spanned by models of <fr:tex>\mathscr { T }</fr:tex>, and the category <fr:tex>\mathscr { T } \text {-} \mathsf {Mod} ( \mathcal { C } )_{e}</fr:tex> has the same objects as <fr:tex>\mathscr { T } \text {-} \mathsf {Mod} ( \mathcal { C } )</fr:tex> except morphisms are <fr:link
+href="log-0009.xml"
+type="local"
+addr="log-0009">elementary morphisms</fr:link>.
+</fr:p></fr:mainmatter></fr:tree></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>
