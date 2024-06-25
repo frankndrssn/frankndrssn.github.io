@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="true"
+expanded="true"
+root="false"><fr:frontmatter><fr:anchor>252</fr:anchor><fr:taxon>Construction</fr:taxon><fr:addr>ct-001I</fr:addr><fr:route>ct-001I.xml</fr:route><fr:title>Grothendieck construction</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>25</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
+  Given a <fr:link
+href="ct-001J.xml"
+type="local"
+addr="ct-001J">lax functor</fr:link> <fr:tex>(F,F^{2},F^{0})</fr:tex>, its <fr:em><fr:strong>Grothendieck construction</fr:strong></fr:em> <fr:tex>\mathsf {Elts}( F )</fr:tex> is the category defined as follows.
+</fr:p>
+  <html:table
+xmlns:html="http://www.w3.org/1999/xhtml">
+  
+  <html:tr>
+    
+  <html:th>Objects</html:th>
+
+    
+  <html:th>Morphisms</html:th>
+
+  </html:tr>
+
+  
+  <html:tr>
+    
+  <html:td>
+      An object is a pair <fr:tex>(A,X)</fr:tex> where <fr:tex>A</fr:tex> is an object in <fr:tex>\mathcal { C }</fr:tex> and <fr:tex>X</fr:tex> is an object in <fr:tex>FA</fr:tex>.
+    </html:td>
+
+    
+  <html:td>
+      A morphism <fr:tex>(A,X)  \to  (B,Y)</fr:tex> consists of a morphism <fr:tex>f \colon A \to B</fr:tex> in <fr:tex>\mathcal { C }</fr:tex> and a morphism <fr:tex>p \colon X \to F(f)Y</fr:tex> in <fr:tex>FA</fr:tex>.
+    </html:td>
+
+  </html:tr>
+
+  
+  <html:tr>
+    
+  <html:th>Identities</html:th>
+
+    
+  <html:th>Composition</html:th>
+
+  </html:tr>
+
+  
+  <html:tr>
+    
+  <html:td>
+      The identity on each object <fr:tex>(A,X)</fr:tex> consists of the identity morphism <fr:tex>\mathsf {id} _{ A } \colon A \to A</fr:tex> and the morphism <fr:tex>(F^{0}_{A})_{X} \colon X \to F( \mathsf {id} _{ A } )X</fr:tex>.
+    </html:td>
+
+    
+  <html:td>
+      Given a pair of composable morphisms <fr:tex>(f,p) \colon (A,X) \to (B,Y)</fr:tex> and <fr:tex>(g,q) \colon (B,Y) \to (C,Z)</fr:tex>, the composite <fr:tex>(g,q)(f,p) \colon (A,X) \to (C,Z)</fr:tex> consists of the composite <fr:tex>gf \colon A \to C</fr:tex> and the composite
+      <fr:tex
+display="block">         X  \xrightarrow { p }  F(f)Y  \xrightarrow { F(f)q }  F(f)F(g)Z  \xrightarrow { (F^{2}_{f,g})_{Z} }  F(gf)Z       </fr:tex>
+    </html:td>
+
+  </html:tr>
+
+</html:table>
+</fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context></fr:context><fr:related><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="true"
+root="false"><fr:frontmatter><fr:anchor>238</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>ct-001J</fr:addr><fr:route>ct-001J.xml</fr:route><fr:title>Lax functor</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>25</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:link
+href="todo.xml"
+type="local"
+addr="todo">TODO</fr:link><fr:p>
+  Let <fr:tex>( \mathcal { C } ,1,c,a,l,r)</fr:tex> and <fr:tex>( \mathcal { D } ,1',c',a',l',r')</fr:tex> be <fr:link
+href="todo.xml"
+type="local"
+addr="todo">bicategories</fr:link>.
+  A <fr:em><fr:strong>lax functor</fr:strong></fr:em> <fr:tex>(F,F^{2},F^{0}) \colon \mathcal { C } \to \mathcal { D }</fr:tex> consists of the following data:
+</fr:p></fr:mainmatter></fr:tree></fr:related><fr:backlinks></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>
