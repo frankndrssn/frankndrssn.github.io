@@ -7,7 +7,7 @@ numbered="true"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1078</fr:anchor><fr:addr>todo</fr:addr><fr:route>todo.xml</fr:route><fr:title>TODO</fr:title><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>1108</fr:anchor><fr:addr>todo</fr:addr><fr:route>todo.xml</fr:route><fr:title>TODO</fr:title><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter></fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context></fr:context><fr:related></fr:related><fr:backlinks><fr:tree
@@ -17,23 +17,78 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1070</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>ct-001J</fr:addr><fr:route>ct-001J.xml</fr:route><fr:title>Lax functor</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>25</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:link
+root="false"><fr:frontmatter><fr:anchor>1100</fr:anchor><fr:taxon>Construction</fr:taxon><fr:addr>ct-001I</fr:addr><fr:route>ct-001I.xml</fr:route><fr:title>Grothendieck construction</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>25</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:link
 href="todo.xml"
 type="local"
 addr="todo">TODO</fr:link><fr:p>
-  Let <fr:tex>( \mathcal { C } ,1,c,a,l,r)</fr:tex> and <fr:tex>( \mathcal { D } ,1',c',a',l',r')</fr:tex> be <fr:link
-href="todo.xml"
+  Fix notation and layout.
+</fr:p><fr:p>
+  Given a <fr:link
+href="ct-001J.xml"
 type="local"
-addr="todo">bicategories</fr:link>.
-  A <fr:em><fr:strong>lax functor</fr:strong></fr:em> <fr:tex>(F,F^{2},F^{0}) \colon \mathcal { C } \to \mathcal { D }</fr:tex> consists of the following data:
-</fr:p></fr:mainmatter></fr:tree><fr:tree
+addr="ct-001J">lax functor</fr:link> <fr:tex>(F,F^{2},F^{0})</fr:tex>, its <fr:em><fr:strong>Grothendieck construction</fr:strong></fr:em> <fr:tex>\mathsf {Elts}( F )</fr:tex> is the category defined as follows.
+</fr:p>
+  <html:table
+xmlns:html="http://www.w3.org/1999/xhtml">
+  
+  <html:tr>
+    
+  <html:th>Objects</html:th>
+
+    
+  <html:th>Morphisms</html:th>
+
+  </html:tr>
+
+  
+  <html:tr>
+    
+  <html:td>
+      An object is a pair <fr:tex>(A,X)</fr:tex> where <fr:tex>A</fr:tex> is an object in <fr:tex>\mathcal { C }</fr:tex> and <fr:tex>X</fr:tex> is an object in <fr:tex>FA</fr:tex>.
+    </html:td>
+
+    
+  <html:td>
+      A morphism <fr:tex>(A,X)  \to  (B,Y)</fr:tex> consists of a morphism <fr:tex>f \colon A \to B</fr:tex> in <fr:tex>\mathcal { C }</fr:tex> and a morphism <fr:tex>p \colon X \to F(f)Y</fr:tex> in <fr:tex>FA</fr:tex>.
+    </html:td>
+
+  </html:tr>
+
+  
+  <html:tr>
+    
+  <html:th>Identities</html:th>
+
+    
+  <html:th>Composition</html:th>
+
+  </html:tr>
+
+  
+  <html:tr>
+    
+  <html:td>
+      The identity on each object <fr:tex>(A,X)</fr:tex> consists of the identity morphism <fr:tex>\mathsf {id} _{ A } \colon A \to A</fr:tex> and the morphism <fr:tex>(F^{0}_{A})_{X} \colon X \to F( \mathsf {id} _{ A } )X</fr:tex>.
+    </html:td>
+
+    
+  <html:td>
+      Given a pair of composable morphisms <fr:tex>(f,p) \colon (A,X) \to (B,Y)</fr:tex> and <fr:tex>(g,q) \colon (B,Y) \to (C,Z)</fr:tex>, the composite <fr:tex>(g,q)(f,p) \colon (A,X) \to (C,Z)</fr:tex> consists of the composite <fr:tex>gf \colon A \to C</fr:tex> and the composite
+      <fr:tex
+display="block">         X  \xrightarrow { p }  F(f)Y  \xrightarrow { F(f)q }  F(f)F(g)Z  \xrightarrow { (F^{2}_{f,g})_{Z} }  F(gf)Z       </fr:tex>
+    </html:td>
+
+  </html:tr>
+
+</html:table>
+</fr:mainmatter></fr:tree><fr:tree
 xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1071</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-000O</fr:addr><fr:route>topo-000O.xml</fr:route><fr:title>Quasitopos</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>13</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
+root="false"><fr:frontmatter><fr:anchor>1101</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-000O</fr:addr><fr:route>topo-000O.xml</fr:route><fr:title>Quasitopos</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>13</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
   A <fr:em><fr:strong>quasitopos</fr:strong></fr:em> is a locally cartesian closed, cocartesian category equipped with a weak subobject classifier.
 </fr:p><fr:link
 href="todo.xml"
@@ -45,7 +100,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1072</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>topo-000M</fr:addr><fr:route>topo-000M.xml</fr:route><fr:title>Pushouts of monomorphisms in a <fr:link
+root="false"><fr:frontmatter><fr:anchor>1102</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>topo-000M</fr:addr><fr:route>topo-000M.xml</fr:route><fr:title>Pushouts of monomorphisms in a <fr:link
 href="topo-000K.xml"
 type="local"
 addr="topo-000K">pretopos</fr:link></fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>11</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
@@ -299,7 +354,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>440</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>11</fr:day></fr:date><fr:parent>topo-000M</fr:parent></fr:frontmatter><fr:mainmatter>
+root="false"><fr:frontmatter><fr:anchor>319</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>11</fr:day></fr:date><fr:parent>topo-000M</fr:parent></fr:frontmatter><fr:mainmatter>
   <fr:p>
     We construct <fr:tex>D</fr:tex> by quotienting the <fr:link
 href="ct-0013.xml"
@@ -326,7 +381,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1073</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>topo-000L</fr:addr><fr:route>topo-000L.xml</fr:route><fr:title><fr:link
+root="false"><fr:frontmatter><fr:anchor>1103</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>topo-000L</fr:addr><fr:route>topo-000L.xml</fr:route><fr:title><fr:link
 href="topo-0001.xml"
 type="local"
 addr="topo-0001">Topoi</fr:link> are <fr:link
@@ -342,7 +397,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>472</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>10</fr:day></fr:date><fr:parent>topo-000L</fr:parent></fr:frontmatter><fr:mainmatter>
+root="false"><fr:frontmatter><fr:anchor>323</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>10</fr:day></fr:date><fr:parent>topo-000L</fr:parent></fr:frontmatter><fr:mainmatter>
   <fr:link
 href="todo.xml"
 type="local"
@@ -356,7 +411,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1074</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>mnc-000B</fr:addr><fr:route>mnc-000B.xml</fr:route><fr:title>Quantale</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>5</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
+root="false"><fr:frontmatter><fr:anchor>1104</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>mnc-000B</fr:addr><fr:route>mnc-000B.xml</fr:route><fr:title>Quantale</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>5</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
   A <fr:em><fr:strong>quantale</fr:strong></fr:em> is a <fr:link
 href="todo.xml"
 type="local"
@@ -371,7 +426,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1075</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>ct-0008</fr:addr><fr:route>ct-0008.xml</fr:route><fr:title>Pasting lemma of pullbacks</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date></fr:frontmatter><fr:mainmatter>
+root="false"><fr:frontmatter><fr:anchor>1105</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>ct-0008</fr:addr><fr:route>ct-0008.xml</fr:route><fr:title>Pasting lemma of pullbacks</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date></fr:frontmatter><fr:mainmatter>
     
       
       <fr:tree
@@ -381,7 +436,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>407</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:parent>ct-0008</fr:parent></fr:frontmatter><fr:mainmatter>
+root="false"><fr:frontmatter><fr:anchor>423</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:parent>ct-0008</fr:parent></fr:frontmatter><fr:mainmatter>
   <fr:link
 href="todo.xml"
 type="local"
@@ -395,7 +450,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1076</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>topo-000G</fr:addr><fr:route>topo-000G.xml</fr:route><fr:title><fr:link
+root="false"><fr:frontmatter><fr:anchor>1106</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>topo-000G</fr:addr><fr:route>topo-000G.xml</fr:route><fr:title><fr:link
 href="topo-000E.xml"
 type="local"
 addr="topo-000E">Separated</fr:link> objects correspond to <fr:link
@@ -420,7 +475,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>695</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:parent>topo-000G</fr:parent></fr:frontmatter><fr:mainmatter>
+root="false"><fr:frontmatter><fr:anchor>428</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:parent>topo-000G</fr:parent></fr:frontmatter><fr:mainmatter>
   <fr:link
 href="todo.xml"
 type="local"
@@ -434,7 +489,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1077</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>topo-0009</fr:addr><fr:route>topo-0009.xml</fr:route><fr:title>Every <fr:link
+root="false"><fr:frontmatter><fr:anchor>1107</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>topo-0009</fr:addr><fr:route>topo-0009.xml</fr:route><fr:title>Every <fr:link
 href="ct-0004.xml"
 type="local"
 addr="ct-0004">equivalence relation</fr:link> in a topos is <fr:link
@@ -450,7 +505,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>660</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:parent>topo-0009</fr:parent></fr:frontmatter><fr:mainmatter>
+root="false"><fr:frontmatter><fr:anchor>436</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:parent>topo-0009</fr:parent></fr:frontmatter><fr:mainmatter>
   <fr:link
 href="todo.xml"
 type="local"

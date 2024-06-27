@@ -7,7 +7,7 @@ numbered="true"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>239</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>ct-001N</fr:addr><fr:route>ct-001N.xml</fr:route><fr:title>2-Category</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>26</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
+root="false"><fr:frontmatter><fr:anchor>533</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>ct-001N</fr:addr><fr:route>ct-001N.xml</fr:route><fr:title>2-Category</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>26</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
   A <fr:em><fr:strong><fr:tex>2</fr:tex>-category</fr:strong></fr:em> is a <fr:link
 href="ct-001M.xml"
 type="local"
@@ -19,7 +19,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>238</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>ct-001M</fr:addr><fr:route>ct-001M.xml</fr:route><fr:title>Bicategory</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>26</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
+root="false"><fr:frontmatter><fr:anchor>532</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>ct-001M</fr:addr><fr:route>ct-001M.xml</fr:route><fr:title>Bicategory</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>26</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
   A <fr:em><fr:strong>bicategory</fr:strong></fr:em> consists of the following data:
 </fr:p><fr:ul><fr:li>
     A collection of <fr:em><fr:strong><fr:tex>0</fr:tex>-cells</fr:strong></fr:em> <fr:tex>A</fr:tex>, <fr:tex>B</fr:tex>, <fr:tex>C</fr:tex>, etc.
@@ -48,13 +48,13 @@ root="false"><fr:frontmatter><fr:anchor>238</fr:anchor><fr:taxon>Definition</fr:
     For any two <fr:tex>2</fr:tex>-cells <fr:tex>\alpha \colon f \to f'</fr:tex> and <fr:tex>\beta \colon g \to g'</fr:tex> such that <fr:tex>gf</fr:tex> and <fr:tex>g'f'</fr:tex> are defined, a specified <fr:em><fr:strong>horizontal composite</fr:strong></fr:em> <fr:tex>\beta  *  \alpha \colon gf \to g'f'</fr:tex>.
   </fr:li>
   <fr:li>
-    For any triple of composable <fr:tex>1</fr:tex>-cells <fr:tex>f</fr:tex>, <fr:tex>g</fr:tex>, and <fr:tex>h</fr:tex>, a specified <fr:tex>2</fr:tex>-isomorphism <fr:tex>a \colon (hg)f \to h(gf)</fr:tex> called <fr:em><fr:strong>associator</fr:strong></fr:em>.
+    For any triple of composable <fr:tex>1</fr:tex>-cells <fr:tex>f</fr:tex>, <fr:tex>g</fr:tex>, and <fr:tex>h</fr:tex>, a specified <fr:tex>2</fr:tex>-isomorphism <fr:tex>a_{h,g,f} \colon (hg)f \to h(gf)</fr:tex> called <fr:em><fr:strong>associator</fr:strong></fr:em>.
   </fr:li>
   <fr:li>
-    For any <fr:tex>1</fr:tex>-cell <fr:tex>f \colon A \to B</fr:tex>, a specified <fr:tex>2</fr:tex>-isomorphism <fr:tex>\ell \colon \mathsf {id} _{ B } f \to f</fr:tex> called <fr:em><fr:strong>left unitor</fr:strong></fr:em>.
+    For any <fr:tex>1</fr:tex>-cell <fr:tex>f \colon A \to B</fr:tex>, a specified <fr:tex>2</fr:tex>-isomorphism <fr:tex>\ell _{f} \colon \mathsf {id} _{ B } f \to f</fr:tex> called <fr:em><fr:strong>left unitor</fr:strong></fr:em>.
   </fr:li>
   <fr:li>
-    For any <fr:tex>1</fr:tex>-cell <fr:tex>f \colon A \to B</fr:tex>, a specified <fr:tex>2</fr:tex>-isomorphism <fr:tex>r \colon f \mathsf {id} _{ A } \to f</fr:tex> called <fr:em><fr:strong>right unitor</fr:strong></fr:em>.
+    For any <fr:tex>1</fr:tex>-cell <fr:tex>f \colon A \to B</fr:tex>, a specified <fr:tex>2</fr:tex>-isomorphism <fr:tex>r_{f} \colon f \mathsf {id} _{ A } \to f</fr:tex> called <fr:em><fr:strong>right unitor</fr:strong></fr:em>.
   </fr:li></fr:ul><fr:p>
   These data are subject to the following conditions:
 </fr:p><fr:ul><fr:li>
@@ -1014,4 +1014,19 @@ hash="edb55c6088f4bb7d7151497c074aa649"><fr:embedded-tex-preamble>
          \draw  [-&gt;,morphism] (3) to node[swap] {$a_{k,hg,f}$} (4);
          \draw  [-&gt;,morphism] (4) to node[swap] {$ \mathsf {id} _{ k }  * a_{h,g,f}$} (5);
        \end {tikzpicture}
-    </fr:embedded-tex-body></fr:embedded-tex></fr:li></fr:ul></fr:mainmatter></fr:tree></fr:related><fr:backlinks></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>
+    </fr:embedded-tex-body></fr:embedded-tex></fr:li></fr:ul></fr:mainmatter></fr:tree></fr:related><fr:backlinks><fr:tree
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="true"
+root="false"><fr:frontmatter><fr:anchor>531</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>ct-001Q</fr:addr><fr:route>ct-001Q.xml</fr:route><fr:title>2-Functor</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>27</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
+  A <fr:em><fr:strong><fr:tex>2</fr:tex>-functor</fr:strong></fr:em> <fr:tex>F \colon \mathcal { C } \to \mathcal { D }</fr:tex> between <fr:link
+href="ct-001N.xml"
+type="local"
+addr="ct-001N"><fr:tex>2</fr:tex>-categories</fr:link> is a <fr:link
+href="ct-001P.xml"
+type="local"
+addr="ct-001P">strict functor</fr:link>.
+</fr:p></fr:mainmatter></fr:tree></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>
