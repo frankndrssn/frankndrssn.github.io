@@ -7,7 +7,7 @@ numbered="true"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1162</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>ct-0004</fr:addr><fr:route>ct-0004.xml</fr:route><fr:title>Equivalence relation</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
+root="false"><fr:frontmatter><fr:anchor>1154</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>ct-0004</fr:addr><fr:route>ct-0004.xml</fr:route><fr:title>Equivalence relation</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
   Let <fr:tex>(a,b) \colon R \rightarrowtail A  \times  A</fr:tex> be a relation in a cartesian category.
   <fr:tex>(a,b)</fr:tex> is said to be an <fr:em><fr:strong>equivalence relation</fr:strong></fr:em> if it is <fr:link
 href="ct-0001.xml"
@@ -26,7 +26,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1159</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>ct-0001</fr:addr><fr:route>ct-0001.xml</fr:route><fr:title>Reflexive relation</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
+root="false"><fr:frontmatter><fr:anchor>1151</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>ct-0001</fr:addr><fr:route>ct-0001.xml</fr:route><fr:title>Reflexive relation</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
   Let <fr:tex>(a,b) \colon R \rightarrowtail A  \times  A</fr:tex> be a relation in a cartesian category.
   The relation <fr:tex>(a,b)</fr:tex> is said to be <fr:em><fr:strong>reflexive</fr:strong></fr:em> if it contains the diagonal relation <fr:tex>\Delta \colon A \rightarrowtail A  \times  A</fr:tex>, i.e., if there is a morphism <fr:tex>\rho \colon A \to R</fr:tex> such that <fr:tex>a \rho  =  \mathsf {id} _{ A }</fr:tex> and <fr:tex>b \rho  =  \mathsf {id} _{ A }</fr:tex>.
 </fr:p>
@@ -267,7 +267,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1160</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>ct-0002</fr:addr><fr:route>ct-0002.xml</fr:route><fr:title>Symmetric relation</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
+root="false"><fr:frontmatter><fr:anchor>1152</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>ct-0002</fr:addr><fr:route>ct-0002.xml</fr:route><fr:title>Symmetric relation</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
   Let <fr:tex>(a,b) \colon R \rightarrowtail A  \times  A</fr:tex> be a relation in a cartesian category.
   <fr:tex>(a,b)</fr:tex> is said to be <fr:em><fr:strong>symmetric</fr:strong></fr:em> if it contains the <fr:em>twisted</fr:em> relation <fr:tex>(b,a) \colon R \rightarrowtail A  \times  A</fr:tex>, i.e., if there is a morphism <fr:tex>\sigma \colon R \to R</fr:tex> such that <fr:tex>a \sigma  = b</fr:tex> and <fr:tex>b \sigma  = a</fr:tex>.
 </fr:p>
@@ -508,7 +508,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1161</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>ct-0003</fr:addr><fr:route>ct-0003.xml</fr:route><fr:title>Transitive relation</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
+root="false"><fr:frontmatter><fr:anchor>1153</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>ct-0003</fr:addr><fr:route>ct-0003.xml</fr:route><fr:title>Transitive relation</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
   Let <fr:tex>(a,b) \colon R \rightarrowtail A  \times  A</fr:tex> be a relation in a cartesian category.
   <fr:tex>(a,b)</fr:tex> is said to be <fr:em><fr:strong>transitive</fr:strong></fr:em> if it contains the relation <fr:tex>(ap,bq) \colon R  \times _{A} R \rightarrowtail A  \times  A</fr:tex>, where <fr:tex>p</fr:tex> and <fr:tex>q</fr:tex> are given in the following pullback.
 </fr:p>
@@ -985,7 +985,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1156</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>ct-0016</fr:addr><fr:route>ct-0016.xml</fr:route><fr:title>Kernel pairs are <fr:link
+root="false"><fr:frontmatter><fr:anchor>1148</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>ct-0016</fr:addr><fr:route>ct-0016.xml</fr:route><fr:title>Kernel pairs are <fr:link
 href="ct-0004.xml"
 type="local"
 addr="ct-0004">equivalence relations</fr:link></fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>11</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
@@ -1001,7 +1001,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>500</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>11</fr:day></fr:date><fr:parent>ct-0016</fr:parent></fr:frontmatter><fr:mainmatter>
+root="false"><fr:frontmatter><fr:anchor>493</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>11</fr:day></fr:date><fr:parent>ct-0016</fr:parent></fr:frontmatter><fr:mainmatter>
   <fr:p>
     The required morphisms are given by the universal property of pullbacks as follows.
   </fr:p>
@@ -1291,7 +1291,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1157</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>ct-0005</fr:addr><fr:route>ct-0005.xml</fr:route><fr:title>Effective category</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
+root="false"><fr:frontmatter><fr:anchor>1149</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>ct-0005</fr:addr><fr:route>ct-0005.xml</fr:route><fr:title>Effective category</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
   An <fr:link
 href="ct-0004.xml"
 type="local"
@@ -1304,7 +1304,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1158</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>topo-0009</fr:addr><fr:route>topo-0009.xml</fr:route><fr:title>Every <fr:link
+root="false"><fr:frontmatter><fr:anchor>1150</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>topo-0009</fr:addr><fr:route>topo-0009.xml</fr:route><fr:title>Every <fr:link
 href="ct-0004.xml"
 type="local"
 addr="ct-0004">equivalence relation</fr:link> in a topos is <fr:link
@@ -1320,7 +1320,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>577</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:parent>topo-0009</fr:parent></fr:frontmatter><fr:mainmatter>
+root="false"><fr:frontmatter><fr:anchor>570</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:parent>topo-0009</fr:parent></fr:frontmatter><fr:mainmatter>
   <fr:link
 href="todo.xml"
 type="local"
