@@ -7,7 +7,7 @@ numbered="true"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>380</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>log-000P</fr:addr><fr:route>log-000P.xml</fr:route><fr:title>Internal language of a category</fr:title><fr:date><fr:year>2024</fr:year><fr:month>7</fr:month><fr:day>2</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
+root="false"><fr:frontmatter><fr:anchor>383</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>log-000P</fr:addr><fr:route>log-000P.xml</fr:route><fr:title>Internal language of a category</fr:title><fr:date><fr:year>2024</fr:year><fr:month>7</fr:month><fr:day>2</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
   Let <fr:tex>\mathcal { C }</fr:tex> be a sufficiently structured category.
   We device an (informal) <fr:em><fr:strong>internal language</fr:strong></fr:em> for <fr:tex>\mathcal { C }</fr:tex> as follows:
 </fr:p><fr:ul><fr:li><fr:em><fr:strong>Terms</fr:strong></fr:em>:
@@ -18,7 +18,7 @@ root="false"><fr:frontmatter><fr:anchor>380</fr:anchor><fr:taxon>Definition</fr:
         For any pair of composable morphisms <fr:tex>f \colon \Delta \to \Xi</fr:tex> and <fr:tex>x \colon \Gamma \to \Delta</fr:tex>, we write <fr:tex>f(x)</fr:tex> for their composite.
       </fr:li>
       <fr:li>
-        For any pair of morphisms <fr:tex>f \colon \Gamma \to \Delta</fr:tex> and <fr:tex>x \colon \Xi \to \Delta</fr:tex>, we write <fr:tex>f { \mathopen {}[ x ] \mathclose {}}</fr:tex> for the morphism with codomain <fr:tex>\Xi</fr:tex> obtained by applying the pullback functor <fr:tex>x ^{*}</fr:tex> to the object <fr:tex>f</fr:tex> in <fr:tex>{ \mathcal { C } _{/{ \Delta }}}</fr:tex>.
+        For any pair of morphisms <fr:tex>f \colon \Gamma \to \Delta</fr:tex> and <fr:tex>x \colon \Xi \to \Delta</fr:tex>, we write <fr:tex>f { \mathopen {}[ x ] \mathclose {}}</fr:tex> for the morphism with codomain <fr:tex>\Xi</fr:tex> obtained by applying the pullback functor <fr:tex>x ^{*}</fr:tex> to the object <fr:tex>f</fr:tex> in <fr:tex>{{ \mathcal { C } }_{/{ \Delta }}}</fr:tex>.
       </fr:li></fr:ul></fr:li>
   <fr:li><fr:em><fr:strong>Formulas</fr:strong></fr:em>:
     <fr:ul><fr:li>
@@ -73,7 +73,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>378</fr:anchor><fr:taxon>Section</fr:taxon><fr:addr>fnd-000B</fr:addr><fr:route>fnd-000B.xml</fr:route><fr:title>Doctrine</fr:title><fr:date><fr:year>2024</fr:year><fr:month>7</fr:month><fr:day>2</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>381</fr:anchor><fr:taxon>Section</fr:taxon><fr:addr>fnd-000B</fr:addr><fr:route>fnd-000B.xml</fr:route><fr:title>Doctrine</fr:title><fr:date><fr:year>2024</fr:year><fr:month>7</fr:month><fr:day>2</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:tree
@@ -83,7 +83,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>327</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>log-000C</fr:addr><fr:route>log-000C.xml</fr:route><fr:title>Doctrine</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>21</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
+root="false"><fr:frontmatter><fr:anchor>330</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>log-000C</fr:addr><fr:route>log-000C.xml</fr:route><fr:title>Doctrine</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>21</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
   Let <fr:tex>\mathcal { C }</fr:tex> be a category with finite products.
   A <fr:em><fr:strong>(primitive) doctrine</fr:strong></fr:em> over <fr:tex>\mathcal { C }</fr:tex> is a <fr:tex>\mathcal { C }</fr:tex>-indexed category <fr:tex>T \colon \mathcal { C } ^ \mathrm {op} \to \mathsf { CAT }</fr:tex>.
   If <fr:tex>T \colon \mathcal { C } ^ \mathrm {op} \to \mathsf { CAT }</fr:tex> and <fr:tex>U \colon \mathcal { D } ^ \mathrm {op} \to \mathsf { CAT }</fr:tex> are primitive doctrines, then a <fr:em><fr:strong>morphism of doctrines</fr:strong></fr:em> <fr:tex>F \colon T \to U</fr:tex> consists of the following data:
@@ -334,7 +334,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>328</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>log-000E</fr:addr><fr:route>log-000E.xml</fr:route><fr:title>Beck-Chevalley condition</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>24</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
+root="false"><fr:frontmatter><fr:anchor>331</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>log-000E</fr:addr><fr:route>log-000E.xml</fr:route><fr:title>Beck-Chevalley condition</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>24</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
   Let <fr:tex>T \colon \mathcal { C } ^ \mathrm {op} \to \mathsf { CAT }</fr:tex> be a <fr:link
 href="log-000C.xml"
 type="local"
@@ -585,7 +585,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>329</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>log-000D</fr:addr><fr:route>log-000D.xml</fr:route><fr:title>Frobenius reciprocity</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>24</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
+root="false"><fr:frontmatter><fr:anchor>332</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>log-000D</fr:addr><fr:route>log-000D.xml</fr:route><fr:title>Frobenius reciprocity</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>24</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
   Let <fr:tex>T \colon \mathcal { C } ^ \mathrm {op} \to \mathsf { CAT }</fr:tex> be a <fr:link
 href="log-000C.xml"
 type="local"
@@ -599,7 +599,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>330</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>log-000F</fr:addr><fr:route>log-000F.xml</fr:route><fr:title>Hyperdoctrine</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>24</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
+root="false"><fr:frontmatter><fr:anchor>333</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>log-000F</fr:addr><fr:route>log-000F.xml</fr:route><fr:title>Hyperdoctrine</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>24</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
   A <fr:em><fr:strong>(first-order) hyperdoctrine</fr:strong></fr:em> is a <fr:link
 href="log-000C.xml"
 type="local"
@@ -875,7 +875,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>331</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>log-000H</fr:addr><fr:route>log-000H.xml</fr:route><fr:title>Naming fucntor</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>24</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
+root="false"><fr:frontmatter><fr:anchor>334</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>log-000H</fr:addr><fr:route>log-000H.xml</fr:route><fr:title>Naming fucntor</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>24</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
   Let <fr:tex>\mathcal { C }</fr:tex> be a category with finite limits and <fr:tex>T \colon \mathcal { C } ^ \mathrm {op} \to \mathsf { Lat }</fr:tex> be a <fr:tex>\mathcal { C }</fr:tex>-indexed (pre-)lattice such that
 </fr:p><fr:ul><fr:li>
     For each object <fr:tex>X  \in   \mathcal { C }</fr:tex>, the fiber <fr:tex>T(X)</fr:tex> is cartesian.
@@ -889,13 +889,13 @@ href="log-000E.xml"
 type="local"
 addr="log-000E">Beck-Chevalley</fr:link> condition.
   </fr:li></fr:ul><fr:p>
-  Then we can define a <fr:em><fr:strong>naming functor</fr:strong></fr:em> <fr:tex>{ \mathopen {}[ \mathord { \hspace {1pt} \text {--} \hspace {1pt}} ] \mathclose {}} _{X} \colon { \mathcal { C } _{/{ X }}} \to T(X)</fr:tex> for each object <fr:tex>X  \in   \mathcal { C }</fr:tex>.
+  Then we can define a <fr:em><fr:strong>naming functor</fr:strong></fr:em> <fr:tex>{ \mathopen {}[ \mathord { \hspace {1pt} \text {--} \hspace {1pt}} ] \mathclose {}} _{X} \colon {{ \mathcal { C } }_{/{ X }}} \to T(X)</fr:tex> for each object <fr:tex>X  \in   \mathcal { C }</fr:tex>.
   Moreover, for each morphism <fr:tex>f \colon X \to Y</fr:tex> in <fr:tex>\mathcal { C }</fr:tex>, the following square commutes up to isomorphism.
 </fr:p>
     
       
       <fr:embedded-tex
-hash="1e106c76e29526822cb6dc045fd63976"><fr:embedded-tex-preamble>
+hash="cfc4909a87258d1c46b46028613d18ff"><fr:embedded-tex-preamble>
          
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -1113,9 +1113,9 @@ hash="1e106c76e29526822cb6dc045fd63976"><fr:embedded-tex-preamble>
  
       </fr:embedded-tex-preamble><fr:embedded-tex-body>
    \DiagramSquare {
-    nw = { { \mathcal { C } _{/{ Y }}} },
+    nw = { {{ \mathcal { C } }_{/{ Y }}} },
     ne = {T(Y)},
-    sw = { { \mathcal { C } _{/{ X }}} },
+    sw = { {{ \mathcal { C } }_{/{ X }}} },
     se = {T(X)},
     north = { { \mathopen {}[ \mathord { \hspace {1pt} \text {--} \hspace {1pt}} ] \mathclose {}} _{Y}},
     south = { { \mathopen {}[ \mathord { \hspace {1pt} \text {--} \hspace {1pt}} ] \mathclose {}} _{X}},
@@ -1134,10 +1134,10 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>239</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>24</fr:day></fr:date><fr:parent>log-000H</fr:parent></fr:frontmatter><fr:mainmatter>
+root="false"><fr:frontmatter><fr:anchor>241</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>24</fr:day></fr:date><fr:parent>log-000H</fr:parent></fr:frontmatter><fr:mainmatter>
   <fr:p>
-    For each object <fr:tex>f \colon X \to Y</fr:tex> in <fr:tex>{ \mathcal { C } _{/{ Y }}}</fr:tex>, take <fr:tex>{ \mathopen {}[ f ] \mathclose {}} _{Y} :=  \Sigma _{f}(1)</fr:tex>.
-    To extend this assignment to a functor, it suffices to show that whenever there is a morphism <fr:tex>\alpha \colon f \to g</fr:tex> in <fr:tex>{ \mathcal { C } _{/{ Y }}}</fr:tex>, <fr:tex>{ \mathopen {}[ f ] \mathclose {}} _{Y}  \leq   { \mathopen {}[ g ] \mathclose {}} _{Y}</fr:tex> in <fr:tex>T(Y)</fr:tex>.
+    For each object <fr:tex>f \colon X \to Y</fr:tex> in <fr:tex>{{ \mathcal { C } }_{/{ Y }}}</fr:tex>, take <fr:tex>{ \mathopen {}[ f ] \mathclose {}} _{Y} :=  \Sigma _{f}(1)</fr:tex>.
+    To extend this assignment to a functor, it suffices to show that whenever there is a morphism <fr:tex>\alpha \colon f \to g</fr:tex> in <fr:tex>{{ \mathcal { C } }_{/{ Y }}}</fr:tex>, <fr:tex>{ \mathopen {}[ f ] \mathclose {}} _{Y}  \leq   { \mathopen {}[ g ] \mathclose {}} _{Y}</fr:tex> in <fr:tex>T(Y)</fr:tex>.
   </fr:p>
   <fr:p>
     To this end, note that <fr:tex>\alpha ^{*} (1)  \leq   \alpha ^{*} g ^{*} { \mathopen {}[ g ] \mathclose {}} _{Y}</fr:tex> in <fr:tex>T(X)</fr:tex> because the unit of the adjunction <fr:tex>\Sigma _{g}  \dashv   g ^{*}</fr:tex> gives <fr:tex>1  \leq   g ^{*} { \mathopen {}[ g ] \mathclose {}} _{Y}</fr:tex>.
@@ -1399,7 +1399,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>332</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>log-000I</fr:addr><fr:route>log-000I.xml</fr:route><fr:title>Comprehension schema</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>24</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
+root="false"><fr:frontmatter><fr:anchor>335</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>log-000I</fr:addr><fr:route>log-000I.xml</fr:route><fr:title>Comprehension schema</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>24</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
   Let <fr:tex>T \colon \mathcal { C } ^ \mathrm {op} \to \mathsf { Lat }</fr:tex> be a <fr:link
 href="log-000C.xml"
 type="local"
@@ -1415,7 +1415,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>334</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>log-000J</fr:addr><fr:route>log-000J.xml</fr:route><fr:title>Subobject doctrine of a regular category</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>24</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
+root="false"><fr:frontmatter><fr:anchor>337</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>log-000J</fr:addr><fr:route>log-000J.xml</fr:route><fr:title>Subobject doctrine of a regular category</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>24</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
   Let <fr:tex>\mathcal { C }</fr:tex> be a <fr:link
 href="ct-000O.xml"
 type="local"
@@ -1433,7 +1433,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>333</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>24</fr:day></fr:date><fr:parent>log-000J</fr:parent></fr:frontmatter><fr:mainmatter>
+root="false"><fr:frontmatter><fr:anchor>336</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>24</fr:day></fr:date><fr:parent>log-000J</fr:parent></fr:frontmatter><fr:mainmatter>
   <fr:p>
     Each fiber <fr:tex>\mathsf { Sub } (A)</fr:tex> has finite limits inherited from <fr:tex>\mathcal { C }</fr:tex>.
     By <fr:ref
@@ -1447,7 +1447,7 @@ addr="log-000E">Beck-Chevalley condition</fr:link> because images commute with p
     Then by construction the <fr:link
 href="log-000H.xml"
 type="local"
-addr="log-000H">naming functor</fr:link> <fr:tex>{ \mathopen {}[ \mathord { \hspace {1pt} \text {--} \hspace {1pt}} ] \mathclose {}} _{X} \colon { \mathcal { C } _{/{ X }}} \to \mathsf { Sub } (X)</fr:tex> is just <fr:tex>\mathsf { Img }</fr:tex>, which admits the inclusion functor as a right adjoint.
+addr="log-000H">naming functor</fr:link> <fr:tex>{ \mathopen {}[ \mathord { \hspace {1pt} \text {--} \hspace {1pt}} ] \mathclose {}} _{X} \colon {{ \mathcal { C } }_{/{ X }}} \to \mathsf { Sub } (X)</fr:tex> is just <fr:tex>\mathsf { Img }</fr:tex>, which admits the inclusion functor as a right adjoint.
   </fr:p>
 </fr:mainmatter></fr:tree>
     
@@ -1458,7 +1458,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>335</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>log-000P</fr:addr><fr:route>log-000P.xml</fr:route><fr:title>Internal language of a category</fr:title><fr:date><fr:year>2024</fr:year><fr:month>7</fr:month><fr:day>2</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
+root="false"><fr:frontmatter><fr:anchor>338</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>log-000P</fr:addr><fr:route>log-000P.xml</fr:route><fr:title>Internal language of a category</fr:title><fr:date><fr:year>2024</fr:year><fr:month>7</fr:month><fr:day>2</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
   Let <fr:tex>\mathcal { C }</fr:tex> be a sufficiently structured category.
   We device an (informal) <fr:em><fr:strong>internal language</fr:strong></fr:em> for <fr:tex>\mathcal { C }</fr:tex> as follows:
 </fr:p><fr:ul><fr:li><fr:em><fr:strong>Terms</fr:strong></fr:em>:
@@ -1469,7 +1469,7 @@ root="false"><fr:frontmatter><fr:anchor>335</fr:anchor><fr:taxon>Definition</fr:
         For any pair of composable morphisms <fr:tex>f \colon \Delta \to \Xi</fr:tex> and <fr:tex>x \colon \Gamma \to \Delta</fr:tex>, we write <fr:tex>f(x)</fr:tex> for their composite.
       </fr:li>
       <fr:li>
-        For any pair of morphisms <fr:tex>f \colon \Gamma \to \Delta</fr:tex> and <fr:tex>x \colon \Xi \to \Delta</fr:tex>, we write <fr:tex>f { \mathopen {}[ x ] \mathclose {}}</fr:tex> for the morphism with codomain <fr:tex>\Xi</fr:tex> obtained by applying the pullback functor <fr:tex>x ^{*}</fr:tex> to the object <fr:tex>f</fr:tex> in <fr:tex>{ \mathcal { C } _{/{ \Delta }}}</fr:tex>.
+        For any pair of morphisms <fr:tex>f \colon \Gamma \to \Delta</fr:tex> and <fr:tex>x \colon \Xi \to \Delta</fr:tex>, we write <fr:tex>f { \mathopen {}[ x ] \mathclose {}}</fr:tex> for the morphism with codomain <fr:tex>\Xi</fr:tex> obtained by applying the pullback functor <fr:tex>x ^{*}</fr:tex> to the object <fr:tex>f</fr:tex> in <fr:tex>{{ \mathcal { C } }_{/{ \Delta }}}</fr:tex>.
       </fr:li></fr:ul></fr:li>
   <fr:li><fr:em><fr:strong>Formulas</fr:strong></fr:em>:
     <fr:ul><fr:li>
@@ -1524,7 +1524,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>336</fr:anchor><fr:taxon>Construction</fr:taxon><fr:addr>log-000N</fr:addr><fr:route>log-000N.xml</fr:route><fr:title>Deduction system for <fr:link
+root="false"><fr:frontmatter><fr:anchor>339</fr:anchor><fr:taxon>Construction</fr:taxon><fr:addr>log-000N</fr:addr><fr:route>log-000N.xml</fr:route><fr:title>Deduction system for <fr:link
 href="ct-000O.xml"
 type="local"
 addr="ct-000O">regular categories</fr:link></fr:title><fr:date><fr:year>2024</fr:year><fr:month>7</fr:month><fr:day>2</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
@@ -1627,7 +1627,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>338</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>log-000O</fr:addr><fr:route>log-000O.xml</fr:route><fr:title>Soundness of <fr:link
+root="false"><fr:frontmatter><fr:anchor>341</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>log-000O</fr:addr><fr:route>log-000O.xml</fr:route><fr:title>Soundness of <fr:link
 href="log-000N.xml"
 type="local"
 addr="log-000N">deduction system for regular categories</fr:link></fr:title><fr:date><fr:year>2024</fr:year><fr:month>7</fr:month><fr:day>2</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
@@ -1645,7 +1645,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>337</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>7</fr:month><fr:day>2</fr:day></fr:date><fr:parent>log-000O</fr:parent></fr:frontmatter><fr:mainmatter>
+root="false"><fr:frontmatter><fr:anchor>340</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>7</fr:month><fr:day>2</fr:day></fr:date><fr:parent>log-000O</fr:parent></fr:frontmatter><fr:mainmatter>
   <fr:p>
     The first two structural rules are given by reflexivity and transitivity in each preorder <fr:tex>\mathsf { Sub } ( \Gamma )</fr:tex>.
     The last structural rules is given by the action on morphisms of the functor <fr:tex>f ^{*} \colon \mathsf { Sub } ( \Delta ) \to \mathsf { Sub } ( \Gamma )</fr:tex>.
@@ -2164,7 +2164,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>340</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>log-000Q</fr:addr><fr:route>log-000Q.xml</fr:route><fr:title>Functional completeness</fr:title><fr:date><fr:year>2024</fr:year><fr:month>7</fr:month><fr:day>2</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:link
+root="false"><fr:frontmatter><fr:anchor>343</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>log-000Q</fr:addr><fr:route>log-000Q.xml</fr:route><fr:title>Functional completeness</fr:title><fr:date><fr:year>2024</fr:year><fr:month>7</fr:month><fr:day>2</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:link
 href="todo.xml"
 type="local"
 addr="todo">TODO</fr:link><fr:p>
@@ -2187,7 +2187,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>339</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>7</fr:month><fr:day>2</fr:day></fr:date><fr:parent>log-000Q</fr:parent></fr:frontmatter><fr:mainmatter>
+root="false"><fr:frontmatter><fr:anchor>342</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>7</fr:month><fr:day>2</fr:day></fr:date><fr:parent>log-000Q</fr:parent></fr:frontmatter><fr:mainmatter>
 
 </fr:mainmatter></fr:tree>
     
@@ -2198,7 +2198,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>376</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>ct-001C</fr:addr><fr:route>ct-001C.xml</fr:route><fr:title>Heyting implication</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>13</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
+root="false"><fr:frontmatter><fr:anchor>379</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>ct-001C</fr:addr><fr:route>ct-001C.xml</fr:route><fr:title>Heyting implication</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>13</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
   Let <fr:tex>A_{1}</fr:tex> and <fr:tex>A_{2}</fr:tex> be two subobjects of <fr:tex>A</fr:tex>.
   The <fr:em><fr:strong>Heyting implication</fr:strong></fr:em> <fr:tex>A_{1}  \Rightarrow  A_{2}</fr:tex> is the largest subobject of <fr:tex>A</fr:tex> such that <fr:tex>A_{1}  \cap  (A_{1}  \Rightarrow  A_{2})</fr:tex> is contained in <fr:tex>A_{2}</fr:tex>.
 </fr:p></fr:mainmatter></fr:tree><fr:tree
@@ -2208,7 +2208,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>377</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>ct-001B</fr:addr><fr:route>ct-001B.xml</fr:route><fr:title>Pseudocomplement</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>13</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
+root="false"><fr:frontmatter><fr:anchor>380</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>ct-001B</fr:addr><fr:route>ct-001B.xml</fr:route><fr:title>Pseudocomplement</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>13</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
   Let <fr:tex>A'  \rightarrowtail  A</fr:tex> be a subobject.
   The <fr:em><fr:strong>pseudocomplement</fr:strong></fr:em> of <fr:tex>A'</fr:tex>, denoted as <fr:tex>{A'} ^{ \circ }</fr:tex>, is the largest subobject of <fr:tex>A</fr:tex> disjoint from <fr:tex>A'</fr:tex>, i.e., <fr:tex>A'  \cap  {A'} ^{ \circ }</fr:tex> is the initial object in <fr:tex>\mathsf { Sub } (A)</fr:tex>.
   Further, a pseudocomplement is a <fr:em><fr:strong>complement</fr:strong></fr:em> if <fr:tex>A'  \cup  {A'} ^{ \circ }   \cong  A</fr:tex>, i.e., <fr:tex>A'  \cup  {A'} ^{ \circ }</fr:tex> is the terminal object of <fr:tex>\mathsf { Sub } (A)</fr:tex>.

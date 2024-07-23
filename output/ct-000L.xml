@@ -7,7 +7,7 @@ numbered="true"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1023</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>ct-000L</fr:addr><fr:route>ct-000L.xml</fr:route><fr:title>Equivalent condition for the existence of <fr:link
+root="false"><fr:frontmatter><fr:anchor>1028</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>ct-000L</fr:addr><fr:route>ct-000L.xml</fr:route><fr:title>Equivalent condition for the existence of <fr:link
 href="ct-000K.xml"
 type="local"
 addr="ct-000K">images</fr:link></fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>2</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>\mathcal { C }</fr:tex> be a category with pullbacks. Then <fr:tex>\mathcal { C }</fr:tex> has images iff for each morphism <fr:tex>f \colon A \to B</fr:tex>, the pullback functor <fr:tex>f ^{*} \colon \mathsf { Sub } (B) \to \mathsf { Sub } (A)</fr:tex> admits a left adjoint <fr:tex>\exists _{f} \colon \mathsf { Sub } (A) \to \mathsf { Sub } (B)</fr:tex>.</fr:p>
@@ -20,11 +20,11 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>294</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>2</fr:day></fr:date><fr:parent>ct-000L</fr:parent></fr:frontmatter><fr:mainmatter>
+root="false"><fr:frontmatter><fr:anchor>297</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>2</fr:day></fr:date><fr:parent>ct-000L</fr:parent></fr:frontmatter><fr:mainmatter>
   <fr:p>By <fr:ref
 addr="ct-000J"
 href="ct-000J.xml"
-taxon="Lemma"></fr:ref>, the pullback functor <fr:tex>f ^{*} \colon { \mathcal { C } _{/{ B }}} \to { \mathcal { C } _{/{ A }}}</fr:tex> admits <fr:tex>\Sigma _{f} \colon { \mathcal { C } _{/{ A }}} \to { \mathcal { C } _{/{ B }}}</fr:tex> as a left adjoint.</fr:p>
+taxon="Lemma"></fr:ref>, the pullback functor <fr:tex>f ^{*} \colon {{ \mathcal { C } }_{/{ B }}} \to {{ \mathcal { C } }_{/{ A }}}</fr:tex> admits <fr:tex>\Sigma _{f} \colon {{ \mathcal { C } }_{/{ A }}} \to {{ \mathcal { C } }_{/{ B }}}</fr:tex> as a left adjoint.</fr:p>
   <fr:tree
 xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
@@ -32,7 +32,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>292</fr:anchor><fr:taxon>If</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>2</fr:day></fr:date><fr:parent>ct-000L</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>g \colon B' \rightarrowtail B</fr:tex> be an arbitrary object in <fr:tex>\mathsf { Sub } (B)</fr:tex>. We need to construct a functor <fr:tex>\mathsf { Img } \colon { \mathcal { C } _{/{ B }}} \to \mathsf { Sub } (B)</fr:tex> so that each morphism <fr:tex>f  \to  g</fr:tex> in <fr:tex>{ \mathcal { C } _{/{ B }}}</fr:tex> corresponds to a unique morphism <fr:tex>\mathsf { Img } (f)  \to  g</fr:tex> in <fr:tex>\mathsf { Sub } (B)</fr:tex>.</fr:p><fr:p>Let <fr:tex>f  \to  g</fr:tex> be an arbitrary morphism in <fr:tex>{ \mathcal { C } _{/{ B }}}</fr:tex>. Then this corresponds to a unique morphism <fr:tex>\mathsf {id} _{ A }   \to   f ^{*} (g)</fr:tex> as follows:</fr:p>
+root="false"><fr:frontmatter><fr:anchor>295</fr:anchor><fr:taxon>If</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>2</fr:day></fr:date><fr:parent>ct-000L</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>g \colon B' \rightarrowtail B</fr:tex> be an arbitrary object in <fr:tex>\mathsf { Sub } (B)</fr:tex>. We need to construct a functor <fr:tex>\mathsf { Img } \colon {{ \mathcal { C } }_{/{ B }}} \to \mathsf { Sub } (B)</fr:tex> so that each morphism <fr:tex>f  \to  g</fr:tex> in <fr:tex>{{ \mathcal { C } }_{/{ B }}}</fr:tex> corresponds to a unique morphism <fr:tex>\mathsf { Img } (f)  \to  g</fr:tex> in <fr:tex>\mathsf { Sub } (B)</fr:tex>.</fr:p><fr:p>Let <fr:tex>f  \to  g</fr:tex> be an arbitrary morphism in <fr:tex>{{ \mathcal { C } }_{/{ B }}}</fr:tex>. Then this corresponds to a unique morphism <fr:tex>\mathsf {id} _{ A }   \to   f ^{*} (g)</fr:tex> as follows:</fr:p>
     
       
       <fr:embedded-tex
@@ -274,7 +274,7 @@ hash="70bd1ce54a18fe1e0f15c71df204b2e9"><fr:embedded-tex-preamble>
        \end {tikzpicture}
     </fr:embedded-tex-body></fr:embedded-tex>
     
-  <fr:p>This then corresponds to a unique morphism <fr:tex>\exists _{f}( \mathsf {id} _{ A } )  \to  g</fr:tex> under the adjunction <fr:tex>\exists _{f}  \dashv   f ^{*}</fr:tex>. Thus, we define <fr:tex>\mathsf { Img }</fr:tex> by the assignment <fr:tex>f  \mapsto   \exists _{f}( \mathsf {id} _{ A } )</fr:tex>. This assignment can be trivially extended to a functor: since the category <fr:tex>\mathsf { Sub } (B)</fr:tex> is a preorder, every morphism <fr:tex>f  \to  f'</fr:tex> in <fr:tex>{ \mathcal { C } _{/{ B }}}</fr:tex> has to be mapped to the unique morphism <fr:tex>\mathsf { Img } (f)  \to   \mathsf { Img } (f')</fr:tex> in <fr:tex>\mathsf { Sub } (B)</fr:tex>. This morphism must exist. Indeed, it is the lifting of <fr:tex>\mathsf { Img } (f)</fr:tex> against <fr:tex>\varepsilon _{ \mathsf { Img } (f')}</fr:tex> depicted in the following diagram.</fr:p>
+  <fr:p>This then corresponds to a unique morphism <fr:tex>\exists _{f}( \mathsf {id} _{ A } )  \to  g</fr:tex> under the adjunction <fr:tex>\exists _{f}  \dashv   f ^{*}</fr:tex>. Thus, we define <fr:tex>\mathsf { Img }</fr:tex> by the assignment <fr:tex>f  \mapsto   \exists _{f}( \mathsf {id} _{ A } )</fr:tex>. This assignment can be trivially extended to a functor: since the category <fr:tex>\mathsf { Sub } (B)</fr:tex> is a preorder, every morphism <fr:tex>f  \to  f'</fr:tex> in <fr:tex>{{ \mathcal { C } }_{/{ B }}}</fr:tex> has to be mapped to the unique morphism <fr:tex>\mathsf { Img } (f)  \to   \mathsf { Img } (f')</fr:tex> in <fr:tex>\mathsf { Sub } (B)</fr:tex>. This morphism must exist. Indeed, it is the lifting of <fr:tex>\mathsf { Img } (f)</fr:tex> against <fr:tex>\varepsilon _{ \mathsf { Img } (f')}</fr:tex> depicted in the following diagram.</fr:p>
     
       
       <fr:embedded-tex
@@ -529,7 +529,7 @@ xmlns:html="http://www.w3.org/1999/xhtml">
   <html:tr>
         
   <html:td>
-          <fr:p>Let <fr:tex>f \colon A \to B</fr:tex> be an object in <fr:tex>{ \mathcal { C } _{/{ B }}}</fr:tex>. The identity morphism <fr:tex>\mathsf {id} \colon \mathsf { Img } (f) \to \mathsf { Img } (f)</fr:tex> is, by definition, the identity morphism <fr:tex>\mathsf {id} \colon \exists _{f}( \mathsf {id} _{ A } ) \to \mathsf { Img } (f)</fr:tex>, which corresponds to the unit <fr:tex>\eta _{ \mathsf {id} _{ A } } \colon \mathsf {id} _{ A } \to f ^{*} ( \mathsf { Img } (f))</fr:tex> of the adjunction <html:span
+          <fr:p>Let <fr:tex>f \colon A \to B</fr:tex> be an object in <fr:tex>{{ \mathcal { C } }_{/{ B }}}</fr:tex>. The identity morphism <fr:tex>\mathsf {id} \colon \mathsf { Img } (f) \to \mathsf { Img } (f)</fr:tex> is, by definition, the identity morphism <fr:tex>\mathsf {id} \colon \exists _{f}( \mathsf {id} _{ A } ) \to \mathsf { Img } (f)</fr:tex>, which corresponds to the unit <fr:tex>\eta _{ \mathsf {id} _{ A } } \colon \mathsf {id} _{ A } \to f ^{*} ( \mathsf { Img } (f))</fr:tex> of the adjunction <html:span
 style="white-space: nowrap"><fr:tex>\exists _{f}  \dashv   f ^{*}</fr:tex></html:span>.</fr:p>
           <fr:p>Then since <fr:tex>\mathsf { Img } (f)</fr:tex> is monic, <fr:tex>\eta _{ \mathsf {id} _{ A } }</fr:tex> corresponds to a unique morphism <fr:tex>\varepsilon _{ \mathsf { Img } (f)} \eta _{ \mathsf {id} _{ A } } \colon f \to \mathsf { Img } (f)</fr:tex>, where <fr:tex>\varepsilon</fr:tex> is the counit of the adjunction <fr:tex>\Sigma _{f}  \dashv   f ^{*}</fr:tex>. This defines the component of <fr:tex>\vartheta</fr:tex> at <fr:tex>f</fr:tex>. This is precisely the lifting of <fr:tex>f</fr:tex> against <fr:tex>\varepsilon _{ \mathsf { Img } (f)}</fr:tex>.</fr:p>
           
@@ -790,11 +790,11 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>293</fr:anchor><fr:taxon>Only if</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>2</fr:day></fr:date><fr:parent>ct-000L</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>If <fr:tex>\mathcal { C }</fr:tex> has images, then we may define <fr:tex>\exists _{f} \colon \mathsf { Sub } (A) \to \mathsf { Sub } (B)</fr:tex> as the following composite:</fr:p><fr:tex
-display="block">        \mathsf { Sub } (A)  \hookrightarrow   { \mathcal { C } _{/{ A }}}   \xrightarrow { \Sigma _{f} }   { \mathcal { C } _{/{ B }}}   \xrightarrow { \mathsf { Img } }   \mathsf { Sub } (B)     </fr:tex><fr:p>Let <fr:tex>i_{A} \colon \mathsf { Sub } (A) \hookrightarrow { \mathcal { C } _{/{ A }}}</fr:tex> and <fr:tex>i_{B} \colon \mathsf { Sub } (B) \hookrightarrow { \mathcal { C } _{/{ B }}}</fr:tex> be the inclusion functors. Note that</fr:p><fr:tex
+root="false"><fr:frontmatter><fr:anchor>296</fr:anchor><fr:taxon>Only if</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>2</fr:day></fr:date><fr:parent>ct-000L</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>If <fr:tex>\mathcal { C }</fr:tex> has images, then we may define <fr:tex>\exists _{f} \colon \mathsf { Sub } (A) \to \mathsf { Sub } (B)</fr:tex> as the following composite:</fr:p><fr:tex
+display="block">        \mathsf { Sub } (A)  \hookrightarrow   {{ \mathcal { C } }_{/{ A }}}   \xrightarrow { \Sigma _{f} }   {{ \mathcal { C } }_{/{ B }}}   \xrightarrow { \mathsf { Img } }   \mathsf { Sub } (B)     </fr:tex><fr:p>Let <fr:tex>i_{A} \colon \mathsf { Sub } (A) \hookrightarrow {{ \mathcal { C } }_{/{ A }}}</fr:tex> and <fr:tex>i_{B} \colon \mathsf { Sub } (B) \hookrightarrow {{ \mathcal { C } }_{/{ B }}}</fr:tex> be the inclusion functors. Note that</fr:p><fr:tex
 display="block">        \mathsf { Img } \Sigma _{f}  \dashv   f ^{*} i_{B}     </fr:tex><fr:p>Since <fr:tex>f ^{*} i_{B}  \cong  i_{A} f ^{*}</fr:tex> by construction, we have</fr:p><fr:tex
-display="block">        \mathsf { Img } \Sigma _{f}  \dashv  i_{A} f ^{*}      </fr:tex><fr:p>Let <fr:tex>\eta</fr:tex> and <fr:tex>\varepsilon</fr:tex> be the unit and counit of this adjunction respectively. Since <fr:tex>\mathsf { Sub } (A)</fr:tex> is a full subcategory of <fr:tex>{ \mathcal { C } _{/{ A }}}</fr:tex>, there is a natural isomorphism <fr:tex>\iota \colon \mathsf {id} _{ { \mathcal { C } _{/{ A }}} } \stackrel { \sim }{ \smash { \longrightarrow } \rule {0pt}{0.4ex}} i_{A}</fr:tex>. Then we can define <fr:tex>\eta '</fr:tex> as follows:</fr:p><fr:tex
-display="block">        \eta ' :=  \mathsf {id} _{ { \mathcal { C } _{/{ A }}} }   \xrightarrow { \eta }  i_{A} f ^{*} \mathsf { Img } \Sigma _{f}        \xrightarrow { \iota _{ f ^{*} \mathsf { Img } \Sigma _{f}} }   f ^{*} \mathsf { Img } \Sigma _{f}        \xrightarrow { f ^{*} \mathsf { Img } \Sigma _{f}( \iota ) }   f ^{*} \mathsf { Img } \Sigma _{f}i_{A}     </fr:tex><fr:p>Then <fr:tex>\eta '</fr:tex> and <fr:tex>\varepsilon</fr:tex> form the unit and counit of the adjunction <fr:tex>\mathsf { Img } \Sigma _{f}i_{A}  \dashv   f ^{*}</fr:tex>.</fr:p></fr:mainmatter></fr:tree>
+display="block">        \mathsf { Img } \Sigma _{f}  \dashv  i_{A} f ^{*}      </fr:tex><fr:p>Let <fr:tex>\eta</fr:tex> and <fr:tex>\varepsilon</fr:tex> be the unit and counit of this adjunction respectively. Since <fr:tex>\mathsf { Sub } (A)</fr:tex> is a full subcategory of <fr:tex>{{ \mathcal { C } }_{/{ A }}}</fr:tex>, there is a natural isomorphism <fr:tex>\iota \colon \mathsf {id} _{ {{ \mathcal { C } }_{/{ A }}} } \stackrel { \sim }{ \smash { \longrightarrow } \rule {0pt}{0.4ex}} i_{A}</fr:tex>. Then we can define <fr:tex>\eta '</fr:tex> as follows:</fr:p><fr:tex
+display="block">        \eta ' :=  \mathsf {id} _{ {{ \mathcal { C } }_{/{ A }}} }   \xrightarrow { \eta }  i_{A} f ^{*} \mathsf { Img } \Sigma _{f}        \xrightarrow { \iota _{ f ^{*} \mathsf { Img } \Sigma _{f}} }   f ^{*} \mathsf { Img } \Sigma _{f}        \xrightarrow { f ^{*} \mathsf { Img } \Sigma _{f}( \iota ) }   f ^{*} \mathsf { Img } \Sigma _{f}i_{A}     </fr:tex><fr:p>Then <fr:tex>\eta '</fr:tex> and <fr:tex>\varepsilon</fr:tex> form the unit and counit of the adjunction <fr:tex>\mathsf { Img } \Sigma _{f}i_{A}  \dashv   f ^{*}</fr:tex>.</fr:p></fr:mainmatter></fr:tree>
 </fr:mainmatter></fr:tree>
     
   </fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context><fr:tree
@@ -804,7 +804,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1021</fr:anchor><fr:taxon>Section</fr:taxon><fr:addr>fnd-0008</fr:addr><fr:route>fnd-0008.xml</fr:route><fr:title>Regular category</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
+root="false"><fr:frontmatter><fr:anchor>1026</fr:anchor><fr:taxon>Section</fr:taxon><fr:addr>fnd-0008</fr:addr><fr:route>fnd-0008.xml</fr:route><fr:title>Regular category</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
 href="frankndrssn.xml"
 type="local"
 addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:tree
@@ -814,14 +814,14 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>281</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>ct-000K</fr:addr><fr:route>ct-000K.xml</fr:route><fr:title>Image</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>2</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>A category <fr:tex>\mathcal { C }</fr:tex> is said to have <fr:em><fr:strong>images</fr:strong></fr:em> if the inclusion functor <fr:tex>\mathsf { Sub } (A)  \hookrightarrow   { \mathcal { C } _{/{ A }}}</fr:tex> admits a left adjoint <fr:tex>\mathsf { Img } \colon { \mathcal { C } _{/{ A }}} \to \mathsf { Sub } (A)</fr:tex> for all objects <fr:tex>A  \in   \mathcal { C }</fr:tex>.</fr:p></fr:mainmatter></fr:tree><fr:tree
+root="false"><fr:frontmatter><fr:anchor>284</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>ct-000K</fr:addr><fr:route>ct-000K.xml</fr:route><fr:title>Image</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>2</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>A category <fr:tex>\mathcal { C }</fr:tex> is said to have <fr:em><fr:strong>images</fr:strong></fr:em> if the inclusion functor <fr:tex>\mathsf { Sub } (A)  \hookrightarrow   {{ \mathcal { C } }_{/{ A }}}</fr:tex> admits a left adjoint <fr:tex>\mathsf { Img } \colon {{ \mathcal { C } }_{/{ A }}} \to \mathsf { Sub } (A)</fr:tex> for all objects <fr:tex>A  \in   \mathcal { C }</fr:tex>.</fr:p></fr:mainmatter></fr:tree><fr:tree
 xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
 numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>283</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>ct-000O</fr:addr><fr:route>ct-000O.xml</fr:route><fr:title>Regular category</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>3</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
+root="false"><fr:frontmatter><fr:anchor>286</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>ct-000O</fr:addr><fr:route>ct-000O.xml</fr:route><fr:title>Regular category</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>3</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
   A category <fr:tex>\mathcal { C }</fr:tex> is said to be <fr:em><fr:strong>regular</fr:strong></fr:em> if it is cartesian, has <fr:link
 href="ct-000K.xml"
 type="local"
@@ -841,7 +841,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>282</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>3</fr:day></fr:date><fr:parent>ct-000O</fr:parent></fr:frontmatter><fr:mainmatter>
+root="false"><fr:frontmatter><fr:anchor>285</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>3</fr:day></fr:date><fr:parent>ct-000O</fr:parent></fr:frontmatter><fr:mainmatter>
   <fr:p>
     Let <fr:tex>F \colon \mathcal { C } \to \mathcal { D }</fr:tex> be a regular functor and <fr:tex>f \colon A \to B</fr:tex> be a morphism in <fr:tex>\mathcal { C }</fr:tex>.
     By <fr:ref
@@ -860,7 +860,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>295</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>ct-000L</fr:addr><fr:route>ct-000L.xml</fr:route><fr:title>Equivalent condition for the existence of <fr:link
+root="false"><fr:frontmatter><fr:anchor>298</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>ct-000L</fr:addr><fr:route>ct-000L.xml</fr:route><fr:title>Equivalent condition for the existence of <fr:link
 href="ct-000K.xml"
 type="local"
 addr="ct-000K">images</fr:link></fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>2</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>\mathcal { C }</fr:tex> be a category with pullbacks. Then <fr:tex>\mathcal { C }</fr:tex> has images iff for each morphism <fr:tex>f \colon A \to B</fr:tex>, the pullback functor <fr:tex>f ^{*} \colon \mathsf { Sub } (B) \to \mathsf { Sub } (A)</fr:tex> admits a left adjoint <fr:tex>\exists _{f} \colon \mathsf { Sub } (A) \to \mathsf { Sub } (B)</fr:tex>.</fr:p>
@@ -873,11 +873,11 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>294</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>2</fr:day></fr:date><fr:parent>ct-000L</fr:parent></fr:frontmatter><fr:mainmatter>
+root="false"><fr:frontmatter><fr:anchor>297</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>2</fr:day></fr:date><fr:parent>ct-000L</fr:parent></fr:frontmatter><fr:mainmatter>
   <fr:p>By <fr:ref
 addr="ct-000J"
 href="ct-000J.xml"
-taxon="Lemma"></fr:ref>, the pullback functor <fr:tex>f ^{*} \colon { \mathcal { C } _{/{ B }}} \to { \mathcal { C } _{/{ A }}}</fr:tex> admits <fr:tex>\Sigma _{f} \colon { \mathcal { C } _{/{ A }}} \to { \mathcal { C } _{/{ B }}}</fr:tex> as a left adjoint.</fr:p>
+taxon="Lemma"></fr:ref>, the pullback functor <fr:tex>f ^{*} \colon {{ \mathcal { C } }_{/{ B }}} \to {{ \mathcal { C } }_{/{ A }}}</fr:tex> admits <fr:tex>\Sigma _{f} \colon {{ \mathcal { C } }_{/{ A }}} \to {{ \mathcal { C } }_{/{ B }}}</fr:tex> as a left adjoint.</fr:p>
   <fr:tree
 xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
@@ -885,7 +885,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>292</fr:anchor><fr:taxon>If</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>2</fr:day></fr:date><fr:parent>ct-000L</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>g \colon B' \rightarrowtail B</fr:tex> be an arbitrary object in <fr:tex>\mathsf { Sub } (B)</fr:tex>. We need to construct a functor <fr:tex>\mathsf { Img } \colon { \mathcal { C } _{/{ B }}} \to \mathsf { Sub } (B)</fr:tex> so that each morphism <fr:tex>f  \to  g</fr:tex> in <fr:tex>{ \mathcal { C } _{/{ B }}}</fr:tex> corresponds to a unique morphism <fr:tex>\mathsf { Img } (f)  \to  g</fr:tex> in <fr:tex>\mathsf { Sub } (B)</fr:tex>.</fr:p><fr:p>Let <fr:tex>f  \to  g</fr:tex> be an arbitrary morphism in <fr:tex>{ \mathcal { C } _{/{ B }}}</fr:tex>. Then this corresponds to a unique morphism <fr:tex>\mathsf {id} _{ A }   \to   f ^{*} (g)</fr:tex> as follows:</fr:p>
+root="false"><fr:frontmatter><fr:anchor>295</fr:anchor><fr:taxon>If</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>2</fr:day></fr:date><fr:parent>ct-000L</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>g \colon B' \rightarrowtail B</fr:tex> be an arbitrary object in <fr:tex>\mathsf { Sub } (B)</fr:tex>. We need to construct a functor <fr:tex>\mathsf { Img } \colon {{ \mathcal { C } }_{/{ B }}} \to \mathsf { Sub } (B)</fr:tex> so that each morphism <fr:tex>f  \to  g</fr:tex> in <fr:tex>{{ \mathcal { C } }_{/{ B }}}</fr:tex> corresponds to a unique morphism <fr:tex>\mathsf { Img } (f)  \to  g</fr:tex> in <fr:tex>\mathsf { Sub } (B)</fr:tex>.</fr:p><fr:p>Let <fr:tex>f  \to  g</fr:tex> be an arbitrary morphism in <fr:tex>{{ \mathcal { C } }_{/{ B }}}</fr:tex>. Then this corresponds to a unique morphism <fr:tex>\mathsf {id} _{ A }   \to   f ^{*} (g)</fr:tex> as follows:</fr:p>
     
       
       <fr:embedded-tex
@@ -1127,7 +1127,7 @@ hash="70bd1ce54a18fe1e0f15c71df204b2e9"><fr:embedded-tex-preamble>
        \end {tikzpicture}
     </fr:embedded-tex-body></fr:embedded-tex>
     
-  <fr:p>This then corresponds to a unique morphism <fr:tex>\exists _{f}( \mathsf {id} _{ A } )  \to  g</fr:tex> under the adjunction <fr:tex>\exists _{f}  \dashv   f ^{*}</fr:tex>. Thus, we define <fr:tex>\mathsf { Img }</fr:tex> by the assignment <fr:tex>f  \mapsto   \exists _{f}( \mathsf {id} _{ A } )</fr:tex>. This assignment can be trivially extended to a functor: since the category <fr:tex>\mathsf { Sub } (B)</fr:tex> is a preorder, every morphism <fr:tex>f  \to  f'</fr:tex> in <fr:tex>{ \mathcal { C } _{/{ B }}}</fr:tex> has to be mapped to the unique morphism <fr:tex>\mathsf { Img } (f)  \to   \mathsf { Img } (f')</fr:tex> in <fr:tex>\mathsf { Sub } (B)</fr:tex>. This morphism must exist. Indeed, it is the lifting of <fr:tex>\mathsf { Img } (f)</fr:tex> against <fr:tex>\varepsilon _{ \mathsf { Img } (f')}</fr:tex> depicted in the following diagram.</fr:p>
+  <fr:p>This then corresponds to a unique morphism <fr:tex>\exists _{f}( \mathsf {id} _{ A } )  \to  g</fr:tex> under the adjunction <fr:tex>\exists _{f}  \dashv   f ^{*}</fr:tex>. Thus, we define <fr:tex>\mathsf { Img }</fr:tex> by the assignment <fr:tex>f  \mapsto   \exists _{f}( \mathsf {id} _{ A } )</fr:tex>. This assignment can be trivially extended to a functor: since the category <fr:tex>\mathsf { Sub } (B)</fr:tex> is a preorder, every morphism <fr:tex>f  \to  f'</fr:tex> in <fr:tex>{{ \mathcal { C } }_{/{ B }}}</fr:tex> has to be mapped to the unique morphism <fr:tex>\mathsf { Img } (f)  \to   \mathsf { Img } (f')</fr:tex> in <fr:tex>\mathsf { Sub } (B)</fr:tex>. This morphism must exist. Indeed, it is the lifting of <fr:tex>\mathsf { Img } (f)</fr:tex> against <fr:tex>\varepsilon _{ \mathsf { Img } (f')}</fr:tex> depicted in the following diagram.</fr:p>
     
       
       <fr:embedded-tex
@@ -1382,7 +1382,7 @@ xmlns:html="http://www.w3.org/1999/xhtml">
   <html:tr>
         
   <html:td>
-          <fr:p>Let <fr:tex>f \colon A \to B</fr:tex> be an object in <fr:tex>{ \mathcal { C } _{/{ B }}}</fr:tex>. The identity morphism <fr:tex>\mathsf {id} \colon \mathsf { Img } (f) \to \mathsf { Img } (f)</fr:tex> is, by definition, the identity morphism <fr:tex>\mathsf {id} \colon \exists _{f}( \mathsf {id} _{ A } ) \to \mathsf { Img } (f)</fr:tex>, which corresponds to the unit <fr:tex>\eta _{ \mathsf {id} _{ A } } \colon \mathsf {id} _{ A } \to f ^{*} ( \mathsf { Img } (f))</fr:tex> of the adjunction <html:span
+          <fr:p>Let <fr:tex>f \colon A \to B</fr:tex> be an object in <fr:tex>{{ \mathcal { C } }_{/{ B }}}</fr:tex>. The identity morphism <fr:tex>\mathsf {id} \colon \mathsf { Img } (f) \to \mathsf { Img } (f)</fr:tex> is, by definition, the identity morphism <fr:tex>\mathsf {id} \colon \exists _{f}( \mathsf {id} _{ A } ) \to \mathsf { Img } (f)</fr:tex>, which corresponds to the unit <fr:tex>\eta _{ \mathsf {id} _{ A } } \colon \mathsf {id} _{ A } \to f ^{*} ( \mathsf { Img } (f))</fr:tex> of the adjunction <html:span
 style="white-space: nowrap"><fr:tex>\exists _{f}  \dashv   f ^{*}</fr:tex></html:span>.</fr:p>
           <fr:p>Then since <fr:tex>\mathsf { Img } (f)</fr:tex> is monic, <fr:tex>\eta _{ \mathsf {id} _{ A } }</fr:tex> corresponds to a unique morphism <fr:tex>\varepsilon _{ \mathsf { Img } (f)} \eta _{ \mathsf {id} _{ A } } \colon f \to \mathsf { Img } (f)</fr:tex>, where <fr:tex>\varepsilon</fr:tex> is the counit of the adjunction <fr:tex>\Sigma _{f}  \dashv   f ^{*}</fr:tex>. This defines the component of <fr:tex>\vartheta</fr:tex> at <fr:tex>f</fr:tex>. This is precisely the lifting of <fr:tex>f</fr:tex> against <fr:tex>\varepsilon _{ \mathsf { Img } (f)}</fr:tex>.</fr:p>
           
@@ -1643,11 +1643,11 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>293</fr:anchor><fr:taxon>Only if</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>2</fr:day></fr:date><fr:parent>ct-000L</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>If <fr:tex>\mathcal { C }</fr:tex> has images, then we may define <fr:tex>\exists _{f} \colon \mathsf { Sub } (A) \to \mathsf { Sub } (B)</fr:tex> as the following composite:</fr:p><fr:tex
-display="block">        \mathsf { Sub } (A)  \hookrightarrow   { \mathcal { C } _{/{ A }}}   \xrightarrow { \Sigma _{f} }   { \mathcal { C } _{/{ B }}}   \xrightarrow { \mathsf { Img } }   \mathsf { Sub } (B)     </fr:tex><fr:p>Let <fr:tex>i_{A} \colon \mathsf { Sub } (A) \hookrightarrow { \mathcal { C } _{/{ A }}}</fr:tex> and <fr:tex>i_{B} \colon \mathsf { Sub } (B) \hookrightarrow { \mathcal { C } _{/{ B }}}</fr:tex> be the inclusion functors. Note that</fr:p><fr:tex
+root="false"><fr:frontmatter><fr:anchor>296</fr:anchor><fr:taxon>Only if</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>2</fr:day></fr:date><fr:parent>ct-000L</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>If <fr:tex>\mathcal { C }</fr:tex> has images, then we may define <fr:tex>\exists _{f} \colon \mathsf { Sub } (A) \to \mathsf { Sub } (B)</fr:tex> as the following composite:</fr:p><fr:tex
+display="block">        \mathsf { Sub } (A)  \hookrightarrow   {{ \mathcal { C } }_{/{ A }}}   \xrightarrow { \Sigma _{f} }   {{ \mathcal { C } }_{/{ B }}}   \xrightarrow { \mathsf { Img } }   \mathsf { Sub } (B)     </fr:tex><fr:p>Let <fr:tex>i_{A} \colon \mathsf { Sub } (A) \hookrightarrow {{ \mathcal { C } }_{/{ A }}}</fr:tex> and <fr:tex>i_{B} \colon \mathsf { Sub } (B) \hookrightarrow {{ \mathcal { C } }_{/{ B }}}</fr:tex> be the inclusion functors. Note that</fr:p><fr:tex
 display="block">        \mathsf { Img } \Sigma _{f}  \dashv   f ^{*} i_{B}     </fr:tex><fr:p>Since <fr:tex>f ^{*} i_{B}  \cong  i_{A} f ^{*}</fr:tex> by construction, we have</fr:p><fr:tex
-display="block">        \mathsf { Img } \Sigma _{f}  \dashv  i_{A} f ^{*}      </fr:tex><fr:p>Let <fr:tex>\eta</fr:tex> and <fr:tex>\varepsilon</fr:tex> be the unit and counit of this adjunction respectively. Since <fr:tex>\mathsf { Sub } (A)</fr:tex> is a full subcategory of <fr:tex>{ \mathcal { C } _{/{ A }}}</fr:tex>, there is a natural isomorphism <fr:tex>\iota \colon \mathsf {id} _{ { \mathcal { C } _{/{ A }}} } \stackrel { \sim }{ \smash { \longrightarrow } \rule {0pt}{0.4ex}} i_{A}</fr:tex>. Then we can define <fr:tex>\eta '</fr:tex> as follows:</fr:p><fr:tex
-display="block">        \eta ' :=  \mathsf {id} _{ { \mathcal { C } _{/{ A }}} }   \xrightarrow { \eta }  i_{A} f ^{*} \mathsf { Img } \Sigma _{f}        \xrightarrow { \iota _{ f ^{*} \mathsf { Img } \Sigma _{f}} }   f ^{*} \mathsf { Img } \Sigma _{f}        \xrightarrow { f ^{*} \mathsf { Img } \Sigma _{f}( \iota ) }   f ^{*} \mathsf { Img } \Sigma _{f}i_{A}     </fr:tex><fr:p>Then <fr:tex>\eta '</fr:tex> and <fr:tex>\varepsilon</fr:tex> form the unit and counit of the adjunction <fr:tex>\mathsf { Img } \Sigma _{f}i_{A}  \dashv   f ^{*}</fr:tex>.</fr:p></fr:mainmatter></fr:tree>
+display="block">        \mathsf { Img } \Sigma _{f}  \dashv  i_{A} f ^{*}      </fr:tex><fr:p>Let <fr:tex>\eta</fr:tex> and <fr:tex>\varepsilon</fr:tex> be the unit and counit of this adjunction respectively. Since <fr:tex>\mathsf { Sub } (A)</fr:tex> is a full subcategory of <fr:tex>{{ \mathcal { C } }_{/{ A }}}</fr:tex>, there is a natural isomorphism <fr:tex>\iota \colon \mathsf {id} _{ {{ \mathcal { C } }_{/{ A }}} } \stackrel { \sim }{ \smash { \longrightarrow } \rule {0pt}{0.4ex}} i_{A}</fr:tex>. Then we can define <fr:tex>\eta '</fr:tex> as follows:</fr:p><fr:tex
+display="block">        \eta ' :=  \mathsf {id} _{ {{ \mathcal { C } }_{/{ A }}} }   \xrightarrow { \eta }  i_{A} f ^{*} \mathsf { Img } \Sigma _{f}        \xrightarrow { \iota _{ f ^{*} \mathsf { Img } \Sigma _{f}} }   f ^{*} \mathsf { Img } \Sigma _{f}        \xrightarrow { f ^{*} \mathsf { Img } \Sigma _{f}( \iota ) }   f ^{*} \mathsf { Img } \Sigma _{f}i_{A}     </fr:tex><fr:p>Then <fr:tex>\eta '</fr:tex> and <fr:tex>\varepsilon</fr:tex> form the unit and counit of the adjunction <fr:tex>\mathsf { Img } \Sigma _{f}i_{A}  \dashv   f ^{*}</fr:tex>.</fr:p></fr:mainmatter></fr:tree>
 </fr:mainmatter></fr:tree>
     
   </fr:mainmatter></fr:tree><fr:tree
@@ -1657,7 +1657,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>297</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>ct-000Q</fr:addr><fr:route>ct-000Q.xml</fr:route><fr:title><fr:link
+root="false"><fr:frontmatter><fr:anchor>300</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>ct-000Q</fr:addr><fr:route>ct-000Q.xml</fr:route><fr:title><fr:link
 href="ct-000M.xml"
 type="local"
 addr="ct-000M">Cover</fr:link>-mono factorization</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>4</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>\mathcal { C }</fr:tex> be a category with <fr:link
@@ -1673,7 +1673,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>296</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>4</fr:day></fr:date><fr:parent>ct-000Q</fr:parent></fr:frontmatter><fr:mainmatter>
+root="false"><fr:frontmatter><fr:anchor>299</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>4</fr:day></fr:date><fr:parent>ct-000Q</fr:parent></fr:frontmatter><fr:mainmatter>
   <fr:p>By the construction of images, every morphism <fr:tex>f \colon A \to B</fr:tex> can be factored as <fr:tex>\mathsf { Img } (f) \vartheta _{f}</fr:tex>, where <fr:tex>\vartheta</fr:tex> is the unit of the image adjunction. <fr:tex>\mathsf { Img } (f)</fr:tex> is monic by construction and <fr:tex>\vartheta _{f}</fr:tex> is a cover by <fr:ref
 addr="ct-000N"
 href="ct-000N.xml"
@@ -1933,17 +1933,17 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>301</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>ct-000P</fr:addr><fr:route>ct-000P.xml</fr:route><fr:title>Equivalent condition for <fr:link
+root="false"><fr:frontmatter><fr:anchor>304</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>ct-000P</fr:addr><fr:route>ct-000P.xml</fr:route><fr:title>Equivalent condition for <fr:link
 href="ct-000O.xml"
 type="local"
 addr="ct-000O">regular categories</fr:link></fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>3</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>A category <fr:tex>\mathcal { C }</fr:tex> is regular iff it is cartesian and has <fr:link
 href="ct-000K.xml"
 type="local"
-addr="ct-000K">images</fr:link> that commute with pullbacks, i.e., the following diagram commutes up to isomorphism for any object <fr:tex>f  \in   { \mathcal { C } _{/{ B }}}</fr:tex>.</fr:p>
+addr="ct-000K">images</fr:link> that commute with pullbacks, i.e., the following diagram commutes up to isomorphism for any object <fr:tex>f  \in   {{ \mathcal { C } }_{/{ B }}}</fr:tex>.</fr:p>
     
       
       <fr:embedded-tex
-hash="49e547b22108ff9d560b42c676b13dad"><fr:embedded-tex-preamble>
+hash="5a24ff2f37ff6671a5811418a69124d3"><fr:embedded-tex-preamble>
          
    \RequirePackage {tikz}
    \RequirePackage {amsmath}
@@ -2161,8 +2161,8 @@ hash="49e547b22108ff9d560b42c676b13dad"><fr:embedded-tex-preamble>
  
       </fr:embedded-tex-preamble><fr:embedded-tex-body>
    \DiagramSquare {
-    nw =  { \mathcal { C } _{/{ B }}} ,
-    sw =  { \mathcal { C } _{/{ A }}} ,
+    nw =  {{ \mathcal { C } }_{/{ B }}} ,
+    sw =  {{ \mathcal { C } }_{/{ A }}} ,
     ne =  \mathsf { Sub } (B),
     se =  \mathsf { Sub } (A),
     north =  \mathsf { Img } ,
@@ -2182,7 +2182,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>300</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>3</fr:day></fr:date><fr:parent>ct-000P</fr:parent></fr:frontmatter><fr:mainmatter>
+root="false"><fr:frontmatter><fr:anchor>303</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>3</fr:day></fr:date><fr:parent>ct-000P</fr:parent></fr:frontmatter><fr:mainmatter>
   <fr:tree
 xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
@@ -2190,7 +2190,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>298</fr:anchor><fr:taxon>If</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>3</fr:day></fr:date><fr:parent>ct-000P</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+root="false"><fr:frontmatter><fr:anchor>301</fr:anchor><fr:taxon>If</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>3</fr:day></fr:date><fr:parent>ct-000P</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
       Suppose that <fr:tex>\mathcal { C }</fr:tex> is a cartesian category with images that commute with pullbacks.
       Let <fr:tex>f \colon A \to B</fr:tex> be a morphism and <fr:tex>g \colon B' \twoheadrightarrow B</fr:tex> be a cover.
       Then note that <fr:tex>\mathsf { Img } (g)</fr:tex> is an isomorphism.
@@ -2442,7 +2442,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>299</fr:anchor><fr:taxon>Only if</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>3</fr:day></fr:date><fr:parent>ct-000P</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
+root="false"><fr:frontmatter><fr:anchor>302</fr:anchor><fr:taxon>Only if</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>3</fr:day></fr:date><fr:parent>ct-000P</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
       If <fr:tex>\mathcal { C }</fr:tex> is regular, then by <fr:ref
 addr="ct-000N"
 href="ct-000N.xml"
@@ -2450,7 +2450,7 @@ taxon="Lemma"></fr:ref>, the unit <fr:tex>\vartheta \colon \mathsf {id} \to \mat
 href="ct-000M.xml"
 type="local"
 addr="ct-000M">covers</fr:link>.
-      Let <fr:tex>f \colon A \to B</fr:tex> be any morphism in <fr:tex>\mathcal { C }</fr:tex> and <fr:tex>g \colon B' \to B</fr:tex> be an object in <fr:tex>{ \mathcal { C } _{/{ B }}}</fr:tex>.
+      Let <fr:tex>f \colon A \to B</fr:tex> be any morphism in <fr:tex>\mathcal { C }</fr:tex> and <fr:tex>g \colon B' \to B</fr:tex> be an object in <fr:tex>{{ \mathcal { C } }_{/{ B }}}</fr:tex>.
       By <fr:ref
 addr="ct-000Q"
 href="ct-000Q.xml"
@@ -2460,7 +2460,7 @@ taxon="Lemma"></fr:ref>, <fr:tex>g</fr:tex> can be factored as <fr:tex>\vartheta
       Then by the <fr:link
 href="ct-0008.xml"
 type="local"
-addr="ct-0008">pasting lemma</fr:link>, the composite <fr:tex>f ^{*} ( \mathsf { Img } (g))  \circ   \widehat { \vartheta _{g}}</fr:tex> is isomorphic to <fr:tex>f ^{*} (g)</fr:tex> in <fr:tex>{ \mathcal { C } _{/{ A }}}</fr:tex>.
+addr="ct-0008">pasting lemma</fr:link>, the composite <fr:tex>f ^{*} ( \mathsf { Img } (g))  \circ   \widehat { \vartheta _{g}}</fr:tex> is isomorphic to <fr:tex>f ^{*} (g)</fr:tex> in <fr:tex>{{ \mathcal { C } }_{/{ A }}}</fr:tex>.
     </fr:p>
     
       
@@ -2956,7 +2956,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>303</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>ct-000R</fr:addr><fr:route>ct-000R.xml</fr:route><fr:title>Frobenius reciprocity</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>4</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>f \colon A \to B</fr:tex> be a morphism in a <fr:link
+root="false"><fr:frontmatter><fr:anchor>306</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>ct-000R</fr:addr><fr:route>ct-000R.xml</fr:route><fr:title>Frobenius reciprocity</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>4</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>f \colon A \to B</fr:tex> be a morphism in a <fr:link
 href="ct-000O.xml"
 type="local"
 addr="ct-000O">regular category</fr:link>. Then for any two subobjects <fr:tex>A'  \rightarrowtail  A</fr:tex> and <fr:tex>B'  \rightarrowtail  B</fr:tex>, we have <fr:tex>\exists _{f}(A'  \cap   f ^{*} (B'))  \cong   \exists _{f}(A')  \cap  B'</fr:tex> in <fr:tex>\mathsf { Sub } (B)</fr:tex>, where <fr:tex>\exists _{f}</fr:tex> is the left adjoint of <fr:tex>f ^{*}</fr:tex> constructed in <fr:ref
@@ -2972,7 +2972,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>302</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>4</fr:day></fr:date><fr:parent>ct-000R</fr:parent></fr:frontmatter><fr:mainmatter>
+root="false"><fr:frontmatter><fr:anchor>305</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>4</fr:day></fr:date><fr:parent>ct-000R</fr:parent></fr:frontmatter><fr:mainmatter>
   <fr:p>
     By the construction of <fr:tex>\exists _{f}</fr:tex>, this is equivalent to showing the following isomorphism.
     <fr:tex
@@ -3250,14 +3250,14 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1019</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>ct-000K</fr:addr><fr:route>ct-000K.xml</fr:route><fr:title>Image</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>2</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>A category <fr:tex>\mathcal { C }</fr:tex> is said to have <fr:em><fr:strong>images</fr:strong></fr:em> if the inclusion functor <fr:tex>\mathsf { Sub } (A)  \hookrightarrow   { \mathcal { C } _{/{ A }}}</fr:tex> admits a left adjoint <fr:tex>\mathsf { Img } \colon { \mathcal { C } _{/{ A }}} \to \mathsf { Sub } (A)</fr:tex> for all objects <fr:tex>A  \in   \mathcal { C }</fr:tex>.</fr:p></fr:mainmatter></fr:tree><fr:tree
+root="false"><fr:frontmatter><fr:anchor>1024</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>ct-000K</fr:addr><fr:route>ct-000K.xml</fr:route><fr:title>Image</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>2</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>A category <fr:tex>\mathcal { C }</fr:tex> is said to have <fr:em><fr:strong>images</fr:strong></fr:em> if the inclusion functor <fr:tex>\mathsf { Sub } (A)  \hookrightarrow   {{ \mathcal { C } }_{/{ A }}}</fr:tex> admits a left adjoint <fr:tex>\mathsf { Img } \colon {{ \mathcal { C } }_{/{ A }}} \to \mathsf { Sub } (A)</fr:tex> for all objects <fr:tex>A  \in   \mathcal { C }</fr:tex>.</fr:p></fr:mainmatter></fr:tree><fr:tree
 xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1020</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>ct-000J</fr:addr><fr:route>ct-000J.xml</fr:route><fr:title><fr:link
+root="false"><fr:frontmatter><fr:anchor>1025</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>ct-000J</fr:addr><fr:route>ct-000J.xml</fr:route><fr:title><fr:link
 href="ct-000I.xml"
 type="local"
 addr="ct-000I">Slice comparison functor</fr:link> of a <fr:link
@@ -3276,7 +3276,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>277</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:parent>ct-000J</fr:parent></fr:frontmatter><fr:mainmatter>
+root="false"><fr:frontmatter><fr:anchor>255</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:parent>ct-000J</fr:parent></fr:frontmatter><fr:mainmatter>
   <fr:p>By <fr:ref
 addr="ct-000H"
 href="ct-000H.xml"
@@ -3289,7 +3289,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>268</fr:anchor><fr:taxon>If</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:parent>ct-000J</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Suppose that <fr:tex>\Sigma _{f}  \dashv   f ^{*}</fr:tex> for any <fr:tex>f</fr:tex>. We show that the following diagram</fr:p>
+root="false"><fr:frontmatter><fr:anchor>246</fr:anchor><fr:taxon>If</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:parent>ct-000J</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Suppose that <fr:tex>\Sigma _{f}  \dashv   f ^{*}</fr:tex> for any <fr:tex>f</fr:tex>. We show that the following diagram</fr:p>
     
       
       <fr:embedded-tex
@@ -3769,7 +3769,7 @@ hash="7a09fdfa15abc2d8f1d0d5b20caaa713"><fr:embedded-tex-preamble>
        \end {tikzpicture}
     </fr:embedded-tex-body></fr:embedded-tex>
     
-  <fr:p>Note that <fr:tex>h</fr:tex> is a morphism <fr:tex>h \colon \Sigma _{f}(h') \to g</fr:tex> in <fr:tex>{ \mathcal { C } _{/{ B }}}</fr:tex>. Thus, it corresponds to a unique morphism <fr:tex>h ^{ \dag } \colon h' \to f ^{*} (g)</fr:tex> under the adjunction.</fr:p><fr:p>The transpose of <fr:tex>h ^{ \dag }</fr:tex> can be computed as <fr:tex>\varepsilon _{g}  \circ   \Sigma _{f}(h ^{ \dag } )</fr:tex>. Since <fr:tex>\Sigma _{f}</fr:tex> is the identity on morphisms, we have
+  <fr:p>Note that <fr:tex>h</fr:tex> is a morphism <fr:tex>h \colon \Sigma _{f}(h') \to g</fr:tex> in <fr:tex>{{ \mathcal { C } }_{/{ B }}}</fr:tex>. Thus, it corresponds to a unique morphism <fr:tex>h ^{ \dag } \colon h' \to f ^{*} (g)</fr:tex> under the adjunction.</fr:p><fr:p>The transpose of <fr:tex>h ^{ \dag }</fr:tex> can be computed as <fr:tex>\varepsilon _{g}  \circ   \Sigma _{f}(h ^{ \dag } )</fr:tex>. Since <fr:tex>\Sigma _{f}</fr:tex> is the identity on morphisms, we have
       <fr:tex
 display="block">         (h ^{ \dag } ) ^{ \dag }  =  \varepsilon _{g}  \circ   \Sigma _{f}(h ^{ \dag } ) =  \varepsilon _{g}  \circ  h ^{ \dag }  = h       </fr:tex>
       Thus, the top triangle also commutes.
@@ -3782,7 +3782,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>276</fr:anchor><fr:taxon>Only if</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:parent>ct-000J</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Suppose that <fr:tex>\mathcal { C }</fr:tex> has pullbacks. Then we can take <fr:tex>f ^{*}</fr:tex> to be the pullback functor. It remains to check that <fr:tex>\Sigma _{f}  \dashv   f ^{*}</fr:tex>.</fr:p>
+root="false"><fr:frontmatter><fr:anchor>254</fr:anchor><fr:taxon>Only if</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:parent>ct-000J</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Suppose that <fr:tex>\mathcal { C }</fr:tex> has pullbacks. Then we can take <fr:tex>f ^{*}</fr:tex> to be the pullback functor. It remains to check that <fr:tex>\Sigma _{f}  \dashv   f ^{*}</fr:tex>.</fr:p>
   <html:table
 xmlns:html="http://www.w3.org/1999/xhtml">
       
@@ -3799,7 +3799,7 @@ xmlns:html="http://www.w3.org/1999/xhtml">
   <html:tr>
         
   <html:td>
-          Let <fr:tex>h  \in   { \mathcal { C } _{/{ A }}}</fr:tex> be an object, we take <fr:tex>\eta _{h} \colon h \to f ^{*} ( \Sigma _{f}(h))</fr:tex> to be the unique morphism given by the following pullback:
+          Let <fr:tex>h  \in   {{ \mathcal { C } }_{/{ A }}}</fr:tex> be an object, we take <fr:tex>\eta _{h} \colon h \to f ^{*} ( \Sigma _{f}(h))</fr:tex> to be the unique morphism given by the following pullback:
           
     
       
@@ -4047,7 +4047,7 @@ hash="a39a72e8fd3626c07c8b81e56eeebb21"><fr:embedded-tex-preamble>
         </html:td>
 
         
-  <html:td>Let <fr:tex>g  \in   { \mathcal { C } _{/{ B }}}</fr:tex> be an object. We take <fr:tex>\varepsilon _{g} \colon \Sigma _{f}( f ^{*} (g)) \to g</fr:tex> to be the following morphism.
+  <html:td>Let <fr:tex>g  \in   {{ \mathcal { C } }_{/{ B }}}</fr:tex> be an object. We take <fr:tex>\varepsilon _{g} \colon \Sigma _{f}( f ^{*} (g)) \to g</fr:tex> to be the following morphism.
           
     
       
@@ -4283,7 +4283,7 @@ hash="e4b01419b1cf30092327fc3a4b619a13"><fr:embedded-tex-preamble>
           </fr:embedded-tex-body></fr:embedded-tex>
     
   
-          Let <fr:tex>\alpha \colon g \to g'</fr:tex> be a morphism in <fr:tex>{ \mathcal { C } _{/{ B }}}</fr:tex>. By the construction of <fr:tex>f ^{*}</fr:tex>, we have the following commutative diagram.
+          Let <fr:tex>\alpha \colon g \to g'</fr:tex> be a morphism in <fr:tex>{{ \mathcal { C } }_{/{ B }}}</fr:tex>. By the construction of <fr:tex>f ^{*}</fr:tex>, we have the following commutative diagram.
           
     
       
@@ -4532,7 +4532,7 @@ hash="25bee72b9a37614e3eac28fd3d121035"><fr:embedded-tex-preamble>
       </html:tr>
 
     </html:table>
-<fr:p>By construction, <fr:tex>\varepsilon _{ \Sigma _{f}} \eta  =  \mathsf {id} _{ \Sigma _{f} }</fr:tex>. Thus, it remains to verify the other triangle equality.</fr:p><fr:p>Let <fr:tex>g  \in   { \mathcal { C } _{/{ B }}}</fr:tex> be an object. We need to show that <fr:tex>f ^{*} ( \varepsilon _{g}) \eta _{ f ^{*} (g)} =  \mathsf {id} _{ f ^{*} (g) }</fr:tex>. Note that <fr:tex>f ^{*} (g) f ^{*} ( \varepsilon _{g}) \eta _{ f ^{*} (g)} =  f ^{*} (g)</fr:tex> by the construction of <fr:tex>f ^{*}</fr:tex>. Moreover, we also have the following equation.</fr:p><fr:tex
+<fr:p>By construction, <fr:tex>\varepsilon _{ \Sigma _{f}} \eta  =  \mathsf {id} _{ \Sigma _{f} }</fr:tex>. Thus, it remains to verify the other triangle equality.</fr:p><fr:p>Let <fr:tex>g  \in   {{ \mathcal { C } }_{/{ B }}}</fr:tex> be an object. We need to show that <fr:tex>f ^{*} ( \varepsilon _{g}) \eta _{ f ^{*} (g)} =  \mathsf {id} _{ f ^{*} (g) }</fr:tex>. Note that <fr:tex>f ^{*} (g) f ^{*} ( \varepsilon _{g}) \eta _{ f ^{*} (g)} =  f ^{*} (g)</fr:tex> by the construction of <fr:tex>f ^{*}</fr:tex>. Moreover, we also have the following equation.</fr:p><fr:tex
 display="block">        \begin {align*}          \varepsilon _{g} f ^{*} ( \varepsilon _{g}) \eta _{ f ^{*} (g)} &amp;=  \varepsilon _{g} \varepsilon _{f  \circ   f ^{*} (g)} \eta _{ f ^{*} (g)} &amp;&amp;  \text {by the construction of }  f ^{*} \\                                                      &amp;=  \varepsilon _{g} \mathsf {id}  &amp;&amp;  \text {by the construction of }  \eta \\                                                      &amp;=  \varepsilon _{g}        \end {align*}     </fr:tex><fr:p>Thus, <fr:tex>f ^{*} ( \varepsilon _{g}) \eta _{ f ^{*} (g)}</fr:tex> corresponds to the same cone over <fr:tex>f</fr:tex> and <fr:tex>g</fr:tex> as <fr:tex>\mathsf {id} _{ f ^{*} (g) }</fr:tex>. Then uniqueness implies that they are equal.</fr:p></fr:mainmatter></fr:tree>
 </fr:mainmatter></fr:tree>
     
@@ -4543,7 +4543,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1014</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>log-000J</fr:addr><fr:route>log-000J.xml</fr:route><fr:title>Subobject doctrine of a regular category</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>24</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
+root="false"><fr:frontmatter><fr:anchor>1019</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>log-000J</fr:addr><fr:route>log-000J.xml</fr:route><fr:title>Subobject doctrine of a regular category</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>24</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
   Let <fr:tex>\mathcal { C }</fr:tex> be a <fr:link
 href="ct-000O.xml"
 type="local"
@@ -4561,7 +4561,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>333</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>24</fr:day></fr:date><fr:parent>log-000J</fr:parent></fr:frontmatter><fr:mainmatter>
+root="false"><fr:frontmatter><fr:anchor>336</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>24</fr:day></fr:date><fr:parent>log-000J</fr:parent></fr:frontmatter><fr:mainmatter>
   <fr:p>
     Each fiber <fr:tex>\mathsf { Sub } (A)</fr:tex> has finite limits inherited from <fr:tex>\mathcal { C }</fr:tex>.
     By <fr:ref
@@ -4575,7 +4575,7 @@ addr="log-000E">Beck-Chevalley condition</fr:link> because images commute with p
     Then by construction the <fr:link
 href="log-000H.xml"
 type="local"
-addr="log-000H">naming functor</fr:link> <fr:tex>{ \mathopen {}[ \mathord { \hspace {1pt} \text {--} \hspace {1pt}} ] \mathclose {}} _{X} \colon { \mathcal { C } _{/{ X }}} \to \mathsf { Sub } (X)</fr:tex> is just <fr:tex>\mathsf { Img }</fr:tex>, which admits the inclusion functor as a right adjoint.
+addr="log-000H">naming functor</fr:link> <fr:tex>{ \mathopen {}[ \mathord { \hspace {1pt} \text {--} \hspace {1pt}} ] \mathclose {}} _{X} \colon {{ \mathcal { C } }_{/{ X }}} \to \mathsf { Sub } (X)</fr:tex> is just <fr:tex>\mathsf { Img }</fr:tex>, which admits the inclusion functor as a right adjoint.
   </fr:p>
 </fr:mainmatter></fr:tree>
     
@@ -4586,7 +4586,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1015</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>ct-001A</fr:addr><fr:route>ct-001A.xml</fr:route><fr:title>Beck-Chevalley condition</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>13</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
+root="false"><fr:frontmatter><fr:anchor>1020</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>ct-001A</fr:addr><fr:route>ct-001A.xml</fr:route><fr:title>Beck-Chevalley condition</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>13</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
   Let <fr:tex>\mathcal { C }</fr:tex> be a <fr:link
 href="ct-0019.xml"
 type="local"
@@ -5070,7 +5070,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>320</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>13</fr:day></fr:date><fr:parent>ct-001A</fr:parent></fr:frontmatter><fr:mainmatter>
+root="false"><fr:frontmatter><fr:anchor>323</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>13</fr:day></fr:date><fr:parent>ct-001A</fr:parent></fr:frontmatter><fr:mainmatter>
   <fr:p>
     Consider the corresponding left adjoint square.
   </fr:p>
@@ -5582,7 +5582,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1016</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>ct-0011</fr:addr><fr:route>ct-0011.xml</fr:route><fr:title><fr:link
+root="false"><fr:frontmatter><fr:anchor>1021</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>ct-0011</fr:addr><fr:route>ct-0011.xml</fr:route><fr:title><fr:link
 href="ct-000X.xml"
 type="local"
 addr="ct-000X">Coherent categories</fr:link> admit distributive law</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>10</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
@@ -5599,7 +5599,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>311</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>10</fr:day></fr:date><fr:parent>ct-0011</fr:parent></fr:frontmatter><fr:mainmatter>
+root="false"><fr:frontmatter><fr:anchor>314</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>10</fr:day></fr:date><fr:parent>ct-0011</fr:parent></fr:frontmatter><fr:mainmatter>
   Let <fr:tex>m \colon A_{1} \rightarrowtail A</fr:tex> be a subobject of <fr:tex>\mathcal { C }</fr:tex>.
   Then by <fr:ref
 addr="ct-000L"
@@ -5616,7 +5616,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1017</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>ct-0012</fr:addr><fr:route>ct-0012.xml</fr:route><fr:title>Union as a pushout of intersection</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>10</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
+root="false"><fr:frontmatter><fr:anchor>1022</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>ct-0012</fr:addr><fr:route>ct-0012.xml</fr:route><fr:title>Union as a pushout of intersection</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>10</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
   Let <fr:tex>\mathcal { C }</fr:tex> be a <fr:link
 href="ct-000X.xml"
 type="local"
@@ -5871,14 +5871,14 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>313</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>10</fr:day></fr:date><fr:parent>ct-0012</fr:parent></fr:frontmatter><fr:mainmatter>
+root="false"><fr:frontmatter><fr:anchor>316</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>10</fr:day></fr:date><fr:parent>ct-0012</fr:parent></fr:frontmatter><fr:mainmatter>
   <fr:p>
     The diagram commutes since <fr:tex>\mathsf { Sub } (A)</fr:tex> is a preorder: any two morphisms <fr:tex>A_{1}  \cap  A_{2}  \rightrightarrows  A_{1}  \cup  A_{2}</fr:tex> in <fr:tex>\mathsf { Sub } (A)</fr:tex> are equal.
     Moreover, this diagram is a pullback in <fr:tex>\mathsf { Sub } (A)</fr:tex> as the pullback of <fr:tex>u_{2}</fr:tex> along <fr:tex>u_{1}</fr:tex> is just the largest subobject contained in both <fr:tex>A_{1}</fr:tex> and <fr:tex>A_{2}</fr:tex>, i.e., the intersection.
-    Then since both the inclusion <fr:tex>\mathsf { Sub } (A)  \hookrightarrow   { \mathcal { C } _{/{ A }}}</fr:tex> (as a right adjoint) and the forgetful functor <fr:tex>{ \mathcal { C } _{/{ A }}}   \to   \mathcal { C }</fr:tex> preserve pullbacks, the square is a pullback in <fr:tex>\mathcal { C }</fr:tex>.
+    Then since both the inclusion <fr:tex>\mathsf { Sub } (A)  \hookrightarrow   {{ \mathcal { C } }_{/{ A }}}</fr:tex> (as a right adjoint) and the forgetful functor <fr:tex>{{ \mathcal { C } }_{/{ A }}}   \to   \mathcal { C }</fr:tex> preserve pullbacks, the square is a pullback in <fr:tex>\mathcal { C }</fr:tex>.
   </fr:p>
   <fr:p>
-    Note that the forgetful functor <fr:tex>{ \mathcal { C } _{/{ A }}}   \to   \mathcal { C }</fr:tex> preserves arbitrary colimits, but the inclusion functor does not necessarily preserve them, so the same strategy does not work for pushout.
+    Note that the forgetful functor <fr:tex>{{ \mathcal { C } }_{/{ A }}}   \to   \mathcal { C }</fr:tex> preserves arbitrary colimits, but the inclusion functor does not necessarily preserve them, so the same strategy does not work for pushout.
   </fr:p>
   <fr:p>
     Let <fr:tex>f \colon A_{1} \to B</fr:tex> and <fr:tex>g \colon A_{2} \to B</fr:tex> be morphisms in <fr:tex>\mathcal { C }</fr:tex> such that <fr:tex>fi_{1} = gi_{2}</fr:tex>.
@@ -7213,7 +7213,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1018</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>ct-000R</fr:addr><fr:route>ct-000R.xml</fr:route><fr:title>Frobenius reciprocity</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>4</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>f \colon A \to B</fr:tex> be a morphism in a <fr:link
+root="false"><fr:frontmatter><fr:anchor>1023</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>ct-000R</fr:addr><fr:route>ct-000R.xml</fr:route><fr:title>Frobenius reciprocity</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>4</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>f \colon A \to B</fr:tex> be a morphism in a <fr:link
 href="ct-000O.xml"
 type="local"
 addr="ct-000O">regular category</fr:link>. Then for any two subobjects <fr:tex>A'  \rightarrowtail  A</fr:tex> and <fr:tex>B'  \rightarrowtail  B</fr:tex>, we have <fr:tex>\exists _{f}(A'  \cap   f ^{*} (B'))  \cong   \exists _{f}(A')  \cap  B'</fr:tex> in <fr:tex>\mathsf { Sub } (B)</fr:tex>, where <fr:tex>\exists _{f}</fr:tex> is the left adjoint of <fr:tex>f ^{*}</fr:tex> constructed in <fr:ref
@@ -7229,7 +7229,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>302</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>4</fr:day></fr:date><fr:parent>ct-000R</fr:parent></fr:frontmatter><fr:mainmatter>
+root="false"><fr:frontmatter><fr:anchor>305</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>4</fr:day></fr:date><fr:parent>ct-000R</fr:parent></fr:frontmatter><fr:mainmatter>
   <fr:p>
     By the construction of <fr:tex>\exists _{f}</fr:tex>, this is equivalent to showing the following isomorphism.
     <fr:tex

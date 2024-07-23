@@ -7,12 +7,12 @@ numbered="true"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>801</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>ct-001G</fr:addr><fr:route>ct-001G.xml</fr:route><fr:title><fr:link
+root="false"><fr:frontmatter><fr:anchor>806</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>ct-001G</fr:addr><fr:route>ct-001G.xml</fr:route><fr:title><fr:link
 href="ct-001E.xml"
 type="local"
 addr="ct-001E">Exponentiable</fr:link> objects and right adjoints</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>14</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
   Let <fr:tex>\mathcal { C }</fr:tex> be a cartesian category.
-  Then an object <fr:tex>B</fr:tex> is exponentiable iff <fr:tex>B ^{*} \colon \mathcal { C } \to { \mathcal { C } _{/{ B }}}</fr:tex> admits a right adjoint <fr:tex>\Pi _{B}</fr:tex>.
+  Then an object <fr:tex>B</fr:tex> is exponentiable iff <fr:tex>B ^{*} \colon \mathcal { C } \to {{ \mathcal { C } }_{/{ B }}}</fr:tex> admits a right adjoint <fr:tex>\Pi _{B}</fr:tex>.
 </fr:p>
     
       
@@ -23,7 +23,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>471</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>14</fr:day></fr:date><fr:parent>ct-001G</fr:parent></fr:frontmatter><fr:mainmatter>
+root="false"><fr:frontmatter><fr:anchor>474</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>14</fr:day></fr:date><fr:parent>ct-001G</fr:parent></fr:frontmatter><fr:mainmatter>
   <fr:p>
     Note that pullbacks over the terminal object <fr:tex>1</fr:tex> are products.
     Thus, we may assume that <fr:tex>B ^{*}</fr:tex> sends each object <fr:tex>A  \in   \mathcal { C }</fr:tex> to the first projection <fr:tex>B  \times  A  \to  B</fr:tex>.
@@ -43,7 +43,7 @@ taxon="Lemma"></fr:ref>, <fr:tex>\Sigma _{B}</fr:tex> is left adjoint to <fr:tex
   <fr:p>
     Conversely, suppose that <fr:tex>B</fr:tex> is exponentiable.
     Let us use the notation <fr:tex>( \mathord { \hspace {1pt} \text {--} \hspace {1pt}} ) ^{ \dag }</fr:tex> to denote the exponential transpose.
-    Then given any object <fr:tex>f \colon A \to B</fr:tex> in <fr:tex>{ \mathcal { C } _{/{ B }}}</fr:tex>, let <fr:tex>\Pi _{B}f</fr:tex> be given by the following pullback, where <fr:tex>\pi _{1} \colon B  \times  1 \to B</fr:tex> is the product projection.
+    Then given any object <fr:tex>f \colon A \to B</fr:tex> in <fr:tex>{{ \mathcal { C } }_{/{ B }}}</fr:tex>, let <fr:tex>\Pi _{B}f</fr:tex> be given by the following pullback, where <fr:tex>\pi _{1} \colon B  \times  1 \to B</fr:tex> is the product projection.
   </fr:p>
   
     
@@ -281,7 +281,7 @@ hash="280cd09bac76b7fbd9c9d8d41850f414"><fr:embedded-tex-preamble>
     
   
   <fr:p>
-    Now let <fr:tex>\alpha \colon f \to g</fr:tex> be a morphism in <fr:tex>{ \mathcal { C } _{/{ B }}}</fr:tex>, we extend the above assignment to morphisms as follows:
+    Now let <fr:tex>\alpha \colon f \to g</fr:tex> be a morphism in <fr:tex>{{ \mathcal { C } }_{/{ B }}}</fr:tex>, we extend the above assignment to morphisms as follows:
   </fr:p>
   
     
@@ -1018,7 +1018,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>798</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>ct-001E</fr:addr><fr:route>ct-001E.xml</fr:route><fr:title>Exponentiable object</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>13</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
+root="false"><fr:frontmatter><fr:anchor>803</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>ct-001E</fr:addr><fr:route>ct-001E.xml</fr:route><fr:title>Exponentiable object</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>13</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
   Let <fr:tex>\mathcal { C }</fr:tex> be a category with finite products.
   An object <fr:tex>A</fr:tex> is said to be <fr:em><fr:strong>exponentiable</fr:strong></fr:em> if the functor <fr:tex>A  \times  ( \mathord { \hspace {1pt} \text {--} \hspace {1pt}} )</fr:tex> admits a right adjoint <fr:tex>( \mathord { \hspace {1pt} \text {--} \hspace {1pt}} )^{A}</fr:tex>.
 </fr:p></fr:mainmatter></fr:tree><fr:tree
@@ -1028,7 +1028,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>799</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>ct-000J</fr:addr><fr:route>ct-000J.xml</fr:route><fr:title><fr:link
+root="false"><fr:frontmatter><fr:anchor>804</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>ct-000J</fr:addr><fr:route>ct-000J.xml</fr:route><fr:title><fr:link
 href="ct-000I.xml"
 type="local"
 addr="ct-000I">Slice comparison functor</fr:link> of a <fr:link
@@ -1047,7 +1047,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>277</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:parent>ct-000J</fr:parent></fr:frontmatter><fr:mainmatter>
+root="false"><fr:frontmatter><fr:anchor>255</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:parent>ct-000J</fr:parent></fr:frontmatter><fr:mainmatter>
   <fr:p>By <fr:ref
 addr="ct-000H"
 href="ct-000H.xml"
@@ -1060,7 +1060,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>268</fr:anchor><fr:taxon>If</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:parent>ct-000J</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Suppose that <fr:tex>\Sigma _{f}  \dashv   f ^{*}</fr:tex> for any <fr:tex>f</fr:tex>. We show that the following diagram</fr:p>
+root="false"><fr:frontmatter><fr:anchor>246</fr:anchor><fr:taxon>If</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:parent>ct-000J</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Suppose that <fr:tex>\Sigma _{f}  \dashv   f ^{*}</fr:tex> for any <fr:tex>f</fr:tex>. We show that the following diagram</fr:p>
     
       
       <fr:embedded-tex
@@ -1540,7 +1540,7 @@ hash="7a09fdfa15abc2d8f1d0d5b20caaa713"><fr:embedded-tex-preamble>
        \end {tikzpicture}
     </fr:embedded-tex-body></fr:embedded-tex>
     
-  <fr:p>Note that <fr:tex>h</fr:tex> is a morphism <fr:tex>h \colon \Sigma _{f}(h') \to g</fr:tex> in <fr:tex>{ \mathcal { C } _{/{ B }}}</fr:tex>. Thus, it corresponds to a unique morphism <fr:tex>h ^{ \dag } \colon h' \to f ^{*} (g)</fr:tex> under the adjunction.</fr:p><fr:p>The transpose of <fr:tex>h ^{ \dag }</fr:tex> can be computed as <fr:tex>\varepsilon _{g}  \circ   \Sigma _{f}(h ^{ \dag } )</fr:tex>. Since <fr:tex>\Sigma _{f}</fr:tex> is the identity on morphisms, we have
+  <fr:p>Note that <fr:tex>h</fr:tex> is a morphism <fr:tex>h \colon \Sigma _{f}(h') \to g</fr:tex> in <fr:tex>{{ \mathcal { C } }_{/{ B }}}</fr:tex>. Thus, it corresponds to a unique morphism <fr:tex>h ^{ \dag } \colon h' \to f ^{*} (g)</fr:tex> under the adjunction.</fr:p><fr:p>The transpose of <fr:tex>h ^{ \dag }</fr:tex> can be computed as <fr:tex>\varepsilon _{g}  \circ   \Sigma _{f}(h ^{ \dag } )</fr:tex>. Since <fr:tex>\Sigma _{f}</fr:tex> is the identity on morphisms, we have
       <fr:tex
 display="block">         (h ^{ \dag } ) ^{ \dag }  =  \varepsilon _{g}  \circ   \Sigma _{f}(h ^{ \dag } ) =  \varepsilon _{g}  \circ  h ^{ \dag }  = h       </fr:tex>
       Thus, the top triangle also commutes.
@@ -1553,7 +1553,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>276</fr:anchor><fr:taxon>Only if</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:parent>ct-000J</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Suppose that <fr:tex>\mathcal { C }</fr:tex> has pullbacks. Then we can take <fr:tex>f ^{*}</fr:tex> to be the pullback functor. It remains to check that <fr:tex>\Sigma _{f}  \dashv   f ^{*}</fr:tex>.</fr:p>
+root="false"><fr:frontmatter><fr:anchor>254</fr:anchor><fr:taxon>Only if</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:parent>ct-000J</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Suppose that <fr:tex>\mathcal { C }</fr:tex> has pullbacks. Then we can take <fr:tex>f ^{*}</fr:tex> to be the pullback functor. It remains to check that <fr:tex>\Sigma _{f}  \dashv   f ^{*}</fr:tex>.</fr:p>
   <html:table
 xmlns:html="http://www.w3.org/1999/xhtml">
       
@@ -1570,7 +1570,7 @@ xmlns:html="http://www.w3.org/1999/xhtml">
   <html:tr>
         
   <html:td>
-          Let <fr:tex>h  \in   { \mathcal { C } _{/{ A }}}</fr:tex> be an object, we take <fr:tex>\eta _{h} \colon h \to f ^{*} ( \Sigma _{f}(h))</fr:tex> to be the unique morphism given by the following pullback:
+          Let <fr:tex>h  \in   {{ \mathcal { C } }_{/{ A }}}</fr:tex> be an object, we take <fr:tex>\eta _{h} \colon h \to f ^{*} ( \Sigma _{f}(h))</fr:tex> to be the unique morphism given by the following pullback:
           
     
       
@@ -1818,7 +1818,7 @@ hash="a39a72e8fd3626c07c8b81e56eeebb21"><fr:embedded-tex-preamble>
         </html:td>
 
         
-  <html:td>Let <fr:tex>g  \in   { \mathcal { C } _{/{ B }}}</fr:tex> be an object. We take <fr:tex>\varepsilon _{g} \colon \Sigma _{f}( f ^{*} (g)) \to g</fr:tex> to be the following morphism.
+  <html:td>Let <fr:tex>g  \in   {{ \mathcal { C } }_{/{ B }}}</fr:tex> be an object. We take <fr:tex>\varepsilon _{g} \colon \Sigma _{f}( f ^{*} (g)) \to g</fr:tex> to be the following morphism.
           
     
       
@@ -2054,7 +2054,7 @@ hash="e4b01419b1cf30092327fc3a4b619a13"><fr:embedded-tex-preamble>
           </fr:embedded-tex-body></fr:embedded-tex>
     
   
-          Let <fr:tex>\alpha \colon g \to g'</fr:tex> be a morphism in <fr:tex>{ \mathcal { C } _{/{ B }}}</fr:tex>. By the construction of <fr:tex>f ^{*}</fr:tex>, we have the following commutative diagram.
+          Let <fr:tex>\alpha \colon g \to g'</fr:tex> be a morphism in <fr:tex>{{ \mathcal { C } }_{/{ B }}}</fr:tex>. By the construction of <fr:tex>f ^{*}</fr:tex>, we have the following commutative diagram.
           
     
       
@@ -2303,7 +2303,7 @@ hash="25bee72b9a37614e3eac28fd3d121035"><fr:embedded-tex-preamble>
       </html:tr>
 
     </html:table>
-<fr:p>By construction, <fr:tex>\varepsilon _{ \Sigma _{f}} \eta  =  \mathsf {id} _{ \Sigma _{f} }</fr:tex>. Thus, it remains to verify the other triangle equality.</fr:p><fr:p>Let <fr:tex>g  \in   { \mathcal { C } _{/{ B }}}</fr:tex> be an object. We need to show that <fr:tex>f ^{*} ( \varepsilon _{g}) \eta _{ f ^{*} (g)} =  \mathsf {id} _{ f ^{*} (g) }</fr:tex>. Note that <fr:tex>f ^{*} (g) f ^{*} ( \varepsilon _{g}) \eta _{ f ^{*} (g)} =  f ^{*} (g)</fr:tex> by the construction of <fr:tex>f ^{*}</fr:tex>. Moreover, we also have the following equation.</fr:p><fr:tex
+<fr:p>By construction, <fr:tex>\varepsilon _{ \Sigma _{f}} \eta  =  \mathsf {id} _{ \Sigma _{f} }</fr:tex>. Thus, it remains to verify the other triangle equality.</fr:p><fr:p>Let <fr:tex>g  \in   {{ \mathcal { C } }_{/{ B }}}</fr:tex> be an object. We need to show that <fr:tex>f ^{*} ( \varepsilon _{g}) \eta _{ f ^{*} (g)} =  \mathsf {id} _{ f ^{*} (g) }</fr:tex>. Note that <fr:tex>f ^{*} (g) f ^{*} ( \varepsilon _{g}) \eta _{ f ^{*} (g)} =  f ^{*} (g)</fr:tex> by the construction of <fr:tex>f ^{*}</fr:tex>. Moreover, we also have the following equation.</fr:p><fr:tex
 display="block">        \begin {align*}          \varepsilon _{g} f ^{*} ( \varepsilon _{g}) \eta _{ f ^{*} (g)} &amp;=  \varepsilon _{g} \varepsilon _{f  \circ   f ^{*} (g)} \eta _{ f ^{*} (g)} &amp;&amp;  \text {by the construction of }  f ^{*} \\                                                      &amp;=  \varepsilon _{g} \mathsf {id}  &amp;&amp;  \text {by the construction of }  \eta \\                                                      &amp;=  \varepsilon _{g}        \end {align*}     </fr:tex><fr:p>Thus, <fr:tex>f ^{*} ( \varepsilon _{g}) \eta _{ f ^{*} (g)}</fr:tex> corresponds to the same cone over <fr:tex>f</fr:tex> and <fr:tex>g</fr:tex> as <fr:tex>\mathsf {id} _{ f ^{*} (g) }</fr:tex>. Then uniqueness implies that they are equal.</fr:p></fr:mainmatter></fr:tree>
 </fr:mainmatter></fr:tree>
     
@@ -2314,7 +2314,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>800</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>ct-000I</fr:addr><fr:route>ct-000I.xml</fr:route><fr:title>Slice comparison functor</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>\mathcal { C }</fr:tex> be an arbitrary category and <fr:tex>f \colon A \to B</fr:tex> be a morphism. There is a faithful functor <fr:tex>\Sigma _{f} \colon { \mathcal { C } _{/{ A }}} \to { \mathcal { C } _{/{ B }}}</fr:tex> whose action on objects is the assignment <fr:tex>g  \mapsto  fg</fr:tex>.</fr:p>
+root="false"><fr:frontmatter><fr:anchor>805</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>ct-000I</fr:addr><fr:route>ct-000I.xml</fr:route><fr:title>Slice comparison functor</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>\mathcal { C }</fr:tex> be an arbitrary category and <fr:tex>f \colon A \to B</fr:tex> be a morphism. There is a faithful functor <fr:tex>\Sigma _{f} \colon {{ \mathcal { C } }_{/{ A }}} \to {{ \mathcal { C } }_{/{ B }}}</fr:tex> whose action on objects is the assignment <fr:tex>g  \mapsto  fg</fr:tex>.</fr:p>
     
       
       <fr:tree
@@ -2324,8 +2324,8 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>548</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:parent>ct-000I</fr:parent></fr:frontmatter><fr:mainmatter>
-  <fr:p>Note that the category <fr:tex>{ ( { \mathcal { C } _{/{ B }}} ) _{/{ f }}}</fr:tex> consists of the following data:</fr:p>
+root="false"><fr:frontmatter><fr:anchor>551</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:parent>ct-000I</fr:parent></fr:frontmatter><fr:mainmatter>
+  <fr:p>Note that the category <fr:tex>{{ ( {{ \mathcal { C } }_{/{ B }}} ) }_{/{ f }}}</fr:tex> consists of the following data:</fr:p>
   
   <html:table
 xmlns:html="http://www.w3.org/1999/xhtml">
@@ -2342,7 +2342,7 @@ xmlns:html="http://www.w3.org/1999/xhtml">
     
   <html:tr>
       
-  <html:td>An object is a morphism <fr:tex>g</fr:tex> in <fr:tex>{ \mathcal { C } _{/{ B }}}</fr:tex> with codomain <html:span
+  <html:td>An object is a morphism <fr:tex>g</fr:tex> in <fr:tex>{{ \mathcal { C } }_{/{ B }}}</fr:tex> with codomain <html:span
 style="white-space: nowrap"><fr:tex>f</fr:tex>.</html:span>
         
     
@@ -2576,12 +2576,12 @@ hash="a90a9cb4a6821791d654fabe28b42f82"><fr:embedded-tex-preamble>
         </fr:embedded-tex-body></fr:embedded-tex>
     
   
-        This is precisely an object in <fr:tex>{ \mathcal { C } _{/{ A }}}</fr:tex>.
+        This is precisely an object in <fr:tex>{{ \mathcal { C } }_{/{ A }}}</fr:tex>.
       </html:td>
 
       
-  <html:td>A morphism <fr:tex>\alpha \colon g \to h</fr:tex> is a morphism in <fr:tex>{ \mathcal { C } _{/{ B }}}</fr:tex> such that the following square commutes.
-        Here, we identify the objects <fr:tex>g</fr:tex> and <fr:tex>h</fr:tex> with objects in <fr:tex>{ \mathcal { C } _{/{ A }}}</fr:tex>.
+  <html:td>A morphism <fr:tex>\alpha \colon g \to h</fr:tex> is a morphism in <fr:tex>{{ \mathcal { C } }_{/{ B }}}</fr:tex> such that the following square commutes.
+        Here, we identify the objects <fr:tex>g</fr:tex> and <fr:tex>h</fr:tex> with objects in <fr:tex>{{ \mathcal { C } }_{/{ A }}}</fr:tex>.
         
     
       
@@ -2814,14 +2814,14 @@ hash="7384eeef26af0d6fcebb858f4ab8bcbe"><fr:embedded-tex-preamble>
         </fr:embedded-tex-body></fr:embedded-tex>
     
   
-        This is precisely a morphism in <fr:tex>{ \mathcal { C } _{/{ A }}}</fr:tex>.
+        This is precisely a morphism in <fr:tex>{{ \mathcal { C } }_{/{ A }}}</fr:tex>.
       </html:td>
 
     </html:tr>
 
   </html:table>
 
-  <fr:p>Thus, we may take <fr:tex>\Sigma _{f}</fr:tex> to be the forgetful functor <fr:tex>{ ( { \mathcal { C } _{/{ B }}} ) _{/{ f }}}   \to   { \mathcal { C } _{/{ A }}}</fr:tex>.</fr:p>
+  <fr:p>Thus, we may take <fr:tex>\Sigma _{f}</fr:tex> to be the forgetful functor <fr:tex>{{ ( {{ \mathcal { C } }_{/{ B }}} ) }_{/{ f }}}   \to   {{ \mathcal { C } }_{/{ A }}}</fr:tex>.</fr:p>
 </fr:mainmatter></fr:tree>
     
   </fr:mainmatter></fr:tree></fr:related><fr:backlinks></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>

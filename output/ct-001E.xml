@@ -7,7 +7,7 @@ numbered="true"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>847</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>ct-001E</fr:addr><fr:route>ct-001E.xml</fr:route><fr:title>Exponentiable object</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>13</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
+root="false"><fr:frontmatter><fr:anchor>852</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>ct-001E</fr:addr><fr:route>ct-001E.xml</fr:route><fr:title>Exponentiable object</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>13</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
   Let <fr:tex>\mathcal { C }</fr:tex> be a category with finite products.
   An object <fr:tex>A</fr:tex> is said to be <fr:em><fr:strong>exponentiable</fr:strong></fr:em> if the functor <fr:tex>A  \times  ( \mathord { \hspace {1pt} \text {--} \hspace {1pt}} )</fr:tex> admits a right adjoint <fr:tex>( \mathord { \hspace {1pt} \text {--} \hspace {1pt}} )^{A}</fr:tex>.
 </fr:p></fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context></fr:context><fr:related></fr:related><fr:backlinks><fr:tree
@@ -17,12 +17,12 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>844</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>ct-001G</fr:addr><fr:route>ct-001G.xml</fr:route><fr:title><fr:link
+root="false"><fr:frontmatter><fr:anchor>849</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>ct-001G</fr:addr><fr:route>ct-001G.xml</fr:route><fr:title><fr:link
 href="ct-001E.xml"
 type="local"
 addr="ct-001E">Exponentiable</fr:link> objects and right adjoints</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>14</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
   Let <fr:tex>\mathcal { C }</fr:tex> be a cartesian category.
-  Then an object <fr:tex>B</fr:tex> is exponentiable iff <fr:tex>B ^{*} \colon \mathcal { C } \to { \mathcal { C } _{/{ B }}}</fr:tex> admits a right adjoint <fr:tex>\Pi _{B}</fr:tex>.
+  Then an object <fr:tex>B</fr:tex> is exponentiable iff <fr:tex>B ^{*} \colon \mathcal { C } \to {{ \mathcal { C } }_{/{ B }}}</fr:tex> admits a right adjoint <fr:tex>\Pi _{B}</fr:tex>.
 </fr:p>
     
       
@@ -33,7 +33,7 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>471</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>14</fr:day></fr:date><fr:parent>ct-001G</fr:parent></fr:frontmatter><fr:mainmatter>
+root="false"><fr:frontmatter><fr:anchor>474</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>14</fr:day></fr:date><fr:parent>ct-001G</fr:parent></fr:frontmatter><fr:mainmatter>
   <fr:p>
     Note that pullbacks over the terminal object <fr:tex>1</fr:tex> are products.
     Thus, we may assume that <fr:tex>B ^{*}</fr:tex> sends each object <fr:tex>A  \in   \mathcal { C }</fr:tex> to the first projection <fr:tex>B  \times  A  \to  B</fr:tex>.
@@ -53,7 +53,7 @@ taxon="Lemma"></fr:ref>, <fr:tex>\Sigma _{B}</fr:tex> is left adjoint to <fr:tex
   <fr:p>
     Conversely, suppose that <fr:tex>B</fr:tex> is exponentiable.
     Let us use the notation <fr:tex>( \mathord { \hspace {1pt} \text {--} \hspace {1pt}} ) ^{ \dag }</fr:tex> to denote the exponential transpose.
-    Then given any object <fr:tex>f \colon A \to B</fr:tex> in <fr:tex>{ \mathcal { C } _{/{ B }}}</fr:tex>, let <fr:tex>\Pi _{B}f</fr:tex> be given by the following pullback, where <fr:tex>\pi _{1} \colon B  \times  1 \to B</fr:tex> is the product projection.
+    Then given any object <fr:tex>f \colon A \to B</fr:tex> in <fr:tex>{{ \mathcal { C } }_{/{ B }}}</fr:tex>, let <fr:tex>\Pi _{B}f</fr:tex> be given by the following pullback, where <fr:tex>\pi _{1} \colon B  \times  1 \to B</fr:tex> is the product projection.
   </fr:p>
   
     
@@ -291,7 +291,7 @@ hash="280cd09bac76b7fbd9c9d8d41850f414"><fr:embedded-tex-preamble>
     
   
   <fr:p>
-    Now let <fr:tex>\alpha \colon f \to g</fr:tex> be a morphism in <fr:tex>{ \mathcal { C } _{/{ B }}}</fr:tex>, we extend the above assignment to morphisms as follows:
+    Now let <fr:tex>\alpha \colon f \to g</fr:tex> be a morphism in <fr:tex>{{ \mathcal { C } }_{/{ B }}}</fr:tex>, we extend the above assignment to morphisms as follows:
   </fr:p>
   
     
@@ -1028,12 +1028,12 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>845</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>ct-001H</fr:addr><fr:route>ct-001H.xml</fr:route><fr:title><fr:link
+root="false"><fr:frontmatter><fr:anchor>850</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>ct-001H</fr:addr><fr:route>ct-001H.xml</fr:route><fr:title><fr:link
 href="ct-001E.xml"
 type="local"
 addr="ct-001E">Exponentiable</fr:link> objects under slicing</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>14</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
   Let <fr:tex>\mathcal { C }</fr:tex> be a cartesian category.
-  If <fr:tex>A</fr:tex> is exponentiable in <fr:tex>\mathcal { C }</fr:tex> then so is <fr:tex>B ^{*} (A)</fr:tex> in <fr:tex>{ \mathcal { C } _{/{ B }}}</fr:tex> for any object <fr:tex>B  \in   \mathcal { C }</fr:tex>.
+  If <fr:tex>A</fr:tex> is exponentiable in <fr:tex>\mathcal { C }</fr:tex> then so is <fr:tex>B ^{*} (A)</fr:tex> in <fr:tex>{{ \mathcal { C } }_{/{ B }}}</fr:tex> for any object <fr:tex>B  \in   \mathcal { C }</fr:tex>.
   Moreover, the pullback functor <fr:tex>B ^{*}</fr:tex> preserves any exponential that exists in <fr:tex>\mathcal { C }</fr:tex>.
 </fr:p>
     
@@ -1045,9 +1045,9 @@ numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>473</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>14</fr:day></fr:date><fr:parent>ct-001H</fr:parent></fr:frontmatter><fr:mainmatter>
+root="false"><fr:frontmatter><fr:anchor>476</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>14</fr:day></fr:date><fr:parent>ct-001H</fr:parent></fr:frontmatter><fr:mainmatter>
   <fr:p>
-    For each object <fr:tex>f \colon C \to B</fr:tex> in <fr:tex>{ \mathcal { C } _{/{ B }}}</fr:tex>, let us define the action on objects of <fr:tex>( \mathord { \hspace {1pt} \text {--} \hspace {1pt}} )^{ B ^{*} (A)}</fr:tex> by the following pullback square:
+    For each object <fr:tex>f \colon C \to B</fr:tex> in <fr:tex>{{ \mathcal { C } }_{/{ B }}}</fr:tex>, let us define the action on objects of <fr:tex>( \mathord { \hspace {1pt} \text {--} \hspace {1pt}} )^{ B ^{*} (A)}</fr:tex> by the following pullback square:
   </fr:p>
   
     
@@ -1288,7 +1288,7 @@ hash="dcf1c9a817c61a2a396d6f8599d21cf6"><fr:embedded-tex-preamble>
     where <fr:tex>\pi _{2} ^{ \dag }</fr:tex> is the exponential transpose of the projection <fr:tex>\pi _{2} \colon A  \times  B \to B</fr:tex>.
   </fr:p>
   <fr:p>
-    Let <fr:tex>\alpha \colon f \to g</fr:tex> be a morphism in <fr:tex>{ \mathcal { C } _{/{ B }}}</fr:tex>.
+    Let <fr:tex>\alpha \colon f \to g</fr:tex> be a morphism in <fr:tex>{{ \mathcal { C } }_{/{ B }}}</fr:tex>.
     The above assignment can be extended to an action on morphisms by the universal property of pullbacks:
   </fr:p>
   
@@ -2261,7 +2261,7 @@ numbered="false"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>846</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>ct-001F</fr:addr><fr:route>ct-001F.xml</fr:route><fr:title>Cartesian closed category</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>13</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
+root="false"><fr:frontmatter><fr:anchor>851</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>ct-001F</fr:addr><fr:route>ct-001F.xml</fr:route><fr:title>Cartesian closed category</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>13</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
   Let <fr:tex>\mathcal { C }</fr:tex> be a category with finite products.
   <fr:tex>\mathcal { C }</fr:tex> is said to be <fr:em><fr:strong>cartesian closed</fr:strong></fr:em> if every object is <fr:link
 href="ct-001E.xml"
