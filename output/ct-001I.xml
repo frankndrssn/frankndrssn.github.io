@@ -176,7 +176,7 @@ display="inline"><![CDATA[\mathcal {C}]]></fr:tex> such that every component of 
     
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="fc7813c32092b7a88138eb0c8db24041"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -405,7 +405,7 @@ hash="fc7813c32092b7a88138eb0c8db24041"><fr:embedded-tex-preamble><![CDATA[
         west = {F\beta  * F\alpha },
         east = {F(\beta  * \alpha )},
       }
-    ]]></fr:embedded-tex-body></fr:embedded-tex></fr:li>
+    ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure></fr:li>
   <fr:li><fr:em><fr:strong>Lax associativity</fr:strong></fr:em>: For any composable triple of <fr:tex
 display="inline"><![CDATA[1]]></fr:tex>-cells <fr:tex
 display="inline"><![CDATA[f]]></fr:tex>, <fr:tex
@@ -415,7 +415,7 @@ display="inline"><![CDATA[\mathcal {C}]]></fr:tex>, the following diagram commut
     
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="1a9c768136e906f8454230821e9df1b0"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -647,7 +647,7 @@ hash="1a9c768136e906f8454230821e9df1b0"><fr:embedded-tex-preamble><![CDATA[
         \draw  [->,morphism] (4) to node[swap] {$\mathsf {id}_{Fh} * F^{2}_{g,f}$} (5);
         \draw  [->,morphism] (5) to node[swap] {$F^{2}_{h,gf}$} (6);
       \end {tikzpicture}
-    ]]></fr:embedded-tex-body></fr:embedded-tex></fr:li>
+    ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure></fr:li>
   <fr:li><fr:em><fr:strong>Lax left and right unity</fr:strong></fr:em>: For any <fr:tex
 display="inline"><![CDATA[1]]></fr:tex>-cell <fr:tex
 display="inline"><![CDATA[f\colon A\to B]]></fr:tex> in <fr:tex
@@ -655,7 +655,7 @@ display="inline"><![CDATA[\mathcal {C}]]></fr:tex>, the following diagrams commu
     
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="02d1c0a5bd8905f1a0f64bdb4ae6f267"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -898,7 +898,7 @@ hash="02d1c0a5bd8905f1a0f64bdb4ae6f267"><fr:embedded-tex-preamble><![CDATA[
         south = {F^{2}_{f,\mathsf {id}_{A}}},
         east = {F(r_{f})},
       }
-    ]]></fr:embedded-tex-body></fr:embedded-tex></fr:li></fr:ul></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+    ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure></fr:li></fr:ul></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"

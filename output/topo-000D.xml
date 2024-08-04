@@ -93,7 +93,7 @@ display="inline"><![CDATA[g\colon  B \to  S]]></fr:tex> such that <fr:tex
 display="inline"><![CDATA[f = gm]]></fr:tex>.</fr:p>
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="8ce4a6fb01229053c67a5725bb92a1e5"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -319,7 +319,7 @@ hash="8ce4a6fb01229053c67a5725bb92a1e5"><fr:embedded-tex-preamble><![CDATA[
     \draw  [morphism,->] (n) to node [above] {$f$} (e);
     \draw  [morphism,->,exists] (s) to node [yshift=-2pt,right] {$g$} (e);
   \end {tikzpicture}
-]]></fr:embedded-tex-body></fr:embedded-tex>
+]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   </fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
 toc="true"

@@ -73,7 +73,7 @@ display="inline"><![CDATA[\exists ^{\flat }_{f}]]></fr:tex> defined as the compo
   
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="f021c92e7bfba4038b027833197ec099"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -302,7 +302,7 @@ hash="f021c92e7bfba4038b027833197ec099"><fr:embedded-tex-preamble><![CDATA[
       \draw  [adjoint] (l1) to (r1);
       \draw  [adjoint] (l2) to (r2);
     \end {tikzpicture}
-  ]]></fr:embedded-tex-body></fr:embedded-tex>
+  ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
   <fr:p>where <fr:tex
@@ -318,7 +318,7 @@ display="inline"><![CDATA[\Gamma |\chi  \vdash  \varphi ]]></fr:tex>.
   
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="bca77cda61e0708bf4cff456dab49665"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -548,7 +548,7 @@ hash="bca77cda61e0708bf4cff456dab49665"><fr:embedded-tex-preamble><![CDATA[
       west = k,
       east = f,
     }
-  ]]></fr:embedded-tex-body></fr:embedded-tex>
+  ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
   <fr:p>We wish to show that <fr:tex
@@ -631,7 +631,7 @@ display="inline"><![CDATA[T]]></fr:tex> is said to satisfy <fr:em><fr:strong>Bec
 display="inline"><![CDATA[f^{*}\Sigma _{g} \cong  \Sigma _{h}k^{*}]]></fr:tex>.</fr:p>
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="46e0a696959d3102dab04d8ef82f856d"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -860,7 +860,7 @@ hash="46e0a696959d3102dab04d8ef82f856d"><fr:embedded-tex-preamble><![CDATA[
     west = k,
     east = f,
   }
-]]></fr:embedded-tex-body></fr:embedded-tex>
+]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   <fr:p>Furthermore, if for each morphism <fr:tex
 display="inline"><![CDATA[f\colon X\to Y]]></fr:tex> in <fr:tex
@@ -952,7 +952,7 @@ display="inline"><![CDATA[f\colon X\to Y]]></fr:tex> in <fr:tex
 display="inline"><![CDATA[\mathcal {C}]]></fr:tex>, the following square commutes up to isomorphism.</fr:p>
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="a1f3417da8e9cc3d4201025e96381c7a"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -1180,7 +1180,7 @@ hash="a1f3417da8e9cc3d4201025e96381c7a"><fr:embedded-tex-preamble><![CDATA[
     west = {f^{*}},
     east = {T(f)},
   }
-]]></fr:embedded-tex-body></fr:embedded-tex>
+]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
     
@@ -1221,7 +1221,7 @@ display="inline"><![CDATA[g\colon Z\to Y]]></fr:tex>, form the following pullbac
   
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="e1bd5fefb0fe8baa21479bac9059ba93"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -1450,7 +1450,7 @@ hash="e1bd5fefb0fe8baa21479bac9059ba93"><fr:embedded-tex-preamble><![CDATA[
       west = k,
       east = f,
     }
-  ]]></fr:embedded-tex-body></fr:embedded-tex>
+  ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
   <fr:p>Then by Beck-Chevalley, we have</fr:p>
@@ -1488,7 +1488,7 @@ display="inline"><![CDATA[f\colon X\to Y]]></fr:tex> in <fr:tex
 display="inline"><![CDATA[\mathcal {C}]]></fr:tex>, the following square commutes:</fr:p>
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="3c133ea9fa3990c2664c37093ccdc1f6"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -1716,7 +1716,7 @@ hash="3c133ea9fa3990c2664c37093ccdc1f6"><fr:embedded-tex-preamble><![CDATA[
     west = {Tf},
     east = {UF_{0}f},
   }
-]]></fr:embedded-tex-body></fr:embedded-tex>
+]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   </fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
 toc="true"
@@ -1817,7 +1817,7 @@ display="inline"><![CDATA[\Sigma _{f} \dashv  f^{*}]]></fr:tex> for any <fr:tex
 display="inline"><![CDATA[f]]></fr:tex>. We show that the following diagram</fr:p>
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="978cb4d5b9419bff7dba5ad49136cf28"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -2050,7 +2050,7 @@ hash="978cb4d5b9419bff7dba5ad49136cf28"><fr:embedded-tex-preamble><![CDATA[
     }
   
       \end {tikzpicture}
-    ]]></fr:embedded-tex-body></fr:embedded-tex>
+    ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   <fr:p>is a pullback, where <fr:tex
 display="inline"><![CDATA[\varepsilon _{g}]]></fr:tex> is the counit of the adjunction. Note that since <fr:tex
@@ -2061,7 +2061,7 @@ display="inline"><![CDATA[h\colon C\to B']]></fr:tex> be morphisms such that <fr
 display="inline"><![CDATA[fh' = gh]]></fr:tex>.</fr:p>
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="6c571ce318e6c51d13819d3e139d9fb2"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -2298,7 +2298,7 @@ hash="6c571ce318e6c51d13819d3e139d9fb2"><fr:embedded-tex-preamble><![CDATA[
         \draw  [->,morphism,bend left] (c) to node {$h$} (ne);
         \draw  [->,morphism,exists] (c) to node[desc] {$h^{\dag }$} (nw);
       \end {tikzpicture}
-    ]]></fr:embedded-tex-body></fr:embedded-tex>
+    ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   <fr:p>Note that <fr:tex
 display="inline"><![CDATA[h]]></fr:tex> is a morphism <fr:tex
@@ -2346,7 +2346,7 @@ display="inline"><![CDATA[\eta _{h}\colon h\to f^{*}(\Sigma _{f}(h))]]></fr:tex>
           
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="00fa5bdf6f274d0c7c6027f4ec6c92bc"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -2583,7 +2583,7 @@ hash="00fa5bdf6f274d0c7c6027f4ec6c92bc"><fr:embedded-tex-preamble><![CDATA[
               \draw  [double,morphism,bend left] (c) to (ne);
               \draw  [->,morphism,exists] (c) to node[desc] {$\eta _{h}$} (nw);
             \end {tikzpicture}
-          ]]></fr:embedded-tex-body></fr:embedded-tex>
+          ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
           <fr:p>where <fr:tex
@@ -2597,7 +2597,7 @@ display="inline"><![CDATA[\varepsilon _{g}\colon \Sigma _{f}(f^{*}(g))\to g]]></
           
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="d06c153112f52945894dc43faf6a95dc"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -2826,7 +2826,7 @@ hash="d06c153112f52945894dc43faf6a95dc"><fr:embedded-tex-preamble><![CDATA[
               west = f^{*}(g),
               north = \varepsilon _{g},
             }
-          ]]></fr:embedded-tex-body></fr:embedded-tex>
+          ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
           Let <fr:tex
@@ -2836,7 +2836,7 @@ display="inline"><![CDATA[f^{*}]]></fr:tex>, we have the following commutative d
           
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="e02daf32ecb0fc7d1934cd86d2bd5577"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -3072,7 +3072,7 @@ hash="e02daf32ecb0fc7d1934cd86d2bd5577"><fr:embedded-tex-preamble><![CDATA[
               \draw  [->,morphism,bend left] (a') to node {$\alpha \varepsilon _{g}$} (ne);
               \draw  [->,morphism,exists] (a') to node[desc] {$f^{*}(\alpha )$} (nw);
             \end {tikzpicture}
-          ]]></fr:embedded-tex-body></fr:embedded-tex>
+          ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
           Thus, <fr:tex

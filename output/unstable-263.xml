@@ -42,7 +42,7 @@ display="inline"><![CDATA[f^{*}(g)]]></fr:tex> in <fr:tex
 display="inline"><![CDATA[{{\mathcal {C}}_{/{A}}}]]></fr:tex>.</fr:p>
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="7ce43289f11ab6b5156fc08980af23bf"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -279,13 +279,13 @@ hash="7ce43289f11ab6b5156fc08980af23bf"><fr:embedded-tex-preamble><![CDATA[
         \draw  [->,morphism] (1) to (2);
         \draw  [cover,morphism] (2) to node[swap] {$\vartheta _{g}$} (sw);
       \end {tikzpicture}
-    ]]></fr:embedded-tex-body></fr:embedded-tex>
+    ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   <fr:p>Thus, <fr:tex
 display="inline"><![CDATA[f^{*}(g)]]></fr:tex> admits another cover-mono factorization.</fr:p>
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="0e48db361558ef22d39c6ac8658f0596"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -518,7 +518,7 @@ hash="0e48db361558ef22d39c6ac8658f0596"><fr:embedded-tex-preamble><![CDATA[
         \draw  [cover,morphism] (1) to node[swap] {$\vartheta _{f^{*}(g)}$} (5);
         \draw  [>->,morphism] (5) to node[swap] {$\mathsf {Img}(f^{*}(g))$} (4);
       \end {tikzpicture}
-    ]]></fr:embedded-tex-body></fr:embedded-tex>
+    ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   <fr:p>Then by uniqueness, <fr:tex
 display="inline"><![CDATA[C \cong  \underline {A'}]]></fr:tex>.
@@ -553,7 +553,7 @@ title="Image">images</fr:link> that commute with pullbacks, i.e., the following 
 display="inline"><![CDATA[f \in  {{\mathcal {C}}_{/{B}}}]]></fr:tex>.</fr:p>
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="63cf880e0981aa86486b403a0e4ec7f4"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -781,7 +781,7 @@ hash="63cf880e0981aa86486b403a0e4ec7f4"><fr:embedded-tex-preamble><![CDATA[
     west = f^{*},
     east = f^{*},
   }
-]]></fr:embedded-tex-body></fr:embedded-tex>
+]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
     
@@ -813,7 +813,7 @@ display="inline"><![CDATA[\mathsf {Img}(g)]]></fr:tex> is an isomorphism.
       Since images commute with pullbacks by hypothesis, we can form the following diagram.</fr:p>
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="8e8d4318615b483f566429a038a77ca2"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -1042,7 +1042,7 @@ hash="8e8d4318615b483f566429a038a77ca2"><fr:embedded-tex-preamble><![CDATA[
         \draw  [->,morphism] (2) to node[desc] {$\cong $} (4);
         \draw  [>->,morphism] (4) to node {$f^{*}(\mathsf {Img}(g))$} (3);
       \end {tikzpicture}
-    ]]></fr:embedded-tex-body></fr:embedded-tex>
+    ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   <fr:p>Since isomorphisms are stable under pullback, <fr:tex
 display="inline"><![CDATA[f^{*}(\mathsf {Img}(g))]]></fr:tex> is also an isomorphism.
@@ -1093,7 +1093,7 @@ display="inline"><![CDATA[f^{*}(g)]]></fr:tex> in <fr:tex
 display="inline"><![CDATA[{{\mathcal {C}}_{/{A}}}]]></fr:tex>.</fr:p>
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="7ce43289f11ab6b5156fc08980af23bf"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -1330,13 +1330,13 @@ hash="7ce43289f11ab6b5156fc08980af23bf"><fr:embedded-tex-preamble><![CDATA[
         \draw  [->,morphism] (1) to (2);
         \draw  [cover,morphism] (2) to node[swap] {$\vartheta _{g}$} (sw);
       \end {tikzpicture}
-    ]]></fr:embedded-tex-body></fr:embedded-tex>
+    ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   <fr:p>Thus, <fr:tex
 display="inline"><![CDATA[f^{*}(g)]]></fr:tex> admits another cover-mono factorization.</fr:p>
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="0e48db361558ef22d39c6ac8658f0596"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -1569,7 +1569,7 @@ hash="0e48db361558ef22d39c6ac8658f0596"><fr:embedded-tex-preamble><![CDATA[
         \draw  [cover,morphism] (1) to node[swap] {$\vartheta _{f^{*}(g)}$} (5);
         \draw  [>->,morphism] (5) to node[swap] {$\mathsf {Img}(f^{*}(g))$} (4);
       \end {tikzpicture}
-    ]]></fr:embedded-tex-body></fr:embedded-tex>
+    ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   <fr:p>Then by uniqueness, <fr:tex
 display="inline"><![CDATA[C \cong  \underline {A'}]]></fr:tex>.

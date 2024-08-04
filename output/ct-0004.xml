@@ -63,7 +63,7 @@ type="machine">#252</fr:addr><fr:route>unstable-252.xml</fr:route><fr:taxon>Proo
   
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="2165d09b2baf87f553a8bcbdc217c3d2"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -334,7 +334,7 @@ hash="2165d09b2baf87f553a8bcbdc217c3d2"><fr:embedded-tex-preamble><![CDATA[
       \draw  [->,morphism,exists] (rr) to node[desc] {$\tau $} (nw);
       \draw  [->,morphism,bend left] (rr) to node {$bq$} (ne);
     \end {tikzpicture}
-  ]]></fr:embedded-tex-body></fr:embedded-tex>
+  ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
 </fr:mainmatter><fr:backmatter /></fr:tree>
@@ -416,7 +416,7 @@ display="inline"><![CDATA[a\rho  = \mathsf {id}_{A}]]></fr:tex> and <fr:tex
 display="inline"><![CDATA[b\rho  = \mathsf {id}_{A}]]></fr:tex>.</fr:p>
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="a28525d6436ec285f87193b9b4d33b55"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -642,7 +642,7 @@ hash="a28525d6436ec285f87193b9b4d33b55"><fr:embedded-tex-preamble><![CDATA[
     \draw  [->,morphism] (3) to node {$\rho $} (1);
     \draw  [>->,morphism] (3) to node[swap] {$\Delta $} (2);
   \end {tikzpicture}
-]]></fr:embedded-tex-body></fr:embedded-tex>
+]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   </fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
 toc="true"
@@ -663,7 +663,7 @@ display="inline"><![CDATA[a\sigma  = b]]></fr:tex> and <fr:tex
 display="inline"><![CDATA[b\sigma  = a]]></fr:tex>.</fr:p>
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="952fb6b29e18c2dbf0c3509f5e6a671f"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -889,7 +889,7 @@ hash="952fb6b29e18c2dbf0c3509f5e6a671f"><fr:embedded-tex-preamble><![CDATA[
     \draw  [->,morphism] (3) to node {$\sigma $} (1);
     \draw  [>->,morphism] (3) to node[swap] {$(b,a)$} (2);
   \end {tikzpicture}
-]]></fr:embedded-tex-body></fr:embedded-tex>
+]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   </fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
 toc="true"
@@ -909,7 +909,7 @@ display="inline"><![CDATA[p]]></fr:tex> and <fr:tex
 display="inline"><![CDATA[q]]></fr:tex> are given in the following pullback.</fr:p>
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="fc91c995eada6398f7ab24a835158207"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -1138,7 +1138,7 @@ hash="fc91c995eada6398f7ab24a835158207"><fr:embedded-tex-preamble><![CDATA[
     south = b,
     east = a,
   }
-]]></fr:embedded-tex-body></fr:embedded-tex>
+]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   <fr:p>Explicitly, <fr:tex
 display="inline"><![CDATA[(a,b)]]></fr:tex> is transitive if there is a morphism <fr:tex
@@ -1147,7 +1147,7 @@ display="inline"><![CDATA[a\tau  = ap]]></fr:tex> and <fr:tex
 display="inline"><![CDATA[b\tau  = bq]]></fr:tex>.</fr:p>
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="5b68698aa58e8d075d46cec572f0475f"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -1373,6 +1373,6 @@ hash="5b68698aa58e8d075d46cec572f0475f"><fr:embedded-tex-preamble><![CDATA[
     \draw  [->,morphism] (3) to node {$\tau $} (1);
     \draw  [>->,morphism] (3) to node[swap] {$(ap,bq)$} (2);
   \end {tikzpicture}
-]]></fr:embedded-tex-body></fr:embedded-tex>
+]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   </fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

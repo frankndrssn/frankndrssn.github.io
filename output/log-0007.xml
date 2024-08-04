@@ -129,7 +129,7 @@ display="inline"><![CDATA[f\colon A_{1},\ldots ,A_{n}\to B]]></fr:tex>, the foll
           
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="1b5e749b0c2aedab83e8af1c80e3442d"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -358,14 +358,14 @@ hash="1b5e749b0c2aedab83e8af1c80e3442d"><fr:embedded-tex-preamble><![CDATA[
               west = {h_{A_{1}} \times  \cdots  \times  h_{A_{n}}},
               east = {h_{B}},
             }
-          ]]></fr:embedded-tex-body></fr:embedded-tex></fr:li>
+          ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure></fr:li>
         <fr:li>For each relation symbol <fr:tex
 display="inline"><![CDATA[R \rightarrowtail  A_{1},\ldots ,A_{n}]]></fr:tex>, there is a morphism <fr:tex
 display="inline"><![CDATA[g\colon MR\to NR]]></fr:tex> such that the following diagram commutes:
           
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="30870d03d683d9db1ae7cdef5138ec4f"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -594,7 +594,7 @@ hash="30870d03d683d9db1ae7cdef5138ec4f"><fr:embedded-tex-preamble><![CDATA[
               east = {h_{A_{1}} \times  \cdots  \times  h_{A_{n}}},
               west = {g},
             }
-          ]]></fr:embedded-tex-body></fr:embedded-tex></fr:li></fr:ul>
+          ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure></fr:li></fr:ul>
     </html:td>
 
   </html:tr>
@@ -688,7 +688,7 @@ display="inline"><![CDATA[{\mathopen {}\llbracket \Gamma .R(t_{1},\ldots ,t_{n})
     
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="504763d7575e6bde732463f5d3d4a08d"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -917,7 +917,7 @@ hash="504763d7575e6bde732463f5d3d4a08d"><fr:embedded-tex-preamble><![CDATA[
         east/style = {>->},
         south = {({\mathopen {}\llbracket \Gamma .t_{1}\rrbracket \mathclose {}}_{M},\ldots ,{\mathopen {}\llbracket \Gamma .t_{n}\rrbracket \mathclose {}}_{M})},
       }
-    ]]></fr:embedded-tex-body></fr:embedded-tex></fr:li>
+    ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure></fr:li>
   <fr:li>If <fr:tex
 display="inline"><![CDATA[s]]></fr:tex> and <fr:tex
 display="inline"><![CDATA[t]]></fr:tex> are terms of the same sort <fr:tex
@@ -926,7 +926,7 @@ display="inline"><![CDATA[{\mathopen {}\llbracket \Gamma .s=t\rrbracket \mathclo
     
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="2ddbfabd30b49a68fc85ca87a4537381"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -1152,7 +1152,7 @@ hash="2ddbfabd30b49a68fc85ca87a4537381"><fr:embedded-tex-preamble><![CDATA[
         \draw  [->,morphism,offset=-1.5] (1) to node {${\mathopen {}\llbracket \Gamma .s\rrbracket \mathclose {}}_{M}$} (2);
         \draw  [->,morphism,offset=1.5] (1) to node[swap] {${\mathopen {}\llbracket \Gamma .t\rrbracket \mathclose {}}_{M}$} (2);
       \end {tikzpicture}
-    ]]></fr:embedded-tex-body></fr:embedded-tex></fr:li>
+    ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure></fr:li>
   <fr:li><fr:tex
 display="inline"><![CDATA[{\mathopen {}\llbracket \Gamma .\top \rrbracket \mathclose {}}_{M}]]></fr:tex> is the terminal object of <fr:tex
 display="inline"><![CDATA[\mathsf {Sub}(M(B_{1},\ldots ,B_{m}))]]></fr:tex>.</fr:li>
@@ -1399,7 +1399,7 @@ display="inline"><![CDATA[f\colon A_{1},\ldots ,A_{n}\to B]]></fr:tex>, the foll
           
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="1b5e749b0c2aedab83e8af1c80e3442d"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -1628,14 +1628,14 @@ hash="1b5e749b0c2aedab83e8af1c80e3442d"><fr:embedded-tex-preamble><![CDATA[
               west = {h_{A_{1}} \times  \cdots  \times  h_{A_{n}}},
               east = {h_{B}},
             }
-          ]]></fr:embedded-tex-body></fr:embedded-tex></fr:li>
+          ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure></fr:li>
         <fr:li>For each relation symbol <fr:tex
 display="inline"><![CDATA[R \rightarrowtail  A_{1},\ldots ,A_{n}]]></fr:tex>, there is a morphism <fr:tex
 display="inline"><![CDATA[g\colon MR\to NR]]></fr:tex> such that the following diagram commutes:
           
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="30870d03d683d9db1ae7cdef5138ec4f"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -1864,7 +1864,7 @@ hash="30870d03d683d9db1ae7cdef5138ec4f"><fr:embedded-tex-preamble><![CDATA[
               east = {h_{A_{1}} \times  \cdots  \times  h_{A_{n}}},
               west = {g},
             }
-          ]]></fr:embedded-tex-body></fr:embedded-tex></fr:li></fr:ul>
+          ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure></fr:li></fr:ul>
     </html:td>
 
   </html:tr>

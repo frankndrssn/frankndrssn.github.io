@@ -307,7 +307,7 @@ display="inline"><![CDATA[g\colon {\mathopen {}\llbracket \Gamma .\varphi \rrbra
     
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="fdcbdd67902a077fc07e8cdc088d653d"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -535,7 +535,7 @@ hash="fdcbdd67902a077fc07e8cdc088d653d"><fr:embedded-tex-preamble><![CDATA[
         east = {h_{\Gamma }},
         west = g,
       }
-    ]]></fr:embedded-tex-body></fr:embedded-tex>
+    ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
     Here, <fr:tex
@@ -587,7 +587,7 @@ display="inline"><![CDATA[{\mathopen {}\llbracket \Gamma .R(t_{1},\ldots ,t_{n})
     
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="504763d7575e6bde732463f5d3d4a08d"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -816,7 +816,7 @@ hash="504763d7575e6bde732463f5d3d4a08d"><fr:embedded-tex-preamble><![CDATA[
         east/style = {>->},
         south = {({\mathopen {}\llbracket \Gamma .t_{1}\rrbracket \mathclose {}}_{M},\ldots ,{\mathopen {}\llbracket \Gamma .t_{n}\rrbracket \mathclose {}}_{M})},
       }
-    ]]></fr:embedded-tex-body></fr:embedded-tex></fr:li>
+    ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure></fr:li>
   <fr:li>If <fr:tex
 display="inline"><![CDATA[s]]></fr:tex> and <fr:tex
 display="inline"><![CDATA[t]]></fr:tex> are terms of the same sort <fr:tex
@@ -825,7 +825,7 @@ display="inline"><![CDATA[{\mathopen {}\llbracket \Gamma .s=t\rrbracket \mathclo
     
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="2ddbfabd30b49a68fc85ca87a4537381"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -1051,7 +1051,7 @@ hash="2ddbfabd30b49a68fc85ca87a4537381"><fr:embedded-tex-preamble><![CDATA[
         \draw  [->,morphism,offset=-1.5] (1) to node {${\mathopen {}\llbracket \Gamma .s\rrbracket \mathclose {}}_{M}$} (2);
         \draw  [->,morphism,offset=1.5] (1) to node[swap] {${\mathopen {}\llbracket \Gamma .t\rrbracket \mathclose {}}_{M}$} (2);
       \end {tikzpicture}
-    ]]></fr:embedded-tex-body></fr:embedded-tex></fr:li>
+    ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure></fr:li>
   <fr:li><fr:tex
 display="inline"><![CDATA[{\mathopen {}\llbracket \Gamma .\top \rrbracket \mathclose {}}_{M}]]></fr:tex> is the terminal object of <fr:tex
 display="inline"><![CDATA[\mathsf {Sub}(M(B_{1},\ldots ,B_{m}))]]></fr:tex>.</fr:li>

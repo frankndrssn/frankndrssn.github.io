@@ -44,7 +44,7 @@ display="block"><![CDATA[       \mathsf {Img}(f \circ  (A' \cap  f^{*}(B'))) \co
   
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="75e51c7f8b1e82a679f9d19a26eeecdc"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -289,7 +289,7 @@ hash="75e51c7f8b1e82a679f9d19a26eeecdc"><fr:embedded-tex-preamble><![CDATA[
       \draw  [>->,morphism] (nw') to (nw);
       \draw  [>->,morphism] (ne') to (ne);
     \end {tikzpicture}
-  ]]></fr:embedded-tex-body></fr:embedded-tex>
+  ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
   <fr:p>By the <fr:link
@@ -448,7 +448,7 @@ display="inline"><![CDATA[{{\mathcal {C}}_{/{B}}}]]></fr:tex>. Then this corresp
 display="inline"><![CDATA[\mathsf {id}_{A} \to  f^{*}(g)]]></fr:tex> as follows:</fr:p>
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="52d705a3d8a69b4314e8c1dc010ba727"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -685,7 +685,7 @@ hash="52d705a3d8a69b4314e8c1dc010ba727"><fr:embedded-tex-preamble><![CDATA[
         \draw  [double,morphism,bend right] (a) to node {} (sw);
         \draw  [->,morphism,exists] (a) to node {} (nw);
       \end {tikzpicture}
-    ]]></fr:embedded-tex-body></fr:embedded-tex>
+    ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   <fr:p>This then corresponds to a unique morphism <fr:tex
 display="inline"><![CDATA[\exists _{f}(\mathsf {id}_{A}) \to  g]]></fr:tex> under the adjunction <fr:tex
@@ -701,7 +701,7 @@ display="inline"><![CDATA[\mathsf {Img}(f)]]></fr:tex> against <fr:tex
 display="inline"><![CDATA[\varepsilon _{\mathsf {Img}(f')}]]></fr:tex> depicted in the following diagram.</fr:p>
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="ddb08c7c39145de8d6e321c3ee79b40a"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -934,7 +934,7 @@ hash="ddb08c7c39145de8d6e321c3ee79b40a"><fr:embedded-tex-preamble><![CDATA[
         }
         \draw  [->,morphism,exists] (sw) to (ne);
       \end {tikzpicture}
-    ]]></fr:embedded-tex-body></fr:embedded-tex>
+    ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   <fr:p>We can now extract the components of the unit and the counit from this correspondence.</fr:p>
   <html:table
@@ -976,7 +976,7 @@ display="inline"><![CDATA[\varepsilon _{\mathsf {Img}(f)}]]></fr:tex>.</fr:p>
           
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="84ee91d8f90418aeaa2cdef6d7d9d584"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -1208,7 +1208,7 @@ hash="84ee91d8f90418aeaa2cdef6d7d9d584"><fr:embedded-tex-preamble><![CDATA[
               }
               \draw  [->,morphism,exists] (sw) to node[desc] {$\vartheta _{f}$} (ne);
             \end {tikzpicture}
-          ]]></fr:embedded-tex-body></fr:embedded-tex>
+          ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
         </html:td>
@@ -1319,7 +1319,7 @@ display="inline"><![CDATA[s]]></fr:tex> is monic.</fr:p>
   
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="73a844f0751de2785bed455220880376"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -1552,7 +1552,7 @@ hash="73a844f0751de2785bed455220880376"><fr:embedded-tex-preamble><![CDATA[
       \draw  [>->,morphism,bend right] (4) to node[swap] {$h$} (2);
       \draw  [>->,morphism] (3) to node[desc] {$s$} (4);
     \end {tikzpicture}
-  ]]></fr:embedded-tex-body></fr:embedded-tex>
+  ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
   <fr:p>Since <fr:tex
@@ -1582,7 +1582,7 @@ title="Image">images</fr:link> that commute with pullbacks, i.e., the following 
 display="inline"><![CDATA[f \in  {{\mathcal {C}}_{/{B}}}]]></fr:tex>.</fr:p>
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="63cf880e0981aa86486b403a0e4ec7f4"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -1810,7 +1810,7 @@ hash="63cf880e0981aa86486b403a0e4ec7f4"><fr:embedded-tex-preamble><![CDATA[
     west = f^{*},
     east = f^{*},
   }
-]]></fr:embedded-tex-body></fr:embedded-tex>
+]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
     
@@ -1842,7 +1842,7 @@ display="inline"><![CDATA[\mathsf {Img}(g)]]></fr:tex> is an isomorphism.
       Since images commute with pullbacks by hypothesis, we can form the following diagram.</fr:p>
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="8e8d4318615b483f566429a038a77ca2"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -2071,7 +2071,7 @@ hash="8e8d4318615b483f566429a038a77ca2"><fr:embedded-tex-preamble><![CDATA[
         \draw  [->,morphism] (2) to node[desc] {$\cong $} (4);
         \draw  [>->,morphism] (4) to node {$f^{*}(\mathsf {Img}(g))$} (3);
       \end {tikzpicture}
-    ]]></fr:embedded-tex-body></fr:embedded-tex>
+    ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   <fr:p>Since isomorphisms are stable under pullback, <fr:tex
 display="inline"><![CDATA[f^{*}(\mathsf {Img}(g))]]></fr:tex> is also an isomorphism.
@@ -2122,7 +2122,7 @@ display="inline"><![CDATA[f^{*}(g)]]></fr:tex> in <fr:tex
 display="inline"><![CDATA[{{\mathcal {C}}_{/{A}}}]]></fr:tex>.</fr:p>
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="7ce43289f11ab6b5156fc08980af23bf"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -2359,13 +2359,13 @@ hash="7ce43289f11ab6b5156fc08980af23bf"><fr:embedded-tex-preamble><![CDATA[
         \draw  [->,morphism] (1) to (2);
         \draw  [cover,morphism] (2) to node[swap] {$\vartheta _{g}$} (sw);
       \end {tikzpicture}
-    ]]></fr:embedded-tex-body></fr:embedded-tex>
+    ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   <fr:p>Thus, <fr:tex
 display="inline"><![CDATA[f^{*}(g)]]></fr:tex> admits another cover-mono factorization.</fr:p>
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="0e48db361558ef22d39c6ac8658f0596"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -2598,7 +2598,7 @@ hash="0e48db361558ef22d39c6ac8658f0596"><fr:embedded-tex-preamble><![CDATA[
         \draw  [cover,morphism] (1) to node[swap] {$\vartheta _{f^{*}(g)}$} (5);
         \draw  [>->,morphism] (5) to node[swap] {$\mathsf {Img}(f^{*}(g))$} (4);
       \end {tikzpicture}
-    ]]></fr:embedded-tex-body></fr:embedded-tex>
+    ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   <fr:p>Then by uniqueness, <fr:tex
 display="inline"><![CDATA[C \cong  \underline {A'}]]></fr:tex>.
@@ -2650,7 +2650,7 @@ display="block"><![CDATA[       \mathsf {Img}(f \circ  (A' \cap  f^{*}(B'))) \co
   
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="75e51c7f8b1e82a679f9d19a26eeecdc"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -2895,7 +2895,7 @@ hash="75e51c7f8b1e82a679f9d19a26eeecdc"><fr:embedded-tex-preamble><![CDATA[
       \draw  [>->,morphism] (nw') to (nw);
       \draw  [>->,morphism] (ne') to (ne);
     \end {tikzpicture}
-  ]]></fr:embedded-tex-body></fr:embedded-tex>
+  ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
   <fr:p>By the <fr:link
@@ -2975,7 +2975,7 @@ display="inline"><![CDATA[s]]></fr:tex>.</fr:p>
   
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="d8ad5d5e36e5970e1e714f316d4db9e0"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -3209,7 +3209,7 @@ hash="d8ad5d5e36e5970e1e714f316d4db9e0"><fr:embedded-tex-preamble><![CDATA[
       \draw  [->,morphism,offset=-1.5] (5) to node {$s$} (6);
       \draw  [->,morphism,offset=1.5] (5) to node[swap] {$t$} (6);
     \end {tikzpicture}
-  ]]></fr:embedded-tex-body></fr:embedded-tex>
+  ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
   <fr:p>Since <fr:tex
@@ -3222,7 +3222,7 @@ display="inline"><![CDATA[\varphi {\mathopen {}[t]\mathclose {}}]]></fr:tex>.</f
   
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="dc67266028d37326a3f65aba7e9fe128"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -3456,7 +3456,7 @@ hash="dc67266028d37326a3f65aba7e9fe128"><fr:embedded-tex-preamble><![CDATA[
       \draw  [->,morphism,bend left] (a) to node {$ba$} (ne);
       \draw  [->,exists,morphism] (a) to (nw);
     \end {tikzpicture}
-  ]]></fr:embedded-tex-body></fr:embedded-tex>
+  ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
 </fr:mainmatter><fr:backmatter /></fr:tree>
@@ -3527,7 +3527,7 @@ display="inline"><![CDATA[s]]></fr:tex> is monic.</fr:p>
   
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="73a844f0751de2785bed455220880376"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -3760,7 +3760,7 @@ hash="73a844f0751de2785bed455220880376"><fr:embedded-tex-preamble><![CDATA[
       \draw  [>->,morphism,bend right] (4) to node[swap] {$h$} (2);
       \draw  [>->,morphism] (3) to node[desc] {$s$} (4);
     \end {tikzpicture}
-  ]]></fr:embedded-tex-body></fr:embedded-tex>
+  ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
   <fr:p>Since <fr:tex
@@ -3876,7 +3876,7 @@ display="inline"><![CDATA[{{\mathcal {C}}_{/{B}}}]]></fr:tex>. Then this corresp
 display="inline"><![CDATA[\mathsf {id}_{A} \to  f^{*}(g)]]></fr:tex> as follows:</fr:p>
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="52d705a3d8a69b4314e8c1dc010ba727"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -4113,7 +4113,7 @@ hash="52d705a3d8a69b4314e8c1dc010ba727"><fr:embedded-tex-preamble><![CDATA[
         \draw  [double,morphism,bend right] (a) to node {} (sw);
         \draw  [->,morphism,exists] (a) to node {} (nw);
       \end {tikzpicture}
-    ]]></fr:embedded-tex-body></fr:embedded-tex>
+    ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   <fr:p>This then corresponds to a unique morphism <fr:tex
 display="inline"><![CDATA[\exists _{f}(\mathsf {id}_{A}) \to  g]]></fr:tex> under the adjunction <fr:tex
@@ -4129,7 +4129,7 @@ display="inline"><![CDATA[\mathsf {Img}(f)]]></fr:tex> against <fr:tex
 display="inline"><![CDATA[\varepsilon _{\mathsf {Img}(f')}]]></fr:tex> depicted in the following diagram.</fr:p>
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="ddb08c7c39145de8d6e321c3ee79b40a"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -4362,7 +4362,7 @@ hash="ddb08c7c39145de8d6e321c3ee79b40a"><fr:embedded-tex-preamble><![CDATA[
         }
         \draw  [->,morphism,exists] (sw) to (ne);
       \end {tikzpicture}
-    ]]></fr:embedded-tex-body></fr:embedded-tex>
+    ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   <fr:p>We can now extract the components of the unit and the counit from this correspondence.</fr:p>
   <html:table
@@ -4404,7 +4404,7 @@ display="inline"><![CDATA[\varepsilon _{\mathsf {Img}(f)}]]></fr:tex>.</fr:p>
           
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="84ee91d8f90418aeaa2cdef6d7d9d584"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -4636,7 +4636,7 @@ hash="84ee91d8f90418aeaa2cdef6d7d9d584"><fr:embedded-tex-preamble><![CDATA[
               }
               \draw  [->,morphism,exists] (sw) to node[desc] {$\vartheta _{f}$} (ne);
             \end {tikzpicture}
-          ]]></fr:embedded-tex-body></fr:embedded-tex>
+          ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
         </html:td>

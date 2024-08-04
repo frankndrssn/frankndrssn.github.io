@@ -36,7 +36,7 @@ display="inline"><![CDATA[s]]></fr:tex>.</fr:p>
   
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="d8ad5d5e36e5970e1e714f316d4db9e0"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -270,7 +270,7 @@ hash="d8ad5d5e36e5970e1e714f316d4db9e0"><fr:embedded-tex-preamble><![CDATA[
       \draw  [->,morphism,offset=-1.5] (5) to node {$s$} (6);
       \draw  [->,morphism,offset=1.5] (5) to node[swap] {$t$} (6);
     \end {tikzpicture}
-  ]]></fr:embedded-tex-body></fr:embedded-tex>
+  ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
   <fr:p>Since <fr:tex
@@ -283,7 +283,7 @@ display="inline"><![CDATA[\varphi {\mathopen {}[t]\mathclose {}}]]></fr:tex>.</f
   
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="dc67266028d37326a3f65aba7e9fe128"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -517,7 +517,7 @@ hash="dc67266028d37326a3f65aba7e9fe128"><fr:embedded-tex-preamble><![CDATA[
       \draw  [->,morphism,bend left] (a) to node {$ba$} (ne);
       \draw  [->,exists,morphism] (a) to (nw);
     \end {tikzpicture}
-  ]]></fr:embedded-tex-body></fr:embedded-tex>
+  ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
 </fr:mainmatter><fr:backmatter><fr:tree
@@ -583,7 +583,7 @@ display="inline"><![CDATA[s]]></fr:tex>.</fr:p>
   
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="d8ad5d5e36e5970e1e714f316d4db9e0"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -817,7 +817,7 @@ hash="d8ad5d5e36e5970e1e714f316d4db9e0"><fr:embedded-tex-preamble><![CDATA[
       \draw  [->,morphism,offset=-1.5] (5) to node {$s$} (6);
       \draw  [->,morphism,offset=1.5] (5) to node[swap] {$t$} (6);
     \end {tikzpicture}
-  ]]></fr:embedded-tex-body></fr:embedded-tex>
+  ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
   <fr:p>Since <fr:tex
@@ -830,7 +830,7 @@ display="inline"><![CDATA[\varphi {\mathopen {}[t]\mathclose {}}]]></fr:tex>.</f
   
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="dc67266028d37326a3f65aba7e9fe128"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -1064,7 +1064,7 @@ hash="dc67266028d37326a3f65aba7e9fe128"><fr:embedded-tex-preamble><![CDATA[
       \draw  [->,morphism,bend left] (a) to node {$ba$} (ne);
       \draw  [->,exists,morphism] (a) to (nw);
     \end {tikzpicture}
-  ]]></fr:embedded-tex-body></fr:embedded-tex>
+  ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
 </fr:mainmatter><fr:backmatter /></fr:tree>

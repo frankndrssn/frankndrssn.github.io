@@ -91,7 +91,7 @@ display="inline"><![CDATA[{{\mathcal {C}}_{/{B}}}]]></fr:tex>. Then this corresp
 display="inline"><![CDATA[\mathsf {id}_{A} \to  f^{*}(g)]]></fr:tex> as follows:</fr:p>
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="52d705a3d8a69b4314e8c1dc010ba727"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -328,7 +328,7 @@ hash="52d705a3d8a69b4314e8c1dc010ba727"><fr:embedded-tex-preamble><![CDATA[
         \draw  [double,morphism,bend right] (a) to node {} (sw);
         \draw  [->,morphism,exists] (a) to node {} (nw);
       \end {tikzpicture}
-    ]]></fr:embedded-tex-body></fr:embedded-tex>
+    ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   <fr:p>This then corresponds to a unique morphism <fr:tex
 display="inline"><![CDATA[\exists _{f}(\mathsf {id}_{A}) \to  g]]></fr:tex> under the adjunction <fr:tex
@@ -344,7 +344,7 @@ display="inline"><![CDATA[\mathsf {Img}(f)]]></fr:tex> against <fr:tex
 display="inline"><![CDATA[\varepsilon _{\mathsf {Img}(f')}]]></fr:tex> depicted in the following diagram.</fr:p>
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="ddb08c7c39145de8d6e321c3ee79b40a"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -577,7 +577,7 @@ hash="ddb08c7c39145de8d6e321c3ee79b40a"><fr:embedded-tex-preamble><![CDATA[
         }
         \draw  [->,morphism,exists] (sw) to (ne);
       \end {tikzpicture}
-    ]]></fr:embedded-tex-body></fr:embedded-tex>
+    ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   <fr:p>We can now extract the components of the unit and the counit from this correspondence.</fr:p>
   <html:table
@@ -619,7 +619,7 @@ display="inline"><![CDATA[\varepsilon _{\mathsf {Img}(f)}]]></fr:tex>.</fr:p>
           
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="84ee91d8f90418aeaa2cdef6d7d9d584"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -851,7 +851,7 @@ hash="84ee91d8f90418aeaa2cdef6d7d9d584"><fr:embedded-tex-preamble><![CDATA[
               }
               \draw  [->,morphism,exists] (sw) to node[desc] {$\vartheta _{f}$} (ne);
             \end {tikzpicture}
-          ]]></fr:embedded-tex-body></fr:embedded-tex>
+          ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
         </html:td>

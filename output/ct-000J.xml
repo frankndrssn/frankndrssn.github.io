@@ -56,7 +56,7 @@ display="inline"><![CDATA[\Sigma _{f} \dashv  f^{*}]]></fr:tex> for any <fr:tex
 display="inline"><![CDATA[f]]></fr:tex>. We show that the following diagram</fr:p>
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="978cb4d5b9419bff7dba5ad49136cf28"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -289,7 +289,7 @@ hash="978cb4d5b9419bff7dba5ad49136cf28"><fr:embedded-tex-preamble><![CDATA[
     }
   
       \end {tikzpicture}
-    ]]></fr:embedded-tex-body></fr:embedded-tex>
+    ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   <fr:p>is a pullback, where <fr:tex
 display="inline"><![CDATA[\varepsilon _{g}]]></fr:tex> is the counit of the adjunction. Note that since <fr:tex
@@ -300,7 +300,7 @@ display="inline"><![CDATA[h\colon C\to B']]></fr:tex> be morphisms such that <fr
 display="inline"><![CDATA[fh' = gh]]></fr:tex>.</fr:p>
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="6c571ce318e6c51d13819d3e139d9fb2"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -537,7 +537,7 @@ hash="6c571ce318e6c51d13819d3e139d9fb2"><fr:embedded-tex-preamble><![CDATA[
         \draw  [->,morphism,bend left] (c) to node {$h$} (ne);
         \draw  [->,morphism,exists] (c) to node[desc] {$h^{\dag }$} (nw);
       \end {tikzpicture}
-    ]]></fr:embedded-tex-body></fr:embedded-tex>
+    ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   <fr:p>Note that <fr:tex
 display="inline"><![CDATA[h]]></fr:tex> is a morphism <fr:tex
@@ -585,7 +585,7 @@ display="inline"><![CDATA[\eta _{h}\colon h\to f^{*}(\Sigma _{f}(h))]]></fr:tex>
           
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="00fa5bdf6f274d0c7c6027f4ec6c92bc"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -822,7 +822,7 @@ hash="00fa5bdf6f274d0c7c6027f4ec6c92bc"><fr:embedded-tex-preamble><![CDATA[
               \draw  [double,morphism,bend left] (c) to (ne);
               \draw  [->,morphism,exists] (c) to node[desc] {$\eta _{h}$} (nw);
             \end {tikzpicture}
-          ]]></fr:embedded-tex-body></fr:embedded-tex>
+          ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
           <fr:p>where <fr:tex
@@ -836,7 +836,7 @@ display="inline"><![CDATA[\varepsilon _{g}\colon \Sigma _{f}(f^{*}(g))\to g]]></
           
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="d06c153112f52945894dc43faf6a95dc"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -1065,7 +1065,7 @@ hash="d06c153112f52945894dc43faf6a95dc"><fr:embedded-tex-preamble><![CDATA[
               west = f^{*}(g),
               north = \varepsilon _{g},
             }
-          ]]></fr:embedded-tex-body></fr:embedded-tex>
+          ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
           Let <fr:tex
@@ -1075,7 +1075,7 @@ display="inline"><![CDATA[f^{*}]]></fr:tex>, we have the following commutative d
           
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="e02daf32ecb0fc7d1934cd86d2bd5577"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -1311,7 +1311,7 @@ hash="e02daf32ecb0fc7d1934cd86d2bd5577"><fr:embedded-tex-preamble><![CDATA[
               \draw  [->,morphism,bend left] (a') to node {$\alpha \varepsilon _{g}$} (ne);
               \draw  [->,morphism,exists] (a') to node[desc] {$f^{*}(\alpha )$} (nw);
             \end {tikzpicture}
-          ]]></fr:embedded-tex-body></fr:embedded-tex>
+          ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
           Thus, <fr:tex
@@ -1454,7 +1454,7 @@ display="inline"><![CDATA[\Sigma _{f} \dashv  f^{*}]]></fr:tex> for any <fr:tex
 display="inline"><![CDATA[f]]></fr:tex>. We show that the following diagram</fr:p>
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="978cb4d5b9419bff7dba5ad49136cf28"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -1687,7 +1687,7 @@ hash="978cb4d5b9419bff7dba5ad49136cf28"><fr:embedded-tex-preamble><![CDATA[
     }
   
       \end {tikzpicture}
-    ]]></fr:embedded-tex-body></fr:embedded-tex>
+    ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   <fr:p>is a pullback, where <fr:tex
 display="inline"><![CDATA[\varepsilon _{g}]]></fr:tex> is the counit of the adjunction. Note that since <fr:tex
@@ -1698,7 +1698,7 @@ display="inline"><![CDATA[h\colon C\to B']]></fr:tex> be morphisms such that <fr
 display="inline"><![CDATA[fh' = gh]]></fr:tex>.</fr:p>
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="6c571ce318e6c51d13819d3e139d9fb2"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -1935,7 +1935,7 @@ hash="6c571ce318e6c51d13819d3e139d9fb2"><fr:embedded-tex-preamble><![CDATA[
         \draw  [->,morphism,bend left] (c) to node {$h$} (ne);
         \draw  [->,morphism,exists] (c) to node[desc] {$h^{\dag }$} (nw);
       \end {tikzpicture}
-    ]]></fr:embedded-tex-body></fr:embedded-tex>
+    ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   <fr:p>Note that <fr:tex
 display="inline"><![CDATA[h]]></fr:tex> is a morphism <fr:tex
@@ -1983,7 +1983,7 @@ display="inline"><![CDATA[\eta _{h}\colon h\to f^{*}(\Sigma _{f}(h))]]></fr:tex>
           
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="00fa5bdf6f274d0c7c6027f4ec6c92bc"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -2220,7 +2220,7 @@ hash="00fa5bdf6f274d0c7c6027f4ec6c92bc"><fr:embedded-tex-preamble><![CDATA[
               \draw  [double,morphism,bend left] (c) to (ne);
               \draw  [->,morphism,exists] (c) to node[desc] {$\eta _{h}$} (nw);
             \end {tikzpicture}
-          ]]></fr:embedded-tex-body></fr:embedded-tex>
+          ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
           <fr:p>where <fr:tex
@@ -2234,7 +2234,7 @@ display="inline"><![CDATA[\varepsilon _{g}\colon \Sigma _{f}(f^{*}(g))\to g]]></
           
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="d06c153112f52945894dc43faf6a95dc"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -2463,7 +2463,7 @@ hash="d06c153112f52945894dc43faf6a95dc"><fr:embedded-tex-preamble><![CDATA[
               west = f^{*}(g),
               north = \varepsilon _{g},
             }
-          ]]></fr:embedded-tex-body></fr:embedded-tex>
+          ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
           Let <fr:tex
@@ -2473,7 +2473,7 @@ display="inline"><![CDATA[f^{*}]]></fr:tex>, we have the following commutative d
           
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="e02daf32ecb0fc7d1934cd86d2bd5577"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -2709,7 +2709,7 @@ hash="e02daf32ecb0fc7d1934cd86d2bd5577"><fr:embedded-tex-preamble><![CDATA[
               \draw  [->,morphism,bend left] (a') to node {$\alpha \varepsilon _{g}$} (ne);
               \draw  [->,morphism,exists] (a') to node[desc] {$f^{*}(\alpha )$} (nw);
             \end {tikzpicture}
-          ]]></fr:embedded-tex-body></fr:embedded-tex>
+          ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
           Thus, <fr:tex
@@ -2813,7 +2813,7 @@ display="inline"><![CDATA[\exists ^{\flat }_{f}]]></fr:tex> defined as the compo
   
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="f021c92e7bfba4038b027833197ec099"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -3042,7 +3042,7 @@ hash="f021c92e7bfba4038b027833197ec099"><fr:embedded-tex-preamble><![CDATA[
       \draw  [adjoint] (l1) to (r1);
       \draw  [adjoint] (l2) to (r2);
     \end {tikzpicture}
-  ]]></fr:embedded-tex-body></fr:embedded-tex>
+  ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
   <fr:p>where <fr:tex
@@ -3058,7 +3058,7 @@ display="inline"><![CDATA[\Gamma |\chi  \vdash  \varphi ]]></fr:tex>.
   
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="bca77cda61e0708bf4cff456dab49665"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -3288,7 +3288,7 @@ hash="bca77cda61e0708bf4cff456dab49665"><fr:embedded-tex-preamble><![CDATA[
       west = k,
       east = f,
     }
-  ]]></fr:embedded-tex-body></fr:embedded-tex>
+  ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
   <fr:p>We wish to show that <fr:tex
@@ -3404,7 +3404,7 @@ display="inline"><![CDATA[\pi _{1}\colon B \times  1\to B]]></fr:tex> is the pro
   
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="961a70b7247e91de741632e7a2e0fdd9"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -3633,7 +3633,7 @@ hash="961a70b7247e91de741632e7a2e0fdd9"><fr:embedded-tex-preamble><![CDATA[
       south = {\pi _{1}^{\dag }},
       west = {\mathsf {!}},
     }
-  ]]></fr:embedded-tex-body></fr:embedded-tex>
+  ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
   <fr:p>Now let <fr:tex
@@ -3642,7 +3642,7 @@ display="inline"><![CDATA[{{\mathcal {C}}_{/{B}}}]]></fr:tex>, we extend the abo
   
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="c09cfe05dea21da8bd1333253be71965"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -3875,7 +3875,7 @@ hash="c09cfe05dea21da8bd1333253be71965"><fr:embedded-tex-preamble><![CDATA[
       \draw  [->,morphism,exists] (pif) to node[desc] {$\Pi _{B}\alpha $} (nw);
       \draw  [->,morphism,bend left] (pif) to node {$\alpha ^{B}\beta $} (ne);
     \end {tikzpicture}
-  ]]></fr:embedded-tex-body></fr:embedded-tex>
+  ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
   <fr:p>Note that</fr:p>
@@ -3886,7 +3886,7 @@ display="inline"><![CDATA[\alpha \colon B^{*}(A')\to f]]></fr:tex> be given.</fr
   
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="1a96f5f582a792fc6d3527ff10aef291"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -4113,7 +4113,7 @@ hash="1a96f5f582a792fc6d3527ff10aef291"><fr:embedded-tex-preamble><![CDATA[
       \draw  [->,morphism] (1) to node {$\alpha $} (2);
       \draw  [->,morphism] (2) to node {$f$} (3);
     \end {tikzpicture}
-  ]]></fr:embedded-tex-body></fr:embedded-tex>
+  ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
   <fr:p>Then this morphism corresponds to a unique morphism <fr:tex
@@ -4121,7 +4121,7 @@ display="inline"><![CDATA[A' \to  \Pi _{B}f]]></fr:tex> as follows:</fr:p>
   
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="611dfd22c2a87c672cd3073401b78333"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -4355,7 +4355,7 @@ hash="611dfd22c2a87c672cd3073401b78333"><fr:embedded-tex-preamble><![CDATA[
       \draw  [->,morphism,exists] (pif) to (nw);
       \draw  [->,morphism,bend left] (pif) to node {$\alpha ^{\dag }$} (ne);
     \end {tikzpicture}
-  ]]></fr:embedded-tex-body></fr:embedded-tex>
+  ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
   <fr:p>The unit and counit of the adjunction can be extracted from the square above.</fr:p>
@@ -4418,7 +4418,7 @@ display="inline"><![CDATA[{{\mathcal {C}}_{/{B}}}]]></fr:tex>. Then this corresp
 display="inline"><![CDATA[\mathsf {id}_{A} \to  f^{*}(g)]]></fr:tex> as follows:</fr:p>
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="52d705a3d8a69b4314e8c1dc010ba727"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -4655,7 +4655,7 @@ hash="52d705a3d8a69b4314e8c1dc010ba727"><fr:embedded-tex-preamble><![CDATA[
         \draw  [double,morphism,bend right] (a) to node {} (sw);
         \draw  [->,morphism,exists] (a) to node {} (nw);
       \end {tikzpicture}
-    ]]></fr:embedded-tex-body></fr:embedded-tex>
+    ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   <fr:p>This then corresponds to a unique morphism <fr:tex
 display="inline"><![CDATA[\exists _{f}(\mathsf {id}_{A}) \to  g]]></fr:tex> under the adjunction <fr:tex
@@ -4671,7 +4671,7 @@ display="inline"><![CDATA[\mathsf {Img}(f)]]></fr:tex> against <fr:tex
 display="inline"><![CDATA[\varepsilon _{\mathsf {Img}(f')}]]></fr:tex> depicted in the following diagram.</fr:p>
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="ddb08c7c39145de8d6e321c3ee79b40a"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -4904,7 +4904,7 @@ hash="ddb08c7c39145de8d6e321c3ee79b40a"><fr:embedded-tex-preamble><![CDATA[
         }
         \draw  [->,morphism,exists] (sw) to (ne);
       \end {tikzpicture}
-    ]]></fr:embedded-tex-body></fr:embedded-tex>
+    ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   <fr:p>We can now extract the components of the unit and the counit from this correspondence.</fr:p>
   <html:table
@@ -4946,7 +4946,7 @@ display="inline"><![CDATA[\varepsilon _{\mathsf {Img}(f)}]]></fr:tex>.</fr:p>
           
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="84ee91d8f90418aeaa2cdef6d7d9d584"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -5178,7 +5178,7 @@ hash="84ee91d8f90418aeaa2cdef6d7d9d584"><fr:embedded-tex-preamble><![CDATA[
               }
               \draw  [->,morphism,exists] (sw) to node[desc] {$\vartheta _{f}$} (ne);
             \end {tikzpicture}
-          ]]></fr:embedded-tex-body></fr:embedded-tex>
+          ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
         </html:td>
@@ -5345,7 +5345,7 @@ display="inline"><![CDATA[f]]></fr:tex>.</html:span>
         
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="646acde8c9ddd53e9b823ecf7662ef85"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -5571,7 +5571,7 @@ hash="646acde8c9ddd53e9b823ecf7662ef85"><fr:embedded-tex-preamble><![CDATA[
             \draw  [->,morphism] (3) to node {$g$} (1);
             \draw  [->,morphism] (3) to node[swap] {$fg$} (2);
           \end {tikzpicture}
-        ]]></fr:embedded-tex-body></fr:embedded-tex>
+        ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
         This is precisely an object in <fr:tex
@@ -5589,7 +5589,7 @@ display="inline"><![CDATA[{{\mathcal {C}}_{/{A}}}]]></fr:tex>.
         
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="1e617138140ece82f084b0ef7c6db4fb"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -5815,7 +5815,7 @@ hash="1e617138140ece82f084b0ef7c6db4fb"><fr:embedded-tex-preamble><![CDATA[
             \draw  [->,morphism] (1) to node[swap] {$g$} (2);
             \draw  [->,morphism] (3) to node {$h$} (2);
           \end {tikzpicture}
-        ]]></fr:embedded-tex-body></fr:embedded-tex>
+        ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
         This is precisely a morphism in <fr:tex

@@ -57,7 +57,7 @@ type="user">mnc-0002</fr:addr><fr:route>mnc-0002.xml</fr:route><fr:title
 text="Unity axiom">Unity axiom</fr:title><fr:taxon>Axiom</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>The following diagram commutes.</fr:p>
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="d338831be7464fb015b55b96619146e8"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -289,7 +289,7 @@ hash="d338831be7464fb015b55b96619146e8"><fr:embedded-tex-preamble><![CDATA[
     height = 1.5cm,
     width = 3.5cm,
   }
-]]></fr:embedded-tex-body></fr:embedded-tex>
+]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   <fr:p>Moreover the equality <fr:tex
 display="inline"><![CDATA[\lambda _{1} = \rho _{1}\colon 1 \otimes  1\to 1]]></fr:tex> holds.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
@@ -304,7 +304,7 @@ type="user">mnc-0003</fr:addr><fr:route>mnc-0003.xml</fr:route><fr:title
 text="Pentagon axiom">Pentagon axiom</fr:title><fr:taxon>Axiom</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>The following diagram commutes.</fr:p>
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="38097c5330a66857f33b961824ab86ce"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -544,7 +544,7 @@ $} (4);
   \alpha _{{X},{Y},{Z}}
 $} (5);
   \end {tikzpicture}
-]]></fr:embedded-tex-body></fr:embedded-tex>
+]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   </fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
 toc="true"

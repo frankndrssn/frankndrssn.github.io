@@ -54,7 +54,7 @@ title="Heyting category">Heyting category</fr:link> and the following square be 
 display="inline"><![CDATA[\mathcal {C}]]></fr:tex>.</fr:p>
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="46e0a696959d3102dab04d8ef82f856d"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -283,12 +283,12 @@ hash="46e0a696959d3102dab04d8ef82f856d"><fr:embedded-tex-preamble><![CDATA[
     west = k,
     east = f,
   }
-]]></fr:embedded-tex-body></fr:embedded-tex>
+]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   <fr:p>Then the following square commutes up to isomorphism.</fr:p>
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="6dd631a0a536ef469ac64c1410168e3c"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -516,7 +516,7 @@ hash="6dd631a0a536ef469ac64c1410168e3c"><fr:embedded-tex-preamble><![CDATA[
     south = {g^{*}},
     east = {\forall _{k}},
   }
-]]></fr:embedded-tex-body></fr:embedded-tex>
+]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
     
@@ -534,7 +534,7 @@ type="machine">#249</fr:addr><fr:route>unstable-249.xml</fr:route><fr:taxon>Proo
   
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="784f00be8deba12a1143691d34b4d6f7"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -766,7 +766,7 @@ hash="784f00be8deba12a1143691d34b4d6f7"><fr:embedded-tex-preamble><![CDATA[
       east = {k^{*}},
       east/style = {<-},
     }
-  ]]></fr:embedded-tex-body></fr:embedded-tex>
+  ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
   <fr:p>By <fr:ref
@@ -788,7 +788,7 @@ display="inline"><![CDATA[f^{*}\Sigma _{g} \cong  \Sigma _{h}k^{*}]]></fr:tex>.<
   
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="5531f70bb8650e99365b273c62305a49"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -1024,7 +1024,7 @@ hash="5531f70bb8650e99365b273c62305a49"><fr:embedded-tex-preamble><![CDATA[
       \draw  [>->,morphism] (1) to (nw);
       \draw  [->,morphism] (1) to (2);
     \end {tikzpicture}
-  ]]></fr:embedded-tex-body></fr:embedded-tex>
+  ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
   <fr:p>Thus, we can extend this natural isomorphism as follows:</fr:p>
@@ -1081,7 +1081,7 @@ display="block"><![CDATA[       \mathsf {Img}(f \circ  (A' \cap  f^{*}(B'))) \co
   
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="75e51c7f8b1e82a679f9d19a26eeecdc"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -1326,7 +1326,7 @@ hash="75e51c7f8b1e82a679f9d19a26eeecdc"><fr:embedded-tex-preamble><![CDATA[
       \draw  [>->,morphism] (nw') to (nw);
       \draw  [>->,morphism] (ne') to (ne);
     \end {tikzpicture}
-  ]]></fr:embedded-tex-body></fr:embedded-tex>
+  ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
   <fr:p>By the <fr:link
@@ -1365,7 +1365,7 @@ title="Image">images</fr:link> that commute with pullbacks, i.e., the following 
 display="inline"><![CDATA[f \in  {{\mathcal {C}}_{/{B}}}]]></fr:tex>.</fr:p>
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="63cf880e0981aa86486b403a0e4ec7f4"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -1593,7 +1593,7 @@ hash="63cf880e0981aa86486b403a0e4ec7f4"><fr:embedded-tex-preamble><![CDATA[
     west = f^{*},
     east = f^{*},
   }
-]]></fr:embedded-tex-body></fr:embedded-tex>
+]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
     
@@ -1625,7 +1625,7 @@ display="inline"><![CDATA[\mathsf {Img}(g)]]></fr:tex> is an isomorphism.
       Since images commute with pullbacks by hypothesis, we can form the following diagram.</fr:p>
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="8e8d4318615b483f566429a038a77ca2"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -1854,7 +1854,7 @@ hash="8e8d4318615b483f566429a038a77ca2"><fr:embedded-tex-preamble><![CDATA[
         \draw  [->,morphism] (2) to node[desc] {$\cong $} (4);
         \draw  [>->,morphism] (4) to node {$f^{*}(\mathsf {Img}(g))$} (3);
       \end {tikzpicture}
-    ]]></fr:embedded-tex-body></fr:embedded-tex>
+    ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   <fr:p>Since isomorphisms are stable under pullback, <fr:tex
 display="inline"><![CDATA[f^{*}(\mathsf {Img}(g))]]></fr:tex> is also an isomorphism.
@@ -1905,7 +1905,7 @@ display="inline"><![CDATA[f^{*}(g)]]></fr:tex> in <fr:tex
 display="inline"><![CDATA[{{\mathcal {C}}_{/{A}}}]]></fr:tex>.</fr:p>
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="7ce43289f11ab6b5156fc08980af23bf"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -2142,13 +2142,13 @@ hash="7ce43289f11ab6b5156fc08980af23bf"><fr:embedded-tex-preamble><![CDATA[
         \draw  [->,morphism] (1) to (2);
         \draw  [cover,morphism] (2) to node[swap] {$\vartheta _{g}$} (sw);
       \end {tikzpicture}
-    ]]></fr:embedded-tex-body></fr:embedded-tex>
+    ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   <fr:p>Thus, <fr:tex
 display="inline"><![CDATA[f^{*}(g)]]></fr:tex> admits another cover-mono factorization.</fr:p>
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="0e48db361558ef22d39c6ac8658f0596"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -2381,7 +2381,7 @@ hash="0e48db361558ef22d39c6ac8658f0596"><fr:embedded-tex-preamble><![CDATA[
         \draw  [cover,morphism] (1) to node[swap] {$\vartheta _{f^{*}(g)}$} (5);
         \draw  [>->,morphism] (5) to node[swap] {$\mathsf {Img}(f^{*}(g))$} (4);
       \end {tikzpicture}
-    ]]></fr:embedded-tex-body></fr:embedded-tex>
+    ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   <fr:p>Then by uniqueness, <fr:tex
 display="inline"><![CDATA[C \cong  \underline {A'}]]></fr:tex>.
@@ -2436,7 +2436,7 @@ href="ct-0009.xml"
 taxon="Definition" />, there is a pullback square</fr:p>
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="f5965535fedea105d38a46ab3dbada70"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -2665,7 +2665,7 @@ hash="f5965535fedea105d38a46ab3dbada70"><fr:embedded-tex-preamble><![CDATA[
         east = \top ,
         east/style = {>->},
       }
-    ]]></fr:embedded-tex-body></fr:embedded-tex>
+    ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   <fr:p>Thus, there is a morphism <fr:tex
 display="inline"><![CDATA[A \to  \Omega ']]></fr:tex>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree>
@@ -2806,7 +2806,7 @@ display="inline"><![CDATA[\mathsf {Sub}(A)]]></fr:tex>.
       
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="0ca92f907544234de24264bf420d135e"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -3036,7 +3036,7 @@ hash="0ca92f907544234de24264bf420d135e"><fr:embedded-tex-preamble><![CDATA[
           east = n,
           east/style = {>->},
         }
-      ]]></fr:embedded-tex-body></fr:embedded-tex>
+      ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
     </html:td>
@@ -3082,7 +3082,7 @@ type="machine">#281</fr:addr><fr:route>unstable-281.xml</fr:route><fr:taxon>Proo
         
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="e97fe9df8e3d008429f046b8a8f512b4"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -3313,7 +3313,7 @@ hash="e97fe9df8e3d008429f046b8a8f512b4"><fr:embedded-tex-preamble><![CDATA[
             east/style = {>->},
             west/style = {>->},
           }
-        ]]></fr:embedded-tex-body></fr:embedded-tex>
+        ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
       </fr:mainmatter><fr:backmatter /></fr:tree></fr:li>
@@ -3337,7 +3337,7 @@ type="machine">#282</fr:addr><fr:route>unstable-282.xml</fr:route><fr:taxon>Proo
         
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="f10e7ca4e99cdfe26beb30ee87a77179"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -3576,7 +3576,7 @@ hash="f10e7ca4e99cdfe26beb30ee87a77179"><fr:embedded-tex-preamble><![CDATA[
             \draw  [->,morphism] (A) to node[swap] {$f$} (sw);
           \end {tikzpicture}
           
-        ]]></fr:embedded-tex-body></fr:embedded-tex>
+        ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
         Then by the <fr:link

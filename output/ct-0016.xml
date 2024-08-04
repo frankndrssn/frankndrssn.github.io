@@ -31,7 +31,7 @@ type="machine">#252</fr:addr><fr:route>unstable-252.xml</fr:route><fr:taxon>Proo
   
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="2165d09b2baf87f553a8bcbdc217c3d2"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -302,7 +302,7 @@ hash="2165d09b2baf87f553a8bcbdc217c3d2"><fr:embedded-tex-preamble><![CDATA[
       \draw  [->,morphism,exists] (rr) to node[desc] {$\tau $} (nw);
       \draw  [->,morphism,bend left] (rr) to node {$bq$} (ne);
     \end {tikzpicture}
-  ]]></fr:embedded-tex-body></fr:embedded-tex>
+  ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
 </fr:mainmatter><fr:backmatter /></fr:tree>

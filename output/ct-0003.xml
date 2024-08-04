@@ -18,7 +18,7 @@ display="inline"><![CDATA[p]]></fr:tex> and <fr:tex
 display="inline"><![CDATA[q]]></fr:tex> are given in the following pullback.</fr:p>
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="fc91c995eada6398f7ab24a835158207"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -247,7 +247,7 @@ hash="fc91c995eada6398f7ab24a835158207"><fr:embedded-tex-preamble><![CDATA[
     south = b,
     east = a,
   }
-]]></fr:embedded-tex-body></fr:embedded-tex>
+]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   <fr:p>Explicitly, <fr:tex
 display="inline"><![CDATA[(a,b)]]></fr:tex> is transitive if there is a morphism <fr:tex
@@ -256,7 +256,7 @@ display="inline"><![CDATA[a\tau  = ap]]></fr:tex> and <fr:tex
 display="inline"><![CDATA[b\tau  = bq]]></fr:tex>.</fr:p>
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="5b68698aa58e8d075d46cec572f0475f"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -482,7 +482,7 @@ hash="5b68698aa58e8d075d46cec572f0475f"><fr:embedded-tex-preamble><![CDATA[
     \draw  [->,morphism] (3) to node {$\tau $} (1);
     \draw  [>->,morphism] (3) to node[swap] {$(ap,bq)$} (2);
   \end {tikzpicture}
-]]></fr:embedded-tex-body></fr:embedded-tex>
+]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   </fr:mainmatter><fr:backmatter><fr:tree
 toc="false"

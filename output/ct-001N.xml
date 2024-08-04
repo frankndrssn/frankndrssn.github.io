@@ -158,7 +158,7 @@ display="inline"><![CDATA[\gamma \colon h\to h']]></fr:tex> such that every comp
     
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="f0a7c6bea2915a63d4ddf4726ce5ccab"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -387,14 +387,14 @@ hash="f0a7c6bea2915a63d4ddf4726ce5ccab"><fr:embedded-tex-preamble><![CDATA[
         west = {(\gamma  * \beta ) * \alpha },
         east = {\gamma  * (\beta  * \alpha )},
       }
-    ]]></fr:embedded-tex-body></fr:embedded-tex></fr:li>
+    ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure></fr:li>
   <fr:li><fr:em><fr:strong>Naturality of the unitors</fr:strong></fr:em>: For any <fr:tex
 display="inline"><![CDATA[2]]></fr:tex>-cell <fr:tex
 display="inline"><![CDATA[\alpha \colon f\to f']]></fr:tex>, the following squares commute.
     
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="f169d701d4ef7b5a901f7d11d11e061d"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -633,7 +633,7 @@ hash="f169d701d4ef7b5a901f7d11d11e061d"><fr:embedded-tex-preamble><![CDATA[
         east = {\alpha },
         west = {\alpha  * \mathsf {id}_{\mathsf {id}}},
       }
-    ]]></fr:embedded-tex-body></fr:embedded-tex></fr:li>
+    ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure></fr:li>
   <fr:li><fr:em><fr:strong>Law of middle unity</fr:strong></fr:em>: For any pair of composable <fr:tex
 display="inline"><![CDATA[1]]></fr:tex>-cells <fr:tex
 display="inline"><![CDATA[f]]></fr:tex> and <fr:tex
@@ -641,7 +641,7 @@ display="inline"><![CDATA[g]]></fr:tex>, the following diagram commutes.
     
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="3969b89b1e550881e12ca8d59d36b57c"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -868,12 +868,12 @@ hash="3969b89b1e550881e12ca8d59d36b57c"><fr:embedded-tex-preamble><![CDATA[
         \draw  [->,morphism] (1) to node[swap] {$r_{g} * \mathsf {id}_{f}$} (3);
         \draw  [->,morphism] (2) to node {$\mathsf {id}_{g} * \ell _{f}$} (3);
       \end {tikzpicture}
-    ]]></fr:embedded-tex-body></fr:embedded-tex></fr:li>
+    ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure></fr:li>
   <fr:li><fr:em><fr:strong>Pentagon law</fr:strong></fr:em>:
     
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="141568ec1ed3429353986e3fc58aab6b"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -1103,4 +1103,4 @@ hash="141568ec1ed3429353986e3fc58aab6b"><fr:embedded-tex-preamble><![CDATA[
         \draw  [->,morphism] (3) to node[swap] {$a_{k,hg,f}$} (4);
         \draw  [->,morphism] (4) to node[swap] {$\mathsf {id}_{k} * a_{h,g,f}$} (5);
       \end {tikzpicture}
-    ]]></fr:embedded-tex-body></fr:embedded-tex></fr:li></fr:ul></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>
+    ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure></fr:li></fr:ul></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

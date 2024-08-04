@@ -93,7 +93,7 @@ display="inline"><![CDATA[f_{c}]]></fr:tex>, i.e., the following diagram is a pu
   
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="51059d11ada3e0a98abc2ce6bc86a205"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -323,7 +323,7 @@ hash="51059d11ada3e0a98abc2ce6bc86a205"><fr:embedded-tex-preamble><![CDATA[
       east = {f_{c}},
       east/style = {cover},
     }
-  ]]></fr:embedded-tex-body></fr:embedded-tex>
+  ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
   <fr:p>First, the diagram commutes since <fr:tex
@@ -338,7 +338,7 @@ display="inline"><![CDATA[f_{m}f_{c}h = fh = fk = f_{m}f_{c}k]]></fr:tex>.
   
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="b63064abd0359eb4084510ea58e44f89"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -573,7 +573,7 @@ hash="b63064abd0359eb4084510ea58e44f89"><fr:embedded-tex-preamble><![CDATA[
       \draw  [->,morphism,exists] (c) to (nw);
       \draw  [->,morphism,bend left] (c) to node {$k$} (ne);
     \end {tikzpicture}
-  ]]></fr:embedded-tex-body></fr:embedded-tex>
+  ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
 </fr:mainmatter><fr:backmatter /></fr:tree>

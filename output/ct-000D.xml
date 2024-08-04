@@ -90,7 +90,7 @@ href="ct-0009.xml"
 taxon="Definition" />, there is a pullback square</fr:p>
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="f5965535fedea105d38a46ab3dbada70"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -319,7 +319,7 @@ hash="f5965535fedea105d38a46ab3dbada70"><fr:embedded-tex-preamble><![CDATA[
         east = \top ,
         east/style = {>->},
       }
-    ]]></fr:embedded-tex-body></fr:embedded-tex>
+    ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   <fr:p>Thus, there is a morphism <fr:tex
 display="inline"><![CDATA[A \to  \Omega ']]></fr:tex>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree>
@@ -410,7 +410,7 @@ display="inline"><![CDATA[\mathsf {Sub}(A)]]></fr:tex>.
       
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="0ca92f907544234de24264bf420d135e"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -640,7 +640,7 @@ hash="0ca92f907544234de24264bf420d135e"><fr:embedded-tex-preamble><![CDATA[
           east = n,
           east/style = {>->},
         }
-      ]]></fr:embedded-tex-body></fr:embedded-tex>
+      ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
     </html:td>
@@ -686,7 +686,7 @@ type="machine">#281</fr:addr><fr:route>unstable-281.xml</fr:route><fr:taxon>Proo
         
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="e97fe9df8e3d008429f046b8a8f512b4"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -917,7 +917,7 @@ hash="e97fe9df8e3d008429f046b8a8f512b4"><fr:embedded-tex-preamble><![CDATA[
             east/style = {>->},
             west/style = {>->},
           }
-        ]]></fr:embedded-tex-body></fr:embedded-tex>
+        ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
       </fr:mainmatter><fr:backmatter /></fr:tree></fr:li>
@@ -941,7 +941,7 @@ type="machine">#282</fr:addr><fr:route>unstable-282.xml</fr:route><fr:taxon>Proo
         
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="f10e7ca4e99cdfe26beb30ee87a77179"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -1180,7 +1180,7 @@ hash="f10e7ca4e99cdfe26beb30ee87a77179"><fr:embedded-tex-preamble><![CDATA[
             \draw  [->,morphism] (A) to node[swap] {$f$} (sw);
           \end {tikzpicture}
           
-        ]]></fr:embedded-tex-body></fr:embedded-tex>
+        ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
         Then by the <fr:link

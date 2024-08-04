@@ -34,7 +34,7 @@ taxon="Lemma" />, there is a pullback square</fr:p>
   
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="be34f5f86e959592e5f4ea966b044367"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -267,7 +267,7 @@ hash="be34f5f86e959592e5f4ea966b044367"><fr:embedded-tex-preamble><![CDATA[
       east = k,
       east/style = {>->},
     }
-  ]]></fr:embedded-tex-body></fr:embedded-tex>
+  ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
   <fr:p>But, this pullback square is an equalizer of <fr:tex
@@ -302,7 +302,7 @@ display="inline"><![CDATA[g\colon A\rightarrowtail C]]></fr:tex> be a pair of mo
   Then they have a pushout.</fr:p>
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="1c4f8026038d2767be88d32af875a4c1"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -533,7 +533,7 @@ hash="1c4f8026038d2767be88d32af875a4c1"><fr:embedded-tex-preamble><![CDATA[
     south = k,
     east = h,
   }
-]]></fr:embedded-tex-body></fr:embedded-tex>
+]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   <fr:p>Moreover, <fr:tex
 display="inline"><![CDATA[h]]></fr:tex> and <fr:tex

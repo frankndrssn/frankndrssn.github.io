@@ -76,7 +76,7 @@ title="Elementary topos">topoi</fr:link>. A <fr:em><fr:strong>geometric morphism
 display="inline"><![CDATA[f\colon \mathcal {E}\to \mathcal {F}]]></fr:tex> is an adjoint pair of functors</fr:p>
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="8a1b605f5384f8244d0139cde02f4b11"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -301,7 +301,7 @@ hash="8a1b605f5384f8244d0139cde02f4b11"><fr:embedded-tex-preamble><![CDATA[
     \draw  [->,morphism,offset=1.5] (e) to node[swap] (l) {$f^{*}$} (w);
     \draw  [adjoint] (l) to (r);
   \end {tikzpicture}
-]]></fr:embedded-tex-body></fr:embedded-tex>
+]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   <fr:p>such that <fr:tex
 display="inline"><![CDATA[f^{*}]]></fr:tex> is left exact. The functors <fr:tex

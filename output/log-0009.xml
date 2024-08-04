@@ -35,7 +35,7 @@ display="inline"><![CDATA[g\colon {\mathopen {}\llbracket \Gamma .\varphi \rrbra
     
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="fdcbdd67902a077fc07e8cdc088d653d"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -263,7 +263,7 @@ hash="fdcbdd67902a077fc07e8cdc088d653d"><fr:embedded-tex-preamble><![CDATA[
         east = {h_{\Gamma }},
         west = g,
       }
-    ]]></fr:embedded-tex-body></fr:embedded-tex>
+    ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
     Here, <fr:tex
@@ -418,7 +418,7 @@ display="inline"><![CDATA[f\colon A_{1},\ldots ,A_{n}\to B]]></fr:tex>, the foll
           
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="1b5e749b0c2aedab83e8af1c80e3442d"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -647,14 +647,14 @@ hash="1b5e749b0c2aedab83e8af1c80e3442d"><fr:embedded-tex-preamble><![CDATA[
               west = {h_{A_{1}} \times  \cdots  \times  h_{A_{n}}},
               east = {h_{B}},
             }
-          ]]></fr:embedded-tex-body></fr:embedded-tex></fr:li>
+          ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure></fr:li>
         <fr:li>For each relation symbol <fr:tex
 display="inline"><![CDATA[R \rightarrowtail  A_{1},\ldots ,A_{n}]]></fr:tex>, there is a morphism <fr:tex
 display="inline"><![CDATA[g\colon MR\to NR]]></fr:tex> such that the following diagram commutes:
           
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="30870d03d683d9db1ae7cdef5138ec4f"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -883,7 +883,7 @@ hash="30870d03d683d9db1ae7cdef5138ec4f"><fr:embedded-tex-preamble><![CDATA[
               east = {h_{A_{1}} \times  \cdots  \times  h_{A_{n}}},
               west = {g},
             }
-          ]]></fr:embedded-tex-body></fr:embedded-tex></fr:li></fr:ul>
+          ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure></fr:li></fr:ul>
     </html:td>
 
   </html:tr>

@@ -25,7 +25,7 @@ display="inline"><![CDATA[T]]></fr:tex> is said to satisfy <fr:em><fr:strong>Bec
 display="inline"><![CDATA[f^{*}\Sigma _{g} \cong  \Sigma _{h}k^{*}]]></fr:tex>.</fr:p>
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="46e0a696959d3102dab04d8ef82f856d"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -254,7 +254,7 @@ hash="46e0a696959d3102dab04d8ef82f856d"><fr:embedded-tex-preamble><![CDATA[
     west = k,
     east = f,
   }
-]]></fr:embedded-tex-body></fr:embedded-tex>
+]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   <fr:p>Furthermore, if for each morphism <fr:tex
 display="inline"><![CDATA[f\colon X\to Y]]></fr:tex> in <fr:tex
@@ -310,7 +310,7 @@ display="inline"><![CDATA[f\colon X\to Y]]></fr:tex> in <fr:tex
 display="inline"><![CDATA[\mathcal {C}]]></fr:tex>, the following square commutes:</fr:p>
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="3c133ea9fa3990c2664c37093ccdc1f6"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -538,7 +538,7 @@ hash="3c133ea9fa3990c2664c37093ccdc1f6"><fr:embedded-tex-preamble><![CDATA[
     west = {Tf},
     east = {UF_{0}f},
   }
-]]></fr:embedded-tex-body></fr:embedded-tex>
+]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   </fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
 toc="true"
@@ -565,7 +565,7 @@ display="inline"><![CDATA[T]]></fr:tex> is said to satisfy <fr:em><fr:strong>Bec
 display="inline"><![CDATA[f^{*}\Sigma _{g} \cong  \Sigma _{h}k^{*}]]></fr:tex>.</fr:p>
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="46e0a696959d3102dab04d8ef82f856d"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -794,7 +794,7 @@ hash="46e0a696959d3102dab04d8ef82f856d"><fr:embedded-tex-preamble><![CDATA[
     west = k,
     east = f,
   }
-]]></fr:embedded-tex-body></fr:embedded-tex>
+]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   <fr:p>Furthermore, if for each morphism <fr:tex
 display="inline"><![CDATA[f\colon X\to Y]]></fr:tex> in <fr:tex
@@ -875,7 +875,7 @@ display="inline"><![CDATA[f\colon X\to Y]]></fr:tex> in <fr:tex
 display="inline"><![CDATA[\mathcal {C}]]></fr:tex>, the following squares commute:</fr:p>
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="cb43465f1319639cfb51ed0a1f84a4f2"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -1114,7 +1114,7 @@ hash="cb43465f1319639cfb51ed0a1f84a4f2"><fr:embedded-tex-preamble><![CDATA[
     west = {\Pi _{f}},
     east = {\Pi _{F_{0}f}},
   }
-]]></fr:embedded-tex-body></fr:embedded-tex>
+]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   </fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
 toc="true"
@@ -1149,7 +1149,7 @@ display="inline"><![CDATA[f\colon X\to Y]]></fr:tex> in <fr:tex
 display="inline"><![CDATA[\mathcal {C}]]></fr:tex>, the following square commutes up to isomorphism.</fr:p>
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="a1f3417da8e9cc3d4201025e96381c7a"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -1377,7 +1377,7 @@ hash="a1f3417da8e9cc3d4201025e96381c7a"><fr:embedded-tex-preamble><![CDATA[
     west = {f^{*}},
     east = {T(f)},
   }
-]]></fr:embedded-tex-body></fr:embedded-tex>
+]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
     
@@ -1418,7 +1418,7 @@ display="inline"><![CDATA[g\colon Z\to Y]]></fr:tex>, form the following pullbac
   
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="e1bd5fefb0fe8baa21479bac9059ba93"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -1647,7 +1647,7 @@ hash="e1bd5fefb0fe8baa21479bac9059ba93"><fr:embedded-tex-preamble><![CDATA[
       west = k,
       east = f,
     }
-  ]]></fr:embedded-tex-body></fr:embedded-tex>
+  ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
   <fr:p>Then by Beck-Chevalley, we have</fr:p>
@@ -1870,23 +1870,23 @@ display="inline"><![CDATA[\mathcal {C}]]></fr:tex> be a regular category.</fr:p>
     
     
       
-      <fr:embedded-tex
-hash="a0c6432cc627355287a33fcb59eda792"><fr:embedded-tex-preamble><![CDATA[
+      <fr:figure><fr:embedded-tex
+hash="5349f4d1cd36eb0fcdbc6dbf6942b0b1"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {mathpartir}
   \RequirePackage {amsmath}
 
       ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
-        \begin {mathpar}
-          
+          \begin {mathpar}
+            
       \Gamma |\varphi  \vdash  \varphi \and \inferrule {\Gamma |\varphi  \vdash  \psi  \\ \Gamma |\psi  \vdash  \chi 
       }{\Gamma |\varphi  \vdash  \chi 
       }\and \inferrule {\Delta |\varphi  \vdash  \psi 
       }{\Gamma |\varphi {\mathopen {}[f]\mathclose {}} \vdash  \psi {\mathopen {}[f]\mathclose {}}
       }
     
-        \end {mathpar}
-      ]]></fr:embedded-tex-body></fr:embedded-tex>
+          \end {mathpar}
+        ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
     where <fr:tex
@@ -1896,15 +1896,15 @@ display="inline"><![CDATA[\mathcal {C}]]></fr:tex>.</fr:li>
     
     
       
-      <fr:embedded-tex
-hash="ce33f6cafb06c11bf5f87731ff0443d5"><fr:embedded-tex-preamble><![CDATA[
+      <fr:figure><fr:embedded-tex
+hash="a0e34f08691541dcd8c820ac72403908"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {mathpartir}
   \RequirePackage {amsmath}
 
       ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
-        \begin {mathpar}
-          
+          \begin {mathpar}
+            
       \Gamma |\varphi  \vdash  \top \and \Gamma |\varphi  \wedge  \psi  \vdash  \varphi \and \Gamma |\varphi  \wedge  \psi  \vdash  \psi \and \mprset {fraction={===}}
       \inferrule {
         \Gamma |\chi  \vdash  \varphi  \\ \Gamma |\chi  \vdash  \psi 
@@ -1912,45 +1912,45 @@ hash="ce33f6cafb06c11bf5f87731ff0443d5"><fr:embedded-tex-preamble><![CDATA[
         \Gamma |\chi  \vdash  \varphi  \wedge  \psi 
       }
     
-        \end {mathpar}
-      ]]></fr:embedded-tex-body></fr:embedded-tex></fr:li>
+          \end {mathpar}
+        ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure></fr:li>
   <fr:li>Existential quantification:
     
     
       
-      <fr:embedded-tex
-hash="70d21e9de680fcd06eaa81c233c27e47"><fr:embedded-tex-preamble><![CDATA[
+      <fr:figure><fr:embedded-tex
+hash="187956c398448332c410d4f1054e0706"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {mathpartir}
   \RequirePackage {amsmath}
 
       ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
-        \begin {mathpar}
-          
+          \begin {mathpar}
+            
       \Gamma |\psi  \wedge  \exists _{f}\varphi  \dashv \vdash  \exists _{f}(\psi {\mathopen {}[f]\mathclose {}} \wedge  \varphi )\and \mprset {fraction={===}}
       \inferrule {\Delta |\varphi  \vdash  \psi {\mathopen {}[f]\mathclose {}}
       }{\Gamma |\exists _{f}\varphi  \vdash  \psi 
       }
     
-        \end {mathpar}
-      ]]></fr:embedded-tex-body></fr:embedded-tex></fr:li>
+          \end {mathpar}
+        ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure></fr:li>
   <fr:li>Equality:
     
     
       
-      <fr:embedded-tex
-hash="21d58f4801f45b8878b1b4fbaf40832a"><fr:embedded-tex-preamble><![CDATA[
+      <fr:figure><fr:embedded-tex
+hash="c56deae2ae080be5dbdcb6d60b344578"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {mathpartir}
   \RequirePackage {amsmath}
 
       ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
-        \begin {mathpar}
-          
+          \begin {mathpar}
+            
       x\colon A|\top  \vdash  x = x\and \Gamma |s = t \wedge  \varphi {\mathopen {}[s]\mathclose {}} \vdash  \varphi {\mathopen {}[t]\mathclose {}}
     
-        \end {mathpar}
-      ]]></fr:embedded-tex-body></fr:embedded-tex>
+          \end {mathpar}
+        ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
     where <fr:tex
@@ -2010,7 +2010,7 @@ display="inline"><![CDATA[s]]></fr:tex>.</fr:p>
   
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="d8ad5d5e36e5970e1e714f316d4db9e0"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -2244,7 +2244,7 @@ hash="d8ad5d5e36e5970e1e714f316d4db9e0"><fr:embedded-tex-preamble><![CDATA[
       \draw  [->,morphism,offset=-1.5] (5) to node {$s$} (6);
       \draw  [->,morphism,offset=1.5] (5) to node[swap] {$t$} (6);
     \end {tikzpicture}
-  ]]></fr:embedded-tex-body></fr:embedded-tex>
+  ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
   <fr:p>Since <fr:tex
@@ -2257,7 +2257,7 @@ display="inline"><![CDATA[\varphi {\mathopen {}[t]\mathclose {}}]]></fr:tex>.</f
   
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="dc67266028d37326a3f65aba7e9fe128"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -2491,7 +2491,7 @@ hash="dc67266028d37326a3f65aba7e9fe128"><fr:embedded-tex-preamble><![CDATA[
       \draw  [->,morphism,bend left] (a) to node {$ba$} (ne);
       \draw  [->,exists,morphism] (a) to (nw);
     \end {tikzpicture}
-  ]]></fr:embedded-tex-body></fr:embedded-tex>
+  ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
 </fr:mainmatter><fr:backmatter /></fr:tree>
@@ -2618,7 +2618,7 @@ display="inline"><![CDATA[\exists ^{\flat }_{f}]]></fr:tex> defined as the compo
   
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="f021c92e7bfba4038b027833197ec099"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -2847,7 +2847,7 @@ hash="f021c92e7bfba4038b027833197ec099"><fr:embedded-tex-preamble><![CDATA[
       \draw  [adjoint] (l1) to (r1);
       \draw  [adjoint] (l2) to (r2);
     \end {tikzpicture}
-  ]]></fr:embedded-tex-body></fr:embedded-tex>
+  ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
   <fr:p>where <fr:tex
@@ -2863,7 +2863,7 @@ display="inline"><![CDATA[\Gamma |\chi  \vdash  \varphi ]]></fr:tex>.
   
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="bca77cda61e0708bf4cff456dab49665"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -3093,7 +3093,7 @@ hash="bca77cda61e0708bf4cff456dab49665"><fr:embedded-tex-preamble><![CDATA[
       west = k,
       east = f,
     }
-  ]]></fr:embedded-tex-body></fr:embedded-tex>
+  ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
   <fr:p>We wish to show that <fr:tex
@@ -3187,7 +3187,7 @@ display="inline"><![CDATA[f\colon X\to Y]]></fr:tex> in <fr:tex
 display="inline"><![CDATA[\mathcal {C}]]></fr:tex>, the following squares commute:</fr:p>
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="cb43465f1319639cfb51ed0a1f84a4f2"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -3426,7 +3426,7 @@ hash="cb43465f1319639cfb51ed0a1f84a4f2"><fr:embedded-tex-preamble><![CDATA[
     west = {\Pi _{f}},
     east = {\Pi _{F_{0}f}},
   }
-]]></fr:embedded-tex-body></fr:embedded-tex>
+]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   </fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
 toc="true"
@@ -3461,7 +3461,7 @@ display="inline"><![CDATA[f\colon X\to Y]]></fr:tex> in <fr:tex
 display="inline"><![CDATA[\mathcal {C}]]></fr:tex>, the following square commutes up to isomorphism.</fr:p>
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="a1f3417da8e9cc3d4201025e96381c7a"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -3689,7 +3689,7 @@ hash="a1f3417da8e9cc3d4201025e96381c7a"><fr:embedded-tex-preamble><![CDATA[
     west = {f^{*}},
     east = {T(f)},
   }
-]]></fr:embedded-tex-body></fr:embedded-tex>
+]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
     
@@ -3730,7 +3730,7 @@ display="inline"><![CDATA[g\colon Z\to Y]]></fr:tex>, form the following pullbac
   
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="e1bd5fefb0fe8baa21479bac9059ba93"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -3959,7 +3959,7 @@ hash="e1bd5fefb0fe8baa21479bac9059ba93"><fr:embedded-tex-preamble><![CDATA[
       west = k,
       east = f,
     }
-  ]]></fr:embedded-tex-body></fr:embedded-tex>
+  ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
   <fr:p>Then by Beck-Chevalley, we have</fr:p>
@@ -4059,7 +4059,7 @@ display="inline"><![CDATA[f\colon X\to Y]]></fr:tex> in <fr:tex
 display="inline"><![CDATA[\mathcal {C}]]></fr:tex>, the following square commutes:</fr:p>
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="3c133ea9fa3990c2664c37093ccdc1f6"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -4287,6 +4287,6 @@ hash="3c133ea9fa3990c2664c37093ccdc1f6"><fr:embedded-tex-preamble><![CDATA[
     west = {Tf},
     east = {UF_{0}f},
   }
-]]></fr:embedded-tex-body></fr:embedded-tex>
+]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   </fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

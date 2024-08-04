@@ -21,7 +21,7 @@ display="inline"><![CDATA[(f,g)\colon A\to B \times  D]]></fr:tex>.</fr:p>
   
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="9b08b1aa69647b99ff1d30c09c28fd79"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -248,7 +248,7 @@ hash="9b08b1aa69647b99ff1d30c09c28fd79"><fr:embedded-tex-preamble><![CDATA[
       \draw  [cover,morphism] (1) to node[swap] {$h$} (3);
       \draw  [>->,morphism] (3) to node[swap] {$(f',g')$} (2);
     \end {tikzpicture}
-  ]]></fr:embedded-tex-body></fr:embedded-tex>
+  ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
   <fr:p>We show that <fr:tex
@@ -271,7 +271,7 @@ display="inline"><![CDATA[h]]></fr:tex>.</fr:p>
   
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="5bf5bde3c087e05b85e3299beed550c9"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -502,7 +502,7 @@ hash="5bf5bde3c087e05b85e3299beed550c9"><fr:embedded-tex-preamble><![CDATA[
       east = h \times  h,
       east/style = {cover},
     }
-  ]]></fr:embedded-tex-body></fr:embedded-tex>
+  ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
   <fr:p>Note that <fr:tex
@@ -521,7 +521,7 @@ display="inline"><![CDATA[f]]></fr:tex>.</fr:p>
   
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="c6ecacba52ea25eda66c5d02043389cc"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -756,7 +756,7 @@ hash="c6ecacba52ea25eda66c5d02043389cc"><fr:embedded-tex-preamble><![CDATA[
       \draw  [->,morphism,bend left] (aa) to node {$n$} (ne);
       \draw  [->,morphism,exists] (aa) to node[desc] {$s$} (nw);
     \end {tikzpicture}
-  ]]></fr:embedded-tex-body></fr:embedded-tex>
+  ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
   <fr:p>To show <fr:tex
@@ -770,7 +770,7 @@ display="inline"><![CDATA[g]]></fr:tex> can be factored as follows:</fr:p>
   
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="281f2859cb80d99021abfe4b87b50b76"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -1001,7 +1001,7 @@ hash="281f2859cb80d99021abfe4b87b50b76"><fr:embedded-tex-preamble><![CDATA[
       \draw  [->,morphism] (3) to node {${f'}^{-1}$} (4);
       \draw  [->,morphism] (4) to node {$g'$} (5);
     \end {tikzpicture}
-  ]]></fr:embedded-tex-body></fr:embedded-tex>
+  ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
   <fr:p>Uniqueness then follows from the fact that <fr:tex
@@ -1055,7 +1055,7 @@ display="inline"><![CDATA[(f,g)\colon A\to B \times  D]]></fr:tex>.</fr:p>
   
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="9b08b1aa69647b99ff1d30c09c28fd79"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -1282,7 +1282,7 @@ hash="9b08b1aa69647b99ff1d30c09c28fd79"><fr:embedded-tex-preamble><![CDATA[
       \draw  [cover,morphism] (1) to node[swap] {$h$} (3);
       \draw  [>->,morphism] (3) to node[swap] {$(f',g')$} (2);
     \end {tikzpicture}
-  ]]></fr:embedded-tex-body></fr:embedded-tex>
+  ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
   <fr:p>We show that <fr:tex
@@ -1305,7 +1305,7 @@ display="inline"><![CDATA[h]]></fr:tex>.</fr:p>
   
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="5bf5bde3c087e05b85e3299beed550c9"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -1536,7 +1536,7 @@ hash="5bf5bde3c087e05b85e3299beed550c9"><fr:embedded-tex-preamble><![CDATA[
       east = h \times  h,
       east/style = {cover},
     }
-  ]]></fr:embedded-tex-body></fr:embedded-tex>
+  ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
   <fr:p>Note that <fr:tex
@@ -1555,7 +1555,7 @@ display="inline"><![CDATA[f]]></fr:tex>.</fr:p>
   
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="c6ecacba52ea25eda66c5d02043389cc"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -1790,7 +1790,7 @@ hash="c6ecacba52ea25eda66c5d02043389cc"><fr:embedded-tex-preamble><![CDATA[
       \draw  [->,morphism,bend left] (aa) to node {$n$} (ne);
       \draw  [->,morphism,exists] (aa) to node[desc] {$s$} (nw);
     \end {tikzpicture}
-  ]]></fr:embedded-tex-body></fr:embedded-tex>
+  ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
   <fr:p>To show <fr:tex
@@ -1804,7 +1804,7 @@ display="inline"><![CDATA[g]]></fr:tex> can be factored as follows:</fr:p>
   
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="281f2859cb80d99021abfe4b87b50b76"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -2035,7 +2035,7 @@ hash="281f2859cb80d99021abfe4b87b50b76"><fr:embedded-tex-preamble><![CDATA[
       \draw  [->,morphism] (3) to node {${f'}^{-1}$} (4);
       \draw  [->,morphism] (4) to node {$g'$} (5);
     \end {tikzpicture}
-  ]]></fr:embedded-tex-body></fr:embedded-tex>
+  ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
   <fr:p>Uniqueness then follows from the fact that <fr:tex

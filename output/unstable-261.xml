@@ -33,7 +33,7 @@ display="inline"><![CDATA[s]]></fr:tex> is monic.</fr:p>
   
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="73a844f0751de2785bed455220880376"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -266,7 +266,7 @@ hash="73a844f0751de2785bed455220880376"><fr:embedded-tex-preamble><![CDATA[
       \draw  [>->,morphism,bend right] (4) to node[swap] {$h$} (2);
       \draw  [>->,morphism] (3) to node[desc] {$s$} (4);
     \end {tikzpicture}
-  ]]></fr:embedded-tex-body></fr:embedded-tex>
+  ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
   <fr:p>Since <fr:tex
@@ -338,7 +338,7 @@ display="inline"><![CDATA[s]]></fr:tex> is monic.</fr:p>
   
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="73a844f0751de2785bed455220880376"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -571,7 +571,7 @@ hash="73a844f0751de2785bed455220880376"><fr:embedded-tex-preamble><![CDATA[
       \draw  [>->,morphism,bend right] (4) to node[swap] {$h$} (2);
       \draw  [>->,morphism] (3) to node[desc] {$s$} (4);
     \end {tikzpicture}
-  ]]></fr:embedded-tex-body></fr:embedded-tex>
+  ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
   <fr:p>Since <fr:tex

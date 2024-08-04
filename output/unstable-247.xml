@@ -45,7 +45,7 @@ display="inline"><![CDATA[\pi _{1}\colon B \times  1\to B]]></fr:tex> is the pro
   
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="961a70b7247e91de741632e7a2e0fdd9"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -274,7 +274,7 @@ hash="961a70b7247e91de741632e7a2e0fdd9"><fr:embedded-tex-preamble><![CDATA[
       south = {\pi _{1}^{\dag }},
       west = {\mathsf {!}},
     }
-  ]]></fr:embedded-tex-body></fr:embedded-tex>
+  ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
   <fr:p>Now let <fr:tex
@@ -283,7 +283,7 @@ display="inline"><![CDATA[{{\mathcal {C}}_{/{B}}}]]></fr:tex>, we extend the abo
   
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="c09cfe05dea21da8bd1333253be71965"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -516,7 +516,7 @@ hash="c09cfe05dea21da8bd1333253be71965"><fr:embedded-tex-preamble><![CDATA[
       \draw  [->,morphism,exists] (pif) to node[desc] {$\Pi _{B}\alpha $} (nw);
       \draw  [->,morphism,bend left] (pif) to node {$\alpha ^{B}\beta $} (ne);
     \end {tikzpicture}
-  ]]></fr:embedded-tex-body></fr:embedded-tex>
+  ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
   <fr:p>Note that</fr:p>
@@ -527,7 +527,7 @@ display="inline"><![CDATA[\alpha \colon B^{*}(A')\to f]]></fr:tex> be given.</fr
   
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="1a96f5f582a792fc6d3527ff10aef291"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -754,7 +754,7 @@ hash="1a96f5f582a792fc6d3527ff10aef291"><fr:embedded-tex-preamble><![CDATA[
       \draw  [->,morphism] (1) to node {$\alpha $} (2);
       \draw  [->,morphism] (2) to node {$f$} (3);
     \end {tikzpicture}
-  ]]></fr:embedded-tex-body></fr:embedded-tex>
+  ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
   <fr:p>Then this morphism corresponds to a unique morphism <fr:tex
@@ -762,7 +762,7 @@ display="inline"><![CDATA[A' \to  \Pi _{B}f]]></fr:tex> as follows:</fr:p>
   
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="611dfd22c2a87c672cd3073401b78333"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -996,7 +996,7 @@ hash="611dfd22c2a87c672cd3073401b78333"><fr:embedded-tex-preamble><![CDATA[
       \draw  [->,morphism,exists] (pif) to (nw);
       \draw  [->,morphism,bend left] (pif) to node {$\alpha ^{\dag }$} (ne);
     \end {tikzpicture}
-  ]]></fr:embedded-tex-body></fr:embedded-tex>
+  ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
   <fr:p>The unit and counit of the adjunction can be extracted from the square above.</fr:p>
@@ -1074,7 +1074,7 @@ display="inline"><![CDATA[\pi _{1}\colon B \times  1\to B]]></fr:tex> is the pro
   
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="961a70b7247e91de741632e7a2e0fdd9"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -1303,7 +1303,7 @@ hash="961a70b7247e91de741632e7a2e0fdd9"><fr:embedded-tex-preamble><![CDATA[
       south = {\pi _{1}^{\dag }},
       west = {\mathsf {!}},
     }
-  ]]></fr:embedded-tex-body></fr:embedded-tex>
+  ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
   <fr:p>Now let <fr:tex
@@ -1312,7 +1312,7 @@ display="inline"><![CDATA[{{\mathcal {C}}_{/{B}}}]]></fr:tex>, we extend the abo
   
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="c09cfe05dea21da8bd1333253be71965"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -1545,7 +1545,7 @@ hash="c09cfe05dea21da8bd1333253be71965"><fr:embedded-tex-preamble><![CDATA[
       \draw  [->,morphism,exists] (pif) to node[desc] {$\Pi _{B}\alpha $} (nw);
       \draw  [->,morphism,bend left] (pif) to node {$\alpha ^{B}\beta $} (ne);
     \end {tikzpicture}
-  ]]></fr:embedded-tex-body></fr:embedded-tex>
+  ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
   <fr:p>Note that</fr:p>
@@ -1556,7 +1556,7 @@ display="inline"><![CDATA[\alpha \colon B^{*}(A')\to f]]></fr:tex> be given.</fr
   
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="1a96f5f582a792fc6d3527ff10aef291"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -1783,7 +1783,7 @@ hash="1a96f5f582a792fc6d3527ff10aef291"><fr:embedded-tex-preamble><![CDATA[
       \draw  [->,morphism] (1) to node {$\alpha $} (2);
       \draw  [->,morphism] (2) to node {$f$} (3);
     \end {tikzpicture}
-  ]]></fr:embedded-tex-body></fr:embedded-tex>
+  ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
   <fr:p>Then this morphism corresponds to a unique morphism <fr:tex
@@ -1791,7 +1791,7 @@ display="inline"><![CDATA[A' \to  \Pi _{B}f]]></fr:tex> as follows:</fr:p>
   
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="611dfd22c2a87c672cd3073401b78333"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -2025,7 +2025,7 @@ hash="611dfd22c2a87c672cd3073401b78333"><fr:embedded-tex-preamble><![CDATA[
       \draw  [->,morphism,exists] (pif) to (nw);
       \draw  [->,morphism,bend left] (pif) to node {$\alpha ^{\dag }$} (ne);
     \end {tikzpicture}
-  ]]></fr:embedded-tex-body></fr:embedded-tex>
+  ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
   <fr:p>The unit and counit of the adjunction can be extracted from the square above.</fr:p>

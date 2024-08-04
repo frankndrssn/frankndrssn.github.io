@@ -76,7 +76,7 @@ display="inline"><![CDATA[b]]></fr:tex>.</fr:p>
   
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="2871617dea9dda442091aa3acf90231f"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -302,7 +302,7 @@ hash="2871617dea9dda442091aa3acf90231f"><fr:embedded-tex-preamble><![CDATA[
       \draw  [->,morphism,offset=-1.5] (0) to node {$a$} (a);
       \draw  [->,morphism,offset=1.5] (0) to node[swap] {$b$} (a);
     \end {tikzpicture}
-  ]]></fr:embedded-tex-body></fr:embedded-tex>
+  ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
   <fr:p>Since the codomain of <fr:tex

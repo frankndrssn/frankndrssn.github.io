@@ -19,7 +19,7 @@ display="inline"><![CDATA[a\sigma  = b]]></fr:tex> and <fr:tex
 display="inline"><![CDATA[b\sigma  = a]]></fr:tex>.</fr:p>
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="952fb6b29e18c2dbf0c3509f5e6a671f"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -245,7 +245,7 @@ hash="952fb6b29e18c2dbf0c3509f5e6a671f"><fr:embedded-tex-preamble><![CDATA[
     \draw  [->,morphism] (3) to node {$\sigma $} (1);
     \draw  [>->,morphism] (3) to node[swap] {$(b,a)$} (2);
   \end {tikzpicture}
-]]></fr:embedded-tex-body></fr:embedded-tex>
+]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   </fr:mainmatter><fr:backmatter><fr:tree
 toc="false"

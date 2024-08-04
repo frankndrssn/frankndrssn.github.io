@@ -27,7 +27,7 @@ display="inline"><![CDATA[m]]></fr:tex> is a monomorphism.
   
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="d52797041048d24ad83ccf2f37a85c07"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -265,7 +265,7 @@ hash="d52797041048d24ad83ccf2f37a85c07"><fr:embedded-tex-preamble><![CDATA[
       \draw  [->,morphism,exists] (a) to (nw);
       \draw  [cover,morphism,bend left] (a) to node {$f$} (ne);
     \end {tikzpicture}
-  ]]></fr:embedded-tex-body></fr:embedded-tex>
+  ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
   <fr:p>Since <fr:tex
@@ -290,7 +290,7 @@ display="inline"><![CDATA[f]]></fr:tex> and covers are stable under pullback by 
   
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="04c475ffb9db24e9fde16e3f80df0457"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -533,7 +533,7 @@ hash="04c475ffb9db24e9fde16e3f80df0457"><fr:embedded-tex-preamble><![CDATA[
       east = f,
       east/style = {cover},
     }
-  ]]></fr:embedded-tex-body></fr:embedded-tex>
+  ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
 </fr:mainmatter><fr:backmatter><fr:tree
@@ -598,7 +598,7 @@ display="inline"><![CDATA[m]]></fr:tex> is a monomorphism.
   
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="d52797041048d24ad83ccf2f37a85c07"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -836,7 +836,7 @@ hash="d52797041048d24ad83ccf2f37a85c07"><fr:embedded-tex-preamble><![CDATA[
       \draw  [->,morphism,exists] (a) to (nw);
       \draw  [cover,morphism,bend left] (a) to node {$f$} (ne);
     \end {tikzpicture}
-  ]]></fr:embedded-tex-body></fr:embedded-tex>
+  ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
   <fr:p>Since <fr:tex
@@ -861,7 +861,7 @@ display="inline"><![CDATA[f]]></fr:tex> and covers are stable under pullback by 
   
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="04c475ffb9db24e9fde16e3f80df0457"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -1104,7 +1104,7 @@ hash="04c475ffb9db24e9fde16e3f80df0457"><fr:embedded-tex-preamble><![CDATA[
       east = f,
       east/style = {cover},
     }
-  ]]></fr:embedded-tex-body></fr:embedded-tex>
+  ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
 </fr:mainmatter><fr:backmatter /></fr:tree>

@@ -41,7 +41,7 @@ display="inline"><![CDATA[f\colon A\to 0]]></fr:tex>.
   
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="4343ea049d739c30a05ecbd0058359c3"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -277,7 +277,7 @@ hash="4343ea049d739c30a05ecbd0058359c3"><fr:embedded-tex-preamble><![CDATA[
       \draw  [->,morphism,exists] (a) to node[desc] {$s$} (nw);
       \draw  [->,morphism,bend left] (a) to node {$f$} (ne);
     \end {tikzpicture}
-  ]]></fr:embedded-tex-body></fr:embedded-tex>
+  ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
   <fr:p>Since <fr:tex
@@ -296,7 +296,7 @@ display="inline"><![CDATA[\mathsf {Sub}(A \times  A)]]></fr:tex>.</fr:p>
   
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="990851fb980c48ba8a3d042ad7018b82"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -540,7 +540,7 @@ hash="990851fb980c48ba8a3d042ad7018b82"><fr:embedded-tex-preamble><![CDATA[
       \draw  [->,morphism] (aa) to node {$\pi _{1}$} (a);
       \draw  [->,morphism,exists] (aa) to (1);
     \end {tikzpicture}
-  ]]></fr:embedded-tex-body></fr:embedded-tex>
+  ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
   <fr:p>Thus, <fr:tex
@@ -654,7 +654,7 @@ display="inline"><![CDATA[f\colon A\to 0]]></fr:tex>.
   
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="4343ea049d739c30a05ecbd0058359c3"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -890,7 +890,7 @@ hash="4343ea049d739c30a05ecbd0058359c3"><fr:embedded-tex-preamble><![CDATA[
       \draw  [->,morphism,exists] (a) to node[desc] {$s$} (nw);
       \draw  [->,morphism,bend left] (a) to node {$f$} (ne);
     \end {tikzpicture}
-  ]]></fr:embedded-tex-body></fr:embedded-tex>
+  ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
   <fr:p>Since <fr:tex
@@ -909,7 +909,7 @@ display="inline"><![CDATA[\mathsf {Sub}(A \times  A)]]></fr:tex>.</fr:p>
   
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="990851fb980c48ba8a3d042ad7018b82"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -1153,7 +1153,7 @@ hash="990851fb980c48ba8a3d042ad7018b82"><fr:embedded-tex-preamble><![CDATA[
       \draw  [->,morphism] (aa) to node {$\pi _{1}$} (a);
       \draw  [->,morphism,exists] (aa) to (1);
     \end {tikzpicture}
-  ]]></fr:embedded-tex-body></fr:embedded-tex>
+  ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
   <fr:p>Thus, <fr:tex
@@ -1234,7 +1234,7 @@ display="inline"><![CDATA[b]]></fr:tex>.</fr:p>
   
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="2871617dea9dda442091aa3acf90231f"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -1460,7 +1460,7 @@ hash="2871617dea9dda442091aa3acf90231f"><fr:embedded-tex-preamble><![CDATA[
       \draw  [->,morphism,offset=-1.5] (0) to node {$a$} (a);
       \draw  [->,morphism,offset=1.5] (0) to node[swap] {$b$} (a);
     \end {tikzpicture}
-  ]]></fr:embedded-tex-body></fr:embedded-tex>
+  ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
   <fr:p>Since the codomain of <fr:tex
@@ -1539,7 +1539,7 @@ display="inline"><![CDATA[A]]></fr:tex>.
 display="inline"><![CDATA[\mathcal {C}]]></fr:tex>.</fr:p>
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="79fa1b31780ee425d3b3fb5c99ca6d27"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -1771,7 +1771,7 @@ hash="79fa1b31780ee425d3b3fb5c99ca6d27"><fr:embedded-tex-preamble><![CDATA[
     east = {u_{2}},
     east/style = {>->},
   }
-]]></fr:embedded-tex-body></fr:embedded-tex>
+]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   <fr:p>where the <fr:tex
 display="inline"><![CDATA[i]]></fr:tex>'s and the <fr:tex
@@ -1854,7 +1854,7 @@ display="inline"><![CDATA[k]]></fr:tex>.</fr:p>
   
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="1536f6f1ce3e10d0851c36a310d269f5"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -2083,7 +2083,7 @@ hash="1536f6f1ce3e10d0851c36a310d269f5"><fr:embedded-tex-preamble><![CDATA[
       \draw  [>->,morphism] (2) to node[desc] {$(m,n)$} (4);
       \draw  [>->,morphism] (3) to node {$(g,u_{2})$} (4);
     \end {tikzpicture}
-  ]]></fr:embedded-tex-body></fr:embedded-tex>
+  ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
   <fr:p>The pullback of <fr:tex
@@ -2120,7 +2120,7 @@ display="inline"><![CDATA[k'']]></fr:tex> be given as follows:</fr:p>
   
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="e2aee585df7c9cf6274446bab6bbad08"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -2393,7 +2393,7 @@ hash="e2aee585df7c9cf6274446bab6bbad08"><fr:embedded-tex-preamble><![CDATA[
       east = k,
       east/style = {>->},
     }
-  ]]></fr:embedded-tex-body></fr:embedded-tex>
+  ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
   <fr:p>First, let us consider the subobject <fr:tex
@@ -2405,7 +2405,7 @@ display="inline"><![CDATA[x]]></fr:tex>.</fr:p>
   
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="f130d7212d745e9e4d7eec1d55c6eab7"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -2634,7 +2634,7 @@ hash="f130d7212d745e9e4d7eec1d55c6eab7"><fr:embedded-tex-preamble><![CDATA[
       \draw  [>->,morphism] (2) to node[desc] {$x$} (4);
       \draw  [>->,morphism] (3) to node {$b^{*}(\ell )$} (4);
     \end {tikzpicture}
-  ]]></fr:embedded-tex-body></fr:embedded-tex>
+  ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
   <fr:p>Note that</fr:p>
@@ -2661,7 +2661,7 @@ display="inline"><![CDATA[y]]></fr:tex>.</fr:p>
   
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="a77a3bdf38607f35186c342f374409d2"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -2890,7 +2890,7 @@ hash="a77a3bdf38607f35186c342f374409d2"><fr:embedded-tex-preamble><![CDATA[
       \draw  [>->,morphism] (2) to node[desc] {$y$} (4);
       \draw  [>->,morphism] (3) to node {$b^{*}(k)$} (4);
     \end {tikzpicture}
-  ]]></fr:embedded-tex-body></fr:embedded-tex>
+  ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
   <fr:p>Then we have</fr:p>
@@ -2902,7 +2902,7 @@ display="inline"><![CDATA[k''\nu _{2}]]></fr:tex> can be factored as follows:</f
   
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="6537c494cf8768423a58dd3992ef727b"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -3141,7 +3141,7 @@ hash="6537c494cf8768423a58dd3992ef727b"><fr:embedded-tex-preamble><![CDATA[
       \draw  [->,morphism,exists] (a) to node[desc] {$z$} (nw);
       \draw  [->,morphism,bend left] (a) to node {$k''\nu _{2}$} (ne);
     \end {tikzpicture}
-  ]]></fr:embedded-tex-body></fr:embedded-tex>
+  ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
   <fr:p>This yields</fr:p>
@@ -3211,7 +3211,7 @@ taxon="Lemma" /> the following diagram is a pushout.</fr:p>
   
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="5104eb0e1f6f0181cb3213ae3f1ac8ae"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -3439,7 +3439,7 @@ hash="5104eb0e1f6f0181cb3213ae3f1ac8ae"><fr:embedded-tex-preamble><![CDATA[
       south/style = {>->},
       east/style = {>->},
     }
-  ]]></fr:embedded-tex-body></fr:embedded-tex>
+  ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
   <fr:p>But, pushouts under <fr:tex
@@ -3508,7 +3508,7 @@ display="inline"><![CDATA[b]]></fr:tex>.</fr:p>
   
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="2871617dea9dda442091aa3acf90231f"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -3734,7 +3734,7 @@ hash="2871617dea9dda442091aa3acf90231f"><fr:embedded-tex-preamble><![CDATA[
       \draw  [->,morphism,offset=-1.5] (0) to node {$a$} (a);
       \draw  [->,morphism,offset=1.5] (0) to node[swap] {$b$} (a);
     \end {tikzpicture}
-  ]]></fr:embedded-tex-body></fr:embedded-tex>
+  ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
   <fr:p>Since the codomain of <fr:tex

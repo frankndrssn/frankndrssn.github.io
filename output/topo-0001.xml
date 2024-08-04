@@ -87,7 +87,7 @@ display="inline"><![CDATA[\mathsf {Sub}(A)]]></fr:tex>.
       
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="0ca92f907544234de24264bf420d135e"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -317,7 +317,7 @@ hash="0ca92f907544234de24264bf420d135e"><fr:embedded-tex-preamble><![CDATA[
           east = n,
           east/style = {>->},
         }
-      ]]></fr:embedded-tex-body></fr:embedded-tex>
+      ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
     </html:td>
@@ -363,7 +363,7 @@ type="machine">#281</fr:addr><fr:route>unstable-281.xml</fr:route><fr:taxon>Proo
         
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="e97fe9df8e3d008429f046b8a8f512b4"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -594,7 +594,7 @@ hash="e97fe9df8e3d008429f046b8a8f512b4"><fr:embedded-tex-preamble><![CDATA[
             east/style = {>->},
             west/style = {>->},
           }
-        ]]></fr:embedded-tex-body></fr:embedded-tex>
+        ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
       </fr:mainmatter><fr:backmatter /></fr:tree></fr:li>
@@ -618,7 +618,7 @@ type="machine">#282</fr:addr><fr:route>unstable-282.xml</fr:route><fr:taxon>Proo
         
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="f10e7ca4e99cdfe26beb30ee87a77179"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -857,7 +857,7 @@ hash="f10e7ca4e99cdfe26beb30ee87a77179"><fr:embedded-tex-preamble><![CDATA[
             \draw  [->,morphism] (A) to node[swap] {$f$} (sw);
           \end {tikzpicture}
           
-        ]]></fr:embedded-tex-body></fr:embedded-tex>
+        ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
         Then by the <fr:link
@@ -965,7 +965,7 @@ taxon="Lemma" />, the following square is a pullback.
   
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="1b33af73aa9c24541c72ab5193ae86be"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -1194,7 +1194,7 @@ hash="1b33af73aa9c24541c72ab5193ae86be"><fr:embedded-tex-preamble><![CDATA[
       east = \{\},
       south = \{\},
     }
-  ]]></fr:embedded-tex-body></fr:embedded-tex>
+  ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
   Thus, <fr:tex
@@ -1456,7 +1456,7 @@ display="inline"><![CDATA[g\colon  B \to  S]]></fr:tex> such that <fr:tex
 display="inline"><![CDATA[f = gm]]></fr:tex>.</fr:p>
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="8ce4a6fb01229053c67a5725bb92a1e5"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -1682,7 +1682,7 @@ hash="8ce4a6fb01229053c67a5725bb92a1e5"><fr:embedded-tex-preamble><![CDATA[
     \draw  [morphism,->] (n) to node [above] {$f$} (e);
     \draw  [morphism,->,exists] (s) to node [yshift=-2pt,right] {$g$} (e);
   \end {tikzpicture}
-]]></fr:embedded-tex-body></fr:embedded-tex>
+]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   </fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
 toc="true"
@@ -1758,7 +1758,7 @@ title="Elementary topos">topoi</fr:link>. A <fr:em><fr:strong>geometric morphism
 display="inline"><![CDATA[f\colon \mathcal {E}\to \mathcal {F}]]></fr:tex> is an adjoint pair of functors</fr:p>
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="8a1b605f5384f8244d0139cde02f4b11"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -1983,7 +1983,7 @@ hash="8a1b605f5384f8244d0139cde02f4b11"><fr:embedded-tex-preamble><![CDATA[
     \draw  [->,morphism,offset=1.5] (e) to node[swap] (l) {$f^{*}$} (w);
     \draw  [adjoint] (l) to (r);
   \end {tikzpicture}
-]]></fr:embedded-tex-body></fr:embedded-tex>
+]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   <fr:p>such that <fr:tex
 display="inline"><![CDATA[f^{*}]]></fr:tex> is left exact. The functors <fr:tex
@@ -2100,7 +2100,7 @@ display="inline"><![CDATA[\mathsf {Sub}(A)]]></fr:tex>.
       
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="0ca92f907544234de24264bf420d135e"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -2330,7 +2330,7 @@ hash="0ca92f907544234de24264bf420d135e"><fr:embedded-tex-preamble><![CDATA[
           east = n,
           east/style = {>->},
         }
-      ]]></fr:embedded-tex-body></fr:embedded-tex>
+      ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
     </html:td>
@@ -2376,7 +2376,7 @@ type="machine">#281</fr:addr><fr:route>unstable-281.xml</fr:route><fr:taxon>Proo
         
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="e97fe9df8e3d008429f046b8a8f512b4"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -2607,7 +2607,7 @@ hash="e97fe9df8e3d008429f046b8a8f512b4"><fr:embedded-tex-preamble><![CDATA[
             east/style = {>->},
             west/style = {>->},
           }
-        ]]></fr:embedded-tex-body></fr:embedded-tex>
+        ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
       </fr:mainmatter><fr:backmatter /></fr:tree></fr:li>
@@ -2631,7 +2631,7 @@ type="machine">#282</fr:addr><fr:route>unstable-282.xml</fr:route><fr:taxon>Proo
         
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="f10e7ca4e99cdfe26beb30ee87a77179"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -2870,7 +2870,7 @@ hash="f10e7ca4e99cdfe26beb30ee87a77179"><fr:embedded-tex-preamble><![CDATA[
             \draw  [->,morphism] (A) to node[swap] {$f$} (sw);
           \end {tikzpicture}
           
-        ]]></fr:embedded-tex-body></fr:embedded-tex>
+        ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
         Then by the <fr:link

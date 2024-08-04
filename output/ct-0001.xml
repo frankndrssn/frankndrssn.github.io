@@ -19,7 +19,7 @@ display="inline"><![CDATA[a\rho  = \mathsf {id}_{A}]]></fr:tex> and <fr:tex
 display="inline"><![CDATA[b\rho  = \mathsf {id}_{A}]]></fr:tex>.</fr:p>
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="a28525d6436ec285f87193b9b4d33b55"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -245,7 +245,7 @@ hash="a28525d6436ec285f87193b9b4d33b55"><fr:embedded-tex-preamble><![CDATA[
     \draw  [->,morphism] (3) to node {$\rho $} (1);
     \draw  [>->,morphism] (3) to node[swap] {$\Delta $} (2);
   \end {tikzpicture}
-]]></fr:embedded-tex-body></fr:embedded-tex>
+]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   </fr:mainmatter><fr:backmatter><fr:tree
 toc="false"

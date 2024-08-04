@@ -80,7 +80,7 @@ title="Heyting category">Heyting category</fr:link> and the following square be 
 display="inline"><![CDATA[\mathcal {C}]]></fr:tex>.</fr:p>
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="46e0a696959d3102dab04d8ef82f856d"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -309,12 +309,12 @@ hash="46e0a696959d3102dab04d8ef82f856d"><fr:embedded-tex-preamble><![CDATA[
     west = k,
     east = f,
   }
-]]></fr:embedded-tex-body></fr:embedded-tex>
+]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   <fr:p>Then the following square commutes up to isomorphism.</fr:p>
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="6dd631a0a536ef469ac64c1410168e3c"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -542,7 +542,7 @@ hash="6dd631a0a536ef469ac64c1410168e3c"><fr:embedded-tex-preamble><![CDATA[
     south = {g^{*}},
     east = {\forall _{k}},
   }
-]]></fr:embedded-tex-body></fr:embedded-tex>
+]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
     
@@ -560,7 +560,7 @@ type="machine">#249</fr:addr><fr:route>unstable-249.xml</fr:route><fr:taxon>Proo
   
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="784f00be8deba12a1143691d34b4d6f7"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -792,7 +792,7 @@ hash="784f00be8deba12a1143691d34b4d6f7"><fr:embedded-tex-preamble><![CDATA[
       east = {k^{*}},
       east/style = {<-},
     }
-  ]]></fr:embedded-tex-body></fr:embedded-tex>
+  ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
   <fr:p>By <fr:ref
@@ -814,7 +814,7 @@ display="inline"><![CDATA[f^{*}\Sigma _{g} \cong  \Sigma _{h}k^{*}]]></fr:tex>.<
   
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="5531f70bb8650e99365b273c62305a49"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -1050,7 +1050,7 @@ hash="5531f70bb8650e99365b273c62305a49"><fr:embedded-tex-preamble><![CDATA[
       \draw  [>->,morphism] (1) to (nw);
       \draw  [->,morphism] (1) to (2);
     \end {tikzpicture}
-  ]]></fr:embedded-tex-body></fr:embedded-tex>
+  ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
   <fr:p>Thus, we can extend this natural isomorphism as follows:</fr:p>
@@ -1132,7 +1132,7 @@ display="inline"><![CDATA[A_{1} \cap  (\mathord {\hspace {1pt}\text {--}\hspace 
   
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="ec885275112f12f5bd5847b18ed483d7"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -1361,7 +1361,7 @@ hash="ec885275112f12f5bd5847b18ed483d7"><fr:embedded-tex-preamble><![CDATA[
       \draw  [adjoint] (l1) to (r1);
       \draw  [adjoint] (l2) to (r2);
     \end {tikzpicture}
-  ]]></fr:embedded-tex-body></fr:embedded-tex>
+  ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
   <fr:p>Then for any subobject <fr:tex
@@ -1377,7 +1377,7 @@ display="inline"><![CDATA[f\colon B\to A]]></fr:tex> be a morphism.
   
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="a5f3199a91ead0fc7726a58c2eed0fe6"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -1608,7 +1608,7 @@ hash="a5f3199a91ead0fc7726a58c2eed0fe6"><fr:embedded-tex-preamble><![CDATA[
       west = {n},
       west/style = {>->},
     }
-  ]]></fr:embedded-tex-body></fr:embedded-tex>
+  ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
   <fr:p>Then by <fr:link
@@ -1781,7 +1781,7 @@ display="inline"><![CDATA[{\mathopen {}\llbracket \Gamma .R(t_{1},\ldots ,t_{n})
     
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="504763d7575e6bde732463f5d3d4a08d"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -2010,7 +2010,7 @@ hash="504763d7575e6bde732463f5d3d4a08d"><fr:embedded-tex-preamble><![CDATA[
         east/style = {>->},
         south = {({\mathopen {}\llbracket \Gamma .t_{1}\rrbracket \mathclose {}}_{M},\ldots ,{\mathopen {}\llbracket \Gamma .t_{n}\rrbracket \mathclose {}}_{M})},
       }
-    ]]></fr:embedded-tex-body></fr:embedded-tex></fr:li>
+    ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure></fr:li>
   <fr:li>If <fr:tex
 display="inline"><![CDATA[s]]></fr:tex> and <fr:tex
 display="inline"><![CDATA[t]]></fr:tex> are terms of the same sort <fr:tex
@@ -2019,7 +2019,7 @@ display="inline"><![CDATA[{\mathopen {}\llbracket \Gamma .s=t\rrbracket \mathclo
     
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="2ddbfabd30b49a68fc85ca87a4537381"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -2245,7 +2245,7 @@ hash="2ddbfabd30b49a68fc85ca87a4537381"><fr:embedded-tex-preamble><![CDATA[
         \draw  [->,morphism,offset=-1.5] (1) to node {${\mathopen {}\llbracket \Gamma .s\rrbracket \mathclose {}}_{M}$} (2);
         \draw  [->,morphism,offset=1.5] (1) to node[swap] {${\mathopen {}\llbracket \Gamma .t\rrbracket \mathclose {}}_{M}$} (2);
       \end {tikzpicture}
-    ]]></fr:embedded-tex-body></fr:embedded-tex></fr:li>
+    ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure></fr:li>
   <fr:li><fr:tex
 display="inline"><![CDATA[{\mathopen {}\llbracket \Gamma .\top \rrbracket \mathclose {}}_{M}]]></fr:tex> is the terminal object of <fr:tex
 display="inline"><![CDATA[\mathsf {Sub}(M(B_{1},\ldots ,B_{m}))]]></fr:tex>.</fr:li>
@@ -2351,7 +2351,7 @@ display="inline"><![CDATA[A_{1} \cap  (\mathord {\hspace {1pt}\text {--}\hspace 
   
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="ec885275112f12f5bd5847b18ed483d7"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -2580,7 +2580,7 @@ hash="ec885275112f12f5bd5847b18ed483d7"><fr:embedded-tex-preamble><![CDATA[
       \draw  [adjoint] (l1) to (r1);
       \draw  [adjoint] (l2) to (r2);
     \end {tikzpicture}
-  ]]></fr:embedded-tex-body></fr:embedded-tex>
+  ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
   <fr:p>Then for any subobject <fr:tex
@@ -2596,7 +2596,7 @@ display="inline"><![CDATA[f\colon B\to A]]></fr:tex> be a morphism.
   
     
       
-      <fr:embedded-tex
+      <fr:figure><fr:embedded-tex
 hash="a5f3199a91ead0fc7726a58c2eed0fe6"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
@@ -2827,7 +2827,7 @@ hash="a5f3199a91ead0fc7726a58c2eed0fe6"><fr:embedded-tex-preamble><![CDATA[
       west = {n},
       west/style = {>->},
     }
-  ]]></fr:embedded-tex-body></fr:embedded-tex>
+  ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
   <fr:p>Then by <fr:link
