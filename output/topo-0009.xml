@@ -1,142 +1,123 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="default.xsl"?>
 <fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
 numbered="true"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1176</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>topo-0009</fr:addr><fr:route>topo-0009.xml</fr:route><fr:title>Every <fr:link
-href="ct-0004.xml"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1135</fr:anchor><fr:addr
+type="user">topo-0009</fr:addr><fr:route>topo-0009.xml</fr:route><fr:title
+text="Every equivalence relation in a topos is effective">Every <fr:link
 type="local"
-addr="ct-0004">equivalence relation</fr:link> in a topos is <fr:link
+href="ct-0004.xml"
+addr="ct-0004"
+title="Equivalence relation">equivalence relation</fr:link> in a topos is <fr:link
+type="local"
 href="ct-0005.xml"
-type="local"
-addr="ct-0005">effective</fr:link></fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date></fr:frontmatter><fr:mainmatter>
+addr="ct-0005"
+title="Effective category">effective</fr:link></fr:title><fr:taxon>Lemma</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
     
       
       <fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="false"
 numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>580</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:parent>topo-0009</fr:parent></fr:frontmatter><fr:mainmatter>
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1056</fr:anchor><fr:addr
+type="machine">#237</fr:addr><fr:route>unstable-237.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors /><fr:parent>topo-0009</fr:parent></fr:frontmatter><fr:mainmatter>
   <fr:link
+type="local"
 href="todo.xml"
-type="local"
-addr="todo">TODO</fr:link>
-</fr:mainmatter></fr:tree>
+addr="todo"
+title="TODO">TODO</fr:link>
+</fr:mainmatter><fr:backmatter /></fr:tree>
     
-  </fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context></fr:context><fr:related><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+  </fr:mainmatter><fr:backmatter><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
+text="Backlinks">Backlinks</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1172</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>ct-0005</fr:addr><fr:route>ct-0005.xml</fr:route><fr:title>Effective category</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
-  An <fr:link
-href="ct-0004.xml"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1136</fr:anchor><fr:addr
+type="user">topo-000I</fr:addr><fr:route>topo-000I.xml</fr:route><fr:title
+text="Singleton maps are monomorphisms">Singleton maps are monomorphisms</fr:title><fr:taxon>Corollary</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[A]]></fr:tex> be any object in a <fr:link
 type="local"
-addr="ct-0004">equivalence relation</fr:link> in a cartesian category is said to be <fr:em><fr:strong>effective</fr:strong></fr:em> if it is the kernel pair of some morphism.
-  An <fr:em><fr:strong>effective category</fr:strong></fr:em> is a cartesian category in which every equivalence relation is effective.
-</fr:p></fr:mainmatter></fr:tree><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="true"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1173</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>ct-0004</fr:addr><fr:route>ct-0004.xml</fr:route><fr:title>Equivalence relation</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
-  Let <fr:tex>(a,b) \colon R \rightarrowtail A  \times  A</fr:tex> be a relation in a cartesian category.
-  <fr:tex>(a,b)</fr:tex> is said to be an <fr:em><fr:strong>equivalence relation</fr:strong></fr:em> if it is <fr:link
-href="ct-0001.xml"
-type="local"
-addr="ct-0001">reflexive</fr:link>, <fr:link
-href="ct-0002.xml"
-type="local"
-addr="ct-0002">symmetric</fr:link>, and <fr:link
-href="ct-0003.xml"
-type="local"
-addr="ct-0003">transitive</fr:link>.
-</fr:p></fr:mainmatter></fr:tree><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="true"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1174</fr:anchor><fr:addr>todo</fr:addr><fr:route>todo.xml</fr:route><fr:title>TODO</fr:title><fr:authors><fr:author><fr:link
-href="frankndrssn.xml"
-type="local"
-addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter></fr:mainmatter></fr:tree></fr:related><fr:backlinks><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="true"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1171</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>topo-000I</fr:addr><fr:route>topo-000I.xml</fr:route><fr:title>Singleton maps are monomorphisms</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>A</fr:tex> be any object in a <fr:link
 href="topo-0001.xml"
+addr="topo-0001"
+title="Elementary topos">topos</fr:link> and let <fr:tex
+display="inline"><![CDATA[\{\}\colon  A \to  \Omega ^{A}]]></fr:tex> be the <fr:link
 type="local"
-addr="topo-0001">topos</fr:link> and let <fr:tex>\{ \} \colon  A  \to   \Omega ^{A}</fr:tex> be the <fr:link
 href="topo-000J.xml"
-type="local"
-addr="topo-000J">name</fr:link> of the diagonal relation <fr:tex>\Delta \colon  A  \rightarrowtail  A  \times  A</fr:tex>. <fr:tex>\{ \}</fr:tex> is a monomorphism.</fr:p>
+addr="topo-000J"
+title="Name">name</fr:link> of the diagonal relation <fr:tex
+display="inline"><![CDATA[\Delta \colon  A \rightarrowtail  A \times  A]]></fr:tex>. <fr:tex
+display="inline"><![CDATA[\{\}]]></fr:tex> is a monomorphism.</fr:p>
     
       
       <fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="false"
 numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>563</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:parent>topo-000I</fr:parent></fr:frontmatter><fr:mainmatter>
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1042</fr:anchor><fr:addr
+type="machine">#234</fr:addr><fr:route>unstable-234.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:authors /><fr:parent>topo-000I</fr:parent></fr:frontmatter><fr:mainmatter>
   By <fr:ref
 addr="topo-0009"
 href="topo-0009.xml"
-taxon="Lemma"></fr:ref>, the following square is a pullback.
+taxon="Lemma" />, the following square is a pullback.
   
     
       
       <fr:embedded-tex
-hash="ee83eac4ba5b18ecde211be378700e11"><fr:embedded-tex-preamble>
-         
-   \RequirePackage {tikz}
-   \RequirePackage {amsmath}
-   \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
+hash="1b33af73aa9c24541c72ab5193ae86be"><fr:embedded-tex-preamble><![CDATA[
+        
+  \RequirePackage {tikz}
+  \RequirePackage {amsmath}
+  \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
 
-   \definecolor {catccolor}{RGB}{255,244,138}
-   \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
-   \tikzstyle {catc}=[catccolor!60]
-   \tikzstyle {catd}=[orange!40]
-   \tikzstyle {cate}=[red!40]
-   \tikzstyle {catf}=[blue!10]
-   \tikzstyle {catg}=[green!25]
+  \definecolor {catccolor}{RGB}{255,244,138}
+  \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
+  \tikzstyle {catc}=[catccolor!60]
+  \tikzstyle {catd}=[orange!40]
+  \tikzstyle {cate}=[red!40]
+  \tikzstyle {catf}=[blue!10]
+  \tikzstyle {catg}=[green!25]
 
 
-   \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
-   \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
+  \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
+  \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
 
-   \NewDocumentCommand \CreateRect {D&lt;&gt;{} m m}{
-     \path 
+  \NewDocumentCommand \CreateRect {D<>{} m m}{
+    \path 
       coordinate (#1nw)
       ++(#2,-#3) coordinate (#1se)
       coordinate (#1sw) at (#1se -| #1nw)
       coordinate (#1ne) at (#1nw -| #1se)
     ;
 
-     \path [spath/save = #1north] (#1nw) to (#1ne);
-     \path [spath/save = #1west] (#1nw) to (#1sw);
-     \path [spath/save = #1east] (#1ne) to (#1se);
-     \path [spath/save = #1south] (#1sw) to (#1se);
+    \path [spath/save = #1north] (#1nw) to (#1ne);
+    \path [spath/save = #1west] (#1nw) to (#1sw);
+    \path [spath/save = #1east] (#1ne) to (#1se);
+    \path [spath/save = #1south] (#1sw) to (#1se);
   }
- 
-         
+
+        
    % appears to be necessary
   \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd}
   \usetikzlibrary{matrix,arrows}
@@ -205,7 +186,7 @@ hash="ee83eac4ba5b18ecde211be378700e11"><fr:embedded-tex-preamble>
       densely dashed
     },
     embedding/.style = {
-      {right hook}-&gt;
+      {right hook}->
     },
     cover/.style = {
       -{Triangle[open]}
@@ -237,10 +218,10 @@ hash="ee83eac4ba5b18ecde211be378700e11"><fr:embedded-tex-preamble>
     square/ne/.style = {},
     square/se/.style = {},
     square/sw/.style = {},
-    square/north/.style = {-&gt;},
-    square/south/.style = {-&gt;},
-    square/west/.style = {-&gt;},
-    square/east/.style = {-&gt;},
+    square/north/.style = {->},
+    square/south/.style = {->},
+    square/west/.style = {->},
+    square/east/.style = {->},
     square/north/node/.style = {above},
     square/south/node/.style = {below},
     square/west/node/.style = {left},
@@ -319,23 +300,83 @@ hash="ee83eac4ba5b18ecde211be378700e11"><fr:embedded-tex-preamble>
     \end{tikzpicture}
   }
   \ExplSyntaxOff
- 
-      </fr:embedded-tex-preamble><fr:embedded-tex-body>
-     \DiagramSquare {
+
+      ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+    \DiagramSquare {
       nw = A,
       ne = A,
       sw = A,
-      se =  \Omega ^{A},
+      se = \Omega ^{A},
       nw/style = pullback,
       west/style = {double},
       north/style = {double},
-      east =  \{ \} ,
-      south =  \{ \} ,
+      east = \{\},
+      south = \{\},
     }
-  </fr:embedded-tex-body></fr:embedded-tex>
+  ]]></fr:embedded-tex-body></fr:embedded-tex>
     
   
-  Thus, <fr:tex>\{ \}</fr:tex> is a monomorphism.
-</fr:mainmatter></fr:tree>
+  Thus, <fr:tex
+display="inline"><![CDATA[\{\}]]></fr:tex> is a monomorphism.
+</fr:mainmatter><fr:backmatter /></fr:tree>
     
-  </fr:mainmatter></fr:tree></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>
+  </fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
+text="Related">Related</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1137</fr:anchor><fr:addr
+type="user">ct-0005</fr:addr><fr:route>ct-0005.xml</fr:route><fr:title
+text="Effective category">Effective category</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>An <fr:link
+type="local"
+href="ct-0004.xml"
+addr="ct-0004"
+title="Equivalence relation">equivalence relation</fr:link> in a cartesian category is said to be <fr:em><fr:strong>effective</fr:strong></fr:em> if it is the kernel pair of some morphism.
+  An <fr:em><fr:strong>effective category</fr:strong></fr:em> is a cartesian category in which every equivalence relation is effective.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1138</fr:anchor><fr:addr
+type="user">ct-0004</fr:addr><fr:route>ct-0004.xml</fr:route><fr:title
+text="Equivalence relation">Equivalence relation</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[(a,b)\colon R\rightarrowtail A \times  A]]></fr:tex> be a relation in a cartesian category.
+  <fr:tex
+display="inline"><![CDATA[(a,b)]]></fr:tex> is said to be an <fr:em><fr:strong>equivalence relation</fr:strong></fr:em> if it is <fr:link
+type="local"
+href="ct-0001.xml"
+addr="ct-0001"
+title="Reflexive relation">reflexive</fr:link>, <fr:link
+type="local"
+href="ct-0002.xml"
+addr="ct-0002"
+title="Symmetric relation">symmetric</fr:link>, and <fr:link
+type="local"
+href="ct-0003.xml"
+addr="ct-0003"
+title="Transitive relation">transitive</fr:link>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1139</fr:anchor><fr:addr
+type="user">todo</fr:addr><fr:route>todo.xml</fr:route><fr:title
+text="TODO">TODO</fr:title><fr:authors><fr:author><fr:link
+type="local"
+href="frankndrssn.xml"
+addr="frankndrssn"
+title="Frank Tsai">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter /><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

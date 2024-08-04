@@ -1,55 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="default.xsl"?>
 <fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
 numbered="true"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>702</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>ct-001K</fr:addr><fr:route>ct-001K.xml</fr:route><fr:title>Cartesian morphisms</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>25</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
-  Let <fr:tex>F \colon \mathcal { C } \to \mathcal { D }</fr:tex> be a functor.
-  A morphism <fr:tex>f \colon X \to Y</fr:tex> in the domain category <fr:tex>\mathcal { C }</fr:tex> is said to be <fr:em><fr:strong>cartesian</fr:strong></fr:em> over a morphism <fr:tex>u \colon I \to J</fr:tex> in the codomain category <fr:tex>\mathcal { D }</fr:tex> if the following conditions are satisfied.
-</fr:p><fr:ul><fr:li><fr:tex>Ff = u</fr:tex>.
-  </fr:li>
-  <fr:li><fr:tex>f</fr:tex> is universal among morphisms <fr:tex>g \colon Z \to Y</fr:tex> in <fr:tex>\mathcal { C }</fr:tex> such that <fr:tex>Fg</fr:tex> factors through <fr:tex>u</fr:tex> via some morphism <fr:tex>w \colon FZ \to I</fr:tex>, i.e., for any such <fr:tex>g</fr:tex> there is a unique morphism <fr:tex>h \colon Z \to X</fr:tex> such that <fr:tex>fh = g</fr:tex>.
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>527</fr:anchor><fr:addr
+type="user">ct-001K</fr:addr><fr:route>ct-001K.xml</fr:route><fr:title
+text="Cartesian morphisms">Cartesian morphisms</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>25</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[F\colon \mathcal {C}\to \mathcal {D}]]></fr:tex> be a functor.
+  A morphism <fr:tex
+display="inline"><![CDATA[f\colon X\to Y]]></fr:tex> in the domain category <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> is said to be <fr:em><fr:strong>cartesian</fr:strong></fr:em> over a morphism <fr:tex
+display="inline"><![CDATA[u\colon I\to J]]></fr:tex> in the codomain category <fr:tex
+display="inline"><![CDATA[\mathcal {D}]]></fr:tex> if the following conditions are satisfied.</fr:p><fr:ul><fr:li><fr:tex
+display="inline"><![CDATA[Ff = u]]></fr:tex>.</fr:li>
+  <fr:li><fr:tex
+display="inline"><![CDATA[f]]></fr:tex> is universal among morphisms <fr:tex
+display="inline"><![CDATA[g\colon Z\to Y]]></fr:tex> in <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> such that <fr:tex
+display="inline"><![CDATA[Fg]]></fr:tex> factors through <fr:tex
+display="inline"><![CDATA[u]]></fr:tex> via some morphism <fr:tex
+display="inline"><![CDATA[w\colon FZ\to I]]></fr:tex>, i.e., for any such <fr:tex
+display="inline"><![CDATA[g]]></fr:tex> there is a unique morphism <fr:tex
+display="inline"><![CDATA[h\colon Z\to X]]></fr:tex> such that <fr:tex
+display="inline"><![CDATA[fh = g]]></fr:tex>.
     
     
       
       <fr:embedded-tex
-hash="a95df27f616202b458007ddb9aeba42e"><fr:embedded-tex-preamble>
-         
-   \RequirePackage {tikz}
-   \RequirePackage {amsmath}
-   \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
+hash="8f36e0f541899557a5a468f75cb7c705"><fr:embedded-tex-preamble><![CDATA[
+        
+  \RequirePackage {tikz}
+  \RequirePackage {amsmath}
+  \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
 
-   \definecolor {catccolor}{RGB}{255,244,138}
-   \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
-   \tikzstyle {catc}=[catccolor!60]
-   \tikzstyle {catd}=[orange!40]
-   \tikzstyle {cate}=[red!40]
-   \tikzstyle {catf}=[blue!10]
-   \tikzstyle {catg}=[green!25]
+  \definecolor {catccolor}{RGB}{255,244,138}
+  \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
+  \tikzstyle {catc}=[catccolor!60]
+  \tikzstyle {catd}=[orange!40]
+  \tikzstyle {cate}=[red!40]
+  \tikzstyle {catf}=[blue!10]
+  \tikzstyle {catg}=[green!25]
 
 
-   \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
-   \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
+  \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
+  \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
 
-   \NewDocumentCommand \CreateRect {D&lt;&gt;{} m m}{
-     \path 
+  \NewDocumentCommand \CreateRect {D<>{} m m}{
+    \path 
       coordinate (#1nw)
       ++(#2,-#3) coordinate (#1se)
       coordinate (#1sw) at (#1se -| #1nw)
       coordinate (#1ne) at (#1nw -| #1se)
     ;
 
-     \path [spath/save = #1north] (#1nw) to (#1ne);
-     \path [spath/save = #1west] (#1nw) to (#1sw);
-     \path [spath/save = #1east] (#1ne) to (#1se);
-     \path [spath/save = #1south] (#1sw) to (#1se);
+    \path [spath/save = #1north] (#1nw) to (#1ne);
+    \path [spath/save = #1west] (#1nw) to (#1sw);
+    \path [spath/save = #1east] (#1ne) to (#1se);
+    \path [spath/save = #1south] (#1sw) to (#1se);
   }
- 
-         
+
+        
    % appears to be necessary
   \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd}
   \usetikzlibrary{matrix,arrows}
@@ -118,7 +132,7 @@ hash="a95df27f616202b458007ddb9aeba42e"><fr:embedded-tex-preamble>
       densely dashed
     },
     embedding/.style = {
-      {right hook}-&gt;
+      {right hook}->
     },
     cover/.style = {
       -{Triangle[open]}
@@ -150,10 +164,10 @@ hash="a95df27f616202b458007ddb9aeba42e"><fr:embedded-tex-preamble>
     square/ne/.style = {},
     square/se/.style = {},
     square/sw/.style = {},
-    square/north/.style = {-&gt;},
-    square/south/.style = {-&gt;},
-    square/west/.style = {-&gt;},
-    square/east/.style = {-&gt;},
+    square/north/.style = {->},
+    square/south/.style = {->},
+    square/west/.style = {->},
+    square/east/.style = {->},
     square/north/node/.style = {above},
     square/south/node/.style = {below},
     square/west/node/.style = {left},
@@ -232,56 +246,80 @@ hash="a95df27f616202b458007ddb9aeba42e"><fr:embedded-tex-preamble>
     \end{tikzpicture}
   }
   \ExplSyntaxOff
- 
-      </fr:embedded-tex-preamble><fr:embedded-tex-body>
-       \begin {tikzpicture}[diagram]
-         \node  (1) {$Z$};
-         \node  [below = of 1] (2) {$X$};
-         \node  [right = of 2] (3) {$Y$};
-         \node  [between = 1 and 2] (ref1) {};
-         \node  [below = of 2] (4) {$FZ$};
-         \node  [below = of 4] (5) {$I$};
-         \node  [between = 4 and 5] (ref2) {};
-         \node  [right = of 5] (6) {$J$};
-         \node  [left = of ref1] (7) {$ \mathcal { C } $};
-         \node  [left = of ref2] (8) {$ \mathcal { D } $};
-         \draw  [-&gt;,morphism,exists] (1) to node[swap] {$h$} (2);
-         \draw  [-&gt;,morphism] (1) to node {$g$} (3);
-         \draw  [-&gt;,morphism] (2) to node[swap] {$f$} (3);
-         \draw  [-&gt;,morphism] (4) to node[swap] {$w$} (5);
-         \draw  [-&gt;,morphism] (4) to node {$Fg$} (6);
-         \draw  [-&gt;,morphism] (5) to node[swap] {$u$} (6);
-         \draw  [-&gt;,morphism] (7) to node[swap] {$F$} (8);
-       \end {tikzpicture}
-    </fr:embedded-tex-body></fr:embedded-tex></fr:li></fr:ul></fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context></fr:context><fr:related></fr:related><fr:backlinks><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+
+      ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+      \begin {tikzpicture}[diagram]
+        \node  (1) {$Z$};
+        \node  [below = of 1] (2) {$X$};
+        \node  [right = of 2] (3) {$Y$};
+        \node  [between = 1 and 2] (ref1) {};
+        \node  [below = of 2] (4) {$FZ$};
+        \node  [below = of 4] (5) {$I$};
+        \node  [between = 4 and 5] (ref2) {};
+        \node  [right = of 5] (6) {$J$};
+        \node  [left = of ref1] (7) {$\mathcal {C}$};
+        \node  [left = of ref2] (8) {$\mathcal {D}$};
+        \draw  [->,morphism,exists] (1) to node[swap] {$h$} (2);
+        \draw  [->,morphism] (1) to node {$g$} (3);
+        \draw  [->,morphism] (2) to node[swap] {$f$} (3);
+        \draw  [->,morphism] (4) to node[swap] {$w$} (5);
+        \draw  [->,morphism] (4) to node {$Fg$} (6);
+        \draw  [->,morphism] (5) to node[swap] {$u$} (6);
+        \draw  [->,morphism] (7) to node[swap] {$F$} (8);
+      \end {tikzpicture}
+    ]]></fr:embedded-tex-body></fr:embedded-tex></fr:li></fr:ul></fr:mainmatter><fr:backmatter><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
+text="Backlinks">Backlinks</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>700</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>log-000M</fr:addr><fr:route>log-000M.xml</fr:route><fr:title>Comprehension category</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>25</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
-  A <fr:em><fr:strong>comprehension category</fr:strong></fr:em> is a functor <fr:tex>P \colon \mathcal { E } \to { \mathcal { B } }^{ \to }</fr:tex> such that the following conditions are satisfied.
-</fr:p><fr:ul><fr:li>
-    The composite <fr:tex>\mathsf { cod }  P \colon \mathcal { E } \to \mathcal { B }</fr:tex> is a <fr:link
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>528</fr:anchor><fr:addr
+type="user">log-000M</fr:addr><fr:route>log-000M.xml</fr:route><fr:title
+text="Comprehension category">Comprehension category</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>25</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>A <fr:em><fr:strong>comprehension category</fr:strong></fr:em> is a functor <fr:tex
+display="inline"><![CDATA[P\colon \mathcal {E}\to {\mathcal {B}}^{\to }]]></fr:tex> such that the following conditions are satisfied.</fr:p><fr:ul><fr:li>The composite <fr:tex
+display="inline"><![CDATA[\mathsf {cod} P\colon \mathcal {E}\to \mathcal {B}]]></fr:tex> is a <fr:link
+type="local"
 href="ct-001L.xml"
+addr="ct-001L"
+title="Fibered category">fibration</fr:link>.</fr:li>
+  <fr:li><fr:tex
+display="inline"><![CDATA[P]]></fr:tex> maps <fr:link
 type="local"
-addr="ct-001L">fibration</fr:link>.
-  </fr:li>
-  <fr:li><fr:tex>P</fr:tex> maps <fr:link
 href="ct-001K.xml"
-type="local"
-addr="ct-001K">cartesian morphisms</fr:link> (w.r.t. <fr:tex>\mathsf { cod }  P</fr:tex>) in <fr:tex>\mathcal { E }</fr:tex> to cartesian morphisms (w.r.t. <fr:tex>\mathsf { cod }</fr:tex>) in <fr:tex>{ \mathcal { B } }^{ \to }</fr:tex>, i.e., to pullback squares in <fr:tex>\mathcal { B }</fr:tex>.
-  </fr:li></fr:ul></fr:mainmatter></fr:tree><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+addr="ct-001K"
+title="Cartesian morphisms">cartesian morphisms</fr:link> (w.r.t. <fr:tex
+display="inline"><![CDATA[\mathsf {cod} P]]></fr:tex>) in <fr:tex
+display="inline"><![CDATA[\mathcal {E}]]></fr:tex> to cartesian morphisms (w.r.t. <fr:tex
+display="inline"><![CDATA[\mathsf {cod}]]></fr:tex>) in <fr:tex
+display="inline"><![CDATA[{\mathcal {B}}^{\to }]]></fr:tex>, i.e., to pullback squares in <fr:tex
+display="inline"><![CDATA[\mathcal {B}]]></fr:tex>.</fr:li></fr:ul></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>701</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>ct-001L</fr:addr><fr:route>ct-001L.xml</fr:route><fr:title>Fibered category</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>25</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
-  A functor <fr:tex>F \colon \mathcal { C } \to \mathcal { D }</fr:tex> is a <fr:em><fr:strong>fibration</fr:strong></fr:em> (or <fr:tex>F</fr:tex> is a <fr:em><fr:strong>fibered category over <fr:tex>\mathcal { D }</fr:tex></fr:strong></fr:em>) if for every object <fr:tex>Y  \in   \mathcal { C }</fr:tex> and morphism <fr:tex>u \colon I \to FY</fr:tex> in <fr:tex>\mathcal { D }</fr:tex>, there is a <fr:link
-href="ct-001K.xml"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>529</fr:anchor><fr:addr
+type="user">ct-001L</fr:addr><fr:route>ct-001L.xml</fr:route><fr:title
+text="Fibered category">Fibered category</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>25</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>A functor <fr:tex
+display="inline"><![CDATA[F\colon \mathcal {C}\to \mathcal {D}]]></fr:tex> is a <fr:em><fr:strong>fibration</fr:strong></fr:em> (or <fr:tex
+display="inline"><![CDATA[F]]></fr:tex> is a <fr:em><fr:strong>fibered category over <fr:tex
+display="inline"><![CDATA[\mathcal {D}]]></fr:tex></fr:strong></fr:em>) if for every object <fr:tex
+display="inline"><![CDATA[Y \in  \mathcal {C}]]></fr:tex> and morphism <fr:tex
+display="inline"><![CDATA[u\colon I\to FY]]></fr:tex> in <fr:tex
+display="inline"><![CDATA[\mathcal {D}]]></fr:tex>, there is a <fr:link
 type="local"
-addr="ct-001K">cartesian morphism</fr:link> <fr:tex>f</fr:tex> above <fr:tex>u</fr:tex>.
-</fr:p></fr:mainmatter></fr:tree></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>
+href="ct-001K.xml"
+addr="ct-001K"
+title="Cartesian morphisms">cartesian morphism</fr:link> <fr:tex
+display="inline"><![CDATA[f]]></fr:tex> above <fr:tex
+display="inline"><![CDATA[u]]></fr:tex>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

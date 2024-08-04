@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="true"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>421</fr:anchor><fr:addr
+type="machine">#242</fr:addr><fr:route>unstable-242.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>7</fr:month><fr:day>2</fr:day></fr:date><fr:authors /><fr:parent>log-000Q</fr:parent></fr:frontmatter><fr:mainmatter>
+
+</fr:mainmatter><fr:backmatter><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
+text="Context">Context</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>422</fr:anchor><fr:addr
+type="user">log-000Q</fr:addr><fr:route>log-000Q.xml</fr:route><fr:title
+text="Functional completeness">Functional completeness</fr:title><fr:taxon>Lemma</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>7</fr:month><fr:day>2</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:link
+type="local"
+href="todo.xml"
+addr="todo"
+title="TODO">TODO</fr:link><fr:p>The sequent for functionality seems problematic.
+  Prove the lemma.</fr:p><fr:p>Let <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> be a <fr:link
+type="local"
+href="ct-000O.xml"
+addr="ct-000O"
+title="Regular category">regular category</fr:link> and <fr:tex
+display="inline"><![CDATA[R \in  \mathsf {Sub}(A \times  B)]]></fr:tex> be a relation satisfying the following sequents:</fr:p><fr:ul><fr:li><fr:em><fr:strong>Functional</fr:strong></fr:em>: <fr:tex
+display="inline"><![CDATA[x\colon A, y\colon B, y'\colon B|R(x,y) \wedge  R(x,y') \vdash  y = y']]></fr:tex></fr:li>
+  <fr:li><fr:em><fr:strong>Total</fr:strong></fr:em>: <fr:tex
+display="inline"><![CDATA[x\colon A|\top  \vdash  \exists _{y}R]]></fr:tex></fr:li></fr:ul><fr:p>Then there is a unique morphism <fr:tex
+display="inline"><![CDATA[f\colon A\to B]]></fr:tex> in <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> such that <fr:tex
+display="inline"><![CDATA[x\colon A,y\colon B|R \dashv \vdash  f(x) = y]]></fr:tex> is satisfied.</fr:p>
+    
+      
+      <fr:tree
+toc="false"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>418</fr:anchor><fr:addr
+type="machine">#242</fr:addr><fr:route>unstable-242.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>7</fr:month><fr:day>2</fr:day></fr:date><fr:authors /><fr:parent>log-000Q</fr:parent></fr:frontmatter><fr:mainmatter>
+
+</fr:mainmatter><fr:backmatter /></fr:tree>
+    
+  </fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

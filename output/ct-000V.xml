@@ -1,55 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="default.xsl"?>
 <fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
 numbered="true"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>989</fr:anchor><fr:taxon>Intuition</fr:taxon><fr:addr>ct-000V</fr:addr><fr:route>ct-000V.xml</fr:route><fr:title>Presentation</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>4</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
-  Given a pair of functors <fr:tex>U \colon \mathcal { C } \to \mathcal { D }</fr:tex> and <fr:tex>F \colon \mathcal { D } \to \mathcal { C }</fr:tex> such that <fr:tex>F  \dashv  U</fr:tex>.
-  We may considered <fr:tex>F</fr:tex> as a free construction of <fr:tex>\mathcal { D }</fr:tex> in <fr:tex>\mathcal { C }</fr:tex>.
-  For any object <fr:tex>c  \in   \mathcal { C }</fr:tex>, the <fr:em><fr:strong>category of presentations of <fr:tex>c</fr:tex></fr:strong></fr:em> is the comma category <fr:tex>{ F } \downarrow { c }</fr:tex>.
-  The <fr:em><fr:strong>representation</fr:strong></fr:em> of <fr:tex>c</fr:tex> is the terminal object of <fr:tex>{ F } \downarrow { c }</fr:tex>.
-  This is precisely the object <fr:tex>(Uc, \varepsilon _{c} \colon FUc \to c )</fr:tex>, where <fr:tex>\varepsilon</fr:tex> is the counit of the adjunction.
-</fr:p>
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>882</fr:anchor><fr:addr
+type="user">ct-000V</fr:addr><fr:route>ct-000V.xml</fr:route><fr:title
+text="Presentation">Presentation</fr:title><fr:taxon>Intuition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>4</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Given a pair of functors <fr:tex
+display="inline"><![CDATA[U\colon \mathcal {C}\to \mathcal {D}]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[F\colon \mathcal {D}\to \mathcal {C}]]></fr:tex> such that <fr:tex
+display="inline"><![CDATA[F \dashv  U]]></fr:tex>.
+  We may considered <fr:tex
+display="inline"><![CDATA[F]]></fr:tex> as a free construction of <fr:tex
+display="inline"><![CDATA[\mathcal {D}]]></fr:tex> in <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex>.
+  For any object <fr:tex
+display="inline"><![CDATA[c \in  \mathcal {C}]]></fr:tex>, the <fr:em><fr:strong>category of presentations of <fr:tex
+display="inline"><![CDATA[c]]></fr:tex></fr:strong></fr:em> is the comma category <fr:tex
+display="inline"><![CDATA[{F}\downarrow {c}]]></fr:tex>.
+  The <fr:em><fr:strong>representation</fr:strong></fr:em> of <fr:tex
+display="inline"><![CDATA[c]]></fr:tex> is the terminal object of <fr:tex
+display="inline"><![CDATA[{F}\downarrow {c}]]></fr:tex>.
+  This is precisely the object <fr:tex
+display="inline"><![CDATA[(Uc,\varepsilon _{c}\colon FUc\to c)]]></fr:tex>, where <fr:tex
+display="inline"><![CDATA[\varepsilon ]]></fr:tex> is the counit of the adjunction.</fr:p>
     
       
       <fr:embedded-tex
-hash="8dde1e8654fa6d00bbb899caa8481e2a"><fr:embedded-tex-preamble>
-         
-   \RequirePackage {tikz}
-   \RequirePackage {amsmath}
-   \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
+hash="010c9df59f776972097e04abb0499b3c"><fr:embedded-tex-preamble><![CDATA[
+        
+  \RequirePackage {tikz}
+  \RequirePackage {amsmath}
+  \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
 
-   \definecolor {catccolor}{RGB}{255,244,138}
-   \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
-   \tikzstyle {catc}=[catccolor!60]
-   \tikzstyle {catd}=[orange!40]
-   \tikzstyle {cate}=[red!40]
-   \tikzstyle {catf}=[blue!10]
-   \tikzstyle {catg}=[green!25]
+  \definecolor {catccolor}{RGB}{255,244,138}
+  \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
+  \tikzstyle {catc}=[catccolor!60]
+  \tikzstyle {catd}=[orange!40]
+  \tikzstyle {cate}=[red!40]
+  \tikzstyle {catf}=[blue!10]
+  \tikzstyle {catg}=[green!25]
 
 
-   \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
-   \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
+  \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
+  \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
 
-   \NewDocumentCommand \CreateRect {D&lt;&gt;{} m m}{
-     \path 
+  \NewDocumentCommand \CreateRect {D<>{} m m}{
+    \path 
       coordinate (#1nw)
       ++(#2,-#3) coordinate (#1se)
       coordinate (#1sw) at (#1se -| #1nw)
       coordinate (#1ne) at (#1nw -| #1se)
     ;
 
-     \path [spath/save = #1north] (#1nw) to (#1ne);
-     \path [spath/save = #1west] (#1nw) to (#1sw);
-     \path [spath/save = #1east] (#1ne) to (#1se);
-     \path [spath/save = #1south] (#1sw) to (#1se);
+    \path [spath/save = #1north] (#1nw) to (#1ne);
+    \path [spath/save = #1west] (#1nw) to (#1sw);
+    \path [spath/save = #1east] (#1ne) to (#1se);
+    \path [spath/save = #1south] (#1sw) to (#1se);
   }
- 
-         
+
+        
    % appears to be necessary
   \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd}
   \usetikzlibrary{matrix,arrows}
@@ -118,7 +131,7 @@ hash="8dde1e8654fa6d00bbb899caa8481e2a"><fr:embedded-tex-preamble>
       densely dashed
     },
     embedding/.style = {
-      {right hook}-&gt;
+      {right hook}->
     },
     cover/.style = {
       -{Triangle[open]}
@@ -150,10 +163,10 @@ hash="8dde1e8654fa6d00bbb899caa8481e2a"><fr:embedded-tex-preamble>
     square/ne/.style = {},
     square/se/.style = {},
     square/sw/.style = {},
-    square/north/.style = {-&gt;},
-    square/south/.style = {-&gt;},
-    square/west/.style = {-&gt;},
-    square/east/.style = {-&gt;},
+    square/north/.style = {->},
+    square/south/.style = {->},
+    square/west/.style = {->},
+    square/east/.style = {->},
     square/north/node/.style = {above},
     square/south/node/.style = {below},
     square/west/node/.style = {left},
@@ -232,16 +245,16 @@ hash="8dde1e8654fa6d00bbb899caa8481e2a"><fr:embedded-tex-preamble>
     \end{tikzpicture}
   }
   \ExplSyntaxOff
- 
-      </fr:embedded-tex-preamble><fr:embedded-tex-body>
-   \begin {tikzpicture}[diagram]
-     \node  (1) {$FUc$};
-     \node  [right = of 1] (2) {$c$};
-     \node  [below = of 1] (3) {$Fd$};
-     \draw  [-&gt;,morphism] (1) to node {$ \varepsilon _{c}$} (2);
-     \draw  [-&gt;,morphism] (3) to (2);
-     \draw  [-&gt;,morphism,exists] (3) to (1);
-   \end {tikzpicture}
-</fr:embedded-tex-body></fr:embedded-tex>
+
+      ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+  \begin {tikzpicture}[diagram]
+    \node  (1) {$FUc$};
+    \node  [right = of 1] (2) {$c$};
+    \node  [below = of 1] (3) {$Fd$};
+    \draw  [->,morphism] (1) to node {$\varepsilon _{c}$} (2);
+    \draw  [->,morphism] (3) to (2);
+    \draw  [->,morphism,exists] (3) to (1);
+  \end {tikzpicture}
+]]></fr:embedded-tex-body></fr:embedded-tex>
     
-  </fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context></fr:context><fr:related></fr:related><fr:backlinks></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>
+  </fr:mainmatter><fr:backmatter /></fr:tree>

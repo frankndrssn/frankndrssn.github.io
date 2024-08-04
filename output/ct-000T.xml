@@ -1,72 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="default.xsl"?>
 <fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
 numbered="true"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>979</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>ct-000T</fr:addr><fr:route>ct-000T.xml</fr:route><fr:title><fr:link
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>862</fr:anchor><fr:addr
+type="user">ct-000T</fr:addr><fr:route>ct-000T.xml</fr:route><fr:title
+text="Covers arise from kernel pairs"><fr:link
+type="local"
 href="ct-000M.xml"
+addr="ct-000M"
+title="Extremal epimorphism">Covers</fr:link> arise from kernel pairs</fr:title><fr:taxon>Lemma</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>4</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>In a <fr:link
 type="local"
-addr="ct-000M">Covers</fr:link> arise from kernel pairs</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>4</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
-  In a <fr:link
 href="ct-000O.xml"
-type="local"
-addr="ct-000O">regular category</fr:link>, every cover is a coequalizer of the kernel pair of itself.
-</fr:p>
+addr="ct-000O"
+title="Regular category">regular category</fr:link>, every cover is a coequalizer of the kernel pair of itself.</fr:p>
     
       
       <fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="false"
 numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>522</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>4</fr:day></fr:date><fr:parent>ct-000T</fr:parent></fr:frontmatter><fr:mainmatter>
-  <fr:p>
-    Let <fr:tex>p , q \colon C \rightrightarrows A</fr:tex> be the kernel pair of a cover <fr:tex>f \colon A \twoheadrightarrow B</fr:tex> and <fr:tex>g \colon A \to D</fr:tex> be a morphism such that <fr:tex>gp = gq</fr:tex>.
-    Consider the <fr:em>joint</fr:em> cover-mono factorization of <fr:tex>f</fr:tex> and <fr:tex>g</fr:tex>, i.e., the cover-mono factorization of the morphism <fr:tex>(f,g) \colon A \to B  \times  D</fr:tex>.
-  </fr:p>
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>741</fr:anchor><fr:addr
+type="machine">#259</fr:addr><fr:route>unstable-259.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>4</fr:day></fr:date><fr:authors /><fr:parent>ct-000T</fr:parent></fr:frontmatter><fr:mainmatter>
+  <fr:p>Let <fr:tex
+display="inline"><![CDATA[p,q\colon C\rightrightarrows A]]></fr:tex> be the kernel pair of a cover <fr:tex
+display="inline"><![CDATA[f\colon A\twoheadrightarrow B]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[g\colon A\to D]]></fr:tex> be a morphism such that <fr:tex
+display="inline"><![CDATA[gp = gq]]></fr:tex>.
+    Consider the <fr:em>joint</fr:em> cover-mono factorization of <fr:tex
+display="inline"><![CDATA[f]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[g]]></fr:tex>, i.e., the cover-mono factorization of the morphism <fr:tex
+display="inline"><![CDATA[(f,g)\colon A\to B \times  D]]></fr:tex>.</fr:p>
   
     
       
       <fr:embedded-tex
-hash="089bf57d6e04cd4027db668f463817db"><fr:embedded-tex-preamble>
-         
-   \RequirePackage {tikz}
-   \RequirePackage {amsmath}
-   \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
+hash="9b08b1aa69647b99ff1d30c09c28fd79"><fr:embedded-tex-preamble><![CDATA[
+        
+  \RequirePackage {tikz}
+  \RequirePackage {amsmath}
+  \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
 
-   \definecolor {catccolor}{RGB}{255,244,138}
-   \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
-   \tikzstyle {catc}=[catccolor!60]
-   \tikzstyle {catd}=[orange!40]
-   \tikzstyle {cate}=[red!40]
-   \tikzstyle {catf}=[blue!10]
-   \tikzstyle {catg}=[green!25]
+  \definecolor {catccolor}{RGB}{255,244,138}
+  \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
+  \tikzstyle {catc}=[catccolor!60]
+  \tikzstyle {catd}=[orange!40]
+  \tikzstyle {cate}=[red!40]
+  \tikzstyle {catf}=[blue!10]
+  \tikzstyle {catg}=[green!25]
 
 
-   \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
-   \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
+  \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
+  \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
 
-   \NewDocumentCommand \CreateRect {D&lt;&gt;{} m m}{
-     \path 
+  \NewDocumentCommand \CreateRect {D<>{} m m}{
+    \path 
       coordinate (#1nw)
       ++(#2,-#3) coordinate (#1se)
       coordinate (#1sw) at (#1se -| #1nw)
       coordinate (#1ne) at (#1nw -| #1se)
     ;
 
-     \path [spath/save = #1north] (#1nw) to (#1ne);
-     \path [spath/save = #1west] (#1nw) to (#1sw);
-     \path [spath/save = #1east] (#1ne) to (#1se);
-     \path [spath/save = #1south] (#1sw) to (#1se);
+    \path [spath/save = #1north] (#1nw) to (#1ne);
+    \path [spath/save = #1west] (#1nw) to (#1sw);
+    \path [spath/save = #1east] (#1ne) to (#1se);
+    \path [spath/save = #1south] (#1sw) to (#1se);
   }
- 
-         
+
+        
    % appears to be necessary
   \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd}
   \usetikzlibrary{matrix,arrows}
@@ -135,7 +143,7 @@ hash="089bf57d6e04cd4027db668f463817db"><fr:embedded-tex-preamble>
       densely dashed
     },
     embedding/.style = {
-      {right hook}-&gt;
+      {right hook}->
     },
     cover/.style = {
       -{Triangle[open]}
@@ -167,10 +175,10 @@ hash="089bf57d6e04cd4027db668f463817db"><fr:embedded-tex-preamble>
     square/ne/.style = {},
     square/se/.style = {},
     square/sw/.style = {},
-    square/north/.style = {-&gt;},
-    square/south/.style = {-&gt;},
-    square/west/.style = {-&gt;},
-    square/east/.style = {-&gt;},
+    square/north/.style = {->},
+    square/south/.style = {->},
+    square/west/.style = {->},
+    square/east/.style = {->},
     square/north/node/.style = {above},
     square/south/node/.style = {below},
     square/west/node/.style = {left},
@@ -249,64 +257,74 @@ hash="089bf57d6e04cd4027db668f463817db"><fr:embedded-tex-preamble>
     \end{tikzpicture}
   }
   \ExplSyntaxOff
- 
-      </fr:embedded-tex-preamble><fr:embedded-tex-body>
-     \begin {tikzpicture}[diagram,node distance = 4cm]
-       \node  (1) {$A$};
-       \node  [right = of 1] (2) {$B  \times  D$};
-       \node  [between = 1 and 2] (ref) {};
-       \node  [below = 2cm of ref] (3) {$ \underline {A}$};
-       \draw  [-&gt;,morphism] (1) to node {$(f,g)$} (2);
-       \draw  [cover,morphism] (1) to node[swap] {$h$} (3);
-       \draw  [&gt;-&gt;,morphism] (3) to node[swap] {$(f',g')$} (2);
-     \end {tikzpicture}
-  </fr:embedded-tex-body></fr:embedded-tex>
+
+      ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+    \begin {tikzpicture}[diagram,node distance = 4cm]
+      \node  (1) {$A$};
+      \node  [right = of 1] (2) {$B \times  D$};
+      \node  [between = 1 and 2] (ref) {};
+      \node  [below = 2cm of ref] (3) {$\underline {A}$};
+      \draw  [->,morphism] (1) to node {$(f,g)$} (2);
+      \draw  [cover,morphism] (1) to node[swap] {$h$} (3);
+      \draw  [>->,morphism] (3) to node[swap] {$(f',g')$} (2);
+    \end {tikzpicture}
+  ]]></fr:embedded-tex-body></fr:embedded-tex>
     
   
-  <fr:p>
-    We show that <fr:tex>f'</fr:tex> and <fr:tex>h</fr:tex> form a cover-mono factorization of the cover <fr:tex>f</fr:tex>, so <fr:tex>f'</fr:tex> is an isomorphism.
-    Suppose that <fr:tex>f'a = f'b</fr:tex>.
-    We need to show that <fr:tex>a = b</fr:tex>.
-    To this end, it suffices to show that <fr:tex>g'a = g'b</fr:tex> since <fr:tex>f'</fr:tex> and <fr:tex>g'</fr:tex> are jointly monic.
-    Consider the joint pullback of <fr:tex>a</fr:tex> and <fr:tex>b</fr:tex> along <fr:tex>h</fr:tex>.
-  </fr:p>
+  <fr:p>We show that <fr:tex
+display="inline"><![CDATA[f']]></fr:tex> and <fr:tex
+display="inline"><![CDATA[h]]></fr:tex> form a cover-mono factorization of the cover <fr:tex
+display="inline"><![CDATA[f]]></fr:tex>, so <fr:tex
+display="inline"><![CDATA[f']]></fr:tex> is an isomorphism.
+    Suppose that <fr:tex
+display="inline"><![CDATA[f'a = f'b]]></fr:tex>.
+    We need to show that <fr:tex
+display="inline"><![CDATA[a = b]]></fr:tex>.
+    To this end, it suffices to show that <fr:tex
+display="inline"><![CDATA[g'a = g'b]]></fr:tex> since <fr:tex
+display="inline"><![CDATA[f']]></fr:tex> and <fr:tex
+display="inline"><![CDATA[g']]></fr:tex> are jointly monic.
+    Consider the joint pullback of <fr:tex
+display="inline"><![CDATA[a]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[b]]></fr:tex> along <fr:tex
+display="inline"><![CDATA[h]]></fr:tex>.</fr:p>
   
     
       
       <fr:embedded-tex
-hash="2533077cd1254917c41b1d0534b93e97"><fr:embedded-tex-preamble>
-         
-   \RequirePackage {tikz}
-   \RequirePackage {amsmath}
-   \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
+hash="5bf5bde3c087e05b85e3299beed550c9"><fr:embedded-tex-preamble><![CDATA[
+        
+  \RequirePackage {tikz}
+  \RequirePackage {amsmath}
+  \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
 
-   \definecolor {catccolor}{RGB}{255,244,138}
-   \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
-   \tikzstyle {catc}=[catccolor!60]
-   \tikzstyle {catd}=[orange!40]
-   \tikzstyle {cate}=[red!40]
-   \tikzstyle {catf}=[blue!10]
-   \tikzstyle {catg}=[green!25]
+  \definecolor {catccolor}{RGB}{255,244,138}
+  \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
+  \tikzstyle {catc}=[catccolor!60]
+  \tikzstyle {catd}=[orange!40]
+  \tikzstyle {cate}=[red!40]
+  \tikzstyle {catf}=[blue!10]
+  \tikzstyle {catg}=[green!25]
 
 
-   \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
-   \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
+  \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
+  \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
 
-   \NewDocumentCommand \CreateRect {D&lt;&gt;{} m m}{
-     \path 
+  \NewDocumentCommand \CreateRect {D<>{} m m}{
+    \path 
       coordinate (#1nw)
       ++(#2,-#3) coordinate (#1se)
       coordinate (#1sw) at (#1se -| #1nw)
       coordinate (#1ne) at (#1nw -| #1se)
     ;
 
-     \path [spath/save = #1north] (#1nw) to (#1ne);
-     \path [spath/save = #1west] (#1nw) to (#1sw);
-     \path [spath/save = #1east] (#1ne) to (#1se);
-     \path [spath/save = #1south] (#1sw) to (#1se);
+    \path [spath/save = #1north] (#1nw) to (#1ne);
+    \path [spath/save = #1west] (#1nw) to (#1sw);
+    \path [spath/save = #1east] (#1ne) to (#1se);
+    \path [spath/save = #1south] (#1sw) to (#1se);
   }
- 
-         
+
+        
    % appears to be necessary
   \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd}
   \usetikzlibrary{matrix,arrows}
@@ -375,7 +393,7 @@ hash="2533077cd1254917c41b1d0534b93e97"><fr:embedded-tex-preamble>
       densely dashed
     },
     embedding/.style = {
-      {right hook}-&gt;
+      {right hook}->
     },
     cover/.style = {
       -{Triangle[open]}
@@ -407,10 +425,10 @@ hash="2533077cd1254917c41b1d0534b93e97"><fr:embedded-tex-preamble>
     square/ne/.style = {},
     square/se/.style = {},
     square/sw/.style = {},
-    square/north/.style = {-&gt;},
-    square/south/.style = {-&gt;},
-    square/west/.style = {-&gt;},
-    square/east/.style = {-&gt;},
+    square/north/.style = {->},
+    square/south/.style = {->},
+    square/west/.style = {->},
+    square/east/.style = {->},
     square/north/node/.style = {above},
     square/south/node/.style = {below},
     square/west/node/.style = {left},
@@ -489,73 +507,74 @@ hash="2533077cd1254917c41b1d0534b93e97"><fr:embedded-tex-preamble>
     \end{tikzpicture}
   }
   \ExplSyntaxOff
- 
-      </fr:embedded-tex-preamble><fr:embedded-tex-body>
-     \DiagramSquare {
-      nw =  \AA ,
+
+      ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+    \DiagramSquare {
+      nw = \AA ,
       nw/style = {pullback},
-      ne = A  \times  A,
+      ne = A \times  A,
       sw = E,
-      se =  \underline {A}  \times   \underline {A},
+      se = \underline {A} \times  \underline {A},
       north = {(m,n)},
       west = r,
       west/style = {cover},
       south = {(a,b)},
-      east = h  \times  h,
+      east = h \times  h,
       east/style = {cover},
     }
-  </fr:embedded-tex-body></fr:embedded-tex>
+  ]]></fr:embedded-tex-body></fr:embedded-tex>
     
   
-  <fr:p>
-    Note that <fr:tex>h  \times  h</fr:tex> is a cover by <fr:ref
+  <fr:p>Note that <fr:tex
+display="inline"><![CDATA[h \times  h]]></fr:tex> is a cover by <fr:ref
 addr="ct-000W"
 href="ct-000W.xml"
-taxon="Lemma"></fr:ref>, and since covers are stable under pullback in a regular category, <fr:tex>r</fr:tex> is also a cover.
-    Now we have that
-  </fr:p>
+taxon="Lemma" />, and since covers are stable under pullback in a regular category, <fr:tex
+display="inline"><![CDATA[r]]></fr:tex> is also a cover.
+    Now we have that</fr:p>
   <fr:tex
-display="block">      \begin {align*}       fm &amp;= f'hm \\           &amp;= f'ar &amp;&amp;  \text {by hypothesis $f'a = f'b$} \\           &amp;= f'br \\           &amp;= f'hn \\           &amp;= fn      \end {align*}   </fr:tex>
-  <fr:p>
-    Thus, <fr:tex>m</fr:tex> and <fr:tex>n</fr:tex> may be expressed in terms of the kernel pair of <fr:tex>f</fr:tex>.
-  </fr:p>
+display="block"><![CDATA[     \begin {align*}       fm &= f'hm\\          &= f'ar && \text {by hypothesis $f'a = f'b$}\\          &= f'br\\          &= f'hn\\          &= fn     \end {align*}   ]]></fr:tex>
+  <fr:p>Thus, <fr:tex
+display="inline"><![CDATA[m]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[n]]></fr:tex> may be expressed in terms of the kernel pair of <fr:tex
+display="inline"><![CDATA[f]]></fr:tex>.</fr:p>
   
     
       
       <fr:embedded-tex
-hash="04f8634aa86f88b8778ef08ef66fb545"><fr:embedded-tex-preamble>
-         
-   \RequirePackage {tikz}
-   \RequirePackage {amsmath}
-   \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
+hash="c6ecacba52ea25eda66c5d02043389cc"><fr:embedded-tex-preamble><![CDATA[
+        
+  \RequirePackage {tikz}
+  \RequirePackage {amsmath}
+  \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
 
-   \definecolor {catccolor}{RGB}{255,244,138}
-   \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
-   \tikzstyle {catc}=[catccolor!60]
-   \tikzstyle {catd}=[orange!40]
-   \tikzstyle {cate}=[red!40]
-   \tikzstyle {catf}=[blue!10]
-   \tikzstyle {catg}=[green!25]
+  \definecolor {catccolor}{RGB}{255,244,138}
+  \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
+  \tikzstyle {catc}=[catccolor!60]
+  \tikzstyle {catd}=[orange!40]
+  \tikzstyle {cate}=[red!40]
+  \tikzstyle {catf}=[blue!10]
+  \tikzstyle {catg}=[green!25]
 
 
-   \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
-   \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
+  \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
+  \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
 
-   \NewDocumentCommand \CreateRect {D&lt;&gt;{} m m}{
-     \path 
+  \NewDocumentCommand \CreateRect {D<>{} m m}{
+    \path 
       coordinate (#1nw)
       ++(#2,-#3) coordinate (#1se)
       coordinate (#1sw) at (#1se -| #1nw)
       coordinate (#1ne) at (#1nw -| #1se)
     ;
 
-     \path [spath/save = #1north] (#1nw) to (#1ne);
-     \path [spath/save = #1west] (#1nw) to (#1sw);
-     \path [spath/save = #1east] (#1ne) to (#1se);
-     \path [spath/save = #1south] (#1sw) to (#1se);
+    \path [spath/save = #1north] (#1nw) to (#1ne);
+    \path [spath/save = #1west] (#1nw) to (#1sw);
+    \path [spath/save = #1east] (#1ne) to (#1se);
+    \path [spath/save = #1south] (#1sw) to (#1se);
   }
- 
-         
+
+        
    % appears to be necessary
   \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd}
   \usetikzlibrary{matrix,arrows}
@@ -624,7 +643,7 @@ hash="04f8634aa86f88b8778ef08ef66fb545"><fr:embedded-tex-preamble>
       densely dashed
     },
     embedding/.style = {
-      {right hook}-&gt;
+      {right hook}->
     },
     cover/.style = {
       -{Triangle[open]}
@@ -656,10 +675,10 @@ hash="04f8634aa86f88b8778ef08ef66fb545"><fr:embedded-tex-preamble>
     square/ne/.style = {},
     square/se/.style = {},
     square/sw/.style = {},
-    square/north/.style = {-&gt;},
-    square/south/.style = {-&gt;},
-    square/west/.style = {-&gt;},
-    square/east/.style = {-&gt;},
+    square/north/.style = {->},
+    square/south/.style = {->},
+    square/west/.style = {->},
+    square/east/.style = {->},
     square/north/node/.style = {above},
     square/south/node/.style = {below},
     square/west/node/.style = {left},
@@ -738,10 +757,10 @@ hash="04f8634aa86f88b8778ef08ef66fb545"><fr:embedded-tex-preamble>
     \end{tikzpicture}
   }
   \ExplSyntaxOff
- 
-      </fr:embedded-tex-preamble><fr:embedded-tex-body>
-     \begin {tikzpicture}[diagram]
-       \SpliceDiagramSquare {
+
+      ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+    \begin {tikzpicture}[diagram]
+      \SpliceDiagramSquare {
         nw = C,
         nw/style = {pullback},
         ne = A,
@@ -752,59 +771,59 @@ hash="04f8634aa86f88b8778ef08ef66fb545"><fr:embedded-tex-preamble>
         south = f,
         east = f,
       }
-       \node  [above left = of nw] (aa) {$ \AA $};
-       \draw  [-&gt;,morphism,bend right] (aa) to node[swap] {$m$} (sw);
-       \draw  [-&gt;,morphism,bend left] (aa) to node {$n$} (ne);
-       \draw  [-&gt;,morphism,exists] (aa) to node[desc] {$s$} (nw);
-     \end {tikzpicture}
-  </fr:embedded-tex-body></fr:embedded-tex>
+      \node  [above left = of nw] (aa) {$\AA $};
+      \draw  [->,morphism,bend right] (aa) to node[swap] {$m$} (sw);
+      \draw  [->,morphism,bend left] (aa) to node {$n$} (ne);
+      \draw  [->,morphism,exists] (aa) to node[desc] {$s$} (nw);
+    \end {tikzpicture}
+  ]]></fr:embedded-tex-body></fr:embedded-tex>
     
   
-  <fr:p>
-    To show <fr:tex>g'a = g'b</fr:tex>, it suffices to show <fr:tex>g'ar = g'br</fr:tex> since <fr:tex>r</fr:tex> is epic.
-  </fr:p>
+  <fr:p>To show <fr:tex
+display="inline"><![CDATA[g'a = g'b]]></fr:tex>, it suffices to show <fr:tex
+display="inline"><![CDATA[g'ar = g'br]]></fr:tex> since <fr:tex
+display="inline"><![CDATA[r]]></fr:tex> is epic.</fr:p>
   <fr:tex
-display="block">      \begin {align*}       g'ar &amp;= g'hm \\             &amp;= gm \\             &amp;= gps &amp;&amp;  \text {by hypothesis $gp = gq$} \\             &amp;= gqs \\             &amp;= gn \\             &amp;= g'hn \\             &amp;= g'br      \end {align*}   </fr:tex>
-  <fr:p>
-    Finally, <fr:tex>g</fr:tex> can be factored as follows:
-  </fr:p>
+display="block"><![CDATA[     \begin {align*}       g'ar &= g'hm\\            &= gm\\            &= gps && \text {by hypothesis $gp = gq$}\\            &= gqs\\            &= gn\\            &= g'hn\\            &= g'br     \end {align*}   ]]></fr:tex>
+  <fr:p>Finally, <fr:tex
+display="inline"><![CDATA[g]]></fr:tex> can be factored as follows:</fr:p>
   
     
       
       <fr:embedded-tex
-hash="24d13ca24504f817ca545eb54138e593"><fr:embedded-tex-preamble>
-         
-   \RequirePackage {tikz}
-   \RequirePackage {amsmath}
-   \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
+hash="281f2859cb80d99021abfe4b87b50b76"><fr:embedded-tex-preamble><![CDATA[
+        
+  \RequirePackage {tikz}
+  \RequirePackage {amsmath}
+  \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
 
-   \definecolor {catccolor}{RGB}{255,244,138}
-   \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
-   \tikzstyle {catc}=[catccolor!60]
-   \tikzstyle {catd}=[orange!40]
-   \tikzstyle {cate}=[red!40]
-   \tikzstyle {catf}=[blue!10]
-   \tikzstyle {catg}=[green!25]
+  \definecolor {catccolor}{RGB}{255,244,138}
+  \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
+  \tikzstyle {catc}=[catccolor!60]
+  \tikzstyle {catd}=[orange!40]
+  \tikzstyle {cate}=[red!40]
+  \tikzstyle {catf}=[blue!10]
+  \tikzstyle {catg}=[green!25]
 
 
-   \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
-   \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
+  \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
+  \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
 
-   \NewDocumentCommand \CreateRect {D&lt;&gt;{} m m}{
-     \path 
+  \NewDocumentCommand \CreateRect {D<>{} m m}{
+    \path 
       coordinate (#1nw)
       ++(#2,-#3) coordinate (#1se)
       coordinate (#1sw) at (#1se -| #1nw)
       coordinate (#1ne) at (#1nw -| #1se)
     ;
 
-     \path [spath/save = #1north] (#1nw) to (#1ne);
-     \path [spath/save = #1west] (#1nw) to (#1sw);
-     \path [spath/save = #1east] (#1ne) to (#1se);
-     \path [spath/save = #1south] (#1sw) to (#1se);
+    \path [spath/save = #1north] (#1nw) to (#1ne);
+    \path [spath/save = #1west] (#1nw) to (#1sw);
+    \path [spath/save = #1east] (#1ne) to (#1se);
+    \path [spath/save = #1south] (#1sw) to (#1se);
   }
- 
-         
+
+        
    % appears to be necessary
   \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd}
   \usetikzlibrary{matrix,arrows}
@@ -873,7 +892,7 @@ hash="24d13ca24504f817ca545eb54138e593"><fr:embedded-tex-preamble>
       densely dashed
     },
     embedding/.style = {
-      {right hook}-&gt;
+      {right hook}->
     },
     cover/.style = {
       -{Triangle[open]}
@@ -905,10 +924,10 @@ hash="24d13ca24504f817ca545eb54138e593"><fr:embedded-tex-preamble>
     square/ne/.style = {},
     square/se/.style = {},
     square/sw/.style = {},
-    square/north/.style = {-&gt;},
-    square/south/.style = {-&gt;},
-    square/west/.style = {-&gt;},
-    square/east/.style = {-&gt;},
+    square/north/.style = {->},
+    square/south/.style = {->},
+    square/west/.style = {->},
+    square/east/.style = {->},
     square/north/node/.style = {above},
     square/south/node/.style = {below},
     square/west/node/.style = {left},
@@ -987,691 +1006,111 @@ hash="24d13ca24504f817ca545eb54138e593"><fr:embedded-tex-preamble>
     \end{tikzpicture}
   }
   \ExplSyntaxOff
- 
-      </fr:embedded-tex-preamble><fr:embedded-tex-body>
-     \begin {tikzpicture}[diagram, node distance = 3cm]
-       \node  (1) {$C$};
-       \node  [right = of 1] (2) {$A$};
-       \node  [right = of 2] (3) {$B$};
-       \node  [below = of 3] (5) {$D$};
-       \node  [between = 3 and 5] (4) {$ \underline {A}$};
-       \draw  [-&gt;,morphism,offset=-1.5] (1) to node {$p$} (2);
-       \draw  [-&gt;,morphism,offset=1.5] (1) to node[swap] {$q$} (2);
-       \draw  [cover,morphism] (2) to node {$f$} (3);
-       \draw  [-&gt;,morphism] (2) to node[swap] {$g$} (5);
-       \draw  [-&gt;,morphism] (3) to node {${f'} ^{-1} $} (4);
-       \draw  [-&gt;,morphism] (4) to node {$g'$} (5);
-     \end {tikzpicture}
-  </fr:embedded-tex-body></fr:embedded-tex>
+
+      ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+    \begin {tikzpicture}[diagram, node distance = 3cm]
+      \node  (1) {$C$};
+      \node  [right = of 1] (2) {$A$};
+      \node  [right = of 2] (3) {$B$};
+      \node  [below = of 3] (5) {$D$};
+      \node  [between = 3 and 5] (4) {$\underline {A}$};
+      \draw  [->,morphism,offset=-1.5] (1) to node {$p$} (2);
+      \draw  [->,morphism,offset=1.5] (1) to node[swap] {$q$} (2);
+      \draw  [cover,morphism] (2) to node {$f$} (3);
+      \draw  [->,morphism] (2) to node[swap] {$g$} (5);
+      \draw  [->,morphism] (3) to node {${f'}^{-1}$} (4);
+      \draw  [->,morphism] (4) to node {$g'$} (5);
+    \end {tikzpicture}
+  ]]></fr:embedded-tex-body></fr:embedded-tex>
     
   
-  <fr:p>
-    Uniqueness then follows from the fact that <fr:tex>f</fr:tex> is epic.
-  </fr:p>
-</fr:mainmatter></fr:tree>
+  <fr:p>Uniqueness then follows from the fact that <fr:tex
+display="inline"><![CDATA[f]]></fr:tex> is epic.</fr:p>
+</fr:mainmatter><fr:backmatter /></fr:tree>
     
-  </fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context></fr:context><fr:related><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="true"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>976</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>ct-000W</fr:addr><fr:route>ct-000W.xml</fr:route><fr:title>Properties of <fr:link
-href="ct-000M.xml"
-type="local"
-addr="ct-000M">cover</fr:link></fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>6</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
-  Let <fr:tex>\mathcal { C }</fr:tex> be a category.
-  The following conditions hold.
-  <fr:ol><fr:li>
-      If <fr:tex>fg</fr:tex> is a cover, then so is <fr:tex>f</fr:tex>.
-    </fr:li>
-    <fr:li>
-      If <fr:tex>\mathcal { C }</fr:tex> has pullbacks, then covers are stable under composition.
-    </fr:li>
-    <fr:li>
-      If <fr:tex>\mathcal { C }</fr:tex> has finite limits and covers are stable under pullbacks, then for any cover <fr:tex>f \colon A \to B</fr:tex>, <fr:tex>f  \times  f \colon A  \times  A \to D  \times  D</fr:tex> is also a cover.
-    </fr:li></fr:ol></fr:p>
-    
-      
-      <fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+  </fr:mainmatter><fr:backmatter><fr:tree
 toc="false"
-numbered="true"
+numbered="false"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>518</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>6</fr:day></fr:date><fr:parent>ct-000W</fr:parent></fr:frontmatter><fr:mainmatter>
-  <fr:p>
-    1. Suppose that <fr:tex>fg \colon A \to C</fr:tex> is a cover and that <fr:tex>f = mn</fr:tex>, where <fr:tex>m</fr:tex> is a monomorphism.
-    Then since <fr:tex>fg = mng</fr:tex>, it follows immediately that <fr:tex>m</fr:tex> is an isomorphism.
-  </fr:p>
-
-  <fr:p>
-    2. Suppose that <fr:tex>\mathcal { C }</fr:tex> has pullbacks and that <fr:tex>f \colon A \to B</fr:tex> and <fr:tex>g \colon B \to C</fr:tex> are covers and that <fr:tex>gf = mn</fr:tex>, where <fr:tex>m</fr:tex> is a monomorphism.
-    Then form the following pullback.
-  </fr:p>
-  
-    
-      
-      <fr:embedded-tex
-hash="3ce3ac5f642c31f8431c872cf726d2eb"><fr:embedded-tex-preamble>
-         
-   \RequirePackage {tikz}
-   \RequirePackage {amsmath}
-   \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
-
-   \definecolor {catccolor}{RGB}{255,244,138}
-   \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
-   \tikzstyle {catc}=[catccolor!60]
-   \tikzstyle {catd}=[orange!40]
-   \tikzstyle {cate}=[red!40]
-   \tikzstyle {catf}=[blue!10]
-   \tikzstyle {catg}=[green!25]
-
-
-   \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
-   \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
-
-   \NewDocumentCommand \CreateRect {D&lt;&gt;{} m m}{
-     \path 
-      coordinate (#1nw)
-      ++(#2,-#3) coordinate (#1se)
-      coordinate (#1sw) at (#1se -| #1nw)
-      coordinate (#1ne) at (#1nw -| #1se)
-    ;
-
-     \path [spath/save = #1north] (#1nw) to (#1ne);
-     \path [spath/save = #1west] (#1nw) to (#1sw);
-     \path [spath/save = #1east] (#1ne) to (#1se);
-     \path [spath/save = #1south] (#1sw) to (#1se);
-  }
- 
-         
-   % appears to be necessary
-  \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd}
-  \usetikzlibrary{matrix,arrows}
-  \usetikzlibrary{backgrounds,fit,positioning,calc,shapes}
-  \usetikzlibrary{decorations.pathreplacing}
-  \usetikzlibrary{decorations.pathmorphing}
-  \usetikzlibrary{decorations.markings}
-
-  % basic settings
-  \tikzset{
-    diagram/.style = {
-      on grid,
-      node distance=2cm,
-      commutative diagrams/every diagram,
-      line width = .5pt,
-      every node/.append style = {
-        commutative diagrams/every cell,
-      },
-    },
-    morphism/.style = {
-      auto=left,
-      node font=\scriptsize,
-    },
-    phantom/.style = {
-      commutative diagrams/phantom,
-      node font=\scriptsize,
-      sloped,
-    },
-    between/.style args = {#1 and #2}{
-      at = ($(#1)!0.5!(#2)$)
-    },
-    desc/.style = {anchor=center,fill=white,inner sep=3pt},
-    offset/.style args = {#1} {commutative diagrams/shift right={#1}},
-    cross over/.style = {
-      commutative diagrams/crossing over
-    },
-    adjoint/.style = {
-      phantom,
-      every to/.append style = {
-        edge node = {node [sloped,allow upside down,auto=false] {$\dashv$}}
-      }
-    },
-  }
-
-  % pullback and pushout
-  \tikzset{
-    pullback/.style = {
-      append after command = {
-        \pgfextra{
-          \draw ($(\tikzlastnode) + (.2cm,-.5cm)$) -- ++(0.3cm,0) -- ++(0,0.3cm);
-        }
-      }
-    },
-    pushout/.style = {
-      append after command={
-        \pgfextra{
-          \draw ($(\tikzlastnode) + (-.2cm,.5cm)$) -- ++(-0.3cm,0) -- ++(0,-0.3cm);
-        }
-      }
-    },
-  }
-
-  % arrow styles
-  \tikzset{
-    exists/.style = {
-      densely dashed
-    },
-    embedding/.style = {
-      {right hook}-&gt;
-    },
-    cover/.style = {
-      -{Triangle[open]}
-    },
-  }
-
-  \newlength{\dontworryaboutit} % no idea what it does
-
-  \tikzset{
-    inline diagram/.style = {
-      commutative diagrams/every diagram,
-      commutative diagrams/cramped,
-      line width = .5pt,
-      every node/.append style = {
-        commutative diagrams/every cell,
-        anchor = base,
-        inner sep = 0pt
-      },
-      every path/.append style = {
-        outer xsep = 2pt
-      }
-    }
-  }
-  
-  % macros for drawing commutative squares
-  % adapted from Jon Sterling's macros (https://git.sr.ht/~jonsterling/article-template/tree/main/item/local-tikz.sty)
-  \tikzset{
-    square/nw/.style = {},
-    square/ne/.style = {},
-    square/se/.style = {},
-    square/sw/.style = {},
-    square/north/.style = {-&gt;},
-    square/south/.style = {-&gt;},
-    square/west/.style = {-&gt;},
-    square/east/.style = {-&gt;},
-    square/north/node/.style = {above},
-    square/south/node/.style = {below},
-    square/west/node/.style = {left},
-    square/east/node/.style = {right},
-  }
-
-  \ExplSyntaxOn
-  \keys_define:nn { jon-tikz/diagram } {
-    nw .tl_set:N = \l_jon_tikz_diagram_nw,
-    sw .tl_set:N = \l_jon_tikz_diagram_sw,
-    ne .tl_set:N = \l_jon_tikz_diagram_ne,
-    se .tl_set:N = \l_jon_tikz_diagram_se,
-
-    width .tl_set:N = \l_jon_tikz_diagram_width,
-    height .tl_set:N = \l_jon_tikz_diagram_height,
-
-    north .tl_set:N = \l_jon_tikz_diagram_north,
-    south .tl_set:N = \l_jon_tikz_diagram_south,
-    west .tl_set:N = \l_jon_tikz_diagram_west,
-    east .tl_set:N = \l_jon_tikz_diagram_east,
-
-    nw/style .code:n = {\tikzset{square/nw/.style = {#1}}},
-    sw/style .code:n = {\tikzset{square/sw/.style = {#1}}},
-    ne/style .code:n = {\tikzset{square/ne/.style = {#1}}},
-    se/style .code:n = {\tikzset{square/se/.style = {#1}}},
-
-    north/style .code:n = {\tikzset{square/north/.style = {#1}}},
-    north/node/style .code:n = {\tikzset{square/north/node/.style = {#1}}},
-    south/style .code:n = {\tikzset{square/south/.style = {#1}}},
-    south/node/style .code:n = {\tikzset{square/south/node/.style = {#1}}},
-    west/style .code:n = {\tikzset{square/west/.style = {#1}}},
-    west/node/style .code:n = {\tikzset{square/west/node/.style = {#1}}},
-    east/style .code:n = {\tikzset{square/east/.style = {#1}}},
-    east/node/style .code:n = {\tikzset{square/east/node/.style = {#1}}},
-
-    draft .meta:n = {
-      nw = {nw},
-      sw = {sw},
-      se = {se},
-      ne = {ne},
-      north = {north},
-      south = {south},
-      west = {west},
-      east = {east},
-    }
-  }
-
-  \tl_set:Nn \l_jon_tikz_diagram_width { 2cm }
-  \tl_set:Nn \l_jon_tikz_diagram_height { 2cm }
-
-
-  \cs_new:Nn \__jon_tikz_render_square:nn {
-    \group_begin:
-    \keys_set:nn {jon-tikz/diagram} {#2} {
-      \node (#1nw) [square/nw] {$\l_jon_tikz_diagram_nw$};
-      \node (#1sw) [below = \l_jon_tikz_diagram_height~of~#1nw,square/sw] {$\l_jon_tikz_diagram_sw$};
-      \draw[morphism,square/west] (#1nw) to node [square/west/node] {$\l_jon_tikz_diagram_west$} (#1sw);
-
-      \node (#1ne) [right = \l_jon_tikz_diagram_width~of~#1nw,square/ne] {$\l_jon_tikz_diagram_ne$};
-      \node (#1se) [below = \l_jon_tikz_diagram_height~of~#1ne,square/se] {$\l_jon_tikz_diagram_se$};
-      \draw[morphism,square/north] (#1nw) to node [square/north/node] {$\l_jon_tikz_diagram_north$} (#1ne);
-      \draw[morphism,square/east] (#1ne) to node [square/east/node] {$\l_jon_tikz_diagram_east$} (#1se);
-      \draw[morphism,square/south] (#1sw) to node [square/south/node] {$\l_jon_tikz_diagram_south$} (#1se);
-    }
-    \group_end:
-  }
-
-  % the optional argument allows one to specify a prefix to positions
-  \NewDocumentCommand\SpliceDiagramSquare{O{}m}{
-    \__jon_tikz_render_square:nn {#1} {#2}
-  }
-
-  \NewDocumentCommand\DiagramSquare{O{}O{}m}{
-    \begin{tikzpicture}[diagram,#2,baseline=(#1sw.base)]
-      \__jon_tikz_render_square:nn {#1} {#3}
-    \end{tikzpicture}
-  }
-  \ExplSyntaxOff
- 
-      </fr:embedded-tex-preamble><fr:embedded-tex-body>
-     \begin {tikzpicture}[diagram]
-       \SpliceDiagramSquare {
-        nw = B',
-        nw/style = {pullback},
-        ne = B,
-        sw = A',
-        se = C,
-        north = m',
-        north/style = {&gt;-&gt;},
-        south = m,
-        south/style = {&gt;-&gt;},
-        west = g',
-        east = g,
-        east/style = {cover},
-      }
-       \node  [above left = of nw] (a) {$A$};
-       \draw  [-&gt;,morphism,bend right] (a) to node[swap] {$n$} (sw);
-       \draw  [-&gt;,morphism,exists] (a) to (nw);
-       \draw  [cover,morphism,bend left] (a) to node {$f$} (ne);
-     \end {tikzpicture}
-  </fr:embedded-tex-body></fr:embedded-tex>
-    
-  
-  <fr:p>
-    Since <fr:tex>f</fr:tex> is a cover, <fr:tex>m'</fr:tex> must be an isomorphism.
-    Thus, <fr:tex>g</fr:tex> can be factored as <fr:tex>mg'{m'} ^{-1}</fr:tex>.
-    Since <fr:tex>g</fr:tex> is a cover, <fr:tex>m</fr:tex> must be an isomorphism.
-  </fr:p>
-  <fr:p>
-    3. Suppose that <fr:tex>\mathcal { C }</fr:tex> has finite limits and that covers are stable under pullback.
-    Let <fr:tex>f \colon A \to B</fr:tex> be a cover.
-    Note that <fr:tex>f  \times  f = (f  \times   \mathsf {id} _{ B } )( \mathsf {id} _{ A }   \times  f)</fr:tex>.
-    Thus, by condition 2, it suffices to show that <fr:tex>f  \times   \mathsf {id} _{ B }</fr:tex> and <fr:tex>\mathsf {id} _{ A }   \times  f</fr:tex> are covers, but both morphisms are pullbacks against <fr:tex>f</fr:tex> and covers are stable under pullback by hypothesis.
-  </fr:p>
-  
-    
-      
-      <fr:embedded-tex
-hash="8326dfd212e854b6d3bdcf4977c5e20e"><fr:embedded-tex-preamble>
-         
-   \RequirePackage {tikz}
-   \RequirePackage {amsmath}
-   \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
-
-   \definecolor {catccolor}{RGB}{255,244,138}
-   \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
-   \tikzstyle {catc}=[catccolor!60]
-   \tikzstyle {catd}=[orange!40]
-   \tikzstyle {cate}=[red!40]
-   \tikzstyle {catf}=[blue!10]
-   \tikzstyle {catg}=[green!25]
-
-
-   \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
-   \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
-
-   \NewDocumentCommand \CreateRect {D&lt;&gt;{} m m}{
-     \path 
-      coordinate (#1nw)
-      ++(#2,-#3) coordinate (#1se)
-      coordinate (#1sw) at (#1se -| #1nw)
-      coordinate (#1ne) at (#1nw -| #1se)
-    ;
-
-     \path [spath/save = #1north] (#1nw) to (#1ne);
-     \path [spath/save = #1west] (#1nw) to (#1sw);
-     \path [spath/save = #1east] (#1ne) to (#1se);
-     \path [spath/save = #1south] (#1sw) to (#1se);
-  }
- 
-         
-   % appears to be necessary
-  \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd}
-  \usetikzlibrary{matrix,arrows}
-  \usetikzlibrary{backgrounds,fit,positioning,calc,shapes}
-  \usetikzlibrary{decorations.pathreplacing}
-  \usetikzlibrary{decorations.pathmorphing}
-  \usetikzlibrary{decorations.markings}
-
-  % basic settings
-  \tikzset{
-    diagram/.style = {
-      on grid,
-      node distance=2cm,
-      commutative diagrams/every diagram,
-      line width = .5pt,
-      every node/.append style = {
-        commutative diagrams/every cell,
-      },
-    },
-    morphism/.style = {
-      auto=left,
-      node font=\scriptsize,
-    },
-    phantom/.style = {
-      commutative diagrams/phantom,
-      node font=\scriptsize,
-      sloped,
-    },
-    between/.style args = {#1 and #2}{
-      at = ($(#1)!0.5!(#2)$)
-    },
-    desc/.style = {anchor=center,fill=white,inner sep=3pt},
-    offset/.style args = {#1} {commutative diagrams/shift right={#1}},
-    cross over/.style = {
-      commutative diagrams/crossing over
-    },
-    adjoint/.style = {
-      phantom,
-      every to/.append style = {
-        edge node = {node [sloped,allow upside down,auto=false] {$\dashv$}}
-      }
-    },
-  }
-
-  % pullback and pushout
-  \tikzset{
-    pullback/.style = {
-      append after command = {
-        \pgfextra{
-          \draw ($(\tikzlastnode) + (.2cm,-.5cm)$) -- ++(0.3cm,0) -- ++(0,0.3cm);
-        }
-      }
-    },
-    pushout/.style = {
-      append after command={
-        \pgfextra{
-          \draw ($(\tikzlastnode) + (-.2cm,.5cm)$) -- ++(-0.3cm,0) -- ++(0,-0.3cm);
-        }
-      }
-    },
-  }
-
-  % arrow styles
-  \tikzset{
-    exists/.style = {
-      densely dashed
-    },
-    embedding/.style = {
-      {right hook}-&gt;
-    },
-    cover/.style = {
-      -{Triangle[open]}
-    },
-  }
-
-  \newlength{\dontworryaboutit} % no idea what it does
-
-  \tikzset{
-    inline diagram/.style = {
-      commutative diagrams/every diagram,
-      commutative diagrams/cramped,
-      line width = .5pt,
-      every node/.append style = {
-        commutative diagrams/every cell,
-        anchor = base,
-        inner sep = 0pt
-      },
-      every path/.append style = {
-        outer xsep = 2pt
-      }
-    }
-  }
-  
-  % macros for drawing commutative squares
-  % adapted from Jon Sterling's macros (https://git.sr.ht/~jonsterling/article-template/tree/main/item/local-tikz.sty)
-  \tikzset{
-    square/nw/.style = {},
-    square/ne/.style = {},
-    square/se/.style = {},
-    square/sw/.style = {},
-    square/north/.style = {-&gt;},
-    square/south/.style = {-&gt;},
-    square/west/.style = {-&gt;},
-    square/east/.style = {-&gt;},
-    square/north/node/.style = {above},
-    square/south/node/.style = {below},
-    square/west/node/.style = {left},
-    square/east/node/.style = {right},
-  }
-
-  \ExplSyntaxOn
-  \keys_define:nn { jon-tikz/diagram } {
-    nw .tl_set:N = \l_jon_tikz_diagram_nw,
-    sw .tl_set:N = \l_jon_tikz_diagram_sw,
-    ne .tl_set:N = \l_jon_tikz_diagram_ne,
-    se .tl_set:N = \l_jon_tikz_diagram_se,
-
-    width .tl_set:N = \l_jon_tikz_diagram_width,
-    height .tl_set:N = \l_jon_tikz_diagram_height,
-
-    north .tl_set:N = \l_jon_tikz_diagram_north,
-    south .tl_set:N = \l_jon_tikz_diagram_south,
-    west .tl_set:N = \l_jon_tikz_diagram_west,
-    east .tl_set:N = \l_jon_tikz_diagram_east,
-
-    nw/style .code:n = {\tikzset{square/nw/.style = {#1}}},
-    sw/style .code:n = {\tikzset{square/sw/.style = {#1}}},
-    ne/style .code:n = {\tikzset{square/ne/.style = {#1}}},
-    se/style .code:n = {\tikzset{square/se/.style = {#1}}},
-
-    north/style .code:n = {\tikzset{square/north/.style = {#1}}},
-    north/node/style .code:n = {\tikzset{square/north/node/.style = {#1}}},
-    south/style .code:n = {\tikzset{square/south/.style = {#1}}},
-    south/node/style .code:n = {\tikzset{square/south/node/.style = {#1}}},
-    west/style .code:n = {\tikzset{square/west/.style = {#1}}},
-    west/node/style .code:n = {\tikzset{square/west/node/.style = {#1}}},
-    east/style .code:n = {\tikzset{square/east/.style = {#1}}},
-    east/node/style .code:n = {\tikzset{square/east/node/.style = {#1}}},
-
-    draft .meta:n = {
-      nw = {nw},
-      sw = {sw},
-      se = {se},
-      ne = {ne},
-      north = {north},
-      south = {south},
-      west = {west},
-      east = {east},
-    }
-  }
-
-  \tl_set:Nn \l_jon_tikz_diagram_width { 2cm }
-  \tl_set:Nn \l_jon_tikz_diagram_height { 2cm }
-
-
-  \cs_new:Nn \__jon_tikz_render_square:nn {
-    \group_begin:
-    \keys_set:nn {jon-tikz/diagram} {#2} {
-      \node (#1nw) [square/nw] {$\l_jon_tikz_diagram_nw$};
-      \node (#1sw) [below = \l_jon_tikz_diagram_height~of~#1nw,square/sw] {$\l_jon_tikz_diagram_sw$};
-      \draw[morphism,square/west] (#1nw) to node [square/west/node] {$\l_jon_tikz_diagram_west$} (#1sw);
-
-      \node (#1ne) [right = \l_jon_tikz_diagram_width~of~#1nw,square/ne] {$\l_jon_tikz_diagram_ne$};
-      \node (#1se) [below = \l_jon_tikz_diagram_height~of~#1ne,square/se] {$\l_jon_tikz_diagram_se$};
-      \draw[morphism,square/north] (#1nw) to node [square/north/node] {$\l_jon_tikz_diagram_north$} (#1ne);
-      \draw[morphism,square/east] (#1ne) to node [square/east/node] {$\l_jon_tikz_diagram_east$} (#1se);
-      \draw[morphism,square/south] (#1sw) to node [square/south/node] {$\l_jon_tikz_diagram_south$} (#1se);
-    }
-    \group_end:
-  }
-
-  % the optional argument allows one to specify a prefix to positions
-  \NewDocumentCommand\SpliceDiagramSquare{O{}m}{
-    \__jon_tikz_render_square:nn {#1} {#2}
-  }
-
-  \NewDocumentCommand\DiagramSquare{O{}O{}m}{
-    \begin{tikzpicture}[diagram,#2,baseline=(#1sw.base)]
-      \__jon_tikz_render_square:nn {#1} {#3}
-    \end{tikzpicture}
-  }
-  \ExplSyntaxOff
- 
-      </fr:embedded-tex-preamble><fr:embedded-tex-body>
-     \DiagramSquare {
-      nw = {A  \times  B},
-      nw/style = {pullback},
-      ne = A,
-      sw = {B  \times  B},
-      se = B,
-      west = {f  \times   \mathsf {id} _{ B } },
-      west/style = {cover},
-      south = { \pi _{1}},
-      east = f,
-      east/style = {cover},
-    }
-     \qquad 
-     \DiagramSquare {
-      nw = {A  \times  A},
-      nw/style = {pullback},
-      ne = A,
-      sw = {A  \times  B},
-      se = B,
-      west = { \mathsf {id} _{ A }   \times  f},
-      west/style = {cover},
-      south = { \pi _{2}},
-      east = f,
-      east/style = {cover},
-    }
-  </fr:embedded-tex-body></fr:embedded-tex>
-    
-  
-</fr:mainmatter></fr:tree>
-    
-  </fr:mainmatter></fr:tree><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
+text="Backlinks">Backlinks</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>977</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>ct-000M</fr:addr><fr:route>ct-000M.xml</fr:route><fr:title>Extremal epimorphism</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>3</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>An epimorphism <fr:tex>f \colon A \twoheadrightarrow B</fr:tex> is said to be <fr:em><fr:strong>extremal</fr:strong></fr:em> (also called a <fr:em><fr:strong>cover</fr:strong></fr:em>) if for any monomorphism <fr:tex>m \colon C \rightarrowtail B</fr:tex> and any morphism <fr:tex>g \colon A \to C</fr:tex> such that <fr:tex>f = mg</fr:tex>, then <fr:tex>m</fr:tex> is an isomorphism.</fr:p></fr:mainmatter></fr:tree><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="true"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>978</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>ct-000O</fr:addr><fr:route>ct-000O.xml</fr:route><fr:title>Regular category</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>3</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
-  A category <fr:tex>\mathcal { C }</fr:tex> is said to be <fr:em><fr:strong>regular</fr:strong></fr:em> if it is cartesian, has <fr:link
-href="ct-000K.xml"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>863</fr:anchor><fr:addr
+type="user">ct-0017</fr:addr><fr:route>ct-0017.xml</fr:route><fr:title
+text="Every kernel pair has a coequalizer">Every kernel pair has a coequalizer</fr:title><fr:taxon>Corollary</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>12</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>In a <fr:link
 type="local"
-addr="ct-000K">images</fr:link>, and <fr:link
-href="ct-000M.xml"
-type="local"
-addr="ct-000M">covers</fr:link> are stable under pullback.
-  A functor <fr:tex>F \colon \mathcal { C } \to \mathcal { D }</fr:tex> between regular categories is said to be <fr:em><fr:strong>regular</fr:strong></fr:em> if it is cartesian and preserves covers.
-  Note that since cartesian functors preserve monomorphisms, every regular functor automatically preserves images.
-</fr:p>
-    
-      
-      <fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
-toc="false"
-numbered="true"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>239</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>3</fr:day></fr:date><fr:parent>ct-000O</fr:parent></fr:frontmatter><fr:mainmatter>
-  <fr:p>
-    Let <fr:tex>F \colon \mathcal { C } \to \mathcal { D }</fr:tex> be a regular functor and <fr:tex>f \colon A \to B</fr:tex> be a morphism in <fr:tex>\mathcal { C }</fr:tex>.
-    By <fr:ref
-addr="ct-000Q"
-href="ct-000Q.xml"
-taxon="Lemma"></fr:ref>, <fr:tex>f</fr:tex> admits a cover-mono factorization <fr:tex>f =  \mathsf { Img } (f) \vartheta _{f}</fr:tex>.
-    Then since <fr:tex>F</fr:tex> preserves monomorphisms and covers, <fr:tex>F( \mathsf { Img } (f))F( \vartheta _{f})</fr:tex> forms a cover-mono factorization of <fr:tex>F(f)</fr:tex>.
-    Then by uniqueness, <fr:tex>\mathsf { Img } (Ff)  \cong  F( \mathsf { Img } (f))</fr:tex>.
-  </fr:p>
-</fr:mainmatter></fr:tree>
-    
-  </fr:mainmatter></fr:tree></fr:related><fr:backlinks><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="true"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>975</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>ct-0017</fr:addr><fr:route>ct-0017.xml</fr:route><fr:title>Every kernel pair has a coequalizer</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>12</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
-  In a <fr:link
 href="ct-000O.xml"
-type="local"
-addr="ct-000O">regular category</fr:link>, every kernel pair has a coequalizer.
-  Moreover, the given kernel pair is also a kernel pair of the coequalizer.
-</fr:p>
+addr="ct-000O"
+title="Regular category">regular category</fr:link>, every kernel pair has a coequalizer.
+  Moreover, the given kernel pair is also a kernel pair of the coequalizer.</fr:p>
     
       
       <fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="false"
 numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>498</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>12</fr:day></fr:date><fr:parent>ct-0017</fr:parent></fr:frontmatter><fr:mainmatter>
-  <fr:p>
-    Let <fr:tex>a , b \colon R \rightrightarrows A</fr:tex> be the kernel pair of a morphism <fr:tex>f \colon A \to B</fr:tex>.
-    Consider the cover-mono factorization of <fr:tex>f</fr:tex>: <fr:tex>f = f_{m}f_{c}</fr:tex>.
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>720</fr:anchor><fr:addr
+type="machine">#251</fr:addr><fr:route>unstable-251.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>12</fr:day></fr:date><fr:authors /><fr:parent>ct-0017</fr:parent></fr:frontmatter><fr:mainmatter>
+  <fr:p>Let <fr:tex
+display="inline"><![CDATA[a,b\colon R\rightrightarrows A]]></fr:tex> be the kernel pair of a morphism <fr:tex
+display="inline"><![CDATA[f\colon A\to B]]></fr:tex>.
+    Consider the cover-mono factorization of <fr:tex
+display="inline"><![CDATA[f]]></fr:tex>: <fr:tex
+display="inline"><![CDATA[f = f_{m}f_{c}]]></fr:tex>.
     By <fr:ref
 addr="ct-000T"
 href="ct-000T.xml"
-taxon="Lemma"></fr:ref>, it suffices to show that <fr:tex>(a,b)</fr:tex> is a kernel pair of <fr:tex>f_{c}</fr:tex>, i.e., the following diagram is a pullback.
-  </fr:p>
+taxon="Lemma" />, it suffices to show that <fr:tex
+display="inline"><![CDATA[(a,b)]]></fr:tex> is a kernel pair of <fr:tex
+display="inline"><![CDATA[f_{c}]]></fr:tex>, i.e., the following diagram is a pullback.</fr:p>
   
     
       
       <fr:embedded-tex
-hash="ccc1f3df54af7949342fe8c2f1278905"><fr:embedded-tex-preamble>
-         
-   \RequirePackage {tikz}
-   \RequirePackage {amsmath}
-   \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
+hash="51059d11ada3e0a98abc2ce6bc86a205"><fr:embedded-tex-preamble><![CDATA[
+        
+  \RequirePackage {tikz}
+  \RequirePackage {amsmath}
+  \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
 
-   \definecolor {catccolor}{RGB}{255,244,138}
-   \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
-   \tikzstyle {catc}=[catccolor!60]
-   \tikzstyle {catd}=[orange!40]
-   \tikzstyle {cate}=[red!40]
-   \tikzstyle {catf}=[blue!10]
-   \tikzstyle {catg}=[green!25]
+  \definecolor {catccolor}{RGB}{255,244,138}
+  \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
+  \tikzstyle {catc}=[catccolor!60]
+  \tikzstyle {catd}=[orange!40]
+  \tikzstyle {cate}=[red!40]
+  \tikzstyle {catf}=[blue!10]
+  \tikzstyle {catg}=[green!25]
 
 
-   \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
-   \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
+  \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
+  \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
 
-   \NewDocumentCommand \CreateRect {D&lt;&gt;{} m m}{
-     \path 
+  \NewDocumentCommand \CreateRect {D<>{} m m}{
+    \path 
       coordinate (#1nw)
       ++(#2,-#3) coordinate (#1se)
       coordinate (#1sw) at (#1se -| #1nw)
       coordinate (#1ne) at (#1nw -| #1se)
     ;
 
-     \path [spath/save = #1north] (#1nw) to (#1ne);
-     \path [spath/save = #1west] (#1nw) to (#1sw);
-     \path [spath/save = #1east] (#1ne) to (#1se);
-     \path [spath/save = #1south] (#1sw) to (#1se);
+    \path [spath/save = #1north] (#1nw) to (#1ne);
+    \path [spath/save = #1west] (#1nw) to (#1sw);
+    \path [spath/save = #1east] (#1ne) to (#1se);
+    \path [spath/save = #1south] (#1sw) to (#1se);
   }
- 
-         
+
+        
    % appears to be necessary
   \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd}
   \usetikzlibrary{matrix,arrows}
@@ -1740,7 +1179,7 @@ hash="ccc1f3df54af7949342fe8c2f1278905"><fr:embedded-tex-preamble>
       densely dashed
     },
     embedding/.style = {
-      {right hook}-&gt;
+      {right hook}->
     },
     cover/.style = {
       -{Triangle[open]}
@@ -1772,10 +1211,10 @@ hash="ccc1f3df54af7949342fe8c2f1278905"><fr:embedded-tex-preamble>
     square/ne/.style = {},
     square/se/.style = {},
     square/sw/.style = {},
-    square/north/.style = {-&gt;},
-    square/south/.style = {-&gt;},
-    square/west/.style = {-&gt;},
-    square/east/.style = {-&gt;},
+    square/north/.style = {->},
+    square/south/.style = {->},
+    square/west/.style = {->},
+    square/east/.style = {->},
     square/north/node/.style = {above},
     square/south/node/.style = {below},
     square/west/node/.style = {left},
@@ -1854,13 +1293,13 @@ hash="ccc1f3df54af7949342fe8c2f1278905"><fr:embedded-tex-preamble>
     \end{tikzpicture}
   }
   \ExplSyntaxOff
- 
-      </fr:embedded-tex-preamble><fr:embedded-tex-body>
-     \DiagramSquare {
+
+      ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+    \DiagramSquare {
       nw = R,
       ne = A,
       sw = A,
-      se = { \mathsf { Img } (f)},
+      se = {\mathsf {Img}(f)},
       north = b,
       west = a,
       south = {f_{c}},
@@ -1868,52 +1307,55 @@ hash="ccc1f3df54af7949342fe8c2f1278905"><fr:embedded-tex-preamble>
       east = {f_{c}},
       east/style = {cover},
     }
-  </fr:embedded-tex-body></fr:embedded-tex>
+  ]]></fr:embedded-tex-body></fr:embedded-tex>
     
   
-  <fr:p>
-    First, the diagram commutes since <fr:tex>fa = f_{m}f_{c}a = f_{m}f_{c}b = fb</fr:tex> by definition, and <fr:tex>f_{m}</fr:tex> is monic.
-    Let <fr:tex>h , k \colon C \rightrightarrows A</fr:tex> be a pair of morphisms such that <fr:tex>f_{c}h = f_{c}k</fr:tex>.
-    Then <fr:tex>f_{m}f_{c}h = fh = fk = f_{m}f_{c}k</fr:tex>.
-    Thus, the unique factor is given by the following pullback.
-  </fr:p>
+  <fr:p>First, the diagram commutes since <fr:tex
+display="inline"><![CDATA[fa = f_{m}f_{c}a = f_{m}f_{c}b = fb]]></fr:tex> by definition, and <fr:tex
+display="inline"><![CDATA[f_{m}]]></fr:tex> is monic.
+    Let <fr:tex
+display="inline"><![CDATA[h,k\colon C\rightrightarrows A]]></fr:tex> be a pair of morphisms such that <fr:tex
+display="inline"><![CDATA[f_{c}h = f_{c}k]]></fr:tex>.
+    Then <fr:tex
+display="inline"><![CDATA[f_{m}f_{c}h = fh = fk = f_{m}f_{c}k]]></fr:tex>.
+    Thus, the unique factor is given by the following pullback.</fr:p>
   
     
       
       <fr:embedded-tex
-hash="4e6fcaa989b29abdeae6a26ee728e3a5"><fr:embedded-tex-preamble>
-         
-   \RequirePackage {tikz}
-   \RequirePackage {amsmath}
-   \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
+hash="b63064abd0359eb4084510ea58e44f89"><fr:embedded-tex-preamble><![CDATA[
+        
+  \RequirePackage {tikz}
+  \RequirePackage {amsmath}
+  \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
 
-   \definecolor {catccolor}{RGB}{255,244,138}
-   \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
-   \tikzstyle {catc}=[catccolor!60]
-   \tikzstyle {catd}=[orange!40]
-   \tikzstyle {cate}=[red!40]
-   \tikzstyle {catf}=[blue!10]
-   \tikzstyle {catg}=[green!25]
+  \definecolor {catccolor}{RGB}{255,244,138}
+  \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
+  \tikzstyle {catc}=[catccolor!60]
+  \tikzstyle {catd}=[orange!40]
+  \tikzstyle {cate}=[red!40]
+  \tikzstyle {catf}=[blue!10]
+  \tikzstyle {catg}=[green!25]
 
 
-   \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
-   \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
+  \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
+  \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
 
-   \NewDocumentCommand \CreateRect {D&lt;&gt;{} m m}{
-     \path 
+  \NewDocumentCommand \CreateRect {D<>{} m m}{
+    \path 
       coordinate (#1nw)
       ++(#2,-#3) coordinate (#1se)
       coordinate (#1sw) at (#1se -| #1nw)
       coordinate (#1ne) at (#1nw -| #1se)
     ;
 
-     \path [spath/save = #1north] (#1nw) to (#1ne);
-     \path [spath/save = #1west] (#1nw) to (#1sw);
-     \path [spath/save = #1east] (#1ne) to (#1se);
-     \path [spath/save = #1south] (#1sw) to (#1se);
+    \path [spath/save = #1north] (#1nw) to (#1ne);
+    \path [spath/save = #1west] (#1nw) to (#1sw);
+    \path [spath/save = #1east] (#1ne) to (#1se);
+    \path [spath/save = #1south] (#1sw) to (#1se);
   }
- 
-         
+
+        
    % appears to be necessary
   \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd}
   \usetikzlibrary{matrix,arrows}
@@ -1982,7 +1424,7 @@ hash="4e6fcaa989b29abdeae6a26ee728e3a5"><fr:embedded-tex-preamble>
       densely dashed
     },
     embedding/.style = {
-      {right hook}-&gt;
+      {right hook}->
     },
     cover/.style = {
       -{Triangle[open]}
@@ -2014,10 +1456,10 @@ hash="4e6fcaa989b29abdeae6a26ee728e3a5"><fr:embedded-tex-preamble>
     square/ne/.style = {},
     square/se/.style = {},
     square/sw/.style = {},
-    square/north/.style = {-&gt;},
-    square/south/.style = {-&gt;},
-    square/west/.style = {-&gt;},
-    square/east/.style = {-&gt;},
+    square/north/.style = {->},
+    square/south/.style = {->},
+    square/west/.style = {->},
+    square/east/.style = {->},
     square/north/node/.style = {above},
     square/south/node/.style = {below},
     square/west/node/.style = {left},
@@ -2096,10 +1538,10 @@ hash="4e6fcaa989b29abdeae6a26ee728e3a5"><fr:embedded-tex-preamble>
     \end{tikzpicture}
   }
   \ExplSyntaxOff
- 
-      </fr:embedded-tex-preamble><fr:embedded-tex-body>
-     \begin {tikzpicture}[diagram]
-       \SpliceDiagramSquare {
+
+      ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+    \begin {tikzpicture}[diagram]
+      \SpliceDiagramSquare {
         nw = R,
         nw/style = {pullback},
         ne = A,
@@ -2110,14 +1552,652 @@ hash="4e6fcaa989b29abdeae6a26ee728e3a5"><fr:embedded-tex-preamble>
         south = {f},
         east = {f},
       }
-       \node  [above left = of nw] (c) {$C$};
-       \draw  [-&gt;,morphism,bend right] (c) to node[swap] {$h$} (sw);
-       \draw  [-&gt;,morphism,exists] (c) to (nw);
-       \draw  [-&gt;,morphism,bend left] (c) to node {$k$} (ne);
-     \end {tikzpicture}
-  </fr:embedded-tex-body></fr:embedded-tex>
+      \node  [above left = of nw] (c) {$C$};
+      \draw  [->,morphism,bend right] (c) to node[swap] {$h$} (sw);
+      \draw  [->,morphism,exists] (c) to (nw);
+      \draw  [->,morphism,bend left] (c) to node {$k$} (ne);
+    \end {tikzpicture}
+  ]]></fr:embedded-tex-body></fr:embedded-tex>
     
   
-</fr:mainmatter></fr:tree>
+</fr:mainmatter><fr:backmatter /></fr:tree>
     
-  </fr:mainmatter></fr:tree></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>
+  </fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
+text="Related">Related</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>864</fr:anchor><fr:addr
+type="user">ct-000W</fr:addr><fr:route>ct-000W.xml</fr:route><fr:title
+text="Properties of cover">Properties of <fr:link
+type="local"
+href="ct-000M.xml"
+addr="ct-000M"
+title="Extremal epimorphism">cover</fr:link></fr:title><fr:taxon>Lemma</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>6</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> be a category.
+  The following conditions hold.
+  <fr:ol><fr:li>If <fr:tex
+display="inline"><![CDATA[fg]]></fr:tex> is a cover, then so is <fr:tex
+display="inline"><![CDATA[f]]></fr:tex>.</fr:li>
+    <fr:li>If <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> has pullbacks, then covers are stable under composition.</fr:li>
+    <fr:li>If <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> has finite limits and covers are stable under pullbacks, then for any cover <fr:tex
+display="inline"><![CDATA[f\colon A\to B]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[f \times  f\colon A \times  A\to D \times  D]]></fr:tex> is also a cover.</fr:li></fr:ol></fr:p>
+    
+      
+      <fr:tree
+toc="false"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>841</fr:anchor><fr:addr
+type="machine">#258</fr:addr><fr:route>unstable-258.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>6</fr:day></fr:date><fr:authors /><fr:parent>ct-000W</fr:parent></fr:frontmatter><fr:mainmatter>
+  <fr:p>1. Suppose that <fr:tex
+display="inline"><![CDATA[fg\colon A\to C]]></fr:tex> is a cover and that <fr:tex
+display="inline"><![CDATA[f = mn]]></fr:tex>, where <fr:tex
+display="inline"><![CDATA[m]]></fr:tex> is a monomorphism.
+    Then since <fr:tex
+display="inline"><![CDATA[fg = mng]]></fr:tex>, it follows immediately that <fr:tex
+display="inline"><![CDATA[m]]></fr:tex> is an isomorphism.</fr:p>
+
+  <fr:p>2. Suppose that <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> has pullbacks and that <fr:tex
+display="inline"><![CDATA[f\colon A\to B]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[g\colon B\to C]]></fr:tex> are covers and that <fr:tex
+display="inline"><![CDATA[gf = mn]]></fr:tex>, where <fr:tex
+display="inline"><![CDATA[m]]></fr:tex> is a monomorphism.
+    Then form the following pullback.</fr:p>
+  
+    
+      
+      <fr:embedded-tex
+hash="d52797041048d24ad83ccf2f37a85c07"><fr:embedded-tex-preamble><![CDATA[
+        
+  \RequirePackage {tikz}
+  \RequirePackage {amsmath}
+  \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
+
+  \definecolor {catccolor}{RGB}{255,244,138}
+  \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
+  \tikzstyle {catc}=[catccolor!60]
+  \tikzstyle {catd}=[orange!40]
+  \tikzstyle {cate}=[red!40]
+  \tikzstyle {catf}=[blue!10]
+  \tikzstyle {catg}=[green!25]
+
+
+  \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
+  \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
+
+  \NewDocumentCommand \CreateRect {D<>{} m m}{
+    \path 
+      coordinate (#1nw)
+      ++(#2,-#3) coordinate (#1se)
+      coordinate (#1sw) at (#1se -| #1nw)
+      coordinate (#1ne) at (#1nw -| #1se)
+    ;
+
+    \path [spath/save = #1north] (#1nw) to (#1ne);
+    \path [spath/save = #1west] (#1nw) to (#1sw);
+    \path [spath/save = #1east] (#1ne) to (#1se);
+    \path [spath/save = #1south] (#1sw) to (#1se);
+  }
+
+        
+   % appears to be necessary
+  \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd}
+  \usetikzlibrary{matrix,arrows}
+  \usetikzlibrary{backgrounds,fit,positioning,calc,shapes}
+  \usetikzlibrary{decorations.pathreplacing}
+  \usetikzlibrary{decorations.pathmorphing}
+  \usetikzlibrary{decorations.markings}
+
+  % basic settings
+  \tikzset{
+    diagram/.style = {
+      on grid,
+      node distance=2cm,
+      commutative diagrams/every diagram,
+      line width = .5pt,
+      every node/.append style = {
+        commutative diagrams/every cell,
+      },
+    },
+    morphism/.style = {
+      auto=left,
+      node font=\scriptsize,
+    },
+    phantom/.style = {
+      commutative diagrams/phantom,
+      node font=\scriptsize,
+      sloped,
+    },
+    between/.style args = {#1 and #2}{
+      at = ($(#1)!0.5!(#2)$)
+    },
+    desc/.style = {anchor=center,fill=white,inner sep=3pt},
+    offset/.style args = {#1} {commutative diagrams/shift right={#1}},
+    cross over/.style = {
+      commutative diagrams/crossing over
+    },
+    adjoint/.style = {
+      phantom,
+      every to/.append style = {
+        edge node = {node [sloped,allow upside down,auto=false] {$\dashv$}}
+      }
+    },
+  }
+
+  % pullback and pushout
+  \tikzset{
+    pullback/.style = {
+      append after command = {
+        \pgfextra{
+          \draw ($(\tikzlastnode) + (.2cm,-.5cm)$) -- ++(0.3cm,0) -- ++(0,0.3cm);
+        }
+      }
+    },
+    pushout/.style = {
+      append after command={
+        \pgfextra{
+          \draw ($(\tikzlastnode) + (-.2cm,.5cm)$) -- ++(-0.3cm,0) -- ++(0,-0.3cm);
+        }
+      }
+    },
+  }
+
+  % arrow styles
+  \tikzset{
+    exists/.style = {
+      densely dashed
+    },
+    embedding/.style = {
+      {right hook}->
+    },
+    cover/.style = {
+      -{Triangle[open]}
+    },
+  }
+
+  \newlength{\dontworryaboutit} % no idea what it does
+
+  \tikzset{
+    inline diagram/.style = {
+      commutative diagrams/every diagram,
+      commutative diagrams/cramped,
+      line width = .5pt,
+      every node/.append style = {
+        commutative diagrams/every cell,
+        anchor = base,
+        inner sep = 0pt
+      },
+      every path/.append style = {
+        outer xsep = 2pt
+      }
+    }
+  }
+  
+  % macros for drawing commutative squares
+  % adapted from Jon Sterling's macros (https://git.sr.ht/~jonsterling/article-template/tree/main/item/local-tikz.sty)
+  \tikzset{
+    square/nw/.style = {},
+    square/ne/.style = {},
+    square/se/.style = {},
+    square/sw/.style = {},
+    square/north/.style = {->},
+    square/south/.style = {->},
+    square/west/.style = {->},
+    square/east/.style = {->},
+    square/north/node/.style = {above},
+    square/south/node/.style = {below},
+    square/west/node/.style = {left},
+    square/east/node/.style = {right},
+  }
+
+  \ExplSyntaxOn
+  \keys_define:nn { jon-tikz/diagram } {
+    nw .tl_set:N = \l_jon_tikz_diagram_nw,
+    sw .tl_set:N = \l_jon_tikz_diagram_sw,
+    ne .tl_set:N = \l_jon_tikz_diagram_ne,
+    se .tl_set:N = \l_jon_tikz_diagram_se,
+
+    width .tl_set:N = \l_jon_tikz_diagram_width,
+    height .tl_set:N = \l_jon_tikz_diagram_height,
+
+    north .tl_set:N = \l_jon_tikz_diagram_north,
+    south .tl_set:N = \l_jon_tikz_diagram_south,
+    west .tl_set:N = \l_jon_tikz_diagram_west,
+    east .tl_set:N = \l_jon_tikz_diagram_east,
+
+    nw/style .code:n = {\tikzset{square/nw/.style = {#1}}},
+    sw/style .code:n = {\tikzset{square/sw/.style = {#1}}},
+    ne/style .code:n = {\tikzset{square/ne/.style = {#1}}},
+    se/style .code:n = {\tikzset{square/se/.style = {#1}}},
+
+    north/style .code:n = {\tikzset{square/north/.style = {#1}}},
+    north/node/style .code:n = {\tikzset{square/north/node/.style = {#1}}},
+    south/style .code:n = {\tikzset{square/south/.style = {#1}}},
+    south/node/style .code:n = {\tikzset{square/south/node/.style = {#1}}},
+    west/style .code:n = {\tikzset{square/west/.style = {#1}}},
+    west/node/style .code:n = {\tikzset{square/west/node/.style = {#1}}},
+    east/style .code:n = {\tikzset{square/east/.style = {#1}}},
+    east/node/style .code:n = {\tikzset{square/east/node/.style = {#1}}},
+
+    draft .meta:n = {
+      nw = {nw},
+      sw = {sw},
+      se = {se},
+      ne = {ne},
+      north = {north},
+      south = {south},
+      west = {west},
+      east = {east},
+    }
+  }
+
+  \tl_set:Nn \l_jon_tikz_diagram_width { 2cm }
+  \tl_set:Nn \l_jon_tikz_diagram_height { 2cm }
+
+
+  \cs_new:Nn \__jon_tikz_render_square:nn {
+    \group_begin:
+    \keys_set:nn {jon-tikz/diagram} {#2} {
+      \node (#1nw) [square/nw] {$\l_jon_tikz_diagram_nw$};
+      \node (#1sw) [below = \l_jon_tikz_diagram_height~of~#1nw,square/sw] {$\l_jon_tikz_diagram_sw$};
+      \draw[morphism,square/west] (#1nw) to node [square/west/node] {$\l_jon_tikz_diagram_west$} (#1sw);
+
+      \node (#1ne) [right = \l_jon_tikz_diagram_width~of~#1nw,square/ne] {$\l_jon_tikz_diagram_ne$};
+      \node (#1se) [below = \l_jon_tikz_diagram_height~of~#1ne,square/se] {$\l_jon_tikz_diagram_se$};
+      \draw[morphism,square/north] (#1nw) to node [square/north/node] {$\l_jon_tikz_diagram_north$} (#1ne);
+      \draw[morphism,square/east] (#1ne) to node [square/east/node] {$\l_jon_tikz_diagram_east$} (#1se);
+      \draw[morphism,square/south] (#1sw) to node [square/south/node] {$\l_jon_tikz_diagram_south$} (#1se);
+    }
+    \group_end:
+  }
+
+  % the optional argument allows one to specify a prefix to positions
+  \NewDocumentCommand\SpliceDiagramSquare{O{}m}{
+    \__jon_tikz_render_square:nn {#1} {#2}
+  }
+
+  \NewDocumentCommand\DiagramSquare{O{}O{}m}{
+    \begin{tikzpicture}[diagram,#2,baseline=(#1sw.base)]
+      \__jon_tikz_render_square:nn {#1} {#3}
+    \end{tikzpicture}
+  }
+  \ExplSyntaxOff
+
+      ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+    \begin {tikzpicture}[diagram]
+      \SpliceDiagramSquare {
+        nw = B',
+        nw/style = {pullback},
+        ne = B,
+        sw = A',
+        se = C,
+        north = m',
+        north/style = {>->},
+        south = m,
+        south/style = {>->},
+        west = g',
+        east = g,
+        east/style = {cover},
+      }
+      \node  [above left = of nw] (a) {$A$};
+      \draw  [->,morphism,bend right] (a) to node[swap] {$n$} (sw);
+      \draw  [->,morphism,exists] (a) to (nw);
+      \draw  [cover,morphism,bend left] (a) to node {$f$} (ne);
+    \end {tikzpicture}
+  ]]></fr:embedded-tex-body></fr:embedded-tex>
+    
+  
+  <fr:p>Since <fr:tex
+display="inline"><![CDATA[f]]></fr:tex> is a cover, <fr:tex
+display="inline"><![CDATA[m']]></fr:tex> must be an isomorphism.
+    Thus, <fr:tex
+display="inline"><![CDATA[g]]></fr:tex> can be factored as <fr:tex
+display="inline"><![CDATA[mg'{m'}^{-1}]]></fr:tex>.
+    Since <fr:tex
+display="inline"><![CDATA[g]]></fr:tex> is a cover, <fr:tex
+display="inline"><![CDATA[m]]></fr:tex> must be an isomorphism.</fr:p>
+  <fr:p>3. Suppose that <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> has finite limits and that covers are stable under pullback.
+    Let <fr:tex
+display="inline"><![CDATA[f\colon A\to B]]></fr:tex> be a cover.
+    Note that <fr:tex
+display="inline"><![CDATA[f \times  f = (f \times  \mathsf {id}_{B})(\mathsf {id}_{A} \times  f)]]></fr:tex>.
+    Thus, by condition 2, it suffices to show that <fr:tex
+display="inline"><![CDATA[f \times  \mathsf {id}_{B}]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[\mathsf {id}_{A} \times  f]]></fr:tex> are covers, but both morphisms are pullbacks against <fr:tex
+display="inline"><![CDATA[f]]></fr:tex> and covers are stable under pullback by hypothesis.</fr:p>
+  
+    
+      
+      <fr:embedded-tex
+hash="04c475ffb9db24e9fde16e3f80df0457"><fr:embedded-tex-preamble><![CDATA[
+        
+  \RequirePackage {tikz}
+  \RequirePackage {amsmath}
+  \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
+
+  \definecolor {catccolor}{RGB}{255,244,138}
+  \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
+  \tikzstyle {catc}=[catccolor!60]
+  \tikzstyle {catd}=[orange!40]
+  \tikzstyle {cate}=[red!40]
+  \tikzstyle {catf}=[blue!10]
+  \tikzstyle {catg}=[green!25]
+
+
+  \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
+  \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
+
+  \NewDocumentCommand \CreateRect {D<>{} m m}{
+    \path 
+      coordinate (#1nw)
+      ++(#2,-#3) coordinate (#1se)
+      coordinate (#1sw) at (#1se -| #1nw)
+      coordinate (#1ne) at (#1nw -| #1se)
+    ;
+
+    \path [spath/save = #1north] (#1nw) to (#1ne);
+    \path [spath/save = #1west] (#1nw) to (#1sw);
+    \path [spath/save = #1east] (#1ne) to (#1se);
+    \path [spath/save = #1south] (#1sw) to (#1se);
+  }
+
+        
+   % appears to be necessary
+  \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd}
+  \usetikzlibrary{matrix,arrows}
+  \usetikzlibrary{backgrounds,fit,positioning,calc,shapes}
+  \usetikzlibrary{decorations.pathreplacing}
+  \usetikzlibrary{decorations.pathmorphing}
+  \usetikzlibrary{decorations.markings}
+
+  % basic settings
+  \tikzset{
+    diagram/.style = {
+      on grid,
+      node distance=2cm,
+      commutative diagrams/every diagram,
+      line width = .5pt,
+      every node/.append style = {
+        commutative diagrams/every cell,
+      },
+    },
+    morphism/.style = {
+      auto=left,
+      node font=\scriptsize,
+    },
+    phantom/.style = {
+      commutative diagrams/phantom,
+      node font=\scriptsize,
+      sloped,
+    },
+    between/.style args = {#1 and #2}{
+      at = ($(#1)!0.5!(#2)$)
+    },
+    desc/.style = {anchor=center,fill=white,inner sep=3pt},
+    offset/.style args = {#1} {commutative diagrams/shift right={#1}},
+    cross over/.style = {
+      commutative diagrams/crossing over
+    },
+    adjoint/.style = {
+      phantom,
+      every to/.append style = {
+        edge node = {node [sloped,allow upside down,auto=false] {$\dashv$}}
+      }
+    },
+  }
+
+  % pullback and pushout
+  \tikzset{
+    pullback/.style = {
+      append after command = {
+        \pgfextra{
+          \draw ($(\tikzlastnode) + (.2cm,-.5cm)$) -- ++(0.3cm,0) -- ++(0,0.3cm);
+        }
+      }
+    },
+    pushout/.style = {
+      append after command={
+        \pgfextra{
+          \draw ($(\tikzlastnode) + (-.2cm,.5cm)$) -- ++(-0.3cm,0) -- ++(0,-0.3cm);
+        }
+      }
+    },
+  }
+
+  % arrow styles
+  \tikzset{
+    exists/.style = {
+      densely dashed
+    },
+    embedding/.style = {
+      {right hook}->
+    },
+    cover/.style = {
+      -{Triangle[open]}
+    },
+  }
+
+  \newlength{\dontworryaboutit} % no idea what it does
+
+  \tikzset{
+    inline diagram/.style = {
+      commutative diagrams/every diagram,
+      commutative diagrams/cramped,
+      line width = .5pt,
+      every node/.append style = {
+        commutative diagrams/every cell,
+        anchor = base,
+        inner sep = 0pt
+      },
+      every path/.append style = {
+        outer xsep = 2pt
+      }
+    }
+  }
+  
+  % macros for drawing commutative squares
+  % adapted from Jon Sterling's macros (https://git.sr.ht/~jonsterling/article-template/tree/main/item/local-tikz.sty)
+  \tikzset{
+    square/nw/.style = {},
+    square/ne/.style = {},
+    square/se/.style = {},
+    square/sw/.style = {},
+    square/north/.style = {->},
+    square/south/.style = {->},
+    square/west/.style = {->},
+    square/east/.style = {->},
+    square/north/node/.style = {above},
+    square/south/node/.style = {below},
+    square/west/node/.style = {left},
+    square/east/node/.style = {right},
+  }
+
+  \ExplSyntaxOn
+  \keys_define:nn { jon-tikz/diagram } {
+    nw .tl_set:N = \l_jon_tikz_diagram_nw,
+    sw .tl_set:N = \l_jon_tikz_diagram_sw,
+    ne .tl_set:N = \l_jon_tikz_diagram_ne,
+    se .tl_set:N = \l_jon_tikz_diagram_se,
+
+    width .tl_set:N = \l_jon_tikz_diagram_width,
+    height .tl_set:N = \l_jon_tikz_diagram_height,
+
+    north .tl_set:N = \l_jon_tikz_diagram_north,
+    south .tl_set:N = \l_jon_tikz_diagram_south,
+    west .tl_set:N = \l_jon_tikz_diagram_west,
+    east .tl_set:N = \l_jon_tikz_diagram_east,
+
+    nw/style .code:n = {\tikzset{square/nw/.style = {#1}}},
+    sw/style .code:n = {\tikzset{square/sw/.style = {#1}}},
+    ne/style .code:n = {\tikzset{square/ne/.style = {#1}}},
+    se/style .code:n = {\tikzset{square/se/.style = {#1}}},
+
+    north/style .code:n = {\tikzset{square/north/.style = {#1}}},
+    north/node/style .code:n = {\tikzset{square/north/node/.style = {#1}}},
+    south/style .code:n = {\tikzset{square/south/.style = {#1}}},
+    south/node/style .code:n = {\tikzset{square/south/node/.style = {#1}}},
+    west/style .code:n = {\tikzset{square/west/.style = {#1}}},
+    west/node/style .code:n = {\tikzset{square/west/node/.style = {#1}}},
+    east/style .code:n = {\tikzset{square/east/.style = {#1}}},
+    east/node/style .code:n = {\tikzset{square/east/node/.style = {#1}}},
+
+    draft .meta:n = {
+      nw = {nw},
+      sw = {sw},
+      se = {se},
+      ne = {ne},
+      north = {north},
+      south = {south},
+      west = {west},
+      east = {east},
+    }
+  }
+
+  \tl_set:Nn \l_jon_tikz_diagram_width { 2cm }
+  \tl_set:Nn \l_jon_tikz_diagram_height { 2cm }
+
+
+  \cs_new:Nn \__jon_tikz_render_square:nn {
+    \group_begin:
+    \keys_set:nn {jon-tikz/diagram} {#2} {
+      \node (#1nw) [square/nw] {$\l_jon_tikz_diagram_nw$};
+      \node (#1sw) [below = \l_jon_tikz_diagram_height~of~#1nw,square/sw] {$\l_jon_tikz_diagram_sw$};
+      \draw[morphism,square/west] (#1nw) to node [square/west/node] {$\l_jon_tikz_diagram_west$} (#1sw);
+
+      \node (#1ne) [right = \l_jon_tikz_diagram_width~of~#1nw,square/ne] {$\l_jon_tikz_diagram_ne$};
+      \node (#1se) [below = \l_jon_tikz_diagram_height~of~#1ne,square/se] {$\l_jon_tikz_diagram_se$};
+      \draw[morphism,square/north] (#1nw) to node [square/north/node] {$\l_jon_tikz_diagram_north$} (#1ne);
+      \draw[morphism,square/east] (#1ne) to node [square/east/node] {$\l_jon_tikz_diagram_east$} (#1se);
+      \draw[morphism,square/south] (#1sw) to node [square/south/node] {$\l_jon_tikz_diagram_south$} (#1se);
+    }
+    \group_end:
+  }
+
+  % the optional argument allows one to specify a prefix to positions
+  \NewDocumentCommand\SpliceDiagramSquare{O{}m}{
+    \__jon_tikz_render_square:nn {#1} {#2}
+  }
+
+  \NewDocumentCommand\DiagramSquare{O{}O{}m}{
+    \begin{tikzpicture}[diagram,#2,baseline=(#1sw.base)]
+      \__jon_tikz_render_square:nn {#1} {#3}
+    \end{tikzpicture}
+  }
+  \ExplSyntaxOff
+
+      ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+    \DiagramSquare {
+      nw = {A \times  B},
+      nw/style = {pullback},
+      ne = A,
+      sw = {B \times  B},
+      se = B,
+      west = {f \times  \mathsf {id}_{B}},
+      west/style = {cover},
+      south = {\pi _{1}},
+      east = f,
+      east/style = {cover},
+    }
+    \qquad 
+    \DiagramSquare {
+      nw = {A \times  A},
+      nw/style = {pullback},
+      ne = A,
+      sw = {A \times  B},
+      se = B,
+      west = {\mathsf {id}_{A} \times  f},
+      west/style = {cover},
+      south = {\pi _{2}},
+      east = f,
+      east/style = {cover},
+    }
+  ]]></fr:embedded-tex-body></fr:embedded-tex>
+    
+  
+</fr:mainmatter><fr:backmatter /></fr:tree>
+    
+  </fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>865</fr:anchor><fr:addr
+type="user">ct-000M</fr:addr><fr:route>ct-000M.xml</fr:route><fr:title
+text="Extremal epimorphism">Extremal epimorphism</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>3</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>An epimorphism <fr:tex
+display="inline"><![CDATA[f\colon A\twoheadrightarrow B]]></fr:tex> is said to be <fr:em><fr:strong>extremal</fr:strong></fr:em> (also called a <fr:em><fr:strong>cover</fr:strong></fr:em>) if for any monomorphism <fr:tex
+display="inline"><![CDATA[m\colon C\rightarrowtail B]]></fr:tex> and any morphism <fr:tex
+display="inline"><![CDATA[g\colon A\to C]]></fr:tex> such that <fr:tex
+display="inline"><![CDATA[f = mg]]></fr:tex>, then <fr:tex
+display="inline"><![CDATA[m]]></fr:tex> is an isomorphism.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>866</fr:anchor><fr:addr
+type="user">ct-000O</fr:addr><fr:route>ct-000O.xml</fr:route><fr:title
+text="Regular category">Regular category</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>3</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>A category <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> is said to be <fr:em><fr:strong>regular</fr:strong></fr:em> if it is cartesian, has <fr:link
+type="local"
+href="ct-000K.xml"
+addr="ct-000K"
+title="Image">images</fr:link>, and <fr:link
+type="local"
+href="ct-000M.xml"
+addr="ct-000M"
+title="Extremal epimorphism">covers</fr:link> are stable under pullback.
+  A functor <fr:tex
+display="inline"><![CDATA[F\colon \mathcal {C}\to \mathcal {D}]]></fr:tex> between regular categories is said to be <fr:em><fr:strong>regular</fr:strong></fr:em> if it is cartesian and preserves covers.
+  Note that since cartesian functors preserve monomorphisms, every regular functor automatically preserves images.</fr:p>
+    
+      
+      <fr:tree
+toc="false"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>293</fr:anchor><fr:addr
+type="machine">#265</fr:addr><fr:route>unstable-265.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>3</fr:day></fr:date><fr:authors /><fr:parent>ct-000O</fr:parent></fr:frontmatter><fr:mainmatter>
+  <fr:p>Let <fr:tex
+display="inline"><![CDATA[F\colon \mathcal {C}\to \mathcal {D}]]></fr:tex> be a regular functor and <fr:tex
+display="inline"><![CDATA[f\colon A\to B]]></fr:tex> be a morphism in <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex>.
+    By <fr:ref
+addr="ct-000Q"
+href="ct-000Q.xml"
+taxon="Lemma" />, <fr:tex
+display="inline"><![CDATA[f]]></fr:tex> admits a cover-mono factorization <fr:tex
+display="inline"><![CDATA[f = \mathsf {Img}(f)\vartheta _{f}]]></fr:tex>.
+    Then since <fr:tex
+display="inline"><![CDATA[F]]></fr:tex> preserves monomorphisms and covers, <fr:tex
+display="inline"><![CDATA[F(\mathsf {Img}(f))F(\vartheta _{f})]]></fr:tex> forms a cover-mono factorization of <fr:tex
+display="inline"><![CDATA[F(f)]]></fr:tex>.
+    Then by uniqueness, <fr:tex
+display="inline"><![CDATA[\mathsf {Img}(Ff) \cong  F(\mathsf {Img}(f))]]></fr:tex>.</fr:p>
+</fr:mainmatter><fr:backmatter /></fr:tree>
+    
+  </fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

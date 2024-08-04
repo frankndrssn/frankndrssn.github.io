@@ -1,92 +1,115 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="default.xsl"?>
 <fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
 numbered="true"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>953</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>ct-000Y</fr:addr><fr:route>ct-000Y.xml</fr:route><fr:title>Strict initial object</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>7</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
-  Let <fr:tex>\mathcal { C }</fr:tex> be a category with an initial object <fr:tex>0</fr:tex>.
-  The initial object <fr:tex>0</fr:tex> is said to be <fr:em><fr:strong>strict</fr:strong></fr:em> if every morphism with codomain <fr:tex>0</fr:tex> is an isomorphism.
-</fr:p></fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context></fr:context><fr:related></fr:related><fr:backlinks><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>832</fr:anchor><fr:addr
+type="user">ct-000Y</fr:addr><fr:route>ct-000Y.xml</fr:route><fr:title
+text="Strict initial object">Strict initial object</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>7</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> be a category with an initial object <fr:tex
+display="inline"><![CDATA[0]]></fr:tex>.
+  The initial object <fr:tex
+display="inline"><![CDATA[0]]></fr:tex> is said to be <fr:em><fr:strong>strict</fr:strong></fr:em> if every morphism with codomain <fr:tex
+display="inline"><![CDATA[0]]></fr:tex> is an isomorphism.</fr:p></fr:mainmatter><fr:backmatter><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
+text="Backlinks">Backlinks</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>952</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>ct-000Z</fr:addr><fr:route>ct-000Z.xml</fr:route><fr:title><fr:link
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>833</fr:anchor><fr:addr
+type="user">ct-000Z</fr:addr><fr:route>ct-000Z.xml</fr:route><fr:title
+text="Coherent categories have an initial object"><fr:link
+type="local"
 href="ct-000X.xml"
+addr="ct-000X"
+title="Coherent category">Coherent categories</fr:link> have an initial object</fr:title><fr:taxon>Lemma</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>7</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> be a coherent category.
+  Then <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> has a <fr:link
 type="local"
-addr="ct-000X">Coherent categories</fr:link> have an initial object</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>7</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
-  Let <fr:tex>\mathcal { C }</fr:tex> be a coherent category.
-  Then <fr:tex>\mathcal { C }</fr:tex> has a <fr:link
 href="ct-000Y.xml"
-type="local"
-addr="ct-000Y">strict initial object</fr:link>.
-</fr:p>
+addr="ct-000Y"
+title="Strict initial object">strict initial object</fr:link>.</fr:p>
     
       
       <fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="false"
 numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>316</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>7</fr:day></fr:date><fr:parent>ct-000Z</fr:parent></fr:frontmatter><fr:mainmatter>
-  <fr:p>
-    We claim that the domain <fr:tex>0</fr:tex> of the least subterminal object of <fr:tex>\mathcal { C }</fr:tex> is the initial object.
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>388</fr:anchor><fr:addr
+type="machine">#257</fr:addr><fr:route>unstable-257.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>7</fr:day></fr:date><fr:authors /><fr:parent>ct-000Z</fr:parent></fr:frontmatter><fr:mainmatter>
+  <fr:p>We claim that the domain <fr:tex
+display="inline"><![CDATA[0]]></fr:tex> of the least subterminal object of <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> is the initial object.
     First, by <fr:ref
 addr="ct-0010"
 href="ct-0010.xml"
-taxon="Lemma"></fr:ref>, the projection map <fr:tex>\pi _{2} \colon A  \times  0 \to 0</fr:tex> is an isomorphism for any object <fr:tex>A  \in   \mathcal { C }</fr:tex>.
-    Thus, the composite <fr:tex>0  \xrightarrow { \pi _{2} ^{-1} }  A  \times  0  \xrightarrow { \pi _{1} }  A</fr:tex> gives a morphism from <fr:tex>0</fr:tex> to <fr:tex>A</fr:tex>, proving existence.
-    It remains to show uniqueness.
-  </fr:p>
-  <fr:p>
-    Let <fr:tex>a , b \colon 0 \rightrightarrows A</fr:tex> be a pair of morphisms.
-    Form the equalizer of <fr:tex>a</fr:tex> and <fr:tex>b</fr:tex>.
-  </fr:p>
+taxon="Lemma" />, the projection map <fr:tex
+display="inline"><![CDATA[\pi _{2}\colon A \times  0\to 0]]></fr:tex> is an isomorphism for any object <fr:tex
+display="inline"><![CDATA[A \in  \mathcal {C}]]></fr:tex>.
+    Thus, the composite <fr:tex
+display="inline"><![CDATA[0 \xrightarrow {\pi _{2}^{-1}} A \times  0 \xrightarrow {\pi _{1}} A]]></fr:tex> gives a morphism from <fr:tex
+display="inline"><![CDATA[0]]></fr:tex> to <fr:tex
+display="inline"><![CDATA[A]]></fr:tex>, proving existence.
+    It remains to show uniqueness.</fr:p>
+  <fr:p>Let <fr:tex
+display="inline"><![CDATA[a,b\colon 0\rightrightarrows A]]></fr:tex> be a pair of morphisms.
+    Form the equalizer of <fr:tex
+display="inline"><![CDATA[a]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[b]]></fr:tex>.</fr:p>
   
     
       
       <fr:embedded-tex
-hash="79e8af3e577d588298c4c24e3b628c92"><fr:embedded-tex-preamble>
-         
-   \RequirePackage {tikz}
-   \RequirePackage {amsmath}
-   \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
+hash="2871617dea9dda442091aa3acf90231f"><fr:embedded-tex-preamble><![CDATA[
+        
+  \RequirePackage {tikz}
+  \RequirePackage {amsmath}
+  \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
 
-   \definecolor {catccolor}{RGB}{255,244,138}
-   \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
-   \tikzstyle {catc}=[catccolor!60]
-   \tikzstyle {catd}=[orange!40]
-   \tikzstyle {cate}=[red!40]
-   \tikzstyle {catf}=[blue!10]
-   \tikzstyle {catg}=[green!25]
+  \definecolor {catccolor}{RGB}{255,244,138}
+  \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
+  \tikzstyle {catc}=[catccolor!60]
+  \tikzstyle {catd}=[orange!40]
+  \tikzstyle {cate}=[red!40]
+  \tikzstyle {catf}=[blue!10]
+  \tikzstyle {catg}=[green!25]
 
 
-   \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
-   \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
+  \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
+  \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
 
-   \NewDocumentCommand \CreateRect {D&lt;&gt;{} m m}{
-     \path 
+  \NewDocumentCommand \CreateRect {D<>{} m m}{
+    \path 
       coordinate (#1nw)
       ++(#2,-#3) coordinate (#1se)
       coordinate (#1sw) at (#1se -| #1nw)
       coordinate (#1ne) at (#1nw -| #1se)
     ;
 
-     \path [spath/save = #1north] (#1nw) to (#1ne);
-     \path [spath/save = #1west] (#1nw) to (#1sw);
-     \path [spath/save = #1east] (#1ne) to (#1se);
-     \path [spath/save = #1south] (#1sw) to (#1se);
+    \path [spath/save = #1north] (#1nw) to (#1ne);
+    \path [spath/save = #1west] (#1nw) to (#1sw);
+    \path [spath/save = #1east] (#1ne) to (#1se);
+    \path [spath/save = #1south] (#1sw) to (#1se);
   }
- 
-         
+
+        
    % appears to be necessary
   \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd}
   \usetikzlibrary{matrix,arrows}
@@ -155,7 +178,7 @@ hash="79e8af3e577d588298c4c24e3b628c92"><fr:embedded-tex-preamble>
       densely dashed
     },
     embedding/.style = {
-      {right hook}-&gt;
+      {right hook}->
     },
     cover/.style = {
       -{Triangle[open]}
@@ -187,10 +210,10 @@ hash="79e8af3e577d588298c4c24e3b628c92"><fr:embedded-tex-preamble>
     square/ne/.style = {},
     square/se/.style = {},
     square/sw/.style = {},
-    square/north/.style = {-&gt;},
-    square/south/.style = {-&gt;},
-    square/west/.style = {-&gt;},
-    square/east/.style = {-&gt;},
+    square/north/.style = {->},
+    square/south/.style = {->},
+    square/west/.style = {->},
+    square/east/.style = {->},
     square/north/node/.style = {above},
     square/south/node/.style = {below},
     square/west/node/.style = {left},
@@ -269,23 +292,26 @@ hash="79e8af3e577d588298c4c24e3b628c92"><fr:embedded-tex-preamble>
     \end{tikzpicture}
   }
   \ExplSyntaxOff
- 
-      </fr:embedded-tex-preamble><fr:embedded-tex-body>
-     \begin {tikzpicture}[diagram]
-       \node  (e) {$E$};
-       \node  [right = of e] (0) {$0$};
-       \node  [right = of 0] (a) {$A$};
-       \draw  [&gt;-&gt;,morphism] (e) to node {$e$} (0);
-       \draw  [-&gt;,morphism,offset=-1.5] (0) to node {$a$} (a);
-       \draw  [-&gt;,morphism,offset=1.5] (0) to node[swap] {$b$} (a);
-     \end {tikzpicture}
-  </fr:embedded-tex-body></fr:embedded-tex>
+
+      ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+    \begin {tikzpicture}[diagram]
+      \node  (e) {$E$};
+      \node  [right = of e] (0) {$0$};
+      \node  [right = of 0] (a) {$A$};
+      \draw  [>->,morphism] (e) to node {$e$} (0);
+      \draw  [->,morphism,offset=-1.5] (0) to node {$a$} (a);
+      \draw  [->,morphism,offset=1.5] (0) to node[swap] {$b$} (a);
+    \end {tikzpicture}
+  ]]></fr:embedded-tex-body></fr:embedded-tex>
     
   
-  <fr:p>
-    Since the codomain of <fr:tex>e</fr:tex> is <fr:tex>0</fr:tex>, <fr:tex>e</fr:tex> is an isomorphism.
-    Thus, <fr:tex>ae = be</fr:tex> implies that <fr:tex>a = b</fr:tex>.
-  </fr:p>
-</fr:mainmatter></fr:tree>
+  <fr:p>Since the codomain of <fr:tex
+display="inline"><![CDATA[e]]></fr:tex> is <fr:tex
+display="inline"><![CDATA[0]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[e]]></fr:tex> is an isomorphism.
+    Thus, <fr:tex
+display="inline"><![CDATA[ae = be]]></fr:tex> implies that <fr:tex
+display="inline"><![CDATA[a = b]]></fr:tex>.</fr:p>
+</fr:mainmatter><fr:backmatter /></fr:tree>
     
-  </fr:mainmatter></fr:tree></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>
+  </fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

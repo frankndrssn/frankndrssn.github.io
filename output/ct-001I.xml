@@ -1,23 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="default.xsl"?>
 <fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
 numbered="true"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>699</fr:anchor><fr:taxon>Construction</fr:taxon><fr:addr>ct-001I</fr:addr><fr:route>ct-001I.xml</fr:route><fr:title>Grothendieck construction</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>25</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:link
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>510</fr:anchor><fr:addr
+type="user">ct-001I</fr:addr><fr:route>ct-001I.xml</fr:route><fr:title
+text="Grothendieck construction">Grothendieck construction</fr:title><fr:taxon>Construction</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>25</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:link
+type="local"
 href="todo.xml"
+addr="todo"
+title="TODO">TODO</fr:link><fr:p>Fix notation and layout.</fr:p><fr:p>Given a <fr:link
 type="local"
-addr="todo">TODO</fr:link><fr:p>
-  Fix notation and layout.
-</fr:p><fr:p>
-  Given a <fr:link
 href="ct-001J.xml"
-type="local"
-addr="ct-001J">lax functor</fr:link> <fr:tex>(F,F^{2},F^{0})</fr:tex>, its <fr:em><fr:strong>Grothendieck construction</fr:strong></fr:em> <fr:tex>\mathsf {Elts}( F )</fr:tex> is the category defined as follows.
-</fr:p>
+addr="ct-001J"
+title="Lax functor">lax functor</fr:link> <fr:tex
+display="inline"><![CDATA[(F,F^{2},F^{0})]]></fr:tex>, its <fr:em><fr:strong>Grothendieck construction</fr:strong></fr:em> <fr:tex
+display="inline"><![CDATA[\mathsf {Elts}(F)]]></fr:tex> is the category defined as follows.</fr:p>
   <html:table
 xmlns:html="http://www.w3.org/1999/xhtml">
   
@@ -34,12 +36,22 @@ xmlns:html="http://www.w3.org/1999/xhtml">
   <html:tr>
     
   <html:td>
-      An object is a pair <fr:tex>(A,X)</fr:tex> where <fr:tex>A</fr:tex> is an object in <fr:tex>\mathcal { C }</fr:tex> and <fr:tex>X</fr:tex> is an object in <fr:tex>FA</fr:tex>.
+      An object is a pair <fr:tex
+display="inline"><![CDATA[(A,X)]]></fr:tex> where <fr:tex
+display="inline"><![CDATA[A]]></fr:tex> is an object in <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> is an object in <fr:tex
+display="inline"><![CDATA[FA]]></fr:tex>.
     </html:td>
 
     
   <html:td>
-      A morphism <fr:tex>(A,X)  \to  (B,Y)</fr:tex> consists of a morphism <fr:tex>f \colon A \to B</fr:tex> in <fr:tex>\mathcal { C }</fr:tex> and a morphism <fr:tex>p \colon X \to F(f)Y</fr:tex> in <fr:tex>FA</fr:tex>.
+      A morphism <fr:tex
+display="inline"><![CDATA[(A,X) \to  (B,Y)]]></fr:tex> consists of a morphism <fr:tex
+display="inline"><![CDATA[f\colon A\to B]]></fr:tex> in <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> and a morphism <fr:tex
+display="inline"><![CDATA[p\colon X\to F(f)Y]]></fr:tex> in <fr:tex
+display="inline"><![CDATA[FA]]></fr:tex>.
     </html:td>
 
   </html:tr>
@@ -58,90 +70,146 @@ xmlns:html="http://www.w3.org/1999/xhtml">
   <html:tr>
     
   <html:td>
-      The identity on each object <fr:tex>(A,X)</fr:tex> consists of the identity morphism <fr:tex>\mathsf {id} _{ A } \colon A \to A</fr:tex> and the morphism <fr:tex>(F^{0}_{A})_{X} \colon X \to F( \mathsf {id} _{ A } )X</fr:tex>.
+      The identity on each object <fr:tex
+display="inline"><![CDATA[(A,X)]]></fr:tex> consists of the identity morphism <fr:tex
+display="inline"><![CDATA[\mathsf {id}_{A}\colon A\to A]]></fr:tex> and the morphism <fr:tex
+display="inline"><![CDATA[(F^{0}_{A})_{X}\colon X\to F(\mathsf {id}_{A})X]]></fr:tex>.
     </html:td>
 
     
   <html:td>
-      Given a pair of composable morphisms <fr:tex>(f,p) \colon (A,X) \to (B,Y)</fr:tex> and <fr:tex>(g,q) \colon (B,Y) \to (C,Z)</fr:tex>, the composite <fr:tex>(g,q)(f,p) \colon (A,X) \to (C,Z)</fr:tex> consists of the composite <fr:tex>gf \colon A \to C</fr:tex> and the composite
+      Given a pair of composable morphisms <fr:tex
+display="inline"><![CDATA[(f,p)\colon (A,X)\to (B,Y)]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[(g,q)\colon (B,Y)\to (C,Z)]]></fr:tex>, the composite <fr:tex
+display="inline"><![CDATA[(g,q)(f,p)\colon (A,X)\to (C,Z)]]></fr:tex> consists of the composite <fr:tex
+display="inline"><![CDATA[gf\colon A\to C]]></fr:tex> and the composite
       <fr:tex
-display="block">         X  \xrightarrow { p }  F(f)Y  \xrightarrow { F(f)q }  F(f)F(g)Z  \xrightarrow { (F^{2}_{f,g})_{Z} }  F(gf)Z       </fr:tex>
+display="block"><![CDATA[         X \xrightarrow {p} F(f)Y \xrightarrow {F(f)q} F(f)F(g)Z \xrightarrow {(F^{2}_{f,g})_{Z}} F(gf)Z       ]]></fr:tex>
     </html:td>
 
   </html:tr>
 
 </html:table>
-</fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context></fr:context><fr:related><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+</fr:mainmatter><fr:backmatter><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
+text="Related">Related</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>696</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>ct-001J</fr:addr><fr:route>ct-001J.xml</fr:route><fr:title>Lax functor</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>25</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
-  Let <fr:tex>\mathcal { C }</fr:tex> and <fr:tex>\mathcal { D }</fr:tex> be <fr:link
-href="ct-001M.xml"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>524</fr:anchor><fr:addr
+type="user">ct-001J</fr:addr><fr:route>ct-001J.xml</fr:route><fr:title
+text="Lax functor">Lax functor</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>25</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[\mathcal {D}]]></fr:tex> be <fr:link
 type="local"
-addr="ct-001M">bicategories</fr:link>.
-  We write <fr:tex>a</fr:tex>, <fr:tex>\ell</fr:tex>, <fr:tex>r</fr:tex> for the associator, left unitor, and right unitor of <fr:tex>\mathcal { C }</fr:tex> respectively and we use the primed version of these symbols for the corresponding structures in <fr:tex>\mathcal { D }</fr:tex>.
-</fr:p><fr:p>
-  A <fr:em><fr:strong>lax functor</fr:strong></fr:em> <fr:tex>F \colon \mathcal { C } \to \mathcal { D }</fr:tex> consists of the following data:
-</fr:p><fr:ul><fr:li><fr:em><fr:strong>Action on <fr:tex>0</fr:tex>-cells</fr:strong></fr:em>: Each <fr:tex>0</fr:tex>-cell <fr:tex>A</fr:tex> in <fr:tex>\mathcal { C }</fr:tex> is mapped to a specified <fr:tex>0</fr:tex>-cell <fr:tex>FA</fr:tex> in <fr:tex>\mathcal { D }</fr:tex>.
-  </fr:li>
-  <fr:li><fr:em><fr:strong>Action on <fr:tex>1</fr:tex>-cells</fr:strong></fr:em>: Each <fr:tex>1</fr:tex>-cell <fr:tex>f \colon A \to B</fr:tex> in <fr:tex>\mathcal { C }</fr:tex> is mapped to a specified <fr:tex>1</fr:tex>-cell <fr:tex>Ff \colon FA \to FB</fr:tex> in <fr:tex>\mathcal { D }</fr:tex>.
-  </fr:li>
-  <fr:li><fr:em><fr:strong>Action on <fr:tex>2</fr:tex>-cells</fr:strong></fr:em>: Each <fr:tex>2</fr:tex>-cell <fr:tex>\alpha \colon f \to g</fr:tex> in <fr:tex>\mathcal { C }</fr:tex> is mapped to a specified <fr:tex>2</fr:tex>-cell <fr:tex>F \alpha \colon Ff \to Fg</fr:tex> in <fr:tex>\mathcal { D }</fr:tex>.
-  </fr:li>
-  <fr:li><fr:em><fr:strong>Lax functoriality constraint</fr:strong></fr:em>: For any pair of composable <fr:tex>1</fr:tex>-cells <fr:tex>g</fr:tex>, <fr:tex>f</fr:tex> in <fr:tex>\mathcal { C }</fr:tex>, a specified <fr:tex>2</fr:tex>-cell <fr:tex>F^{2}_{g,f} \colon FgFf \to F(gf)</fr:tex> in <fr:tex>\mathcal { D }</fr:tex>.
-  </fr:li>
-  <fr:li><fr:em><fr:strong>Lax unity constraint</fr:strong></fr:em>: For any <fr:tex>0</fr:tex>-cell <fr:tex>A</fr:tex> in <fr:tex>\mathcal { C }</fr:tex>, a specified <fr:tex>2</fr:tex>-cell <fr:tex>F^{0}_{A} \colon \mathsf {id} _{ FA } \to F( \mathsf {id} _{ A } )</fr:tex> in <fr:tex>\mathcal { D }</fr:tex>.
-  </fr:li></fr:ul><fr:p>
-  These data are subject to the following conditions:
-</fr:p><fr:ul><fr:li>
-    For any <fr:tex>1</fr:tex>-cell <fr:tex>f \colon A \to B</fr:tex> in <fr:tex>\mathcal { C }</fr:tex>, the equation <fr:tex>F( \mathsf {id} _{ f } ) =  \mathsf {id} _{ Ff }</fr:tex> holds.
-  </fr:li>
-  <fr:li>
-    For any vertically composable <fr:tex>2</fr:tex>-cells <fr:tex>\alpha</fr:tex>, <fr:tex>\beta</fr:tex> in <fr:tex>\mathcal { C }</fr:tex>, the equation <fr:tex>F( \beta \alpha ) = F \beta  F \alpha</fr:tex> holds.
-  </fr:li></fr:ul><fr:p>
-  The laxity constraints are subject to the following additional conditions:
-</fr:p><fr:ul><fr:li><fr:em><fr:strong>Naturality of functoriality constraint</fr:strong></fr:em>: For any pair of <fr:tex>2</fr:tex>-cells <fr:tex>\alpha \colon f \to f'</fr:tex>, <fr:tex>\beta \colon g \to g'</fr:tex> in <fr:tex>\mathcal { C }</fr:tex> such that every component of the following diagram is defined, the diagram commutes.
+href="ct-001M.xml"
+addr="ct-001M"
+title="Bicategory">bicategories</fr:link>.
+  We write <fr:tex
+display="inline"><![CDATA[a]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[\ell ]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[r]]></fr:tex> for the associator, left unitor, and right unitor of <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> respectively and we use the primed version of these symbols for the corresponding structures in <fr:tex
+display="inline"><![CDATA[\mathcal {D}]]></fr:tex>.</fr:p><fr:p>A <fr:em><fr:strong>lax functor</fr:strong></fr:em> <fr:tex
+display="inline"><![CDATA[F\colon \mathcal {C}\to \mathcal {D}]]></fr:tex> consists of the following data:</fr:p><fr:ul><fr:li><fr:em><fr:strong>Action on <fr:tex
+display="inline"><![CDATA[0]]></fr:tex>-cells</fr:strong></fr:em>: Each <fr:tex
+display="inline"><![CDATA[0]]></fr:tex>-cell <fr:tex
+display="inline"><![CDATA[A]]></fr:tex> in <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> is mapped to a specified <fr:tex
+display="inline"><![CDATA[0]]></fr:tex>-cell <fr:tex
+display="inline"><![CDATA[FA]]></fr:tex> in <fr:tex
+display="inline"><![CDATA[\mathcal {D}]]></fr:tex>.</fr:li>
+  <fr:li><fr:em><fr:strong>Action on <fr:tex
+display="inline"><![CDATA[1]]></fr:tex>-cells</fr:strong></fr:em>: Each <fr:tex
+display="inline"><![CDATA[1]]></fr:tex>-cell <fr:tex
+display="inline"><![CDATA[f\colon A\to B]]></fr:tex> in <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> is mapped to a specified <fr:tex
+display="inline"><![CDATA[1]]></fr:tex>-cell <fr:tex
+display="inline"><![CDATA[Ff\colon FA\to FB]]></fr:tex> in <fr:tex
+display="inline"><![CDATA[\mathcal {D}]]></fr:tex>.</fr:li>
+  <fr:li><fr:em><fr:strong>Action on <fr:tex
+display="inline"><![CDATA[2]]></fr:tex>-cells</fr:strong></fr:em>: Each <fr:tex
+display="inline"><![CDATA[2]]></fr:tex>-cell <fr:tex
+display="inline"><![CDATA[\alpha \colon f\to g]]></fr:tex> in <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> is mapped to a specified <fr:tex
+display="inline"><![CDATA[2]]></fr:tex>-cell <fr:tex
+display="inline"><![CDATA[F\alpha \colon Ff\to Fg]]></fr:tex> in <fr:tex
+display="inline"><![CDATA[\mathcal {D}]]></fr:tex>.</fr:li>
+  <fr:li><fr:em><fr:strong>Lax functoriality constraint</fr:strong></fr:em>: For any pair of composable <fr:tex
+display="inline"><![CDATA[1]]></fr:tex>-cells <fr:tex
+display="inline"><![CDATA[g]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[f]]></fr:tex> in <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex>, a specified <fr:tex
+display="inline"><![CDATA[2]]></fr:tex>-cell <fr:tex
+display="inline"><![CDATA[F^{2}_{g,f}\colon FgFf\to F(gf)]]></fr:tex> in <fr:tex
+display="inline"><![CDATA[\mathcal {D}]]></fr:tex>.</fr:li>
+  <fr:li><fr:em><fr:strong>Lax unity constraint</fr:strong></fr:em>: For any <fr:tex
+display="inline"><![CDATA[0]]></fr:tex>-cell <fr:tex
+display="inline"><![CDATA[A]]></fr:tex> in <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex>, a specified <fr:tex
+display="inline"><![CDATA[2]]></fr:tex>-cell <fr:tex
+display="inline"><![CDATA[F^{0}_{A}\colon \mathsf {id}_{FA}\to F(\mathsf {id}_{A})]]></fr:tex> in <fr:tex
+display="inline"><![CDATA[\mathcal {D}]]></fr:tex>.</fr:li></fr:ul><fr:p>These data are subject to the following conditions:</fr:p><fr:ul><fr:li>For any <fr:tex
+display="inline"><![CDATA[1]]></fr:tex>-cell <fr:tex
+display="inline"><![CDATA[f\colon A\to B]]></fr:tex> in <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex>, the equation <fr:tex
+display="inline"><![CDATA[F(\mathsf {id}_{f}) = \mathsf {id}_{Ff}]]></fr:tex> holds.</fr:li>
+  <fr:li>For any vertically composable <fr:tex
+display="inline"><![CDATA[2]]></fr:tex>-cells <fr:tex
+display="inline"><![CDATA[\alpha ]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[\beta ]]></fr:tex> in <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex>, the equation <fr:tex
+display="inline"><![CDATA[F(\beta \alpha ) = F\beta  F\alpha ]]></fr:tex> holds.</fr:li></fr:ul><fr:p>The laxity constraints are subject to the following additional conditions:</fr:p><fr:ul><fr:li><fr:em><fr:strong>Naturality of functoriality constraint</fr:strong></fr:em>: For any pair of <fr:tex
+display="inline"><![CDATA[2]]></fr:tex>-cells <fr:tex
+display="inline"><![CDATA[\alpha \colon f\to f']]></fr:tex>, <fr:tex
+display="inline"><![CDATA[\beta \colon g\to g']]></fr:tex> in <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> such that every component of the following diagram is defined, the diagram commutes.
     
     
       
       <fr:embedded-tex
-hash="fe162a2d19faa39ca4b86ece6f5051a4"><fr:embedded-tex-preamble>
-         
-   \RequirePackage {tikz}
-   \RequirePackage {amsmath}
-   \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
+hash="fc7813c32092b7a88138eb0c8db24041"><fr:embedded-tex-preamble><![CDATA[
+        
+  \RequirePackage {tikz}
+  \RequirePackage {amsmath}
+  \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
 
-   \definecolor {catccolor}{RGB}{255,244,138}
-   \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
-   \tikzstyle {catc}=[catccolor!60]
-   \tikzstyle {catd}=[orange!40]
-   \tikzstyle {cate}=[red!40]
-   \tikzstyle {catf}=[blue!10]
-   \tikzstyle {catg}=[green!25]
+  \definecolor {catccolor}{RGB}{255,244,138}
+  \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
+  \tikzstyle {catc}=[catccolor!60]
+  \tikzstyle {catd}=[orange!40]
+  \tikzstyle {cate}=[red!40]
+  \tikzstyle {catf}=[blue!10]
+  \tikzstyle {catg}=[green!25]
 
 
-   \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
-   \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
+  \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
+  \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
 
-   \NewDocumentCommand \CreateRect {D&lt;&gt;{} m m}{
-     \path 
+  \NewDocumentCommand \CreateRect {D<>{} m m}{
+    \path 
       coordinate (#1nw)
       ++(#2,-#3) coordinate (#1se)
       coordinate (#1sw) at (#1se -| #1nw)
       coordinate (#1ne) at (#1nw -| #1se)
     ;
 
-     \path [spath/save = #1north] (#1nw) to (#1ne);
-     \path [spath/save = #1west] (#1nw) to (#1sw);
-     \path [spath/save = #1east] (#1ne) to (#1se);
-     \path [spath/save = #1south] (#1sw) to (#1se);
+    \path [spath/save = #1north] (#1nw) to (#1ne);
+    \path [spath/save = #1west] (#1nw) to (#1sw);
+    \path [spath/save = #1east] (#1ne) to (#1se);
+    \path [spath/save = #1south] (#1sw) to (#1se);
   }
- 
-         
+
+        
    % appears to be necessary
   \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd}
   \usetikzlibrary{matrix,arrows}
@@ -210,7 +278,7 @@ hash="fe162a2d19faa39ca4b86ece6f5051a4"><fr:embedded-tex-preamble>
       densely dashed
     },
     embedding/.style = {
-      {right hook}-&gt;
+      {right hook}->
     },
     cover/.style = {
       -{Triangle[open]}
@@ -242,10 +310,10 @@ hash="fe162a2d19faa39ca4b86ece6f5051a4"><fr:embedded-tex-preamble>
     square/ne/.style = {},
     square/se/.style = {},
     square/sw/.style = {},
-    square/north/.style = {-&gt;},
-    square/south/.style = {-&gt;},
-    square/west/.style = {-&gt;},
-    square/east/.style = {-&gt;},
+    square/north/.style = {->},
+    square/south/.style = {->},
+    square/west/.style = {->},
+    square/east/.style = {->},
     square/north/node/.style = {above},
     square/south/node/.style = {below},
     square/west/node/.style = {left},
@@ -324,9 +392,9 @@ hash="fe162a2d19faa39ca4b86ece6f5051a4"><fr:embedded-tex-preamble>
     \end{tikzpicture}
   }
   \ExplSyntaxOff
- 
-      </fr:embedded-tex-preamble><fr:embedded-tex-body>
-       \DiagramSquare {
+
+      ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+      \DiagramSquare {
         width = 3cm,
         nw = FgFf,
         ne = F(gf),
@@ -334,48 +402,53 @@ hash="fe162a2d19faa39ca4b86ece6f5051a4"><fr:embedded-tex-preamble>
         se = {F(g'f')},
         north = {F^{2}_{g,f}},
         south = {F^{2}_{g',f'}},
-        west = {F \beta  * F \alpha },
-        east = {F( \beta  *  \alpha )},
+        west = {F\beta  * F\alpha },
+        east = {F(\beta  * \alpha )},
       }
-    </fr:embedded-tex-body></fr:embedded-tex></fr:li>
-  <fr:li><fr:em><fr:strong>Lax associativity</fr:strong></fr:em>: For any composable triple of <fr:tex>1</fr:tex>-cells <fr:tex>f</fr:tex>, <fr:tex>g</fr:tex>, <fr:tex>h</fr:tex> in <fr:tex>\mathcal { C }</fr:tex>, the following diagram commutes.
+    ]]></fr:embedded-tex-body></fr:embedded-tex></fr:li>
+  <fr:li><fr:em><fr:strong>Lax associativity</fr:strong></fr:em>: For any composable triple of <fr:tex
+display="inline"><![CDATA[1]]></fr:tex>-cells <fr:tex
+display="inline"><![CDATA[f]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[g]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[h]]></fr:tex> in <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex>, the following diagram commutes.
     
     
       
       <fr:embedded-tex
-hash="862254b7682601251aad43c48179308c"><fr:embedded-tex-preamble>
-         
-   \RequirePackage {tikz}
-   \RequirePackage {amsmath}
-   \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
+hash="1a9c768136e906f8454230821e9df1b0"><fr:embedded-tex-preamble><![CDATA[
+        
+  \RequirePackage {tikz}
+  \RequirePackage {amsmath}
+  \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
 
-   \definecolor {catccolor}{RGB}{255,244,138}
-   \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
-   \tikzstyle {catc}=[catccolor!60]
-   \tikzstyle {catd}=[orange!40]
-   \tikzstyle {cate}=[red!40]
-   \tikzstyle {catf}=[blue!10]
-   \tikzstyle {catg}=[green!25]
+  \definecolor {catccolor}{RGB}{255,244,138}
+  \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
+  \tikzstyle {catc}=[catccolor!60]
+  \tikzstyle {catd}=[orange!40]
+  \tikzstyle {cate}=[red!40]
+  \tikzstyle {catf}=[blue!10]
+  \tikzstyle {catg}=[green!25]
 
 
-   \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
-   \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
+  \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
+  \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
 
-   \NewDocumentCommand \CreateRect {D&lt;&gt;{} m m}{
-     \path 
+  \NewDocumentCommand \CreateRect {D<>{} m m}{
+    \path 
       coordinate (#1nw)
       ++(#2,-#3) coordinate (#1se)
       coordinate (#1sw) at (#1se -| #1nw)
       coordinate (#1ne) at (#1nw -| #1se)
     ;
 
-     \path [spath/save = #1north] (#1nw) to (#1ne);
-     \path [spath/save = #1west] (#1nw) to (#1sw);
-     \path [spath/save = #1east] (#1ne) to (#1se);
-     \path [spath/save = #1south] (#1sw) to (#1se);
+    \path [spath/save = #1north] (#1nw) to (#1ne);
+    \path [spath/save = #1west] (#1nw) to (#1sw);
+    \path [spath/save = #1east] (#1ne) to (#1se);
+    \path [spath/save = #1south] (#1sw) to (#1se);
   }
- 
-         
+
+        
    % appears to be necessary
   \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd}
   \usetikzlibrary{matrix,arrows}
@@ -444,7 +517,7 @@ hash="862254b7682601251aad43c48179308c"><fr:embedded-tex-preamble>
       densely dashed
     },
     embedding/.style = {
-      {right hook}-&gt;
+      {right hook}->
     },
     cover/.style = {
       -{Triangle[open]}
@@ -476,10 +549,10 @@ hash="862254b7682601251aad43c48179308c"><fr:embedded-tex-preamble>
     square/ne/.style = {},
     square/se/.style = {},
     square/sw/.style = {},
-    square/north/.style = {-&gt;},
-    square/south/.style = {-&gt;},
-    square/west/.style = {-&gt;},
-    square/east/.style = {-&gt;},
+    square/north/.style = {->},
+    square/south/.style = {->},
+    square/west/.style = {->},
+    square/east/.style = {->},
     square/north/node/.style = {above},
     square/south/node/.style = {below},
     square/west/node/.style = {left},
@@ -558,61 +631,64 @@ hash="862254b7682601251aad43c48179308c"><fr:embedded-tex-preamble>
     \end{tikzpicture}
   }
   \ExplSyntaxOff
- 
-      </fr:embedded-tex-preamble><fr:embedded-tex-body>
-       \begin {tikzpicture}[diagram,node distance = 3cm and 4cm]
-         \node  (1) {$(FhFg)Ff$};
-         \node  [right = of 1] (2) {$F(hg)Ff$};
-         \node  [right = of 2] (3) {$F((hg)f)$};
-         \node  [below = of 1] (4) {$Fh(FgFf)$};
-         \node  [right = of 4] (5) {$FhF(gf)$};
-         \node  [right = of 5] (6) {$F(h(gf))$};
-         \draw  [-&gt;,morphism] (1) to node {$F^{2}_{h,g} *  \mathsf {id} _{ Ff } $} (2);
-         \draw  [-&gt;,morphism] (2) to node {$F^{2}_{hg,f}$} (3);
-         \draw  [-&gt;,morphism] (3) to node {$Fa$} (6);
-         \draw  [-&gt;,morphism] (1) to node[swap] {$a'$} (4);
-         \draw  [-&gt;,morphism] (4) to node[swap] {$ \mathsf {id} _{ Fh }  * F^{2}_{g,f}$} (5);
-         \draw  [-&gt;,morphism] (5) to node[swap] {$F^{2}_{h,gf}$} (6);
-       \end {tikzpicture}
-    </fr:embedded-tex-body></fr:embedded-tex></fr:li>
-  <fr:li><fr:em><fr:strong>Lax left and right unity</fr:strong></fr:em>: For any <fr:tex>1</fr:tex>-cell <fr:tex>f \colon A \to B</fr:tex> in <fr:tex>\mathcal { C }</fr:tex>, the following diagrams commute.
+
+      ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+      \begin {tikzpicture}[diagram,node distance = 3cm and 4cm]
+        \node  (1) {$(FhFg)Ff$};
+        \node  [right = of 1] (2) {$F(hg)Ff$};
+        \node  [right = of 2] (3) {$F((hg)f)$};
+        \node  [below = of 1] (4) {$Fh(FgFf)$};
+        \node  [right = of 4] (5) {$FhF(gf)$};
+        \node  [right = of 5] (6) {$F(h(gf))$};
+        \draw  [->,morphism] (1) to node {$F^{2}_{h,g} * \mathsf {id}_{Ff}$} (2);
+        \draw  [->,morphism] (2) to node {$F^{2}_{hg,f}$} (3);
+        \draw  [->,morphism] (3) to node {$Fa$} (6);
+        \draw  [->,morphism] (1) to node[swap] {$a'$} (4);
+        \draw  [->,morphism] (4) to node[swap] {$\mathsf {id}_{Fh} * F^{2}_{g,f}$} (5);
+        \draw  [->,morphism] (5) to node[swap] {$F^{2}_{h,gf}$} (6);
+      \end {tikzpicture}
+    ]]></fr:embedded-tex-body></fr:embedded-tex></fr:li>
+  <fr:li><fr:em><fr:strong>Lax left and right unity</fr:strong></fr:em>: For any <fr:tex
+display="inline"><![CDATA[1]]></fr:tex>-cell <fr:tex
+display="inline"><![CDATA[f\colon A\to B]]></fr:tex> in <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex>, the following diagrams commute.
     
     
       
       <fr:embedded-tex
-hash="d9a5cf2ae77087b8b3172423f31fe946"><fr:embedded-tex-preamble>
-         
-   \RequirePackage {tikz}
-   \RequirePackage {amsmath}
-   \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
+hash="02d1c0a5bd8905f1a0f64bdb4ae6f267"><fr:embedded-tex-preamble><![CDATA[
+        
+  \RequirePackage {tikz}
+  \RequirePackage {amsmath}
+  \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
 
-   \definecolor {catccolor}{RGB}{255,244,138}
-   \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
-   \tikzstyle {catc}=[catccolor!60]
-   \tikzstyle {catd}=[orange!40]
-   \tikzstyle {cate}=[red!40]
-   \tikzstyle {catf}=[blue!10]
-   \tikzstyle {catg}=[green!25]
+  \definecolor {catccolor}{RGB}{255,244,138}
+  \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
+  \tikzstyle {catc}=[catccolor!60]
+  \tikzstyle {catd}=[orange!40]
+  \tikzstyle {cate}=[red!40]
+  \tikzstyle {catf}=[blue!10]
+  \tikzstyle {catg}=[green!25]
 
 
-   \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
-   \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
+  \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
+  \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
 
-   \NewDocumentCommand \CreateRect {D&lt;&gt;{} m m}{
-     \path 
+  \NewDocumentCommand \CreateRect {D<>{} m m}{
+    \path 
       coordinate (#1nw)
       ++(#2,-#3) coordinate (#1se)
       coordinate (#1sw) at (#1se -| #1nw)
       coordinate (#1ne) at (#1nw -| #1se)
     ;
 
-     \path [spath/save = #1north] (#1nw) to (#1ne);
-     \path [spath/save = #1west] (#1nw) to (#1sw);
-     \path [spath/save = #1east] (#1ne) to (#1se);
-     \path [spath/save = #1south] (#1sw) to (#1se);
+    \path [spath/save = #1north] (#1nw) to (#1ne);
+    \path [spath/save = #1west] (#1nw) to (#1sw);
+    \path [spath/save = #1east] (#1ne) to (#1se);
+    \path [spath/save = #1south] (#1sw) to (#1se);
   }
- 
-         
+
+        
    % appears to be necessary
   \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd}
   \usetikzlibrary{matrix,arrows}
@@ -681,7 +757,7 @@ hash="d9a5cf2ae77087b8b3172423f31fe946"><fr:embedded-tex-preamble>
       densely dashed
     },
     embedding/.style = {
-      {right hook}-&gt;
+      {right hook}->
     },
     cover/.style = {
       -{Triangle[open]}
@@ -713,10 +789,10 @@ hash="d9a5cf2ae77087b8b3172423f31fe946"><fr:embedded-tex-preamble>
     square/ne/.style = {},
     square/se/.style = {},
     square/sw/.style = {},
-    square/north/.style = {-&gt;},
-    square/south/.style = {-&gt;},
-    square/west/.style = {-&gt;},
-    square/east/.style = {-&gt;},
+    square/north/.style = {->},
+    square/south/.style = {->},
+    square/west/.style = {->},
+    square/east/.style = {->},
     square/north/node/.style = {above},
     square/south/node/.style = {below},
     square/west/node/.style = {left},
@@ -795,41 +871,44 @@ hash="d9a5cf2ae77087b8b3172423f31fe946"><fr:embedded-tex-preamble>
     \end{tikzpicture}
   }
   \ExplSyntaxOff
- 
-      </fr:embedded-tex-preamble><fr:embedded-tex-body>
-       \DiagramSquare {
+
+      ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+      \DiagramSquare {
         width = 3cm,
-        nw = { \mathsf {id} _{ FB } Ff},
+        nw = {\mathsf {id}_{FB}Ff},
         ne = {Ff},
-        sw = {F( \mathsf {id} _{ B } )Ff},
-        se = {F( \mathsf {id} _{ B } f)},
-        east/style = {&lt;-},
-        north = { \ell '_{Ff}},
-        west = {F^{0}_{B} *  \mathsf {id} _{ Ff } },
-        south = {F^{2}_{ \mathsf {id} _{ B } ,f}},
-        east = {F( \ell _{f})},
+        sw = {F(\mathsf {id}_{B})Ff},
+        se = {F(\mathsf {id}_{B}f)},
+        east/style = {<-},
+        north = {\ell '_{Ff}},
+        west = {F^{0}_{B} * \mathsf {id}_{Ff}},
+        south = {F^{2}_{\mathsf {id}_{B},f}},
+        east = {F(\ell _{f})},
       }
-       \qquad 
-       \DiagramSquare {
+      \qquad 
+      \DiagramSquare {
         width = 3cm,
-        nw = {Ff \mathsf {id} _{ FA } },
+        nw = {Ff\mathsf {id}_{FA}},
         ne = {Ff},
-        sw = {FfF( \mathsf {id} _{ A } )},
-        se = {F(f \mathsf {id} _{ A } )},
-        east/style = {&lt;-},
+        sw = {FfF(\mathsf {id}_{A})},
+        se = {F(f\mathsf {id}_{A})},
+        east/style = {<-},
         north = {r'_{Ff}},
-        west = { \mathsf {id} _{ Ff }  * F^{0}_{A}},
-        south = {F^{2}_{f, \mathsf {id} _{ A } }},
+        west = {\mathsf {id}_{Ff} * F^{0}_{A}},
+        south = {F^{2}_{f,\mathsf {id}_{A}}},
         east = {F(r_{f})},
       }
-    </fr:embedded-tex-body></fr:embedded-tex></fr:li></fr:ul></fr:mainmatter></fr:tree><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+    ]]></fr:embedded-tex-body></fr:embedded-tex></fr:li></fr:ul></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>697</fr:anchor><fr:addr>todo</fr:addr><fr:route>todo.xml</fr:route><fr:title>TODO</fr:title><fr:authors><fr:author><fr:link
-href="frankndrssn.xml"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>525</fr:anchor><fr:addr
+type="user">todo</fr:addr><fr:route>todo.xml</fr:route><fr:title
+text="TODO">TODO</fr:title><fr:authors><fr:author><fr:link
 type="local"
-addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter></fr:mainmatter></fr:tree></fr:related><fr:backlinks></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>
+href="frankndrssn.xml"
+addr="frankndrssn"
+title="Frank Tsai">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter /><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

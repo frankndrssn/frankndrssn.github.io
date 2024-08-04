@@ -1,100 +1,112 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="default.xsl"?>
 <fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
 numbered="true"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>263</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>log-000R</fr:addr><fr:route>log-000R.xml</fr:route><fr:title><fr:link
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>294</fr:anchor><fr:addr
+type="user">log-000R</fr:addr><fr:route>log-000R.xml</fr:route><fr:title
+text="Comprehension schema via syntactic category"><fr:link
+type="local"
 href="log-000I.xml"
+addr="log-000I"
+title="Comprehension schema">Comprehension schema</fr:link> via syntactic category</fr:title><fr:taxon>Lemma</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>7</fr:month><fr:day>3</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[T\colon \mathcal {C}^\mathrm {op}\to \mathsf {Lat}]]></fr:tex> be a <fr:link
 type="local"
-addr="log-000I">Comprehension schema</fr:link> via syntactic category</fr:title><fr:date><fr:year>2024</fr:year><fr:month>7</fr:month><fr:day>3</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
-  Let <fr:tex>T \colon \mathcal { C } ^ \mathrm {op} \to \mathsf { Lat }</fr:tex> be a <fr:link
 href="log-000C.xml"
-type="local"
-addr="log-000C">doctrine</fr:link> with those structures listed in <fr:ref
+addr="log-000C"
+title="Doctrine">doctrine</fr:link> with those structures listed in <fr:ref
 addr="log-000H"
 href="log-000H.xml"
-taxon="Lemma"></fr:ref>.
-  Additionally, assume that <fr:tex>T</fr:tex> satisfies <fr:link
-href="log-000D.xml"
+taxon="Lemma" />.
+  Additionally, assume that <fr:tex
+display="inline"><![CDATA[T]]></fr:tex> satisfies <fr:link
 type="local"
-addr="log-000D">Frobenius reciprocity</fr:link>.
-  Then there is a doctrine <fr:tex>T^{ \flat } \colon \mathsf {Elts}( T ) ^ \mathrm {op} \to \mathsf { Lat }</fr:tex> indexed by the syntactic category of <fr:tex>T</fr:tex> such that <fr:tex>T^{ \flat }</fr:tex> admits comprehension schema.
-</fr:p>
+href="log-000D.xml"
+addr="log-000D"
+title="Frobenius reciprocity">Frobenius reciprocity</fr:link>.
+  Then there is a doctrine <fr:tex
+display="inline"><![CDATA[T^{\flat }\colon \mathsf {Elts}(T)^\mathrm {op}\to \mathsf {Lat}]]></fr:tex> indexed by the syntactic category of <fr:tex
+display="inline"><![CDATA[T]]></fr:tex> such that <fr:tex
+display="inline"><![CDATA[T^{\flat }]]></fr:tex> admits comprehension schema.</fr:p>
     
       
       <fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="false"
 numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>262</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>7</fr:month><fr:day>3</fr:day></fr:date><fr:parent>log-000R</fr:parent></fr:frontmatter><fr:mainmatter>
-  <fr:p>
-    This proof is adopted from Errol Yuksel's proof.
-    Any error should be attributed to me.
-  </fr:p>
-  <fr:p>
-    Let us define the action on objects by <fr:tex>T^{ \flat }( \Gamma . \varphi ) =  {{ T( \Gamma ) }_{/{ \varphi }}}</fr:tex>.
-    That is, <fr:tex>T^{ \flat }</fr:tex> sends each formula-in-context <fr:tex>\Gamma . \varphi</fr:tex> to its downward closure ordered by entailment.
-    By assumption, each <fr:tex>T( \Gamma )</fr:tex> is cartesian.
-    Thus, each slice <fr:tex>{{ T( \Gamma ) }_{/{ \varphi }}}</fr:tex> is also cartesian by <fr:ref
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>295</fr:anchor><fr:addr
+type="machine">#241</fr:addr><fr:route>unstable-241.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>7</fr:month><fr:day>3</fr:day></fr:date><fr:authors /><fr:parent>log-000R</fr:parent></fr:frontmatter><fr:mainmatter>
+  <fr:p>This proof is adopted from Errol Yuksel's proof.
+    Any error should be attributed to me.</fr:p>
+  <fr:p>Let us define the action on objects by <fr:tex
+display="inline"><![CDATA[T^{\flat }(\Gamma .\varphi ) = {{T(\Gamma )}_{/{\varphi }}}]]></fr:tex>.
+    That is, <fr:tex
+display="inline"><![CDATA[T^{\flat }]]></fr:tex> sends each formula-in-context <fr:tex
+display="inline"><![CDATA[\Gamma .\varphi ]]></fr:tex> to its downward closure ordered by entailment.
+    By assumption, each <fr:tex
+display="inline"><![CDATA[T(\Gamma )]]></fr:tex> is cartesian.
+    Thus, each slice <fr:tex
+display="inline"><![CDATA[{{T(\Gamma )}_{/{\varphi }}}]]></fr:tex> is also cartesian by <fr:ref
 addr="ct-000H"
 href="ct-000H.xml"
-taxon="Lemma"></fr:ref>.
-  </fr:p>
-  <fr:p>
-    For each morphism <fr:tex>f \colon \Gamma . \varphi \to \Delta . \psi</fr:tex>, we define <fr:tex>T^{ \flat }(f)</fr:tex> to be the following composite:
-  </fr:p>
+taxon="Lemma" />.</fr:p>
+  <fr:p>For each morphism <fr:tex
+display="inline"><![CDATA[f\colon \Gamma .\varphi \to \Delta .\psi ]]></fr:tex>, we define <fr:tex
+display="inline"><![CDATA[T^{\flat }(f)]]></fr:tex> to be the following composite:</fr:p>
   <fr:tex
-display="block">{{ T( \Delta ) }_{/{ \psi }}}   \xrightarrow { {{ T(f) }_{/{ \psi }}} }   {{ T( \Gamma ) }_{/{ T(f)( \psi ) }}}   \xrightarrow { \varphi   \wedge   \mathord { \hspace {1pt} \text {--} \hspace {1pt}} }   {{ T( \Gamma ) }_{/{ \varphi }}}</fr:tex>
-  <fr:p>
-    where <fr:tex>{{ T(f) }_{/{ \psi }}}</fr:tex> sends each <fr:tex>\chi   \vdash   \psi</fr:tex> to <fr:tex>T(f)( \chi )  \vdash  T(f)( \psi )</fr:tex> and <fr:tex>\varphi   \wedge   \mathord { \hspace {1pt} \text {--} \hspace {1pt}}</fr:tex> is the usual pullback functor along the morphism <fr:tex>\varphi   \vdash  T(f)( \psi )</fr:tex>.
-  </fr:p>
-  <fr:p>
-    This composite admits a left adjoint <fr:tex>\exists ^{ \flat }_{f}</fr:tex> defined as the composite of the top morphisms of the following diagram:
-  </fr:p>
+display="block"><![CDATA[{{T(\Delta )}_{/{\psi }}} \xrightarrow {{{T(f)}_{/{\psi }}}} {{T(\Gamma )}_{/{T(f)(\psi )}}} \xrightarrow {\varphi  \wedge  \mathord {\hspace {1pt}\text {--}\hspace {1pt}}} {{T(\Gamma )}_{/{\varphi }}}]]></fr:tex>
+  <fr:p>where <fr:tex
+display="inline"><![CDATA[{{T(f)}_{/{\psi }}}]]></fr:tex> sends each <fr:tex
+display="inline"><![CDATA[\chi  \vdash  \psi ]]></fr:tex> to <fr:tex
+display="inline"><![CDATA[T(f)(\chi ) \vdash  T(f)(\psi )]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[\varphi  \wedge  \mathord {\hspace {1pt}\text {--}\hspace {1pt}}]]></fr:tex> is the usual pullback functor along the morphism <fr:tex
+display="inline"><![CDATA[\varphi  \vdash  T(f)(\psi )]]></fr:tex>.</fr:p>
+  <fr:p>This composite admits a left adjoint <fr:tex
+display="inline"><![CDATA[\exists ^{\flat }_{f}]]></fr:tex> defined as the composite of the top morphisms of the following diagram:</fr:p>
   
     
       
       <fr:embedded-tex
-hash="a06ace0f850cecd6dfb46593e1f91710"><fr:embedded-tex-preamble>
-         
-   \RequirePackage {tikz}
-   \RequirePackage {amsmath}
-   \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
+hash="f021c92e7bfba4038b027833197ec099"><fr:embedded-tex-preamble><![CDATA[
+        
+  \RequirePackage {tikz}
+  \RequirePackage {amsmath}
+  \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
 
-   \definecolor {catccolor}{RGB}{255,244,138}
-   \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
-   \tikzstyle {catc}=[catccolor!60]
-   \tikzstyle {catd}=[orange!40]
-   \tikzstyle {cate}=[red!40]
-   \tikzstyle {catf}=[blue!10]
-   \tikzstyle {catg}=[green!25]
+  \definecolor {catccolor}{RGB}{255,244,138}
+  \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
+  \tikzstyle {catc}=[catccolor!60]
+  \tikzstyle {catd}=[orange!40]
+  \tikzstyle {cate}=[red!40]
+  \tikzstyle {catf}=[blue!10]
+  \tikzstyle {catg}=[green!25]
 
 
-   \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
-   \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
+  \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
+  \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
 
-   \NewDocumentCommand \CreateRect {D&lt;&gt;{} m m}{
-     \path 
+  \NewDocumentCommand \CreateRect {D<>{} m m}{
+    \path 
       coordinate (#1nw)
       ++(#2,-#3) coordinate (#1se)
       coordinate (#1sw) at (#1se -| #1nw)
       coordinate (#1ne) at (#1nw -| #1se)
     ;
 
-     \path [spath/save = #1north] (#1nw) to (#1ne);
-     \path [spath/save = #1west] (#1nw) to (#1sw);
-     \path [spath/save = #1east] (#1ne) to (#1se);
-     \path [spath/save = #1south] (#1sw) to (#1se);
+    \path [spath/save = #1north] (#1nw) to (#1ne);
+    \path [spath/save = #1west] (#1nw) to (#1sw);
+    \path [spath/save = #1east] (#1ne) to (#1se);
+    \path [spath/save = #1south] (#1sw) to (#1se);
   }
- 
-         
+
+        
    % appears to be necessary
   \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd}
   \usetikzlibrary{matrix,arrows}
@@ -163,7 +175,7 @@ hash="a06ace0f850cecd6dfb46593e1f91710"><fr:embedded-tex-preamble>
       densely dashed
     },
     embedding/.style = {
-      {right hook}-&gt;
+      {right hook}->
     },
     cover/.style = {
       -{Triangle[open]}
@@ -195,10 +207,10 @@ hash="a06ace0f850cecd6dfb46593e1f91710"><fr:embedded-tex-preamble>
     square/ne/.style = {},
     square/se/.style = {},
     square/sw/.style = {},
-    square/north/.style = {-&gt;},
-    square/south/.style = {-&gt;},
-    square/west/.style = {-&gt;},
-    square/east/.style = {-&gt;},
+    square/north/.style = {->},
+    square/south/.style = {->},
+    square/west/.style = {->},
+    square/east/.style = {->},
     square/north/node/.style = {above},
     square/south/node/.style = {below},
     square/west/node/.style = {left},
@@ -277,69 +289,69 @@ hash="a06ace0f850cecd6dfb46593e1f91710"><fr:embedded-tex-preamble>
     \end{tikzpicture}
   }
   \ExplSyntaxOff
- 
-      </fr:embedded-tex-preamble><fr:embedded-tex-body>
-     \begin {tikzpicture}[diagram,node distance=3cm]
-       \node  (1) {$ {{ T( \Delta ) }_{/{ \psi }}} $};
-       \node  [right = of 1] (2) {$ {{ T( \Gamma ) }_{/{ T(f)( \psi ) }}} $};
-       \node  [right = of 2] (3) {$ {{ T( \Gamma ) }_{/{ \varphi }}} $};
-       \draw  [-&gt;,morphism,offset=1.5] (1) to node[swap] (r1) {$ {{ T(f) }_{/{ \psi }}} $} (2);
-       \draw  [-&gt;,morphism,offset=1.5] (2) to node[swap] (r2) {$ \varphi   \wedge   \mathord { \hspace {1pt} \text {--} \hspace {1pt}} $} (3);
-       \draw  [-&gt;,morphism,offset=1.5] (3) to node[swap] (l2) {$ \Sigma _{ \varphi }$} (2);
-       \draw  [-&gt;,morphism,offset=1.5] (2) to node[swap] (l1) {$ {{ \Sigma _{f} }_{/{ \psi }}} $} (1);
-       \draw  [adjoint] (l1) to (r1);
-       \draw  [adjoint] (l2) to (r2);
-     \end {tikzpicture}
-  </fr:embedded-tex-body></fr:embedded-tex>
+
+      ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+    \begin {tikzpicture}[diagram,node distance=3cm]
+      \node  (1) {${{T(\Delta )}_{/{\psi }}}$};
+      \node  [right = of 1] (2) {${{T(\Gamma )}_{/{T(f)(\psi )}}}$};
+      \node  [right = of 2] (3) {${{T(\Gamma )}_{/{\varphi }}}$};
+      \draw  [->,morphism,offset=1.5] (1) to node[swap] (r1) {${{T(f)}_{/{\psi }}}$} (2);
+      \draw  [->,morphism,offset=1.5] (2) to node[swap] (r2) {$\varphi  \wedge  \mathord {\hspace {1pt}\text {--}\hspace {1pt}}$} (3);
+      \draw  [->,morphism,offset=1.5] (3) to node[swap] (l2) {$\Sigma _{\varphi }$} (2);
+      \draw  [->,morphism,offset=1.5] (2) to node[swap] (l1) {${{\Sigma _{f}}_{/{\psi }}}$} (1);
+      \draw  [adjoint] (l1) to (r1);
+      \draw  [adjoint] (l2) to (r2);
+    \end {tikzpicture}
+  ]]></fr:embedded-tex-body></fr:embedded-tex>
     
   
-  <fr:p>
-    where <fr:tex>\Sigma _{ \varphi }</fr:tex> is the left adjoint in <fr:ref
+  <fr:p>where <fr:tex
+display="inline"><![CDATA[\Sigma _{\varphi }]]></fr:tex> is the left adjoint in <fr:ref
 addr="ct-000J"
 href="ct-000J.xml"
-taxon="Lemma"></fr:ref> and <fr:tex>{{ \Sigma _{f} }_{/{ \psi }}}</fr:tex> is the functor given by the action on morphisms of the left adjoint <fr:tex>\Sigma _{f}  \dashv  T(f)</fr:tex>.
-  </fr:p>
-  <fr:p>
-    Let <fr:tex>\Gamma | \chi   \vdash   \varphi</fr:tex>.
-    And assume the following pullback square.
-  </fr:p>
+taxon="Lemma" /> and <fr:tex
+display="inline"><![CDATA[{{\Sigma _{f}}_{/{\psi }}}]]></fr:tex> is the functor given by the action on morphisms of the left adjoint <fr:tex
+display="inline"><![CDATA[\Sigma _{f} \dashv  T(f)]]></fr:tex>.</fr:p>
+  <fr:p>Let <fr:tex
+display="inline"><![CDATA[\Gamma |\chi  \vdash  \varphi ]]></fr:tex>.
+    And assume the following pullback square.</fr:p>
   
     
       
       <fr:embedded-tex
-hash="e727791cf48018ce4abe0ca99188fd7a"><fr:embedded-tex-preamble>
-         
-   \RequirePackage {tikz}
-   \RequirePackage {amsmath}
-   \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
+hash="bca77cda61e0708bf4cff456dab49665"><fr:embedded-tex-preamble><![CDATA[
+        
+  \RequirePackage {tikz}
+  \RequirePackage {amsmath}
+  \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
 
-   \definecolor {catccolor}{RGB}{255,244,138}
-   \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
-   \tikzstyle {catc}=[catccolor!60]
-   \tikzstyle {catd}=[orange!40]
-   \tikzstyle {cate}=[red!40]
-   \tikzstyle {catf}=[blue!10]
-   \tikzstyle {catg}=[green!25]
+  \definecolor {catccolor}{RGB}{255,244,138}
+  \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
+  \tikzstyle {catc}=[catccolor!60]
+  \tikzstyle {catd}=[orange!40]
+  \tikzstyle {cate}=[red!40]
+  \tikzstyle {catf}=[blue!10]
+  \tikzstyle {catg}=[green!25]
 
 
-   \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
-   \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
+  \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
+  \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
 
-   \NewDocumentCommand \CreateRect {D&lt;&gt;{} m m}{
-     \path 
+  \NewDocumentCommand \CreateRect {D<>{} m m}{
+    \path 
       coordinate (#1nw)
       ++(#2,-#3) coordinate (#1se)
       coordinate (#1sw) at (#1se -| #1nw)
       coordinate (#1ne) at (#1nw -| #1se)
     ;
 
-     \path [spath/save = #1north] (#1nw) to (#1ne);
-     \path [spath/save = #1west] (#1nw) to (#1sw);
-     \path [spath/save = #1east] (#1ne) to (#1se);
-     \path [spath/save = #1south] (#1sw) to (#1se);
+    \path [spath/save = #1north] (#1nw) to (#1ne);
+    \path [spath/save = #1west] (#1nw) to (#1sw);
+    \path [spath/save = #1east] (#1ne) to (#1se);
+    \path [spath/save = #1south] (#1sw) to (#1se);
   }
- 
-         
+
+        
    % appears to be necessary
   \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd}
   \usetikzlibrary{matrix,arrows}
@@ -408,7 +420,7 @@ hash="e727791cf48018ce4abe0ca99188fd7a"><fr:embedded-tex-preamble>
       densely dashed
     },
     embedding/.style = {
-      {right hook}-&gt;
+      {right hook}->
     },
     cover/.style = {
       -{Triangle[open]}
@@ -440,10 +452,10 @@ hash="e727791cf48018ce4abe0ca99188fd7a"><fr:embedded-tex-preamble>
     square/ne/.style = {},
     square/se/.style = {},
     square/sw/.style = {},
-    square/north/.style = {-&gt;},
-    square/south/.style = {-&gt;},
-    square/west/.style = {-&gt;},
-    square/east/.style = {-&gt;},
+    square/north/.style = {->},
+    square/south/.style = {->},
+    square/west/.style = {->},
+    square/east/.style = {->},
     square/north/node/.style = {above},
     square/south/node/.style = {below},
     square/west/node/.style = {left},
@@ -522,105 +534,137 @@ hash="e727791cf48018ce4abe0ca99188fd7a"><fr:embedded-tex-preamble>
     \end{tikzpicture}
   }
   \ExplSyntaxOff
- 
-      </fr:embedded-tex-preamble><fr:embedded-tex-body>
-     \DiagramSquare {
+
+      ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+    \DiagramSquare {
       width = 4cm,
-      nw =  \Gamma '.(T(k)( \varphi )  \wedge  T(h)( \psi ')),
+      nw = \Gamma '.(T(k)(\varphi ) \wedge  T(h)(\psi ')),
       nw/style = {pullback},
-      ne =  \Delta '. \psi ',
-      sw =  \Gamma . \varphi ,
-      se =  \Delta . \psi ,
+      ne = \Delta '.\psi ',
+      sw = \Gamma .\varphi ,
+      se = \Delta .\psi ,
       north = h,
       south = g,
       west = k,
       east = f,
     }
-  </fr:embedded-tex-body></fr:embedded-tex>
+  ]]></fr:embedded-tex-body></fr:embedded-tex>
     
   
-  <fr:p>
-    We wish to show that <fr:tex>T^{ \flat }(f) \exists ^{ \flat }_{g}( \chi )  \cong   \exists ^{ \flat }_{h}T^{ \flat }(k)( \chi )</fr:tex>.
-    The left-hand side computes to <fr:tex>\psi '  \wedge  T(f) {{ \Sigma _{g} }_{/{ \psi }}} ( \chi )</fr:tex>, while the right-hand side computes to <fr:tex>{{ \Sigma _{h} }_{/{ g }}} (T(k)( \varphi )  \wedge  T(h)( \psi ')  \wedge  T(k)( \chi ))</fr:tex>.
-    This is isomorphic to <fr:tex>\psi '  \wedge   {{ \Sigma _{h} }_{/{ \psi ' }}} (T(k)( \varphi )  \wedge  T(k)( \chi ))</fr:tex> by Frobenius reciprocity.
-    <fr:tex>T(k)</fr:tex>, as a right adjoint, commutes with pullbacks.
-    Thus, the right-hand side is isomorphic to <fr:tex>\psi '  \wedge   {{ \Sigma _{h} }_{/{ \psi ' }}} T(k)( \varphi   \wedge   \chi )</fr:tex>.
-    Further, since <fr:tex>\chi   \vdash   \psi</fr:tex>, this is isomorphic to <fr:tex>\psi '  \wedge   {{ \Sigma _{h} }_{/{ \psi ' }}} T(k)( \chi )</fr:tex>.
-    Then, <fr:tex>\exists ^{ \flat }_{f}</fr:tex> inherits the <fr:link
-href="log-000E.xml"
+  <fr:p>We wish to show that <fr:tex
+display="inline"><![CDATA[T^{\flat }(f)\exists ^{\flat }_{g}(\chi ) \cong  \exists ^{\flat }_{h}T^{\flat }(k)(\chi )]]></fr:tex>.
+    The left-hand side computes to <fr:tex
+display="inline"><![CDATA[\psi ' \wedge  T(f){{\Sigma _{g}}_{/{\psi }}}(\chi )]]></fr:tex>, while the right-hand side computes to <fr:tex
+display="inline"><![CDATA[{{\Sigma _{h}}_{/{g}}}(T(k)(\varphi ) \wedge  T(h)(\psi ') \wedge  T(k)(\chi ))]]></fr:tex>.
+    This is isomorphic to <fr:tex
+display="inline"><![CDATA[\psi ' \wedge  {{\Sigma _{h}}_{/{\psi '}}}(T(k)(\varphi ) \wedge  T(k)(\chi ))]]></fr:tex> by Frobenius reciprocity.
+    <fr:tex
+display="inline"><![CDATA[T(k)]]></fr:tex>, as a right adjoint, commutes with pullbacks.
+    Thus, the right-hand side is isomorphic to <fr:tex
+display="inline"><![CDATA[\psi ' \wedge  {{\Sigma _{h}}_{/{\psi '}}}T(k)(\varphi  \wedge  \chi )]]></fr:tex>.
+    Further, since <fr:tex
+display="inline"><![CDATA[\chi  \vdash  \psi ]]></fr:tex>, this is isomorphic to <fr:tex
+display="inline"><![CDATA[\psi ' \wedge  {{\Sigma _{h}}_{/{\psi '}}}T(k)(\chi )]]></fr:tex>.
+    Then, <fr:tex
+display="inline"><![CDATA[\exists ^{\flat }_{f}]]></fr:tex> inherits the <fr:link
 type="local"
-addr="log-000E">Beck-Chevalley</fr:link> condition from <fr:tex>\Sigma _{f}</fr:tex>.
-  </fr:p>
-  <fr:p>
-    Since <fr:tex>T^{ \flat }</fr:tex> has all the structures listed in <fr:ref
+href="log-000E.xml"
+addr="log-000E"
+title="Beck-Chevalley condition">Beck-Chevalley</fr:link> condition from <fr:tex
+display="inline"><![CDATA[\Sigma _{f}]]></fr:tex>.</fr:p>
+  <fr:p>Since <fr:tex
+display="inline"><![CDATA[T^{\flat }]]></fr:tex> has all the structures listed in <fr:ref
 addr="log-000H"
 href="log-000H.xml"
-taxon="Lemma"></fr:ref>, it admits a naming functor.
-    Let us define <fr:tex>{ \mathopen {} \{ \Gamma . \varphi \colon \mathord { \hspace {1pt} \text {--} \hspace {1pt}} \} \mathclose {}} \colon T^{ \flat }( \Gamma . \varphi ) \to {{ \mathsf {Elts}( T ) }_{/{ \Gamma . \varphi }}}</fr:tex> by
-  </fr:p>
+taxon="Lemma" />, it admits a naming functor.
+    Let us define <fr:tex
+display="inline"><![CDATA[{\mathopen {}\{\Gamma .\varphi \colon \mathord {\hspace {1pt}\text {--}\hspace {1pt}}\}\mathclose {}}\colon T^{\flat }(\Gamma .\varphi )\to {{\mathsf {Elts}(T)}_{/{\Gamma .\varphi }}}]]></fr:tex> by</fr:p>
   <fr:tex
-display="block">      { \mathopen {} \{ \Gamma . \varphi \colon \chi   \vdash   \varphi \} \mathclose {}}  := ( \mathsf {id} _{ \Gamma } ,  \chi   \vdash   \varphi )   </fr:tex>
-  <fr:p>
-    Let <fr:tex>\gamma \colon \Delta . \chi \to \Gamma . \varphi</fr:tex> and <fr:tex>\psi   \in  T( \Gamma )</fr:tex> such that <fr:tex>\psi   \vdash   \varphi</fr:tex>.
-    Then <fr:tex>{ \mathopen {}[ \gamma ] \mathclose {}} _{ \Gamma . \varphi }  \leq   \psi</fr:tex> iff <fr:tex>\exists _{ \gamma }( \chi )  \leq   \psi</fr:tex> iff <fr:tex>\chi   \leq  T^{ \flat }( \gamma )( \psi )</fr:tex> iff <fr:tex>\chi   \leq  T( \gamma )( \psi )</fr:tex>.
-    But there is a morphism <fr:tex>\gamma   \to   { \mathopen {} \{ \Gamma . \varphi \colon \psi   \vdash   \varphi \} \mathclose {}}</fr:tex> iff <fr:tex>\chi   \leq  T( \gamma )( \psi )</fr:tex>.
-    Thus,
-  </fr:p>
+display="block"><![CDATA[     {\mathopen {}\{\Gamma .\varphi \colon \chi  \vdash  \varphi \}\mathclose {}} := (\mathsf {id}_{\Gamma }, \chi  \vdash  \varphi )   ]]></fr:tex>
+  <fr:p>Let <fr:tex
+display="inline"><![CDATA[\gamma \colon \Delta .\chi \to \Gamma .\varphi ]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[\psi  \in  T(\Gamma )]]></fr:tex> such that <fr:tex
+display="inline"><![CDATA[\psi  \vdash  \varphi ]]></fr:tex>.
+    Then <fr:tex
+display="inline"><![CDATA[{\mathopen {}[\gamma ]\mathclose {}}_{\Gamma .\varphi } \leq  \psi ]]></fr:tex> iff <fr:tex
+display="inline"><![CDATA[\exists _{\gamma }(\chi ) \leq  \psi ]]></fr:tex> iff <fr:tex
+display="inline"><![CDATA[\chi  \leq  T^{\flat }(\gamma )(\psi )]]></fr:tex> iff <fr:tex
+display="inline"><![CDATA[\chi  \leq  T(\gamma )(\psi )]]></fr:tex>.
+    But there is a morphism <fr:tex
+display="inline"><![CDATA[\gamma  \to  {\mathopen {}\{\Gamma .\varphi \colon \psi  \vdash  \varphi \}\mathclose {}}]]></fr:tex> iff <fr:tex
+display="inline"><![CDATA[\chi  \leq  T(\gamma )(\psi )]]></fr:tex>.
+    Thus,</fr:p>
   <fr:tex
-display="block">      { \mathopen {}[ \mathord { \hspace {1pt} \text {--} \hspace {1pt}} ] \mathclose {}} _{ \Gamma . \varphi }  \dashv   { \mathopen {} \{ \Gamma . \varphi \colon \mathord { \hspace {1pt} \text {--} \hspace {1pt}} \} \mathclose {}}    </fr:tex>
-</fr:mainmatter></fr:tree>
+display="block"><![CDATA[     {\mathopen {}[\mathord {\hspace {1pt}\text {--}\hspace {1pt}}]\mathclose {}}_{\Gamma .\varphi } \dashv  {\mathopen {}\{\Gamma .\varphi \colon \mathord {\hspace {1pt}\text {--}\hspace {1pt}}\}\mathclose {}}   ]]></fr:tex>
+</fr:mainmatter><fr:backmatter /></fr:tree>
     
-  </fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context></fr:context><fr:related><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+  </fr:mainmatter><fr:backmatter><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
+text="Related">Related</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>243</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>log-000E</fr:addr><fr:route>log-000E.xml</fr:route><fr:title>Beck-Chevalley condition</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>24</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
-  Let <fr:tex>T \colon \mathcal { C } ^ \mathrm {op} \to \mathsf { CAT }</fr:tex> be a <fr:link
-href="log-000C.xml"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>296</fr:anchor><fr:addr
+type="user">log-000E</fr:addr><fr:route>log-000E.xml</fr:route><fr:title
+text="Beck-Chevalley condition">Beck-Chevalley condition</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>24</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[T\colon \mathcal {C}^\mathrm {op}\to \mathsf {CAT}]]></fr:tex> be a <fr:link
 type="local"
-addr="log-000C">doctrine</fr:link>.
-  Suppose that for each morphism <fr:tex>f \colon X \to Y</fr:tex> in <fr:tex>\mathcal { C }</fr:tex>, <fr:tex>f ^{*}</fr:tex> admits a left adjoint <fr:tex>\Sigma _{f}</fr:tex>.
-  Then <fr:tex>T</fr:tex> is said to satisfy <fr:em><fr:strong>Beck-Chevalley condition</fr:strong></fr:em> if, whenever there is a pullback shown below, we have <fr:tex>f ^{*} \Sigma _{g}  \cong   \Sigma _{h} k ^{*}</fr:tex>.
-</fr:p>
+href="log-000C.xml"
+addr="log-000C"
+title="Doctrine">doctrine</fr:link>.
+  Suppose that for each morphism <fr:tex
+display="inline"><![CDATA[f\colon X\to Y]]></fr:tex> in <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[f^{*}]]></fr:tex> admits a left adjoint <fr:tex
+display="inline"><![CDATA[\Sigma _{f}]]></fr:tex>.
+  Then <fr:tex
+display="inline"><![CDATA[T]]></fr:tex> is said to satisfy <fr:em><fr:strong>Beck-Chevalley condition</fr:strong></fr:em> if, whenever there is a pullback shown below, we have <fr:tex
+display="inline"><![CDATA[f^{*}\Sigma _{g} \cong  \Sigma _{h}k^{*}]]></fr:tex>.</fr:p>
     
       
       <fr:embedded-tex
-hash="d43b61c12e748e3e99ee5d69a9f0f5fc"><fr:embedded-tex-preamble>
-         
-   \RequirePackage {tikz}
-   \RequirePackage {amsmath}
-   \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
+hash="46e0a696959d3102dab04d8ef82f856d"><fr:embedded-tex-preamble><![CDATA[
+        
+  \RequirePackage {tikz}
+  \RequirePackage {amsmath}
+  \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
 
-   \definecolor {catccolor}{RGB}{255,244,138}
-   \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
-   \tikzstyle {catc}=[catccolor!60]
-   \tikzstyle {catd}=[orange!40]
-   \tikzstyle {cate}=[red!40]
-   \tikzstyle {catf}=[blue!10]
-   \tikzstyle {catg}=[green!25]
+  \definecolor {catccolor}{RGB}{255,244,138}
+  \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
+  \tikzstyle {catc}=[catccolor!60]
+  \tikzstyle {catd}=[orange!40]
+  \tikzstyle {cate}=[red!40]
+  \tikzstyle {catf}=[blue!10]
+  \tikzstyle {catg}=[green!25]
 
 
-   \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
-   \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
+  \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
+  \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
 
-   \NewDocumentCommand \CreateRect {D&lt;&gt;{} m m}{
-     \path 
+  \NewDocumentCommand \CreateRect {D<>{} m m}{
+    \path 
       coordinate (#1nw)
       ++(#2,-#3) coordinate (#1se)
       coordinate (#1sw) at (#1se -| #1nw)
       coordinate (#1ne) at (#1nw -| #1se)
     ;
 
-     \path [spath/save = #1north] (#1nw) to (#1ne);
-     \path [spath/save = #1west] (#1nw) to (#1sw);
-     \path [spath/save = #1east] (#1ne) to (#1se);
-     \path [spath/save = #1south] (#1sw) to (#1se);
+    \path [spath/save = #1north] (#1nw) to (#1ne);
+    \path [spath/save = #1west] (#1nw) to (#1sw);
+    \path [spath/save = #1east] (#1ne) to (#1se);
+    \path [spath/save = #1south] (#1sw) to (#1se);
   }
- 
-         
+
+        
    % appears to be necessary
   \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd}
   \usetikzlibrary{matrix,arrows}
@@ -689,7 +733,7 @@ hash="d43b61c12e748e3e99ee5d69a9f0f5fc"><fr:embedded-tex-preamble>
       densely dashed
     },
     embedding/.style = {
-      {right hook}-&gt;
+      {right hook}->
     },
     cover/.style = {
       -{Triangle[open]}
@@ -721,10 +765,10 @@ hash="d43b61c12e748e3e99ee5d69a9f0f5fc"><fr:embedded-tex-preamble>
     square/ne/.style = {},
     square/se/.style = {},
     square/sw/.style = {},
-    square/north/.style = {-&gt;},
-    square/south/.style = {-&gt;},
-    square/west/.style = {-&gt;},
-    square/east/.style = {-&gt;},
+    square/north/.style = {->},
+    square/south/.style = {->},
+    square/west/.style = {->},
+    square/east/.style = {->},
     square/north/node/.style = {above},
     square/south/node/.style = {below},
     square/west/node/.style = {left},
@@ -803,9 +847,9 @@ hash="d43b61c12e748e3e99ee5d69a9f0f5fc"><fr:embedded-tex-preamble>
     \end{tikzpicture}
   }
   \ExplSyntaxOff
- 
-      </fr:embedded-tex-preamble><fr:embedded-tex-body>
-   \DiagramSquare {
+
+      ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+  \DiagramSquare {
     nw = A,
     nw/style = {pullback},
     ne = B,
@@ -816,101 +860,132 @@ hash="d43b61c12e748e3e99ee5d69a9f0f5fc"><fr:embedded-tex-preamble>
     west = k,
     east = f,
   }
-</fr:embedded-tex-body></fr:embedded-tex>
+]]></fr:embedded-tex-body></fr:embedded-tex>
     
-  <fr:p>
-  Furthermore, if for each morphism <fr:tex>f \colon X \to Y</fr:tex> in <fr:tex>\mathcal { C }</fr:tex>, <fr:tex>f ^{*}</fr:tex> admits a right adjoint <fr:tex>\Pi _{f}</fr:tex>.
-  Then this condition implies that <fr:tex>f ^{*} \Pi _{g}  \cong   \Pi _{h} k ^{*}</fr:tex> by the uniqueness of adjoint.
-</fr:p></fr:mainmatter></fr:tree><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+  <fr:p>Furthermore, if for each morphism <fr:tex
+display="inline"><![CDATA[f\colon X\to Y]]></fr:tex> in <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[f^{*}]]></fr:tex> admits a right adjoint <fr:tex
+display="inline"><![CDATA[\Pi _{f}]]></fr:tex>.
+  Then this condition implies that <fr:tex
+display="inline"><![CDATA[f^{*}\Pi _{g} \cong  \Pi _{h}k^{*}]]></fr:tex> by the uniqueness of adjoint.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>244</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>log-000D</fr:addr><fr:route>log-000D.xml</fr:route><fr:title>Frobenius reciprocity</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>24</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
-  Let <fr:tex>T \colon \mathcal { C } ^ \mathrm {op} \to \mathsf { CAT }</fr:tex> be a <fr:link
-href="log-000C.xml"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>297</fr:anchor><fr:addr
+type="user">log-000D</fr:addr><fr:route>log-000D.xml</fr:route><fr:title
+text="Frobenius reciprocity">Frobenius reciprocity</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>24</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[T\colon \mathcal {C}^\mathrm {op}\to \mathsf {CAT}]]></fr:tex> be a <fr:link
 type="local"
-addr="log-000C">doctrine</fr:link>.
-  Suppose that for each object <fr:tex>X  \in   \mathcal { C }</fr:tex>, the fiber <fr:tex>T(X)</fr:tex> has finite products <fr:tex>\wedge</fr:tex> and that for each morphism <fr:tex>f \colon X \to Y</fr:tex> in <fr:tex>\mathcal { C }</fr:tex>, <fr:tex>f ^{*}</fr:tex> admits a left adjoint <fr:tex>\Sigma _{f}</fr:tex>.
-  Then <fr:tex>T</fr:tex> is said to satisfy <fr:em><fr:strong>Frobenius reciprocity</fr:strong></fr:em> if for each morphism <fr:tex>f \colon X \to Y</fr:tex> in <fr:tex>\mathcal { C }</fr:tex>, objects <fr:tex>\varphi   \in  T(X)</fr:tex> and <fr:tex>\psi   \in  T(Y)</fr:tex>, we have <fr:tex>\Sigma _{f}( f ^{*} \psi   \wedge   \varphi )  \cong   \psi   \wedge   \Sigma _{f}( \varphi )</fr:tex>.
-</fr:p></fr:mainmatter></fr:tree><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+href="log-000C.xml"
+addr="log-000C"
+title="Doctrine">doctrine</fr:link>.
+  Suppose that for each object <fr:tex
+display="inline"><![CDATA[X \in  \mathcal {C}]]></fr:tex>, the fiber <fr:tex
+display="inline"><![CDATA[T(X)]]></fr:tex> has finite products <fr:tex
+display="inline"><![CDATA[\wedge ]]></fr:tex> and that for each morphism <fr:tex
+display="inline"><![CDATA[f\colon X\to Y]]></fr:tex> in <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[f^{*}]]></fr:tex> admits a left adjoint <fr:tex
+display="inline"><![CDATA[\Sigma _{f}]]></fr:tex>.
+  Then <fr:tex
+display="inline"><![CDATA[T]]></fr:tex> is said to satisfy <fr:em><fr:strong>Frobenius reciprocity</fr:strong></fr:em> if for each morphism <fr:tex
+display="inline"><![CDATA[f\colon X\to Y]]></fr:tex> in <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex>, objects <fr:tex
+display="inline"><![CDATA[\varphi  \in  T(X)]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[\psi  \in  T(Y)]]></fr:tex>, we have <fr:tex
+display="inline"><![CDATA[\Sigma _{f}(f^{*}\psi  \wedge  \varphi ) \cong  \psi  \wedge  \Sigma _{f}(\varphi )]]></fr:tex>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>245</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>log-000I</fr:addr><fr:route>log-000I.xml</fr:route><fr:title>Comprehension schema</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>24</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
-  Let <fr:tex>T \colon \mathcal { C } ^ \mathrm {op} \to \mathsf { Lat }</fr:tex> be a <fr:link
-href="log-000C.xml"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>298</fr:anchor><fr:addr
+type="user">log-000I</fr:addr><fr:route>log-000I.xml</fr:route><fr:title
+text="Comprehension schema">Comprehension schema</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>24</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[T\colon \mathcal {C}^\mathrm {op}\to \mathsf {Lat}]]></fr:tex> be a <fr:link
 type="local"
-addr="log-000C">doctrine</fr:link> with the structures listed in <fr:ref
+href="log-000C.xml"
+addr="log-000C"
+title="Doctrine">doctrine</fr:link> with the structures listed in <fr:ref
 addr="log-000H"
 href="log-000H.xml"
-taxon="Lemma"></fr:ref>.
-  Then <fr:tex>T</fr:tex> has <fr:em><fr:strong>comprehension schema</fr:strong></fr:em> if for each object <fr:tex>X  \in   \mathcal { C }</fr:tex> the naming functor <fr:tex>{ \mathopen {}[ \mathord { \hspace {1pt} \text {--} \hspace {1pt}} ] \mathclose {}} _{X}</fr:tex> admits a right adjoint <fr:tex>{ \mathopen {} \{ X \colon \mathord { \hspace {1pt} \text {--} \hspace {1pt}} \} \mathclose {}}</fr:tex>.
-</fr:p></fr:mainmatter></fr:tree><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+taxon="Lemma" />.
+  Then <fr:tex
+display="inline"><![CDATA[T]]></fr:tex> has <fr:em><fr:strong>comprehension schema</fr:strong></fr:em> if for each object <fr:tex
+display="inline"><![CDATA[X \in  \mathcal {C}]]></fr:tex> the naming functor <fr:tex
+display="inline"><![CDATA[{\mathopen {}[\mathord {\hspace {1pt}\text {--}\hspace {1pt}}]\mathclose {}}_{X}]]></fr:tex> admits a right adjoint <fr:tex
+display="inline"><![CDATA[{\mathopen {}\{X\colon \mathord {\hspace {1pt}\text {--}\hspace {1pt}}\}\mathclose {}}]]></fr:tex>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>247</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>log-000H</fr:addr><fr:route>log-000H.xml</fr:route><fr:title>Naming fucntor</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>24</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
-  Let <fr:tex>\mathcal { C }</fr:tex> be a category with finite limits and <fr:tex>T \colon \mathcal { C } ^ \mathrm {op} \to \mathsf { Lat }</fr:tex> be a <fr:tex>\mathcal { C }</fr:tex>-indexed (pre-)lattice such that
-</fr:p><fr:ul><fr:li>
-    For each object <fr:tex>X  \in   \mathcal { C }</fr:tex>, the fiber <fr:tex>T(X)</fr:tex> is cartesian.
-  </fr:li>
-  <fr:li>
-    For each morphism <fr:tex>f \colon X \to Y</fr:tex> in <fr:tex>\mathcal { C }</fr:tex>, <fr:tex>f ^{*}</fr:tex> admits a left adjoint <fr:tex>\Sigma _{f}</fr:tex>.
-  </fr:li>
-  <fr:li>
-    Each left adjoint <fr:tex>\Sigma _{f}</fr:tex> satisfies the <fr:link
-href="log-000E.xml"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>299</fr:anchor><fr:addr
+type="user">log-000H</fr:addr><fr:route>log-000H.xml</fr:route><fr:title
+text="Naming fucntor">Naming fucntor</fr:title><fr:taxon>Lemma</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>24</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> be a category with finite limits and <fr:tex
+display="inline"><![CDATA[T\colon \mathcal {C}^\mathrm {op}\to \mathsf {Lat}]]></fr:tex> be a <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex>-indexed (pre-)lattice such that</fr:p><fr:ul><fr:li>For each object <fr:tex
+display="inline"><![CDATA[X \in  \mathcal {C}]]></fr:tex>, the fiber <fr:tex
+display="inline"><![CDATA[T(X)]]></fr:tex> is cartesian.</fr:li>
+  <fr:li>For each morphism <fr:tex
+display="inline"><![CDATA[f\colon X\to Y]]></fr:tex> in <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[f^{*}]]></fr:tex> admits a left adjoint <fr:tex
+display="inline"><![CDATA[\Sigma _{f}]]></fr:tex>.</fr:li>
+  <fr:li>Each left adjoint <fr:tex
+display="inline"><![CDATA[\Sigma _{f}]]></fr:tex> satisfies the <fr:link
 type="local"
-addr="log-000E">Beck-Chevalley</fr:link> condition.
-  </fr:li></fr:ul><fr:p>
-  Then we can define a <fr:em><fr:strong>naming functor</fr:strong></fr:em> <fr:tex>{ \mathopen {}[ \mathord { \hspace {1pt} \text {--} \hspace {1pt}} ] \mathclose {}} _{X} \colon {{ \mathcal { C } }_{/{ X }}} \to T(X)</fr:tex> for each object <fr:tex>X  \in   \mathcal { C }</fr:tex>.
-  Moreover, for each morphism <fr:tex>f \colon X \to Y</fr:tex> in <fr:tex>\mathcal { C }</fr:tex>, the following square commutes up to isomorphism.
-</fr:p>
+href="log-000E.xml"
+addr="log-000E"
+title="Beck-Chevalley condition">Beck-Chevalley</fr:link> condition.</fr:li></fr:ul><fr:p>Then we can define a <fr:em><fr:strong>naming functor</fr:strong></fr:em> <fr:tex
+display="inline"><![CDATA[{\mathopen {}[\mathord {\hspace {1pt}\text {--}\hspace {1pt}}]\mathclose {}}_{X}\colon {{\mathcal {C}}_{/{X}}}\to T(X)]]></fr:tex> for each object <fr:tex
+display="inline"><![CDATA[X \in  \mathcal {C}]]></fr:tex>.
+  Moreover, for each morphism <fr:tex
+display="inline"><![CDATA[f\colon X\to Y]]></fr:tex> in <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex>, the following square commutes up to isomorphism.</fr:p>
     
       
       <fr:embedded-tex
-hash="cfc4909a87258d1c46b46028613d18ff"><fr:embedded-tex-preamble>
-         
-   \RequirePackage {tikz}
-   \RequirePackage {amsmath}
-   \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
+hash="a1f3417da8e9cc3d4201025e96381c7a"><fr:embedded-tex-preamble><![CDATA[
+        
+  \RequirePackage {tikz}
+  \RequirePackage {amsmath}
+  \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
 
-   \definecolor {catccolor}{RGB}{255,244,138}
-   \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
-   \tikzstyle {catc}=[catccolor!60]
-   \tikzstyle {catd}=[orange!40]
-   \tikzstyle {cate}=[red!40]
-   \tikzstyle {catf}=[blue!10]
-   \tikzstyle {catg}=[green!25]
+  \definecolor {catccolor}{RGB}{255,244,138}
+  \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
+  \tikzstyle {catc}=[catccolor!60]
+  \tikzstyle {catd}=[orange!40]
+  \tikzstyle {cate}=[red!40]
+  \tikzstyle {catf}=[blue!10]
+  \tikzstyle {catg}=[green!25]
 
 
-   \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
-   \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
+  \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
+  \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
 
-   \NewDocumentCommand \CreateRect {D&lt;&gt;{} m m}{
-     \path 
+  \NewDocumentCommand \CreateRect {D<>{} m m}{
+    \path 
       coordinate (#1nw)
       ++(#2,-#3) coordinate (#1se)
       coordinate (#1sw) at (#1se -| #1nw)
       coordinate (#1ne) at (#1nw -| #1se)
     ;
 
-     \path [spath/save = #1north] (#1nw) to (#1ne);
-     \path [spath/save = #1west] (#1nw) to (#1sw);
-     \path [spath/save = #1east] (#1ne) to (#1se);
-     \path [spath/save = #1south] (#1sw) to (#1se);
+    \path [spath/save = #1north] (#1nw) to (#1ne);
+    \path [spath/save = #1west] (#1nw) to (#1sw);
+    \path [spath/save = #1east] (#1ne) to (#1se);
+    \path [spath/save = #1south] (#1sw) to (#1se);
   }
- 
-         
+
+        
    % appears to be necessary
   \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd}
   \usetikzlibrary{matrix,arrows}
@@ -979,7 +1054,7 @@ hash="cfc4909a87258d1c46b46028613d18ff"><fr:embedded-tex-preamble>
       densely dashed
     },
     embedding/.style = {
-      {right hook}-&gt;
+      {right hook}->
     },
     cover/.style = {
       -{Triangle[open]}
@@ -1011,10 +1086,10 @@ hash="cfc4909a87258d1c46b46028613d18ff"><fr:embedded-tex-preamble>
     square/ne/.style = {},
     square/se/.style = {},
     square/sw/.style = {},
-    square/north/.style = {-&gt;},
-    square/south/.style = {-&gt;},
-    square/west/.style = {-&gt;},
-    square/east/.style = {-&gt;},
+    square/north/.style = {->},
+    square/south/.style = {->},
+    square/west/.style = {->},
+    square/east/.style = {->},
     square/north/node/.style = {above},
     square/south/node/.style = {below},
     square/west/node/.style = {left},
@@ -1093,80 +1168,93 @@ hash="cfc4909a87258d1c46b46028613d18ff"><fr:embedded-tex-preamble>
     \end{tikzpicture}
   }
   \ExplSyntaxOff
- 
-      </fr:embedded-tex-preamble><fr:embedded-tex-body>
-   \DiagramSquare {
-    nw = { {{ \mathcal { C } }_{/{ Y }}} },
+
+      ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+  \DiagramSquare {
+    nw = {{{\mathcal {C}}_{/{Y}}}},
     ne = {T(Y)},
-    sw = { {{ \mathcal { C } }_{/{ X }}} },
+    sw = {{{\mathcal {C}}_{/{X}}}},
     se = {T(X)},
-    north = { { \mathopen {}[ \mathord { \hspace {1pt} \text {--} \hspace {1pt}} ] \mathclose {}} _{Y}},
-    south = { { \mathopen {}[ \mathord { \hspace {1pt} \text {--} \hspace {1pt}} ] \mathclose {}} _{X}},
-    west = { f ^{*} },
+    north = {{\mathopen {}[\mathord {\hspace {1pt}\text {--}\hspace {1pt}}]\mathclose {}}_{Y}},
+    south = {{\mathopen {}[\mathord {\hspace {1pt}\text {--}\hspace {1pt}}]\mathclose {}}_{X}},
+    west = {f^{*}},
     east = {T(f)},
   }
-</fr:embedded-tex-body></fr:embedded-tex>
+]]></fr:embedded-tex-body></fr:embedded-tex>
     
   
     
       
       <fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="false"
 numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>246</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>24</fr:day></fr:date><fr:parent>log-000H</fr:parent></fr:frontmatter><fr:mainmatter>
-  <fr:p>
-    For each object <fr:tex>f \colon X \to Y</fr:tex> in <fr:tex>{{ \mathcal { C } }_{/{ Y }}}</fr:tex>, take <fr:tex>{ \mathopen {}[ f ] \mathclose {}} _{Y} :=  \Sigma _{f}(1)</fr:tex>.
-    To extend this assignment to a functor, it suffices to show that whenever there is a morphism <fr:tex>\alpha \colon f \to g</fr:tex> in <fr:tex>{{ \mathcal { C } }_{/{ Y }}}</fr:tex>, <fr:tex>{ \mathopen {}[ f ] \mathclose {}} _{Y}  \leq   { \mathopen {}[ g ] \mathclose {}} _{Y}</fr:tex> in <fr:tex>T(Y)</fr:tex>.
-  </fr:p>
-  <fr:p>
-    To this end, note that <fr:tex>\alpha ^{*} (1)  \leq   \alpha ^{*} g ^{*} { \mathopen {}[ g ] \mathclose {}} _{Y}</fr:tex> in <fr:tex>T(X)</fr:tex> because the unit of the adjunction <fr:tex>\Sigma _{g}  \dashv   g ^{*}</fr:tex> gives <fr:tex>1  \leq   g ^{*} { \mathopen {}[ g ] \mathclose {}} _{Y}</fr:tex>.
-    Since <fr:tex>\alpha ^{*}</fr:tex>, as a right adjoint, preserves terminal objects and <fr:tex>f ^{*}   \cong   \alpha ^{*} g ^{*}</fr:tex> by the (pseudo)functoriality of <fr:tex>T</fr:tex>, we have <fr:tex>1  \leq   f ^{*} { \mathopen {}[ g ] \mathclose {}} _{Y}</fr:tex>.
-    Then, the transpose along the adjunction <fr:tex>\Sigma _{f}  \dashv   f ^{*}</fr:tex> yields <fr:tex>{ \mathopen {}[ f ] \mathclose {}} _{Y}  \leq   { \mathopen {}[ g ] \mathclose {}} _{Y}</fr:tex>.
-  </fr:p>
-  <fr:p>
-    Now for each <fr:tex>g \colon Z \to Y</fr:tex>, form the following pullback:
-  </fr:p>
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>300</fr:anchor><fr:addr
+type="machine">#245</fr:addr><fr:route>unstable-245.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>24</fr:day></fr:date><fr:authors /><fr:parent>log-000H</fr:parent></fr:frontmatter><fr:mainmatter>
+  <fr:p>For each object <fr:tex
+display="inline"><![CDATA[f\colon X\to Y]]></fr:tex> in <fr:tex
+display="inline"><![CDATA[{{\mathcal {C}}_{/{Y}}}]]></fr:tex>, take <fr:tex
+display="inline"><![CDATA[{\mathopen {}[f]\mathclose {}}_{Y} := \Sigma _{f}(1)]]></fr:tex>.
+    To extend this assignment to a functor, it suffices to show that whenever there is a morphism <fr:tex
+display="inline"><![CDATA[\alpha \colon f\to g]]></fr:tex> in <fr:tex
+display="inline"><![CDATA[{{\mathcal {C}}_{/{Y}}}]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[{\mathopen {}[f]\mathclose {}}_{Y} \leq  {\mathopen {}[g]\mathclose {}}_{Y}]]></fr:tex> in <fr:tex
+display="inline"><![CDATA[T(Y)]]></fr:tex>.</fr:p>
+  <fr:p>To this end, note that <fr:tex
+display="inline"><![CDATA[\alpha ^{*}(1) \leq  \alpha ^{*}g^{*}{\mathopen {}[g]\mathclose {}}_{Y}]]></fr:tex> in <fr:tex
+display="inline"><![CDATA[T(X)]]></fr:tex> because the unit of the adjunction <fr:tex
+display="inline"><![CDATA[\Sigma _{g} \dashv  g^{*}]]></fr:tex> gives <fr:tex
+display="inline"><![CDATA[1 \leq  g^{*}{\mathopen {}[g]\mathclose {}}_{Y}]]></fr:tex>.
+    Since <fr:tex
+display="inline"><![CDATA[\alpha ^{*}]]></fr:tex>, as a right adjoint, preserves terminal objects and <fr:tex
+display="inline"><![CDATA[f^{*} \cong  \alpha ^{*}g^{*}]]></fr:tex> by the (pseudo)functoriality of <fr:tex
+display="inline"><![CDATA[T]]></fr:tex>, we have <fr:tex
+display="inline"><![CDATA[1 \leq  f^{*}{\mathopen {}[g]\mathclose {}}_{Y}]]></fr:tex>.
+    Then, the transpose along the adjunction <fr:tex
+display="inline"><![CDATA[\Sigma _{f} \dashv  f^{*}]]></fr:tex> yields <fr:tex
+display="inline"><![CDATA[{\mathopen {}[f]\mathclose {}}_{Y} \leq  {\mathopen {}[g]\mathclose {}}_{Y}]]></fr:tex>.</fr:p>
+  <fr:p>Now for each <fr:tex
+display="inline"><![CDATA[g\colon Z\to Y]]></fr:tex>, form the following pullback:</fr:p>
   
     
       
       <fr:embedded-tex
-hash="011ad747a20d8eeb1a313a4ff1cd5784"><fr:embedded-tex-preamble>
-         
-   \RequirePackage {tikz}
-   \RequirePackage {amsmath}
-   \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
+hash="e1bd5fefb0fe8baa21479bac9059ba93"><fr:embedded-tex-preamble><![CDATA[
+        
+  \RequirePackage {tikz}
+  \RequirePackage {amsmath}
+  \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
 
-   \definecolor {catccolor}{RGB}{255,244,138}
-   \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
-   \tikzstyle {catc}=[catccolor!60]
-   \tikzstyle {catd}=[orange!40]
-   \tikzstyle {cate}=[red!40]
-   \tikzstyle {catf}=[blue!10]
-   \tikzstyle {catg}=[green!25]
+  \definecolor {catccolor}{RGB}{255,244,138}
+  \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
+  \tikzstyle {catc}=[catccolor!60]
+  \tikzstyle {catd}=[orange!40]
+  \tikzstyle {cate}=[red!40]
+  \tikzstyle {catf}=[blue!10]
+  \tikzstyle {catg}=[green!25]
 
 
-   \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
-   \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
+  \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
+  \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
 
-   \NewDocumentCommand \CreateRect {D&lt;&gt;{} m m}{
-     \path 
+  \NewDocumentCommand \CreateRect {D<>{} m m}{
+    \path 
       coordinate (#1nw)
       ++(#2,-#3) coordinate (#1se)
       coordinate (#1sw) at (#1se -| #1nw)
       coordinate (#1ne) at (#1nw -| #1se)
     ;
 
-     \path [spath/save = #1north] (#1nw) to (#1ne);
-     \path [spath/save = #1west] (#1nw) to (#1sw);
-     \path [spath/save = #1east] (#1ne) to (#1se);
-     \path [spath/save = #1south] (#1sw) to (#1se);
+    \path [spath/save = #1north] (#1nw) to (#1ne);
+    \path [spath/save = #1west] (#1nw) to (#1sw);
+    \path [spath/save = #1east] (#1ne) to (#1se);
+    \path [spath/save = #1south] (#1sw) to (#1se);
   }
- 
-         
+
+        
    % appears to be necessary
   \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd}
   \usetikzlibrary{matrix,arrows}
@@ -1235,7 +1323,7 @@ hash="011ad747a20d8eeb1a313a4ff1cd5784"><fr:embedded-tex-preamble>
       densely dashed
     },
     embedding/.style = {
-      {right hook}-&gt;
+      {right hook}->
     },
     cover/.style = {
       -{Triangle[open]}
@@ -1267,10 +1355,10 @@ hash="011ad747a20d8eeb1a313a4ff1cd5784"><fr:embedded-tex-preamble>
     square/ne/.style = {},
     square/se/.style = {},
     square/sw/.style = {},
-    square/north/.style = {-&gt;},
-    square/south/.style = {-&gt;},
-    square/west/.style = {-&gt;},
-    square/east/.style = {-&gt;},
+    square/north/.style = {->},
+    square/south/.style = {->},
+    square/west/.style = {->},
+    square/east/.style = {->},
     square/north/node/.style = {above},
     square/south/node/.style = {below},
     square/west/node/.style = {left},
@@ -1349,87 +1437,91 @@ hash="011ad747a20d8eeb1a313a4ff1cd5784"><fr:embedded-tex-preamble>
     \end{tikzpicture}
   }
   \ExplSyntaxOff
- 
-      </fr:embedded-tex-preamble><fr:embedded-tex-body>
-     \DiagramSquare {
+
+      ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+    \DiagramSquare {
       nw = A,
       nw/style = {pullback},
       ne = X,
       sw = Z,
       se = Y,
-      north = { f ^{*} (g)},
+      north = {f^{*}(g)},
       south = g,
       west = k,
       east = f,
     }
-  </fr:embedded-tex-body></fr:embedded-tex>
+  ]]></fr:embedded-tex-body></fr:embedded-tex>
     
   
-  <fr:p>
-    Then by Beck-Chevalley, we have
-  </fr:p>
+  <fr:p>Then by Beck-Chevalley, we have</fr:p>
   <fr:tex
-display="block">      \begin {aligned}       T(f) { \mathopen {}[ g ] \mathclose {}} _{Y} &amp;:= T(f) \Sigma _{g}(1) \\                           &amp; \cong   \Sigma _{ f ^{*} (g)} k ^{*} (1) &amp;&amp;  \text {right adjoint preserves terminal object} \\                           &amp; \cong   \Sigma _{ f ^{*} (g)}(1) \\                           &amp;=:  { \mathopen {}[ \mathord { \hspace {1pt} \text {--} \hspace {1pt}} ] \mathclose {}} _{X} f ^{*} (g)      \end {aligned}   </fr:tex>
-  <fr:p>
-    These isomorphisms assemble into a natural isomorphism <fr:tex>f ^{*} { \mathopen {}[ \mathord { \hspace {1pt} \text {--} \hspace {1pt}} ] \mathclose {}} _{Y}  \cong   { \mathopen {}[ f ^{*} ( \mathord { \hspace {1pt} \text {--} \hspace {1pt}} ) ] \mathclose {}} _{X}</fr:tex> since any two parallel morphisms in the preorder <fr:tex>T(X)</fr:tex> are equal.
-  </fr:p>
-</fr:mainmatter></fr:tree>
+display="block"><![CDATA[     \begin {aligned}       T(f){\mathopen {}[g]\mathclose {}}_{Y} &:= T(f)\Sigma _{g}(1)\\                          &\cong  \Sigma _{f^{*}(g)}k^{*}(1) && \text {right adjoint preserves terminal object}\\                          &\cong  \Sigma _{f^{*}(g)}(1)\\                          &=: {\mathopen {}[\mathord {\hspace {1pt}\text {--}\hspace {1pt}}]\mathclose {}}_{X}f^{*}(g)     \end {aligned}   ]]></fr:tex>
+  <fr:p>These isomorphisms assemble into a natural isomorphism <fr:tex
+display="inline"><![CDATA[f^{*}{\mathopen {}[\mathord {\hspace {1pt}\text {--}\hspace {1pt}}]\mathclose {}}_{Y} \cong  {\mathopen {}[f^{*}(\mathord {\hspace {1pt}\text {--}\hspace {1pt}})]\mathclose {}}_{X}]]></fr:tex> since any two parallel morphisms in the preorder <fr:tex
+display="inline"><![CDATA[T(X)]]></fr:tex> are equal.</fr:p>
+</fr:mainmatter><fr:backmatter /></fr:tree>
     
-  </fr:mainmatter></fr:tree><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+  </fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>248</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>log-000C</fr:addr><fr:route>log-000C.xml</fr:route><fr:title>Doctrine</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>21</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
-  Let <fr:tex>\mathcal { C }</fr:tex> be a category with finite products.
-  A <fr:em><fr:strong>(primitive) doctrine</fr:strong></fr:em> over <fr:tex>\mathcal { C }</fr:tex> is a <fr:tex>\mathcal { C }</fr:tex>-indexed category <fr:tex>T \colon \mathcal { C } ^ \mathrm {op} \to \mathsf { CAT }</fr:tex>.
-  If <fr:tex>T \colon \mathcal { C } ^ \mathrm {op} \to \mathsf { CAT }</fr:tex> and <fr:tex>U \colon \mathcal { D } ^ \mathrm {op} \to \mathsf { CAT }</fr:tex> are primitive doctrines, then a <fr:em><fr:strong>morphism of doctrines</fr:strong></fr:em> <fr:tex>F \colon T \to U</fr:tex> consists of the following data:
-</fr:p><fr:ul><fr:li>
-    A finite-product preserving functor <fr:tex>F_{0} \colon \mathcal { C } \to \mathcal { D }</fr:tex>.
-  </fr:li>
-  <fr:li>
-    For each object <fr:tex>X  \in   \mathcal { C }</fr:tex>, a functor <fr:tex>F_{1,X} \colon TX \to UF_{0}X</fr:tex>.
-  </fr:li></fr:ul><fr:p>
-  These data are subject to the condition that for any morphism <fr:tex>f \colon X \to Y</fr:tex> in <fr:tex>\mathcal { C }</fr:tex>, the following square commutes:
-</fr:p>
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>301</fr:anchor><fr:addr
+type="user">log-000C</fr:addr><fr:route>log-000C.xml</fr:route><fr:title
+text="Doctrine">Doctrine</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>21</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> be a category with finite products.
+  A <fr:em><fr:strong>(primitive) doctrine</fr:strong></fr:em> over <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> is a <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex>-indexed category <fr:tex
+display="inline"><![CDATA[T\colon \mathcal {C}^\mathrm {op}\to \mathsf {CAT}]]></fr:tex>.
+  If <fr:tex
+display="inline"><![CDATA[T\colon \mathcal {C}^\mathrm {op}\to \mathsf {CAT}]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[U\colon \mathcal {D}^\mathrm {op}\to \mathsf {CAT}]]></fr:tex> are primitive doctrines, then a <fr:em><fr:strong>morphism of doctrines</fr:strong></fr:em> <fr:tex
+display="inline"><![CDATA[F\colon T\to U]]></fr:tex> consists of the following data:</fr:p><fr:ul><fr:li>A finite-product preserving functor <fr:tex
+display="inline"><![CDATA[F_{0}\colon \mathcal {C}\to \mathcal {D}]]></fr:tex>.</fr:li>
+  <fr:li>For each object <fr:tex
+display="inline"><![CDATA[X \in  \mathcal {C}]]></fr:tex>, a functor <fr:tex
+display="inline"><![CDATA[F_{1,X}\colon TX\to UF_{0}X]]></fr:tex>.</fr:li></fr:ul><fr:p>These data are subject to the condition that for any morphism <fr:tex
+display="inline"><![CDATA[f\colon X\to Y]]></fr:tex> in <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex>, the following square commutes:</fr:p>
     
       
       <fr:embedded-tex
-hash="9e085bc5f81afc51d45887c44d62df8c"><fr:embedded-tex-preamble>
-         
-   \RequirePackage {tikz}
-   \RequirePackage {amsmath}
-   \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
+hash="3c133ea9fa3990c2664c37093ccdc1f6"><fr:embedded-tex-preamble><![CDATA[
+        
+  \RequirePackage {tikz}
+  \RequirePackage {amsmath}
+  \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
 
-   \definecolor {catccolor}{RGB}{255,244,138}
-   \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
-   \tikzstyle {catc}=[catccolor!60]
-   \tikzstyle {catd}=[orange!40]
-   \tikzstyle {cate}=[red!40]
-   \tikzstyle {catf}=[blue!10]
-   \tikzstyle {catg}=[green!25]
+  \definecolor {catccolor}{RGB}{255,244,138}
+  \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
+  \tikzstyle {catc}=[catccolor!60]
+  \tikzstyle {catd}=[orange!40]
+  \tikzstyle {cate}=[red!40]
+  \tikzstyle {catf}=[blue!10]
+  \tikzstyle {catg}=[green!25]
 
 
-   \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
-   \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
+  \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
+  \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
 
-   \NewDocumentCommand \CreateRect {D&lt;&gt;{} m m}{
-     \path 
+  \NewDocumentCommand \CreateRect {D<>{} m m}{
+    \path 
       coordinate (#1nw)
       ++(#2,-#3) coordinate (#1se)
       coordinate (#1sw) at (#1se -| #1nw)
       coordinate (#1ne) at (#1nw -| #1se)
     ;
 
-     \path [spath/save = #1north] (#1nw) to (#1ne);
-     \path [spath/save = #1west] (#1nw) to (#1sw);
-     \path [spath/save = #1east] (#1ne) to (#1se);
-     \path [spath/save = #1south] (#1sw) to (#1se);
+    \path [spath/save = #1north] (#1nw) to (#1ne);
+    \path [spath/save = #1west] (#1nw) to (#1sw);
+    \path [spath/save = #1east] (#1ne) to (#1se);
+    \path [spath/save = #1south] (#1sw) to (#1se);
   }
- 
-         
+
+        
    % appears to be necessary
   \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd}
   \usetikzlibrary{matrix,arrows}
@@ -1498,7 +1590,7 @@ hash="9e085bc5f81afc51d45887c44d62df8c"><fr:embedded-tex-preamble>
       densely dashed
     },
     embedding/.style = {
-      {right hook}-&gt;
+      {right hook}->
     },
     cover/.style = {
       -{Triangle[open]}
@@ -1530,10 +1622,10 @@ hash="9e085bc5f81afc51d45887c44d62df8c"><fr:embedded-tex-preamble>
     square/ne/.style = {},
     square/se/.style = {},
     square/sw/.style = {},
-    square/north/.style = {-&gt;},
-    square/south/.style = {-&gt;},
-    square/west/.style = {-&gt;},
-    square/east/.style = {-&gt;},
+    square/north/.style = {->},
+    square/south/.style = {->},
+    square/west/.style = {->},
+    square/east/.style = {->},
     square/north/node/.style = {above},
     square/south/node/.style = {below},
     square/west/node/.style = {left},
@@ -1612,9 +1704,9 @@ hash="9e085bc5f81afc51d45887c44d62df8c"><fr:embedded-tex-preamble>
     \end{tikzpicture}
   }
   \ExplSyntaxOff
- 
-      </fr:embedded-tex-preamble><fr:embedded-tex-body>
-   \DiagramSquare {
+
+      ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+  \DiagramSquare {
     nw = TY,
     ne = {UF_{0}Y},
     sw = TX,
@@ -1624,109 +1716,141 @@ hash="9e085bc5f81afc51d45887c44d62df8c"><fr:embedded-tex-preamble>
     west = {Tf},
     east = {UF_{0}f},
   }
-</fr:embedded-tex-body></fr:embedded-tex>
+]]></fr:embedded-tex-body></fr:embedded-tex>
     
-  </fr:mainmatter></fr:tree><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+  </fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>250</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>ct-000H</fr:addr><fr:route>ct-000H.xml</fr:route><fr:title><fr:link
-href="ct-000G.xml"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>302</fr:anchor><fr:addr
+type="user">ct-000H</fr:addr><fr:route>ct-000H.xml</fr:route><fr:title
+text="Locally cartesian categories have pullbacks"><fr:link
 type="local"
-addr="ct-000G">Locally cartesian categories</fr:link> have pullbacks</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>A category <fr:tex>\mathcal { C }</fr:tex> is locally cartesian iff it has pullbacks.</fr:p>
+href="ct-000G.xml"
+addr="ct-000G"
+title="Locally cartesian category">Locally cartesian categories</fr:link> have pullbacks</fr:title><fr:taxon>Lemma</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>A category <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> is locally cartesian iff it has pullbacks.</fr:p>
     
       
       <fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="false"
 numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>249</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:parent>ct-000H</fr:parent></fr:frontmatter><fr:mainmatter>
-  <fr:p>If <fr:tex>\mathcal { C }</fr:tex> is locally cartesian, then <fr:tex>{{ \mathcal { C } }_{/{ A }}}</fr:tex> has products for any object <fr:tex>A  \in   \mathcal { C }</fr:tex>. But, products in <fr:tex>{{ \mathcal { C } }_{/{ A }}}</fr:tex> are pullbacks over <fr:tex>A</fr:tex>. Thus, <fr:tex>\mathcal { C }</fr:tex> has pullbacks.</fr:p>
-  <fr:p>Conversely, assume that <fr:tex>\mathcal { C }</fr:tex> has pullbacks. Then since the forgetful functor <fr:tex>\Sigma _{A} \colon {{ \mathcal { C } }_{/{ A }}} \to \mathcal { C }</fr:tex> creates connected limits for any object <fr:tex>A  \in   \mathcal { C }</fr:tex>, the slice <fr:tex>{{ \mathcal { C } }_{/{ A }}}</fr:tex> has pullbacks. Moreover, <fr:tex>\mathsf {id} _{ A }</fr:tex> is the terminal object in <fr:tex>{{ \mathcal { C } }_{/{ A }}}</fr:tex>. Thus, <fr:tex>{{ \mathcal { C } }_{/{ A }}}</fr:tex> is cartesian.</fr:p>
-</fr:mainmatter></fr:tree>
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>303</fr:anchor><fr:addr
+type="machine">#274</fr:addr><fr:route>unstable-274.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:authors /><fr:parent>ct-000H</fr:parent></fr:frontmatter><fr:mainmatter>
+  <fr:p>If <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> is locally cartesian, then <fr:tex
+display="inline"><![CDATA[{{\mathcal {C}}_{/{A}}}]]></fr:tex> has products for any object <fr:tex
+display="inline"><![CDATA[A \in  \mathcal {C}]]></fr:tex>. But, products in <fr:tex
+display="inline"><![CDATA[{{\mathcal {C}}_{/{A}}}]]></fr:tex> are pullbacks over <fr:tex
+display="inline"><![CDATA[A]]></fr:tex>. Thus, <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> has pullbacks.</fr:p>
+  <fr:p>Conversely, assume that <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> has pullbacks. Then since the forgetful functor <fr:tex
+display="inline"><![CDATA[\Sigma _{A}\colon {{\mathcal {C}}_{/{A}}}\to \mathcal {C}]]></fr:tex> creates connected limits for any object <fr:tex
+display="inline"><![CDATA[A \in  \mathcal {C}]]></fr:tex>, the slice <fr:tex
+display="inline"><![CDATA[{{\mathcal {C}}_{/{A}}}]]></fr:tex> has pullbacks. Moreover, <fr:tex
+display="inline"><![CDATA[\mathsf {id}_{A}]]></fr:tex> is the terminal object in <fr:tex
+display="inline"><![CDATA[{{\mathcal {C}}_{/{A}}}]]></fr:tex>. Thus, <fr:tex
+display="inline"><![CDATA[{{\mathcal {C}}_{/{A}}}]]></fr:tex> is cartesian.</fr:p>
+</fr:mainmatter><fr:backmatter /></fr:tree>
     
-  </fr:mainmatter></fr:tree><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+  </fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>261</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>ct-000J</fr:addr><fr:route>ct-000J.xml</fr:route><fr:title><fr:link
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>304</fr:anchor><fr:addr
+type="user">ct-000J</fr:addr><fr:route>ct-000J.xml</fr:route><fr:title
+text="Slice comparison functor of a locally cartesian category admits a right adjoint"><fr:link
+type="local"
 href="ct-000I.xml"
+addr="ct-000I"
+title="Slice comparison functor">Slice comparison functor</fr:link> of a <fr:link
 type="local"
-addr="ct-000I">Slice comparison functor</fr:link> of a <fr:link
 href="ct-000G.xml"
-type="local"
-addr="ct-000G">locally cartesian category</fr:link> admits a right adjoint</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>A category <fr:tex>\mathcal { C }</fr:tex> is locally cartesian iff for all morphisms <fr:tex>f</fr:tex> of <fr:tex>\mathcal { C }</fr:tex>, the functor <fr:tex>\Sigma _{f}</fr:tex> constructed in <fr:ref
+addr="ct-000G"
+title="Locally cartesian category">locally cartesian category</fr:link> admits a right adjoint</fr:title><fr:taxon>Lemma</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>A category <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> is locally cartesian iff for all morphisms <fr:tex
+display="inline"><![CDATA[f]]></fr:tex> of <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex>, the functor <fr:tex
+display="inline"><![CDATA[\Sigma _{f}]]></fr:tex> constructed in <fr:ref
 addr="ct-000I"
 href="ct-000I.xml"
-taxon="Lemma"></fr:ref> admits a right adjoint <fr:tex>f ^{*}</fr:tex>. Moreover, <fr:tex>f ^{*}</fr:tex> is (isomorphic to) the pullback functor.</fr:p>
+taxon="Lemma" /> admits a right adjoint <fr:tex
+display="inline"><![CDATA[f^{*}]]></fr:tex>. Moreover, <fr:tex
+display="inline"><![CDATA[f^{*}]]></fr:tex> is (isomorphic to) the pullback functor.</fr:p>
     
       
       <fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="false"
 numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>260</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:parent>ct-000J</fr:parent></fr:frontmatter><fr:mainmatter>
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>305</fr:anchor><fr:addr
+type="machine">#272</fr:addr><fr:route>unstable-272.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:authors /><fr:parent>ct-000J</fr:parent></fr:frontmatter><fr:mainmatter>
   <fr:p>By <fr:ref
 addr="ct-000H"
 href="ct-000H.xml"
-taxon="Lemma"></fr:ref>, locally cartesian categories are precisely those categories with pullbacks.</fr:p>
+taxon="Lemma" />, locally cartesian categories are precisely those categories with pullbacks.</fr:p>
   
   <fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
 numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>251</fr:anchor><fr:taxon>If</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:parent>ct-000J</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Suppose that <fr:tex>\Sigma _{f}  \dashv   f ^{*}</fr:tex> for any <fr:tex>f</fr:tex>. We show that the following diagram</fr:p>
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>306</fr:anchor><fr:addr
+type="machine">#270</fr:addr><fr:route>unstable-270.xml</fr:route><fr:taxon>If</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:authors /><fr:parent>ct-000J</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Suppose that <fr:tex
+display="inline"><![CDATA[\Sigma _{f} \dashv  f^{*}]]></fr:tex> for any <fr:tex
+display="inline"><![CDATA[f]]></fr:tex>. We show that the following diagram</fr:p>
     
       
       <fr:embedded-tex
-hash="b1420d82d13131fb7015646972e07761"><fr:embedded-tex-preamble>
-         
-   \RequirePackage {tikz}
-   \RequirePackage {amsmath}
-   \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
+hash="978cb4d5b9419bff7dba5ad49136cf28"><fr:embedded-tex-preamble><![CDATA[
+        
+  \RequirePackage {tikz}
+  \RequirePackage {amsmath}
+  \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
 
-   \definecolor {catccolor}{RGB}{255,244,138}
-   \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
-   \tikzstyle {catc}=[catccolor!60]
-   \tikzstyle {catd}=[orange!40]
-   \tikzstyle {cate}=[red!40]
-   \tikzstyle {catf}=[blue!10]
-   \tikzstyle {catg}=[green!25]
+  \definecolor {catccolor}{RGB}{255,244,138}
+  \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
+  \tikzstyle {catc}=[catccolor!60]
+  \tikzstyle {catd}=[orange!40]
+  \tikzstyle {cate}=[red!40]
+  \tikzstyle {catf}=[blue!10]
+  \tikzstyle {catg}=[green!25]
 
 
-   \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
-   \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
+  \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
+  \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
 
-   \NewDocumentCommand \CreateRect {D&lt;&gt;{} m m}{
-     \path 
+  \NewDocumentCommand \CreateRect {D<>{} m m}{
+    \path 
       coordinate (#1nw)
       ++(#2,-#3) coordinate (#1se)
       coordinate (#1sw) at (#1se -| #1nw)
       coordinate (#1ne) at (#1nw -| #1se)
     ;
 
-     \path [spath/save = #1north] (#1nw) to (#1ne);
-     \path [spath/save = #1west] (#1nw) to (#1sw);
-     \path [spath/save = #1east] (#1ne) to (#1se);
-     \path [spath/save = #1south] (#1sw) to (#1se);
+    \path [spath/save = #1north] (#1nw) to (#1ne);
+    \path [spath/save = #1west] (#1nw) to (#1sw);
+    \path [spath/save = #1east] (#1ne) to (#1se);
+    \path [spath/save = #1south] (#1sw) to (#1se);
   }
- 
-         
+
+        
    % appears to be necessary
   \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd}
   \usetikzlibrary{matrix,arrows}
@@ -1795,7 +1919,7 @@ hash="b1420d82d13131fb7015646972e07761"><fr:embedded-tex-preamble>
       densely dashed
     },
     embedding/.style = {
-      {right hook}-&gt;
+      {right hook}->
     },
     cover/.style = {
       -{Triangle[open]}
@@ -1827,10 +1951,10 @@ hash="b1420d82d13131fb7015646972e07761"><fr:embedded-tex-preamble>
     square/ne/.style = {},
     square/se/.style = {},
     square/sw/.style = {},
-    square/north/.style = {-&gt;},
-    square/south/.style = {-&gt;},
-    square/west/.style = {-&gt;},
-    square/east/.style = {-&gt;},
+    square/north/.style = {->},
+    square/south/.style = {->},
+    square/west/.style = {->},
+    square/east/.style = {->},
     square/north/node/.style = {above},
     square/south/node/.style = {below},
     square/west/node/.style = {left},
@@ -1909,62 +2033,68 @@ hash="b1420d82d13131fb7015646972e07761"><fr:embedded-tex-preamble>
     \end{tikzpicture}
   }
   \ExplSyntaxOff
- 
-      </fr:embedded-tex-preamble><fr:embedded-tex-body>
-       \begin {tikzpicture}[diagram]
-         
-     \SpliceDiagramSquare {
+
+      ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+      \begin {tikzpicture}[diagram]
+        
+    \SpliceDiagramSquare {
       sw = A,
       se = B,
       nw = A',
       ne = B',
       south = f,
       east = g,
-      west =  f ^{*} (g),
+      west = f^{*}(g),
       west/node/style = {right},
-      north =  \varepsilon _{g},
+      north = \varepsilon _{g},
     }
-   
-       \end {tikzpicture}
-    </fr:embedded-tex-body></fr:embedded-tex>
+  
+      \end {tikzpicture}
+    ]]></fr:embedded-tex-body></fr:embedded-tex>
     
-  <fr:p>is a pullback, where <fr:tex>\varepsilon _{g}</fr:tex> is the counit of the adjunction. Note that since <fr:tex>f  \circ   f ^{*} (g) =  \Sigma _{f}( f ^{*} (g))</fr:tex> by construction, the component <fr:tex>\varepsilon _{g}</fr:tex> makes the diagram commute.</fr:p><fr:p>Let <fr:tex>h' \colon C \to A</fr:tex> and <fr:tex>h \colon C \to B'</fr:tex> be morphisms such that <fr:tex>fh' = gh</fr:tex>.</fr:p>
+  <fr:p>is a pullback, where <fr:tex
+display="inline"><![CDATA[\varepsilon _{g}]]></fr:tex> is the counit of the adjunction. Note that since <fr:tex
+display="inline"><![CDATA[f \circ  f^{*}(g) = \Sigma _{f}(f^{*}(g))]]></fr:tex> by construction, the component <fr:tex
+display="inline"><![CDATA[\varepsilon _{g}]]></fr:tex> makes the diagram commute.</fr:p><fr:p>Let <fr:tex
+display="inline"><![CDATA[h'\colon C\to A]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[h\colon C\to B']]></fr:tex> be morphisms such that <fr:tex
+display="inline"><![CDATA[fh' = gh]]></fr:tex>.</fr:p>
     
       
       <fr:embedded-tex
-hash="7a09fdfa15abc2d8f1d0d5b20caaa713"><fr:embedded-tex-preamble>
-         
-   \RequirePackage {tikz}
-   \RequirePackage {amsmath}
-   \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
+hash="6c571ce318e6c51d13819d3e139d9fb2"><fr:embedded-tex-preamble><![CDATA[
+        
+  \RequirePackage {tikz}
+  \RequirePackage {amsmath}
+  \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
 
-   \definecolor {catccolor}{RGB}{255,244,138}
-   \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
-   \tikzstyle {catc}=[catccolor!60]
-   \tikzstyle {catd}=[orange!40]
-   \tikzstyle {cate}=[red!40]
-   \tikzstyle {catf}=[blue!10]
-   \tikzstyle {catg}=[green!25]
+  \definecolor {catccolor}{RGB}{255,244,138}
+  \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
+  \tikzstyle {catc}=[catccolor!60]
+  \tikzstyle {catd}=[orange!40]
+  \tikzstyle {cate}=[red!40]
+  \tikzstyle {catf}=[blue!10]
+  \tikzstyle {catg}=[green!25]
 
 
-   \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
-   \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
+  \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
+  \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
 
-   \NewDocumentCommand \CreateRect {D&lt;&gt;{} m m}{
-     \path 
+  \NewDocumentCommand \CreateRect {D<>{} m m}{
+    \path 
       coordinate (#1nw)
       ++(#2,-#3) coordinate (#1se)
       coordinate (#1sw) at (#1se -| #1nw)
       coordinate (#1ne) at (#1nw -| #1se)
     ;
 
-     \path [spath/save = #1north] (#1nw) to (#1ne);
-     \path [spath/save = #1west] (#1nw) to (#1sw);
-     \path [spath/save = #1east] (#1ne) to (#1se);
-     \path [spath/save = #1south] (#1sw) to (#1se);
+    \path [spath/save = #1north] (#1nw) to (#1ne);
+    \path [spath/save = #1west] (#1nw) to (#1sw);
+    \path [spath/save = #1east] (#1ne) to (#1se);
+    \path [spath/save = #1south] (#1sw) to (#1se);
   }
- 
-         
+
+        
    % appears to be necessary
   \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd}
   \usetikzlibrary{matrix,arrows}
@@ -2033,7 +2163,7 @@ hash="7a09fdfa15abc2d8f1d0d5b20caaa713"><fr:embedded-tex-preamble>
       densely dashed
     },
     embedding/.style = {
-      {right hook}-&gt;
+      {right hook}->
     },
     cover/.style = {
       -{Triangle[open]}
@@ -2065,10 +2195,10 @@ hash="7a09fdfa15abc2d8f1d0d5b20caaa713"><fr:embedded-tex-preamble>
     square/ne/.style = {},
     square/se/.style = {},
     square/sw/.style = {},
-    square/north/.style = {-&gt;},
-    square/south/.style = {-&gt;},
-    square/west/.style = {-&gt;},
-    square/east/.style = {-&gt;},
+    square/north/.style = {->},
+    square/south/.style = {->},
+    square/west/.style = {->},
+    square/east/.style = {->},
     square/north/node/.style = {above},
     square/south/node/.style = {below},
     square/west/node/.style = {left},
@@ -2147,43 +2277,53 @@ hash="7a09fdfa15abc2d8f1d0d5b20caaa713"><fr:embedded-tex-preamble>
     \end{tikzpicture}
   }
   \ExplSyntaxOff
- 
-      </fr:embedded-tex-preamble><fr:embedded-tex-body>
-       \begin {tikzpicture}[diagram]
-         
-     \SpliceDiagramSquare {
+
+      ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+      \begin {tikzpicture}[diagram]
+        
+    \SpliceDiagramSquare {
       sw = A,
       se = B,
       nw = A',
       ne = B',
       south = f,
       east = g,
-      west =  f ^{*} (g),
+      west = f^{*}(g),
       west/node/style = {right},
-      north =  \varepsilon _{g},
+      north = \varepsilon _{g},
     }
-   
-         \node  [above left = of nw] (c) {$C$};
-         \draw  [-&gt;,morphism,bend right] (c) to node[swap] {$h'$} (sw);
-         \draw  [-&gt;,morphism,bend left] (c) to node {$h$} (ne);
-         \draw  [-&gt;,morphism,exists] (c) to node[desc] {$h ^{ \dag } $} (nw);
-       \end {tikzpicture}
-    </fr:embedded-tex-body></fr:embedded-tex>
+  
+        \node  [above left = of nw] (c) {$C$};
+        \draw  [->,morphism,bend right] (c) to node[swap] {$h'$} (sw);
+        \draw  [->,morphism,bend left] (c) to node {$h$} (ne);
+        \draw  [->,morphism,exists] (c) to node[desc] {$h^{\dag }$} (nw);
+      \end {tikzpicture}
+    ]]></fr:embedded-tex-body></fr:embedded-tex>
     
-  <fr:p>Note that <fr:tex>h</fr:tex> is a morphism <fr:tex>h \colon \Sigma _{f}(h') \to g</fr:tex> in <fr:tex>{{ \mathcal { C } }_{/{ B }}}</fr:tex>. Thus, it corresponds to a unique morphism <fr:tex>h ^{ \dag } \colon h' \to f ^{*} (g)</fr:tex> under the adjunction.</fr:p><fr:p>The transpose of <fr:tex>h ^{ \dag }</fr:tex> can be computed as <fr:tex>\varepsilon _{g}  \circ   \Sigma _{f}(h ^{ \dag } )</fr:tex>. Since <fr:tex>\Sigma _{f}</fr:tex> is the identity on morphisms, we have
+  <fr:p>Note that <fr:tex
+display="inline"><![CDATA[h]]></fr:tex> is a morphism <fr:tex
+display="inline"><![CDATA[h\colon \Sigma _{f}(h')\to g]]></fr:tex> in <fr:tex
+display="inline"><![CDATA[{{\mathcal {C}}_{/{B}}}]]></fr:tex>. Thus, it corresponds to a unique morphism <fr:tex
+display="inline"><![CDATA[h^{\dag }\colon h'\to f^{*}(g)]]></fr:tex> under the adjunction.</fr:p><fr:p>The transpose of <fr:tex
+display="inline"><![CDATA[h^{\dag }]]></fr:tex> can be computed as <fr:tex
+display="inline"><![CDATA[\varepsilon _{g} \circ  \Sigma _{f}(h^{\dag })]]></fr:tex>. Since <fr:tex
+display="inline"><![CDATA[\Sigma _{f}]]></fr:tex> is the identity on morphisms, we have
       <fr:tex
-display="block">         (h ^{ \dag } ) ^{ \dag }  =  \varepsilon _{g}  \circ   \Sigma _{f}(h ^{ \dag } ) =  \varepsilon _{g}  \circ  h ^{ \dag }  = h       </fr:tex>
-      Thus, the top triangle also commutes.
-    </fr:p></fr:mainmatter></fr:tree>
+display="block"><![CDATA[         (h^{\dag })^{\dag } = \varepsilon _{g} \circ  \Sigma _{f}(h^{\dag }) = \varepsilon _{g} \circ  h^{\dag } = h       ]]></fr:tex>
+      Thus, the top triangle also commutes.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree>
 
   <fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
 numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>259</fr:anchor><fr:taxon>Only if</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:parent>ct-000J</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Suppose that <fr:tex>\mathcal { C }</fr:tex> has pullbacks. Then we can take <fr:tex>f ^{*}</fr:tex> to be the pullback functor. It remains to check that <fr:tex>\Sigma _{f}  \dashv   f ^{*}</fr:tex>.</fr:p>
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>307</fr:anchor><fr:addr
+type="machine">#271</fr:addr><fr:route>unstable-271.xml</fr:route><fr:taxon>Only if</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:authors /><fr:parent>ct-000J</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Suppose that <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> has pullbacks. Then we can take <fr:tex
+display="inline"><![CDATA[f^{*}]]></fr:tex> to be the pullback functor. It remains to check that <fr:tex
+display="inline"><![CDATA[\Sigma _{f} \dashv  f^{*}]]></fr:tex>.</fr:p>
   <html:table
 xmlns:html="http://www.w3.org/1999/xhtml">
       
@@ -2200,44 +2340,46 @@ xmlns:html="http://www.w3.org/1999/xhtml">
   <html:tr>
         
   <html:td>
-          Let <fr:tex>h  \in   {{ \mathcal { C } }_{/{ A }}}</fr:tex> be an object, we take <fr:tex>\eta _{h} \colon h \to f ^{*} ( \Sigma _{f}(h))</fr:tex> to be the unique morphism given by the following pullback:
+          Let <fr:tex
+display="inline"><![CDATA[h \in  {{\mathcal {C}}_{/{A}}}]]></fr:tex> be an object, we take <fr:tex
+display="inline"><![CDATA[\eta _{h}\colon h\to f^{*}(\Sigma _{f}(h))]]></fr:tex> to be the unique morphism given by the following pullback:
           
     
       
       <fr:embedded-tex
-hash="a39a72e8fd3626c07c8b81e56eeebb21"><fr:embedded-tex-preamble>
-         
-   \RequirePackage {tikz}
-   \RequirePackage {amsmath}
-   \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
+hash="00fa5bdf6f274d0c7c6027f4ec6c92bc"><fr:embedded-tex-preamble><![CDATA[
+        
+  \RequirePackage {tikz}
+  \RequirePackage {amsmath}
+  \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
 
-   \definecolor {catccolor}{RGB}{255,244,138}
-   \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
-   \tikzstyle {catc}=[catccolor!60]
-   \tikzstyle {catd}=[orange!40]
-   \tikzstyle {cate}=[red!40]
-   \tikzstyle {catf}=[blue!10]
-   \tikzstyle {catg}=[green!25]
+  \definecolor {catccolor}{RGB}{255,244,138}
+  \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
+  \tikzstyle {catc}=[catccolor!60]
+  \tikzstyle {catd}=[orange!40]
+  \tikzstyle {cate}=[red!40]
+  \tikzstyle {catf}=[blue!10]
+  \tikzstyle {catg}=[green!25]
 
 
-   \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
-   \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
+  \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
+  \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
 
-   \NewDocumentCommand \CreateRect {D&lt;&gt;{} m m}{
-     \path 
+  \NewDocumentCommand \CreateRect {D<>{} m m}{
+    \path 
       coordinate (#1nw)
       ++(#2,-#3) coordinate (#1se)
       coordinate (#1sw) at (#1se -| #1nw)
       coordinate (#1ne) at (#1nw -| #1se)
     ;
 
-     \path [spath/save = #1north] (#1nw) to (#1ne);
-     \path [spath/save = #1west] (#1nw) to (#1sw);
-     \path [spath/save = #1east] (#1ne) to (#1se);
-     \path [spath/save = #1south] (#1sw) to (#1se);
+    \path [spath/save = #1north] (#1nw) to (#1ne);
+    \path [spath/save = #1west] (#1nw) to (#1sw);
+    \path [spath/save = #1east] (#1ne) to (#1se);
+    \path [spath/save = #1south] (#1sw) to (#1se);
   }
- 
-         
+
+        
    % appears to be necessary
   \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd}
   \usetikzlibrary{matrix,arrows}
@@ -2306,7 +2448,7 @@ hash="a39a72e8fd3626c07c8b81e56eeebb21"><fr:embedded-tex-preamble>
       densely dashed
     },
     embedding/.style = {
-      {right hook}-&gt;
+      {right hook}->
     },
     cover/.style = {
       -{Triangle[open]}
@@ -2338,10 +2480,10 @@ hash="a39a72e8fd3626c07c8b81e56eeebb21"><fr:embedded-tex-preamble>
     square/ne/.style = {},
     square/se/.style = {},
     square/sw/.style = {},
-    square/north/.style = {-&gt;},
-    square/south/.style = {-&gt;},
-    square/west/.style = {-&gt;},
-    square/east/.style = {-&gt;},
+    square/north/.style = {->},
+    square/south/.style = {->},
+    square/west/.style = {->},
+    square/east/.style = {->},
     square/north/node/.style = {above},
     square/south/node/.style = {below},
     square/west/node/.style = {left},
@@ -2420,10 +2562,10 @@ hash="a39a72e8fd3626c07c8b81e56eeebb21"><fr:embedded-tex-preamble>
     \end{tikzpicture}
   }
   \ExplSyntaxOff
- 
-      </fr:embedded-tex-preamble><fr:embedded-tex-body>
-             \begin {tikzpicture}[diagram]
-               \SpliceDiagramSquare {
+
+      ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+            \begin {tikzpicture}[diagram]
+              \SpliceDiagramSquare {
                 width = 3cm,
                 sw = A,
                 nw/style = pullback,
@@ -2431,61 +2573,64 @@ hash="a39a72e8fd3626c07c8b81e56eeebb21"><fr:embedded-tex-preamble>
                 nw = A',
                 ne = B',
                 south = f,
-                east =  \Sigma _{f}(h),
-                west =  f ^{*} ( \Sigma _{f}(h)),
+                east = \Sigma _{f}(h),
+                west = f^{*}(\Sigma _{f}(h)),
                 west/node/style = {right},
-                north =  \varepsilon _{ \Sigma _{f}(h)},
+                north = \varepsilon _{\Sigma _{f}(h)},
               }
-               \node  [above left of = nw] (c) {$B'$};
-               \draw  [-&gt;,morphism,bend right] (c) to node[swap] {$h$} (sw);
-               \draw  [double,morphism,bend left] (c) to (ne);
-               \draw  [-&gt;,morphism,exists] (c) to node[desc] {$ \eta _{h}$} (nw);
-             \end {tikzpicture}
-          </fr:embedded-tex-body></fr:embedded-tex>
+              \node  [above left of = nw] (c) {$B'$};
+              \draw  [->,morphism,bend right] (c) to node[swap] {$h$} (sw);
+              \draw  [double,morphism,bend left] (c) to (ne);
+              \draw  [->,morphism,exists] (c) to node[desc] {$\eta _{h}$} (nw);
+            \end {tikzpicture}
+          ]]></fr:embedded-tex-body></fr:embedded-tex>
     
   
-          <fr:p>where <fr:tex>\varepsilon</fr:tex> is the counit defined on the right. Then naturality is a consequence of uniqueness.</fr:p>
+          <fr:p>where <fr:tex
+display="inline"><![CDATA[\varepsilon ]]></fr:tex> is the counit defined on the right. Then naturality is a consequence of uniqueness.</fr:p>
         </html:td>
 
         
-  <html:td>Let <fr:tex>g  \in   {{ \mathcal { C } }_{/{ B }}}</fr:tex> be an object. We take <fr:tex>\varepsilon _{g} \colon \Sigma _{f}( f ^{*} (g)) \to g</fr:tex> to be the following morphism.
+  <html:td>Let <fr:tex
+display="inline"><![CDATA[g \in  {{\mathcal {C}}_{/{B}}}]]></fr:tex> be an object. We take <fr:tex
+display="inline"><![CDATA[\varepsilon _{g}\colon \Sigma _{f}(f^{*}(g))\to g]]></fr:tex> to be the following morphism.
           
     
       
       <fr:embedded-tex
-hash="e4b01419b1cf30092327fc3a4b619a13"><fr:embedded-tex-preamble>
-         
-   \RequirePackage {tikz}
-   \RequirePackage {amsmath}
-   \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
+hash="d06c153112f52945894dc43faf6a95dc"><fr:embedded-tex-preamble><![CDATA[
+        
+  \RequirePackage {tikz}
+  \RequirePackage {amsmath}
+  \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
 
-   \definecolor {catccolor}{RGB}{255,244,138}
-   \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
-   \tikzstyle {catc}=[catccolor!60]
-   \tikzstyle {catd}=[orange!40]
-   \tikzstyle {cate}=[red!40]
-   \tikzstyle {catf}=[blue!10]
-   \tikzstyle {catg}=[green!25]
+  \definecolor {catccolor}{RGB}{255,244,138}
+  \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
+  \tikzstyle {catc}=[catccolor!60]
+  \tikzstyle {catd}=[orange!40]
+  \tikzstyle {cate}=[red!40]
+  \tikzstyle {catf}=[blue!10]
+  \tikzstyle {catg}=[green!25]
 
 
-   \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
-   \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
+  \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
+  \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
 
-   \NewDocumentCommand \CreateRect {D&lt;&gt;{} m m}{
-     \path 
+  \NewDocumentCommand \CreateRect {D<>{} m m}{
+    \path 
       coordinate (#1nw)
       ++(#2,-#3) coordinate (#1se)
       coordinate (#1sw) at (#1se -| #1nw)
       coordinate (#1ne) at (#1nw -| #1se)
     ;
 
-     \path [spath/save = #1north] (#1nw) to (#1ne);
-     \path [spath/save = #1west] (#1nw) to (#1sw);
-     \path [spath/save = #1east] (#1ne) to (#1se);
-     \path [spath/save = #1south] (#1sw) to (#1se);
+    \path [spath/save = #1north] (#1nw) to (#1ne);
+    \path [spath/save = #1west] (#1nw) to (#1sw);
+    \path [spath/save = #1east] (#1ne) to (#1se);
+    \path [spath/save = #1south] (#1sw) to (#1se);
   }
- 
-         
+
+        
    % appears to be necessary
   \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd}
   \usetikzlibrary{matrix,arrows}
@@ -2554,7 +2699,7 @@ hash="e4b01419b1cf30092327fc3a4b619a13"><fr:embedded-tex-preamble>
       densely dashed
     },
     embedding/.style = {
-      {right hook}-&gt;
+      {right hook}->
     },
     cover/.style = {
       -{Triangle[open]}
@@ -2586,10 +2731,10 @@ hash="e4b01419b1cf30092327fc3a4b619a13"><fr:embedded-tex-preamble>
     square/ne/.style = {},
     square/se/.style = {},
     square/sw/.style = {},
-    square/north/.style = {-&gt;},
-    square/south/.style = {-&gt;},
-    square/west/.style = {-&gt;},
-    square/east/.style = {-&gt;},
+    square/north/.style = {->},
+    square/south/.style = {->},
+    square/west/.style = {->},
+    square/east/.style = {->},
     square/north/node/.style = {above},
     square/south/node/.style = {below},
     square/west/node/.style = {left},
@@ -2668,9 +2813,9 @@ hash="e4b01419b1cf30092327fc3a4b619a13"><fr:embedded-tex-preamble>
     \end{tikzpicture}
   }
   \ExplSyntaxOff
- 
-      </fr:embedded-tex-preamble><fr:embedded-tex-body>
-             \DiagramSquare {
+
+      ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+            \DiagramSquare {
               sw = A,
               nw/style = pullback,
               se = B,
@@ -2678,50 +2823,53 @@ hash="e4b01419b1cf30092327fc3a4b619a13"><fr:embedded-tex-preamble>
               ne = B',
               south = f,
               east = g,
-              west =  f ^{*} (g),
-              north =  \varepsilon _{g},
+              west = f^{*}(g),
+              north = \varepsilon _{g},
             }
-          </fr:embedded-tex-body></fr:embedded-tex>
+          ]]></fr:embedded-tex-body></fr:embedded-tex>
     
   
-          Let <fr:tex>\alpha \colon g \to g'</fr:tex> be a morphism in <fr:tex>{{ \mathcal { C } }_{/{ B }}}</fr:tex>. By the construction of <fr:tex>f ^{*}</fr:tex>, we have the following commutative diagram.
+          Let <fr:tex
+display="inline"><![CDATA[\alpha \colon g\to g']]></fr:tex> be a morphism in <fr:tex
+display="inline"><![CDATA[{{\mathcal {C}}_{/{B}}}]]></fr:tex>. By the construction of <fr:tex
+display="inline"><![CDATA[f^{*}]]></fr:tex>, we have the following commutative diagram.
           
     
       
       <fr:embedded-tex
-hash="25bee72b9a37614e3eac28fd3d121035"><fr:embedded-tex-preamble>
-         
-   \RequirePackage {tikz}
-   \RequirePackage {amsmath}
-   \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
+hash="e02daf32ecb0fc7d1934cd86d2bd5577"><fr:embedded-tex-preamble><![CDATA[
+        
+  \RequirePackage {tikz}
+  \RequirePackage {amsmath}
+  \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
 
-   \definecolor {catccolor}{RGB}{255,244,138}
-   \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
-   \tikzstyle {catc}=[catccolor!60]
-   \tikzstyle {catd}=[orange!40]
-   \tikzstyle {cate}=[red!40]
-   \tikzstyle {catf}=[blue!10]
-   \tikzstyle {catg}=[green!25]
+  \definecolor {catccolor}{RGB}{255,244,138}
+  \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
+  \tikzstyle {catc}=[catccolor!60]
+  \tikzstyle {catd}=[orange!40]
+  \tikzstyle {cate}=[red!40]
+  \tikzstyle {catf}=[blue!10]
+  \tikzstyle {catg}=[green!25]
 
 
-   \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
-   \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
+  \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
+  \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
 
-   \NewDocumentCommand \CreateRect {D&lt;&gt;{} m m}{
-     \path 
+  \NewDocumentCommand \CreateRect {D<>{} m m}{
+    \path 
       coordinate (#1nw)
       ++(#2,-#3) coordinate (#1se)
       coordinate (#1sw) at (#1se -| #1nw)
       coordinate (#1ne) at (#1nw -| #1se)
     ;
 
-     \path [spath/save = #1north] (#1nw) to (#1ne);
-     \path [spath/save = #1west] (#1nw) to (#1sw);
-     \path [spath/save = #1east] (#1ne) to (#1se);
-     \path [spath/save = #1south] (#1sw) to (#1se);
+    \path [spath/save = #1north] (#1nw) to (#1ne);
+    \path [spath/save = #1west] (#1nw) to (#1sw);
+    \path [spath/save = #1east] (#1ne) to (#1se);
+    \path [spath/save = #1south] (#1sw) to (#1se);
   }
- 
-         
+
+        
    % appears to be necessary
   \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd}
   \usetikzlibrary{matrix,arrows}
@@ -2790,7 +2938,7 @@ hash="25bee72b9a37614e3eac28fd3d121035"><fr:embedded-tex-preamble>
       densely dashed
     },
     embedding/.style = {
-      {right hook}-&gt;
+      {right hook}->
     },
     cover/.style = {
       -{Triangle[open]}
@@ -2822,10 +2970,10 @@ hash="25bee72b9a37614e3eac28fd3d121035"><fr:embedded-tex-preamble>
     square/ne/.style = {},
     square/se/.style = {},
     square/sw/.style = {},
-    square/north/.style = {-&gt;},
-    square/south/.style = {-&gt;},
-    square/west/.style = {-&gt;},
-    square/east/.style = {-&gt;},
+    square/north/.style = {->},
+    square/south/.style = {->},
+    square/west/.style = {->},
+    square/east/.style = {->},
     square/north/node/.style = {above},
     square/south/node/.style = {below},
     square/west/node/.style = {left},
@@ -2904,37 +3052,47 @@ hash="25bee72b9a37614e3eac28fd3d121035"><fr:embedded-tex-preamble>
     \end{tikzpicture}
   }
   \ExplSyntaxOff
- 
-      </fr:embedded-tex-preamble><fr:embedded-tex-body>
-             \begin {tikzpicture}[diagram]
-               \SpliceDiagramSquare {
+
+      ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+            \begin {tikzpicture}[diagram]
+              \SpliceDiagramSquare {
                 nw = A'',
                 nw/style = pullback,
                 ne = B'',
                 sw = A,
                 se = B,
-                north =  \varepsilon _{g'},
-                west =  f ^{*} (g'),
+                north = \varepsilon _{g'},
+                west = f^{*}(g'),
                 west/node/style = {right},
                 south = f,
                 east = g',
               }
-               \node  [above left of = nw] (a') {$A'$};
-               \draw  [-&gt;,morphism,bend right] (a') to node[swap] {$ f ^{*} (g)$} (sw);
-               \draw  [-&gt;,morphism,bend left] (a') to node {$ \alpha \varepsilon _{g}$} (ne);
-               \draw  [-&gt;,morphism,exists] (a') to node[desc] {$ f ^{*} ( \alpha )$} (nw);
-             \end {tikzpicture}
-          </fr:embedded-tex-body></fr:embedded-tex>
+              \node  [above left of = nw] (a') {$A'$};
+              \draw  [->,morphism,bend right] (a') to node[swap] {$f^{*}(g)$} (sw);
+              \draw  [->,morphism,bend left] (a') to node {$\alpha \varepsilon _{g}$} (ne);
+              \draw  [->,morphism,exists] (a') to node[desc] {$f^{*}(\alpha )$} (nw);
+            \end {tikzpicture}
+          ]]></fr:embedded-tex-body></fr:embedded-tex>
     
   
-          Thus, <fr:tex>\varepsilon _{g'} \Sigma _{f}( f ^{*} ( \alpha )) =  \varepsilon _{g'} f ^{*} ( \alpha ) =  \alpha \varepsilon _{g}</fr:tex> as required.
+          Thus, <fr:tex
+display="inline"><![CDATA[\varepsilon _{g'}\Sigma _{f}(f^{*}(\alpha )) = \varepsilon _{g'}f^{*}(\alpha ) = \alpha \varepsilon _{g}]]></fr:tex> as required.
         </html:td>
 
       </html:tr>
 
     </html:table>
-<fr:p>By construction, <fr:tex>\varepsilon _{ \Sigma _{f}} \eta  =  \mathsf {id} _{ \Sigma _{f} }</fr:tex>. Thus, it remains to verify the other triangle equality.</fr:p><fr:p>Let <fr:tex>g  \in   {{ \mathcal { C } }_{/{ B }}}</fr:tex> be an object. We need to show that <fr:tex>f ^{*} ( \varepsilon _{g}) \eta _{ f ^{*} (g)} =  \mathsf {id} _{ f ^{*} (g) }</fr:tex>. Note that <fr:tex>f ^{*} (g) f ^{*} ( \varepsilon _{g}) \eta _{ f ^{*} (g)} =  f ^{*} (g)</fr:tex> by the construction of <fr:tex>f ^{*}</fr:tex>. Moreover, we also have the following equation.</fr:p><fr:tex
-display="block">        \begin {align*}          \varepsilon _{g} f ^{*} ( \varepsilon _{g}) \eta _{ f ^{*} (g)} &amp;=  \varepsilon _{g} \varepsilon _{f  \circ   f ^{*} (g)} \eta _{ f ^{*} (g)} &amp;&amp;  \text {by the construction of }  f ^{*} \\                                                      &amp;=  \varepsilon _{g} \mathsf {id}  &amp;&amp;  \text {by the construction of }  \eta \\                                                      &amp;=  \varepsilon _{g}        \end {align*}     </fr:tex><fr:p>Thus, <fr:tex>f ^{*} ( \varepsilon _{g}) \eta _{ f ^{*} (g)}</fr:tex> corresponds to the same cone over <fr:tex>f</fr:tex> and <fr:tex>g</fr:tex> as <fr:tex>\mathsf {id} _{ f ^{*} (g) }</fr:tex>. Then uniqueness implies that they are equal.</fr:p></fr:mainmatter></fr:tree>
-</fr:mainmatter></fr:tree>
+<fr:p>By construction, <fr:tex
+display="inline"><![CDATA[\varepsilon _{\Sigma _{f}}\eta  = \mathsf {id}_{\Sigma _{f}}]]></fr:tex>. Thus, it remains to verify the other triangle equality.</fr:p><fr:p>Let <fr:tex
+display="inline"><![CDATA[g \in  {{\mathcal {C}}_{/{B}}}]]></fr:tex> be an object. We need to show that <fr:tex
+display="inline"><![CDATA[f^{*}(\varepsilon _{g})\eta _{f^{*}(g)} = \mathsf {id}_{f^{*}(g)}]]></fr:tex>. Note that <fr:tex
+display="inline"><![CDATA[f^{*}(g)f^{*}(\varepsilon _{g})\eta _{f^{*}(g)} = f^{*}(g)]]></fr:tex> by the construction of <fr:tex
+display="inline"><![CDATA[f^{*}]]></fr:tex>. Moreover, we also have the following equation.</fr:p><fr:tex
+display="block"><![CDATA[       \begin {align*}         \varepsilon _{g}f^{*}(\varepsilon _{g})\eta _{f^{*}(g)} &= \varepsilon _{g}\varepsilon _{f \circ  f^{*}(g)}\eta _{f^{*}(g)} && \text {by the construction of } f^{*}\\                                                     &= \varepsilon _{g}\mathsf {id} && \text {by the construction of } \eta \\                                                     &= \varepsilon _{g}       \end {align*}     ]]></fr:tex><fr:p>Thus, <fr:tex
+display="inline"><![CDATA[f^{*}(\varepsilon _{g})\eta _{f^{*}(g)}]]></fr:tex> corresponds to the same cone over <fr:tex
+display="inline"><![CDATA[f]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[g]]></fr:tex> as <fr:tex
+display="inline"><![CDATA[\mathsf {id}_{f^{*}(g)}]]></fr:tex>. Then uniqueness implies that they are equal.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree>
+</fr:mainmatter><fr:backmatter /></fr:tree>
     
-  </fr:mainmatter></fr:tree></fr:related><fr:backlinks></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>
+  </fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

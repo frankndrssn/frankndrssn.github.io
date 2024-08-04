@@ -1,65 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="default.xsl"?>
 <fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
 numbered="true"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1229</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-0006</fr:addr><fr:route>topo-0006.xml</fr:route><fr:title>Essential <fr:link
-href="topo-0003.xml"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1197</fr:anchor><fr:addr
+type="user">topo-0006</fr:addr><fr:route>topo-0006.xml</fr:route><fr:title
+text="Essential geometric morphism">Essential <fr:link
 type="local"
-addr="topo-0003">geometric morphism</fr:link></fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>A <fr:link
 href="topo-0003.xml"
+addr="topo-0003"
+title="Geometric morphism">geometric morphism</fr:link></fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>A <fr:link
 type="local"
-addr="topo-0003">geometric morphism</fr:link> <fr:tex>f \colon \mathcal { E } \to \mathcal { F }</fr:tex> is said to be <fr:em><fr:strong>essential</fr:strong></fr:em> if its inverse image <fr:tex>f ^{*}</fr:tex> admits a left adjoint.</fr:p></fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context></fr:context><fr:related><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+href="topo-0003.xml"
+addr="topo-0003"
+title="Geometric morphism">geometric morphism</fr:link> <fr:tex
+display="inline"><![CDATA[f\colon \mathcal {E}\to \mathcal {F}]]></fr:tex> is said to be <fr:em><fr:strong>essential</fr:strong></fr:em> if its inverse image <fr:tex
+display="inline"><![CDATA[f^{*}]]></fr:tex> admits a left adjoint.</fr:p></fr:mainmatter><fr:backmatter><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
+text="Related">Related</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1228</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-0003</fr:addr><fr:route>topo-0003.xml</fr:route><fr:title>Geometric morphism</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>\mathcal { E }</fr:tex> and <fr:tex>\mathcal { F }</fr:tex> be <fr:link
-href="topo-0001.xml"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1198</fr:anchor><fr:addr
+type="user">topo-0003</fr:addr><fr:route>topo-0003.xml</fr:route><fr:title
+text="Geometric morphism">Geometric morphism</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[\mathcal {E}]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[\mathcal {F}]]></fr:tex> be <fr:link
 type="local"
-addr="topo-0001">topoi</fr:link>. A <fr:em><fr:strong>geometric morphism</fr:strong></fr:em> <fr:tex>f \colon \mathcal { E } \to \mathcal { F }</fr:tex> is an adjoint pair of functors</fr:p>
+href="topo-0001.xml"
+addr="topo-0001"
+title="Elementary topos">topoi</fr:link>. A <fr:em><fr:strong>geometric morphism</fr:strong></fr:em> <fr:tex
+display="inline"><![CDATA[f\colon \mathcal {E}\to \mathcal {F}]]></fr:tex> is an adjoint pair of functors</fr:p>
     
       
       <fr:embedded-tex
-hash="4a915af0a8d1705ac76cc0e8b5bf8bb9"><fr:embedded-tex-preamble>
-         
-   \RequirePackage {tikz}
-   \RequirePackage {amsmath}
-   \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
+hash="8a1b605f5384f8244d0139cde02f4b11"><fr:embedded-tex-preamble><![CDATA[
+        
+  \RequirePackage {tikz}
+  \RequirePackage {amsmath}
+  \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
 
-   \definecolor {catccolor}{RGB}{255,244,138}
-   \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
-   \tikzstyle {catc}=[catccolor!60]
-   \tikzstyle {catd}=[orange!40]
-   \tikzstyle {cate}=[red!40]
-   \tikzstyle {catf}=[blue!10]
-   \tikzstyle {catg}=[green!25]
+  \definecolor {catccolor}{RGB}{255,244,138}
+  \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
+  \tikzstyle {catc}=[catccolor!60]
+  \tikzstyle {catd}=[orange!40]
+  \tikzstyle {cate}=[red!40]
+  \tikzstyle {catf}=[blue!10]
+  \tikzstyle {catg}=[green!25]
 
 
-   \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
-   \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
+  \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
+  \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
 
-   \NewDocumentCommand \CreateRect {D&lt;&gt;{} m m}{
-     \path 
+  \NewDocumentCommand \CreateRect {D<>{} m m}{
+    \path 
       coordinate (#1nw)
       ++(#2,-#3) coordinate (#1se)
       coordinate (#1sw) at (#1se -| #1nw)
       coordinate (#1ne) at (#1nw -| #1se)
     ;
 
-     \path [spath/save = #1north] (#1nw) to (#1ne);
-     \path [spath/save = #1west] (#1nw) to (#1sw);
-     \path [spath/save = #1east] (#1ne) to (#1se);
-     \path [spath/save = #1south] (#1sw) to (#1se);
+    \path [spath/save = #1north] (#1nw) to (#1ne);
+    \path [spath/save = #1west] (#1nw) to (#1sw);
+    \path [spath/save = #1east] (#1ne) to (#1se);
+    \path [spath/save = #1south] (#1sw) to (#1se);
   }
- 
-         
+
+        
    % appears to be necessary
   \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd}
   \usetikzlibrary{matrix,arrows}
@@ -128,7 +148,7 @@ hash="4a915af0a8d1705ac76cc0e8b5bf8bb9"><fr:embedded-tex-preamble>
       densely dashed
     },
     embedding/.style = {
-      {right hook}-&gt;
+      {right hook}->
     },
     cover/.style = {
       -{Triangle[open]}
@@ -160,10 +180,10 @@ hash="4a915af0a8d1705ac76cc0e8b5bf8bb9"><fr:embedded-tex-preamble>
     square/ne/.style = {},
     square/se/.style = {},
     square/sw/.style = {},
-    square/north/.style = {-&gt;},
-    square/south/.style = {-&gt;},
-    square/west/.style = {-&gt;},
-    square/east/.style = {-&gt;},
+    square/north/.style = {->},
+    square/south/.style = {->},
+    square/west/.style = {->},
+    square/east/.style = {->},
     square/north/node/.style = {above},
     square/south/node/.style = {below},
     square/west/node/.style = {left},
@@ -242,15 +262,18 @@ hash="4a915af0a8d1705ac76cc0e8b5bf8bb9"><fr:embedded-tex-preamble>
     \end{tikzpicture}
   }
   \ExplSyntaxOff
- 
-      </fr:embedded-tex-preamble><fr:embedded-tex-body>
-   \begin {tikzpicture}[diagram]
-     \node  (w) {$ \mathcal { E } $};
-     \node  [right = of w] (e) {$ \mathcal { F } $};
-     \draw  [-&gt;,morphism,offset=1.5] (w) to node[swap] (r) {$ f _{*} $} (e);
-     \draw  [-&gt;,morphism,offset=1.5] (e) to node[swap] (l) {$ f ^{*} $} (w);
-     \draw  [adjoint] (l) to (r);
-   \end {tikzpicture}
-</fr:embedded-tex-body></fr:embedded-tex>
+
+      ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+  \begin {tikzpicture}[diagram]
+    \node  (w) {$\mathcal {E}$};
+    \node  [right = of w] (e) {$\mathcal {F}$};
+    \draw  [->,morphism,offset=1.5] (w) to node[swap] (r) {$f_{*}$} (e);
+    \draw  [->,morphism,offset=1.5] (e) to node[swap] (l) {$f^{*}$} (w);
+    \draw  [adjoint] (l) to (r);
+  \end {tikzpicture}
+]]></fr:embedded-tex-body></fr:embedded-tex>
     
-  <fr:p>such that <fr:tex>f ^{*}</fr:tex> is left exact. The functors <fr:tex>f _{*}</fr:tex> and <fr:tex>f ^{*}</fr:tex> are called the <fr:em><fr:strong>direct image</fr:strong></fr:em> and the <fr:em><fr:strong>inverse image</fr:strong></fr:em> respectively.</fr:p></fr:mainmatter></fr:tree></fr:related><fr:backlinks></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>
+  <fr:p>such that <fr:tex
+display="inline"><![CDATA[f^{*}]]></fr:tex> is left exact. The functors <fr:tex
+display="inline"><![CDATA[f_{*}]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[f^{*}]]></fr:tex> are called the <fr:em><fr:strong>direct image</fr:strong></fr:em> and the <fr:em><fr:strong>inverse image</fr:strong></fr:em> respectively.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

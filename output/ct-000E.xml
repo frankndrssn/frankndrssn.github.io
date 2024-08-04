@@ -1,42 +1,112 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="default.xsl"?>
 <fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
 numbered="true"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1084</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>ct-000E</fr:addr><fr:route>ct-000E.xml</fr:route><fr:title>Monomorphisms in a category equipped with a <fr:link
-href="ct-0009.xml"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1019</fr:anchor><fr:addr
+type="user">ct-000E</fr:addr><fr:route>ct-000E.xml</fr:route><fr:title
+text="Monomorphisms in a category equipped with a subobject classifier are regular">Monomorphisms in a category equipped with a <fr:link
 type="local"
-addr="ct-0009">subobject classifier</fr:link> are regular</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>\mathcal { C }</fr:tex> be a cartesian category equipped with a subobject classifier. Every monomorphism in <fr:tex>\mathcal { C }</fr:tex> is regular.</fr:p>
+href="ct-0009.xml"
+addr="ct-0009"
+title="Subobject classifier">subobject classifier</fr:link> are regular</fr:title><fr:taxon>Lemma</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> be a cartesian category equipped with a subobject classifier. Every monomorphism in <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> is regular.</fr:p>
     
       
       <fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="false"
 numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>548</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:parent>ct-000E</fr:parent></fr:frontmatter><fr:mainmatter>
-  Note that the generic subobject <fr:tex>\top \colon 1 \rightarrowtail \Omega</fr:tex> is a split monomorphism, so it is also a regular monomorphism. Explicitly, <fr:tex>\top</fr:tex> is the equalizer of <fr:tex>\mathsf {id} _{ \Omega }</fr:tex> and <fr:tex>\Omega   \xrightarrow { \mathsf {!} _{ \Omega } }  1  \xrightarrow { \top }   \Omega</fr:tex>.
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>983</fr:anchor><fr:addr
+type="machine">#275</fr:addr><fr:route>unstable-275.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:authors /><fr:parent>ct-000E</fr:parent></fr:frontmatter><fr:mainmatter>
+  Note that the generic subobject <fr:tex
+display="inline"><![CDATA[\top \colon 1\rightarrowtail \Omega ]]></fr:tex> is a split monomorphism, so it is also a regular monomorphism. Explicitly, <fr:tex
+display="inline"><![CDATA[\top ]]></fr:tex> is the equalizer of <fr:tex
+display="inline"><![CDATA[\mathsf {id}_{\Omega }]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[\Omega  \xrightarrow {\mathsf {!}_{\Omega }} 1 \xrightarrow {\top } \Omega ]]></fr:tex>.
   
-  <fr:p>Since every monomorphism in <fr:tex>\mathcal { C }</fr:tex> is a pullback against <fr:tex>\top</fr:tex> and regular monomorphisms are stable under pullback, it follows that every monomorphism in <fr:tex>\mathcal { C }</fr:tex> is regular.</fr:p>
-</fr:mainmatter></fr:tree>
+  <fr:p>Since every monomorphism in <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> is a pullback against <fr:tex
+display="inline"><![CDATA[\top ]]></fr:tex> and regular monomorphisms are stable under pullback, it follows that every monomorphism in <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> is regular.</fr:p>
+</fr:mainmatter><fr:backmatter /></fr:tree>
     
-  </fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context></fr:context><fr:related><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+  </fr:mainmatter><fr:backmatter><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
+text="Backlinks">Backlinks</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1083</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>ct-0009</fr:addr><fr:route>ct-0009.xml</fr:route><fr:title><fr:link
-href="ct-0006.xml"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1020</fr:anchor><fr:addr
+type="user">topo-0007</fr:addr><fr:route>topo-0007.xml</fr:route><fr:title
+text="Monomorphisms are equalizers in a topos">Monomorphisms are equalizers in a <fr:link
 type="local"
-addr="ct-0006">Subobject</fr:link> classifier</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>\mathcal { C }</fr:tex> be a category with pullbacks. The <fr:em><fr:strong>subobject classifier</fr:strong></fr:em> of <fr:tex>\mathcal { C }</fr:tex> is the terminal object (if it exists) of the category <fr:tex>\mathcal { S } _{ \mathcal { C } }</fr:tex> defined by the following data:</fr:p>
+href="topo-0001.xml"
+addr="topo-0001"
+title="Elementary topos">topos</fr:link></fr:title><fr:taxon>Corollary</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>In a <fr:link
+type="local"
+href="topo-0001.xml"
+addr="topo-0001"
+title="Elementary topos">topos</fr:link>, every monomorphism is an equalizer.</fr:p>
+    
+      
+      <fr:tree
+toc="false"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1021</fr:anchor><fr:addr
+type="machine">#239</fr:addr><fr:route>unstable-239.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors /><fr:parent>topo-0007</fr:parent></fr:frontmatter><fr:mainmatter>
+  This is an immediate consequence of <fr:ref
+addr="ct-000E"
+href="ct-000E.xml"
+taxon="Lemma" />.
+</fr:mainmatter><fr:backmatter /></fr:tree>
+    
+  </fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
+text="Related">Related</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1022</fr:anchor><fr:addr
+type="user">ct-0009</fr:addr><fr:route>ct-0009.xml</fr:route><fr:title
+text="Subobject classifier"><fr:link
+type="local"
+href="ct-0006.xml"
+addr="ct-0006"
+title="Subobject">Subobject</fr:link> classifier</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> be a category with pullbacks. The <fr:em><fr:strong>subobject classifier</fr:strong></fr:em> of <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> is the terminal object (if it exists) of the category <fr:tex
+display="inline"><![CDATA[\mathcal {S}_{\mathcal {C}}]]></fr:tex> defined by the following data:</fr:p>
   <html:table
 xmlns:html="http://www.w3.org/1999/xhtml">
   
@@ -52,47 +122,61 @@ xmlns:html="http://www.w3.org/1999/xhtml">
   
   <html:tr>
     
-  <html:td>An object of <fr:tex>\mathcal { S } _{ \mathcal { C } }</fr:tex> is a pair <fr:tex>(A, m)</fr:tex>, where <fr:tex>A</fr:tex> is an object in <fr:tex>\mathcal { C }</fr:tex> and <fr:tex>m \colon  A'  \rightarrowtail  A</fr:tex> is a subobject.</html:td>
+  <html:td>An object of <fr:tex
+display="inline"><![CDATA[\mathcal {S}_{\mathcal {C}}]]></fr:tex> is a pair <fr:tex
+display="inline"><![CDATA[(A, m)]]></fr:tex>, where <fr:tex
+display="inline"><![CDATA[A]]></fr:tex> is an object in <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[m\colon  A' \rightarrowtail  A]]></fr:tex> is a subobject.</html:td>
 
     
-  <html:td>A morphism <fr:tex>(A,m)  \to  (B,n)</fr:tex> is a morphism <fr:tex>f \colon  A  \to  B</fr:tex> in <fr:tex>\mathcal { C }</fr:tex> such that <fr:tex>m</fr:tex> is a pullback against <fr:tex>n</fr:tex> along <fr:tex>f</fr:tex>. In other words, <fr:tex>m</fr:tex> is isomorphic to the canonical pullback <fr:tex>f ^{*} (n)</fr:tex> in <fr:tex>\mathsf { Sub } (A)</fr:tex>.
+  <html:td>A morphism <fr:tex
+display="inline"><![CDATA[(A,m) \to  (B,n)]]></fr:tex> is a morphism <fr:tex
+display="inline"><![CDATA[f\colon  A \to  B]]></fr:tex> in <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> such that <fr:tex
+display="inline"><![CDATA[m]]></fr:tex> is a pullback against <fr:tex
+display="inline"><![CDATA[n]]></fr:tex> along <fr:tex
+display="inline"><![CDATA[f]]></fr:tex>. In other words, <fr:tex
+display="inline"><![CDATA[m]]></fr:tex> is isomorphic to the canonical pullback <fr:tex
+display="inline"><![CDATA[f^{*}(n)]]></fr:tex> in <fr:tex
+display="inline"><![CDATA[\mathsf {Sub}(A)]]></fr:tex>.
       
     
       
       <fr:embedded-tex
-hash="c6e5ab67e7a815c3067bf57f2e2a10bf"><fr:embedded-tex-preamble>
-         
-   \RequirePackage {tikz}
-   \RequirePackage {amsmath}
-   \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
+hash="0ca92f907544234de24264bf420d135e"><fr:embedded-tex-preamble><![CDATA[
+        
+  \RequirePackage {tikz}
+  \RequirePackage {amsmath}
+  \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
 
-   \definecolor {catccolor}{RGB}{255,244,138}
-   \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
-   \tikzstyle {catc}=[catccolor!60]
-   \tikzstyle {catd}=[orange!40]
-   \tikzstyle {cate}=[red!40]
-   \tikzstyle {catf}=[blue!10]
-   \tikzstyle {catg}=[green!25]
+  \definecolor {catccolor}{RGB}{255,244,138}
+  \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
+  \tikzstyle {catc}=[catccolor!60]
+  \tikzstyle {catd}=[orange!40]
+  \tikzstyle {cate}=[red!40]
+  \tikzstyle {catf}=[blue!10]
+  \tikzstyle {catg}=[green!25]
 
 
-   \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
-   \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
+  \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
+  \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
 
-   \NewDocumentCommand \CreateRect {D&lt;&gt;{} m m}{
-     \path 
+  \NewDocumentCommand \CreateRect {D<>{} m m}{
+    \path 
       coordinate (#1nw)
       ++(#2,-#3) coordinate (#1se)
       coordinate (#1sw) at (#1se -| #1nw)
       coordinate (#1ne) at (#1nw -| #1se)
     ;
 
-     \path [spath/save = #1north] (#1nw) to (#1ne);
-     \path [spath/save = #1west] (#1nw) to (#1sw);
-     \path [spath/save = #1east] (#1ne) to (#1se);
-     \path [spath/save = #1south] (#1sw) to (#1se);
+    \path [spath/save = #1north] (#1nw) to (#1ne);
+    \path [spath/save = #1west] (#1nw) to (#1sw);
+    \path [spath/save = #1east] (#1ne) to (#1se);
+    \path [spath/save = #1south] (#1sw) to (#1se);
   }
- 
-         
+
+        
    % appears to be necessary
   \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd}
   \usetikzlibrary{matrix,arrows}
@@ -161,7 +245,7 @@ hash="c6e5ab67e7a815c3067bf57f2e2a10bf"><fr:embedded-tex-preamble>
       densely dashed
     },
     embedding/.style = {
-      {right hook}-&gt;
+      {right hook}->
     },
     cover/.style = {
       -{Triangle[open]}
@@ -193,10 +277,10 @@ hash="c6e5ab67e7a815c3067bf57f2e2a10bf"><fr:embedded-tex-preamble>
     square/ne/.style = {},
     square/se/.style = {},
     square/sw/.style = {},
-    square/north/.style = {-&gt;},
-    square/south/.style = {-&gt;},
-    square/west/.style = {-&gt;},
-    square/east/.style = {-&gt;},
+    square/north/.style = {->},
+    square/south/.style = {->},
+    square/west/.style = {->},
+    square/east/.style = {->},
     square/north/node/.style = {above},
     square/south/node/.style = {below},
     square/west/node/.style = {left},
@@ -275,9 +359,9 @@ hash="c6e5ab67e7a815c3067bf57f2e2a10bf"><fr:embedded-tex-preamble>
     \end{tikzpicture}
   }
   \ExplSyntaxOff
- 
-      </fr:embedded-tex-preamble><fr:embedded-tex-body>
-         \DiagramSquare {
+
+      ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+        \DiagramSquare {
           nw = A',
           nw/style = pullback,
           ne = B',
@@ -285,11 +369,11 @@ hash="c6e5ab67e7a815c3067bf57f2e2a10bf"><fr:embedded-tex-preamble>
           se = B,
           south = f,
           west = m,
-          west/style = {&gt;-&gt;},
+          west/style = {>->},
           east = n,
-          east/style = {&gt;-&gt;},
+          east/style = {>->},
         }
-      </fr:embedded-tex-body></fr:embedded-tex>
+      ]]></fr:embedded-tex-body></fr:embedded-tex>
     
   
     </html:td>
@@ -297,70 +381,78 @@ hash="c6e5ab67e7a815c3067bf57f2e2a10bf"><fr:embedded-tex-preamble>
   </html:tr>
 
 </html:table>
-<fr:p>Identities and compositions of <fr:tex>\mathcal { S } _{ \mathcal { C } }</fr:tex> are inherited from <fr:tex>\mathcal { C }</fr:tex>.</fr:p>
+<fr:p>Identities and compositions of <fr:tex
+display="inline"><![CDATA[\mathcal {S}_{\mathcal {C}}]]></fr:tex> are inherited from <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex>.</fr:p>
     
       
       <fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="false"
 numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>359</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:parent>ct-0009</fr:parent></fr:frontmatter><fr:mainmatter>
-  For the definition to make sense, we need to show that <fr:tex>\mathcal { S } _{ \mathcal { C } }</fr:tex> is a category.
-  Since identities and compositions are inherited from <fr:tex>\mathcal { C }</fr:tex>, it suffices to show the followings:
-  <fr:ol><fr:li>
-      For any object <fr:tex>A  \in   \mathcal { C }</fr:tex> and any subobject <fr:tex>m \colon  A'  \rightarrowtail  A</fr:tex>, the identity morphism <fr:tex>\mathsf {id} _{ A }</fr:tex> gives the required pullback.
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>327</fr:anchor><fr:addr
+type="machine">#283</fr:addr><fr:route>unstable-283.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:authors /><fr:parent>ct-0009</fr:parent></fr:frontmatter><fr:mainmatter>
+  For the definition to make sense, we need to show that <fr:tex
+display="inline"><![CDATA[\mathcal {S}_{\mathcal {C}}]]></fr:tex> is a category.
+  Since identities and compositions are inherited from <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex>, it suffices to show the followings:
+  <fr:ol><fr:li>For any object <fr:tex
+display="inline"><![CDATA[A \in  \mathcal {C}]]></fr:tex> and any subobject <fr:tex
+display="inline"><![CDATA[m\colon  A' \rightarrowtail  A]]></fr:tex>, the identity morphism <fr:tex
+display="inline"><![CDATA[\mathsf {id}_{A}]]></fr:tex> gives the required pullback.
       
     
       
       <fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="false"
 numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>357</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:parent>ct-0009</fr:parent></fr:frontmatter><fr:mainmatter>
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>328</fr:anchor><fr:addr
+type="machine">#281</fr:addr><fr:route>unstable-281.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:authors /><fr:parent>ct-0009</fr:parent></fr:frontmatter><fr:mainmatter>
         The following diagram is a pullback.
         
     
       
       <fr:embedded-tex
-hash="7c0c12e0c2d1003b63f292aca9578eac"><fr:embedded-tex-preamble>
-         
-   \RequirePackage {tikz}
-   \RequirePackage {amsmath}
-   \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
+hash="e97fe9df8e3d008429f046b8a8f512b4"><fr:embedded-tex-preamble><![CDATA[
+        
+  \RequirePackage {tikz}
+  \RequirePackage {amsmath}
+  \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
 
-   \definecolor {catccolor}{RGB}{255,244,138}
-   \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
-   \tikzstyle {catc}=[catccolor!60]
-   \tikzstyle {catd}=[orange!40]
-   \tikzstyle {cate}=[red!40]
-   \tikzstyle {catf}=[blue!10]
-   \tikzstyle {catg}=[green!25]
+  \definecolor {catccolor}{RGB}{255,244,138}
+  \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
+  \tikzstyle {catc}=[catccolor!60]
+  \tikzstyle {catd}=[orange!40]
+  \tikzstyle {cate}=[red!40]
+  \tikzstyle {catf}=[blue!10]
+  \tikzstyle {catg}=[green!25]
 
 
-   \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
-   \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
+  \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
+  \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
 
-   \NewDocumentCommand \CreateRect {D&lt;&gt;{} m m}{
-     \path 
+  \NewDocumentCommand \CreateRect {D<>{} m m}{
+    \path 
       coordinate (#1nw)
       ++(#2,-#3) coordinate (#1se)
       coordinate (#1sw) at (#1se -| #1nw)
       coordinate (#1ne) at (#1nw -| #1se)
     ;
 
-     \path [spath/save = #1north] (#1nw) to (#1ne);
-     \path [spath/save = #1west] (#1nw) to (#1sw);
-     \path [spath/save = #1east] (#1ne) to (#1se);
-     \path [spath/save = #1south] (#1sw) to (#1se);
+    \path [spath/save = #1north] (#1nw) to (#1ne);
+    \path [spath/save = #1west] (#1nw) to (#1sw);
+    \path [spath/save = #1east] (#1ne) to (#1se);
+    \path [spath/save = #1south] (#1sw) to (#1se);
   }
- 
-         
+
+        
    % appears to be necessary
   \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd}
   \usetikzlibrary{matrix,arrows}
@@ -429,7 +521,7 @@ hash="7c0c12e0c2d1003b63f292aca9578eac"><fr:embedded-tex-preamble>
       densely dashed
     },
     embedding/.style = {
-      {right hook}-&gt;
+      {right hook}->
     },
     cover/.style = {
       -{Triangle[open]}
@@ -461,10 +553,10 @@ hash="7c0c12e0c2d1003b63f292aca9578eac"><fr:embedded-tex-preamble>
     square/ne/.style = {},
     square/se/.style = {},
     square/sw/.style = {},
-    square/north/.style = {-&gt;},
-    square/south/.style = {-&gt;},
-    square/west/.style = {-&gt;},
-    square/east/.style = {-&gt;},
+    square/north/.style = {->},
+    square/south/.style = {->},
+    square/west/.style = {->},
+    square/east/.style = {->},
     square/north/node/.style = {above},
     square/south/node/.style = {below},
     square/west/node/.style = {left},
@@ -543,9 +635,9 @@ hash="7c0c12e0c2d1003b63f292aca9578eac"><fr:embedded-tex-preamble>
     \end{tikzpicture}
   }
   \ExplSyntaxOff
- 
-      </fr:embedded-tex-preamble><fr:embedded-tex-body>
-           \DiagramSquare {
+
+      ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+          \DiagramSquare {
             nw = A',
             nw/style = pullback,
             ne = A',
@@ -555,64 +647,67 @@ hash="7c0c12e0c2d1003b63f292aca9578eac"><fr:embedded-tex-preamble>
             south/style = {double},
             east = m,
             west = m,
-            east/style = {&gt;-&gt;},
-            west/style = {&gt;-&gt;},
+            east/style = {>->},
+            west/style = {>->},
           }
-        </fr:embedded-tex-body></fr:embedded-tex>
+        ]]></fr:embedded-tex-body></fr:embedded-tex>
     
   
-      </fr:mainmatter></fr:tree></fr:li>
-    <fr:li>
-      For any <fr:tex>f \colon  (A,m)  \to  (B,n)</fr:tex> and any <fr:tex>g \colon  (B,n)  \to  (C,o)</fr:tex>, the composite <fr:tex>gf</fr:tex> gives the required pullback.
+      </fr:mainmatter><fr:backmatter /></fr:tree></fr:li>
+    <fr:li>For any <fr:tex
+display="inline"><![CDATA[f\colon  (A,m) \to  (B,n)]]></fr:tex> and any <fr:tex
+display="inline"><![CDATA[g\colon  (B,n) \to  (C,o)]]></fr:tex>, the composite <fr:tex
+display="inline"><![CDATA[gf]]></fr:tex> gives the required pullback.
       
     
       
       <fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="false"
 numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>358</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:parent>ct-0009</fr:parent></fr:frontmatter><fr:mainmatter>
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>329</fr:anchor><fr:addr
+type="machine">#282</fr:addr><fr:route>unstable-282.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:authors /><fr:parent>ct-0009</fr:parent></fr:frontmatter><fr:mainmatter>
         By definition, the two inner squares of the following diagram are pullbacks.
         
     
       
       <fr:embedded-tex
-hash="0993b995d983b85414ff0b5c7a9c57cb"><fr:embedded-tex-preamble>
-         
-   \RequirePackage {tikz}
-   \RequirePackage {amsmath}
-   \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
+hash="f10e7ca4e99cdfe26beb30ee87a77179"><fr:embedded-tex-preamble><![CDATA[
+        
+  \RequirePackage {tikz}
+  \RequirePackage {amsmath}
+  \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
 
-   \definecolor {catccolor}{RGB}{255,244,138}
-   \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
-   \tikzstyle {catc}=[catccolor!60]
-   \tikzstyle {catd}=[orange!40]
-   \tikzstyle {cate}=[red!40]
-   \tikzstyle {catf}=[blue!10]
-   \tikzstyle {catg}=[green!25]
+  \definecolor {catccolor}{RGB}{255,244,138}
+  \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
+  \tikzstyle {catc}=[catccolor!60]
+  \tikzstyle {catd}=[orange!40]
+  \tikzstyle {cate}=[red!40]
+  \tikzstyle {catf}=[blue!10]
+  \tikzstyle {catg}=[green!25]
 
 
-   \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
-   \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
+  \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
+  \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
 
-   \NewDocumentCommand \CreateRect {D&lt;&gt;{} m m}{
-     \path 
+  \NewDocumentCommand \CreateRect {D<>{} m m}{
+    \path 
       coordinate (#1nw)
       ++(#2,-#3) coordinate (#1se)
       coordinate (#1sw) at (#1se -| #1nw)
       coordinate (#1ne) at (#1nw -| #1se)
     ;
 
-     \path [spath/save = #1north] (#1nw) to (#1ne);
-     \path [spath/save = #1west] (#1nw) to (#1sw);
-     \path [spath/save = #1east] (#1ne) to (#1se);
-     \path [spath/save = #1south] (#1sw) to (#1se);
+    \path [spath/save = #1north] (#1nw) to (#1ne);
+    \path [spath/save = #1west] (#1nw) to (#1sw);
+    \path [spath/save = #1east] (#1ne) to (#1se);
+    \path [spath/save = #1south] (#1sw) to (#1se);
   }
- 
-         
+
+        
    % appears to be necessary
   \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd}
   \usetikzlibrary{matrix,arrows}
@@ -681,7 +776,7 @@ hash="0993b995d983b85414ff0b5c7a9c57cb"><fr:embedded-tex-preamble>
       densely dashed
     },
     embedding/.style = {
-      {right hook}-&gt;
+      {right hook}->
     },
     cover/.style = {
       -{Triangle[open]}
@@ -713,10 +808,10 @@ hash="0993b995d983b85414ff0b5c7a9c57cb"><fr:embedded-tex-preamble>
     square/ne/.style = {},
     square/se/.style = {},
     square/sw/.style = {},
-    square/north/.style = {-&gt;},
-    square/south/.style = {-&gt;},
-    square/west/.style = {-&gt;},
-    square/east/.style = {-&gt;},
+    square/north/.style = {->},
+    square/south/.style = {->},
+    square/west/.style = {->},
+    square/east/.style = {->},
     square/north/node/.style = {above},
     square/south/node/.style = {below},
     square/west/node/.style = {left},
@@ -795,10 +890,10 @@ hash="0993b995d983b85414ff0b5c7a9c57cb"><fr:embedded-tex-preamble>
     \end{tikzpicture}
   }
   \ExplSyntaxOff
- 
-      </fr:embedded-tex-preamble><fr:embedded-tex-body>
-           \begin {tikzpicture}[diagram]
-             \SpliceDiagramSquare {
+
+      ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+          \begin {tikzpicture}[diagram]
+            \SpliceDiagramSquare {
               nw = B',
               nw/style = pullback,
               ne = C',
@@ -806,56 +901,27 @@ hash="0993b995d983b85414ff0b5c7a9c57cb"><fr:embedded-tex-preamble>
               se = C,
               south = g,
               west = n,
-              west/style = {&gt;-&gt;},
+              west/style = {>->},
               west/node/style = {desc},
               east = o,
-              east/style = {&gt;-&gt;},
+              east/style = {>->},
             }
-             \node  [left = of nw, pullback] (A') {$A'$};
-             \node  [left = of sw] (A) {$A$};
-             \draw  [-&gt;,morphism] (A') to (nw);
-             \draw  [&gt;-&gt;,morphism] (A') to node[swap] {$m$} (A);
-             \draw  [-&gt;,morphism] (A) to node[swap] {$f$} (sw);
-           \end {tikzpicture}
+            \node  [left = of nw, pullback] (A') {$A'$};
+            \node  [left = of sw] (A) {$A$};
+            \draw  [->,morphism] (A') to (nw);
+            \draw  [>->,morphism] (A') to node[swap] {$m$} (A);
+            \draw  [->,morphism] (A) to node[swap] {$f$} (sw);
+          \end {tikzpicture}
           
-        </fr:embedded-tex-body></fr:embedded-tex>
+        ]]></fr:embedded-tex-body></fr:embedded-tex>
     
   
         Then by the <fr:link
+type="local"
 href="ct-0008.xml"
-type="local"
-addr="ct-0008">pasting lemma of pullbacks</fr:link>, the outer rectangle is also a pullback.
-      </fr:mainmatter></fr:tree></fr:li></fr:ol>
-</fr:mainmatter></fr:tree>
+addr="ct-0008"
+title="Pasting lemma of pullbacks">pasting lemma of pullbacks</fr:link>, the outer rectangle is also a pullback.
+      </fr:mainmatter><fr:backmatter /></fr:tree></fr:li></fr:ol>
+</fr:mainmatter><fr:backmatter /></fr:tree>
     
-  </fr:mainmatter></fr:tree></fr:related><fr:backlinks><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="true"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1082</fr:anchor><fr:taxon>Corollary</fr:taxon><fr:addr>topo-0007</fr:addr><fr:route>topo-0007.xml</fr:route><fr:title>Monomorphisms are equalizers in a <fr:link
-href="topo-0001.xml"
-type="local"
-addr="topo-0001">topos</fr:link></fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>In a <fr:link
-href="topo-0001.xml"
-type="local"
-addr="topo-0001">topos</fr:link>, every monomorphism is an equalizer.</fr:p>
-    
-      
-      <fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
-toc="false"
-numbered="true"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>606</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:parent>topo-0007</fr:parent></fr:frontmatter><fr:mainmatter>
-  This is an immediate consequence of <fr:ref
-addr="ct-000E"
-href="ct-000E.xml"
-taxon="Lemma"></fr:ref>.
-</fr:mainmatter></fr:tree>
-    
-  </fr:mainmatter></fr:tree></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>
+  </fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

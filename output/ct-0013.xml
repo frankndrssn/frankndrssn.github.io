@@ -1,65 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="default.xsl"?>
 <fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
 numbered="true"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>915</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>ct-0013</fr:addr><fr:route>ct-0013.xml</fr:route><fr:title>Disjoint coproduct</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>10</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
-  Let <fr:tex>\mathcal { C }</fr:tex> be a category.
-  A coproduct <fr:tex>A + B</fr:tex> is said to be <fr:em><fr:strong>disjoint</fr:strong></fr:em> if the injections <fr:tex>A  \to  A + B</fr:tex> and <fr:tex>B  \to  A + B</fr:tex> are monic and their intersection is an initial object of <fr:tex>\mathsf { Sub } (A + B)</fr:tex>.
-</fr:p></fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context></fr:context><fr:related></fr:related><fr:backlinks><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>789</fr:anchor><fr:addr
+type="user">ct-0013</fr:addr><fr:route>ct-0013.xml</fr:route><fr:title
+text="Disjoint coproduct">Disjoint coproduct</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>10</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> be a category.
+  A coproduct <fr:tex
+display="inline"><![CDATA[A + B]]></fr:tex> is said to be <fr:em><fr:strong>disjoint</fr:strong></fr:em> if the injections <fr:tex
+display="inline"><![CDATA[A \to  A + B]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[B \to  A + B]]></fr:tex> are monic and their intersection is an initial object of <fr:tex
+display="inline"><![CDATA[\mathsf {Sub}(A + B)]]></fr:tex>.</fr:p></fr:mainmatter><fr:backmatter><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
+text="Backlinks">Backlinks</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>913</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>topo-000M</fr:addr><fr:route>topo-000M.xml</fr:route><fr:title>Pushouts of monomorphisms in a <fr:link
-href="topo-000K.xml"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>790</fr:anchor><fr:addr
+type="user">topo-000M</fr:addr><fr:route>topo-000M.xml</fr:route><fr:title
+text="Pushouts of monomorphisms in a pretopos">Pushouts of monomorphisms in a <fr:link
 type="local"
-addr="topo-000K">pretopos</fr:link></fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>11</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
-  Let <fr:tex>f \colon A \rightarrowtail B</fr:tex> and <fr:tex>g \colon A \rightarrowtail C</fr:tex> be a pair of monomorphisms in a pretopos.
-  Then they have a pushout.
-</fr:p>
+href="topo-000K.xml"
+addr="topo-000K"
+title="Pretopos">pretopos</fr:link></fr:title><fr:taxon>Lemma</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>11</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[f\colon A\rightarrowtail B]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[g\colon A\rightarrowtail C]]></fr:tex> be a pair of monomorphisms in a pretopos.
+  Then they have a pushout.</fr:p>
     
       
       <fr:embedded-tex
-hash="b3cb8407d020c9da55ebb2b4b4081bf0"><fr:embedded-tex-preamble>
-         
-   \RequirePackage {tikz}
-   \RequirePackage {amsmath}
-   \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
+hash="1c4f8026038d2767be88d32af875a4c1"><fr:embedded-tex-preamble><![CDATA[
+        
+  \RequirePackage {tikz}
+  \RequirePackage {amsmath}
+  \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
 
-   \definecolor {catccolor}{RGB}{255,244,138}
-   \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
-   \tikzstyle {catc}=[catccolor!60]
-   \tikzstyle {catd}=[orange!40]
-   \tikzstyle {cate}=[red!40]
-   \tikzstyle {catf}=[blue!10]
-   \tikzstyle {catg}=[green!25]
+  \definecolor {catccolor}{RGB}{255,244,138}
+  \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
+  \tikzstyle {catc}=[catccolor!60]
+  \tikzstyle {catd}=[orange!40]
+  \tikzstyle {cate}=[red!40]
+  \tikzstyle {catf}=[blue!10]
+  \tikzstyle {catg}=[green!25]
 
 
-   \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
-   \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
+  \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
+  \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
 
-   \NewDocumentCommand \CreateRect {D&lt;&gt;{} m m}{
-     \path 
+  \NewDocumentCommand \CreateRect {D<>{} m m}{
+    \path 
       coordinate (#1nw)
       ++(#2,-#3) coordinate (#1se)
       coordinate (#1sw) at (#1se -| #1nw)
       coordinate (#1ne) at (#1nw -| #1se)
     ;
 
-     \path [spath/save = #1north] (#1nw) to (#1ne);
-     \path [spath/save = #1west] (#1nw) to (#1sw);
-     \path [spath/save = #1east] (#1ne) to (#1se);
-     \path [spath/save = #1south] (#1sw) to (#1se);
+    \path [spath/save = #1north] (#1nw) to (#1ne);
+    \path [spath/save = #1west] (#1nw) to (#1sw);
+    \path [spath/save = #1east] (#1ne) to (#1se);
+    \path [spath/save = #1south] (#1sw) to (#1se);
   }
- 
-         
+
+        
    % appears to be necessary
   \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd}
   \usetikzlibrary{matrix,arrows}
@@ -128,7 +144,7 @@ hash="b3cb8407d020c9da55ebb2b4b4081bf0"><fr:embedded-tex-preamble>
       densely dashed
     },
     embedding/.style = {
-      {right hook}-&gt;
+      {right hook}->
     },
     cover/.style = {
       -{Triangle[open]}
@@ -160,10 +176,10 @@ hash="b3cb8407d020c9da55ebb2b4b4081bf0"><fr:embedded-tex-preamble>
     square/ne/.style = {},
     square/se/.style = {},
     square/sw/.style = {},
-    square/north/.style = {-&gt;},
-    square/south/.style = {-&gt;},
-    square/west/.style = {-&gt;},
-    square/east/.style = {-&gt;},
+    square/north/.style = {->},
+    square/south/.style = {->},
+    square/west/.style = {->},
+    square/east/.style = {->},
     square/north/node/.style = {above},
     square/south/node/.style = {below},
     square/west/node/.style = {left},
@@ -242,68 +258,75 @@ hash="b3cb8407d020c9da55ebb2b4b4081bf0"><fr:embedded-tex-preamble>
     \end{tikzpicture}
   }
   \ExplSyntaxOff
- 
-      </fr:embedded-tex-preamble><fr:embedded-tex-body>
-   \DiagramSquare {
+
+      ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+  \DiagramSquare {
     nw = A,
     ne = C,
     sw = B,
     se = D,
     se/style = {pushout},
     north = g,
-    north/style = {&gt;-&gt;},
+    north/style = {>->},
     west = f,
-    west/style = {&gt;-&gt;},
+    west/style = {>->},
     south = k,
     east = h,
   }
-</fr:embedded-tex-body></fr:embedded-tex>
+]]></fr:embedded-tex-body></fr:embedded-tex>
     
-  <fr:p>
-  Moreover, <fr:tex>h</fr:tex> and <fr:tex>k</fr:tex> are monic and the square is also a pullback.
-</fr:p>
+  <fr:p>Moreover, <fr:tex
+display="inline"><![CDATA[h]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[k]]></fr:tex> are monic and the square is also a pullback.</fr:p>
     
       
       <fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="false"
 numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>505</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>11</fr:day></fr:date><fr:parent>topo-000M</fr:parent></fr:frontmatter><fr:mainmatter>
-  <fr:p>
-    We construct <fr:tex>D</fr:tex> by quotienting the <fr:link
-href="ct-0013.xml"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>745</fr:anchor><fr:addr
+type="machine">#232</fr:addr><fr:route>unstable-232.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>11</fr:day></fr:date><fr:authors /><fr:parent>topo-000M</fr:parent></fr:frontmatter><fr:mainmatter>
+  <fr:p>We construct <fr:tex
+display="inline"><![CDATA[D]]></fr:tex> by quotienting the <fr:link
 type="local"
-addr="ct-0013">disjoint union</fr:link> <fr:tex>B  \uplus  C</fr:tex> by an appropriate equivalence relation.
+href="ct-0013.xml"
+addr="ct-0013"
+title="Disjoint coproduct">disjoint union</fr:link> <fr:tex
+display="inline"><![CDATA[B \uplus  C]]></fr:tex> by an appropriate equivalence relation.
     Note that disjoint unions are coproducts by <fr:ref
 addr="ct-0015"
 href="ct-0015.xml"
-taxon="Corollary"></fr:ref>.
-    Let us write <fr:tex>\iota _{1} \colon B \rightarrowtail B  \uplus  C</fr:tex> and <fr:tex>\iota _{2} \colon C \rightarrowtail B  \uplus  C</fr:tex> for the coproduct injections.
-    Consider the following definitions.
-  </fr:p>
+taxon="Corollary" />.
+    Let us write <fr:tex
+display="inline"><![CDATA[\iota _{1}\colon B\rightarrowtail B \uplus  C]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[\iota _{2}\colon C\rightarrowtail B \uplus  C]]></fr:tex> for the coproduct injections.
+    Consider the following definitions.</fr:p>
   <fr:tex
-display="block">      \begin {align*}       &amp;D_{0} &amp;&amp;:= B  \uplus  C \\        &amp;R &amp;&amp;:= B  \uplus  A  \uplus  A  \uplus  C \\        &amp;a &amp;&amp;:=  [ \iota _{1}, \iota _{1}f, \iota _{2}g, \iota _{2}] \colon R \to D_{0} \\        &amp;b &amp;&amp;:=  [ \iota _{1}, \iota _{2}g, \iota _{1}f, \iota _{2}] \colon R \to D_{0}       \end {align*}   </fr:tex>
-</fr:mainmatter></fr:tree>
+display="block"><![CDATA[     \begin {align*}       &D_{0} &&:= B \uplus  C\\       &R &&:= B \uplus  A \uplus  A \uplus  C\\       &a &&:= [\iota _{1},\iota _{1}f,\iota _{2}g,\iota _{2}]\colon R\to D_{0}\\       &b &&:= [\iota _{1},\iota _{2}g,\iota _{1}f,\iota _{2}]\colon R\to D_{0}     \end {align*}   ]]></fr:tex>
+</fr:mainmatter><fr:backmatter /></fr:tree>
     
   <fr:link
-href="todo.xml"
 type="local"
-addr="todo">TODO</fr:link></fr:mainmatter></fr:tree><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+href="todo.xml"
+addr="todo"
+title="TODO">TODO</fr:link></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>914</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>ct-0014</fr:addr><fr:route>ct-0014.xml</fr:route><fr:title>Positive <fr:link
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>791</fr:anchor><fr:addr
+type="user">ct-0014</fr:addr><fr:route>ct-0014.xml</fr:route><fr:title
+text="Positive coherent category">Positive <fr:link
+type="local"
 href="ct-000X.xml"
+addr="ct-000X"
+title="Coherent category">coherent category</fr:link></fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>10</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>A coherent category is said to be <fr:em><fr:strong>positive</fr:strong></fr:em> if it has <fr:link
 type="local"
-addr="ct-000X">coherent category</fr:link></fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>10</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
-  A coherent category is said to be <fr:em><fr:strong>positive</fr:strong></fr:em> if it has <fr:link
 href="ct-0013.xml"
-type="local"
-addr="ct-0013">disjoint</fr:link> finite coproducts.
-</fr:p></fr:mainmatter></fr:tree></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>
+addr="ct-0013"
+title="Disjoint coproduct">disjoint</fr:link> finite coproducts.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

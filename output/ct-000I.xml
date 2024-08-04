@@ -1,24 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="default.xsl"?>
 <fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
 numbered="true"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1087</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>ct-000I</fr:addr><fr:route>ct-000I.xml</fr:route><fr:title>Slice comparison functor</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>\mathcal { C }</fr:tex> be an arbitrary category and <fr:tex>f \colon A \to B</fr:tex> be a morphism. There is a faithful functor <fr:tex>\Sigma _{f} \colon {{ \mathcal { C } }_{/{ A }}} \to {{ \mathcal { C } }_{/{ B }}}</fr:tex> whose action on objects is the assignment <fr:tex>g  \mapsto  fg</fr:tex>.</fr:p>
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1023</fr:anchor><fr:addr
+type="user">ct-000I</fr:addr><fr:route>ct-000I.xml</fr:route><fr:title
+text="Slice comparison functor">Slice comparison functor</fr:title><fr:taxon>Lemma</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> be an arbitrary category and <fr:tex
+display="inline"><![CDATA[f\colon A\to B]]></fr:tex> be a morphism. There is a faithful functor <fr:tex
+display="inline"><![CDATA[\Sigma _{f}\colon {{\mathcal {C}}_{/{A}}}\to {{\mathcal {C}}_{/{B}}}]]></fr:tex> whose action on objects is the assignment <fr:tex
+display="inline"><![CDATA[g \mapsto  fg]]></fr:tex>.</fr:p>
     
       
       <fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="false"
 numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>558</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:parent>ct-000I</fr:parent></fr:frontmatter><fr:mainmatter>
-  <fr:p>Note that the category <fr:tex>{{ ( {{ \mathcal { C } }_{/{ B }}} ) }_{/{ f }}}</fr:tex> consists of the following data:</fr:p>
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>647</fr:anchor><fr:addr
+type="machine">#273</fr:addr><fr:route>unstable-273.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:authors /><fr:parent>ct-000I</fr:parent></fr:frontmatter><fr:mainmatter>
+  <fr:p>Note that the category <fr:tex
+display="inline"><![CDATA[{{({{\mathcal {C}}_{/{B}}})}_{/{f}}}]]></fr:tex> consists of the following data:</fr:p>
   
   <html:table
 xmlns:html="http://www.w3.org/1999/xhtml">
@@ -35,45 +43,48 @@ xmlns:html="http://www.w3.org/1999/xhtml">
     
   <html:tr>
       
-  <html:td>An object is a morphism <fr:tex>g</fr:tex> in <fr:tex>{{ \mathcal { C } }_{/{ B }}}</fr:tex> with codomain <html:span
-style="white-space: nowrap"><fr:tex>f</fr:tex>.</html:span>
+  <html:td>An object is a morphism <fr:tex
+display="inline"><![CDATA[g]]></fr:tex> in <fr:tex
+display="inline"><![CDATA[{{\mathcal {C}}_{/{B}}}]]></fr:tex> with codomain <html:span
+style="white-space: nowrap"><fr:tex
+display="inline"><![CDATA[f]]></fr:tex>.</html:span>
         
     
       
       <fr:embedded-tex
-hash="a90a9cb4a6821791d654fabe28b42f82"><fr:embedded-tex-preamble>
-         
-   \RequirePackage {tikz}
-   \RequirePackage {amsmath}
-   \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
+hash="646acde8c9ddd53e9b823ecf7662ef85"><fr:embedded-tex-preamble><![CDATA[
+        
+  \RequirePackage {tikz}
+  \RequirePackage {amsmath}
+  \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
 
-   \definecolor {catccolor}{RGB}{255,244,138}
-   \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
-   \tikzstyle {catc}=[catccolor!60]
-   \tikzstyle {catd}=[orange!40]
-   \tikzstyle {cate}=[red!40]
-   \tikzstyle {catf}=[blue!10]
-   \tikzstyle {catg}=[green!25]
+  \definecolor {catccolor}{RGB}{255,244,138}
+  \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
+  \tikzstyle {catc}=[catccolor!60]
+  \tikzstyle {catd}=[orange!40]
+  \tikzstyle {cate}=[red!40]
+  \tikzstyle {catf}=[blue!10]
+  \tikzstyle {catg}=[green!25]
 
 
-   \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
-   \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
+  \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
+  \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
 
-   \NewDocumentCommand \CreateRect {D&lt;&gt;{} m m}{
-     \path 
+  \NewDocumentCommand \CreateRect {D<>{} m m}{
+    \path 
       coordinate (#1nw)
       ++(#2,-#3) coordinate (#1se)
       coordinate (#1sw) at (#1se -| #1nw)
       coordinate (#1ne) at (#1nw -| #1se)
     ;
 
-     \path [spath/save = #1north] (#1nw) to (#1ne);
-     \path [spath/save = #1west] (#1nw) to (#1sw);
-     \path [spath/save = #1east] (#1ne) to (#1se);
-     \path [spath/save = #1south] (#1sw) to (#1se);
+    \path [spath/save = #1north] (#1nw) to (#1ne);
+    \path [spath/save = #1west] (#1nw) to (#1sw);
+    \path [spath/save = #1east] (#1ne) to (#1se);
+    \path [spath/save = #1south] (#1sw) to (#1se);
   }
- 
-         
+
+        
    % appears to be necessary
   \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd}
   \usetikzlibrary{matrix,arrows}
@@ -142,7 +153,7 @@ hash="a90a9cb4a6821791d654fabe28b42f82"><fr:embedded-tex-preamble>
       densely dashed
     },
     embedding/.style = {
-      {right hook}-&gt;
+      {right hook}->
     },
     cover/.style = {
       -{Triangle[open]}
@@ -174,10 +185,10 @@ hash="a90a9cb4a6821791d654fabe28b42f82"><fr:embedded-tex-preamble>
     square/ne/.style = {},
     square/se/.style = {},
     square/sw/.style = {},
-    square/north/.style = {-&gt;},
-    square/south/.style = {-&gt;},
-    square/west/.style = {-&gt;},
-    square/east/.style = {-&gt;},
+    square/north/.style = {->},
+    square/south/.style = {->},
+    square/west/.style = {->},
+    square/east/.style = {->},
     square/north/node/.style = {above},
     square/south/node/.style = {below},
     square/west/node/.style = {left},
@@ -256,62 +267,68 @@ hash="a90a9cb4a6821791d654fabe28b42f82"><fr:embedded-tex-preamble>
     \end{tikzpicture}
   }
   \ExplSyntaxOff
- 
-      </fr:embedded-tex-preamble><fr:embedded-tex-body>
-           \begin {tikzpicture}[diagram]
-             \node  (1) {$A$};
-             \node  [right = of 1] (2) {$B$};
-             \node  [below = of 1] (3) {$C$};
-             \draw  [-&gt;,morphism] (1) to node {$f$} (2);
-             \draw  [-&gt;,morphism] (3) to node {$g$} (1);
-             \draw  [-&gt;,morphism] (3) to node[swap] {$fg$} (2);
-           \end {tikzpicture}
-        </fr:embedded-tex-body></fr:embedded-tex>
+
+      ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+          \begin {tikzpicture}[diagram]
+            \node  (1) {$A$};
+            \node  [right = of 1] (2) {$B$};
+            \node  [below = of 1] (3) {$C$};
+            \draw  [->,morphism] (1) to node {$f$} (2);
+            \draw  [->,morphism] (3) to node {$g$} (1);
+            \draw  [->,morphism] (3) to node[swap] {$fg$} (2);
+          \end {tikzpicture}
+        ]]></fr:embedded-tex-body></fr:embedded-tex>
     
   
-        This is precisely an object in <fr:tex>{{ \mathcal { C } }_{/{ A }}}</fr:tex>.
+        This is precisely an object in <fr:tex
+display="inline"><![CDATA[{{\mathcal {C}}_{/{A}}}]]></fr:tex>.
       </html:td>
 
       
-  <html:td>A morphism <fr:tex>\alpha \colon g \to h</fr:tex> is a morphism in <fr:tex>{{ \mathcal { C } }_{/{ B }}}</fr:tex> such that the following square commutes.
-        Here, we identify the objects <fr:tex>g</fr:tex> and <fr:tex>h</fr:tex> with objects in <fr:tex>{{ \mathcal { C } }_{/{ A }}}</fr:tex>.
+  <html:td>A morphism <fr:tex
+display="inline"><![CDATA[\alpha \colon g\to h]]></fr:tex> is a morphism in <fr:tex
+display="inline"><![CDATA[{{\mathcal {C}}_{/{B}}}]]></fr:tex> such that the following square commutes.
+        Here, we identify the objects <fr:tex
+display="inline"><![CDATA[g]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[h]]></fr:tex> with objects in <fr:tex
+display="inline"><![CDATA[{{\mathcal {C}}_{/{A}}}]]></fr:tex>.
         
     
       
       <fr:embedded-tex
-hash="7384eeef26af0d6fcebb858f4ab8bcbe"><fr:embedded-tex-preamble>
-         
-   \RequirePackage {tikz}
-   \RequirePackage {amsmath}
-   \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
+hash="1e617138140ece82f084b0ef7c6db4fb"><fr:embedded-tex-preamble><![CDATA[
+        
+  \RequirePackage {tikz}
+  \RequirePackage {amsmath}
+  \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
 
-   \definecolor {catccolor}{RGB}{255,244,138}
-   \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
-   \tikzstyle {catc}=[catccolor!60]
-   \tikzstyle {catd}=[orange!40]
-   \tikzstyle {cate}=[red!40]
-   \tikzstyle {catf}=[blue!10]
-   \tikzstyle {catg}=[green!25]
+  \definecolor {catccolor}{RGB}{255,244,138}
+  \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
+  \tikzstyle {catc}=[catccolor!60]
+  \tikzstyle {catd}=[orange!40]
+  \tikzstyle {cate}=[red!40]
+  \tikzstyle {catf}=[blue!10]
+  \tikzstyle {catg}=[green!25]
 
 
-   \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
-   \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
+  \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
+  \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
 
-   \NewDocumentCommand \CreateRect {D&lt;&gt;{} m m}{
-     \path 
+  \NewDocumentCommand \CreateRect {D<>{} m m}{
+    \path 
       coordinate (#1nw)
       ++(#2,-#3) coordinate (#1se)
       coordinate (#1sw) at (#1se -| #1nw)
       coordinate (#1ne) at (#1nw -| #1se)
     ;
 
-     \path [spath/save = #1north] (#1nw) to (#1ne);
-     \path [spath/save = #1west] (#1nw) to (#1sw);
-     \path [spath/save = #1east] (#1ne) to (#1se);
-     \path [spath/save = #1south] (#1sw) to (#1se);
+    \path [spath/save = #1north] (#1nw) to (#1ne);
+    \path [spath/save = #1west] (#1nw) to (#1sw);
+    \path [spath/save = #1east] (#1ne) to (#1se);
+    \path [spath/save = #1south] (#1sw) to (#1se);
   }
- 
-         
+
+        
    % appears to be necessary
   \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd}
   \usetikzlibrary{matrix,arrows}
@@ -380,7 +397,7 @@ hash="7384eeef26af0d6fcebb858f4ab8bcbe"><fr:embedded-tex-preamble>
       densely dashed
     },
     embedding/.style = {
-      {right hook}-&gt;
+      {right hook}->
     },
     cover/.style = {
       -{Triangle[open]}
@@ -412,10 +429,10 @@ hash="7384eeef26af0d6fcebb858f4ab8bcbe"><fr:embedded-tex-preamble>
     square/ne/.style = {},
     square/se/.style = {},
     square/sw/.style = {},
-    square/north/.style = {-&gt;},
-    square/south/.style = {-&gt;},
-    square/west/.style = {-&gt;},
-    square/east/.style = {-&gt;},
+    square/north/.style = {->},
+    square/south/.style = {->},
+    square/west/.style = {->},
+    square/east/.style = {->},
     square/north/node/.style = {above},
     square/south/node/.style = {below},
     square/west/node/.style = {left},
@@ -494,111 +511,140 @@ hash="7384eeef26af0d6fcebb858f4ab8bcbe"><fr:embedded-tex-preamble>
     \end{tikzpicture}
   }
   \ExplSyntaxOff
- 
-      </fr:embedded-tex-preamble><fr:embedded-tex-body>
-           \begin {tikzpicture}[diagram]
-             \node  (1) {$C$};
-             \node  [below = of 1] (2) {$A$};
-             \node  [right = of 1] (3) {$D$};
-             \draw  [-&gt;,morphism] (1) to node {$ \alpha $} (3);
-             \draw  [-&gt;,morphism] (1) to node[swap] {$g$} (2);
-             \draw  [-&gt;,morphism] (3) to node {$h$} (2);
-           \end {tikzpicture}
-        </fr:embedded-tex-body></fr:embedded-tex>
+
+      ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+          \begin {tikzpicture}[diagram]
+            \node  (1) {$C$};
+            \node  [below = of 1] (2) {$A$};
+            \node  [right = of 1] (3) {$D$};
+            \draw  [->,morphism] (1) to node {$\alpha $} (3);
+            \draw  [->,morphism] (1) to node[swap] {$g$} (2);
+            \draw  [->,morphism] (3) to node {$h$} (2);
+          \end {tikzpicture}
+        ]]></fr:embedded-tex-body></fr:embedded-tex>
     
   
-        This is precisely a morphism in <fr:tex>{{ \mathcal { C } }_{/{ A }}}</fr:tex>.
+        This is precisely a morphism in <fr:tex
+display="inline"><![CDATA[{{\mathcal {C}}_{/{A}}}]]></fr:tex>.
       </html:td>
 
     </html:tr>
 
   </html:table>
 
-  <fr:p>Thus, we may take <fr:tex>\Sigma _{f}</fr:tex> to be the forgetful functor <fr:tex>{{ ( {{ \mathcal { C } }_{/{ B }}} ) }_{/{ f }}}   \to   {{ \mathcal { C } }_{/{ A }}}</fr:tex>.</fr:p>
-</fr:mainmatter></fr:tree>
+  <fr:p>Thus, we may take <fr:tex
+display="inline"><![CDATA[\Sigma _{f}]]></fr:tex> to be the forgetful functor <fr:tex
+display="inline"><![CDATA[{{({{\mathcal {C}}_{/{B}}})}_{/{f}}} \to  {{\mathcal {C}}_{/{A}}}]]></fr:tex>.</fr:p>
+</fr:mainmatter><fr:backmatter /></fr:tree>
     
-  </fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context></fr:context><fr:related></fr:related><fr:backlinks><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+  </fr:mainmatter><fr:backmatter><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
+text="Backlinks">Backlinks</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1085</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>ct-001G</fr:addr><fr:route>ct-001G.xml</fr:route><fr:title><fr:link
-href="ct-001E.xml"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1024</fr:anchor><fr:addr
+type="user">ct-001G</fr:addr><fr:route>ct-001G.xml</fr:route><fr:title
+text="Exponentiable objects and right adjoints"><fr:link
 type="local"
-addr="ct-001E">Exponentiable</fr:link> objects and right adjoints</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>14</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
-  Let <fr:tex>\mathcal { C }</fr:tex> be a cartesian category.
-  Then an object <fr:tex>B</fr:tex> is exponentiable iff <fr:tex>B ^{*} \colon \mathcal { C } \to {{ \mathcal { C } }_{/{ B }}}</fr:tex> admits a right adjoint <fr:tex>\Pi _{B}</fr:tex>.
-</fr:p>
+href="ct-001E.xml"
+addr="ct-001E"
+title="Exponentiable object">Exponentiable</fr:link> objects and right adjoints</fr:title><fr:taxon>Lemma</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>14</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> be a cartesian category.
+  Then an object <fr:tex
+display="inline"><![CDATA[B]]></fr:tex> is exponentiable iff <fr:tex
+display="inline"><![CDATA[B^{*}\colon \mathcal {C}\to {{\mathcal {C}}_{/{B}}}]]></fr:tex> admits a right adjoint <fr:tex
+display="inline"><![CDATA[\Pi _{B}]]></fr:tex>.</fr:p>
     
       
       <fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="false"
 numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>481</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>14</fr:day></fr:date><fr:parent>ct-001G</fr:parent></fr:frontmatter><fr:mainmatter>
-  <fr:p>
-    Note that pullbacks over the terminal object <fr:tex>1</fr:tex> are products.
-    Thus, we may assume that <fr:tex>B ^{*}</fr:tex> sends each object <fr:tex>A  \in   \mathcal { C }</fr:tex> to the first projection <fr:tex>B  \times  A  \to  B</fr:tex>.
-  </fr:p>
-  <fr:p>
-    Suppose that <fr:tex>B ^{*}</fr:tex> admits a right adjoint <fr:tex>\Pi _{B}</fr:tex>.
-    <fr:tex>B  \times  ( \mathord { \hspace {1pt} \text {--} \hspace {1pt}} )</fr:tex> can be expressed as <fr:tex>\Sigma _{B} B ^{*}</fr:tex>, where <fr:tex>\Sigma _{B}</fr:tex> is constructed in <fr:ref
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>643</fr:anchor><fr:addr
+type="machine">#247</fr:addr><fr:route>unstable-247.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>14</fr:day></fr:date><fr:authors /><fr:parent>ct-001G</fr:parent></fr:frontmatter><fr:mainmatter>
+  <fr:p>Note that pullbacks over the terminal object <fr:tex
+display="inline"><![CDATA[1]]></fr:tex> are products.
+    Thus, we may assume that <fr:tex
+display="inline"><![CDATA[B^{*}]]></fr:tex> sends each object <fr:tex
+display="inline"><![CDATA[A \in  \mathcal {C}]]></fr:tex> to the first projection <fr:tex
+display="inline"><![CDATA[B \times  A \to  B]]></fr:tex>.</fr:p>
+  <fr:p>Suppose that <fr:tex
+display="inline"><![CDATA[B^{*}]]></fr:tex> admits a right adjoint <fr:tex
+display="inline"><![CDATA[\Pi _{B}]]></fr:tex>.
+    <fr:tex
+display="inline"><![CDATA[B \times  (\mathord {\hspace {1pt}\text {--}\hspace {1pt}})]]></fr:tex> can be expressed as <fr:tex
+display="inline"><![CDATA[\Sigma _{B}B^{*}]]></fr:tex>, where <fr:tex
+display="inline"><![CDATA[\Sigma _{B}]]></fr:tex> is constructed in <fr:ref
 addr="ct-000I"
 href="ct-000I.xml"
-taxon="Lemma"></fr:ref>.
+taxon="Lemma" />.
     By <fr:ref
 addr="ct-000J"
 href="ct-000J.xml"
-taxon="Lemma"></fr:ref>, <fr:tex>\Sigma _{B}</fr:tex> is left adjoint to <fr:tex>B ^{*}</fr:tex>.
-    Thus, we may define <fr:tex>( \mathord { \hspace {1pt} \text {--} \hspace {1pt}} )^{B} :=  \Pi _{B} B ^{*}</fr:tex>.
-  </fr:p>
-  <fr:p>
-    Conversely, suppose that <fr:tex>B</fr:tex> is exponentiable.
-    Let us use the notation <fr:tex>( \mathord { \hspace {1pt} \text {--} \hspace {1pt}} ) ^{ \dag }</fr:tex> to denote the exponential transpose.
-    Then given any object <fr:tex>f \colon A \to B</fr:tex> in <fr:tex>{{ \mathcal { C } }_{/{ B }}}</fr:tex>, let <fr:tex>\Pi _{B}f</fr:tex> be given by the following pullback, where <fr:tex>\pi _{1} \colon B  \times  1 \to B</fr:tex> is the product projection.
-  </fr:p>
+taxon="Lemma" />, <fr:tex
+display="inline"><![CDATA[\Sigma _{B}]]></fr:tex> is left adjoint to <fr:tex
+display="inline"><![CDATA[B^{*}]]></fr:tex>.
+    Thus, we may define <fr:tex
+display="inline"><![CDATA[(\mathord {\hspace {1pt}\text {--}\hspace {1pt}})^{B} := \Pi _{B}B^{*}]]></fr:tex>.</fr:p>
+  <fr:p>Conversely, suppose that <fr:tex
+display="inline"><![CDATA[B]]></fr:tex> is exponentiable.
+    Let us use the notation <fr:tex
+display="inline"><![CDATA[(\mathord {\hspace {1pt}\text {--}\hspace {1pt}})^{\dag }]]></fr:tex> to denote the exponential transpose.
+    Then given any object <fr:tex
+display="inline"><![CDATA[f\colon A\to B]]></fr:tex> in <fr:tex
+display="inline"><![CDATA[{{\mathcal {C}}_{/{B}}}]]></fr:tex>, let <fr:tex
+display="inline"><![CDATA[\Pi _{B}f]]></fr:tex> be given by the following pullback, where <fr:tex
+display="inline"><![CDATA[\pi _{1}\colon B \times  1\to B]]></fr:tex> is the product projection.</fr:p>
   
     
       
       <fr:embedded-tex
-hash="280cd09bac76b7fbd9c9d8d41850f414"><fr:embedded-tex-preamble>
-         
-   \RequirePackage {tikz}
-   \RequirePackage {amsmath}
-   \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
+hash="961a70b7247e91de741632e7a2e0fdd9"><fr:embedded-tex-preamble><![CDATA[
+        
+  \RequirePackage {tikz}
+  \RequirePackage {amsmath}
+  \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
 
-   \definecolor {catccolor}{RGB}{255,244,138}
-   \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
-   \tikzstyle {catc}=[catccolor!60]
-   \tikzstyle {catd}=[orange!40]
-   \tikzstyle {cate}=[red!40]
-   \tikzstyle {catf}=[blue!10]
-   \tikzstyle {catg}=[green!25]
+  \definecolor {catccolor}{RGB}{255,244,138}
+  \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
+  \tikzstyle {catc}=[catccolor!60]
+  \tikzstyle {catd}=[orange!40]
+  \tikzstyle {cate}=[red!40]
+  \tikzstyle {catf}=[blue!10]
+  \tikzstyle {catg}=[green!25]
 
 
-   \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
-   \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
+  \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
+  \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
 
-   \NewDocumentCommand \CreateRect {D&lt;&gt;{} m m}{
-     \path 
+  \NewDocumentCommand \CreateRect {D<>{} m m}{
+    \path 
       coordinate (#1nw)
       ++(#2,-#3) coordinate (#1se)
       coordinate (#1sw) at (#1se -| #1nw)
       coordinate (#1ne) at (#1nw -| #1se)
     ;
 
-     \path [spath/save = #1north] (#1nw) to (#1ne);
-     \path [spath/save = #1west] (#1nw) to (#1sw);
-     \path [spath/save = #1east] (#1ne) to (#1se);
-     \path [spath/save = #1south] (#1sw) to (#1se);
+    \path [spath/save = #1north] (#1nw) to (#1ne);
+    \path [spath/save = #1west] (#1nw) to (#1sw);
+    \path [spath/save = #1east] (#1ne) to (#1se);
+    \path [spath/save = #1south] (#1sw) to (#1se);
   }
- 
-         
+
+        
    % appears to be necessary
   \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd}
   \usetikzlibrary{matrix,arrows}
@@ -667,7 +713,7 @@ hash="280cd09bac76b7fbd9c9d8d41850f414"><fr:embedded-tex-preamble>
       densely dashed
     },
     embedding/.style = {
-      {right hook}-&gt;
+      {right hook}->
     },
     cover/.style = {
       -{Triangle[open]}
@@ -699,10 +745,10 @@ hash="280cd09bac76b7fbd9c9d8d41850f414"><fr:embedded-tex-preamble>
     square/ne/.style = {},
     square/se/.style = {},
     square/sw/.style = {},
-    square/north/.style = {-&gt;},
-    square/south/.style = {-&gt;},
-    square/west/.style = {-&gt;},
-    square/east/.style = {-&gt;},
+    square/north/.style = {->},
+    square/south/.style = {->},
+    square/west/.style = {->},
+    square/east/.style = {->},
     square/north/node/.style = {above},
     square/south/node/.style = {below},
     square/west/node/.style = {left},
@@ -781,62 +827,62 @@ hash="280cd09bac76b7fbd9c9d8d41850f414"><fr:embedded-tex-preamble>
     \end{tikzpicture}
   }
   \ExplSyntaxOff
- 
-      </fr:embedded-tex-preamble><fr:embedded-tex-body>
-     \DiagramSquare {
-      nw = { \Pi _{B}f},
+
+      ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+    \DiagramSquare {
+      nw = {\Pi _{B}f},
       nw/style = {pullback},
       ne = {A^{B}},
       sw = 1,
       se = {B^{B}},
-      north =  \beta ,
+      north = \beta ,
       east = {f^{B}},
-      south = { \pi _{1} ^{ \dag } },
-      west = { \mathsf {!} },
+      south = {\pi _{1}^{\dag }},
+      west = {\mathsf {!}},
     }
-  </fr:embedded-tex-body></fr:embedded-tex>
+  ]]></fr:embedded-tex-body></fr:embedded-tex>
     
   
-  <fr:p>
-    Now let <fr:tex>\alpha \colon f \to g</fr:tex> be a morphism in <fr:tex>{{ \mathcal { C } }_{/{ B }}}</fr:tex>, we extend the above assignment to morphisms as follows:
-  </fr:p>
+  <fr:p>Now let <fr:tex
+display="inline"><![CDATA[\alpha \colon f\to g]]></fr:tex> be a morphism in <fr:tex
+display="inline"><![CDATA[{{\mathcal {C}}_{/{B}}}]]></fr:tex>, we extend the above assignment to morphisms as follows:</fr:p>
   
     
       
       <fr:embedded-tex
-hash="afa42fef08c655a53e5b1e210172343f"><fr:embedded-tex-preamble>
-         
-   \RequirePackage {tikz}
-   \RequirePackage {amsmath}
-   \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
+hash="c09cfe05dea21da8bd1333253be71965"><fr:embedded-tex-preamble><![CDATA[
+        
+  \RequirePackage {tikz}
+  \RequirePackage {amsmath}
+  \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
 
-   \definecolor {catccolor}{RGB}{255,244,138}
-   \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
-   \tikzstyle {catc}=[catccolor!60]
-   \tikzstyle {catd}=[orange!40]
-   \tikzstyle {cate}=[red!40]
-   \tikzstyle {catf}=[blue!10]
-   \tikzstyle {catg}=[green!25]
+  \definecolor {catccolor}{RGB}{255,244,138}
+  \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
+  \tikzstyle {catc}=[catccolor!60]
+  \tikzstyle {catd}=[orange!40]
+  \tikzstyle {cate}=[red!40]
+  \tikzstyle {catf}=[blue!10]
+  \tikzstyle {catg}=[green!25]
 
 
-   \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
-   \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
+  \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
+  \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
 
-   \NewDocumentCommand \CreateRect {D&lt;&gt;{} m m}{
-     \path 
+  \NewDocumentCommand \CreateRect {D<>{} m m}{
+    \path 
       coordinate (#1nw)
       ++(#2,-#3) coordinate (#1se)
       coordinate (#1sw) at (#1se -| #1nw)
       coordinate (#1ne) at (#1nw -| #1se)
     ;
 
-     \path [spath/save = #1north] (#1nw) to (#1ne);
-     \path [spath/save = #1west] (#1nw) to (#1sw);
-     \path [spath/save = #1east] (#1ne) to (#1se);
-     \path [spath/save = #1south] (#1sw) to (#1se);
+    \path [spath/save = #1north] (#1nw) to (#1ne);
+    \path [spath/save = #1west] (#1nw) to (#1sw);
+    \path [spath/save = #1east] (#1ne) to (#1se);
+    \path [spath/save = #1south] (#1sw) to (#1se);
   }
- 
-         
+
+        
    % appears to be necessary
   \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd}
   \usetikzlibrary{matrix,arrows}
@@ -905,7 +951,7 @@ hash="afa42fef08c655a53e5b1e210172343f"><fr:embedded-tex-preamble>
       densely dashed
     },
     embedding/.style = {
-      {right hook}-&gt;
+      {right hook}->
     },
     cover/.style = {
       -{Triangle[open]}
@@ -937,10 +983,10 @@ hash="afa42fef08c655a53e5b1e210172343f"><fr:embedded-tex-preamble>
     square/ne/.style = {},
     square/se/.style = {},
     square/sw/.style = {},
-    square/north/.style = {-&gt;},
-    square/south/.style = {-&gt;},
-    square/west/.style = {-&gt;},
-    square/east/.style = {-&gt;},
+    square/north/.style = {->},
+    square/south/.style = {->},
+    square/west/.style = {->},
+    square/east/.style = {->},
     square/north/node/.style = {above},
     square/south/node/.style = {below},
     square/west/node/.style = {left},
@@ -1019,71 +1065,68 @@ hash="afa42fef08c655a53e5b1e210172343f"><fr:embedded-tex-preamble>
     \end{tikzpicture}
   }
   \ExplSyntaxOff
- 
-      </fr:embedded-tex-preamble><fr:embedded-tex-body>
-     \begin {tikzpicture}[diagram]
-       \SpliceDiagramSquare {
-        nw = { \Pi _{B}g},
+
+      ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+    \begin {tikzpicture}[diagram]
+      \SpliceDiagramSquare {
+        nw = {\Pi _{B}g},
         nw/style = {pullback},
         ne = {C^{B}},
         sw = 1,
         se = {B^{B}},
         east = {g^{B}},
-        south = { \pi _{1} ^{ \dag } }
+        south = {\pi _{1}^{\dag }}
       }
-       \node  [above left = of nw] (pif) {$ \Pi _{B}f$};
-       \draw  [-&gt;,morphism,bend right] (pif) to node[swap] {$ \mathsf {!} $} (sw);
-       \draw  [-&gt;,morphism,exists] (pif) to node[desc] {$ \Pi _{B} \alpha $} (nw);
-       \draw  [-&gt;,morphism,bend left] (pif) to node {$ \alpha ^{B} \beta $} (ne);
-     \end {tikzpicture}
-  </fr:embedded-tex-body></fr:embedded-tex>
+      \node  [above left = of nw] (pif) {$\Pi _{B}f$};
+      \draw  [->,morphism,bend right] (pif) to node[swap] {$\mathsf {!}$} (sw);
+      \draw  [->,morphism,exists] (pif) to node[desc] {$\Pi _{B}\alpha $} (nw);
+      \draw  [->,morphism,bend left] (pif) to node {$\alpha ^{B}\beta $} (ne);
+    \end {tikzpicture}
+  ]]></fr:embedded-tex-body></fr:embedded-tex>
     
   
-  <fr:p>
-    Note that
-  </fr:p>
+  <fr:p>Note that</fr:p>
   <fr:tex
-display="block">      \begin {align*}       g^{B} \alpha ^{B} \beta  &amp;= (g \alpha )^{B} \beta  &amp;&amp;  \text {functoriality of $( \mathord { \hspace {1pt} \text {--} \hspace {1pt}} )^{B}$} \\                    &amp;= f^{B} \beta \\                    &amp;=  \pi _{1} ^{ \dag } \mathsf {!}       \end {align*}   </fr:tex>
-  <fr:p>
-    Let any morphism <fr:tex>\alpha \colon B ^{*} (A') \to f</fr:tex> be given.
-  </fr:p>
+display="block"><![CDATA[     \begin {align*}       g^{B}\alpha ^{B}\beta  &= (g\alpha )^{B}\beta  && \text {functoriality of $(\mathord {\hspace {1pt}\text {--}\hspace {1pt}})^{B}$}\\                   &= f^{B}\beta \\                   &= \pi _{1}^{\dag }\mathsf {!}     \end {align*}   ]]></fr:tex>
+  <fr:p>Let any morphism <fr:tex
+display="inline"><![CDATA[\alpha \colon B^{*}(A')\to f]]></fr:tex> be given.</fr:p>
   
     
       
       <fr:embedded-tex
-hash="148286ab84e4dab984b17c665572ffe3"><fr:embedded-tex-preamble>
-         
-   \RequirePackage {tikz}
-   \RequirePackage {amsmath}
-   \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
+hash="1a96f5f582a792fc6d3527ff10aef291"><fr:embedded-tex-preamble><![CDATA[
+        
+  \RequirePackage {tikz}
+  \RequirePackage {amsmath}
+  \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
 
-   \definecolor {catccolor}{RGB}{255,244,138}
-   \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
-   \tikzstyle {catc}=[catccolor!60]
-   \tikzstyle {catd}=[orange!40]
-   \tikzstyle {cate}=[red!40]
-   \tikzstyle {catf}=[blue!10]
-   \tikzstyle {catg}=[green!25]
+  \definecolor {catccolor}{RGB}{255,244,138}
+  \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
+  \tikzstyle {catc}=[catccolor!60]
+  \tikzstyle {catd}=[orange!40]
+  \tikzstyle {cate}=[red!40]
+  \tikzstyle {catf}=[blue!10]
+  \tikzstyle {catg}=[green!25]
 
 
-   \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
-   \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
+  \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
+  \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
 
-   \NewDocumentCommand \CreateRect {D&lt;&gt;{} m m}{
-     \path 
+  \NewDocumentCommand \CreateRect {D<>{} m m}{
+    \path 
       coordinate (#1nw)
       ++(#2,-#3) coordinate (#1se)
       coordinate (#1sw) at (#1se -| #1nw)
       coordinate (#1ne) at (#1nw -| #1se)
     ;
 
-     \path [spath/save = #1north] (#1nw) to (#1ne);
-     \path [spath/save = #1west] (#1nw) to (#1sw);
-     \path [spath/save = #1east] (#1ne) to (#1se);
-     \path [spath/save = #1south] (#1sw) to (#1se);
+    \path [spath/save = #1north] (#1nw) to (#1ne);
+    \path [spath/save = #1west] (#1nw) to (#1sw);
+    \path [spath/save = #1east] (#1ne) to (#1se);
+    \path [spath/save = #1south] (#1sw) to (#1se);
   }
- 
-         
+
+        
    % appears to be necessary
   \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd}
   \usetikzlibrary{matrix,arrows}
@@ -1152,7 +1195,7 @@ hash="148286ab84e4dab984b17c665572ffe3"><fr:embedded-tex-preamble>
       densely dashed
     },
     embedding/.style = {
-      {right hook}-&gt;
+      {right hook}->
     },
     cover/.style = {
       -{Triangle[open]}
@@ -1184,10 +1227,10 @@ hash="148286ab84e4dab984b17c665572ffe3"><fr:embedded-tex-preamble>
     square/ne/.style = {},
     square/se/.style = {},
     square/sw/.style = {},
-    square/north/.style = {-&gt;},
-    square/south/.style = {-&gt;},
-    square/west/.style = {-&gt;},
-    square/east/.style = {-&gt;},
+    square/north/.style = {->},
+    square/south/.style = {->},
+    square/west/.style = {->},
+    square/east/.style = {->},
     square/north/node/.style = {above},
     square/south/node/.style = {below},
     square/west/node/.style = {left},
@@ -1266,60 +1309,59 @@ hash="148286ab84e4dab984b17c665572ffe3"><fr:embedded-tex-preamble>
     \end{tikzpicture}
   }
   \ExplSyntaxOff
- 
-      </fr:embedded-tex-preamble><fr:embedded-tex-body>
-     \begin {tikzpicture}[diagram]
-       \node  (1) {$B  \times  A'$};
-       \node  [right = of 1] (2) {$A$};
-       \node  [between = 1 and 2] (ref) {};
-       \node  [below = 1.5cm of ref] (3) {$B$};
-       \draw  [-&gt;,morphism] (1) to node[swap] {$ B ^{*} (A')$} (3);
-       \draw  [-&gt;,morphism] (1) to node {$ \alpha $} (2);
-       \draw  [-&gt;,morphism] (2) to node {$f$} (3);
-     \end {tikzpicture}
-  </fr:embedded-tex-body></fr:embedded-tex>
+
+      ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+    \begin {tikzpicture}[diagram]
+      \node  (1) {$B \times  A'$};
+      \node  [right = of 1] (2) {$A$};
+      \node  [between = 1 and 2] (ref) {};
+      \node  [below = 1.5cm of ref] (3) {$B$};
+      \draw  [->,morphism] (1) to node[swap] {$B^{*}(A')$} (3);
+      \draw  [->,morphism] (1) to node {$\alpha $} (2);
+      \draw  [->,morphism] (2) to node {$f$} (3);
+    \end {tikzpicture}
+  ]]></fr:embedded-tex-body></fr:embedded-tex>
     
   
-  <fr:p>
-    Then this morphism corresponds to a unique morphism <fr:tex>A'  \to   \Pi _{B}f</fr:tex> as follows:
-  </fr:p>
+  <fr:p>Then this morphism corresponds to a unique morphism <fr:tex
+display="inline"><![CDATA[A' \to  \Pi _{B}f]]></fr:tex> as follows:</fr:p>
   
     
       
       <fr:embedded-tex
-hash="236dafd73ce5dac24c96e24f8fdca422"><fr:embedded-tex-preamble>
-         
-   \RequirePackage {tikz}
-   \RequirePackage {amsmath}
-   \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
+hash="611dfd22c2a87c672cd3073401b78333"><fr:embedded-tex-preamble><![CDATA[
+        
+  \RequirePackage {tikz}
+  \RequirePackage {amsmath}
+  \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
 
-   \definecolor {catccolor}{RGB}{255,244,138}
-   \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
-   \tikzstyle {catc}=[catccolor!60]
-   \tikzstyle {catd}=[orange!40]
-   \tikzstyle {cate}=[red!40]
-   \tikzstyle {catf}=[blue!10]
-   \tikzstyle {catg}=[green!25]
+  \definecolor {catccolor}{RGB}{255,244,138}
+  \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
+  \tikzstyle {catc}=[catccolor!60]
+  \tikzstyle {catd}=[orange!40]
+  \tikzstyle {cate}=[red!40]
+  \tikzstyle {catf}=[blue!10]
+  \tikzstyle {catg}=[green!25]
 
 
-   \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
-   \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
+  \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
+  \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
 
-   \NewDocumentCommand \CreateRect {D&lt;&gt;{} m m}{
-     \path 
+  \NewDocumentCommand \CreateRect {D<>{} m m}{
+    \path 
       coordinate (#1nw)
       ++(#2,-#3) coordinate (#1se)
       coordinate (#1sw) at (#1se -| #1nw)
       coordinate (#1ne) at (#1nw -| #1se)
     ;
 
-     \path [spath/save = #1north] (#1nw) to (#1ne);
-     \path [spath/save = #1west] (#1nw) to (#1sw);
-     \path [spath/save = #1east] (#1ne) to (#1se);
-     \path [spath/save = #1south] (#1sw) to (#1se);
+    \path [spath/save = #1north] (#1nw) to (#1ne);
+    \path [spath/save = #1west] (#1nw) to (#1sw);
+    \path [spath/save = #1east] (#1ne) to (#1se);
+    \path [spath/save = #1south] (#1sw) to (#1se);
   }
- 
-         
+
+        
    % appears to be necessary
   \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd}
   \usetikzlibrary{matrix,arrows}
@@ -1388,7 +1430,7 @@ hash="236dafd73ce5dac24c96e24f8fdca422"><fr:embedded-tex-preamble>
       densely dashed
     },
     embedding/.style = {
-      {right hook}-&gt;
+      {right hook}->
     },
     cover/.style = {
       -{Triangle[open]}
@@ -1420,10 +1462,10 @@ hash="236dafd73ce5dac24c96e24f8fdca422"><fr:embedded-tex-preamble>
     square/ne/.style = {},
     square/se/.style = {},
     square/sw/.style = {},
-    square/north/.style = {-&gt;},
-    square/south/.style = {-&gt;},
-    square/west/.style = {-&gt;},
-    square/east/.style = {-&gt;},
+    square/north/.style = {->},
+    square/south/.style = {->},
+    square/west/.style = {->},
+    square/east/.style = {->},
     square/north/node/.style = {above},
     square/south/node/.style = {below},
     square/west/node/.style = {left},
@@ -1502,108 +1544,120 @@ hash="236dafd73ce5dac24c96e24f8fdca422"><fr:embedded-tex-preamble>
     \end{tikzpicture}
   }
   \ExplSyntaxOff
- 
-      </fr:embedded-tex-preamble><fr:embedded-tex-body>
-     \begin {tikzpicture}[diagram]
-       \SpliceDiagramSquare {
-        nw = { \Pi _{B}f},
+
+      ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+    \begin {tikzpicture}[diagram]
+      \SpliceDiagramSquare {
+        nw = {\Pi _{B}f},
         nw/style = {pullback},
         ne = {A^{B}},
         sw = 1,
         se = {B^{B}},
         east = {f^{B}},
-        south = { \pi _{1} ^{ \dag } },
-        north =  \beta ,
+        south = {\pi _{1}^{\dag }},
+        north = \beta ,
       }
-       \node  [above left = of nw] (pif) {$A'$};
-       \draw  [-&gt;,morphism,bend right] (pif) to node[swap] {$ \mathsf {!} $} (sw);
-       \draw  [-&gt;,morphism,exists] (pif) to (nw);
-       \draw  [-&gt;,morphism,bend left] (pif) to node {$ \alpha ^{ \dag } $} (ne);
-     \end {tikzpicture}
-  </fr:embedded-tex-body></fr:embedded-tex>
+      \node  [above left = of nw] (pif) {$A'$};
+      \draw  [->,morphism,bend right] (pif) to node[swap] {$\mathsf {!}$} (sw);
+      \draw  [->,morphism,exists] (pif) to (nw);
+      \draw  [->,morphism,bend left] (pif) to node {$\alpha ^{\dag }$} (ne);
+    \end {tikzpicture}
+  ]]></fr:embedded-tex-body></fr:embedded-tex>
     
   
-  <fr:p>
-    The unit and counit of the adjunction can be extracted from the square above.
-  </fr:p>
-</fr:mainmatter></fr:tree>
+  <fr:p>The unit and counit of the adjunction can be extracted from the square above.</fr:p>
+</fr:mainmatter><fr:backmatter /></fr:tree>
     
-  </fr:mainmatter></fr:tree><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+  </fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1086</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>ct-000J</fr:addr><fr:route>ct-000J.xml</fr:route><fr:title><fr:link
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1025</fr:anchor><fr:addr
+type="user">ct-000J</fr:addr><fr:route>ct-000J.xml</fr:route><fr:title
+text="Slice comparison functor of a locally cartesian category admits a right adjoint"><fr:link
+type="local"
 href="ct-000I.xml"
+addr="ct-000I"
+title="Slice comparison functor">Slice comparison functor</fr:link> of a <fr:link
 type="local"
-addr="ct-000I">Slice comparison functor</fr:link> of a <fr:link
 href="ct-000G.xml"
-type="local"
-addr="ct-000G">locally cartesian category</fr:link> admits a right adjoint</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>A category <fr:tex>\mathcal { C }</fr:tex> is locally cartesian iff for all morphisms <fr:tex>f</fr:tex> of <fr:tex>\mathcal { C }</fr:tex>, the functor <fr:tex>\Sigma _{f}</fr:tex> constructed in <fr:ref
+addr="ct-000G"
+title="Locally cartesian category">locally cartesian category</fr:link> admits a right adjoint</fr:title><fr:taxon>Lemma</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>A category <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> is locally cartesian iff for all morphisms <fr:tex
+display="inline"><![CDATA[f]]></fr:tex> of <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex>, the functor <fr:tex
+display="inline"><![CDATA[\Sigma _{f}]]></fr:tex> constructed in <fr:ref
 addr="ct-000I"
 href="ct-000I.xml"
-taxon="Lemma"></fr:ref> admits a right adjoint <fr:tex>f ^{*}</fr:tex>. Moreover, <fr:tex>f ^{*}</fr:tex> is (isomorphic to) the pullback functor.</fr:p>
+taxon="Lemma" /> admits a right adjoint <fr:tex
+display="inline"><![CDATA[f^{*}]]></fr:tex>. Moreover, <fr:tex
+display="inline"><![CDATA[f^{*}]]></fr:tex> is (isomorphic to) the pullback functor.</fr:p>
     
       
       <fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="false"
 numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>260</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:parent>ct-000J</fr:parent></fr:frontmatter><fr:mainmatter>
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>305</fr:anchor><fr:addr
+type="machine">#272</fr:addr><fr:route>unstable-272.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:authors /><fr:parent>ct-000J</fr:parent></fr:frontmatter><fr:mainmatter>
   <fr:p>By <fr:ref
 addr="ct-000H"
 href="ct-000H.xml"
-taxon="Lemma"></fr:ref>, locally cartesian categories are precisely those categories with pullbacks.</fr:p>
+taxon="Lemma" />, locally cartesian categories are precisely those categories with pullbacks.</fr:p>
   
   <fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
 numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>251</fr:anchor><fr:taxon>If</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:parent>ct-000J</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Suppose that <fr:tex>\Sigma _{f}  \dashv   f ^{*}</fr:tex> for any <fr:tex>f</fr:tex>. We show that the following diagram</fr:p>
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>306</fr:anchor><fr:addr
+type="machine">#270</fr:addr><fr:route>unstable-270.xml</fr:route><fr:taxon>If</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:authors /><fr:parent>ct-000J</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Suppose that <fr:tex
+display="inline"><![CDATA[\Sigma _{f} \dashv  f^{*}]]></fr:tex> for any <fr:tex
+display="inline"><![CDATA[f]]></fr:tex>. We show that the following diagram</fr:p>
     
       
       <fr:embedded-tex
-hash="b1420d82d13131fb7015646972e07761"><fr:embedded-tex-preamble>
-         
-   \RequirePackage {tikz}
-   \RequirePackage {amsmath}
-   \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
+hash="978cb4d5b9419bff7dba5ad49136cf28"><fr:embedded-tex-preamble><![CDATA[
+        
+  \RequirePackage {tikz}
+  \RequirePackage {amsmath}
+  \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
 
-   \definecolor {catccolor}{RGB}{255,244,138}
-   \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
-   \tikzstyle {catc}=[catccolor!60]
-   \tikzstyle {catd}=[orange!40]
-   \tikzstyle {cate}=[red!40]
-   \tikzstyle {catf}=[blue!10]
-   \tikzstyle {catg}=[green!25]
+  \definecolor {catccolor}{RGB}{255,244,138}
+  \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
+  \tikzstyle {catc}=[catccolor!60]
+  \tikzstyle {catd}=[orange!40]
+  \tikzstyle {cate}=[red!40]
+  \tikzstyle {catf}=[blue!10]
+  \tikzstyle {catg}=[green!25]
 
 
-   \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
-   \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
+  \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
+  \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
 
-   \NewDocumentCommand \CreateRect {D&lt;&gt;{} m m}{
-     \path 
+  \NewDocumentCommand \CreateRect {D<>{} m m}{
+    \path 
       coordinate (#1nw)
       ++(#2,-#3) coordinate (#1se)
       coordinate (#1sw) at (#1se -| #1nw)
       coordinate (#1ne) at (#1nw -| #1se)
     ;
 
-     \path [spath/save = #1north] (#1nw) to (#1ne);
-     \path [spath/save = #1west] (#1nw) to (#1sw);
-     \path [spath/save = #1east] (#1ne) to (#1se);
-     \path [spath/save = #1south] (#1sw) to (#1se);
+    \path [spath/save = #1north] (#1nw) to (#1ne);
+    \path [spath/save = #1west] (#1nw) to (#1sw);
+    \path [spath/save = #1east] (#1ne) to (#1se);
+    \path [spath/save = #1south] (#1sw) to (#1se);
   }
- 
-         
+
+        
    % appears to be necessary
   \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd}
   \usetikzlibrary{matrix,arrows}
@@ -1672,7 +1726,7 @@ hash="b1420d82d13131fb7015646972e07761"><fr:embedded-tex-preamble>
       densely dashed
     },
     embedding/.style = {
-      {right hook}-&gt;
+      {right hook}->
     },
     cover/.style = {
       -{Triangle[open]}
@@ -1704,10 +1758,10 @@ hash="b1420d82d13131fb7015646972e07761"><fr:embedded-tex-preamble>
     square/ne/.style = {},
     square/se/.style = {},
     square/sw/.style = {},
-    square/north/.style = {-&gt;},
-    square/south/.style = {-&gt;},
-    square/west/.style = {-&gt;},
-    square/east/.style = {-&gt;},
+    square/north/.style = {->},
+    square/south/.style = {->},
+    square/west/.style = {->},
+    square/east/.style = {->},
     square/north/node/.style = {above},
     square/south/node/.style = {below},
     square/west/node/.style = {left},
@@ -1786,62 +1840,68 @@ hash="b1420d82d13131fb7015646972e07761"><fr:embedded-tex-preamble>
     \end{tikzpicture}
   }
   \ExplSyntaxOff
- 
-      </fr:embedded-tex-preamble><fr:embedded-tex-body>
-       \begin {tikzpicture}[diagram]
-         
-     \SpliceDiagramSquare {
+
+      ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+      \begin {tikzpicture}[diagram]
+        
+    \SpliceDiagramSquare {
       sw = A,
       se = B,
       nw = A',
       ne = B',
       south = f,
       east = g,
-      west =  f ^{*} (g),
+      west = f^{*}(g),
       west/node/style = {right},
-      north =  \varepsilon _{g},
+      north = \varepsilon _{g},
     }
-   
-       \end {tikzpicture}
-    </fr:embedded-tex-body></fr:embedded-tex>
+  
+      \end {tikzpicture}
+    ]]></fr:embedded-tex-body></fr:embedded-tex>
     
-  <fr:p>is a pullback, where <fr:tex>\varepsilon _{g}</fr:tex> is the counit of the adjunction. Note that since <fr:tex>f  \circ   f ^{*} (g) =  \Sigma _{f}( f ^{*} (g))</fr:tex> by construction, the component <fr:tex>\varepsilon _{g}</fr:tex> makes the diagram commute.</fr:p><fr:p>Let <fr:tex>h' \colon C \to A</fr:tex> and <fr:tex>h \colon C \to B'</fr:tex> be morphisms such that <fr:tex>fh' = gh</fr:tex>.</fr:p>
+  <fr:p>is a pullback, where <fr:tex
+display="inline"><![CDATA[\varepsilon _{g}]]></fr:tex> is the counit of the adjunction. Note that since <fr:tex
+display="inline"><![CDATA[f \circ  f^{*}(g) = \Sigma _{f}(f^{*}(g))]]></fr:tex> by construction, the component <fr:tex
+display="inline"><![CDATA[\varepsilon _{g}]]></fr:tex> makes the diagram commute.</fr:p><fr:p>Let <fr:tex
+display="inline"><![CDATA[h'\colon C\to A]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[h\colon C\to B']]></fr:tex> be morphisms such that <fr:tex
+display="inline"><![CDATA[fh' = gh]]></fr:tex>.</fr:p>
     
       
       <fr:embedded-tex
-hash="7a09fdfa15abc2d8f1d0d5b20caaa713"><fr:embedded-tex-preamble>
-         
-   \RequirePackage {tikz}
-   \RequirePackage {amsmath}
-   \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
+hash="6c571ce318e6c51d13819d3e139d9fb2"><fr:embedded-tex-preamble><![CDATA[
+        
+  \RequirePackage {tikz}
+  \RequirePackage {amsmath}
+  \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
 
-   \definecolor {catccolor}{RGB}{255,244,138}
-   \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
-   \tikzstyle {catc}=[catccolor!60]
-   \tikzstyle {catd}=[orange!40]
-   \tikzstyle {cate}=[red!40]
-   \tikzstyle {catf}=[blue!10]
-   \tikzstyle {catg}=[green!25]
+  \definecolor {catccolor}{RGB}{255,244,138}
+  \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
+  \tikzstyle {catc}=[catccolor!60]
+  \tikzstyle {catd}=[orange!40]
+  \tikzstyle {cate}=[red!40]
+  \tikzstyle {catf}=[blue!10]
+  \tikzstyle {catg}=[green!25]
 
 
-   \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
-   \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
+  \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
+  \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
 
-   \NewDocumentCommand \CreateRect {D&lt;&gt;{} m m}{
-     \path 
+  \NewDocumentCommand \CreateRect {D<>{} m m}{
+    \path 
       coordinate (#1nw)
       ++(#2,-#3) coordinate (#1se)
       coordinate (#1sw) at (#1se -| #1nw)
       coordinate (#1ne) at (#1nw -| #1se)
     ;
 
-     \path [spath/save = #1north] (#1nw) to (#1ne);
-     \path [spath/save = #1west] (#1nw) to (#1sw);
-     \path [spath/save = #1east] (#1ne) to (#1se);
-     \path [spath/save = #1south] (#1sw) to (#1se);
+    \path [spath/save = #1north] (#1nw) to (#1ne);
+    \path [spath/save = #1west] (#1nw) to (#1sw);
+    \path [spath/save = #1east] (#1ne) to (#1se);
+    \path [spath/save = #1south] (#1sw) to (#1se);
   }
- 
-         
+
+        
    % appears to be necessary
   \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd}
   \usetikzlibrary{matrix,arrows}
@@ -1910,7 +1970,7 @@ hash="7a09fdfa15abc2d8f1d0d5b20caaa713"><fr:embedded-tex-preamble>
       densely dashed
     },
     embedding/.style = {
-      {right hook}-&gt;
+      {right hook}->
     },
     cover/.style = {
       -{Triangle[open]}
@@ -1942,10 +2002,10 @@ hash="7a09fdfa15abc2d8f1d0d5b20caaa713"><fr:embedded-tex-preamble>
     square/ne/.style = {},
     square/se/.style = {},
     square/sw/.style = {},
-    square/north/.style = {-&gt;},
-    square/south/.style = {-&gt;},
-    square/west/.style = {-&gt;},
-    square/east/.style = {-&gt;},
+    square/north/.style = {->},
+    square/south/.style = {->},
+    square/west/.style = {->},
+    square/east/.style = {->},
     square/north/node/.style = {above},
     square/south/node/.style = {below},
     square/west/node/.style = {left},
@@ -2024,43 +2084,53 @@ hash="7a09fdfa15abc2d8f1d0d5b20caaa713"><fr:embedded-tex-preamble>
     \end{tikzpicture}
   }
   \ExplSyntaxOff
- 
-      </fr:embedded-tex-preamble><fr:embedded-tex-body>
-       \begin {tikzpicture}[diagram]
-         
-     \SpliceDiagramSquare {
+
+      ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+      \begin {tikzpicture}[diagram]
+        
+    \SpliceDiagramSquare {
       sw = A,
       se = B,
       nw = A',
       ne = B',
       south = f,
       east = g,
-      west =  f ^{*} (g),
+      west = f^{*}(g),
       west/node/style = {right},
-      north =  \varepsilon _{g},
+      north = \varepsilon _{g},
     }
-   
-         \node  [above left = of nw] (c) {$C$};
-         \draw  [-&gt;,morphism,bend right] (c) to node[swap] {$h'$} (sw);
-         \draw  [-&gt;,morphism,bend left] (c) to node {$h$} (ne);
-         \draw  [-&gt;,morphism,exists] (c) to node[desc] {$h ^{ \dag } $} (nw);
-       \end {tikzpicture}
-    </fr:embedded-tex-body></fr:embedded-tex>
+  
+        \node  [above left = of nw] (c) {$C$};
+        \draw  [->,morphism,bend right] (c) to node[swap] {$h'$} (sw);
+        \draw  [->,morphism,bend left] (c) to node {$h$} (ne);
+        \draw  [->,morphism,exists] (c) to node[desc] {$h^{\dag }$} (nw);
+      \end {tikzpicture}
+    ]]></fr:embedded-tex-body></fr:embedded-tex>
     
-  <fr:p>Note that <fr:tex>h</fr:tex> is a morphism <fr:tex>h \colon \Sigma _{f}(h') \to g</fr:tex> in <fr:tex>{{ \mathcal { C } }_{/{ B }}}</fr:tex>. Thus, it corresponds to a unique morphism <fr:tex>h ^{ \dag } \colon h' \to f ^{*} (g)</fr:tex> under the adjunction.</fr:p><fr:p>The transpose of <fr:tex>h ^{ \dag }</fr:tex> can be computed as <fr:tex>\varepsilon _{g}  \circ   \Sigma _{f}(h ^{ \dag } )</fr:tex>. Since <fr:tex>\Sigma _{f}</fr:tex> is the identity on morphisms, we have
+  <fr:p>Note that <fr:tex
+display="inline"><![CDATA[h]]></fr:tex> is a morphism <fr:tex
+display="inline"><![CDATA[h\colon \Sigma _{f}(h')\to g]]></fr:tex> in <fr:tex
+display="inline"><![CDATA[{{\mathcal {C}}_{/{B}}}]]></fr:tex>. Thus, it corresponds to a unique morphism <fr:tex
+display="inline"><![CDATA[h^{\dag }\colon h'\to f^{*}(g)]]></fr:tex> under the adjunction.</fr:p><fr:p>The transpose of <fr:tex
+display="inline"><![CDATA[h^{\dag }]]></fr:tex> can be computed as <fr:tex
+display="inline"><![CDATA[\varepsilon _{g} \circ  \Sigma _{f}(h^{\dag })]]></fr:tex>. Since <fr:tex
+display="inline"><![CDATA[\Sigma _{f}]]></fr:tex> is the identity on morphisms, we have
       <fr:tex
-display="block">         (h ^{ \dag } ) ^{ \dag }  =  \varepsilon _{g}  \circ   \Sigma _{f}(h ^{ \dag } ) =  \varepsilon _{g}  \circ  h ^{ \dag }  = h       </fr:tex>
-      Thus, the top triangle also commutes.
-    </fr:p></fr:mainmatter></fr:tree>
+display="block"><![CDATA[         (h^{\dag })^{\dag } = \varepsilon _{g} \circ  \Sigma _{f}(h^{\dag }) = \varepsilon _{g} \circ  h^{\dag } = h       ]]></fr:tex>
+      Thus, the top triangle also commutes.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree>
 
   <fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
 numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>259</fr:anchor><fr:taxon>Only if</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:parent>ct-000J</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Suppose that <fr:tex>\mathcal { C }</fr:tex> has pullbacks. Then we can take <fr:tex>f ^{*}</fr:tex> to be the pullback functor. It remains to check that <fr:tex>\Sigma _{f}  \dashv   f ^{*}</fr:tex>.</fr:p>
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>307</fr:anchor><fr:addr
+type="machine">#271</fr:addr><fr:route>unstable-271.xml</fr:route><fr:taxon>Only if</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:authors /><fr:parent>ct-000J</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Suppose that <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> has pullbacks. Then we can take <fr:tex
+display="inline"><![CDATA[f^{*}]]></fr:tex> to be the pullback functor. It remains to check that <fr:tex
+display="inline"><![CDATA[\Sigma _{f} \dashv  f^{*}]]></fr:tex>.</fr:p>
   <html:table
 xmlns:html="http://www.w3.org/1999/xhtml">
       
@@ -2077,44 +2147,46 @@ xmlns:html="http://www.w3.org/1999/xhtml">
   <html:tr>
         
   <html:td>
-          Let <fr:tex>h  \in   {{ \mathcal { C } }_{/{ A }}}</fr:tex> be an object, we take <fr:tex>\eta _{h} \colon h \to f ^{*} ( \Sigma _{f}(h))</fr:tex> to be the unique morphism given by the following pullback:
+          Let <fr:tex
+display="inline"><![CDATA[h \in  {{\mathcal {C}}_{/{A}}}]]></fr:tex> be an object, we take <fr:tex
+display="inline"><![CDATA[\eta _{h}\colon h\to f^{*}(\Sigma _{f}(h))]]></fr:tex> to be the unique morphism given by the following pullback:
           
     
       
       <fr:embedded-tex
-hash="a39a72e8fd3626c07c8b81e56eeebb21"><fr:embedded-tex-preamble>
-         
-   \RequirePackage {tikz}
-   \RequirePackage {amsmath}
-   \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
+hash="00fa5bdf6f274d0c7c6027f4ec6c92bc"><fr:embedded-tex-preamble><![CDATA[
+        
+  \RequirePackage {tikz}
+  \RequirePackage {amsmath}
+  \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
 
-   \definecolor {catccolor}{RGB}{255,244,138}
-   \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
-   \tikzstyle {catc}=[catccolor!60]
-   \tikzstyle {catd}=[orange!40]
-   \tikzstyle {cate}=[red!40]
-   \tikzstyle {catf}=[blue!10]
-   \tikzstyle {catg}=[green!25]
+  \definecolor {catccolor}{RGB}{255,244,138}
+  \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
+  \tikzstyle {catc}=[catccolor!60]
+  \tikzstyle {catd}=[orange!40]
+  \tikzstyle {cate}=[red!40]
+  \tikzstyle {catf}=[blue!10]
+  \tikzstyle {catg}=[green!25]
 
 
-   \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
-   \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
+  \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
+  \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
 
-   \NewDocumentCommand \CreateRect {D&lt;&gt;{} m m}{
-     \path 
+  \NewDocumentCommand \CreateRect {D<>{} m m}{
+    \path 
       coordinate (#1nw)
       ++(#2,-#3) coordinate (#1se)
       coordinate (#1sw) at (#1se -| #1nw)
       coordinate (#1ne) at (#1nw -| #1se)
     ;
 
-     \path [spath/save = #1north] (#1nw) to (#1ne);
-     \path [spath/save = #1west] (#1nw) to (#1sw);
-     \path [spath/save = #1east] (#1ne) to (#1se);
-     \path [spath/save = #1south] (#1sw) to (#1se);
+    \path [spath/save = #1north] (#1nw) to (#1ne);
+    \path [spath/save = #1west] (#1nw) to (#1sw);
+    \path [spath/save = #1east] (#1ne) to (#1se);
+    \path [spath/save = #1south] (#1sw) to (#1se);
   }
- 
-         
+
+        
    % appears to be necessary
   \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd}
   \usetikzlibrary{matrix,arrows}
@@ -2183,7 +2255,7 @@ hash="a39a72e8fd3626c07c8b81e56eeebb21"><fr:embedded-tex-preamble>
       densely dashed
     },
     embedding/.style = {
-      {right hook}-&gt;
+      {right hook}->
     },
     cover/.style = {
       -{Triangle[open]}
@@ -2215,10 +2287,10 @@ hash="a39a72e8fd3626c07c8b81e56eeebb21"><fr:embedded-tex-preamble>
     square/ne/.style = {},
     square/se/.style = {},
     square/sw/.style = {},
-    square/north/.style = {-&gt;},
-    square/south/.style = {-&gt;},
-    square/west/.style = {-&gt;},
-    square/east/.style = {-&gt;},
+    square/north/.style = {->},
+    square/south/.style = {->},
+    square/west/.style = {->},
+    square/east/.style = {->},
     square/north/node/.style = {above},
     square/south/node/.style = {below},
     square/west/node/.style = {left},
@@ -2297,10 +2369,10 @@ hash="a39a72e8fd3626c07c8b81e56eeebb21"><fr:embedded-tex-preamble>
     \end{tikzpicture}
   }
   \ExplSyntaxOff
- 
-      </fr:embedded-tex-preamble><fr:embedded-tex-body>
-             \begin {tikzpicture}[diagram]
-               \SpliceDiagramSquare {
+
+      ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+            \begin {tikzpicture}[diagram]
+              \SpliceDiagramSquare {
                 width = 3cm,
                 sw = A,
                 nw/style = pullback,
@@ -2308,61 +2380,64 @@ hash="a39a72e8fd3626c07c8b81e56eeebb21"><fr:embedded-tex-preamble>
                 nw = A',
                 ne = B',
                 south = f,
-                east =  \Sigma _{f}(h),
-                west =  f ^{*} ( \Sigma _{f}(h)),
+                east = \Sigma _{f}(h),
+                west = f^{*}(\Sigma _{f}(h)),
                 west/node/style = {right},
-                north =  \varepsilon _{ \Sigma _{f}(h)},
+                north = \varepsilon _{\Sigma _{f}(h)},
               }
-               \node  [above left of = nw] (c) {$B'$};
-               \draw  [-&gt;,morphism,bend right] (c) to node[swap] {$h$} (sw);
-               \draw  [double,morphism,bend left] (c) to (ne);
-               \draw  [-&gt;,morphism,exists] (c) to node[desc] {$ \eta _{h}$} (nw);
-             \end {tikzpicture}
-          </fr:embedded-tex-body></fr:embedded-tex>
+              \node  [above left of = nw] (c) {$B'$};
+              \draw  [->,morphism,bend right] (c) to node[swap] {$h$} (sw);
+              \draw  [double,morphism,bend left] (c) to (ne);
+              \draw  [->,morphism,exists] (c) to node[desc] {$\eta _{h}$} (nw);
+            \end {tikzpicture}
+          ]]></fr:embedded-tex-body></fr:embedded-tex>
     
   
-          <fr:p>where <fr:tex>\varepsilon</fr:tex> is the counit defined on the right. Then naturality is a consequence of uniqueness.</fr:p>
+          <fr:p>where <fr:tex
+display="inline"><![CDATA[\varepsilon ]]></fr:tex> is the counit defined on the right. Then naturality is a consequence of uniqueness.</fr:p>
         </html:td>
 
         
-  <html:td>Let <fr:tex>g  \in   {{ \mathcal { C } }_{/{ B }}}</fr:tex> be an object. We take <fr:tex>\varepsilon _{g} \colon \Sigma _{f}( f ^{*} (g)) \to g</fr:tex> to be the following morphism.
+  <html:td>Let <fr:tex
+display="inline"><![CDATA[g \in  {{\mathcal {C}}_{/{B}}}]]></fr:tex> be an object. We take <fr:tex
+display="inline"><![CDATA[\varepsilon _{g}\colon \Sigma _{f}(f^{*}(g))\to g]]></fr:tex> to be the following morphism.
           
     
       
       <fr:embedded-tex
-hash="e4b01419b1cf30092327fc3a4b619a13"><fr:embedded-tex-preamble>
-         
-   \RequirePackage {tikz}
-   \RequirePackage {amsmath}
-   \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
+hash="d06c153112f52945894dc43faf6a95dc"><fr:embedded-tex-preamble><![CDATA[
+        
+  \RequirePackage {tikz}
+  \RequirePackage {amsmath}
+  \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
 
-   \definecolor {catccolor}{RGB}{255,244,138}
-   \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
-   \tikzstyle {catc}=[catccolor!60]
-   \tikzstyle {catd}=[orange!40]
-   \tikzstyle {cate}=[red!40]
-   \tikzstyle {catf}=[blue!10]
-   \tikzstyle {catg}=[green!25]
+  \definecolor {catccolor}{RGB}{255,244,138}
+  \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
+  \tikzstyle {catc}=[catccolor!60]
+  \tikzstyle {catd}=[orange!40]
+  \tikzstyle {cate}=[red!40]
+  \tikzstyle {catf}=[blue!10]
+  \tikzstyle {catg}=[green!25]
 
 
-   \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
-   \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
+  \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
+  \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
 
-   \NewDocumentCommand \CreateRect {D&lt;&gt;{} m m}{
-     \path 
+  \NewDocumentCommand \CreateRect {D<>{} m m}{
+    \path 
       coordinate (#1nw)
       ++(#2,-#3) coordinate (#1se)
       coordinate (#1sw) at (#1se -| #1nw)
       coordinate (#1ne) at (#1nw -| #1se)
     ;
 
-     \path [spath/save = #1north] (#1nw) to (#1ne);
-     \path [spath/save = #1west] (#1nw) to (#1sw);
-     \path [spath/save = #1east] (#1ne) to (#1se);
-     \path [spath/save = #1south] (#1sw) to (#1se);
+    \path [spath/save = #1north] (#1nw) to (#1ne);
+    \path [spath/save = #1west] (#1nw) to (#1sw);
+    \path [spath/save = #1east] (#1ne) to (#1se);
+    \path [spath/save = #1south] (#1sw) to (#1se);
   }
- 
-         
+
+        
    % appears to be necessary
   \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd}
   \usetikzlibrary{matrix,arrows}
@@ -2431,7 +2506,7 @@ hash="e4b01419b1cf30092327fc3a4b619a13"><fr:embedded-tex-preamble>
       densely dashed
     },
     embedding/.style = {
-      {right hook}-&gt;
+      {right hook}->
     },
     cover/.style = {
       -{Triangle[open]}
@@ -2463,10 +2538,10 @@ hash="e4b01419b1cf30092327fc3a4b619a13"><fr:embedded-tex-preamble>
     square/ne/.style = {},
     square/se/.style = {},
     square/sw/.style = {},
-    square/north/.style = {-&gt;},
-    square/south/.style = {-&gt;},
-    square/west/.style = {-&gt;},
-    square/east/.style = {-&gt;},
+    square/north/.style = {->},
+    square/south/.style = {->},
+    square/west/.style = {->},
+    square/east/.style = {->},
     square/north/node/.style = {above},
     square/south/node/.style = {below},
     square/west/node/.style = {left},
@@ -2545,9 +2620,9 @@ hash="e4b01419b1cf30092327fc3a4b619a13"><fr:embedded-tex-preamble>
     \end{tikzpicture}
   }
   \ExplSyntaxOff
- 
-      </fr:embedded-tex-preamble><fr:embedded-tex-body>
-             \DiagramSquare {
+
+      ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+            \DiagramSquare {
               sw = A,
               nw/style = pullback,
               se = B,
@@ -2555,50 +2630,53 @@ hash="e4b01419b1cf30092327fc3a4b619a13"><fr:embedded-tex-preamble>
               ne = B',
               south = f,
               east = g,
-              west =  f ^{*} (g),
-              north =  \varepsilon _{g},
+              west = f^{*}(g),
+              north = \varepsilon _{g},
             }
-          </fr:embedded-tex-body></fr:embedded-tex>
+          ]]></fr:embedded-tex-body></fr:embedded-tex>
     
   
-          Let <fr:tex>\alpha \colon g \to g'</fr:tex> be a morphism in <fr:tex>{{ \mathcal { C } }_{/{ B }}}</fr:tex>. By the construction of <fr:tex>f ^{*}</fr:tex>, we have the following commutative diagram.
+          Let <fr:tex
+display="inline"><![CDATA[\alpha \colon g\to g']]></fr:tex> be a morphism in <fr:tex
+display="inline"><![CDATA[{{\mathcal {C}}_{/{B}}}]]></fr:tex>. By the construction of <fr:tex
+display="inline"><![CDATA[f^{*}]]></fr:tex>, we have the following commutative diagram.
           
     
       
       <fr:embedded-tex
-hash="25bee72b9a37614e3eac28fd3d121035"><fr:embedded-tex-preamble>
-         
-   \RequirePackage {tikz}
-   \RequirePackage {amsmath}
-   \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
+hash="e02daf32ecb0fc7d1934cd86d2bd5577"><fr:embedded-tex-preamble><![CDATA[
+        
+  \RequirePackage {tikz}
+  \RequirePackage {amsmath}
+  \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
 
-   \definecolor {catccolor}{RGB}{255,244,138}
-   \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
-   \tikzstyle {catc}=[catccolor!60]
-   \tikzstyle {catd}=[orange!40]
-   \tikzstyle {cate}=[red!40]
-   \tikzstyle {catf}=[blue!10]
-   \tikzstyle {catg}=[green!25]
+  \definecolor {catccolor}{RGB}{255,244,138}
+  \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
+  \tikzstyle {catc}=[catccolor!60]
+  \tikzstyle {catd}=[orange!40]
+  \tikzstyle {cate}=[red!40]
+  \tikzstyle {catf}=[blue!10]
+  \tikzstyle {catg}=[green!25]
 
 
-   \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
-   \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
+  \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
+  \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
 
-   \NewDocumentCommand \CreateRect {D&lt;&gt;{} m m}{
-     \path 
+  \NewDocumentCommand \CreateRect {D<>{} m m}{
+    \path 
       coordinate (#1nw)
       ++(#2,-#3) coordinate (#1se)
       coordinate (#1sw) at (#1se -| #1nw)
       coordinate (#1ne) at (#1nw -| #1se)
     ;
 
-     \path [spath/save = #1north] (#1nw) to (#1ne);
-     \path [spath/save = #1west] (#1nw) to (#1sw);
-     \path [spath/save = #1east] (#1ne) to (#1se);
-     \path [spath/save = #1south] (#1sw) to (#1se);
+    \path [spath/save = #1north] (#1nw) to (#1ne);
+    \path [spath/save = #1west] (#1nw) to (#1sw);
+    \path [spath/save = #1east] (#1ne) to (#1se);
+    \path [spath/save = #1south] (#1sw) to (#1se);
   }
- 
-         
+
+        
    % appears to be necessary
   \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd}
   \usetikzlibrary{matrix,arrows}
@@ -2667,7 +2745,7 @@ hash="25bee72b9a37614e3eac28fd3d121035"><fr:embedded-tex-preamble>
       densely dashed
     },
     embedding/.style = {
-      {right hook}-&gt;
+      {right hook}->
     },
     cover/.style = {
       -{Triangle[open]}
@@ -2699,10 +2777,10 @@ hash="25bee72b9a37614e3eac28fd3d121035"><fr:embedded-tex-preamble>
     square/ne/.style = {},
     square/se/.style = {},
     square/sw/.style = {},
-    square/north/.style = {-&gt;},
-    square/south/.style = {-&gt;},
-    square/west/.style = {-&gt;},
-    square/east/.style = {-&gt;},
+    square/north/.style = {->},
+    square/south/.style = {->},
+    square/west/.style = {->},
+    square/east/.style = {->},
     square/north/node/.style = {above},
     square/south/node/.style = {below},
     square/west/node/.style = {left},
@@ -2781,37 +2859,47 @@ hash="25bee72b9a37614e3eac28fd3d121035"><fr:embedded-tex-preamble>
     \end{tikzpicture}
   }
   \ExplSyntaxOff
- 
-      </fr:embedded-tex-preamble><fr:embedded-tex-body>
-             \begin {tikzpicture}[diagram]
-               \SpliceDiagramSquare {
+
+      ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+            \begin {tikzpicture}[diagram]
+              \SpliceDiagramSquare {
                 nw = A'',
                 nw/style = pullback,
                 ne = B'',
                 sw = A,
                 se = B,
-                north =  \varepsilon _{g'},
-                west =  f ^{*} (g'),
+                north = \varepsilon _{g'},
+                west = f^{*}(g'),
                 west/node/style = {right},
                 south = f,
                 east = g',
               }
-               \node  [above left of = nw] (a') {$A'$};
-               \draw  [-&gt;,morphism,bend right] (a') to node[swap] {$ f ^{*} (g)$} (sw);
-               \draw  [-&gt;,morphism,bend left] (a') to node {$ \alpha \varepsilon _{g}$} (ne);
-               \draw  [-&gt;,morphism,exists] (a') to node[desc] {$ f ^{*} ( \alpha )$} (nw);
-             \end {tikzpicture}
-          </fr:embedded-tex-body></fr:embedded-tex>
+              \node  [above left of = nw] (a') {$A'$};
+              \draw  [->,morphism,bend right] (a') to node[swap] {$f^{*}(g)$} (sw);
+              \draw  [->,morphism,bend left] (a') to node {$\alpha \varepsilon _{g}$} (ne);
+              \draw  [->,morphism,exists] (a') to node[desc] {$f^{*}(\alpha )$} (nw);
+            \end {tikzpicture}
+          ]]></fr:embedded-tex-body></fr:embedded-tex>
     
   
-          Thus, <fr:tex>\varepsilon _{g'} \Sigma _{f}( f ^{*} ( \alpha )) =  \varepsilon _{g'} f ^{*} ( \alpha ) =  \alpha \varepsilon _{g}</fr:tex> as required.
+          Thus, <fr:tex
+display="inline"><![CDATA[\varepsilon _{g'}\Sigma _{f}(f^{*}(\alpha )) = \varepsilon _{g'}f^{*}(\alpha ) = \alpha \varepsilon _{g}]]></fr:tex> as required.
         </html:td>
 
       </html:tr>
 
     </html:table>
-<fr:p>By construction, <fr:tex>\varepsilon _{ \Sigma _{f}} \eta  =  \mathsf {id} _{ \Sigma _{f} }</fr:tex>. Thus, it remains to verify the other triangle equality.</fr:p><fr:p>Let <fr:tex>g  \in   {{ \mathcal { C } }_{/{ B }}}</fr:tex> be an object. We need to show that <fr:tex>f ^{*} ( \varepsilon _{g}) \eta _{ f ^{*} (g)} =  \mathsf {id} _{ f ^{*} (g) }</fr:tex>. Note that <fr:tex>f ^{*} (g) f ^{*} ( \varepsilon _{g}) \eta _{ f ^{*} (g)} =  f ^{*} (g)</fr:tex> by the construction of <fr:tex>f ^{*}</fr:tex>. Moreover, we also have the following equation.</fr:p><fr:tex
-display="block">        \begin {align*}          \varepsilon _{g} f ^{*} ( \varepsilon _{g}) \eta _{ f ^{*} (g)} &amp;=  \varepsilon _{g} \varepsilon _{f  \circ   f ^{*} (g)} \eta _{ f ^{*} (g)} &amp;&amp;  \text {by the construction of }  f ^{*} \\                                                      &amp;=  \varepsilon _{g} \mathsf {id}  &amp;&amp;  \text {by the construction of }  \eta \\                                                      &amp;=  \varepsilon _{g}        \end {align*}     </fr:tex><fr:p>Thus, <fr:tex>f ^{*} ( \varepsilon _{g}) \eta _{ f ^{*} (g)}</fr:tex> corresponds to the same cone over <fr:tex>f</fr:tex> and <fr:tex>g</fr:tex> as <fr:tex>\mathsf {id} _{ f ^{*} (g) }</fr:tex>. Then uniqueness implies that they are equal.</fr:p></fr:mainmatter></fr:tree>
-</fr:mainmatter></fr:tree>
+<fr:p>By construction, <fr:tex
+display="inline"><![CDATA[\varepsilon _{\Sigma _{f}}\eta  = \mathsf {id}_{\Sigma _{f}}]]></fr:tex>. Thus, it remains to verify the other triangle equality.</fr:p><fr:p>Let <fr:tex
+display="inline"><![CDATA[g \in  {{\mathcal {C}}_{/{B}}}]]></fr:tex> be an object. We need to show that <fr:tex
+display="inline"><![CDATA[f^{*}(\varepsilon _{g})\eta _{f^{*}(g)} = \mathsf {id}_{f^{*}(g)}]]></fr:tex>. Note that <fr:tex
+display="inline"><![CDATA[f^{*}(g)f^{*}(\varepsilon _{g})\eta _{f^{*}(g)} = f^{*}(g)]]></fr:tex> by the construction of <fr:tex
+display="inline"><![CDATA[f^{*}]]></fr:tex>. Moreover, we also have the following equation.</fr:p><fr:tex
+display="block"><![CDATA[       \begin {align*}         \varepsilon _{g}f^{*}(\varepsilon _{g})\eta _{f^{*}(g)} &= \varepsilon _{g}\varepsilon _{f \circ  f^{*}(g)}\eta _{f^{*}(g)} && \text {by the construction of } f^{*}\\                                                     &= \varepsilon _{g}\mathsf {id} && \text {by the construction of } \eta \\                                                     &= \varepsilon _{g}       \end {align*}     ]]></fr:tex><fr:p>Thus, <fr:tex
+display="inline"><![CDATA[f^{*}(\varepsilon _{g})\eta _{f^{*}(g)}]]></fr:tex> corresponds to the same cone over <fr:tex
+display="inline"><![CDATA[f]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[g]]></fr:tex> as <fr:tex
+display="inline"><![CDATA[\mathsf {id}_{f^{*}(g)}]]></fr:tex>. Then uniqueness implies that they are equal.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree>
+</fr:mainmatter><fr:backmatter /></fr:tree>
     
-  </fr:mainmatter></fr:tree></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>
+  </fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

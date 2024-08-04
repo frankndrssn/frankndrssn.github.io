@@ -1,69 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="default.xsl"?>
 <fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
 numbered="true"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>893</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>ct-0016</fr:addr><fr:route>ct-0016.xml</fr:route><fr:title>Kernel pairs are <fr:link
-href="ct-0004.xml"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>761</fr:anchor><fr:addr
+type="user">ct-0016</fr:addr><fr:route>ct-0016.xml</fr:route><fr:title
+text="Kernel pairs are equivalence relations">Kernel pairs are <fr:link
 type="local"
-addr="ct-0004">equivalence relations</fr:link></fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>11</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
-  Let <fr:tex>f \colon A \to B</fr:tex> be a morphism in a cartesian category.
-  Then its kernel pair is an equivalence relation.
-</fr:p>
+href="ct-0004.xml"
+addr="ct-0004"
+title="Equivalence relation">equivalence relations</fr:link></fr:title><fr:taxon>Lemma</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>11</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[f\colon A\to B]]></fr:tex> be a morphism in a cartesian category.
+  Then its kernel pair is an equivalence relation.</fr:p>
     
       
       <fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="false"
 numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>503</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>11</fr:day></fr:date><fr:parent>ct-0016</fr:parent></fr:frontmatter><fr:mainmatter>
-  <fr:p>
-    The required morphisms are given by the universal property of pullbacks as follows.
-  </fr:p>
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>751</fr:anchor><fr:addr
+type="machine">#252</fr:addr><fr:route>unstable-252.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>11</fr:day></fr:date><fr:authors /><fr:parent>ct-0016</fr:parent></fr:frontmatter><fr:mainmatter>
+  <fr:p>The required morphisms are given by the universal property of pullbacks as follows.</fr:p>
   
     
       
       <fr:embedded-tex
-hash="6684c9805a0829fe4a42669fad917d5a"><fr:embedded-tex-preamble>
-         
-   \RequirePackage {tikz}
-   \RequirePackage {amsmath}
-   \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
+hash="2165d09b2baf87f553a8bcbdc217c3d2"><fr:embedded-tex-preamble><![CDATA[
+        
+  \RequirePackage {tikz}
+  \RequirePackage {amsmath}
+  \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
 
-   \definecolor {catccolor}{RGB}{255,244,138}
-   \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
-   \tikzstyle {catc}=[catccolor!60]
-   \tikzstyle {catd}=[orange!40]
-   \tikzstyle {cate}=[red!40]
-   \tikzstyle {catf}=[blue!10]
-   \tikzstyle {catg}=[green!25]
+  \definecolor {catccolor}{RGB}{255,244,138}
+  \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
+  \tikzstyle {catc}=[catccolor!60]
+  \tikzstyle {catd}=[orange!40]
+  \tikzstyle {cate}=[red!40]
+  \tikzstyle {catf}=[blue!10]
+  \tikzstyle {catg}=[green!25]
 
 
-   \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
-   \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
+  \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
+  \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
 
-   \NewDocumentCommand \CreateRect {D&lt;&gt;{} m m}{
-     \path 
+  \NewDocumentCommand \CreateRect {D<>{} m m}{
+    \path 
       coordinate (#1nw)
       ++(#2,-#3) coordinate (#1se)
       coordinate (#1sw) at (#1se -| #1nw)
       coordinate (#1ne) at (#1nw -| #1se)
     ;
 
-     \path [spath/save = #1north] (#1nw) to (#1ne);
-     \path [spath/save = #1west] (#1nw) to (#1sw);
-     \path [spath/save = #1east] (#1ne) to (#1se);
-     \path [spath/save = #1south] (#1sw) to (#1se);
+    \path [spath/save = #1north] (#1nw) to (#1ne);
+    \path [spath/save = #1west] (#1nw) to (#1sw);
+    \path [spath/save = #1east] (#1ne) to (#1se);
+    \path [spath/save = #1south] (#1sw) to (#1se);
   }
- 
-         
+
+        
    % appears to be necessary
   \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd}
   \usetikzlibrary{matrix,arrows}
@@ -132,7 +133,7 @@ hash="6684c9805a0829fe4a42669fad917d5a"><fr:embedded-tex-preamble>
       densely dashed
     },
     embedding/.style = {
-      {right hook}-&gt;
+      {right hook}->
     },
     cover/.style = {
       -{Triangle[open]}
@@ -164,10 +165,10 @@ hash="6684c9805a0829fe4a42669fad917d5a"><fr:embedded-tex-preamble>
     square/ne/.style = {},
     square/se/.style = {},
     square/sw/.style = {},
-    square/north/.style = {-&gt;},
-    square/south/.style = {-&gt;},
-    square/west/.style = {-&gt;},
-    square/east/.style = {-&gt;},
+    square/north/.style = {->},
+    square/south/.style = {->},
+    square/west/.style = {->},
+    square/east/.style = {->},
     square/north/node/.style = {above},
     square/south/node/.style = {below},
     square/west/node/.style = {left},
@@ -246,10 +247,10 @@ hash="6684c9805a0829fe4a42669fad917d5a"><fr:embedded-tex-preamble>
     \end{tikzpicture}
   }
   \ExplSyntaxOff
- 
-      </fr:embedded-tex-preamble><fr:embedded-tex-body>
-     \begin {tikzpicture}[diagram]
-       \SpliceDiagramSquare {
+
+      ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+    \begin {tikzpicture}[diagram]
+      \SpliceDiagramSquare {
         nw = R,
         nw/style = {pullback},
         ne = A,
@@ -260,14 +261,14 @@ hash="6684c9805a0829fe4a42669fad917d5a"><fr:embedded-tex-preamble>
         south = f,
         east = f,
       }
-       \node  [above left = of nw] (a) {$A$};
-       \draw  [-&gt;,morphism,bend right] (a) to node[swap] {$ \mathsf {id} _{ A } $} (sw);
-       \draw  [-&gt;,morphism,exists] (a) to node[desc] {$ \rho $} (nw);
-       \draw  [-&gt;,morphism,bend left] (a) to node {$ \mathsf {id} _{ A } $} (ne);
-     \end {tikzpicture}
-     \qquad 
-     \begin {tikzpicture}[diagram]
-       \SpliceDiagramSquare {
+      \node  [above left = of nw] (a) {$A$};
+      \draw  [->,morphism,bend right] (a) to node[swap] {$\mathsf {id}_{A}$} (sw);
+      \draw  [->,morphism,exists] (a) to node[desc] {$\rho $} (nw);
+      \draw  [->,morphism,bend left] (a) to node {$\mathsf {id}_{A}$} (ne);
+    \end {tikzpicture}
+    \qquad 
+    \begin {tikzpicture}[diagram]
+      \SpliceDiagramSquare {
         nw = R,
         nw/style = {pullback},
         ne = A,
@@ -278,14 +279,14 @@ hash="6684c9805a0829fe4a42669fad917d5a"><fr:embedded-tex-preamble>
         south = f,
         east = f,
       }
-       \node  [above left = of nw] (r) {$R$};
-       \draw  [-&gt;,morphism,bend right] (r) to node[swap] {$b$} (sw);
-       \draw  [-&gt;,morphism,exists] (r) to node[desc] {$ \sigma $} (nw);
-       \draw  [-&gt;,morphism,bend left] (r) to node {$a$} (ne);
-     \end {tikzpicture}
-     \qquad 
-     \begin {tikzpicture}[diagram]
-       \SpliceDiagramSquare {
+      \node  [above left = of nw] (r) {$R$};
+      \draw  [->,morphism,bend right] (r) to node[swap] {$b$} (sw);
+      \draw  [->,morphism,exists] (r) to node[desc] {$\sigma $} (nw);
+      \draw  [->,morphism,bend left] (r) to node {$a$} (ne);
+    \end {tikzpicture}
+    \qquad 
+    \begin {tikzpicture}[diagram]
+      \SpliceDiagramSquare {
         nw = R,
         nw/style = {pullback},
         ne = A,
@@ -296,33 +297,46 @@ hash="6684c9805a0829fe4a42669fad917d5a"><fr:embedded-tex-preamble>
         south = f,
         east = f,
       }
-       \node  [above left = of nw] (rr) {$R  \times _{A} R$};
-       \draw  [-&gt;,morphism,bend right] (rr) to node[swap] {$ap$} (sw);
-       \draw  [-&gt;,morphism,exists] (rr) to node[desc] {$ \tau $} (nw);
-       \draw  [-&gt;,morphism,bend left] (rr) to node {$bq$} (ne);
-     \end {tikzpicture}
-  </fr:embedded-tex-body></fr:embedded-tex>
+      \node  [above left = of nw] (rr) {$R \times _{A} R$};
+      \draw  [->,morphism,bend right] (rr) to node[swap] {$ap$} (sw);
+      \draw  [->,morphism,exists] (rr) to node[desc] {$\tau $} (nw);
+      \draw  [->,morphism,bend left] (rr) to node {$bq$} (ne);
+    \end {tikzpicture}
+  ]]></fr:embedded-tex-body></fr:embedded-tex>
     
   
-</fr:mainmatter></fr:tree>
+</fr:mainmatter><fr:backmatter /></fr:tree>
     
-  </fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context></fr:context><fr:related><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+  </fr:mainmatter><fr:backmatter><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
+text="Related">Related</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>892</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>ct-0004</fr:addr><fr:route>ct-0004.xml</fr:route><fr:title>Equivalence relation</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
-  Let <fr:tex>(a,b) \colon R \rightarrowtail A  \times  A</fr:tex> be a relation in a cartesian category.
-  <fr:tex>(a,b)</fr:tex> is said to be an <fr:em><fr:strong>equivalence relation</fr:strong></fr:em> if it is <fr:link
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>762</fr:anchor><fr:addr
+type="user">ct-0004</fr:addr><fr:route>ct-0004.xml</fr:route><fr:title
+text="Equivalence relation">Equivalence relation</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[(a,b)\colon R\rightarrowtail A \times  A]]></fr:tex> be a relation in a cartesian category.
+  <fr:tex
+display="inline"><![CDATA[(a,b)]]></fr:tex> is said to be an <fr:em><fr:strong>equivalence relation</fr:strong></fr:em> if it is <fr:link
+type="local"
 href="ct-0001.xml"
+addr="ct-0001"
+title="Reflexive relation">reflexive</fr:link>, <fr:link
 type="local"
-addr="ct-0001">reflexive</fr:link>, <fr:link
 href="ct-0002.xml"
+addr="ct-0002"
+title="Symmetric relation">symmetric</fr:link>, and <fr:link
 type="local"
-addr="ct-0002">symmetric</fr:link>, and <fr:link
 href="ct-0003.xml"
-type="local"
-addr="ct-0003">transitive</fr:link>.
-</fr:p></fr:mainmatter></fr:tree></fr:related><fr:backlinks></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>
+addr="ct-0003"
+title="Transitive relation">transitive</fr:link>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

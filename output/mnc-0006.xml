@@ -1,49 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="default.xsl"?>
 <fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
 numbered="true"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1205</fr:anchor><fr:taxon>Axiom</fr:taxon><fr:addr>mnc-0006</fr:addr><fr:route>mnc-0006.xml</fr:route><fr:title>Associativity</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>The following diagram commutes.</fr:p>
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1170</fr:anchor><fr:addr
+type="user">mnc-0006</fr:addr><fr:route>mnc-0006.xml</fr:route><fr:title
+text="Associativity">Associativity</fr:title><fr:taxon>Axiom</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>The following diagram commutes.</fr:p>
     
       
       <fr:embedded-tex
-hash="5daa7218890052b474f77f8b5bbf3715"><fr:embedded-tex-preamble>
-         
-   \RequirePackage {tikz}
-   \RequirePackage {amsmath}
-   \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
+hash="e5321b58153c30bbee57cf74bd01e19b"><fr:embedded-tex-preamble><![CDATA[
+        
+  \RequirePackage {tikz}
+  \RequirePackage {amsmath}
+  \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
 
-   \definecolor {catccolor}{RGB}{255,244,138}
-   \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
-   \tikzstyle {catc}=[catccolor!60]
-   \tikzstyle {catd}=[orange!40]
-   \tikzstyle {cate}=[red!40]
-   \tikzstyle {catf}=[blue!10]
-   \tikzstyle {catg}=[green!25]
+  \definecolor {catccolor}{RGB}{255,244,138}
+  \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
+  \tikzstyle {catc}=[catccolor!60]
+  \tikzstyle {catd}=[orange!40]
+  \tikzstyle {cate}=[red!40]
+  \tikzstyle {catf}=[blue!10]
+  \tikzstyle {catg}=[green!25]
 
 
-   \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
-   \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
+  \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
+  \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
 
-   \NewDocumentCommand \CreateRect {D&lt;&gt;{} m m}{
-     \path 
+  \NewDocumentCommand \CreateRect {D<>{} m m}{
+    \path 
       coordinate (#1nw)
       ++(#2,-#3) coordinate (#1se)
       coordinate (#1sw) at (#1se -| #1nw)
       coordinate (#1ne) at (#1nw -| #1se)
     ;
 
-     \path [spath/save = #1north] (#1nw) to (#1ne);
-     \path [spath/save = #1west] (#1nw) to (#1sw);
-     \path [spath/save = #1east] (#1ne) to (#1se);
-     \path [spath/save = #1south] (#1sw) to (#1se);
+    \path [spath/save = #1north] (#1nw) to (#1ne);
+    \path [spath/save = #1west] (#1nw) to (#1sw);
+    \path [spath/save = #1east] (#1ne) to (#1se);
+    \path [spath/save = #1south] (#1sw) to (#1se);
   }
- 
-         
+
+        
    % appears to be necessary
   \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd}
   \usetikzlibrary{matrix,arrows}
@@ -112,7 +114,7 @@ hash="5daa7218890052b474f77f8b5bbf3715"><fr:embedded-tex-preamble>
       densely dashed
     },
     embedding/.style = {
-      {right hook}-&gt;
+      {right hook}->
     },
     cover/.style = {
       -{Triangle[open]}
@@ -144,10 +146,10 @@ hash="5daa7218890052b474f77f8b5bbf3715"><fr:embedded-tex-preamble>
     square/ne/.style = {},
     square/se/.style = {},
     square/sw/.style = {},
-    square/north/.style = {-&gt;},
-    square/south/.style = {-&gt;},
-    square/west/.style = {-&gt;},
-    square/east/.style = {-&gt;},
+    square/north/.style = {->},
+    square/south/.style = {->},
+    square/west/.style = {->},
+    square/east/.style = {->},
     square/north/node/.style = {above},
     square/south/node/.style = {below},
     square/west/node/.style = {left},
@@ -226,86 +228,99 @@ hash="5daa7218890052b474f77f8b5bbf3715"><fr:embedded-tex-preamble>
     \end{tikzpicture}
   }
   \ExplSyntaxOff
- 
-      </fr:embedded-tex-preamble><fr:embedded-tex-body>
-   \begin {tikzpicture}[diagram, node distance=2cm and 5cm]
-     \node  (l1) {$(FX  \otimes  FY)  \otimes  FZ$};
-     \node  [below= of l1] (l2) {$F(X  \otimes  Y)  \otimes  FZ$};
-     \node  [below= of l2] (l3) {$F((X  \otimes  Y)  \otimes  Z)$};
-     \node  [right= of l1] (r1) {$FX  \otimes  (FY  \otimes  FZ)$};
-     \node  [below= of r1] (r2) {$FX  \otimes  F(Y  \otimes  Z)$};
-     \node  [below= of r2] (r3) {$F(X  \otimes  (Y  \otimes  Z))$};
-     \draw  [-&gt;,morphism] (l1) to node [left] {$ \phi ^{2} _{ X , Y }   \otimes  FZ$} (l2);
-     \draw  [-&gt;,morphism] (l2) to node [left] {$ \phi ^{2} _{ X  \otimes  Y , Z } $} (l3);
-     \draw  [-&gt;,morphism] (l1) to node [above] {$ \alpha _{ \mathcal { D } }$} (r1);
-     \draw  [-&gt;,morphism] (r1) to node [right] {$FX  \otimes   \phi ^{2} _{ Y , Z } $} (r2);
-     \draw  [-&gt;,morphism] (r2) to node [right] {$ \phi ^{2} _{ X , Y  \otimes  Z } $} (r3);
-     \draw  [-&gt;,morphism] (l3) to node [below] {$F \alpha _{ \mathcal { C } }$} (r3);
-   \end {tikzpicture}
-</fr:embedded-tex-body></fr:embedded-tex>
+
+      ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+  \begin {tikzpicture}[diagram, node distance=2cm and 5cm]
+    \node  (l1) {$(FX \otimes  FY) \otimes  FZ$};
+    \node  [below= of l1] (l2) {$F(X \otimes  Y) \otimes  FZ$};
+    \node  [below= of l2] (l3) {$F((X \otimes  Y) \otimes  Z)$};
+    \node  [right= of l1] (r1) {$FX \otimes  (FY \otimes  FZ)$};
+    \node  [below= of r1] (r2) {$FX \otimes  F(Y \otimes  Z)$};
+    \node  [below= of r2] (r3) {$F(X \otimes  (Y \otimes  Z))$};
+    \draw  [->,morphism] (l1) to node [left] {$\phi ^{2}_{X,Y} \otimes  FZ$} (l2);
+    \draw  [->,morphism] (l2) to node [left] {$\phi ^{2}_{X \otimes  Y,Z}$} (l3);
+    \draw  [->,morphism] (l1) to node [above] {$\alpha _{\mathcal {D}}$} (r1);
+    \draw  [->,morphism] (r1) to node [right] {$FX \otimes  \phi ^{2}_{Y,Z}$} (r2);
+    \draw  [->,morphism] (r2) to node [right] {$\phi ^{2}_{X,Y \otimes  Z}$} (r3);
+    \draw  [->,morphism] (l3) to node [below] {$F\alpha _{\mathcal {C}}$} (r3);
+  \end {tikzpicture}
+]]></fr:embedded-tex-body></fr:embedded-tex>
     
-  </fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+  </fr:mainmatter><fr:backmatter><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
+text="Context">Context</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1204</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>mnc-0005</fr:addr><fr:route>mnc-0005.xml</fr:route><fr:title>Monoidal functor</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>\mathcal { C }</fr:tex> and <fr:tex>\mathcal { D }</fr:tex> be <fr:link
-href="mnc-0001.xml"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1171</fr:anchor><fr:addr
+type="user">mnc-0005</fr:addr><fr:route>mnc-0005.xml</fr:route><fr:title
+text="Monoidal functor">Monoidal functor</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[\mathcal {D}]]></fr:tex> be <fr:link
 type="local"
-addr="mnc-0001">monoidal categories</fr:link>. A <fr:em><fr:strong>monoidal functor</fr:strong></fr:em> <fr:tex>F \colon \mathcal { C } \to \mathcal { D }</fr:tex> consists of the following data.</fr:p><fr:ul><fr:li>
-    An underlying functor <fr:tex>F \colon \mathcal { C } \to \mathcal { D }</fr:tex>.
-  </fr:li>
-  <fr:li>
-    A natural transformation <fr:tex>\phi ^{2} _{ X , Y } \colon FX  \otimes  FY \to F(X  \otimes  Y)</fr:tex>.
-  </fr:li>
-  <fr:li>
-    A morphism <fr:tex>\phi ^{1} \colon 1 _{ \mathcal { D } } \to F 1 _{ \mathcal { C } }</fr:tex>.
-  </fr:li></fr:ul><fr:p>These data are subject to the following axioms.</fr:p><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+href="mnc-0001.xml"
+addr="mnc-0001"
+title="Monoidal category">monoidal categories</fr:link>. A <fr:em><fr:strong>monoidal functor</fr:strong></fr:em> <fr:tex
+display="inline"><![CDATA[F\colon \mathcal {C}\to \mathcal {D}]]></fr:tex> consists of the following data.</fr:p><fr:ul><fr:li>An underlying functor <fr:tex
+display="inline"><![CDATA[F\colon \mathcal {C}\to \mathcal {D}]]></fr:tex>.</fr:li>
+  <fr:li>A natural transformation <fr:tex
+display="inline"><![CDATA[\phi ^{2}_{X,Y}\colon FX \otimes  FY\to F(X \otimes  Y)]]></fr:tex>.</fr:li>
+  <fr:li>A morphism <fr:tex
+display="inline"><![CDATA[\phi ^{1}\colon 1_{\mathcal {D}}\to F1_{\mathcal {C}}]]></fr:tex>.</fr:li></fr:ul><fr:p>These data are subject to the following axioms.</fr:p><fr:tree
 toc="true"
 numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>602</fr:anchor><fr:taxon>Axiom</fr:taxon><fr:addr>mnc-0006</fr:addr><fr:route>mnc-0006.xml</fr:route><fr:title>Associativity</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>The following diagram commutes.</fr:p>
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1172</fr:anchor><fr:addr
+type="user">mnc-0006</fr:addr><fr:route>mnc-0006.xml</fr:route><fr:title
+text="Associativity">Associativity</fr:title><fr:taxon>Axiom</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>The following diagram commutes.</fr:p>
     
       
       <fr:embedded-tex
-hash="5daa7218890052b474f77f8b5bbf3715"><fr:embedded-tex-preamble>
-         
-   \RequirePackage {tikz}
-   \RequirePackage {amsmath}
-   \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
+hash="e5321b58153c30bbee57cf74bd01e19b"><fr:embedded-tex-preamble><![CDATA[
+        
+  \RequirePackage {tikz}
+  \RequirePackage {amsmath}
+  \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
 
-   \definecolor {catccolor}{RGB}{255,244,138}
-   \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
-   \tikzstyle {catc}=[catccolor!60]
-   \tikzstyle {catd}=[orange!40]
-   \tikzstyle {cate}=[red!40]
-   \tikzstyle {catf}=[blue!10]
-   \tikzstyle {catg}=[green!25]
+  \definecolor {catccolor}{RGB}{255,244,138}
+  \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
+  \tikzstyle {catc}=[catccolor!60]
+  \tikzstyle {catd}=[orange!40]
+  \tikzstyle {cate}=[red!40]
+  \tikzstyle {catf}=[blue!10]
+  \tikzstyle {catg}=[green!25]
 
 
-   \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
-   \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
+  \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
+  \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
 
-   \NewDocumentCommand \CreateRect {D&lt;&gt;{} m m}{
-     \path 
+  \NewDocumentCommand \CreateRect {D<>{} m m}{
+    \path 
       coordinate (#1nw)
       ++(#2,-#3) coordinate (#1se)
       coordinate (#1sw) at (#1se -| #1nw)
       coordinate (#1ne) at (#1nw -| #1se)
     ;
 
-     \path [spath/save = #1north] (#1nw) to (#1ne);
-     \path [spath/save = #1west] (#1nw) to (#1sw);
-     \path [spath/save = #1east] (#1ne) to (#1se);
-     \path [spath/save = #1south] (#1sw) to (#1se);
+    \path [spath/save = #1north] (#1nw) to (#1ne);
+    \path [spath/save = #1west] (#1nw) to (#1sw);
+    \path [spath/save = #1east] (#1ne) to (#1se);
+    \path [spath/save = #1south] (#1sw) to (#1se);
   }
- 
-         
+
+        
    % appears to be necessary
   \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd}
   \usetikzlibrary{matrix,arrows}
@@ -374,7 +389,7 @@ hash="5daa7218890052b474f77f8b5bbf3715"><fr:embedded-tex-preamble>
       densely dashed
     },
     embedding/.style = {
-      {right hook}-&gt;
+      {right hook}->
     },
     cover/.style = {
       -{Triangle[open]}
@@ -406,10 +421,10 @@ hash="5daa7218890052b474f77f8b5bbf3715"><fr:embedded-tex-preamble>
     square/ne/.style = {},
     square/se/.style = {},
     square/sw/.style = {},
-    square/north/.style = {-&gt;},
-    square/south/.style = {-&gt;},
-    square/west/.style = {-&gt;},
-    square/east/.style = {-&gt;},
+    square/north/.style = {->},
+    square/south/.style = {->},
+    square/west/.style = {->},
+    square/east/.style = {->},
     square/north/node/.style = {above},
     square/south/node/.style = {below},
     square/west/node/.style = {left},
@@ -488,68 +503,70 @@ hash="5daa7218890052b474f77f8b5bbf3715"><fr:embedded-tex-preamble>
     \end{tikzpicture}
   }
   \ExplSyntaxOff
- 
-      </fr:embedded-tex-preamble><fr:embedded-tex-body>
-   \begin {tikzpicture}[diagram, node distance=2cm and 5cm]
-     \node  (l1) {$(FX  \otimes  FY)  \otimes  FZ$};
-     \node  [below= of l1] (l2) {$F(X  \otimes  Y)  \otimes  FZ$};
-     \node  [below= of l2] (l3) {$F((X  \otimes  Y)  \otimes  Z)$};
-     \node  [right= of l1] (r1) {$FX  \otimes  (FY  \otimes  FZ)$};
-     \node  [below= of r1] (r2) {$FX  \otimes  F(Y  \otimes  Z)$};
-     \node  [below= of r2] (r3) {$F(X  \otimes  (Y  \otimes  Z))$};
-     \draw  [-&gt;,morphism] (l1) to node [left] {$ \phi ^{2} _{ X , Y }   \otimes  FZ$} (l2);
-     \draw  [-&gt;,morphism] (l2) to node [left] {$ \phi ^{2} _{ X  \otimes  Y , Z } $} (l3);
-     \draw  [-&gt;,morphism] (l1) to node [above] {$ \alpha _{ \mathcal { D } }$} (r1);
-     \draw  [-&gt;,morphism] (r1) to node [right] {$FX  \otimes   \phi ^{2} _{ Y , Z } $} (r2);
-     \draw  [-&gt;,morphism] (r2) to node [right] {$ \phi ^{2} _{ X , Y  \otimes  Z } $} (r3);
-     \draw  [-&gt;,morphism] (l3) to node [below] {$F \alpha _{ \mathcal { C } }$} (r3);
-   \end {tikzpicture}
-</fr:embedded-tex-body></fr:embedded-tex>
+
+      ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+  \begin {tikzpicture}[diagram, node distance=2cm and 5cm]
+    \node  (l1) {$(FX \otimes  FY) \otimes  FZ$};
+    \node  [below= of l1] (l2) {$F(X \otimes  Y) \otimes  FZ$};
+    \node  [below= of l2] (l3) {$F((X \otimes  Y) \otimes  Z)$};
+    \node  [right= of l1] (r1) {$FX \otimes  (FY \otimes  FZ)$};
+    \node  [below= of r1] (r2) {$FX \otimes  F(Y \otimes  Z)$};
+    \node  [below= of r2] (r3) {$F(X \otimes  (Y \otimes  Z))$};
+    \draw  [->,morphism] (l1) to node [left] {$\phi ^{2}_{X,Y} \otimes  FZ$} (l2);
+    \draw  [->,morphism] (l2) to node [left] {$\phi ^{2}_{X \otimes  Y,Z}$} (l3);
+    \draw  [->,morphism] (l1) to node [above] {$\alpha _{\mathcal {D}}$} (r1);
+    \draw  [->,morphism] (r1) to node [right] {$FX \otimes  \phi ^{2}_{Y,Z}$} (r2);
+    \draw  [->,morphism] (r2) to node [right] {$\phi ^{2}_{X,Y \otimes  Z}$} (r3);
+    \draw  [->,morphism] (l3) to node [below] {$F\alpha _{\mathcal {C}}$} (r3);
+  \end {tikzpicture}
+]]></fr:embedded-tex-body></fr:embedded-tex>
     
-  </fr:mainmatter></fr:tree><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+  </fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
 toc="true"
 numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>603</fr:anchor><fr:taxon>Axiom</fr:taxon><fr:addr>mnc-0007</fr:addr><fr:route>mnc-0007.xml</fr:route><fr:title>Left unity axiom</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>The following diagram commutes.</fr:p>
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1173</fr:anchor><fr:addr
+type="user">mnc-0007</fr:addr><fr:route>mnc-0007.xml</fr:route><fr:title
+text="Left unity axiom">Left unity axiom</fr:title><fr:taxon>Axiom</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>The following diagram commutes.</fr:p>
     
       
       <fr:embedded-tex
-hash="b4dd116b471b76be8a8709341ff0f3f0"><fr:embedded-tex-preamble>
-         
-   \RequirePackage {tikz}
-   \RequirePackage {amsmath}
-   \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
+hash="29680d7a079573abd7eb63ad4c7d073c"><fr:embedded-tex-preamble><![CDATA[
+        
+  \RequirePackage {tikz}
+  \RequirePackage {amsmath}
+  \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
 
-   \definecolor {catccolor}{RGB}{255,244,138}
-   \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
-   \tikzstyle {catc}=[catccolor!60]
-   \tikzstyle {catd}=[orange!40]
-   \tikzstyle {cate}=[red!40]
-   \tikzstyle {catf}=[blue!10]
-   \tikzstyle {catg}=[green!25]
+  \definecolor {catccolor}{RGB}{255,244,138}
+  \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
+  \tikzstyle {catc}=[catccolor!60]
+  \tikzstyle {catd}=[orange!40]
+  \tikzstyle {cate}=[red!40]
+  \tikzstyle {catf}=[blue!10]
+  \tikzstyle {catg}=[green!25]
 
 
-   \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
-   \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
+  \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
+  \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
 
-   \NewDocumentCommand \CreateRect {D&lt;&gt;{} m m}{
-     \path 
+  \NewDocumentCommand \CreateRect {D<>{} m m}{
+    \path 
       coordinate (#1nw)
       ++(#2,-#3) coordinate (#1se)
       coordinate (#1sw) at (#1se -| #1nw)
       coordinate (#1ne) at (#1nw -| #1se)
     ;
 
-     \path [spath/save = #1north] (#1nw) to (#1ne);
-     \path [spath/save = #1west] (#1nw) to (#1sw);
-     \path [spath/save = #1east] (#1ne) to (#1se);
-     \path [spath/save = #1south] (#1sw) to (#1se);
+    \path [spath/save = #1north] (#1nw) to (#1ne);
+    \path [spath/save = #1west] (#1nw) to (#1sw);
+    \path [spath/save = #1east] (#1ne) to (#1se);
+    \path [spath/save = #1south] (#1sw) to (#1se);
   }
- 
-         
+
+        
    % appears to be necessary
   \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd}
   \usetikzlibrary{matrix,arrows}
@@ -618,7 +635,7 @@ hash="b4dd116b471b76be8a8709341ff0f3f0"><fr:embedded-tex-preamble>
       densely dashed
     },
     embedding/.style = {
-      {right hook}-&gt;
+      {right hook}->
     },
     cover/.style = {
       -{Triangle[open]}
@@ -650,10 +667,10 @@ hash="b4dd116b471b76be8a8709341ff0f3f0"><fr:embedded-tex-preamble>
     square/ne/.style = {},
     square/se/.style = {},
     square/sw/.style = {},
-    square/north/.style = {-&gt;},
-    square/south/.style = {-&gt;},
-    square/west/.style = {-&gt;},
-    square/east/.style = {-&gt;},
+    square/north/.style = {->},
+    square/south/.style = {->},
+    square/west/.style = {->},
+    square/east/.style = {->},
     square/north/node/.style = {above},
     square/south/node/.style = {below},
     square/west/node/.style = {left},
@@ -732,66 +749,68 @@ hash="b4dd116b471b76be8a8709341ff0f3f0"><fr:embedded-tex-preamble>
     \end{tikzpicture}
   }
   \ExplSyntaxOff
- 
-      </fr:embedded-tex-preamble><fr:embedded-tex-body>
-   \DiagramSquare {
-    nw =  1 _{ \mathcal { D } }  \otimes  FX,
-    sw = F 1 _{ \mathcal { C } }  \otimes  FX,
-    se = F( 1 _{ \mathcal { C } }  \otimes  X),
+
+      ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+  \DiagramSquare {
+    nw = 1_{\mathcal {D}} \otimes  FX,
+    sw = F1_{\mathcal {C}} \otimes  FX,
+    se = F(1_{\mathcal {C}} \otimes  X),
     ne = FX,
-    east = F \lambda _{ \mathcal { C } },
-    west =  \phi ^{1}   \otimes  FX,
-    north =  \lambda _{ \mathcal { D } },
-    south =  \phi ^{2} _{ 1 _{ \mathcal { C } } , X } ,
+    east = F\lambda _{\mathcal {C}},
+    west = \phi ^{1} \otimes  FX,
+    north = \lambda _{\mathcal {D}},
+    south = \phi ^{2}_{1_{\mathcal {C}},X},
     height = 2cm,
     width = 3cm,
   }
-</fr:embedded-tex-body></fr:embedded-tex>
+]]></fr:embedded-tex-body></fr:embedded-tex>
     
-  </fr:mainmatter></fr:tree><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+  </fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
 toc="true"
 numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>604</fr:anchor><fr:taxon>Axiom</fr:taxon><fr:addr>mnc-0008</fr:addr><fr:route>mnc-0008.xml</fr:route><fr:title>Right unity axiom</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>The following diagram commutes.</fr:p>
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1174</fr:anchor><fr:addr
+type="user">mnc-0008</fr:addr><fr:route>mnc-0008.xml</fr:route><fr:title
+text="Right unity axiom">Right unity axiom</fr:title><fr:taxon>Axiom</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>The following diagram commutes.</fr:p>
     
       
       <fr:embedded-tex
-hash="f7d36dd7ce4dd7c0a5f467a40baa268d"><fr:embedded-tex-preamble>
-         
-   \RequirePackage {tikz}
-   \RequirePackage {amsmath}
-   \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
+hash="616af0afdf7424408b53996256794c8b"><fr:embedded-tex-preamble><![CDATA[
+        
+  \RequirePackage {tikz}
+  \RequirePackage {amsmath}
+  \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
 
-   \definecolor {catccolor}{RGB}{255,244,138}
-   \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
-   \tikzstyle {catc}=[catccolor!60]
-   \tikzstyle {catd}=[orange!40]
-   \tikzstyle {cate}=[red!40]
-   \tikzstyle {catf}=[blue!10]
-   \tikzstyle {catg}=[green!25]
+  \definecolor {catccolor}{RGB}{255,244,138}
+  \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
+  \tikzstyle {catc}=[catccolor!60]
+  \tikzstyle {catd}=[orange!40]
+  \tikzstyle {cate}=[red!40]
+  \tikzstyle {catf}=[blue!10]
+  \tikzstyle {catg}=[green!25]
 
 
-   \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
-   \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
+  \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
+  \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
 
-   \NewDocumentCommand \CreateRect {D&lt;&gt;{} m m}{
-     \path 
+  \NewDocumentCommand \CreateRect {D<>{} m m}{
+    \path 
       coordinate (#1nw)
       ++(#2,-#3) coordinate (#1se)
       coordinate (#1sw) at (#1se -| #1nw)
       coordinate (#1ne) at (#1nw -| #1se)
     ;
 
-     \path [spath/save = #1north] (#1nw) to (#1ne);
-     \path [spath/save = #1west] (#1nw) to (#1sw);
-     \path [spath/save = #1east] (#1ne) to (#1se);
-     \path [spath/save = #1south] (#1sw) to (#1se);
+    \path [spath/save = #1north] (#1nw) to (#1ne);
+    \path [spath/save = #1west] (#1nw) to (#1sw);
+    \path [spath/save = #1east] (#1ne) to (#1se);
+    \path [spath/save = #1south] (#1sw) to (#1se);
   }
- 
-         
+
+        
    % appears to be necessary
   \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd}
   \usetikzlibrary{matrix,arrows}
@@ -860,7 +879,7 @@ hash="f7d36dd7ce4dd7c0a5f467a40baa268d"><fr:embedded-tex-preamble>
       densely dashed
     },
     embedding/.style = {
-      {right hook}-&gt;
+      {right hook}->
     },
     cover/.style = {
       -{Triangle[open]}
@@ -892,10 +911,10 @@ hash="f7d36dd7ce4dd7c0a5f467a40baa268d"><fr:embedded-tex-preamble>
     square/ne/.style = {},
     square/se/.style = {},
     square/sw/.style = {},
-    square/north/.style = {-&gt;},
-    square/south/.style = {-&gt;},
-    square/west/.style = {-&gt;},
-    square/east/.style = {-&gt;},
+    square/north/.style = {->},
+    square/south/.style = {->},
+    square/west/.style = {->},
+    square/east/.style = {->},
     square/north/node/.style = {above},
     square/south/node/.style = {below},
     square/west/node/.style = {left},
@@ -974,20 +993,20 @@ hash="f7d36dd7ce4dd7c0a5f467a40baa268d"><fr:embedded-tex-preamble>
     \end{tikzpicture}
   }
   \ExplSyntaxOff
- 
-      </fr:embedded-tex-preamble><fr:embedded-tex-body>
-   \DiagramSquare {
-    nw = FX  \otimes   1 _{ \mathcal { D } },
-    sw = FX  \otimes  F 1 _{ \mathcal { C } },
-    se = F(X  \otimes   1 _{ \mathcal { C } }),
+
+      ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+  \DiagramSquare {
+    nw = FX \otimes  1_{\mathcal {D}},
+    sw = FX \otimes  F1_{\mathcal {C}},
+    se = F(X \otimes  1_{\mathcal {C}}),
     ne = FX,
-    east = F \rho _{ \mathcal { C } },
-    west = FX  \otimes   \phi ^{1} ,
-    north =  \rho _{ \mathcal { D } },
-    south =  \phi ^{2} _{ X , 1 _{ \mathcal { C } } } ,
+    east = F\rho _{\mathcal {C}},
+    west = FX \otimes  \phi ^{1},
+    north = \rho _{\mathcal {D}},
+    south = \phi ^{2}_{X,1_{\mathcal {C}}},
     height = 2cm,
     width = 3cm,
   }
-</fr:embedded-tex-body></fr:embedded-tex>
+]]></fr:embedded-tex-body></fr:embedded-tex>
     
-  </fr:mainmatter></fr:tree></fr:mainmatter></fr:tree></fr:context><fr:related></fr:related><fr:backlinks></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>
+  </fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

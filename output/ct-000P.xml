@@ -1,55 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="default.xsl"?>
 <fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
 numbered="true"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1004</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>ct-000P</fr:addr><fr:route>ct-000P.xml</fr:route><fr:title>Equivalent condition for <fr:link
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>899</fr:anchor><fr:addr
+type="user">ct-000P</fr:addr><fr:route>ct-000P.xml</fr:route><fr:title
+text="Equivalent condition for regular categories">Equivalent condition for <fr:link
+type="local"
 href="ct-000O.xml"
+addr="ct-000O"
+title="Regular category">regular categories</fr:link></fr:title><fr:taxon>Lemma</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>3</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>A category <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> is regular iff it is cartesian and has <fr:link
 type="local"
-addr="ct-000O">regular categories</fr:link></fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>3</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>A category <fr:tex>\mathcal { C }</fr:tex> is regular iff it is cartesian and has <fr:link
 href="ct-000K.xml"
-type="local"
-addr="ct-000K">images</fr:link> that commute with pullbacks, i.e., the following diagram commutes up to isomorphism for any object <fr:tex>f  \in   {{ \mathcal { C } }_{/{ B }}}</fr:tex>.</fr:p>
+addr="ct-000K"
+title="Image">images</fr:link> that commute with pullbacks, i.e., the following diagram commutes up to isomorphism for any object <fr:tex
+display="inline"><![CDATA[f \in  {{\mathcal {C}}_{/{B}}}]]></fr:tex>.</fr:p>
     
       
       <fr:embedded-tex
-hash="5a24ff2f37ff6671a5811418a69124d3"><fr:embedded-tex-preamble>
-         
-   \RequirePackage {tikz}
-   \RequirePackage {amsmath}
-   \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
+hash="63cf880e0981aa86486b403a0e4ec7f4"><fr:embedded-tex-preamble><![CDATA[
+        
+  \RequirePackage {tikz}
+  \RequirePackage {amsmath}
+  \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
 
-   \definecolor {catccolor}{RGB}{255,244,138}
-   \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
-   \tikzstyle {catc}=[catccolor!60]
-   \tikzstyle {catd}=[orange!40]
-   \tikzstyle {cate}=[red!40]
-   \tikzstyle {catf}=[blue!10]
-   \tikzstyle {catg}=[green!25]
+  \definecolor {catccolor}{RGB}{255,244,138}
+  \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
+  \tikzstyle {catc}=[catccolor!60]
+  \tikzstyle {catd}=[orange!40]
+  \tikzstyle {cate}=[red!40]
+  \tikzstyle {catf}=[blue!10]
+  \tikzstyle {catg}=[green!25]
 
 
-   \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
-   \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
+  \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
+  \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
 
-   \NewDocumentCommand \CreateRect {D&lt;&gt;{} m m}{
-     \path 
+  \NewDocumentCommand \CreateRect {D<>{} m m}{
+    \path 
       coordinate (#1nw)
       ++(#2,-#3) coordinate (#1se)
       coordinate (#1sw) at (#1se -| #1nw)
       coordinate (#1ne) at (#1nw -| #1se)
     ;
 
-     \path [spath/save = #1north] (#1nw) to (#1ne);
-     \path [spath/save = #1west] (#1nw) to (#1sw);
-     \path [spath/save = #1east] (#1ne) to (#1se);
-     \path [spath/save = #1south] (#1sw) to (#1se);
+    \path [spath/save = #1north] (#1nw) to (#1ne);
+    \path [spath/save = #1west] (#1nw) to (#1sw);
+    \path [spath/save = #1east] (#1ne) to (#1se);
+    \path [spath/save = #1south] (#1sw) to (#1se);
   }
- 
-         
+
+        
    % appears to be necessary
   \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd}
   \usetikzlibrary{matrix,arrows}
@@ -118,7 +124,7 @@ hash="5a24ff2f37ff6671a5811418a69124d3"><fr:embedded-tex-preamble>
       densely dashed
     },
     embedding/.style = {
-      {right hook}-&gt;
+      {right hook}->
     },
     cover/.style = {
       -{Triangle[open]}
@@ -150,10 +156,10 @@ hash="5a24ff2f37ff6671a5811418a69124d3"><fr:embedded-tex-preamble>
     square/ne/.style = {},
     square/se/.style = {},
     square/sw/.style = {},
-    square/north/.style = {-&gt;},
-    square/south/.style = {-&gt;},
-    square/west/.style = {-&gt;},
-    square/east/.style = {-&gt;},
+    square/north/.style = {->},
+    square/south/.style = {->},
+    square/west/.style = {->},
+    square/east/.style = {->},
     square/north/node/.style = {above},
     square/south/node/.style = {below},
     square/west/node/.style = {left},
@@ -232,80 +238,84 @@ hash="5a24ff2f37ff6671a5811418a69124d3"><fr:embedded-tex-preamble>
     \end{tikzpicture}
   }
   \ExplSyntaxOff
- 
-      </fr:embedded-tex-preamble><fr:embedded-tex-body>
-   \DiagramSquare {
-    nw =  {{ \mathcal { C } }_{/{ B }}} ,
-    sw =  {{ \mathcal { C } }_{/{ A }}} ,
-    ne =  \mathsf { Sub } (B),
-    se =  \mathsf { Sub } (A),
-    north =  \mathsf { Img } ,
-    south =  \mathsf { Img } ,
-    west =  f ^{*} ,
-    east =  f ^{*} ,
+
+      ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+  \DiagramSquare {
+    nw = {{\mathcal {C}}_{/{B}}},
+    sw = {{\mathcal {C}}_{/{A}}},
+    ne = \mathsf {Sub}(B),
+    se = \mathsf {Sub}(A),
+    north = \mathsf {Img},
+    south = \mathsf {Img},
+    west = f^{*},
+    east = f^{*},
   }
-</fr:embedded-tex-body></fr:embedded-tex>
+]]></fr:embedded-tex-body></fr:embedded-tex>
     
   
     
       
       <fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="false"
 numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>307</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>3</fr:day></fr:date><fr:parent>ct-000P</fr:parent></fr:frontmatter><fr:mainmatter>
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>377</fr:anchor><fr:addr
+type="machine">#264</fr:addr><fr:route>unstable-264.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>3</fr:day></fr:date><fr:authors /><fr:parent>ct-000P</fr:parent></fr:frontmatter><fr:mainmatter>
   <fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
 numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>305</fr:anchor><fr:taxon>If</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>3</fr:day></fr:date><fr:parent>ct-000P</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-      Suppose that <fr:tex>\mathcal { C }</fr:tex> is a cartesian category with images that commute with pullbacks.
-      Let <fr:tex>f \colon A \to B</fr:tex> be a morphism and <fr:tex>g \colon B' \twoheadrightarrow B</fr:tex> be a cover.
-      Then note that <fr:tex>\mathsf { Img } (g)</fr:tex> is an isomorphism.
-      Since images commute with pullbacks by hypothesis, we can form the following diagram.
-    </fr:p>
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>378</fr:anchor><fr:addr
+type="machine">#262</fr:addr><fr:route>unstable-262.xml</fr:route><fr:taxon>If</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>3</fr:day></fr:date><fr:authors /><fr:parent>ct-000P</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Suppose that <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> is a cartesian category with images that commute with pullbacks.
+      Let <fr:tex
+display="inline"><![CDATA[f\colon A\to B]]></fr:tex> be a morphism and <fr:tex
+display="inline"><![CDATA[g\colon B'\twoheadrightarrow B]]></fr:tex> be a cover.
+      Then note that <fr:tex
+display="inline"><![CDATA[\mathsf {Img}(g)]]></fr:tex> is an isomorphism.
+      Since images commute with pullbacks by hypothesis, we can form the following diagram.</fr:p>
     
       
       <fr:embedded-tex
-hash="cdcfe80256dfd199e59443603346ef3f"><fr:embedded-tex-preamble>
-         
-   \RequirePackage {tikz}
-   \RequirePackage {amsmath}
-   \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
+hash="8e8d4318615b483f566429a038a77ca2"><fr:embedded-tex-preamble><![CDATA[
+        
+  \RequirePackage {tikz}
+  \RequirePackage {amsmath}
+  \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
 
-   \definecolor {catccolor}{RGB}{255,244,138}
-   \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
-   \tikzstyle {catc}=[catccolor!60]
-   \tikzstyle {catd}=[orange!40]
-   \tikzstyle {cate}=[red!40]
-   \tikzstyle {catf}=[blue!10]
-   \tikzstyle {catg}=[green!25]
+  \definecolor {catccolor}{RGB}{255,244,138}
+  \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
+  \tikzstyle {catc}=[catccolor!60]
+  \tikzstyle {catd}=[orange!40]
+  \tikzstyle {cate}=[red!40]
+  \tikzstyle {catf}=[blue!10]
+  \tikzstyle {catg}=[green!25]
 
 
-   \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
-   \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
+  \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
+  \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
 
-   \NewDocumentCommand \CreateRect {D&lt;&gt;{} m m}{
-     \path 
+  \NewDocumentCommand \CreateRect {D<>{} m m}{
+    \path 
       coordinate (#1nw)
       ++(#2,-#3) coordinate (#1se)
       coordinate (#1sw) at (#1se -| #1nw)
       coordinate (#1ne) at (#1nw -| #1se)
     ;
 
-     \path [spath/save = #1north] (#1nw) to (#1ne);
-     \path [spath/save = #1west] (#1nw) to (#1sw);
-     \path [spath/save = #1east] (#1ne) to (#1se);
-     \path [spath/save = #1south] (#1sw) to (#1se);
+    \path [spath/save = #1north] (#1nw) to (#1ne);
+    \path [spath/save = #1west] (#1nw) to (#1sw);
+    \path [spath/save = #1east] (#1ne) to (#1se);
+    \path [spath/save = #1south] (#1sw) to (#1se);
   }
- 
-         
+
+        
    % appears to be necessary
   \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd}
   \usetikzlibrary{matrix,arrows}
@@ -374,7 +384,7 @@ hash="cdcfe80256dfd199e59443603346ef3f"><fr:embedded-tex-preamble>
       densely dashed
     },
     embedding/.style = {
-      {right hook}-&gt;
+      {right hook}->
     },
     cover/.style = {
       -{Triangle[open]}
@@ -406,10 +416,10 @@ hash="cdcfe80256dfd199e59443603346ef3f"><fr:embedded-tex-preamble>
     square/ne/.style = {},
     square/se/.style = {},
     square/sw/.style = {},
-    square/north/.style = {-&gt;},
-    square/south/.style = {-&gt;},
-    square/west/.style = {-&gt;},
-    square/east/.style = {-&gt;},
+    square/north/.style = {->},
+    square/south/.style = {->},
+    square/west/.style = {->},
+    square/east/.style = {->},
     square/north/node/.style = {above},
     square/south/node/.style = {below},
     square/west/node/.style = {left},
@@ -488,90 +498,104 @@ hash="cdcfe80256dfd199e59443603346ef3f"><fr:embedded-tex-preamble>
     \end{tikzpicture}
   }
   \ExplSyntaxOff
- 
-      </fr:embedded-tex-preamble><fr:embedded-tex-body>
-       \begin {tikzpicture}[diagram]
-         \node  (1) {$A'$};
-         \node  [below right = of 1] (3) {$A$};
-         \node  [above right = of 3] (2) {$ \underline {A'}$};
-         \node  [below right = of 2] (4) {$A''$};
-         \draw  [-&gt;,morphism] (1) to node[swap] {$ f ^{*} (g)$} (3);
-         \draw  [cover,morphism] (1) to node {$ \vartheta _{ f ^{*} (g)}$} (2);
-         \draw  [&gt;-&gt;,morphism] (2) to node[desc] {$ \mathsf { Img } ( f ^{*} (g))$} (3);
-         \draw  [-&gt;,morphism] (2) to node[desc] {$ \cong $} (4);
-         \draw  [&gt;-&gt;,morphism] (4) to node {$ f ^{*} ( \mathsf { Img } (g))$} (3);
-       \end {tikzpicture}
-    </fr:embedded-tex-body></fr:embedded-tex>
+
+      ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+      \begin {tikzpicture}[diagram]
+        \node  (1) {$A'$};
+        \node  [below right = of 1] (3) {$A$};
+        \node  [above right = of 3] (2) {$\underline {A'}$};
+        \node  [below right = of 2] (4) {$A''$};
+        \draw  [->,morphism] (1) to node[swap] {$f^{*}(g)$} (3);
+        \draw  [cover,morphism] (1) to node {$\vartheta _{f^{*}(g)}$} (2);
+        \draw  [>->,morphism] (2) to node[desc] {$\mathsf {Img}(f^{*}(g))$} (3);
+        \draw  [->,morphism] (2) to node[desc] {$\cong $} (4);
+        \draw  [>->,morphism] (4) to node {$f^{*}(\mathsf {Img}(g))$} (3);
+      \end {tikzpicture}
+    ]]></fr:embedded-tex-body></fr:embedded-tex>
     
-  <fr:p>
-      Since isomorphisms are stable under pullback, <fr:tex>f ^{*} ( \mathsf { Img } (g))</fr:tex> is also an isomorphism.
-      Thus, <fr:tex>\mathsf { Img } ( f ^{*} (g))</fr:tex> is an isomorphism.
-      Then since <fr:tex>f ^{*} (g)</fr:tex> is the composite of two covers, it is itself a cover.
-    </fr:p></fr:mainmatter></fr:tree>
+  <fr:p>Since isomorphisms are stable under pullback, <fr:tex
+display="inline"><![CDATA[f^{*}(\mathsf {Img}(g))]]></fr:tex> is also an isomorphism.
+      Thus, <fr:tex
+display="inline"><![CDATA[\mathsf {Img}(f^{*}(g))]]></fr:tex> is an isomorphism.
+      Then since <fr:tex
+display="inline"><![CDATA[f^{*}(g)]]></fr:tex> is the composite of two covers, it is itself a cover.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree>
   
   <fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
 numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>306</fr:anchor><fr:taxon>Only if</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>3</fr:day></fr:date><fr:parent>ct-000P</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-      If <fr:tex>\mathcal { C }</fr:tex> is regular, then by <fr:ref
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>379</fr:anchor><fr:addr
+type="machine">#263</fr:addr><fr:route>unstable-263.xml</fr:route><fr:taxon>Only if</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>3</fr:day></fr:date><fr:authors /><fr:parent>ct-000P</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>If <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> is regular, then by <fr:ref
 addr="ct-000N"
 href="ct-000N.xml"
-taxon="Lemma"></fr:ref>, the unit <fr:tex>\vartheta \colon \mathsf {id} \to \mathsf { Img }</fr:tex> consists of <fr:link
-href="ct-000M.xml"
+taxon="Lemma" />, the unit <fr:tex
+display="inline"><![CDATA[\vartheta \colon \mathsf {id}\to \mathsf {Img}]]></fr:tex> consists of <fr:link
 type="local"
-addr="ct-000M">covers</fr:link>.
-      Let <fr:tex>f \colon A \to B</fr:tex> be any morphism in <fr:tex>\mathcal { C }</fr:tex> and <fr:tex>g \colon B' \to B</fr:tex> be an object in <fr:tex>{{ \mathcal { C } }_{/{ B }}}</fr:tex>.
+href="ct-000M.xml"
+addr="ct-000M"
+title="Extremal epimorphism">covers</fr:link>.
+      Let <fr:tex
+display="inline"><![CDATA[f\colon A\to B]]></fr:tex> be any morphism in <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[g\colon B'\to B]]></fr:tex> be an object in <fr:tex
+display="inline"><![CDATA[{{\mathcal {C}}_{/{B}}}]]></fr:tex>.
       By <fr:ref
 addr="ct-000Q"
 href="ct-000Q.xml"
-taxon="Lemma"></fr:ref>, <fr:tex>g</fr:tex> can be factored as <fr:tex>\vartheta _{g} \mathsf { Img } (g)</fr:tex>.
+taxon="Lemma" />, <fr:tex
+display="inline"><![CDATA[g]]></fr:tex> can be factored as <fr:tex
+display="inline"><![CDATA[\vartheta _{g}\mathsf {Img}(g)]]></fr:tex>.
       Form the following pullbacks.
-      Note that since covers are stable under pullback by hypothesis, <fr:tex>\widehat { \vartheta _{g}}</fr:tex> is also a cover.
+      Note that since covers are stable under pullback by hypothesis, <fr:tex
+display="inline"><![CDATA[\widehat {\vartheta _{g}}]]></fr:tex> is also a cover.
       Then by the <fr:link
-href="ct-0008.xml"
 type="local"
-addr="ct-0008">pasting lemma</fr:link>, the composite <fr:tex>f ^{*} ( \mathsf { Img } (g))  \circ   \widehat { \vartheta _{g}}</fr:tex> is isomorphic to <fr:tex>f ^{*} (g)</fr:tex> in <fr:tex>{{ \mathcal { C } }_{/{ A }}}</fr:tex>.
-    </fr:p>
+href="ct-0008.xml"
+addr="ct-0008"
+title="Pasting lemma of pullbacks">pasting lemma</fr:link>, the composite <fr:tex
+display="inline"><![CDATA[f^{*}(\mathsf {Img}(g)) \circ  \widehat {\vartheta _{g}}]]></fr:tex> is isomorphic to <fr:tex
+display="inline"><![CDATA[f^{*}(g)]]></fr:tex> in <fr:tex
+display="inline"><![CDATA[{{\mathcal {C}}_{/{A}}}]]></fr:tex>.</fr:p>
     
       
       <fr:embedded-tex
-hash="0c563ca91626e2ed5d209975c5eac497"><fr:embedded-tex-preamble>
-         
-   \RequirePackage {tikz}
-   \RequirePackage {amsmath}
-   \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
+hash="7ce43289f11ab6b5156fc08980af23bf"><fr:embedded-tex-preamble><![CDATA[
+        
+  \RequirePackage {tikz}
+  \RequirePackage {amsmath}
+  \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
 
-   \definecolor {catccolor}{RGB}{255,244,138}
-   \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
-   \tikzstyle {catc}=[catccolor!60]
-   \tikzstyle {catd}=[orange!40]
-   \tikzstyle {cate}=[red!40]
-   \tikzstyle {catf}=[blue!10]
-   \tikzstyle {catg}=[green!25]
+  \definecolor {catccolor}{RGB}{255,244,138}
+  \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
+  \tikzstyle {catc}=[catccolor!60]
+  \tikzstyle {catd}=[orange!40]
+  \tikzstyle {cate}=[red!40]
+  \tikzstyle {catf}=[blue!10]
+  \tikzstyle {catg}=[green!25]
 
 
-   \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
-   \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
+  \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
+  \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
 
-   \NewDocumentCommand \CreateRect {D&lt;&gt;{} m m}{
-     \path 
+  \NewDocumentCommand \CreateRect {D<>{} m m}{
+    \path 
       coordinate (#1nw)
       ++(#2,-#3) coordinate (#1se)
       coordinate (#1sw) at (#1se -| #1nw)
       coordinate (#1ne) at (#1nw -| #1se)
     ;
 
-     \path [spath/save = #1north] (#1nw) to (#1ne);
-     \path [spath/save = #1west] (#1nw) to (#1sw);
-     \path [spath/save = #1east] (#1ne) to (#1se);
-     \path [spath/save = #1south] (#1sw) to (#1se);
+    \path [spath/save = #1north] (#1nw) to (#1ne);
+    \path [spath/save = #1west] (#1nw) to (#1sw);
+    \path [spath/save = #1east] (#1ne) to (#1se);
+    \path [spath/save = #1south] (#1sw) to (#1se);
   }
- 
-         
+
+        
    % appears to be necessary
   \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd}
   \usetikzlibrary{matrix,arrows}
@@ -640,7 +664,7 @@ hash="0c563ca91626e2ed5d209975c5eac497"><fr:embedded-tex-preamble>
       densely dashed
     },
     embedding/.style = {
-      {right hook}-&gt;
+      {right hook}->
     },
     cover/.style = {
       -{Triangle[open]}
@@ -672,10 +696,10 @@ hash="0c563ca91626e2ed5d209975c5eac497"><fr:embedded-tex-preamble>
     square/ne/.style = {},
     square/se/.style = {},
     square/sw/.style = {},
-    square/north/.style = {-&gt;},
-    square/south/.style = {-&gt;},
-    square/west/.style = {-&gt;},
-    square/east/.style = {-&gt;},
+    square/north/.style = {->},
+    square/south/.style = {->},
+    square/west/.style = {->},
+    square/east/.style = {->},
     square/north/node/.style = {above},
     square/south/node/.style = {below},
     square/west/node/.style = {left},
@@ -754,68 +778,67 @@ hash="0c563ca91626e2ed5d209975c5eac497"><fr:embedded-tex-preamble>
     \end{tikzpicture}
   }
   \ExplSyntaxOff
- 
-      </fr:embedded-tex-preamble><fr:embedded-tex-body>
-       \begin {tikzpicture}[diagram]
-         \SpliceDiagramSquare {
+
+      ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+      \begin {tikzpicture}[diagram]
+        \SpliceDiagramSquare {
           nw = C,
           ne = A,
-          sw =  \underline {B'},
+          sw = \underline {B'},
           se = B,
-          north =  f ^{*} ( \mathsf { Img } (g)),
+          north = f^{*}(\mathsf {Img}(g)),
           east = f,
-          south =  \mathsf { Img } (g),
-          north/style = {&gt;-&gt;},
-          south/style = {&gt;-&gt;},
+          south = \mathsf {Img}(g),
+          north/style = {>->},
+          south/style = {>->},
           nw/style = pullback,
         }
-         \node  [left = of nw,pullback] (1) {$D$};
-         \node  [left = of sw] (2) {$B'$};
-         \draw  [cover,morphism] (1) to node {$ \widehat { \vartheta _{g}}$} (nw);
-         \draw  [-&gt;,morphism] (1) to (2);
-         \draw  [cover,morphism] (2) to node[swap] {$ \vartheta _{g}$} (sw);
-       \end {tikzpicture}
-    </fr:embedded-tex-body></fr:embedded-tex>
+        \node  [left = of nw,pullback] (1) {$D$};
+        \node  [left = of sw] (2) {$B'$};
+        \draw  [cover,morphism] (1) to node {$\widehat {\vartheta _{g}}$} (nw);
+        \draw  [->,morphism] (1) to (2);
+        \draw  [cover,morphism] (2) to node[swap] {$\vartheta _{g}$} (sw);
+      \end {tikzpicture}
+    ]]></fr:embedded-tex-body></fr:embedded-tex>
     
-  <fr:p>
-      Thus, <fr:tex>f ^{*} (g)</fr:tex> admits another cover-mono factorization.
-    </fr:p>
+  <fr:p>Thus, <fr:tex
+display="inline"><![CDATA[f^{*}(g)]]></fr:tex> admits another cover-mono factorization.</fr:p>
     
       
       <fr:embedded-tex
-hash="55727559870efcb5f64ca1d90449bd2e"><fr:embedded-tex-preamble>
-         
-   \RequirePackage {tikz}
-   \RequirePackage {amsmath}
-   \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
+hash="0e48db361558ef22d39c6ac8658f0596"><fr:embedded-tex-preamble><![CDATA[
+        
+  \RequirePackage {tikz}
+  \RequirePackage {amsmath}
+  \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
 
-   \definecolor {catccolor}{RGB}{255,244,138}
-   \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
-   \tikzstyle {catc}=[catccolor!60]
-   \tikzstyle {catd}=[orange!40]
-   \tikzstyle {cate}=[red!40]
-   \tikzstyle {catf}=[blue!10]
-   \tikzstyle {catg}=[green!25]
+  \definecolor {catccolor}{RGB}{255,244,138}
+  \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
+  \tikzstyle {catc}=[catccolor!60]
+  \tikzstyle {catd}=[orange!40]
+  \tikzstyle {cate}=[red!40]
+  \tikzstyle {catf}=[blue!10]
+  \tikzstyle {catg}=[green!25]
 
 
-   \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
-   \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
+  \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
+  \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
 
-   \NewDocumentCommand \CreateRect {D&lt;&gt;{} m m}{
-     \path 
+  \NewDocumentCommand \CreateRect {D<>{} m m}{
+    \path 
       coordinate (#1nw)
       ++(#2,-#3) coordinate (#1se)
       coordinate (#1sw) at (#1se -| #1nw)
       coordinate (#1ne) at (#1nw -| #1se)
     ;
 
-     \path [spath/save = #1north] (#1nw) to (#1ne);
-     \path [spath/save = #1west] (#1nw) to (#1sw);
-     \path [spath/save = #1east] (#1ne) to (#1se);
-     \path [spath/save = #1south] (#1sw) to (#1se);
+    \path [spath/save = #1north] (#1nw) to (#1ne);
+    \path [spath/save = #1west] (#1nw) to (#1sw);
+    \path [spath/save = #1east] (#1ne) to (#1se);
+    \path [spath/save = #1south] (#1sw) to (#1se);
   }
- 
-         
+
+        
    % appears to be necessary
   \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd}
   \usetikzlibrary{matrix,arrows}
@@ -884,7 +907,7 @@ hash="55727559870efcb5f64ca1d90449bd2e"><fr:embedded-tex-preamble>
       densely dashed
     },
     embedding/.style = {
-      {right hook}-&gt;
+      {right hook}->
     },
     cover/.style = {
       -{Triangle[open]}
@@ -916,10 +939,10 @@ hash="55727559870efcb5f64ca1d90449bd2e"><fr:embedded-tex-preamble>
     square/ne/.style = {},
     square/se/.style = {},
     square/sw/.style = {},
-    square/north/.style = {-&gt;},
-    square/south/.style = {-&gt;},
-    square/west/.style = {-&gt;},
-    square/east/.style = {-&gt;},
+    square/north/.style = {->},
+    square/south/.style = {->},
+    square/west/.style = {->},
+    square/east/.style = {->},
     square/north/node/.style = {above},
     square/south/node/.style = {below},
     square/west/node/.style = {left},
@@ -998,156 +1021,207 @@ hash="55727559870efcb5f64ca1d90449bd2e"><fr:embedded-tex-preamble>
     \end{tikzpicture}
   }
   \ExplSyntaxOff
- 
-      </fr:embedded-tex-preamble><fr:embedded-tex-body>
-       \begin {tikzpicture}[diagram, node distance = 4cm,baseline = (2.base)]
-         \node  (1) {$A'$};
-         \node  [right = 1cm of 1] (ref1) {};
-         \node  [above = 1.5cm of ref1] (2) {$D$};
-         \node  [right = 2cm of 2] (3) {$C$};
-         \node  [right = of 1] (4) {A};
-         \node  [between = 1 and 4] (ref2) {};
-         \node  [below = 1.5cm of ref2] (5) {$ \underline {A'}$};
-         \draw  [-&gt;,morphism] (1) to node[desc] {$ \cong $} (2);
-         \draw  [cover,morphism] (2) to (3);
-         \draw  [&gt;-&gt;,morphism] (3) to node {$ f ^{*} ( \mathsf { Img } (g))$} (4);
-         \draw  [-&gt;,morphism] (1) to node[desc] {$ f ^{*} (g)$} (4);
-         \draw  [cover,morphism] (1) to node[swap] {$ \vartheta _{ f ^{*} (g)}$} (5);
-         \draw  [&gt;-&gt;,morphism] (5) to node[swap] {$ \mathsf { Img } ( f ^{*} (g))$} (4);
-       \end {tikzpicture}
-    </fr:embedded-tex-body></fr:embedded-tex>
+
+      ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+      \begin {tikzpicture}[diagram, node distance = 4cm,baseline = (2.base)]
+        \node  (1) {$A'$};
+        \node  [right = 1cm of 1] (ref1) {};
+        \node  [above = 1.5cm of ref1] (2) {$D$};
+        \node  [right = 2cm of 2] (3) {$C$};
+        \node  [right = of 1] (4) {A};
+        \node  [between = 1 and 4] (ref2) {};
+        \node  [below = 1.5cm of ref2] (5) {$\underline {A'}$};
+        \draw  [->,morphism] (1) to node[desc] {$\cong $} (2);
+        \draw  [cover,morphism] (2) to (3);
+        \draw  [>->,morphism] (3) to node {$f^{*}(\mathsf {Img}(g))$} (4);
+        \draw  [->,morphism] (1) to node[desc] {$f^{*}(g)$} (4);
+        \draw  [cover,morphism] (1) to node[swap] {$\vartheta _{f^{*}(g)}$} (5);
+        \draw  [>->,morphism] (5) to node[swap] {$\mathsf {Img}(f^{*}(g))$} (4);
+      \end {tikzpicture}
+    ]]></fr:embedded-tex-body></fr:embedded-tex>
     
-  <fr:p>
-      Then by uniqueness, <fr:tex>C  \cong   \underline {A'}</fr:tex>.
-      Thus, <fr:tex>\mathsf { Img } ( f ^{*} (g))  \cong   f ^{*} ( \mathsf { Img } (g))</fr:tex>.
-    </fr:p></fr:mainmatter></fr:tree>  
-</fr:mainmatter></fr:tree>
+  <fr:p>Then by uniqueness, <fr:tex
+display="inline"><![CDATA[C \cong  \underline {A'}]]></fr:tex>.
+      Thus, <fr:tex
+display="inline"><![CDATA[\mathsf {Img}(f^{*}(g)) \cong  f^{*}(\mathsf {Img}(g))]]></fr:tex>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree>  
+</fr:mainmatter><fr:backmatter /></fr:tree>
     
-  </fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+  </fr:mainmatter><fr:backmatter><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
+text="Context">Context</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1002</fr:anchor><fr:taxon>Section</fr:taxon><fr:addr>fnd-0008</fr:addr><fr:route>fnd-0008.xml</fr:route><fr:title>Regular category</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>900</fr:anchor><fr:addr
+type="user">fnd-0008</fr:addr><fr:route>fnd-0008.xml</fr:route><fr:title
+text="Regular category">Regular category</fr:title><fr:taxon>Section</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>27</fr:day></fr:date><fr:authors><fr:author><fr:link
+type="local"
 href="frankndrssn.xml"
+addr="frankndrssn"
+title="Frank Tsai">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>360</fr:anchor><fr:addr
+type="user">ct-000K</fr:addr><fr:route>ct-000K.xml</fr:route><fr:title
+text="Image">Image</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>2</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>A category <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> is said to have <fr:em><fr:strong>images</fr:strong></fr:em> if the inclusion functor <fr:tex
+display="inline"><![CDATA[\mathsf {Sub}(A) \hookrightarrow  {{\mathcal {C}}_{/{A}}}]]></fr:tex> admits a left adjoint <fr:tex
+display="inline"><![CDATA[\mathsf {Img}\colon {{\mathcal {C}}_{/{A}}}\to \mathsf {Sub}(A)]]></fr:tex> for all objects <fr:tex
+display="inline"><![CDATA[A \in  \mathcal {C}]]></fr:tex>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>361</fr:anchor><fr:addr
+type="user">ct-000O</fr:addr><fr:route>ct-000O.xml</fr:route><fr:title
+text="Regular category">Regular category</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>3</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>A category <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> is said to be <fr:em><fr:strong>regular</fr:strong></fr:em> if it is cartesian, has <fr:link
 type="local"
-addr="frankndrssn">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
-toc="true"
-numbered="true"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>289</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>ct-000K</fr:addr><fr:route>ct-000K.xml</fr:route><fr:title>Image</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>2</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>A category <fr:tex>\mathcal { C }</fr:tex> is said to have <fr:em><fr:strong>images</fr:strong></fr:em> if the inclusion functor <fr:tex>\mathsf { Sub } (A)  \hookrightarrow   {{ \mathcal { C } }_{/{ A }}}</fr:tex> admits a left adjoint <fr:tex>\mathsf { Img } \colon {{ \mathcal { C } }_{/{ A }}} \to \mathsf { Sub } (A)</fr:tex> for all objects <fr:tex>A  \in   \mathcal { C }</fr:tex>.</fr:p></fr:mainmatter></fr:tree><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
-toc="true"
-numbered="true"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>290</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>ct-000O</fr:addr><fr:route>ct-000O.xml</fr:route><fr:title>Regular category</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>3</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
-  A category <fr:tex>\mathcal { C }</fr:tex> is said to be <fr:em><fr:strong>regular</fr:strong></fr:em> if it is cartesian, has <fr:link
 href="ct-000K.xml"
+addr="ct-000K"
+title="Image">images</fr:link>, and <fr:link
 type="local"
-addr="ct-000K">images</fr:link>, and <fr:link
 href="ct-000M.xml"
-type="local"
-addr="ct-000M">covers</fr:link> are stable under pullback.
-  A functor <fr:tex>F \colon \mathcal { C } \to \mathcal { D }</fr:tex> between regular categories is said to be <fr:em><fr:strong>regular</fr:strong></fr:em> if it is cartesian and preserves covers.
-  Note that since cartesian functors preserve monomorphisms, every regular functor automatically preserves images.
-</fr:p>
+addr="ct-000M"
+title="Extremal epimorphism">covers</fr:link> are stable under pullback.
+  A functor <fr:tex
+display="inline"><![CDATA[F\colon \mathcal {C}\to \mathcal {D}]]></fr:tex> between regular categories is said to be <fr:em><fr:strong>regular</fr:strong></fr:em> if it is cartesian and preserves covers.
+  Note that since cartesian functors preserve monomorphisms, every regular functor automatically preserves images.</fr:p>
     
       
       <fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="false"
 numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>239</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>3</fr:day></fr:date><fr:parent>ct-000O</fr:parent></fr:frontmatter><fr:mainmatter>
-  <fr:p>
-    Let <fr:tex>F \colon \mathcal { C } \to \mathcal { D }</fr:tex> be a regular functor and <fr:tex>f \colon A \to B</fr:tex> be a morphism in <fr:tex>\mathcal { C }</fr:tex>.
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>293</fr:anchor><fr:addr
+type="machine">#265</fr:addr><fr:route>unstable-265.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>3</fr:day></fr:date><fr:authors /><fr:parent>ct-000O</fr:parent></fr:frontmatter><fr:mainmatter>
+  <fr:p>Let <fr:tex
+display="inline"><![CDATA[F\colon \mathcal {C}\to \mathcal {D}]]></fr:tex> be a regular functor and <fr:tex
+display="inline"><![CDATA[f\colon A\to B]]></fr:tex> be a morphism in <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex>.
     By <fr:ref
 addr="ct-000Q"
 href="ct-000Q.xml"
-taxon="Lemma"></fr:ref>, <fr:tex>f</fr:tex> admits a cover-mono factorization <fr:tex>f =  \mathsf { Img } (f) \vartheta _{f}</fr:tex>.
-    Then since <fr:tex>F</fr:tex> preserves monomorphisms and covers, <fr:tex>F( \mathsf { Img } (f))F( \vartheta _{f})</fr:tex> forms a cover-mono factorization of <fr:tex>F(f)</fr:tex>.
-    Then by uniqueness, <fr:tex>\mathsf { Img } (Ff)  \cong  F( \mathsf { Img } (f))</fr:tex>.
-  </fr:p>
-</fr:mainmatter></fr:tree>
+taxon="Lemma" />, <fr:tex
+display="inline"><![CDATA[f]]></fr:tex> admits a cover-mono factorization <fr:tex
+display="inline"><![CDATA[f = \mathsf {Img}(f)\vartheta _{f}]]></fr:tex>.
+    Then since <fr:tex
+display="inline"><![CDATA[F]]></fr:tex> preserves monomorphisms and covers, <fr:tex
+display="inline"><![CDATA[F(\mathsf {Img}(f))F(\vartheta _{f})]]></fr:tex> forms a cover-mono factorization of <fr:tex
+display="inline"><![CDATA[F(f)]]></fr:tex>.
+    Then by uniqueness, <fr:tex
+display="inline"><![CDATA[\mathsf {Img}(Ff) \cong  F(\mathsf {Img}(f))]]></fr:tex>.</fr:p>
+</fr:mainmatter><fr:backmatter /></fr:tree>
     
-  </fr:mainmatter></fr:tree><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+  </fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
 toc="true"
 numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>302</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>ct-000L</fr:addr><fr:route>ct-000L.xml</fr:route><fr:title>Equivalent condition for the existence of <fr:link
-href="ct-000K.xml"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>362</fr:anchor><fr:addr
+type="user">ct-000L</fr:addr><fr:route>ct-000L.xml</fr:route><fr:title
+text="Equivalent condition for the existence of images">Equivalent condition for the existence of <fr:link
 type="local"
-addr="ct-000K">images</fr:link></fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>2</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>\mathcal { C }</fr:tex> be a category with pullbacks. Then <fr:tex>\mathcal { C }</fr:tex> has images iff for each morphism <fr:tex>f \colon A \to B</fr:tex>, the pullback functor <fr:tex>f ^{*} \colon \mathsf { Sub } (B) \to \mathsf { Sub } (A)</fr:tex> admits a left adjoint <fr:tex>\exists _{f} \colon \mathsf { Sub } (A) \to \mathsf { Sub } (B)</fr:tex>.</fr:p>
+href="ct-000K.xml"
+addr="ct-000K"
+title="Image">images</fr:link></fr:title><fr:taxon>Lemma</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>2</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> be a category with pullbacks. Then <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> has images iff for each morphism <fr:tex
+display="inline"><![CDATA[f\colon A\to B]]></fr:tex>, the pullback functor <fr:tex
+display="inline"><![CDATA[f^{*}\colon \mathsf {Sub}(B)\to \mathsf {Sub}(A)]]></fr:tex> admits a left adjoint <fr:tex
+display="inline"><![CDATA[\exists _{f}\colon \mathsf {Sub}(A)\to \mathsf {Sub}(B)]]></fr:tex>.</fr:p>
     
       
       <fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="false"
 numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>301</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>2</fr:day></fr:date><fr:parent>ct-000L</fr:parent></fr:frontmatter><fr:mainmatter>
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>363</fr:anchor><fr:addr
+type="machine">#269</fr:addr><fr:route>unstable-269.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>2</fr:day></fr:date><fr:authors /><fr:parent>ct-000L</fr:parent></fr:frontmatter><fr:mainmatter>
   <fr:p>By <fr:ref
 addr="ct-000J"
 href="ct-000J.xml"
-taxon="Lemma"></fr:ref>, the pullback functor <fr:tex>f ^{*} \colon {{ \mathcal { C } }_{/{ B }}} \to {{ \mathcal { C } }_{/{ A }}}</fr:tex> admits <fr:tex>\Sigma _{f} \colon {{ \mathcal { C } }_{/{ A }}} \to {{ \mathcal { C } }_{/{ B }}}</fr:tex> as a left adjoint.</fr:p>
+taxon="Lemma" />, the pullback functor <fr:tex
+display="inline"><![CDATA[f^{*}\colon {{\mathcal {C}}_{/{B}}}\to {{\mathcal {C}}_{/{A}}}]]></fr:tex> admits <fr:tex
+display="inline"><![CDATA[\Sigma _{f}\colon {{\mathcal {C}}_{/{A}}}\to {{\mathcal {C}}_{/{B}}}]]></fr:tex> as a left adjoint.</fr:p>
   <fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
 numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>299</fr:anchor><fr:taxon>If</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>2</fr:day></fr:date><fr:parent>ct-000L</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>g \colon B' \rightarrowtail B</fr:tex> be an arbitrary object in <fr:tex>\mathsf { Sub } (B)</fr:tex>. We need to construct a functor <fr:tex>\mathsf { Img } \colon {{ \mathcal { C } }_{/{ B }}} \to \mathsf { Sub } (B)</fr:tex> so that each morphism <fr:tex>f  \to  g</fr:tex> in <fr:tex>{{ \mathcal { C } }_{/{ B }}}</fr:tex> corresponds to a unique morphism <fr:tex>\mathsf { Img } (f)  \to  g</fr:tex> in <fr:tex>\mathsf { Sub } (B)</fr:tex>.</fr:p><fr:p>Let <fr:tex>f  \to  g</fr:tex> be an arbitrary morphism in <fr:tex>{{ \mathcal { C } }_{/{ B }}}</fr:tex>. Then this corresponds to a unique morphism <fr:tex>\mathsf {id} _{ A }   \to   f ^{*} (g)</fr:tex> as follows:</fr:p>
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>364</fr:anchor><fr:addr
+type="machine">#267</fr:addr><fr:route>unstable-267.xml</fr:route><fr:taxon>If</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>2</fr:day></fr:date><fr:authors /><fr:parent>ct-000L</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[g\colon B'\rightarrowtail B]]></fr:tex> be an arbitrary object in <fr:tex
+display="inline"><![CDATA[\mathsf {Sub}(B)]]></fr:tex>. We need to construct a functor <fr:tex
+display="inline"><![CDATA[\mathsf {Img}\colon {{\mathcal {C}}_{/{B}}}\to \mathsf {Sub}(B)]]></fr:tex> so that each morphism <fr:tex
+display="inline"><![CDATA[f \to  g]]></fr:tex> in <fr:tex
+display="inline"><![CDATA[{{\mathcal {C}}_{/{B}}}]]></fr:tex> corresponds to a unique morphism <fr:tex
+display="inline"><![CDATA[\mathsf {Img}(f) \to  g]]></fr:tex> in <fr:tex
+display="inline"><![CDATA[\mathsf {Sub}(B)]]></fr:tex>.</fr:p><fr:p>Let <fr:tex
+display="inline"><![CDATA[f \to  g]]></fr:tex> be an arbitrary morphism in <fr:tex
+display="inline"><![CDATA[{{\mathcal {C}}_{/{B}}}]]></fr:tex>. Then this corresponds to a unique morphism <fr:tex
+display="inline"><![CDATA[\mathsf {id}_{A} \to  f^{*}(g)]]></fr:tex> as follows:</fr:p>
     
       
       <fr:embedded-tex
-hash="70bd1ce54a18fe1e0f15c71df204b2e9"><fr:embedded-tex-preamble>
-         
-   \RequirePackage {tikz}
-   \RequirePackage {amsmath}
-   \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
+hash="52d705a3d8a69b4314e8c1dc010ba727"><fr:embedded-tex-preamble><![CDATA[
+        
+  \RequirePackage {tikz}
+  \RequirePackage {amsmath}
+  \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
 
-   \definecolor {catccolor}{RGB}{255,244,138}
-   \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
-   \tikzstyle {catc}=[catccolor!60]
-   \tikzstyle {catd}=[orange!40]
-   \tikzstyle {cate}=[red!40]
-   \tikzstyle {catf}=[blue!10]
-   \tikzstyle {catg}=[green!25]
+  \definecolor {catccolor}{RGB}{255,244,138}
+  \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
+  \tikzstyle {catc}=[catccolor!60]
+  \tikzstyle {catd}=[orange!40]
+  \tikzstyle {cate}=[red!40]
+  \tikzstyle {catf}=[blue!10]
+  \tikzstyle {catg}=[green!25]
 
 
-   \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
-   \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
+  \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
+  \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
 
-   \NewDocumentCommand \CreateRect {D&lt;&gt;{} m m}{
-     \path 
+  \NewDocumentCommand \CreateRect {D<>{} m m}{
+    \path 
       coordinate (#1nw)
       ++(#2,-#3) coordinate (#1se)
       coordinate (#1sw) at (#1se -| #1nw)
       coordinate (#1ne) at (#1nw -| #1se)
     ;
 
-     \path [spath/save = #1north] (#1nw) to (#1ne);
-     \path [spath/save = #1west] (#1nw) to (#1sw);
-     \path [spath/save = #1east] (#1ne) to (#1se);
-     \path [spath/save = #1south] (#1sw) to (#1se);
+    \path [spath/save = #1north] (#1nw) to (#1ne);
+    \path [spath/save = #1west] (#1nw) to (#1sw);
+    \path [spath/save = #1east] (#1ne) to (#1se);
+    \path [spath/save = #1south] (#1sw) to (#1se);
   }
- 
-         
+
+        
    % appears to be necessary
   \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd}
   \usetikzlibrary{matrix,arrows}
@@ -1216,7 +1290,7 @@ hash="70bd1ce54a18fe1e0f15c71df204b2e9"><fr:embedded-tex-preamble>
       densely dashed
     },
     embedding/.style = {
-      {right hook}-&gt;
+      {right hook}->
     },
     cover/.style = {
       -{Triangle[open]}
@@ -1248,10 +1322,10 @@ hash="70bd1ce54a18fe1e0f15c71df204b2e9"><fr:embedded-tex-preamble>
     square/ne/.style = {},
     square/se/.style = {},
     square/sw/.style = {},
-    square/north/.style = {-&gt;},
-    square/south/.style = {-&gt;},
-    square/west/.style = {-&gt;},
-    square/east/.style = {-&gt;},
+    square/north/.style = {->},
+    square/south/.style = {->},
+    square/west/.style = {->},
+    square/east/.style = {->},
     square/north/node/.style = {above},
     square/south/node/.style = {below},
     square/west/node/.style = {left},
@@ -1330,66 +1404,77 @@ hash="70bd1ce54a18fe1e0f15c71df204b2e9"><fr:embedded-tex-preamble>
     \end{tikzpicture}
   }
   \ExplSyntaxOff
- 
-      </fr:embedded-tex-preamble><fr:embedded-tex-body>
-       \begin {tikzpicture}[diagram]
-         \SpliceDiagramSquare {
+
+      ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+      \begin {tikzpicture}[diagram]
+        \SpliceDiagramSquare {
           ne = B',
           se = B,
           nw = A',
           nw/style = pullback,
           sw = A,
           east = g,
-          east/style = {&gt;-&gt;},
-          west =  f ^{*} (g),
-          west/style = {&gt;-&gt;},
+          east/style = {>->},
+          west = f^{*}(g),
+          west/style = {>->},
           south = f,
-          north =  \varepsilon _{g},
+          north = \varepsilon _{g},
         }
-         \node  [above left of = nw] (a) {$A$};
-         \draw  [-&gt;,morphism,bend left] (a) to node {} (ne);
-         \draw  [double,morphism,bend right] (a) to node {} (sw);
-         \draw  [-&gt;,morphism,exists] (a) to node {} (nw);
-       \end {tikzpicture}
-    </fr:embedded-tex-body></fr:embedded-tex>
+        \node  [above left of = nw] (a) {$A$};
+        \draw  [->,morphism,bend left] (a) to node {} (ne);
+        \draw  [double,morphism,bend right] (a) to node {} (sw);
+        \draw  [->,morphism,exists] (a) to node {} (nw);
+      \end {tikzpicture}
+    ]]></fr:embedded-tex-body></fr:embedded-tex>
     
-  <fr:p>This then corresponds to a unique morphism <fr:tex>\exists _{f}( \mathsf {id} _{ A } )  \to  g</fr:tex> under the adjunction <fr:tex>\exists _{f}  \dashv   f ^{*}</fr:tex>. Thus, we define <fr:tex>\mathsf { Img }</fr:tex> by the assignment <fr:tex>f  \mapsto   \exists _{f}( \mathsf {id} _{ A } )</fr:tex>. This assignment can be trivially extended to a functor: since the category <fr:tex>\mathsf { Sub } (B)</fr:tex> is a preorder, every morphism <fr:tex>f  \to  f'</fr:tex> in <fr:tex>{{ \mathcal { C } }_{/{ B }}}</fr:tex> has to be mapped to the unique morphism <fr:tex>\mathsf { Img } (f)  \to   \mathsf { Img } (f')</fr:tex> in <fr:tex>\mathsf { Sub } (B)</fr:tex>. This morphism must exist. Indeed, it is the lifting of <fr:tex>\mathsf { Img } (f)</fr:tex> against <fr:tex>\varepsilon _{ \mathsf { Img } (f')}</fr:tex> depicted in the following diagram.</fr:p>
+  <fr:p>This then corresponds to a unique morphism <fr:tex
+display="inline"><![CDATA[\exists _{f}(\mathsf {id}_{A}) \to  g]]></fr:tex> under the adjunction <fr:tex
+display="inline"><![CDATA[\exists _{f} \dashv  f^{*}]]></fr:tex>. Thus, we define <fr:tex
+display="inline"><![CDATA[\mathsf {Img}]]></fr:tex> by the assignment <fr:tex
+display="inline"><![CDATA[f \mapsto  \exists _{f}(\mathsf {id}_{A})]]></fr:tex>. This assignment can be trivially extended to a functor: since the category <fr:tex
+display="inline"><![CDATA[\mathsf {Sub}(B)]]></fr:tex> is a preorder, every morphism <fr:tex
+display="inline"><![CDATA[f \to  f']]></fr:tex> in <fr:tex
+display="inline"><![CDATA[{{\mathcal {C}}_{/{B}}}]]></fr:tex> has to be mapped to the unique morphism <fr:tex
+display="inline"><![CDATA[\mathsf {Img}(f) \to  \mathsf {Img}(f')]]></fr:tex> in <fr:tex
+display="inline"><![CDATA[\mathsf {Sub}(B)]]></fr:tex>. This morphism must exist. Indeed, it is the lifting of <fr:tex
+display="inline"><![CDATA[\mathsf {Img}(f)]]></fr:tex> against <fr:tex
+display="inline"><![CDATA[\varepsilon _{\mathsf {Img}(f')}]]></fr:tex> depicted in the following diagram.</fr:p>
     
       
       <fr:embedded-tex
-hash="8968e10fd49149481592eb9aa80a5f21"><fr:embedded-tex-preamble>
-         
-   \RequirePackage {tikz}
-   \RequirePackage {amsmath}
-   \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
+hash="ddb08c7c39145de8d6e321c3ee79b40a"><fr:embedded-tex-preamble><![CDATA[
+        
+  \RequirePackage {tikz}
+  \RequirePackage {amsmath}
+  \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
 
-   \definecolor {catccolor}{RGB}{255,244,138}
-   \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
-   \tikzstyle {catc}=[catccolor!60]
-   \tikzstyle {catd}=[orange!40]
-   \tikzstyle {cate}=[red!40]
-   \tikzstyle {catf}=[blue!10]
-   \tikzstyle {catg}=[green!25]
+  \definecolor {catccolor}{RGB}{255,244,138}
+  \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
+  \tikzstyle {catc}=[catccolor!60]
+  \tikzstyle {catd}=[orange!40]
+  \tikzstyle {cate}=[red!40]
+  \tikzstyle {catf}=[blue!10]
+  \tikzstyle {catg}=[green!25]
 
 
-   \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
-   \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
+  \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
+  \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
 
-   \NewDocumentCommand \CreateRect {D&lt;&gt;{} m m}{
-     \path 
+  \NewDocumentCommand \CreateRect {D<>{} m m}{
+    \path 
       coordinate (#1nw)
       ++(#2,-#3) coordinate (#1se)
       coordinate (#1sw) at (#1se -| #1nw)
       coordinate (#1ne) at (#1nw -| #1se)
     ;
 
-     \path [spath/save = #1north] (#1nw) to (#1ne);
-     \path [spath/save = #1west] (#1nw) to (#1sw);
-     \path [spath/save = #1east] (#1ne) to (#1se);
-     \path [spath/save = #1south] (#1sw) to (#1se);
+    \path [spath/save = #1north] (#1nw) to (#1ne);
+    \path [spath/save = #1west] (#1nw) to (#1sw);
+    \path [spath/save = #1east] (#1ne) to (#1se);
+    \path [spath/save = #1south] (#1sw) to (#1se);
   }
- 
-         
+
+        
    % appears to be necessary
   \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd}
   \usetikzlibrary{matrix,arrows}
@@ -1458,7 +1543,7 @@ hash="8968e10fd49149481592eb9aa80a5f21"><fr:embedded-tex-preamble>
       densely dashed
     },
     embedding/.style = {
-      {right hook}-&gt;
+      {right hook}->
     },
     cover/.style = {
       -{Triangle[open]}
@@ -1490,10 +1575,10 @@ hash="8968e10fd49149481592eb9aa80a5f21"><fr:embedded-tex-preamble>
     square/ne/.style = {},
     square/se/.style = {},
     square/sw/.style = {},
-    square/north/.style = {-&gt;},
-    square/south/.style = {-&gt;},
-    square/west/.style = {-&gt;},
-    square/east/.style = {-&gt;},
+    square/north/.style = {->},
+    square/south/.style = {->},
+    square/west/.style = {->},
+    square/east/.style = {->},
     square/north/node/.style = {above},
     square/south/node/.style = {below},
     square/west/node/.style = {left},
@@ -1572,24 +1657,24 @@ hash="8968e10fd49149481592eb9aa80a5f21"><fr:embedded-tex-preamble>
     \end{tikzpicture}
   }
   \ExplSyntaxOff
- 
-      </fr:embedded-tex-preamble><fr:embedded-tex-body>
-       \begin {tikzpicture}[diagram]
-         \SpliceDiagramSquare {
+
+      ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+      \begin {tikzpicture}[diagram]
+        \SpliceDiagramSquare {
           nw = A',
           nw/style = pullback,
           sw = A,
           ne = B',
           se = B,
-          north =  \varepsilon _{ \mathsf { Img } (f')},
-          east =  \mathsf { Img } (f'),
-          east/style = {&gt;-&gt;},
-          south =  \mathsf { Img } (f),
-          south/style = {&gt;-&gt;},
+          north = \varepsilon _{\mathsf {Img}(f')},
+          east = \mathsf {Img}(f'),
+          east/style = {>->},
+          south = \mathsf {Img}(f),
+          south/style = {>->},
         }
-         \draw  [-&gt;,morphism,exists] (sw) to (ne);
-       \end {tikzpicture}
-    </fr:embedded-tex-body></fr:embedded-tex>
+        \draw  [->,morphism,exists] (sw) to (ne);
+      \end {tikzpicture}
+    ]]></fr:embedded-tex-body></fr:embedded-tex>
     
   <fr:p>We can now extract the components of the unit and the counit from this correspondence.</fr:p>
   <html:table
@@ -1597,10 +1682,12 @@ xmlns:html="http://www.w3.org/1999/xhtml">
       
   <html:tr>
         
-  <html:th>Unit (<fr:tex>\vartheta</fr:tex>)</html:th>
+  <html:th>Unit (<fr:tex
+display="inline"><![CDATA[\vartheta ]]></fr:tex>)</html:th>
 
         
-  <html:th>Counit (<fr:tex>\zeta</fr:tex>)</html:th>
+  <html:th>Counit (<fr:tex
+display="inline"><![CDATA[\zeta ]]></fr:tex>)</html:th>
 
       </html:tr>
 
@@ -1608,46 +1695,61 @@ xmlns:html="http://www.w3.org/1999/xhtml">
   <html:tr>
         
   <html:td>
-          <fr:p>Let <fr:tex>f \colon A \to B</fr:tex> be an object in <fr:tex>{{ \mathcal { C } }_{/{ B }}}</fr:tex>. The identity morphism <fr:tex>\mathsf {id} \colon \mathsf { Img } (f) \to \mathsf { Img } (f)</fr:tex> is, by definition, the identity morphism <fr:tex>\mathsf {id} \colon \exists _{f}( \mathsf {id} _{ A } ) \to \mathsf { Img } (f)</fr:tex>, which corresponds to the unit <fr:tex>\eta _{ \mathsf {id} _{ A } } \colon \mathsf {id} _{ A } \to f ^{*} ( \mathsf { Img } (f))</fr:tex> of the adjunction <html:span
-style="white-space: nowrap"><fr:tex>\exists _{f}  \dashv   f ^{*}</fr:tex></html:span>.</fr:p>
-          <fr:p>Then since <fr:tex>\mathsf { Img } (f)</fr:tex> is monic, <fr:tex>\eta _{ \mathsf {id} _{ A } }</fr:tex> corresponds to a unique morphism <fr:tex>\varepsilon _{ \mathsf { Img } (f)} \eta _{ \mathsf {id} _{ A } } \colon f \to \mathsf { Img } (f)</fr:tex>, where <fr:tex>\varepsilon</fr:tex> is the counit of the adjunction <fr:tex>\Sigma _{f}  \dashv   f ^{*}</fr:tex>. This defines the component of <fr:tex>\vartheta</fr:tex> at <fr:tex>f</fr:tex>. This is precisely the lifting of <fr:tex>f</fr:tex> against <fr:tex>\varepsilon _{ \mathsf { Img } (f)}</fr:tex>.</fr:p>
+          <fr:p>Let <fr:tex
+display="inline"><![CDATA[f\colon A\to B]]></fr:tex> be an object in <fr:tex
+display="inline"><![CDATA[{{\mathcal {C}}_{/{B}}}]]></fr:tex>. The identity morphism <fr:tex
+display="inline"><![CDATA[\mathsf {id}\colon \mathsf {Img}(f)\to \mathsf {Img}(f)]]></fr:tex> is, by definition, the identity morphism <fr:tex
+display="inline"><![CDATA[\mathsf {id}\colon \exists _{f}(\mathsf {id}_{A})\to \mathsf {Img}(f)]]></fr:tex>, which corresponds to the unit <fr:tex
+display="inline"><![CDATA[\eta _{\mathsf {id}_{A}}\colon \mathsf {id}_{A}\to f^{*}(\mathsf {Img}(f))]]></fr:tex> of the adjunction <html:span
+style="white-space: nowrap"><fr:tex
+display="inline"><![CDATA[\exists _{f} \dashv  f^{*}]]></fr:tex></html:span>.</fr:p>
+          <fr:p>Then since <fr:tex
+display="inline"><![CDATA[\mathsf {Img}(f)]]></fr:tex> is monic, <fr:tex
+display="inline"><![CDATA[\eta _{\mathsf {id}_{A}}]]></fr:tex> corresponds to a unique morphism <fr:tex
+display="inline"><![CDATA[\varepsilon _{\mathsf {Img}(f)}\eta _{\mathsf {id}_{A}}\colon f\to \mathsf {Img}(f)]]></fr:tex>, where <fr:tex
+display="inline"><![CDATA[\varepsilon ]]></fr:tex> is the counit of the adjunction <fr:tex
+display="inline"><![CDATA[\Sigma _{f} \dashv  f^{*}]]></fr:tex>. This defines the component of <fr:tex
+display="inline"><![CDATA[\vartheta ]]></fr:tex> at <fr:tex
+display="inline"><![CDATA[f]]></fr:tex>. This is precisely the lifting of <fr:tex
+display="inline"><![CDATA[f]]></fr:tex> against <fr:tex
+display="inline"><![CDATA[\varepsilon _{\mathsf {Img}(f)}]]></fr:tex>.</fr:p>
           
     
       
       <fr:embedded-tex
-hash="76186827dc6d280886c759cf567f11eb"><fr:embedded-tex-preamble>
-         
-   \RequirePackage {tikz}
-   \RequirePackage {amsmath}
-   \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
+hash="84ee91d8f90418aeaa2cdef6d7d9d584"><fr:embedded-tex-preamble><![CDATA[
+        
+  \RequirePackage {tikz}
+  \RequirePackage {amsmath}
+  \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
 
-   \definecolor {catccolor}{RGB}{255,244,138}
-   \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
-   \tikzstyle {catc}=[catccolor!60]
-   \tikzstyle {catd}=[orange!40]
-   \tikzstyle {cate}=[red!40]
-   \tikzstyle {catf}=[blue!10]
-   \tikzstyle {catg}=[green!25]
+  \definecolor {catccolor}{RGB}{255,244,138}
+  \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
+  \tikzstyle {catc}=[catccolor!60]
+  \tikzstyle {catd}=[orange!40]
+  \tikzstyle {cate}=[red!40]
+  \tikzstyle {catf}=[blue!10]
+  \tikzstyle {catg}=[green!25]
 
 
-   \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
-   \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
+  \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
+  \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
 
-   \NewDocumentCommand \CreateRect {D&lt;&gt;{} m m}{
-     \path 
+  \NewDocumentCommand \CreateRect {D<>{} m m}{
+    \path 
       coordinate (#1nw)
       ++(#2,-#3) coordinate (#1se)
       coordinate (#1sw) at (#1se -| #1nw)
       coordinate (#1ne) at (#1nw -| #1se)
     ;
 
-     \path [spath/save = #1north] (#1nw) to (#1ne);
-     \path [spath/save = #1west] (#1nw) to (#1sw);
-     \path [spath/save = #1east] (#1ne) to (#1se);
-     \path [spath/save = #1south] (#1sw) to (#1se);
+    \path [spath/save = #1north] (#1nw) to (#1ne);
+    \path [spath/save = #1west] (#1nw) to (#1sw);
+    \path [spath/save = #1east] (#1ne) to (#1se);
+    \path [spath/save = #1south] (#1sw) to (#1se);
   }
- 
-         
+
+        
    % appears to be necessary
   \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd}
   \usetikzlibrary{matrix,arrows}
@@ -1716,7 +1818,7 @@ hash="76186827dc6d280886c759cf567f11eb"><fr:embedded-tex-preamble>
       densely dashed
     },
     embedding/.style = {
-      {right hook}-&gt;
+      {right hook}->
     },
     cover/.style = {
       -{Triangle[open]}
@@ -1748,10 +1850,10 @@ hash="76186827dc6d280886c759cf567f11eb"><fr:embedded-tex-preamble>
     square/ne/.style = {},
     square/se/.style = {},
     square/sw/.style = {},
-    square/north/.style = {-&gt;},
-    square/south/.style = {-&gt;},
-    square/west/.style = {-&gt;},
-    square/east/.style = {-&gt;},
+    square/north/.style = {->},
+    square/south/.style = {->},
+    square/west/.style = {->},
+    square/east/.style = {->},
     square/north/node/.style = {above},
     square/south/node/.style = {below},
     square/west/node/.style = {left},
@@ -1830,121 +1932,167 @@ hash="76186827dc6d280886c759cf567f11eb"><fr:embedded-tex-preamble>
     \end{tikzpicture}
   }
   \ExplSyntaxOff
- 
-      </fr:embedded-tex-preamble><fr:embedded-tex-body>
-             \begin {tikzpicture}[diagram]
-               \SpliceDiagramSquare {
+
+      ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+            \begin {tikzpicture}[diagram]
+              \SpliceDiagramSquare {
                 nw = A',
                 nw/style = pullback,
                 sw = A,
                 ne = B',
                 se = B,
-                north =  \varepsilon _{ \mathsf { Img } (f)},
-                east =  \mathsf { Img } (f),
-                east/style = {&gt;-&gt;},
+                north = \varepsilon _{\mathsf {Img}(f)},
+                east = \mathsf {Img}(f),
+                east/style = {>->},
                 south = f,
               }
-               \draw  [-&gt;,morphism,exists] (sw) to node[desc] {$ \vartheta _{f}$} (ne);
-             \end {tikzpicture}
-          </fr:embedded-tex-body></fr:embedded-tex>
+              \draw  [->,morphism,exists] (sw) to node[desc] {$\vartheta _{f}$} (ne);
+            \end {tikzpicture}
+          ]]></fr:embedded-tex-body></fr:embedded-tex>
     
   
         </html:td>
 
         
   <html:td>
-          <fr:p>Let <fr:tex>f \colon A \rightarrowtail B</fr:tex> be an object in <fr:tex>\mathsf { Sub } (B)</fr:tex>. Then the identity morphism <fr:tex>\mathsf {id} _{f} \colon f \to f</fr:tex> corresponds to a unique morphism <fr:tex>s \colon \mathsf {id} _{ A } \to f ^{*} (f)</fr:tex> by the universal property of pullbacks.</fr:p>
-          <fr:p>This morphism corresponds to a unique morphism <fr:tex>\exists _{f}( \mathsf {id} _{ A } )  \to  f</fr:tex> under the adjunction <fr:tex>\exists _{f}  \dashv   f ^{*}</fr:tex>, which we take as the component of <fr:tex>\zeta</fr:tex> at <fr:tex>f</fr:tex>.</fr:p>
+          <fr:p>Let <fr:tex
+display="inline"><![CDATA[f\colon A\rightarrowtail B]]></fr:tex> be an object in <fr:tex
+display="inline"><![CDATA[\mathsf {Sub}(B)]]></fr:tex>. Then the identity morphism <fr:tex
+display="inline"><![CDATA[\mathsf {id}_{f}\colon f\to f]]></fr:tex> corresponds to a unique morphism <fr:tex
+display="inline"><![CDATA[s\colon \mathsf {id}_{A}\to f^{*}(f)]]></fr:tex> by the universal property of pullbacks.</fr:p>
+          <fr:p>This morphism corresponds to a unique morphism <fr:tex
+display="inline"><![CDATA[\exists _{f}(\mathsf {id}_{A}) \to  f]]></fr:tex> under the adjunction <fr:tex
+display="inline"><![CDATA[\exists _{f} \dashv  f^{*}]]></fr:tex>, which we take as the component of <fr:tex
+display="inline"><![CDATA[\zeta ]]></fr:tex> at <fr:tex
+display="inline"><![CDATA[f]]></fr:tex>.</fr:p>
         </html:td>
 
       </html:tr>
 
     </html:table>
-</fr:mainmatter></fr:tree>
+</fr:mainmatter><fr:backmatter /></fr:tree>
   
   <fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
 numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>300</fr:anchor><fr:taxon>Only if</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>2</fr:day></fr:date><fr:parent>ct-000L</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>If <fr:tex>\mathcal { C }</fr:tex> has images, then we may define <fr:tex>\exists _{f} \colon \mathsf { Sub } (A) \to \mathsf { Sub } (B)</fr:tex> as the following composite:</fr:p><fr:tex
-display="block">        \mathsf { Sub } (A)  \hookrightarrow   {{ \mathcal { C } }_{/{ A }}}   \xrightarrow { \Sigma _{f} }   {{ \mathcal { C } }_{/{ B }}}   \xrightarrow { \mathsf { Img } }   \mathsf { Sub } (B)     </fr:tex><fr:p>Let <fr:tex>i_{A} \colon \mathsf { Sub } (A) \hookrightarrow {{ \mathcal { C } }_{/{ A }}}</fr:tex> and <fr:tex>i_{B} \colon \mathsf { Sub } (B) \hookrightarrow {{ \mathcal { C } }_{/{ B }}}</fr:tex> be the inclusion functors. Note that</fr:p><fr:tex
-display="block">        \mathsf { Img } \Sigma _{f}  \dashv   f ^{*} i_{B}     </fr:tex><fr:p>Since <fr:tex>f ^{*} i_{B}  \cong  i_{A} f ^{*}</fr:tex> by construction, we have</fr:p><fr:tex
-display="block">        \mathsf { Img } \Sigma _{f}  \dashv  i_{A} f ^{*}      </fr:tex><fr:p>Let <fr:tex>\eta</fr:tex> and <fr:tex>\varepsilon</fr:tex> be the unit and counit of this adjunction respectively. Since <fr:tex>\mathsf { Sub } (A)</fr:tex> is a full subcategory of <fr:tex>{{ \mathcal { C } }_{/{ A }}}</fr:tex>, there is a natural isomorphism <fr:tex>\iota \colon \mathsf {id} _{ {{ \mathcal { C } }_{/{ A }}} } \stackrel { \sim }{ \smash { \longrightarrow } \rule {0pt}{0.4ex}} i_{A}</fr:tex>. Then we can define <fr:tex>\eta '</fr:tex> as follows:</fr:p><fr:tex
-display="block">        \eta ' :=  \mathsf {id} _{ {{ \mathcal { C } }_{/{ A }}} }   \xrightarrow { \eta }  i_{A} f ^{*} \mathsf { Img } \Sigma _{f}        \xrightarrow { \iota _{ f ^{*} \mathsf { Img } \Sigma _{f}} }   f ^{*} \mathsf { Img } \Sigma _{f}        \xrightarrow { f ^{*} \mathsf { Img } \Sigma _{f}( \iota ) }   f ^{*} \mathsf { Img } \Sigma _{f}i_{A}     </fr:tex><fr:p>Then <fr:tex>\eta '</fr:tex> and <fr:tex>\varepsilon</fr:tex> form the unit and counit of the adjunction <fr:tex>\mathsf { Img } \Sigma _{f}i_{A}  \dashv   f ^{*}</fr:tex>.</fr:p></fr:mainmatter></fr:tree>
-</fr:mainmatter></fr:tree>
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>373</fr:anchor><fr:addr
+type="machine">#268</fr:addr><fr:route>unstable-268.xml</fr:route><fr:taxon>Only if</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>2</fr:day></fr:date><fr:authors /><fr:parent>ct-000L</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>If <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> has images, then we may define <fr:tex
+display="inline"><![CDATA[\exists _{f}\colon \mathsf {Sub}(A)\to \mathsf {Sub}(B)]]></fr:tex> as the following composite:</fr:p><fr:tex
+display="block"><![CDATA[       \mathsf {Sub}(A) \hookrightarrow  {{\mathcal {C}}_{/{A}}} \xrightarrow {\Sigma _{f}} {{\mathcal {C}}_{/{B}}} \xrightarrow {\mathsf {Img}} \mathsf {Sub}(B)     ]]></fr:tex><fr:p>Let <fr:tex
+display="inline"><![CDATA[i_{A}\colon \mathsf {Sub}(A)\hookrightarrow {{\mathcal {C}}_{/{A}}}]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[i_{B}\colon \mathsf {Sub}(B)\hookrightarrow {{\mathcal {C}}_{/{B}}}]]></fr:tex> be the inclusion functors. Note that</fr:p><fr:tex
+display="block"><![CDATA[       \mathsf {Img}\Sigma _{f} \dashv  f^{*}i_{B}     ]]></fr:tex><fr:p>Since <fr:tex
+display="inline"><![CDATA[f^{*}i_{B} \cong  i_{A}f^{*}]]></fr:tex> by construction, we have</fr:p><fr:tex
+display="block"><![CDATA[       \mathsf {Img}\Sigma _{f} \dashv  i_{A}f^{*}     ]]></fr:tex><fr:p>Let <fr:tex
+display="inline"><![CDATA[\eta ]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[\varepsilon ]]></fr:tex> be the unit and counit of this adjunction respectively. Since <fr:tex
+display="inline"><![CDATA[\mathsf {Sub}(A)]]></fr:tex> is a full subcategory of <fr:tex
+display="inline"><![CDATA[{{\mathcal {C}}_{/{A}}}]]></fr:tex>, there is a natural isomorphism <fr:tex
+display="inline"><![CDATA[\iota \colon \mathsf {id}_{{{\mathcal {C}}_{/{A}}}}\stackrel {\sim }{\smash {\longrightarrow }\rule {0pt}{0.4ex}}i_{A}]]></fr:tex>. Then we can define <fr:tex
+display="inline"><![CDATA[\eta ']]></fr:tex> as follows:</fr:p><fr:tex
+display="block"><![CDATA[       \eta ' := \mathsf {id}_{{{\mathcal {C}}_{/{A}}}} \xrightarrow {\eta } i_{A}f^{*}\mathsf {Img}\Sigma _{f}       \xrightarrow {\iota _{f^{*}\mathsf {Img}\Sigma _{f}}} f^{*}\mathsf {Img}\Sigma _{f}       \xrightarrow {f^{*}\mathsf {Img}\Sigma _{f}(\iota )} f^{*}\mathsf {Img}\Sigma _{f}i_{A}     ]]></fr:tex><fr:p>Then <fr:tex
+display="inline"><![CDATA[\eta ']]></fr:tex> and <fr:tex
+display="inline"><![CDATA[\varepsilon ]]></fr:tex> form the unit and counit of the adjunction <fr:tex
+display="inline"><![CDATA[\mathsf {Img}\Sigma _{f}i_{A} \dashv  f^{*}]]></fr:tex>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree>
+</fr:mainmatter><fr:backmatter /></fr:tree>
     
-  </fr:mainmatter></fr:tree><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+  </fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
 toc="true"
 numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>304</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>ct-000Q</fr:addr><fr:route>ct-000Q.xml</fr:route><fr:title><fr:link
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>374</fr:anchor><fr:addr
+type="user">ct-000Q</fr:addr><fr:route>ct-000Q.xml</fr:route><fr:title
+text="Cover-mono factorization"><fr:link
+type="local"
 href="ct-000M.xml"
+addr="ct-000M"
+title="Extremal epimorphism">Cover</fr:link>-mono factorization</fr:title><fr:taxon>Lemma</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>4</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> be a category with <fr:link
 type="local"
-addr="ct-000M">Cover</fr:link>-mono factorization</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>4</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>\mathcal { C }</fr:tex> be a category with <fr:link
 href="ct-000K.xml"
-type="local"
-addr="ct-000K">images</fr:link> and equalizers. Then every morphism of <fr:tex>\mathcal { C }</fr:tex> can be factored as a cover followed by a monomorphism. Moreover, this factorization is unique up to isomorphism in the sense that if <fr:tex>A  \twoheadrightarrow  C  \rightarrowtail  B</fr:tex> and <fr:tex>A  \twoheadrightarrow  C'  \rightarrowtail  B</fr:tex> are both cover-mono factorizations of the same morphism, then <fr:tex>C  \cong  C'</fr:tex>.</fr:p>
+addr="ct-000K"
+title="Image">images</fr:link> and equalizers. Then every morphism of <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> can be factored as a cover followed by a monomorphism. Moreover, this factorization is unique up to isomorphism in the sense that if <fr:tex
+display="inline"><![CDATA[A \twoheadrightarrow  C \rightarrowtail  B]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[A \twoheadrightarrow  C' \rightarrowtail  B]]></fr:tex> are both cover-mono factorizations of the same morphism, then <fr:tex
+display="inline"><![CDATA[C \cong  C']]></fr:tex>.</fr:p>
     
       
       <fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="false"
 numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>303</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>4</fr:day></fr:date><fr:parent>ct-000Q</fr:parent></fr:frontmatter><fr:mainmatter>
-  <fr:p>By the construction of images, every morphism <fr:tex>f \colon A \to B</fr:tex> can be factored as <fr:tex>\mathsf { Img } (f) \vartheta _{f}</fr:tex>, where <fr:tex>\vartheta</fr:tex> is the unit of the image adjunction. <fr:tex>\mathsf { Img } (f)</fr:tex> is monic by construction and <fr:tex>\vartheta _{f}</fr:tex> is a cover by <fr:ref
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>375</fr:anchor><fr:addr
+type="machine">#261</fr:addr><fr:route>unstable-261.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>4</fr:day></fr:date><fr:authors /><fr:parent>ct-000Q</fr:parent></fr:frontmatter><fr:mainmatter>
+  <fr:p>By the construction of images, every morphism <fr:tex
+display="inline"><![CDATA[f\colon A\to B]]></fr:tex> can be factored as <fr:tex
+display="inline"><![CDATA[\mathsf {Img}(f)\vartheta _{f}]]></fr:tex>, where <fr:tex
+display="inline"><![CDATA[\vartheta ]]></fr:tex> is the unit of the image adjunction. <fr:tex
+display="inline"><![CDATA[\mathsf {Img}(f)]]></fr:tex> is monic by construction and <fr:tex
+display="inline"><![CDATA[\vartheta _{f}]]></fr:tex> is a cover by <fr:ref
 addr="ct-000N"
 href="ct-000N.xml"
-taxon="Lemma"></fr:ref>.</fr:p>
+taxon="Lemma" />.</fr:p>
 
-  <fr:p>
-    To show the second half of the lemma, it suffices to show that every cover-mono factorization of a morphism <fr:tex>f</fr:tex> is isomorphic to <fr:tex>\mathsf { Img } (f) \vartheta _{f}</fr:tex>. Let <fr:tex>hg</fr:tex> be a cover-mono factorization of <fr:tex>f</fr:tex>. Then by the universal property of adjunction, there is a morphism <fr:tex>s</fr:tex> in <fr:tex>\mathsf { Sub } (B)</fr:tex> such that <fr:tex>s \vartheta _{f} = g</fr:tex>. By the definition of <fr:tex>\mathsf { Sub } (B)</fr:tex>, we also have <fr:tex>hs =  \mathsf { Img } (f)</fr:tex>. Then, it follows that <fr:tex>s</fr:tex> is monic.
-  </fr:p>
+  <fr:p>To show the second half of the lemma, it suffices to show that every cover-mono factorization of a morphism <fr:tex
+display="inline"><![CDATA[f]]></fr:tex> is isomorphic to <fr:tex
+display="inline"><![CDATA[\mathsf {Img}(f)\vartheta _{f}]]></fr:tex>. Let <fr:tex
+display="inline"><![CDATA[hg]]></fr:tex> be a cover-mono factorization of <fr:tex
+display="inline"><![CDATA[f]]></fr:tex>. Then by the universal property of adjunction, there is a morphism <fr:tex
+display="inline"><![CDATA[s]]></fr:tex> in <fr:tex
+display="inline"><![CDATA[\mathsf {Sub}(B)]]></fr:tex> such that <fr:tex
+display="inline"><![CDATA[s\vartheta _{f} = g]]></fr:tex>. By the definition of <fr:tex
+display="inline"><![CDATA[\mathsf {Sub}(B)]]></fr:tex>, we also have <fr:tex
+display="inline"><![CDATA[hs = \mathsf {Img}(f)]]></fr:tex>. Then, it follows that <fr:tex
+display="inline"><![CDATA[s]]></fr:tex> is monic.</fr:p>
   
     
       
       <fr:embedded-tex
-hash="040654bfa5875df58a00300f1f6b3d82"><fr:embedded-tex-preamble>
-         
-   \RequirePackage {tikz}
-   \RequirePackage {amsmath}
-   \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
+hash="73a844f0751de2785bed455220880376"><fr:embedded-tex-preamble><![CDATA[
+        
+  \RequirePackage {tikz}
+  \RequirePackage {amsmath}
+  \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
 
-   \definecolor {catccolor}{RGB}{255,244,138}
-   \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
-   \tikzstyle {catc}=[catccolor!60]
-   \tikzstyle {catd}=[orange!40]
-   \tikzstyle {cate}=[red!40]
-   \tikzstyle {catf}=[blue!10]
-   \tikzstyle {catg}=[green!25]
+  \definecolor {catccolor}{RGB}{255,244,138}
+  \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
+  \tikzstyle {catc}=[catccolor!60]
+  \tikzstyle {catd}=[orange!40]
+  \tikzstyle {cate}=[red!40]
+  \tikzstyle {catf}=[blue!10]
+  \tikzstyle {catg}=[green!25]
 
 
-   \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
-   \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
+  \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
+  \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
 
-   \NewDocumentCommand \CreateRect {D&lt;&gt;{} m m}{
-     \path 
+  \NewDocumentCommand \CreateRect {D<>{} m m}{
+    \path 
       coordinate (#1nw)
       ++(#2,-#3) coordinate (#1se)
       coordinate (#1sw) at (#1se -| #1nw)
       coordinate (#1ne) at (#1nw -| #1se)
     ;
 
-     \path [spath/save = #1north] (#1nw) to (#1ne);
-     \path [spath/save = #1west] (#1nw) to (#1sw);
-     \path [spath/save = #1east] (#1ne) to (#1se);
-     \path [spath/save = #1south] (#1sw) to (#1se);
+    \path [spath/save = #1north] (#1nw) to (#1ne);
+    \path [spath/save = #1west] (#1nw) to (#1sw);
+    \path [spath/save = #1east] (#1ne) to (#1se);
+    \path [spath/save = #1south] (#1sw) to (#1se);
   }
- 
-         
+
+        
    % appears to be necessary
   \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd}
   \usetikzlibrary{matrix,arrows}
@@ -2013,7 +2161,7 @@ hash="040654bfa5875df58a00300f1f6b3d82"><fr:embedded-tex-preamble>
       densely dashed
     },
     embedding/.style = {
-      {right hook}-&gt;
+      {right hook}->
     },
     cover/.style = {
       -{Triangle[open]}
@@ -2045,10 +2193,10 @@ hash="040654bfa5875df58a00300f1f6b3d82"><fr:embedded-tex-preamble>
     square/ne/.style = {},
     square/se/.style = {},
     square/sw/.style = {},
-    square/north/.style = {-&gt;},
-    square/south/.style = {-&gt;},
-    square/west/.style = {-&gt;},
-    square/east/.style = {-&gt;},
+    square/north/.style = {->},
+    square/south/.style = {->},
+    square/west/.style = {->},
+    square/east/.style = {->},
     square/north/node/.style = {above},
     square/south/node/.style = {below},
     square/west/node/.style = {left},
@@ -2127,81 +2275,87 @@ hash="040654bfa5875df58a00300f1f6b3d82"><fr:embedded-tex-preamble>
     \end{tikzpicture}
   }
   \ExplSyntaxOff
- 
-      </fr:embedded-tex-preamble><fr:embedded-tex-body>
+
+      ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
     
-     \begin {tikzpicture}[diagram,node distance = 3cm]
-       \node  (1) {$A$};
-       \node  [right = of 1] (2) {$B$};
-       \node  [below =  1.5cm  of 1] (1') {};
-       \node  [below =  1.5cm  of 2] (2') {};
-       \node  [between = 1' and 2'] (3) {$ \underline {A}$};
-       \node  [below =  1.5cm  of 3] (4) {$C$};
-       \draw  [-&gt;,morphism] (1) to node {$f$} (2);
-       \draw  [cover,morphism] (1) to node[desc] {$ \vartheta _{f}$} (3);
-       \draw  [cover,morphism,bend right] (1) to node[swap] {$g$} (4);
-       \draw  [&gt;-&gt;,morphism] (3) to node[desc] {$ \mathsf { Img } (f)$} (2);
-       \draw  [&gt;-&gt;,morphism,bend right] (4) to node[swap] {$h$} (2);
-       \draw  [&gt;-&gt;,morphism] (3) to node[desc] {$s$} (4);
-     \end {tikzpicture}
-  </fr:embedded-tex-body></fr:embedded-tex>
+    \begin {tikzpicture}[diagram,node distance = 3cm]
+      \node  (1) {$A$};
+      \node  [right = of 1] (2) {$B$};
+      \node  [below = 1.5cm of 1] (1') {};
+      \node  [below = 1.5cm of 2] (2') {};
+      \node  [between = 1' and 2'] (3) {$\underline {A}$};
+      \node  [below = 1.5cm of 3] (4) {$C$};
+      \draw  [->,morphism] (1) to node {$f$} (2);
+      \draw  [cover,morphism] (1) to node[desc] {$\vartheta _{f}$} (3);
+      \draw  [cover,morphism,bend right] (1) to node[swap] {$g$} (4);
+      \draw  [>->,morphism] (3) to node[desc] {$\mathsf {Img}(f)$} (2);
+      \draw  [>->,morphism,bend right] (4) to node[swap] {$h$} (2);
+      \draw  [>->,morphism] (3) to node[desc] {$s$} (4);
+    \end {tikzpicture}
+  ]]></fr:embedded-tex-body></fr:embedded-tex>
     
   
-  <fr:p>
-    Since <fr:tex>g</fr:tex> is extremal, <fr:tex>s</fr:tex> must be an isomorphism.
-  </fr:p>
-</fr:mainmatter></fr:tree>
+  <fr:p>Since <fr:tex
+display="inline"><![CDATA[g]]></fr:tex> is extremal, <fr:tex
+display="inline"><![CDATA[s]]></fr:tex> must be an isomorphism.</fr:p>
+</fr:mainmatter><fr:backmatter /></fr:tree>
     
-  </fr:mainmatter></fr:tree><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+  </fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
 toc="true"
 numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>308</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>ct-000P</fr:addr><fr:route>ct-000P.xml</fr:route><fr:title>Equivalent condition for <fr:link
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>376</fr:anchor><fr:addr
+type="user">ct-000P</fr:addr><fr:route>ct-000P.xml</fr:route><fr:title
+text="Equivalent condition for regular categories">Equivalent condition for <fr:link
+type="local"
 href="ct-000O.xml"
+addr="ct-000O"
+title="Regular category">regular categories</fr:link></fr:title><fr:taxon>Lemma</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>3</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>A category <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> is regular iff it is cartesian and has <fr:link
 type="local"
-addr="ct-000O">regular categories</fr:link></fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>3</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>A category <fr:tex>\mathcal { C }</fr:tex> is regular iff it is cartesian and has <fr:link
 href="ct-000K.xml"
-type="local"
-addr="ct-000K">images</fr:link> that commute with pullbacks, i.e., the following diagram commutes up to isomorphism for any object <fr:tex>f  \in   {{ \mathcal { C } }_{/{ B }}}</fr:tex>.</fr:p>
+addr="ct-000K"
+title="Image">images</fr:link> that commute with pullbacks, i.e., the following diagram commutes up to isomorphism for any object <fr:tex
+display="inline"><![CDATA[f \in  {{\mathcal {C}}_{/{B}}}]]></fr:tex>.</fr:p>
     
       
       <fr:embedded-tex
-hash="5a24ff2f37ff6671a5811418a69124d3"><fr:embedded-tex-preamble>
-         
-   \RequirePackage {tikz}
-   \RequirePackage {amsmath}
-   \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
+hash="63cf880e0981aa86486b403a0e4ec7f4"><fr:embedded-tex-preamble><![CDATA[
+        
+  \RequirePackage {tikz}
+  \RequirePackage {amsmath}
+  \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
 
-   \definecolor {catccolor}{RGB}{255,244,138}
-   \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
-   \tikzstyle {catc}=[catccolor!60]
-   \tikzstyle {catd}=[orange!40]
-   \tikzstyle {cate}=[red!40]
-   \tikzstyle {catf}=[blue!10]
-   \tikzstyle {catg}=[green!25]
+  \definecolor {catccolor}{RGB}{255,244,138}
+  \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
+  \tikzstyle {catc}=[catccolor!60]
+  \tikzstyle {catd}=[orange!40]
+  \tikzstyle {cate}=[red!40]
+  \tikzstyle {catf}=[blue!10]
+  \tikzstyle {catg}=[green!25]
 
 
-   \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
-   \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
+  \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
+  \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
 
-   \NewDocumentCommand \CreateRect {D&lt;&gt;{} m m}{
-     \path 
+  \NewDocumentCommand \CreateRect {D<>{} m m}{
+    \path 
       coordinate (#1nw)
       ++(#2,-#3) coordinate (#1se)
       coordinate (#1sw) at (#1se -| #1nw)
       coordinate (#1ne) at (#1nw -| #1se)
     ;
 
-     \path [spath/save = #1north] (#1nw) to (#1ne);
-     \path [spath/save = #1west] (#1nw) to (#1sw);
-     \path [spath/save = #1east] (#1ne) to (#1se);
-     \path [spath/save = #1south] (#1sw) to (#1se);
+    \path [spath/save = #1north] (#1nw) to (#1ne);
+    \path [spath/save = #1west] (#1nw) to (#1sw);
+    \path [spath/save = #1east] (#1ne) to (#1se);
+    \path [spath/save = #1south] (#1sw) to (#1se);
   }
- 
-         
+
+        
    % appears to be necessary
   \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd}
   \usetikzlibrary{matrix,arrows}
@@ -2270,7 +2424,7 @@ hash="5a24ff2f37ff6671a5811418a69124d3"><fr:embedded-tex-preamble>
       densely dashed
     },
     embedding/.style = {
-      {right hook}-&gt;
+      {right hook}->
     },
     cover/.style = {
       -{Triangle[open]}
@@ -2302,10 +2456,10 @@ hash="5a24ff2f37ff6671a5811418a69124d3"><fr:embedded-tex-preamble>
     square/ne/.style = {},
     square/se/.style = {},
     square/sw/.style = {},
-    square/north/.style = {-&gt;},
-    square/south/.style = {-&gt;},
-    square/west/.style = {-&gt;},
-    square/east/.style = {-&gt;},
+    square/north/.style = {->},
+    square/south/.style = {->},
+    square/west/.style = {->},
+    square/east/.style = {->},
     square/north/node/.style = {above},
     square/south/node/.style = {below},
     square/west/node/.style = {left},
@@ -2384,80 +2538,84 @@ hash="5a24ff2f37ff6671a5811418a69124d3"><fr:embedded-tex-preamble>
     \end{tikzpicture}
   }
   \ExplSyntaxOff
- 
-      </fr:embedded-tex-preamble><fr:embedded-tex-body>
-   \DiagramSquare {
-    nw =  {{ \mathcal { C } }_{/{ B }}} ,
-    sw =  {{ \mathcal { C } }_{/{ A }}} ,
-    ne =  \mathsf { Sub } (B),
-    se =  \mathsf { Sub } (A),
-    north =  \mathsf { Img } ,
-    south =  \mathsf { Img } ,
-    west =  f ^{*} ,
-    east =  f ^{*} ,
+
+      ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+  \DiagramSquare {
+    nw = {{\mathcal {C}}_{/{B}}},
+    sw = {{\mathcal {C}}_{/{A}}},
+    ne = \mathsf {Sub}(B),
+    se = \mathsf {Sub}(A),
+    north = \mathsf {Img},
+    south = \mathsf {Img},
+    west = f^{*},
+    east = f^{*},
   }
-</fr:embedded-tex-body></fr:embedded-tex>
+]]></fr:embedded-tex-body></fr:embedded-tex>
     
   
     
       
       <fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="false"
 numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>307</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>3</fr:day></fr:date><fr:parent>ct-000P</fr:parent></fr:frontmatter><fr:mainmatter>
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>377</fr:anchor><fr:addr
+type="machine">#264</fr:addr><fr:route>unstable-264.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>3</fr:day></fr:date><fr:authors /><fr:parent>ct-000P</fr:parent></fr:frontmatter><fr:mainmatter>
   <fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
 numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>305</fr:anchor><fr:taxon>If</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>3</fr:day></fr:date><fr:parent>ct-000P</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-      Suppose that <fr:tex>\mathcal { C }</fr:tex> is a cartesian category with images that commute with pullbacks.
-      Let <fr:tex>f \colon A \to B</fr:tex> be a morphism and <fr:tex>g \colon B' \twoheadrightarrow B</fr:tex> be a cover.
-      Then note that <fr:tex>\mathsf { Img } (g)</fr:tex> is an isomorphism.
-      Since images commute with pullbacks by hypothesis, we can form the following diagram.
-    </fr:p>
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>378</fr:anchor><fr:addr
+type="machine">#262</fr:addr><fr:route>unstable-262.xml</fr:route><fr:taxon>If</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>3</fr:day></fr:date><fr:authors /><fr:parent>ct-000P</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Suppose that <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> is a cartesian category with images that commute with pullbacks.
+      Let <fr:tex
+display="inline"><![CDATA[f\colon A\to B]]></fr:tex> be a morphism and <fr:tex
+display="inline"><![CDATA[g\colon B'\twoheadrightarrow B]]></fr:tex> be a cover.
+      Then note that <fr:tex
+display="inline"><![CDATA[\mathsf {Img}(g)]]></fr:tex> is an isomorphism.
+      Since images commute with pullbacks by hypothesis, we can form the following diagram.</fr:p>
     
       
       <fr:embedded-tex
-hash="cdcfe80256dfd199e59443603346ef3f"><fr:embedded-tex-preamble>
-         
-   \RequirePackage {tikz}
-   \RequirePackage {amsmath}
-   \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
+hash="8e8d4318615b483f566429a038a77ca2"><fr:embedded-tex-preamble><![CDATA[
+        
+  \RequirePackage {tikz}
+  \RequirePackage {amsmath}
+  \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
 
-   \definecolor {catccolor}{RGB}{255,244,138}
-   \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
-   \tikzstyle {catc}=[catccolor!60]
-   \tikzstyle {catd}=[orange!40]
-   \tikzstyle {cate}=[red!40]
-   \tikzstyle {catf}=[blue!10]
-   \tikzstyle {catg}=[green!25]
+  \definecolor {catccolor}{RGB}{255,244,138}
+  \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
+  \tikzstyle {catc}=[catccolor!60]
+  \tikzstyle {catd}=[orange!40]
+  \tikzstyle {cate}=[red!40]
+  \tikzstyle {catf}=[blue!10]
+  \tikzstyle {catg}=[green!25]
 
 
-   \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
-   \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
+  \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
+  \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
 
-   \NewDocumentCommand \CreateRect {D&lt;&gt;{} m m}{
-     \path 
+  \NewDocumentCommand \CreateRect {D<>{} m m}{
+    \path 
       coordinate (#1nw)
       ++(#2,-#3) coordinate (#1se)
       coordinate (#1sw) at (#1se -| #1nw)
       coordinate (#1ne) at (#1nw -| #1se)
     ;
 
-     \path [spath/save = #1north] (#1nw) to (#1ne);
-     \path [spath/save = #1west] (#1nw) to (#1sw);
-     \path [spath/save = #1east] (#1ne) to (#1se);
-     \path [spath/save = #1south] (#1sw) to (#1se);
+    \path [spath/save = #1north] (#1nw) to (#1ne);
+    \path [spath/save = #1west] (#1nw) to (#1sw);
+    \path [spath/save = #1east] (#1ne) to (#1se);
+    \path [spath/save = #1south] (#1sw) to (#1se);
   }
- 
-         
+
+        
    % appears to be necessary
   \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd}
   \usetikzlibrary{matrix,arrows}
@@ -2526,7 +2684,7 @@ hash="cdcfe80256dfd199e59443603346ef3f"><fr:embedded-tex-preamble>
       densely dashed
     },
     embedding/.style = {
-      {right hook}-&gt;
+      {right hook}->
     },
     cover/.style = {
       -{Triangle[open]}
@@ -2558,10 +2716,10 @@ hash="cdcfe80256dfd199e59443603346ef3f"><fr:embedded-tex-preamble>
     square/ne/.style = {},
     square/se/.style = {},
     square/sw/.style = {},
-    square/north/.style = {-&gt;},
-    square/south/.style = {-&gt;},
-    square/west/.style = {-&gt;},
-    square/east/.style = {-&gt;},
+    square/north/.style = {->},
+    square/south/.style = {->},
+    square/west/.style = {->},
+    square/east/.style = {->},
     square/north/node/.style = {above},
     square/south/node/.style = {below},
     square/west/node/.style = {left},
@@ -2640,90 +2798,104 @@ hash="cdcfe80256dfd199e59443603346ef3f"><fr:embedded-tex-preamble>
     \end{tikzpicture}
   }
   \ExplSyntaxOff
- 
-      </fr:embedded-tex-preamble><fr:embedded-tex-body>
-       \begin {tikzpicture}[diagram]
-         \node  (1) {$A'$};
-         \node  [below right = of 1] (3) {$A$};
-         \node  [above right = of 3] (2) {$ \underline {A'}$};
-         \node  [below right = of 2] (4) {$A''$};
-         \draw  [-&gt;,morphism] (1) to node[swap] {$ f ^{*} (g)$} (3);
-         \draw  [cover,morphism] (1) to node {$ \vartheta _{ f ^{*} (g)}$} (2);
-         \draw  [&gt;-&gt;,morphism] (2) to node[desc] {$ \mathsf { Img } ( f ^{*} (g))$} (3);
-         \draw  [-&gt;,morphism] (2) to node[desc] {$ \cong $} (4);
-         \draw  [&gt;-&gt;,morphism] (4) to node {$ f ^{*} ( \mathsf { Img } (g))$} (3);
-       \end {tikzpicture}
-    </fr:embedded-tex-body></fr:embedded-tex>
+
+      ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+      \begin {tikzpicture}[diagram]
+        \node  (1) {$A'$};
+        \node  [below right = of 1] (3) {$A$};
+        \node  [above right = of 3] (2) {$\underline {A'}$};
+        \node  [below right = of 2] (4) {$A''$};
+        \draw  [->,morphism] (1) to node[swap] {$f^{*}(g)$} (3);
+        \draw  [cover,morphism] (1) to node {$\vartheta _{f^{*}(g)}$} (2);
+        \draw  [>->,morphism] (2) to node[desc] {$\mathsf {Img}(f^{*}(g))$} (3);
+        \draw  [->,morphism] (2) to node[desc] {$\cong $} (4);
+        \draw  [>->,morphism] (4) to node {$f^{*}(\mathsf {Img}(g))$} (3);
+      \end {tikzpicture}
+    ]]></fr:embedded-tex-body></fr:embedded-tex>
     
-  <fr:p>
-      Since isomorphisms are stable under pullback, <fr:tex>f ^{*} ( \mathsf { Img } (g))</fr:tex> is also an isomorphism.
-      Thus, <fr:tex>\mathsf { Img } ( f ^{*} (g))</fr:tex> is an isomorphism.
-      Then since <fr:tex>f ^{*} (g)</fr:tex> is the composite of two covers, it is itself a cover.
-    </fr:p></fr:mainmatter></fr:tree>
+  <fr:p>Since isomorphisms are stable under pullback, <fr:tex
+display="inline"><![CDATA[f^{*}(\mathsf {Img}(g))]]></fr:tex> is also an isomorphism.
+      Thus, <fr:tex
+display="inline"><![CDATA[\mathsf {Img}(f^{*}(g))]]></fr:tex> is an isomorphism.
+      Then since <fr:tex
+display="inline"><![CDATA[f^{*}(g)]]></fr:tex> is the composite of two covers, it is itself a cover.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree>
   
   <fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
 numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>306</fr:anchor><fr:taxon>Only if</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>3</fr:day></fr:date><fr:parent>ct-000P</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>
-      If <fr:tex>\mathcal { C }</fr:tex> is regular, then by <fr:ref
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>379</fr:anchor><fr:addr
+type="machine">#263</fr:addr><fr:route>unstable-263.xml</fr:route><fr:taxon>Only if</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>3</fr:day></fr:date><fr:authors /><fr:parent>ct-000P</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>If <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> is regular, then by <fr:ref
 addr="ct-000N"
 href="ct-000N.xml"
-taxon="Lemma"></fr:ref>, the unit <fr:tex>\vartheta \colon \mathsf {id} \to \mathsf { Img }</fr:tex> consists of <fr:link
-href="ct-000M.xml"
+taxon="Lemma" />, the unit <fr:tex
+display="inline"><![CDATA[\vartheta \colon \mathsf {id}\to \mathsf {Img}]]></fr:tex> consists of <fr:link
 type="local"
-addr="ct-000M">covers</fr:link>.
-      Let <fr:tex>f \colon A \to B</fr:tex> be any morphism in <fr:tex>\mathcal { C }</fr:tex> and <fr:tex>g \colon B' \to B</fr:tex> be an object in <fr:tex>{{ \mathcal { C } }_{/{ B }}}</fr:tex>.
+href="ct-000M.xml"
+addr="ct-000M"
+title="Extremal epimorphism">covers</fr:link>.
+      Let <fr:tex
+display="inline"><![CDATA[f\colon A\to B]]></fr:tex> be any morphism in <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[g\colon B'\to B]]></fr:tex> be an object in <fr:tex
+display="inline"><![CDATA[{{\mathcal {C}}_{/{B}}}]]></fr:tex>.
       By <fr:ref
 addr="ct-000Q"
 href="ct-000Q.xml"
-taxon="Lemma"></fr:ref>, <fr:tex>g</fr:tex> can be factored as <fr:tex>\vartheta _{g} \mathsf { Img } (g)</fr:tex>.
+taxon="Lemma" />, <fr:tex
+display="inline"><![CDATA[g]]></fr:tex> can be factored as <fr:tex
+display="inline"><![CDATA[\vartheta _{g}\mathsf {Img}(g)]]></fr:tex>.
       Form the following pullbacks.
-      Note that since covers are stable under pullback by hypothesis, <fr:tex>\widehat { \vartheta _{g}}</fr:tex> is also a cover.
+      Note that since covers are stable under pullback by hypothesis, <fr:tex
+display="inline"><![CDATA[\widehat {\vartheta _{g}}]]></fr:tex> is also a cover.
       Then by the <fr:link
-href="ct-0008.xml"
 type="local"
-addr="ct-0008">pasting lemma</fr:link>, the composite <fr:tex>f ^{*} ( \mathsf { Img } (g))  \circ   \widehat { \vartheta _{g}}</fr:tex> is isomorphic to <fr:tex>f ^{*} (g)</fr:tex> in <fr:tex>{{ \mathcal { C } }_{/{ A }}}</fr:tex>.
-    </fr:p>
+href="ct-0008.xml"
+addr="ct-0008"
+title="Pasting lemma of pullbacks">pasting lemma</fr:link>, the composite <fr:tex
+display="inline"><![CDATA[f^{*}(\mathsf {Img}(g)) \circ  \widehat {\vartheta _{g}}]]></fr:tex> is isomorphic to <fr:tex
+display="inline"><![CDATA[f^{*}(g)]]></fr:tex> in <fr:tex
+display="inline"><![CDATA[{{\mathcal {C}}_{/{A}}}]]></fr:tex>.</fr:p>
     
       
       <fr:embedded-tex
-hash="0c563ca91626e2ed5d209975c5eac497"><fr:embedded-tex-preamble>
-         
-   \RequirePackage {tikz}
-   \RequirePackage {amsmath}
-   \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
+hash="7ce43289f11ab6b5156fc08980af23bf"><fr:embedded-tex-preamble><![CDATA[
+        
+  \RequirePackage {tikz}
+  \RequirePackage {amsmath}
+  \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
 
-   \definecolor {catccolor}{RGB}{255,244,138}
-   \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
-   \tikzstyle {catc}=[catccolor!60]
-   \tikzstyle {catd}=[orange!40]
-   \tikzstyle {cate}=[red!40]
-   \tikzstyle {catf}=[blue!10]
-   \tikzstyle {catg}=[green!25]
+  \definecolor {catccolor}{RGB}{255,244,138}
+  \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
+  \tikzstyle {catc}=[catccolor!60]
+  \tikzstyle {catd}=[orange!40]
+  \tikzstyle {cate}=[red!40]
+  \tikzstyle {catf}=[blue!10]
+  \tikzstyle {catg}=[green!25]
 
 
-   \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
-   \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
+  \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
+  \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
 
-   \NewDocumentCommand \CreateRect {D&lt;&gt;{} m m}{
-     \path 
+  \NewDocumentCommand \CreateRect {D<>{} m m}{
+    \path 
       coordinate (#1nw)
       ++(#2,-#3) coordinate (#1se)
       coordinate (#1sw) at (#1se -| #1nw)
       coordinate (#1ne) at (#1nw -| #1se)
     ;
 
-     \path [spath/save = #1north] (#1nw) to (#1ne);
-     \path [spath/save = #1west] (#1nw) to (#1sw);
-     \path [spath/save = #1east] (#1ne) to (#1se);
-     \path [spath/save = #1south] (#1sw) to (#1se);
+    \path [spath/save = #1north] (#1nw) to (#1ne);
+    \path [spath/save = #1west] (#1nw) to (#1sw);
+    \path [spath/save = #1east] (#1ne) to (#1se);
+    \path [spath/save = #1south] (#1sw) to (#1se);
   }
- 
-         
+
+        
    % appears to be necessary
   \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd}
   \usetikzlibrary{matrix,arrows}
@@ -2792,7 +2964,7 @@ hash="0c563ca91626e2ed5d209975c5eac497"><fr:embedded-tex-preamble>
       densely dashed
     },
     embedding/.style = {
-      {right hook}-&gt;
+      {right hook}->
     },
     cover/.style = {
       -{Triangle[open]}
@@ -2824,10 +2996,10 @@ hash="0c563ca91626e2ed5d209975c5eac497"><fr:embedded-tex-preamble>
     square/ne/.style = {},
     square/se/.style = {},
     square/sw/.style = {},
-    square/north/.style = {-&gt;},
-    square/south/.style = {-&gt;},
-    square/west/.style = {-&gt;},
-    square/east/.style = {-&gt;},
+    square/north/.style = {->},
+    square/south/.style = {->},
+    square/west/.style = {->},
+    square/east/.style = {->},
     square/north/node/.style = {above},
     square/south/node/.style = {below},
     square/west/node/.style = {left},
@@ -2906,68 +3078,67 @@ hash="0c563ca91626e2ed5d209975c5eac497"><fr:embedded-tex-preamble>
     \end{tikzpicture}
   }
   \ExplSyntaxOff
- 
-      </fr:embedded-tex-preamble><fr:embedded-tex-body>
-       \begin {tikzpicture}[diagram]
-         \SpliceDiagramSquare {
+
+      ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+      \begin {tikzpicture}[diagram]
+        \SpliceDiagramSquare {
           nw = C,
           ne = A,
-          sw =  \underline {B'},
+          sw = \underline {B'},
           se = B,
-          north =  f ^{*} ( \mathsf { Img } (g)),
+          north = f^{*}(\mathsf {Img}(g)),
           east = f,
-          south =  \mathsf { Img } (g),
-          north/style = {&gt;-&gt;},
-          south/style = {&gt;-&gt;},
+          south = \mathsf {Img}(g),
+          north/style = {>->},
+          south/style = {>->},
           nw/style = pullback,
         }
-         \node  [left = of nw,pullback] (1) {$D$};
-         \node  [left = of sw] (2) {$B'$};
-         \draw  [cover,morphism] (1) to node {$ \widehat { \vartheta _{g}}$} (nw);
-         \draw  [-&gt;,morphism] (1) to (2);
-         \draw  [cover,morphism] (2) to node[swap] {$ \vartheta _{g}$} (sw);
-       \end {tikzpicture}
-    </fr:embedded-tex-body></fr:embedded-tex>
+        \node  [left = of nw,pullback] (1) {$D$};
+        \node  [left = of sw] (2) {$B'$};
+        \draw  [cover,morphism] (1) to node {$\widehat {\vartheta _{g}}$} (nw);
+        \draw  [->,morphism] (1) to (2);
+        \draw  [cover,morphism] (2) to node[swap] {$\vartheta _{g}$} (sw);
+      \end {tikzpicture}
+    ]]></fr:embedded-tex-body></fr:embedded-tex>
     
-  <fr:p>
-      Thus, <fr:tex>f ^{*} (g)</fr:tex> admits another cover-mono factorization.
-    </fr:p>
+  <fr:p>Thus, <fr:tex
+display="inline"><![CDATA[f^{*}(g)]]></fr:tex> admits another cover-mono factorization.</fr:p>
     
       
       <fr:embedded-tex
-hash="55727559870efcb5f64ca1d90449bd2e"><fr:embedded-tex-preamble>
-         
-   \RequirePackage {tikz}
-   \RequirePackage {amsmath}
-   \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
+hash="0e48db361558ef22d39c6ac8658f0596"><fr:embedded-tex-preamble><![CDATA[
+        
+  \RequirePackage {tikz}
+  \RequirePackage {amsmath}
+  \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
 
-   \definecolor {catccolor}{RGB}{255,244,138}
-   \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
-   \tikzstyle {catc}=[catccolor!60]
-   \tikzstyle {catd}=[orange!40]
-   \tikzstyle {cate}=[red!40]
-   \tikzstyle {catf}=[blue!10]
-   \tikzstyle {catg}=[green!25]
+  \definecolor {catccolor}{RGB}{255,244,138}
+  \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
+  \tikzstyle {catc}=[catccolor!60]
+  \tikzstyle {catd}=[orange!40]
+  \tikzstyle {cate}=[red!40]
+  \tikzstyle {catf}=[blue!10]
+  \tikzstyle {catg}=[green!25]
 
 
-   \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
-   \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
+  \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
+  \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
 
-   \NewDocumentCommand \CreateRect {D&lt;&gt;{} m m}{
-     \path 
+  \NewDocumentCommand \CreateRect {D<>{} m m}{
+    \path 
       coordinate (#1nw)
       ++(#2,-#3) coordinate (#1se)
       coordinate (#1sw) at (#1se -| #1nw)
       coordinate (#1ne) at (#1nw -| #1se)
     ;
 
-     \path [spath/save = #1north] (#1nw) to (#1ne);
-     \path [spath/save = #1west] (#1nw) to (#1sw);
-     \path [spath/save = #1east] (#1ne) to (#1se);
-     \path [spath/save = #1south] (#1sw) to (#1se);
+    \path [spath/save = #1north] (#1nw) to (#1ne);
+    \path [spath/save = #1west] (#1nw) to (#1sw);
+    \path [spath/save = #1east] (#1ne) to (#1se);
+    \path [spath/save = #1south] (#1sw) to (#1se);
   }
- 
-         
+
+        
    % appears to be necessary
   \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd}
   \usetikzlibrary{matrix,arrows}
@@ -3036,7 +3207,7 @@ hash="55727559870efcb5f64ca1d90449bd2e"><fr:embedded-tex-preamble>
       densely dashed
     },
     embedding/.style = {
-      {right hook}-&gt;
+      {right hook}->
     },
     cover/.style = {
       -{Triangle[open]}
@@ -3068,10 +3239,10 @@ hash="55727559870efcb5f64ca1d90449bd2e"><fr:embedded-tex-preamble>
     square/ne/.style = {},
     square/se/.style = {},
     square/sw/.style = {},
-    square/north/.style = {-&gt;},
-    square/south/.style = {-&gt;},
-    square/west/.style = {-&gt;},
-    square/east/.style = {-&gt;},
+    square/north/.style = {->},
+    square/south/.style = {->},
+    square/west/.style = {->},
+    square/east/.style = {->},
     square/north/node/.style = {above},
     square/south/node/.style = {below},
     square/west/node/.style = {left},
@@ -3150,100 +3321,109 @@ hash="55727559870efcb5f64ca1d90449bd2e"><fr:embedded-tex-preamble>
     \end{tikzpicture}
   }
   \ExplSyntaxOff
- 
-      </fr:embedded-tex-preamble><fr:embedded-tex-body>
-       \begin {tikzpicture}[diagram, node distance = 4cm,baseline = (2.base)]
-         \node  (1) {$A'$};
-         \node  [right = 1cm of 1] (ref1) {};
-         \node  [above = 1.5cm of ref1] (2) {$D$};
-         \node  [right = 2cm of 2] (3) {$C$};
-         \node  [right = of 1] (4) {A};
-         \node  [between = 1 and 4] (ref2) {};
-         \node  [below = 1.5cm of ref2] (5) {$ \underline {A'}$};
-         \draw  [-&gt;,morphism] (1) to node[desc] {$ \cong $} (2);
-         \draw  [cover,morphism] (2) to (3);
-         \draw  [&gt;-&gt;,morphism] (3) to node {$ f ^{*} ( \mathsf { Img } (g))$} (4);
-         \draw  [-&gt;,morphism] (1) to node[desc] {$ f ^{*} (g)$} (4);
-         \draw  [cover,morphism] (1) to node[swap] {$ \vartheta _{ f ^{*} (g)}$} (5);
-         \draw  [&gt;-&gt;,morphism] (5) to node[swap] {$ \mathsf { Img } ( f ^{*} (g))$} (4);
-       \end {tikzpicture}
-    </fr:embedded-tex-body></fr:embedded-tex>
+
+      ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+      \begin {tikzpicture}[diagram, node distance = 4cm,baseline = (2.base)]
+        \node  (1) {$A'$};
+        \node  [right = 1cm of 1] (ref1) {};
+        \node  [above = 1.5cm of ref1] (2) {$D$};
+        \node  [right = 2cm of 2] (3) {$C$};
+        \node  [right = of 1] (4) {A};
+        \node  [between = 1 and 4] (ref2) {};
+        \node  [below = 1.5cm of ref2] (5) {$\underline {A'}$};
+        \draw  [->,morphism] (1) to node[desc] {$\cong $} (2);
+        \draw  [cover,morphism] (2) to (3);
+        \draw  [>->,morphism] (3) to node {$f^{*}(\mathsf {Img}(g))$} (4);
+        \draw  [->,morphism] (1) to node[desc] {$f^{*}(g)$} (4);
+        \draw  [cover,morphism] (1) to node[swap] {$\vartheta _{f^{*}(g)}$} (5);
+        \draw  [>->,morphism] (5) to node[swap] {$\mathsf {Img}(f^{*}(g))$} (4);
+      \end {tikzpicture}
+    ]]></fr:embedded-tex-body></fr:embedded-tex>
     
-  <fr:p>
-      Then by uniqueness, <fr:tex>C  \cong   \underline {A'}</fr:tex>.
-      Thus, <fr:tex>\mathsf { Img } ( f ^{*} (g))  \cong   f ^{*} ( \mathsf { Img } (g))</fr:tex>.
-    </fr:p></fr:mainmatter></fr:tree>  
-</fr:mainmatter></fr:tree>
+  <fr:p>Then by uniqueness, <fr:tex
+display="inline"><![CDATA[C \cong  \underline {A'}]]></fr:tex>.
+      Thus, <fr:tex
+display="inline"><![CDATA[\mathsf {Img}(f^{*}(g)) \cong  f^{*}(\mathsf {Img}(g))]]></fr:tex>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree>  
+</fr:mainmatter><fr:backmatter /></fr:tree>
     
-  </fr:mainmatter></fr:tree><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+  </fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
 toc="true"
 numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>310</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>ct-000R</fr:addr><fr:route>ct-000R.xml</fr:route><fr:title>Frobenius reciprocity</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>4</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>f \colon A \to B</fr:tex> be a morphism in a <fr:link
-href="ct-000O.xml"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>380</fr:anchor><fr:addr
+type="user">ct-000R</fr:addr><fr:route>ct-000R.xml</fr:route><fr:title
+text="Frobenius reciprocity">Frobenius reciprocity</fr:title><fr:taxon>Lemma</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>4</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[f\colon A\to B]]></fr:tex> be a morphism in a <fr:link
 type="local"
-addr="ct-000O">regular category</fr:link>. Then for any two subobjects <fr:tex>A'  \rightarrowtail  A</fr:tex> and <fr:tex>B'  \rightarrowtail  B</fr:tex>, we have <fr:tex>\exists _{f}(A'  \cap   f ^{*} (B'))  \cong   \exists _{f}(A')  \cap  B'</fr:tex> in <fr:tex>\mathsf { Sub } (B)</fr:tex>, where <fr:tex>\exists _{f}</fr:tex> is the left adjoint of <fr:tex>f ^{*}</fr:tex> constructed in <fr:ref
+href="ct-000O.xml"
+addr="ct-000O"
+title="Regular category">regular category</fr:link>. Then for any two subobjects <fr:tex
+display="inline"><![CDATA[A' \rightarrowtail  A]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[B' \rightarrowtail  B]]></fr:tex>, we have <fr:tex
+display="inline"><![CDATA[\exists _{f}(A' \cap  f^{*}(B')) \cong  \exists _{f}(A') \cap  B']]></fr:tex> in <fr:tex
+display="inline"><![CDATA[\mathsf {Sub}(B)]]></fr:tex>, where <fr:tex
+display="inline"><![CDATA[\exists _{f}]]></fr:tex> is the left adjoint of <fr:tex
+display="inline"><![CDATA[f^{*}]]></fr:tex> constructed in <fr:ref
 addr="ct-000L"
 href="ct-000L.xml"
-taxon="Lemma"></fr:ref>.</fr:p>
+taxon="Lemma" />.</fr:p>
     
       
       <fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="false"
 numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>309</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>4</fr:day></fr:date><fr:parent>ct-000R</fr:parent></fr:frontmatter><fr:mainmatter>
-  <fr:p>
-    By the construction of <fr:tex>\exists _{f}</fr:tex>, this is equivalent to showing the following isomorphism.
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>381</fr:anchor><fr:addr
+type="machine">#260</fr:addr><fr:route>unstable-260.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>4</fr:day></fr:date><fr:authors /><fr:parent>ct-000R</fr:parent></fr:frontmatter><fr:mainmatter>
+  <fr:p>By the construction of <fr:tex
+display="inline"><![CDATA[\exists _{f}]]></fr:tex>, this is equivalent to showing the following isomorphism.
     <fr:tex
-display="block">        \mathsf { Img } (f  \circ  (A'  \cap   f ^{*} (B')))  \cong   \mathsf { Img } (f  \circ  A')  \cap  B'     </fr:tex></fr:p>
+display="block"><![CDATA[       \mathsf {Img}(f \circ  (A' \cap  f^{*}(B'))) \cong  \mathsf {Img}(f \circ  A') \cap  B'     ]]></fr:tex></fr:p>
 
-  <fr:p>
-    Form the following diagram, where the front, left, and right faces are pullbacks.
-  </fr:p>
+  <fr:p>Form the following diagram, where the front, left, and right faces are pullbacks.</fr:p>
   
     
       
       <fr:embedded-tex
-hash="8e8d9a91fb1c8068bb75976ec1fc8d13"><fr:embedded-tex-preamble>
-         
-   \RequirePackage {tikz}
-   \RequirePackage {amsmath}
-   \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
+hash="75e51c7f8b1e82a679f9d19a26eeecdc"><fr:embedded-tex-preamble><![CDATA[
+        
+  \RequirePackage {tikz}
+  \RequirePackage {amsmath}
+  \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
 
-   \definecolor {catccolor}{RGB}{255,244,138}
-   \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
-   \tikzstyle {catc}=[catccolor!60]
-   \tikzstyle {catd}=[orange!40]
-   \tikzstyle {cate}=[red!40]
-   \tikzstyle {catf}=[blue!10]
-   \tikzstyle {catg}=[green!25]
+  \definecolor {catccolor}{RGB}{255,244,138}
+  \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
+  \tikzstyle {catc}=[catccolor!60]
+  \tikzstyle {catd}=[orange!40]
+  \tikzstyle {cate}=[red!40]
+  \tikzstyle {catf}=[blue!10]
+  \tikzstyle {catg}=[green!25]
 
 
-   \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
-   \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
+  \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
+  \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
 
-   \NewDocumentCommand \CreateRect {D&lt;&gt;{} m m}{
-     \path 
+  \NewDocumentCommand \CreateRect {D<>{} m m}{
+    \path 
       coordinate (#1nw)
       ++(#2,-#3) coordinate (#1se)
       coordinate (#1sw) at (#1se -| #1nw)
       coordinate (#1ne) at (#1nw -| #1se)
     ;
 
-     \path [spath/save = #1north] (#1nw) to (#1ne);
-     \path [spath/save = #1west] (#1nw) to (#1sw);
-     \path [spath/save = #1east] (#1ne) to (#1se);
-     \path [spath/save = #1south] (#1sw) to (#1se);
+    \path [spath/save = #1north] (#1nw) to (#1ne);
+    \path [spath/save = #1west] (#1nw) to (#1sw);
+    \path [spath/save = #1east] (#1ne) to (#1se);
+    \path [spath/save = #1south] (#1sw) to (#1se);
   }
- 
-         
+
+        
    % appears to be necessary
   \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd}
   \usetikzlibrary{matrix,arrows}
@@ -3312,7 +3492,7 @@ hash="8e8d9a91fb1c8068bb75976ec1fc8d13"><fr:embedded-tex-preamble>
       densely dashed
     },
     embedding/.style = {
-      {right hook}-&gt;
+      {right hook}->
     },
     cover/.style = {
       -{Triangle[open]}
@@ -3344,10 +3524,10 @@ hash="8e8d9a91fb1c8068bb75976ec1fc8d13"><fr:embedded-tex-preamble>
     square/ne/.style = {},
     square/se/.style = {},
     square/sw/.style = {},
-    square/north/.style = {-&gt;},
-    square/south/.style = {-&gt;},
-    square/west/.style = {-&gt;},
-    square/east/.style = {-&gt;},
+    square/north/.style = {->},
+    square/south/.style = {->},
+    square/west/.style = {->},
+    square/east/.style = {->},
     square/north/node/.style = {above},
     square/south/node/.style = {below},
     square/west/node/.style = {left},
@@ -3426,118 +3606,152 @@ hash="8e8d9a91fb1c8068bb75976ec1fc8d13"><fr:embedded-tex-preamble>
     \end{tikzpicture}
   }
   \ExplSyntaxOff
- 
-      </fr:embedded-tex-preamble><fr:embedded-tex-body>
-     \begin {tikzpicture}[diagram,node distance = 3.5cm]
-       \SpliceDiagramSquare {
+
+      ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+    \begin {tikzpicture}[diagram,node distance = 3.5cm]
+      \SpliceDiagramSquare {
         width = 3.5cm,
         height = 3.5cm,
-        nw =  f ^{*} (B'),
+        nw = f^{*}(B'),
         sw = A,
         ne = B',
         se = B,
-        west =  f ^{*} (B'),
-        west/style = {&gt;-&gt;},
+        west = f^{*}(B'),
+        west/style = {>->},
         south = f,
-        east/style = {&gt;-&gt;},
+        east/style = {>->},
       }
-       \node  [right = 2cm of nw] (ref1) {};
-       \node  [above = 1.5cm of ref1] (nw') {$A'  \cap   f ^{*} (B')$};
-       \node  [right = of nw'] (ne') {$ \exists _{f}(A')  \cap  B'$};
-       \node  [below = of nw'] (sw') {$A'$};
-       \node  [below = of ne'] (se') {$ \exists _{f}(A')$};
-       \draw  [&gt;-&gt;,morphism] (nw') to (sw');
-       \draw  [&gt;-&gt;,morphism] (ne') to (se');
-       \draw  [cover,morphism] (sw') to node[near start,desc] {$ \vartheta _{f  \circ  A'}$} (se');
-       \draw  [&gt;-&gt;,morphism] (sw') to (sw);
-       \draw  [&gt;-&gt;,morphism] (se') to node {$ \mathsf { Img } (f  \circ  A')$} (se);
-       \draw  [-&gt;,morphism] (nw') to (ne');
-       \draw  [&gt;-&gt;,morphism] (nw') to (nw);
-       \draw  [&gt;-&gt;,morphism] (ne') to (ne);
-     \end {tikzpicture}
-  </fr:embedded-tex-body></fr:embedded-tex>
+      \node  [right = 2cm of nw] (ref1) {};
+      \node  [above = 1.5cm of ref1] (nw') {$A' \cap  f^{*}(B')$};
+      \node  [right = of nw'] (ne') {$\exists _{f}(A') \cap  B'$};
+      \node  [below = of nw'] (sw') {$A'$};
+      \node  [below = of ne'] (se') {$\exists _{f}(A')$};
+      \draw  [>->,morphism] (nw') to (sw');
+      \draw  [>->,morphism] (ne') to (se');
+      \draw  [cover,morphism] (sw') to node[near start,desc] {$\vartheta _{f \circ  A'}$} (se');
+      \draw  [>->,morphism] (sw') to (sw);
+      \draw  [>->,morphism] (se') to node {$\mathsf {Img}(f \circ  A')$} (se);
+      \draw  [->,morphism] (nw') to (ne');
+      \draw  [>->,morphism] (nw') to (nw);
+      \draw  [>->,morphism] (ne') to (ne);
+    \end {tikzpicture}
+  ]]></fr:embedded-tex-body></fr:embedded-tex>
     
   
-  <fr:p>
-    By the <fr:link
+  <fr:p>By the <fr:link
+type="local"
 href="ct-0008.xml"
+addr="ct-0008"
+title="Pasting lemma of pullbacks">pasting lemma</fr:link>, the back square is also a pullback. Then since covers are stable under pullback in a regular category, the north edge of the back square is also a cover. The diagonal of the right face is <fr:tex
+display="inline"><![CDATA[\mathsf {Img}(f \circ  A') \cap  B']]></fr:tex>, which forms a cover-mono factorization of the composite <fr:tex
+display="inline"><![CDATA[f \circ  (A' \cap  f^{*}(B'))]]></fr:tex>. Thus, by <fr:link
 type="local"
-addr="ct-0008">pasting lemma</fr:link>, the back square is also a pullback. Then since covers are stable under pullback in a regular category, the north edge of the back square is also a cover. The diagonal of the right face is <fr:tex>\mathsf { Img } (f  \circ  A')  \cap  B'</fr:tex>, which forms a cover-mono factorization of the composite <fr:tex>f  \circ  (A'  \cap   f ^{*} (B'))</fr:tex>. Thus, by <fr:link
 href="ct-000Q.xml"
-type="local"
-addr="ct-000Q">uniqueness</fr:link>, <fr:tex>\mathsf { Img } (f  \circ  (A'  \cap   f ^{*} (B')))  \cong   \mathsf { Img } (f  \circ  A')  \cap  B'</fr:tex> as required.
-  </fr:p>
-</fr:mainmatter></fr:tree>
+addr="ct-000Q"
+title="Cover-mono factorization">uniqueness</fr:link>, <fr:tex
+display="inline"><![CDATA[\mathsf {Img}(f \circ  (A' \cap  f^{*}(B'))) \cong  \mathsf {Img}(f \circ  A') \cap  B']]></fr:tex> as required.</fr:p>
+</fr:mainmatter><fr:backmatter /></fr:tree>
     
-  </fr:mainmatter></fr:tree></fr:mainmatter></fr:tree></fr:context><fr:related><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+  </fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
+text="Related">Related</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>996</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>ct-000Q</fr:addr><fr:route>ct-000Q.xml</fr:route><fr:title><fr:link
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>902</fr:anchor><fr:addr
+type="user">ct-000Q</fr:addr><fr:route>ct-000Q.xml</fr:route><fr:title
+text="Cover-mono factorization"><fr:link
+type="local"
 href="ct-000M.xml"
+addr="ct-000M"
+title="Extremal epimorphism">Cover</fr:link>-mono factorization</fr:title><fr:taxon>Lemma</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>4</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> be a category with <fr:link
 type="local"
-addr="ct-000M">Cover</fr:link>-mono factorization</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>4</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>\mathcal { C }</fr:tex> be a category with <fr:link
 href="ct-000K.xml"
-type="local"
-addr="ct-000K">images</fr:link> and equalizers. Then every morphism of <fr:tex>\mathcal { C }</fr:tex> can be factored as a cover followed by a monomorphism. Moreover, this factorization is unique up to isomorphism in the sense that if <fr:tex>A  \twoheadrightarrow  C  \rightarrowtail  B</fr:tex> and <fr:tex>A  \twoheadrightarrow  C'  \rightarrowtail  B</fr:tex> are both cover-mono factorizations of the same morphism, then <fr:tex>C  \cong  C'</fr:tex>.</fr:p>
+addr="ct-000K"
+title="Image">images</fr:link> and equalizers. Then every morphism of <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> can be factored as a cover followed by a monomorphism. Moreover, this factorization is unique up to isomorphism in the sense that if <fr:tex
+display="inline"><![CDATA[A \twoheadrightarrow  C \rightarrowtail  B]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[A \twoheadrightarrow  C' \rightarrowtail  B]]></fr:tex> are both cover-mono factorizations of the same morphism, then <fr:tex
+display="inline"><![CDATA[C \cong  C']]></fr:tex>.</fr:p>
     
       
       <fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="false"
 numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>303</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>4</fr:day></fr:date><fr:parent>ct-000Q</fr:parent></fr:frontmatter><fr:mainmatter>
-  <fr:p>By the construction of images, every morphism <fr:tex>f \colon A \to B</fr:tex> can be factored as <fr:tex>\mathsf { Img } (f) \vartheta _{f}</fr:tex>, where <fr:tex>\vartheta</fr:tex> is the unit of the image adjunction. <fr:tex>\mathsf { Img } (f)</fr:tex> is monic by construction and <fr:tex>\vartheta _{f}</fr:tex> is a cover by <fr:ref
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>375</fr:anchor><fr:addr
+type="machine">#261</fr:addr><fr:route>unstable-261.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>4</fr:day></fr:date><fr:authors /><fr:parent>ct-000Q</fr:parent></fr:frontmatter><fr:mainmatter>
+  <fr:p>By the construction of images, every morphism <fr:tex
+display="inline"><![CDATA[f\colon A\to B]]></fr:tex> can be factored as <fr:tex
+display="inline"><![CDATA[\mathsf {Img}(f)\vartheta _{f}]]></fr:tex>, where <fr:tex
+display="inline"><![CDATA[\vartheta ]]></fr:tex> is the unit of the image adjunction. <fr:tex
+display="inline"><![CDATA[\mathsf {Img}(f)]]></fr:tex> is monic by construction and <fr:tex
+display="inline"><![CDATA[\vartheta _{f}]]></fr:tex> is a cover by <fr:ref
 addr="ct-000N"
 href="ct-000N.xml"
-taxon="Lemma"></fr:ref>.</fr:p>
+taxon="Lemma" />.</fr:p>
 
-  <fr:p>
-    To show the second half of the lemma, it suffices to show that every cover-mono factorization of a morphism <fr:tex>f</fr:tex> is isomorphic to <fr:tex>\mathsf { Img } (f) \vartheta _{f}</fr:tex>. Let <fr:tex>hg</fr:tex> be a cover-mono factorization of <fr:tex>f</fr:tex>. Then by the universal property of adjunction, there is a morphism <fr:tex>s</fr:tex> in <fr:tex>\mathsf { Sub } (B)</fr:tex> such that <fr:tex>s \vartheta _{f} = g</fr:tex>. By the definition of <fr:tex>\mathsf { Sub } (B)</fr:tex>, we also have <fr:tex>hs =  \mathsf { Img } (f)</fr:tex>. Then, it follows that <fr:tex>s</fr:tex> is monic.
-  </fr:p>
+  <fr:p>To show the second half of the lemma, it suffices to show that every cover-mono factorization of a morphism <fr:tex
+display="inline"><![CDATA[f]]></fr:tex> is isomorphic to <fr:tex
+display="inline"><![CDATA[\mathsf {Img}(f)\vartheta _{f}]]></fr:tex>. Let <fr:tex
+display="inline"><![CDATA[hg]]></fr:tex> be a cover-mono factorization of <fr:tex
+display="inline"><![CDATA[f]]></fr:tex>. Then by the universal property of adjunction, there is a morphism <fr:tex
+display="inline"><![CDATA[s]]></fr:tex> in <fr:tex
+display="inline"><![CDATA[\mathsf {Sub}(B)]]></fr:tex> such that <fr:tex
+display="inline"><![CDATA[s\vartheta _{f} = g]]></fr:tex>. By the definition of <fr:tex
+display="inline"><![CDATA[\mathsf {Sub}(B)]]></fr:tex>, we also have <fr:tex
+display="inline"><![CDATA[hs = \mathsf {Img}(f)]]></fr:tex>. Then, it follows that <fr:tex
+display="inline"><![CDATA[s]]></fr:tex> is monic.</fr:p>
   
     
       
       <fr:embedded-tex
-hash="040654bfa5875df58a00300f1f6b3d82"><fr:embedded-tex-preamble>
-         
-   \RequirePackage {tikz}
-   \RequirePackage {amsmath}
-   \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
+hash="73a844f0751de2785bed455220880376"><fr:embedded-tex-preamble><![CDATA[
+        
+  \RequirePackage {tikz}
+  \RequirePackage {amsmath}
+  \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
 
-   \definecolor {catccolor}{RGB}{255,244,138}
-   \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
-   \tikzstyle {catc}=[catccolor!60]
-   \tikzstyle {catd}=[orange!40]
-   \tikzstyle {cate}=[red!40]
-   \tikzstyle {catf}=[blue!10]
-   \tikzstyle {catg}=[green!25]
+  \definecolor {catccolor}{RGB}{255,244,138}
+  \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
+  \tikzstyle {catc}=[catccolor!60]
+  \tikzstyle {catd}=[orange!40]
+  \tikzstyle {cate}=[red!40]
+  \tikzstyle {catf}=[blue!10]
+  \tikzstyle {catg}=[green!25]
 
 
-   \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
-   \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
+  \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
+  \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
 
-   \NewDocumentCommand \CreateRect {D&lt;&gt;{} m m}{
-     \path 
+  \NewDocumentCommand \CreateRect {D<>{} m m}{
+    \path 
       coordinate (#1nw)
       ++(#2,-#3) coordinate (#1se)
       coordinate (#1sw) at (#1se -| #1nw)
       coordinate (#1ne) at (#1nw -| #1se)
     ;
 
-     \path [spath/save = #1north] (#1nw) to (#1ne);
-     \path [spath/save = #1west] (#1nw) to (#1sw);
-     \path [spath/save = #1east] (#1ne) to (#1se);
-     \path [spath/save = #1south] (#1sw) to (#1se);
+    \path [spath/save = #1north] (#1nw) to (#1ne);
+    \path [spath/save = #1west] (#1nw) to (#1sw);
+    \path [spath/save = #1east] (#1ne) to (#1se);
+    \path [spath/save = #1south] (#1sw) to (#1se);
   }
- 
-         
+
+        
    % appears to be necessary
   \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd}
   \usetikzlibrary{matrix,arrows}
@@ -3606,7 +3820,7 @@ hash="040654bfa5875df58a00300f1f6b3d82"><fr:embedded-tex-preamble>
       densely dashed
     },
     embedding/.style = {
-      {right hook}-&gt;
+      {right hook}->
     },
     cover/.style = {
       -{Triangle[open]}
@@ -3638,10 +3852,10 @@ hash="040654bfa5875df58a00300f1f6b3d82"><fr:embedded-tex-preamble>
     square/ne/.style = {},
     square/se/.style = {},
     square/sw/.style = {},
-    square/north/.style = {-&gt;},
-    square/south/.style = {-&gt;},
-    square/west/.style = {-&gt;},
-    square/east/.style = {-&gt;},
+    square/north/.style = {->},
+    square/south/.style = {->},
+    square/west/.style = {->},
+    square/east/.style = {->},
     square/north/node/.style = {above},
     square/south/node/.style = {below},
     square/west/node/.style = {left},
@@ -3720,100 +3934,114 @@ hash="040654bfa5875df58a00300f1f6b3d82"><fr:embedded-tex-preamble>
     \end{tikzpicture}
   }
   \ExplSyntaxOff
- 
-      </fr:embedded-tex-preamble><fr:embedded-tex-body>
+
+      ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
     
-     \begin {tikzpicture}[diagram,node distance = 3cm]
-       \node  (1) {$A$};
-       \node  [right = of 1] (2) {$B$};
-       \node  [below =  1.5cm  of 1] (1') {};
-       \node  [below =  1.5cm  of 2] (2') {};
-       \node  [between = 1' and 2'] (3) {$ \underline {A}$};
-       \node  [below =  1.5cm  of 3] (4) {$C$};
-       \draw  [-&gt;,morphism] (1) to node {$f$} (2);
-       \draw  [cover,morphism] (1) to node[desc] {$ \vartheta _{f}$} (3);
-       \draw  [cover,morphism,bend right] (1) to node[swap] {$g$} (4);
-       \draw  [&gt;-&gt;,morphism] (3) to node[desc] {$ \mathsf { Img } (f)$} (2);
-       \draw  [&gt;-&gt;,morphism,bend right] (4) to node[swap] {$h$} (2);
-       \draw  [&gt;-&gt;,morphism] (3) to node[desc] {$s$} (4);
-     \end {tikzpicture}
-  </fr:embedded-tex-body></fr:embedded-tex>
+    \begin {tikzpicture}[diagram,node distance = 3cm]
+      \node  (1) {$A$};
+      \node  [right = of 1] (2) {$B$};
+      \node  [below = 1.5cm of 1] (1') {};
+      \node  [below = 1.5cm of 2] (2') {};
+      \node  [between = 1' and 2'] (3) {$\underline {A}$};
+      \node  [below = 1.5cm of 3] (4) {$C$};
+      \draw  [->,morphism] (1) to node {$f$} (2);
+      \draw  [cover,morphism] (1) to node[desc] {$\vartheta _{f}$} (3);
+      \draw  [cover,morphism,bend right] (1) to node[swap] {$g$} (4);
+      \draw  [>->,morphism] (3) to node[desc] {$\mathsf {Img}(f)$} (2);
+      \draw  [>->,morphism,bend right] (4) to node[swap] {$h$} (2);
+      \draw  [>->,morphism] (3) to node[desc] {$s$} (4);
+    \end {tikzpicture}
+  ]]></fr:embedded-tex-body></fr:embedded-tex>
     
   
-  <fr:p>
-    Since <fr:tex>g</fr:tex> is extremal, <fr:tex>s</fr:tex> must be an isomorphism.
-  </fr:p>
-</fr:mainmatter></fr:tree>
+  <fr:p>Since <fr:tex
+display="inline"><![CDATA[g]]></fr:tex> is extremal, <fr:tex
+display="inline"><![CDATA[s]]></fr:tex> must be an isomorphism.</fr:p>
+</fr:mainmatter><fr:backmatter /></fr:tree>
     
-  </fr:mainmatter></fr:tree><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+  </fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>997</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>ct-000N</fr:addr><fr:route>ct-000N.xml</fr:route><fr:title><fr:link
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>903</fr:anchor><fr:addr
+type="user">ct-000N</fr:addr><fr:route>ct-000N.xml</fr:route><fr:title
+text="Image embedding"><fr:link
+type="local"
 href="ct-000K.xml"
+addr="ct-000K"
+title="Image">Image</fr:link> embedding</fr:title><fr:taxon>Lemma</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>3</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> be a category with images. Then for any object <fr:tex
+display="inline"><![CDATA[f \in  {{\mathcal {C}}_{/{B}}}]]></fr:tex>, the underlying morphism of the unit <fr:tex
+display="inline"><![CDATA[\vartheta _{f}\colon f\to \mathsf {Img}(f)]]></fr:tex> has the property that if <fr:tex
+display="inline"><![CDATA[\vartheta _{f} = mg]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[m]]></fr:tex> is monic, then <fr:tex
+display="inline"><![CDATA[m]]></fr:tex> is an isomorphism.
+  Moreover, if <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> has equalizers then <fr:tex
+display="inline"><![CDATA[\vartheta _{f}]]></fr:tex> is an <fr:link
 type="local"
-addr="ct-000K">Image</fr:link> embedding</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>3</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
-  Let <fr:tex>\mathcal { C }</fr:tex> be a category with images. Then for any object <fr:tex>f  \in   {{ \mathcal { C } }_{/{ B }}}</fr:tex>, the underlying morphism of the unit <fr:tex>\vartheta _{f} \colon f \to \mathsf { Img } (f)</fr:tex> has the property that if <fr:tex>\vartheta _{f} = mg</fr:tex> and <fr:tex>m</fr:tex> is monic, then <fr:tex>m</fr:tex> is an isomorphism.
-  Moreover, if <fr:tex>\mathcal { C }</fr:tex> has equalizers then <fr:tex>\vartheta _{f}</fr:tex> is an <fr:link
 href="ct-000M.xml"
-type="local"
-addr="ct-000M">extremal epimorphism</fr:link>.
-</fr:p>
+addr="ct-000M"
+title="Extremal epimorphism">extremal epimorphism</fr:link>.</fr:p>
     
       
       <fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="false"
 numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>529</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>3</fr:day></fr:date><fr:parent>ct-000N</fr:parent></fr:frontmatter><fr:mainmatter>
-  <fr:p>
-    Let <fr:tex>f \colon A \to B</fr:tex>.
-    Suppose that there are morphisms <fr:tex>h \colon A \to C</fr:tex> and <fr:tex>g \colon C \rightarrowtail B</fr:tex> such that <html:span
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>858</fr:anchor><fr:addr
+type="machine">#266</fr:addr><fr:route>unstable-266.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>3</fr:day></fr:date><fr:authors /><fr:parent>ct-000N</fr:parent></fr:frontmatter><fr:mainmatter>
+  <fr:p>Let <fr:tex
+display="inline"><![CDATA[f\colon A\to B]]></fr:tex>.
+    Suppose that there are morphisms <fr:tex
+display="inline"><![CDATA[h\colon A\to C]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[g\colon C\rightarrowtail B]]></fr:tex> such that <html:span
 xmlns:html="http://www.w3.org/1999/xhtml"
-style="white-space: nowrap"><fr:tex>\vartheta _{f} = gh</fr:tex>.</html:span></fr:p>
+style="white-space: nowrap"><fr:tex
+display="inline"><![CDATA[\vartheta _{f} = gh]]></fr:tex>.</html:span></fr:p>
   
     
       
       <fr:embedded-tex
-hash="5d17f2c24e82f96d4879f966275dd0ec"><fr:embedded-tex-preamble>
-         
-   \RequirePackage {tikz}
-   \RequirePackage {amsmath}
-   \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
+hash="d7b1e7c3cfa9e07a0164e815fdc9b2ad"><fr:embedded-tex-preamble><![CDATA[
+        
+  \RequirePackage {tikz}
+  \RequirePackage {amsmath}
+  \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
 
-   \definecolor {catccolor}{RGB}{255,244,138}
-   \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
-   \tikzstyle {catc}=[catccolor!60]
-   \tikzstyle {catd}=[orange!40]
-   \tikzstyle {cate}=[red!40]
-   \tikzstyle {catf}=[blue!10]
-   \tikzstyle {catg}=[green!25]
+  \definecolor {catccolor}{RGB}{255,244,138}
+  \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
+  \tikzstyle {catc}=[catccolor!60]
+  \tikzstyle {catd}=[orange!40]
+  \tikzstyle {cate}=[red!40]
+  \tikzstyle {catf}=[blue!10]
+  \tikzstyle {catg}=[green!25]
 
 
-   \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
-   \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
+  \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
+  \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
 
-   \NewDocumentCommand \CreateRect {D&lt;&gt;{} m m}{
-     \path 
+  \NewDocumentCommand \CreateRect {D<>{} m m}{
+    \path 
       coordinate (#1nw)
       ++(#2,-#3) coordinate (#1se)
       coordinate (#1sw) at (#1se -| #1nw)
       coordinate (#1ne) at (#1nw -| #1se)
     ;
 
-     \path [spath/save = #1north] (#1nw) to (#1ne);
-     \path [spath/save = #1west] (#1nw) to (#1sw);
-     \path [spath/save = #1east] (#1ne) to (#1se);
-     \path [spath/save = #1south] (#1sw) to (#1se);
+    \path [spath/save = #1north] (#1nw) to (#1ne);
+    \path [spath/save = #1west] (#1nw) to (#1sw);
+    \path [spath/save = #1east] (#1ne) to (#1se);
+    \path [spath/save = #1south] (#1sw) to (#1se);
   }
- 
-         
+
+        
    % appears to be necessary
   \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd}
   \usetikzlibrary{matrix,arrows}
@@ -3882,7 +4110,7 @@ hash="5d17f2c24e82f96d4879f966275dd0ec"><fr:embedded-tex-preamble>
       densely dashed
     },
     embedding/.style = {
-      {right hook}-&gt;
+      {right hook}->
     },
     cover/.style = {
       -{Triangle[open]}
@@ -3914,10 +4142,10 @@ hash="5d17f2c24e82f96d4879f966275dd0ec"><fr:embedded-tex-preamble>
     square/ne/.style = {},
     square/se/.style = {},
     square/sw/.style = {},
-    square/north/.style = {-&gt;},
-    square/south/.style = {-&gt;},
-    square/west/.style = {-&gt;},
-    square/east/.style = {-&gt;},
+    square/north/.style = {->},
+    square/south/.style = {->},
+    square/west/.style = {->},
+    square/east/.style = {->},
     square/north/node/.style = {above},
     square/south/node/.style = {below},
     square/west/node/.style = {left},
@@ -3996,63 +4224,63 @@ hash="5d17f2c24e82f96d4879f966275dd0ec"><fr:embedded-tex-preamble>
     \end{tikzpicture}
   }
   \ExplSyntaxOff
- 
-      </fr:embedded-tex-preamble><fr:embedded-tex-body>
-     \begin {tikzpicture}[diagram]
-       \node  (1) {$A$};
-       \node  [right = 3cm of 1] (2) {$A'$};
-       \node  [between = 1 and 2] (ref) {};
-       \node  [above = 1.5cm of ref] (3) {$C$};
-       \node  [below = 1.5cm of ref] (4) {$B$};
-       \draw  [-&gt;,morphism] (1) to node {$h$} (3);
-       \draw  [&gt;-&gt;,morphism] (3) to node {$g$} (2);
-       \draw  [-&gt;,morphism] (1) to node[desc] {$ \vartheta _{f}$} (2);
-       \draw  [-&gt;,morphism] (1) to node[swap] {$f$} (4);
-       \draw  [&gt;-&gt;,morphism] (2) to node {$ \mathsf { Img } (f)$} (4);
-     \end {tikzpicture}
-  </fr:embedded-tex-body></fr:embedded-tex>
+
+      ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+    \begin {tikzpicture}[diagram]
+      \node  (1) {$A$};
+      \node  [right = 3cm of 1] (2) {$A'$};
+      \node  [between = 1 and 2] (ref) {};
+      \node  [above = 1.5cm of ref] (3) {$C$};
+      \node  [below = 1.5cm of ref] (4) {$B$};
+      \draw  [->,morphism] (1) to node {$h$} (3);
+      \draw  [>->,morphism] (3) to node {$g$} (2);
+      \draw  [->,morphism] (1) to node[desc] {$\vartheta _{f}$} (2);
+      \draw  [->,morphism] (1) to node[swap] {$f$} (4);
+      \draw  [>->,morphism] (2) to node {$\mathsf {Img}(f)$} (4);
+    \end {tikzpicture}
+  ]]></fr:embedded-tex-body></fr:embedded-tex>
     
   
-  <fr:p>
-    Then by the universal property of adjunction, there is a unique <fr:tex>s \colon A' \to C</fr:tex> such that <fr:tex>s \vartheta _{f} = h</fr:tex>.
-  </fr:p>
+  <fr:p>Then by the universal property of adjunction, there is a unique <fr:tex
+display="inline"><![CDATA[s\colon A'\to C]]></fr:tex> such that <fr:tex
+display="inline"><![CDATA[s\vartheta _{f} = h]]></fr:tex>.</fr:p>
   
     
       
       <fr:embedded-tex
-hash="4e99cfd7dd6b7c32c93103d782b5fb6b"><fr:embedded-tex-preamble>
-         
-   \RequirePackage {tikz}
-   \RequirePackage {amsmath}
-   \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
+hash="4a015dc2967e1b9c1ba3290eb255bf85"><fr:embedded-tex-preamble><![CDATA[
+        
+  \RequirePackage {tikz}
+  \RequirePackage {amsmath}
+  \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
 
-   \definecolor {catccolor}{RGB}{255,244,138}
-   \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
-   \tikzstyle {catc}=[catccolor!60]
-   \tikzstyle {catd}=[orange!40]
-   \tikzstyle {cate}=[red!40]
-   \tikzstyle {catf}=[blue!10]
-   \tikzstyle {catg}=[green!25]
+  \definecolor {catccolor}{RGB}{255,244,138}
+  \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
+  \tikzstyle {catc}=[catccolor!60]
+  \tikzstyle {catd}=[orange!40]
+  \tikzstyle {cate}=[red!40]
+  \tikzstyle {catf}=[blue!10]
+  \tikzstyle {catg}=[green!25]
 
 
-   \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
-   \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
+  \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
+  \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
 
-   \NewDocumentCommand \CreateRect {D&lt;&gt;{} m m}{
-     \path 
+  \NewDocumentCommand \CreateRect {D<>{} m m}{
+    \path 
       coordinate (#1nw)
       ++(#2,-#3) coordinate (#1se)
       coordinate (#1sw) at (#1se -| #1nw)
       coordinate (#1ne) at (#1nw -| #1se)
     ;
 
-     \path [spath/save = #1north] (#1nw) to (#1ne);
-     \path [spath/save = #1west] (#1nw) to (#1sw);
-     \path [spath/save = #1east] (#1ne) to (#1se);
-     \path [spath/save = #1south] (#1sw) to (#1se);
+    \path [spath/save = #1north] (#1nw) to (#1ne);
+    \path [spath/save = #1west] (#1nw) to (#1sw);
+    \path [spath/save = #1east] (#1ne) to (#1se);
+    \path [spath/save = #1south] (#1sw) to (#1se);
   }
- 
-         
+
+        
    % appears to be necessary
   \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd}
   \usetikzlibrary{matrix,arrows}
@@ -4121,7 +4349,7 @@ hash="4e99cfd7dd6b7c32c93103d782b5fb6b"><fr:embedded-tex-preamble>
       densely dashed
     },
     embedding/.style = {
-      {right hook}-&gt;
+      {right hook}->
     },
     cover/.style = {
       -{Triangle[open]}
@@ -4153,10 +4381,10 @@ hash="4e99cfd7dd6b7c32c93103d782b5fb6b"><fr:embedded-tex-preamble>
     square/ne/.style = {},
     square/se/.style = {},
     square/sw/.style = {},
-    square/north/.style = {-&gt;},
-    square/south/.style = {-&gt;},
-    square/west/.style = {-&gt;},
-    square/east/.style = {-&gt;},
+    square/north/.style = {->},
+    square/south/.style = {->},
+    square/west/.style = {->},
+    square/east/.style = {->},
     square/north/node/.style = {above},
     square/south/node/.style = {below},
     square/west/node/.style = {left},
@@ -4235,79 +4463,85 @@ hash="4e99cfd7dd6b7c32c93103d782b5fb6b"><fr:embedded-tex-preamble>
     \end{tikzpicture}
   }
   \ExplSyntaxOff
- 
-      </fr:embedded-tex-preamble><fr:embedded-tex-body>
-     \begin {tikzpicture}[diagram]
-       \node  (1) {$f$};
-       \node  [right = of 1] (2) {$ \mathsf { Img } (f)$};
-       \node  [below = of 2] (3) {$ \mathsf { Img } (f)  \circ  g$};
-       \draw  [-&gt;,morphism] (1) to node {$ \vartheta _{f}$} (2);
-       \draw  [-&gt;,morphism] (1) to node[swap] {$h$} (3);
-       \draw  [-&gt;,morphism,exists] (2) to node[swap] {$s$} (3);
-       \draw  [&gt;-&gt;,morphism,bend right] (3) to node[swap] {$g$} (2);
-     \end {tikzpicture}
-     \qquad 
-     \begin {tikzpicture}[diagram]
-       \node  (1) {$f$};
-       \node  [right = of 1] (2) {$ \mathsf { Img } (f)$};
-       \node  [below = of 2] (3) {$ \mathsf { Img } (f)$};
-       \draw  [-&gt;,morphism] (1) to node {$ \vartheta _{f}$} (2);
-       \draw  [-&gt;,morphism] (1) to node[swap] {$ \vartheta _{f}$} (3);
-       \draw  [-&gt;,morphism,exists] (2) to node[swap] {$ \mathsf {id} _{ A' } $} (3);
-       \draw  [-&gt;,morphism,bend left] (2) to node {$gs$} (3);
-     \end {tikzpicture}
-  </fr:embedded-tex-body></fr:embedded-tex>
+
+      ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+    \begin {tikzpicture}[diagram]
+      \node  (1) {$f$};
+      \node  [right = of 1] (2) {$\mathsf {Img}(f)$};
+      \node  [below = of 2] (3) {$\mathsf {Img}(f) \circ  g$};
+      \draw  [->,morphism] (1) to node {$\vartheta _{f}$} (2);
+      \draw  [->,morphism] (1) to node[swap] {$h$} (3);
+      \draw  [->,morphism,exists] (2) to node[swap] {$s$} (3);
+      \draw  [>->,morphism,bend right] (3) to node[swap] {$g$} (2);
+    \end {tikzpicture}
+    \qquad 
+    \begin {tikzpicture}[diagram]
+      \node  (1) {$f$};
+      \node  [right = of 1] (2) {$\mathsf {Img}(f)$};
+      \node  [below = of 2] (3) {$\mathsf {Img}(f)$};
+      \draw  [->,morphism] (1) to node {$\vartheta _{f}$} (2);
+      \draw  [->,morphism] (1) to node[swap] {$\vartheta _{f}$} (3);
+      \draw  [->,morphism,exists] (2) to node[swap] {$\mathsf {id}_{A'}$} (3);
+      \draw  [->,morphism,bend left] (2) to node {$gs$} (3);
+    \end {tikzpicture}
+  ]]></fr:embedded-tex-body></fr:embedded-tex>
     
   
-  <fr:p>
-    Then it follows that <fr:tex>gs \vartheta _{f} = gh =  \vartheta _{f}</fr:tex>, but uniqueness implies that <fr:tex>gs =  \mathsf {id} _{ A' }</fr:tex>.
-    Thus, <fr:tex>g</fr:tex> is a monic split epimorphism, i.e., an isomorphism.
-  </fr:p>
+  <fr:p>Then it follows that <fr:tex
+display="inline"><![CDATA[gs\vartheta _{f} = gh = \vartheta _{f}]]></fr:tex>, but uniqueness implies that <fr:tex
+display="inline"><![CDATA[gs = \mathsf {id}_{A'}]]></fr:tex>.
+    Thus, <fr:tex
+display="inline"><![CDATA[g]]></fr:tex> is a monic split epimorphism, i.e., an isomorphism.</fr:p>
 
-  <fr:p>
-    Now, suppose that <fr:tex>\mathcal { C }</fr:tex> has equalizers.
-    It suffices to show that <fr:tex>\vartheta _{f}</fr:tex> is an epimorphism.
-    Suppose that <fr:tex>\gamma \vartheta _{f} =  \gamma ' \vartheta _{f}</fr:tex> then <fr:tex>\vartheta _{f}</fr:tex> factors through the equalizer of <fr:tex>\gamma</fr:tex> and <fr:tex>\gamma '</fr:tex>.
+  <fr:p>Now, suppose that <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> has equalizers.
+    It suffices to show that <fr:tex
+display="inline"><![CDATA[\vartheta _{f}]]></fr:tex> is an epimorphism.
+    Suppose that <fr:tex
+display="inline"><![CDATA[\gamma \vartheta _{f} = \gamma '\vartheta _{f}]]></fr:tex> then <fr:tex
+display="inline"><![CDATA[\vartheta _{f}]]></fr:tex> factors through the equalizer of <fr:tex
+display="inline"><![CDATA[\gamma ]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[\gamma ']]></fr:tex>.
     Thus, the equalizer must be an isomorphism.
-    Then it follows that <fr:tex>\gamma  =  \gamma '</fr:tex>.
-  </fr:p>
+    Then it follows that <fr:tex
+display="inline"><![CDATA[\gamma  = \gamma ']]></fr:tex>.</fr:p>
   
     
       
       <fr:embedded-tex
-hash="1d6ea2cb5efad8a72fdc304b885e8107"><fr:embedded-tex-preamble>
-         
-   \RequirePackage {tikz}
-   \RequirePackage {amsmath}
-   \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
+hash="02457c5f389e7c2f8fa9c03eb8d69143"><fr:embedded-tex-preamble><![CDATA[
+        
+  \RequirePackage {tikz}
+  \RequirePackage {amsmath}
+  \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
 
-   \definecolor {catccolor}{RGB}{255,244,138}
-   \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
-   \tikzstyle {catc}=[catccolor!60]
-   \tikzstyle {catd}=[orange!40]
-   \tikzstyle {cate}=[red!40]
-   \tikzstyle {catf}=[blue!10]
-   \tikzstyle {catg}=[green!25]
+  \definecolor {catccolor}{RGB}{255,244,138}
+  \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
+  \tikzstyle {catc}=[catccolor!60]
+  \tikzstyle {catd}=[orange!40]
+  \tikzstyle {cate}=[red!40]
+  \tikzstyle {catf}=[blue!10]
+  \tikzstyle {catg}=[green!25]
 
 
-   \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
-   \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
+  \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
+  \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
 
-   \NewDocumentCommand \CreateRect {D&lt;&gt;{} m m}{
-     \path 
+  \NewDocumentCommand \CreateRect {D<>{} m m}{
+    \path 
       coordinate (#1nw)
       ++(#2,-#3) coordinate (#1se)
       coordinate (#1sw) at (#1se -| #1nw)
       coordinate (#1ne) at (#1nw -| #1se)
     ;
 
-     \path [spath/save = #1north] (#1nw) to (#1ne);
-     \path [spath/save = #1west] (#1nw) to (#1sw);
-     \path [spath/save = #1east] (#1ne) to (#1se);
-     \path [spath/save = #1south] (#1sw) to (#1se);
+    \path [spath/save = #1north] (#1nw) to (#1ne);
+    \path [spath/save = #1west] (#1nw) to (#1sw);
+    \path [spath/save = #1east] (#1ne) to (#1se);
+    \path [spath/save = #1south] (#1sw) to (#1se);
   }
- 
-         
+
+        
    % appears to be necessary
   \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd}
   \usetikzlibrary{matrix,arrows}
@@ -4376,7 +4610,7 @@ hash="1d6ea2cb5efad8a72fdc304b885e8107"><fr:embedded-tex-preamble>
       densely dashed
     },
     embedding/.style = {
-      {right hook}-&gt;
+      {right hook}->
     },
     cover/.style = {
       -{Triangle[open]}
@@ -4408,10 +4642,10 @@ hash="1d6ea2cb5efad8a72fdc304b885e8107"><fr:embedded-tex-preamble>
     square/ne/.style = {},
     square/se/.style = {},
     square/sw/.style = {},
-    square/north/.style = {-&gt;},
-    square/south/.style = {-&gt;},
-    square/west/.style = {-&gt;},
-    square/east/.style = {-&gt;},
+    square/north/.style = {->},
+    square/south/.style = {->},
+    square/west/.style = {->},
+    square/east/.style = {->},
     square/north/node/.style = {above},
     square/south/node/.style = {below},
     square/west/node/.style = {left},
@@ -4490,99 +4724,128 @@ hash="1d6ea2cb5efad8a72fdc304b885e8107"><fr:embedded-tex-preamble>
     \end{tikzpicture}
   }
   \ExplSyntaxOff
- 
-      </fr:embedded-tex-preamble><fr:embedded-tex-body>
-     \begin {tikzpicture}[diagram]
-       \node  (1) {$E$};
-       \node  [right = of 1] (2) {$A'$};
-       \node  [right = of 2] (3) {$C$};
-       \node  [below = of 1] (4) {$A$};
-       \draw  [-&gt;,morphism,exists] (4) to (1);
-       \draw  [&gt;-&gt;,morphism] (1) to node[desc] {$ \cong $} (2);
-       \draw  [-&gt;,morphism] (4) to node[swap] {$ \vartheta _{f}$} (2);
-       \draw  [-&gt;,morphism,offset = -1.5] (2) to node {$ \gamma $} (3);
-       \draw  [-&gt;,morphism,offset = 1.5] (2) to node[swap] {$ \gamma '$} (3);
-     \end {tikzpicture}
-  </fr:embedded-tex-body></fr:embedded-tex>
+
+      ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+    \begin {tikzpicture}[diagram]
+      \node  (1) {$E$};
+      \node  [right = of 1] (2) {$A'$};
+      \node  [right = of 2] (3) {$C$};
+      \node  [below = of 1] (4) {$A$};
+      \draw  [->,morphism,exists] (4) to (1);
+      \draw  [>->,morphism] (1) to node[desc] {$\cong $} (2);
+      \draw  [->,morphism] (4) to node[swap] {$\vartheta _{f}$} (2);
+      \draw  [->,morphism,offset = -1.5] (2) to node {$\gamma $} (3);
+      \draw  [->,morphism,offset = 1.5] (2) to node[swap] {$\gamma '$} (3);
+    \end {tikzpicture}
+  ]]></fr:embedded-tex-body></fr:embedded-tex>
     
   
-</fr:mainmatter></fr:tree>
+</fr:mainmatter><fr:backmatter /></fr:tree>
     
-  </fr:mainmatter></fr:tree><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+  </fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>998</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>ct-000M</fr:addr><fr:route>ct-000M.xml</fr:route><fr:title>Extremal epimorphism</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>3</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>An epimorphism <fr:tex>f \colon A \twoheadrightarrow B</fr:tex> is said to be <fr:em><fr:strong>extremal</fr:strong></fr:em> (also called a <fr:em><fr:strong>cover</fr:strong></fr:em>) if for any monomorphism <fr:tex>m \colon C \rightarrowtail B</fr:tex> and any morphism <fr:tex>g \colon A \to C</fr:tex> such that <fr:tex>f = mg</fr:tex>, then <fr:tex>m</fr:tex> is an isomorphism.</fr:p></fr:mainmatter></fr:tree><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>904</fr:anchor><fr:addr
+type="user">ct-000M</fr:addr><fr:route>ct-000M.xml</fr:route><fr:title
+text="Extremal epimorphism">Extremal epimorphism</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>3</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>An epimorphism <fr:tex
+display="inline"><![CDATA[f\colon A\twoheadrightarrow B]]></fr:tex> is said to be <fr:em><fr:strong>extremal</fr:strong></fr:em> (also called a <fr:em><fr:strong>cover</fr:strong></fr:em>) if for any monomorphism <fr:tex
+display="inline"><![CDATA[m\colon C\rightarrowtail B]]></fr:tex> and any morphism <fr:tex
+display="inline"><![CDATA[g\colon A\to C]]></fr:tex> such that <fr:tex
+display="inline"><![CDATA[f = mg]]></fr:tex>, then <fr:tex
+display="inline"><![CDATA[m]]></fr:tex> is an isomorphism.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>999</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>ct-000O</fr:addr><fr:route>ct-000O.xml</fr:route><fr:title>Regular category</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>3</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
-  A category <fr:tex>\mathcal { C }</fr:tex> is said to be <fr:em><fr:strong>regular</fr:strong></fr:em> if it is cartesian, has <fr:link
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>905</fr:anchor><fr:addr
+type="user">ct-000O</fr:addr><fr:route>ct-000O.xml</fr:route><fr:title
+text="Regular category">Regular category</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>3</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>A category <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> is said to be <fr:em><fr:strong>regular</fr:strong></fr:em> if it is cartesian, has <fr:link
+type="local"
 href="ct-000K.xml"
+addr="ct-000K"
+title="Image">images</fr:link>, and <fr:link
 type="local"
-addr="ct-000K">images</fr:link>, and <fr:link
 href="ct-000M.xml"
-type="local"
-addr="ct-000M">covers</fr:link> are stable under pullback.
-  A functor <fr:tex>F \colon \mathcal { C } \to \mathcal { D }</fr:tex> between regular categories is said to be <fr:em><fr:strong>regular</fr:strong></fr:em> if it is cartesian and preserves covers.
-  Note that since cartesian functors preserve monomorphisms, every regular functor automatically preserves images.
-</fr:p>
+addr="ct-000M"
+title="Extremal epimorphism">covers</fr:link> are stable under pullback.
+  A functor <fr:tex
+display="inline"><![CDATA[F\colon \mathcal {C}\to \mathcal {D}]]></fr:tex> between regular categories is said to be <fr:em><fr:strong>regular</fr:strong></fr:em> if it is cartesian and preserves covers.
+  Note that since cartesian functors preserve monomorphisms, every regular functor automatically preserves images.</fr:p>
     
       
       <fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="false"
 numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>239</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>3</fr:day></fr:date><fr:parent>ct-000O</fr:parent></fr:frontmatter><fr:mainmatter>
-  <fr:p>
-    Let <fr:tex>F \colon \mathcal { C } \to \mathcal { D }</fr:tex> be a regular functor and <fr:tex>f \colon A \to B</fr:tex> be a morphism in <fr:tex>\mathcal { C }</fr:tex>.
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>293</fr:anchor><fr:addr
+type="machine">#265</fr:addr><fr:route>unstable-265.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>3</fr:day></fr:date><fr:authors /><fr:parent>ct-000O</fr:parent></fr:frontmatter><fr:mainmatter>
+  <fr:p>Let <fr:tex
+display="inline"><![CDATA[F\colon \mathcal {C}\to \mathcal {D}]]></fr:tex> be a regular functor and <fr:tex
+display="inline"><![CDATA[f\colon A\to B]]></fr:tex> be a morphism in <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex>.
     By <fr:ref
 addr="ct-000Q"
 href="ct-000Q.xml"
-taxon="Lemma"></fr:ref>, <fr:tex>f</fr:tex> admits a cover-mono factorization <fr:tex>f =  \mathsf { Img } (f) \vartheta _{f}</fr:tex>.
-    Then since <fr:tex>F</fr:tex> preserves monomorphisms and covers, <fr:tex>F( \mathsf { Img } (f))F( \vartheta _{f})</fr:tex> forms a cover-mono factorization of <fr:tex>F(f)</fr:tex>.
-    Then by uniqueness, <fr:tex>\mathsf { Img } (Ff)  \cong  F( \mathsf { Img } (f))</fr:tex>.
-  </fr:p>
-</fr:mainmatter></fr:tree>
+taxon="Lemma" />, <fr:tex
+display="inline"><![CDATA[f]]></fr:tex> admits a cover-mono factorization <fr:tex
+display="inline"><![CDATA[f = \mathsf {Img}(f)\vartheta _{f}]]></fr:tex>.
+    Then since <fr:tex
+display="inline"><![CDATA[F]]></fr:tex> preserves monomorphisms and covers, <fr:tex
+display="inline"><![CDATA[F(\mathsf {Img}(f))F(\vartheta _{f})]]></fr:tex> forms a cover-mono factorization of <fr:tex
+display="inline"><![CDATA[F(f)]]></fr:tex>.
+    Then by uniqueness, <fr:tex
+display="inline"><![CDATA[\mathsf {Img}(Ff) \cong  F(\mathsf {Img}(f))]]></fr:tex>.</fr:p>
+</fr:mainmatter><fr:backmatter /></fr:tree>
     
-  </fr:mainmatter></fr:tree><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+  </fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1000</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>ct-000K</fr:addr><fr:route>ct-000K.xml</fr:route><fr:title>Image</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>2</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>A category <fr:tex>\mathcal { C }</fr:tex> is said to have <fr:em><fr:strong>images</fr:strong></fr:em> if the inclusion functor <fr:tex>\mathsf { Sub } (A)  \hookrightarrow   {{ \mathcal { C } }_{/{ A }}}</fr:tex> admits a left adjoint <fr:tex>\mathsf { Img } \colon {{ \mathcal { C } }_{/{ A }}} \to \mathsf { Sub } (A)</fr:tex> for all objects <fr:tex>A  \in   \mathcal { C }</fr:tex>.</fr:p></fr:mainmatter></fr:tree><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>906</fr:anchor><fr:addr
+type="user">ct-000K</fr:addr><fr:route>ct-000K.xml</fr:route><fr:title
+text="Image">Image</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>2</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>A category <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> is said to have <fr:em><fr:strong>images</fr:strong></fr:em> if the inclusion functor <fr:tex
+display="inline"><![CDATA[\mathsf {Sub}(A) \hookrightarrow  {{\mathcal {C}}_{/{A}}}]]></fr:tex> admits a left adjoint <fr:tex
+display="inline"><![CDATA[\mathsf {Img}\colon {{\mathcal {C}}_{/{A}}}\to \mathsf {Sub}(A)]]></fr:tex> for all objects <fr:tex
+display="inline"><![CDATA[A \in  \mathcal {C}]]></fr:tex>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1001</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>ct-0008</fr:addr><fr:route>ct-0008.xml</fr:route><fr:title>Pasting lemma of pullbacks</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date></fr:frontmatter><fr:mainmatter>
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>907</fr:anchor><fr:addr
+type="user">ct-0008</fr:addr><fr:route>ct-0008.xml</fr:route><fr:title
+text="Pasting lemma of pullbacks">Pasting lemma of pullbacks</fr:title><fr:taxon>Lemma</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
     
       
       <fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="false"
 numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>567</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:parent>ct-0008</fr:parent></fr:frontmatter><fr:mainmatter>
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>699</fr:anchor><fr:addr
+type="machine">#284</fr:addr><fr:route>unstable-284.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:authors /><fr:parent>ct-0008</fr:parent></fr:frontmatter><fr:mainmatter>
   <fr:link
-href="todo.xml"
 type="local"
-addr="todo">TODO</fr:link>
-</fr:mainmatter></fr:tree>
+href="todo.xml"
+addr="todo"
+title="TODO">TODO</fr:link>
+</fr:mainmatter><fr:backmatter /></fr:tree>
     
-  </fr:mainmatter></fr:tree></fr:related><fr:backlinks></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>
+  </fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

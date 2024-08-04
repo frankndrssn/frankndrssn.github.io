@@ -1,85 +1,150 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="default.xsl"?>
 <fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
 numbered="true"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>862</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>ct-001B</fr:addr><fr:route>ct-001B.xml</fr:route><fr:title>Pseudocomplement</fr:title><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>13</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>
-  Let <fr:tex>A'  \rightarrowtail  A</fr:tex> be a subobject.
-  The <fr:em><fr:strong>pseudocomplement</fr:strong></fr:em> of <fr:tex>A'</fr:tex>, denoted as <fr:tex>{A'} ^{ \circ }</fr:tex>, is the largest subobject of <fr:tex>A</fr:tex> disjoint from <fr:tex>A'</fr:tex>, i.e., <fr:tex>A'  \cap  {A'} ^{ \circ }</fr:tex> is the initial object in <fr:tex>\mathsf { Sub } (A)</fr:tex>.
-  Further, a pseudocomplement is a <fr:em><fr:strong>complement</fr:strong></fr:em> if <fr:tex>A'  \cup  {A'} ^{ \circ }   \cong  A</fr:tex>, i.e., <fr:tex>A'  \cup  {A'} ^{ \circ }</fr:tex> is the terminal object of <fr:tex>\mathsf { Sub } (A)</fr:tex>.
-</fr:p></fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context></fr:context><fr:related></fr:related><fr:backlinks><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>712</fr:anchor><fr:addr
+type="user">ct-001B</fr:addr><fr:route>ct-001B.xml</fr:route><fr:title
+text="Pseudocomplement">Pseudocomplement</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>13</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[A' \rightarrowtail  A]]></fr:tex> be a subobject.
+  The <fr:em><fr:strong>pseudocomplement</fr:strong></fr:em> of <fr:tex
+display="inline"><![CDATA[A']]></fr:tex>, denoted as <fr:tex
+display="inline"><![CDATA[{A'}^{\circ }]]></fr:tex>, is the largest subobject of <fr:tex
+display="inline"><![CDATA[A]]></fr:tex> disjoint from <fr:tex
+display="inline"><![CDATA[A']]></fr:tex>, i.e., <fr:tex
+display="inline"><![CDATA[A' \cap  {A'}^{\circ }]]></fr:tex> is the initial object in <fr:tex
+display="inline"><![CDATA[\mathsf {Sub}(A)]]></fr:tex>.
+  Further, a pseudocomplement is a <fr:em><fr:strong>complement</fr:strong></fr:em> if <fr:tex
+display="inline"><![CDATA[A' \cup  {A'}^{\circ } \cong  A]]></fr:tex>, i.e., <fr:tex
+display="inline"><![CDATA[A' \cup  {A'}^{\circ }]]></fr:tex> is the terminal object of <fr:tex
+display="inline"><![CDATA[\mathsf {Sub}(A)]]></fr:tex>.</fr:p></fr:mainmatter><fr:backmatter><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
+text="Backlinks">Backlinks</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>861</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>log-000P</fr:addr><fr:route>log-000P.xml</fr:route><fr:title>Internal language of a category</fr:title><fr:date><fr:year>2024</fr:year><fr:month>7</fr:month><fr:day>2</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:link
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>713</fr:anchor><fr:addr
+type="user">log-000P</fr:addr><fr:route>log-000P.xml</fr:route><fr:title
+text="Internal language of a category">Internal language of a category</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>7</fr:month><fr:day>2</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:link
+type="local"
 href="todo.xml"
-type="local"
-addr="todo">TODO</fr:link><fr:p>
-  Fix quantifiers.
-</fr:p><fr:p>
-  Let <fr:tex>\mathcal { C }</fr:tex> be a sufficiently structured category.
-  We device an (informal) <fr:em><fr:strong>internal language</fr:strong></fr:em> for <fr:tex>\mathcal { C }</fr:tex> as follows:
-</fr:p><fr:ul><fr:li><fr:em><fr:strong>Terms</fr:strong></fr:em>:
-    <fr:ul><fr:li>
-        For any pair of objects <fr:tex>\Gamma ,  \Delta   \in   \mathcal { C }</fr:tex>, we write <fr:tex>f</fr:tex>, <fr:tex>g</fr:tex>, <fr:tex>h</fr:tex>, etc for morphisms <fr:tex>\Gamma   \to   \Delta</fr:tex> in <fr:tex>\mathcal { C }</fr:tex>.
-      </fr:li>
-      <fr:li>
-        For any pair of composable morphisms <fr:tex>f \colon \Delta \to \Xi</fr:tex> and <fr:tex>x \colon \Gamma \to \Delta</fr:tex>, we write <fr:tex>f(x)</fr:tex> for their composite.
-      </fr:li>
-      <fr:li>
-        For any pair of morphisms <fr:tex>f \colon \Gamma \to \Delta</fr:tex> and <fr:tex>x \colon \Xi \to \Delta</fr:tex>, we write <fr:tex>f { \mathopen {}[ x ] \mathclose {}}</fr:tex> for the morphism with codomain <fr:tex>\Xi</fr:tex> obtained by applying the pullback functor <fr:tex>x ^{*}</fr:tex> to the object <fr:tex>f</fr:tex> in <fr:tex>{{ \mathcal { C } }_{/{ \Delta }}}</fr:tex>.
-      </fr:li></fr:ul></fr:li>
+addr="todo"
+title="TODO">TODO</fr:link><fr:p>Fix quantifiers.</fr:p><fr:p>Let <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> be a sufficiently structured category.
+  We device an (informal) <fr:em><fr:strong>internal language</fr:strong></fr:em> for <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> as follows:</fr:p><fr:ul><fr:li><fr:em><fr:strong>Terms</fr:strong></fr:em>:
+    <fr:ul><fr:li>For any pair of objects <fr:tex
+display="inline"><![CDATA[\Gamma , \Delta  \in  \mathcal {C}]]></fr:tex>, we write <fr:tex
+display="inline"><![CDATA[f]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[g]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[h]]></fr:tex>, etc for morphisms <fr:tex
+display="inline"><![CDATA[\Gamma  \to  \Delta ]]></fr:tex> in <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex>.</fr:li>
+      <fr:li>For any pair of composable morphisms <fr:tex
+display="inline"><![CDATA[f\colon \Delta \to \Xi ]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[x\colon \Gamma \to \Delta ]]></fr:tex>, we write <fr:tex
+display="inline"><![CDATA[f(x)]]></fr:tex> for their composite.</fr:li>
+      <fr:li>For any pair of morphisms <fr:tex
+display="inline"><![CDATA[f\colon \Gamma \to \Delta ]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[x\colon \Xi \to \Delta ]]></fr:tex>, we write <fr:tex
+display="inline"><![CDATA[f{\mathopen {}[x]\mathclose {}}]]></fr:tex> for the morphism with codomain <fr:tex
+display="inline"><![CDATA[\Xi ]]></fr:tex> obtained by applying the pullback functor <fr:tex
+display="inline"><![CDATA[x^{*}]]></fr:tex> to the object <fr:tex
+display="inline"><![CDATA[f]]></fr:tex> in <fr:tex
+display="inline"><![CDATA[{{\mathcal {C}}_{/{\Delta }}}]]></fr:tex>.</fr:li></fr:ul></fr:li>
   <fr:li><fr:em><fr:strong>Formulas</fr:strong></fr:em>:
-    <fr:ul><fr:li>
-        For each object <fr:tex>\Gamma   \in   \mathcal { C }</fr:tex>, we write <fr:tex>\varphi</fr:tex>, <fr:tex>\psi</fr:tex>, <fr:tex>\chi</fr:tex>, etc for objects in <fr:tex>\mathsf { Sub } ( \Gamma )</fr:tex>.
-      </fr:li>
-      <fr:li>
-        For any two parallel pair of morphisms <fr:tex>s , t \colon \Gamma \rightrightarrows \Delta</fr:tex> in <fr:tex>\mathcal { C }</fr:tex>, we write <fr:tex>s = t</fr:tex> for the equalizer (considered as a subobject of <fr:tex>\Gamma</fr:tex>) of <fr:tex>s</fr:tex> and <fr:tex>t</fr:tex>.
-      </fr:li>
-      <fr:li>
-        For any two objects <fr:tex>\varphi ,  \psi   \in   \mathsf { Sub } ( \Gamma )</fr:tex>, we write <fr:tex>\varphi   \wedge   \psi</fr:tex> for their intersection.
-      </fr:li>
-      <fr:li>
-        For any object <fr:tex>\Gamma   \in   \mathcal { C }</fr:tex>, we write <fr:tex>\top</fr:tex> for the terminal object in <fr:tex>\mathsf { Sub } ( \Gamma )</fr:tex>.
-      </fr:li>
-      <fr:li>
-        For any object <fr:tex>\Gamma   \in   \mathcal { C }</fr:tex>, we write <fr:tex>\bot</fr:tex> for the initial object in <fr:tex>\mathsf { Sub } ( \Gamma )</fr:tex>.
-      </fr:li>
-      <fr:li>
-        For any two objects <fr:tex>\varphi ,  \psi   \in   \mathsf { Sub } ( \Gamma )</fr:tex>, we write <fr:tex>\varphi   \vee   \psi</fr:tex> for their union.
-      </fr:li>
-      <fr:li>
-        For any two objects <fr:tex>\varphi ,  \psi   \in   \mathsf { Sub } ( \Gamma )</fr:tex>, we write <fr:tex>\varphi   \Rightarrow   \psi</fr:tex> for their <fr:link
+    <fr:ul><fr:li>For each object <fr:tex
+display="inline"><![CDATA[\Gamma  \in  \mathcal {C}]]></fr:tex>, we write <fr:tex
+display="inline"><![CDATA[\varphi ]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[\psi ]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[\chi ]]></fr:tex>, etc for objects in <fr:tex
+display="inline"><![CDATA[\mathsf {Sub}(\Gamma )]]></fr:tex>.</fr:li>
+      <fr:li>For any two parallel pair of morphisms <fr:tex
+display="inline"><![CDATA[s,t\colon \Gamma \rightrightarrows \Delta ]]></fr:tex> in <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex>, we write <fr:tex
+display="inline"><![CDATA[s = t]]></fr:tex> for the equalizer (considered as a subobject of <fr:tex
+display="inline"><![CDATA[\Gamma ]]></fr:tex>) of <fr:tex
+display="inline"><![CDATA[s]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[t]]></fr:tex>.</fr:li>
+      <fr:li>For any two objects <fr:tex
+display="inline"><![CDATA[\varphi , \psi  \in  \mathsf {Sub}(\Gamma )]]></fr:tex>, we write <fr:tex
+display="inline"><![CDATA[\varphi  \wedge  \psi ]]></fr:tex> for their intersection.</fr:li>
+      <fr:li>For any object <fr:tex
+display="inline"><![CDATA[\Gamma  \in  \mathcal {C}]]></fr:tex>, we write <fr:tex
+display="inline"><![CDATA[\top ]]></fr:tex> for the terminal object in <fr:tex
+display="inline"><![CDATA[\mathsf {Sub}(\Gamma )]]></fr:tex>.</fr:li>
+      <fr:li>For any object <fr:tex
+display="inline"><![CDATA[\Gamma  \in  \mathcal {C}]]></fr:tex>, we write <fr:tex
+display="inline"><![CDATA[\bot ]]></fr:tex> for the initial object in <fr:tex
+display="inline"><![CDATA[\mathsf {Sub}(\Gamma )]]></fr:tex>.</fr:li>
+      <fr:li>For any two objects <fr:tex
+display="inline"><![CDATA[\varphi , \psi  \in  \mathsf {Sub}(\Gamma )]]></fr:tex>, we write <fr:tex
+display="inline"><![CDATA[\varphi  \vee  \psi ]]></fr:tex> for their union.</fr:li>
+      <fr:li>For any two objects <fr:tex
+display="inline"><![CDATA[\varphi , \psi  \in  \mathsf {Sub}(\Gamma )]]></fr:tex>, we write <fr:tex
+display="inline"><![CDATA[\varphi  \Rightarrow  \psi ]]></fr:tex> for their <fr:link
+type="local"
 href="ct-001C.xml"
+addr="ct-001C"
+title="Heyting implication">Heyting implication</fr:link>.</fr:li>
+      <fr:li>For any object <fr:tex
+display="inline"><![CDATA[\varphi  \in  \mathsf {Sub}(\Gamma )]]></fr:tex>, we write <fr:tex
+display="inline"><![CDATA[\lnot  \varphi ]]></fr:tex> for its <fr:link
 type="local"
-addr="ct-001C">Heyting implication</fr:link>.
-      </fr:li>
-      <fr:li>
-        For any object <fr:tex>\varphi   \in   \mathsf { Sub } ( \Gamma )</fr:tex>, we write <fr:tex>\lnot   \varphi</fr:tex> for its <fr:link
 href="ct-001B.xml"
-type="local"
-addr="ct-001B">pseudocomplement</fr:link>.
-      </fr:li>
-      <fr:li>
-        For any object <fr:tex>\varphi   \in   \mathsf { Sub } ( \Gamma )</fr:tex> and morphism <fr:tex>f \colon \Gamma \to \Delta</fr:tex>, we write <fr:tex>\exists _{f} \varphi</fr:tex> for the subobject of <fr:tex>\Delta</fr:tex> obtained by applying the left adjoint <fr:tex>\exists _{f}</fr:tex> to <fr:tex>\varphi</fr:tex>.
-      </fr:li>
-      <fr:li>
-        For any object <fr:tex>\varphi   \in   \mathsf { Sub } ( \Gamma )</fr:tex> and morphism <fr:tex>f \colon \Gamma \to \Delta</fr:tex>, we write <fr:tex>\forall _{f} \varphi</fr:tex> for for the subobject of <fr:tex>\Delta</fr:tex> obtained by applying the right adjoint <fr:tex>\forall _{f}</fr:tex> to <fr:tex>\varphi</fr:tex>.
-      </fr:li>
-      <fr:li>
-        For any object <fr:tex>\psi   \in   \mathsf { Sub } ( \Delta )</fr:tex> and morphism <fr:tex>f \colon \Gamma \to \Delta</fr:tex>, we write <fr:tex>\psi { \mathopen {}[ f ] \mathclose {}}</fr:tex> for the subobject of <fr:tex>\Gamma</fr:tex> obtained by applying the functor <fr:tex>f ^{*}</fr:tex> to <fr:tex>\psi</fr:tex>.
-      </fr:li></fr:ul></fr:li>
-  <fr:li><fr:em><fr:strong>Contexts</fr:strong></fr:em>: A list <fr:tex>x_{1} \colon A_{1} , \ldots , x_{n} \colon A_{n}</fr:tex> represents the product <fr:tex>A_{1}  \times   \cdots   \times  A_{n}</fr:tex> in <fr:tex>\mathcal { C }</fr:tex>.
-    Each variable <fr:tex>x_{i}</fr:tex> represents the <fr:tex>i</fr:tex>-th projection <fr:tex>\pi _{1} \colon A_{1}  \times   \cdots   \times  A_{n} \to A_{i}</fr:tex>.
-    If <fr:tex>n = 1</fr:tex>, then the unique variable <fr:tex>x</fr:tex> represents the identity morphism.
-  </fr:li>
-  <fr:li><fr:em><fr:strong>Sequents</fr:strong></fr:em>: A sequent <fr:tex>\Gamma | \varphi   \vdash   \psi</fr:tex> is intended to mean <fr:tex>\varphi   \leq   \psi</fr:tex> in the preorder <fr:tex>\mathsf { Sub } ( \Gamma )</fr:tex>.
-    We say that a sequent <fr:tex>\Gamma | \varphi   \vdash   \psi</fr:tex> is <fr:em><fr:strong>satisfied</fr:strong></fr:em> (in <fr:tex>\mathcal { C }</fr:tex>) if <fr:tex>\varphi   \leq   \psi</fr:tex> in <fr:tex>\mathsf { Sub } ( \Gamma )</fr:tex>.
-  </fr:li></fr:ul></fr:mainmatter></fr:tree></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>
+addr="ct-001B"
+title="Pseudocomplement">pseudocomplement</fr:link>.</fr:li>
+      <fr:li>For any object <fr:tex
+display="inline"><![CDATA[\varphi  \in  \mathsf {Sub}(\Gamma )]]></fr:tex> and morphism <fr:tex
+display="inline"><![CDATA[f\colon \Gamma \to \Delta ]]></fr:tex>, we write <fr:tex
+display="inline"><![CDATA[\exists _{f}\varphi ]]></fr:tex> for the subobject of <fr:tex
+display="inline"><![CDATA[\Delta ]]></fr:tex> obtained by applying the left adjoint <fr:tex
+display="inline"><![CDATA[\exists _{f}]]></fr:tex> to <fr:tex
+display="inline"><![CDATA[\varphi ]]></fr:tex>.</fr:li>
+      <fr:li>For any object <fr:tex
+display="inline"><![CDATA[\varphi  \in  \mathsf {Sub}(\Gamma )]]></fr:tex> and morphism <fr:tex
+display="inline"><![CDATA[f\colon \Gamma \to \Delta ]]></fr:tex>, we write <fr:tex
+display="inline"><![CDATA[\forall _{f}\varphi ]]></fr:tex> for for the subobject of <fr:tex
+display="inline"><![CDATA[\Delta ]]></fr:tex> obtained by applying the right adjoint <fr:tex
+display="inline"><![CDATA[\forall _{f}]]></fr:tex> to <fr:tex
+display="inline"><![CDATA[\varphi ]]></fr:tex>.</fr:li>
+      <fr:li>For any object <fr:tex
+display="inline"><![CDATA[\psi  \in  \mathsf {Sub}(\Delta )]]></fr:tex> and morphism <fr:tex
+display="inline"><![CDATA[f\colon \Gamma \to \Delta ]]></fr:tex>, we write <fr:tex
+display="inline"><![CDATA[\psi {\mathopen {}[f]\mathclose {}}]]></fr:tex> for the subobject of <fr:tex
+display="inline"><![CDATA[\Gamma ]]></fr:tex> obtained by applying the functor <fr:tex
+display="inline"><![CDATA[f^{*}]]></fr:tex> to <fr:tex
+display="inline"><![CDATA[\psi ]]></fr:tex>.</fr:li></fr:ul></fr:li>
+  <fr:li><fr:em><fr:strong>Contexts</fr:strong></fr:em>: A list <fr:tex
+display="inline"><![CDATA[x_{1}\colon A_{1},\ldots ,x_{n}\colon A_{n}]]></fr:tex> represents the product <fr:tex
+display="inline"><![CDATA[A_{1} \times  \cdots  \times  A_{n}]]></fr:tex> in <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex>.
+    Each variable <fr:tex
+display="inline"><![CDATA[x_{i}]]></fr:tex> represents the <fr:tex
+display="inline"><![CDATA[i]]></fr:tex>-th projection <fr:tex
+display="inline"><![CDATA[\pi _{1}\colon A_{1} \times  \cdots  \times  A_{n}\to A_{i}]]></fr:tex>.
+    If <fr:tex
+display="inline"><![CDATA[n = 1]]></fr:tex>, then the unique variable <fr:tex
+display="inline"><![CDATA[x]]></fr:tex> represents the identity morphism.</fr:li>
+  <fr:li><fr:em><fr:strong>Sequents</fr:strong></fr:em>: A sequent <fr:tex
+display="inline"><![CDATA[\Gamma |\varphi  \vdash  \psi ]]></fr:tex> is intended to mean <fr:tex
+display="inline"><![CDATA[\varphi  \leq  \psi ]]></fr:tex> in the preorder <fr:tex
+display="inline"><![CDATA[\mathsf {Sub}(\Gamma )]]></fr:tex>.
+    We say that a sequent <fr:tex
+display="inline"><![CDATA[\Gamma |\varphi  \vdash  \psi ]]></fr:tex> is <fr:em><fr:strong>satisfied</fr:strong></fr:em> (in <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex>) if <fr:tex
+display="inline"><![CDATA[\varphi  \leq  \psi ]]></fr:tex> in <fr:tex
+display="inline"><![CDATA[\mathsf {Sub}(\Gamma )]]></fr:tex>.</fr:li></fr:ul></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

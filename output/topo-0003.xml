@@ -1,52 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="default.xsl"?>
 <fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
 numbered="true"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1234</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-0003</fr:addr><fr:route>topo-0003.xml</fr:route><fr:title>Geometric morphism</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>\mathcal { E }</fr:tex> and <fr:tex>\mathcal { F }</fr:tex> be <fr:link
-href="topo-0001.xml"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1199</fr:anchor><fr:addr
+type="user">topo-0003</fr:addr><fr:route>topo-0003.xml</fr:route><fr:title
+text="Geometric morphism">Geometric morphism</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[\mathcal {E}]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[\mathcal {F}]]></fr:tex> be <fr:link
 type="local"
-addr="topo-0001">topoi</fr:link>. A <fr:em><fr:strong>geometric morphism</fr:strong></fr:em> <fr:tex>f \colon \mathcal { E } \to \mathcal { F }</fr:tex> is an adjoint pair of functors</fr:p>
+href="topo-0001.xml"
+addr="topo-0001"
+title="Elementary topos">topoi</fr:link>. A <fr:em><fr:strong>geometric morphism</fr:strong></fr:em> <fr:tex
+display="inline"><![CDATA[f\colon \mathcal {E}\to \mathcal {F}]]></fr:tex> is an adjoint pair of functors</fr:p>
     
       
       <fr:embedded-tex
-hash="4a915af0a8d1705ac76cc0e8b5bf8bb9"><fr:embedded-tex-preamble>
-         
-   \RequirePackage {tikz}
-   \RequirePackage {amsmath}
-   \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
+hash="8a1b605f5384f8244d0139cde02f4b11"><fr:embedded-tex-preamble><![CDATA[
+        
+  \RequirePackage {tikz}
+  \RequirePackage {amsmath}
+  \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
 
-   \definecolor {catccolor}{RGB}{255,244,138}
-   \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
-   \tikzstyle {catc}=[catccolor!60]
-   \tikzstyle {catd}=[orange!40]
-   \tikzstyle {cate}=[red!40]
-   \tikzstyle {catf}=[blue!10]
-   \tikzstyle {catg}=[green!25]
+  \definecolor {catccolor}{RGB}{255,244,138}
+  \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
+  \tikzstyle {catc}=[catccolor!60]
+  \tikzstyle {catd}=[orange!40]
+  \tikzstyle {cate}=[red!40]
+  \tikzstyle {catf}=[blue!10]
+  \tikzstyle {catg}=[green!25]
 
 
-   \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
-   \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
+  \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
+  \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
 
-   \NewDocumentCommand \CreateRect {D&lt;&gt;{} m m}{
-     \path 
+  \NewDocumentCommand \CreateRect {D<>{} m m}{
+    \path 
       coordinate (#1nw)
       ++(#2,-#3) coordinate (#1se)
       coordinate (#1sw) at (#1se -| #1nw)
       coordinate (#1ne) at (#1nw -| #1se)
     ;
 
-     \path [spath/save = #1north] (#1nw) to (#1ne);
-     \path [spath/save = #1west] (#1nw) to (#1sw);
-     \path [spath/save = #1east] (#1ne) to (#1se);
-     \path [spath/save = #1south] (#1sw) to (#1se);
+    \path [spath/save = #1north] (#1nw) to (#1ne);
+    \path [spath/save = #1west] (#1nw) to (#1sw);
+    \path [spath/save = #1east] (#1ne) to (#1se);
+    \path [spath/save = #1south] (#1sw) to (#1se);
   }
- 
-         
+
+        
    % appears to be necessary
   \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd}
   \usetikzlibrary{matrix,arrows}
@@ -115,7 +121,7 @@ hash="4a915af0a8d1705ac76cc0e8b5bf8bb9"><fr:embedded-tex-preamble>
       densely dashed
     },
     embedding/.style = {
-      {right hook}-&gt;
+      {right hook}->
     },
     cover/.style = {
       -{Triangle[open]}
@@ -147,10 +153,10 @@ hash="4a915af0a8d1705ac76cc0e8b5bf8bb9"><fr:embedded-tex-preamble>
     square/ne/.style = {},
     square/se/.style = {},
     square/sw/.style = {},
-    square/north/.style = {-&gt;},
-    square/south/.style = {-&gt;},
-    square/west/.style = {-&gt;},
-    square/east/.style = {-&gt;},
+    square/north/.style = {->},
+    square/south/.style = {->},
+    square/west/.style = {->},
+    square/east/.style = {->},
     square/north/node/.style = {above},
     square/south/node/.style = {below},
     square/west/node/.style = {left},
@@ -229,61 +235,107 @@ hash="4a915af0a8d1705ac76cc0e8b5bf8bb9"><fr:embedded-tex-preamble>
     \end{tikzpicture}
   }
   \ExplSyntaxOff
- 
-      </fr:embedded-tex-preamble><fr:embedded-tex-body>
-   \begin {tikzpicture}[diagram]
-     \node  (w) {$ \mathcal { E } $};
-     \node  [right = of w] (e) {$ \mathcal { F } $};
-     \draw  [-&gt;,morphism,offset=1.5] (w) to node[swap] (r) {$ f _{*} $} (e);
-     \draw  [-&gt;,morphism,offset=1.5] (e) to node[swap] (l) {$ f ^{*} $} (w);
-     \draw  [adjoint] (l) to (r);
-   \end {tikzpicture}
-</fr:embedded-tex-body></fr:embedded-tex>
+
+      ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+  \begin {tikzpicture}[diagram]
+    \node  (w) {$\mathcal {E}$};
+    \node  [right = of w] (e) {$\mathcal {F}$};
+    \draw  [->,morphism,offset=1.5] (w) to node[swap] (r) {$f_{*}$} (e);
+    \draw  [->,morphism,offset=1.5] (e) to node[swap] (l) {$f^{*}$} (w);
+    \draw  [adjoint] (l) to (r);
+  \end {tikzpicture}
+]]></fr:embedded-tex-body></fr:embedded-tex>
     
-  <fr:p>such that <fr:tex>f ^{*}</fr:tex> is left exact. The functors <fr:tex>f _{*}</fr:tex> and <fr:tex>f ^{*}</fr:tex> are called the <fr:em><fr:strong>direct image</fr:strong></fr:em> and the <fr:em><fr:strong>inverse image</fr:strong></fr:em> respectively.</fr:p></fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context></fr:context><fr:related><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+  <fr:p>such that <fr:tex
+display="inline"><![CDATA[f^{*}]]></fr:tex> is left exact. The functors <fr:tex
+display="inline"><![CDATA[f_{*}]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[f^{*}]]></fr:tex> are called the <fr:em><fr:strong>direct image</fr:strong></fr:em> and the <fr:em><fr:strong>inverse image</fr:strong></fr:em> respectively.</fr:p></fr:mainmatter><fr:backmatter><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
+text="Backlinks">Backlinks</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1233</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-0001</fr:addr><fr:route>topo-0001.xml</fr:route><fr:title>Elementary topos</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>An <fr:em><fr:strong>(elementary) topos</fr:strong></fr:em> is a finitely complete and cartesian closed category equipped with a <fr:link
-href="ct-0009.xml"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1200</fr:anchor><fr:addr
+type="user">topo-0005</fr:addr><fr:route>topo-0005.xml</fr:route><fr:title
+text="Equivalent definition of geometric transformation">Equivalent definition of <fr:link
 type="local"
-addr="ct-0009">subobject classifier</fr:link>.</fr:p></fr:mainmatter></fr:tree></fr:related><fr:backlinks><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="true"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1230</fr:anchor><fr:taxon>Remark</fr:taxon><fr:addr>topo-0005</fr:addr><fr:route>topo-0005.xml</fr:route><fr:title>Equivalent definition of <fr:link
 href="topo-0004.xml"
+addr="topo-0004"
+title="Geometric transformation">geometric transformation</fr:link></fr:title><fr:taxon>Remark</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Any natural transformation <fr:tex
+display="inline"><![CDATA[f_{*} \to  g_{*}]]></fr:tex> between the direct image part of the given <fr:link
 type="local"
-addr="topo-0004">geometric transformation</fr:link></fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>Any natural transformation <fr:tex>f _{*}   \to   g _{*}</fr:tex> between the direct image part of the given <fr:link
 href="topo-0003.xml"
-type="local"
-addr="topo-0003">geometric morphisms</fr:link>, <fr:tex>f</fr:tex> and <fr:tex>g</fr:tex>, corresponds to a unique natural transformation <fr:tex>f ^{*}   \to   g ^{*}</fr:tex> under the adjunctions <fr:tex>f ^{*}   \dashv   f _{*}</fr:tex> and <fr:tex>g ^{*}   \dashv   g _{*}</fr:tex>. Thus, a geometric transformation <fr:tex>f  \to  g</fr:tex> can be equivalently defined as a natural transformation <fr:tex>f ^{*}   \to   g ^{*}</fr:tex>.</fr:p></fr:mainmatter></fr:tree><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+addr="topo-0003"
+title="Geometric morphism">geometric morphisms</fr:link>, <fr:tex
+display="inline"><![CDATA[f]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[g]]></fr:tex>, corresponds to a unique natural transformation <fr:tex
+display="inline"><![CDATA[f^{*} \to  g^{*}]]></fr:tex> under the adjunctions <fr:tex
+display="inline"><![CDATA[f^{*} \dashv  f_{*}]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[g^{*} \dashv  g_{*}]]></fr:tex>. Thus, a geometric transformation <fr:tex
+display="inline"><![CDATA[f \to  g]]></fr:tex> can be equivalently defined as a natural transformation <fr:tex
+display="inline"><![CDATA[f^{*} \to  g^{*}]]></fr:tex>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1231</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-0006</fr:addr><fr:route>topo-0006.xml</fr:route><fr:title>Essential <fr:link
-href="topo-0003.xml"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1201</fr:anchor><fr:addr
+type="user">topo-0006</fr:addr><fr:route>topo-0006.xml</fr:route><fr:title
+text="Essential geometric morphism">Essential <fr:link
 type="local"
-addr="topo-0003">geometric morphism</fr:link></fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>A <fr:link
 href="topo-0003.xml"
+addr="topo-0003"
+title="Geometric morphism">geometric morphism</fr:link></fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>A <fr:link
 type="local"
-addr="topo-0003">geometric morphism</fr:link> <fr:tex>f \colon \mathcal { E } \to \mathcal { F }</fr:tex> is said to be <fr:em><fr:strong>essential</fr:strong></fr:em> if its inverse image <fr:tex>f ^{*}</fr:tex> admits a left adjoint.</fr:p></fr:mainmatter></fr:tree><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+href="topo-0003.xml"
+addr="topo-0003"
+title="Geometric morphism">geometric morphism</fr:link> <fr:tex
+display="inline"><![CDATA[f\colon \mathcal {E}\to \mathcal {F}]]></fr:tex> is said to be <fr:em><fr:strong>essential</fr:strong></fr:em> if its inverse image <fr:tex
+display="inline"><![CDATA[f^{*}]]></fr:tex> admits a left adjoint.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1232</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-0004</fr:addr><fr:route>topo-0004.xml</fr:route><fr:title>Geometric transformation</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>f , g \colon \mathcal { E } \rightrightarrows \mathcal { F }</fr:tex> be a pair of <fr:link
-href="topo-0003.xml"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1202</fr:anchor><fr:addr
+type="user">topo-0004</fr:addr><fr:route>topo-0004.xml</fr:route><fr:title
+text="Geometric transformation">Geometric transformation</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[f,g\colon \mathcal {E}\rightrightarrows \mathcal {F}]]></fr:tex> be a pair of <fr:link
 type="local"
-addr="topo-0003">geometric morphisms</fr:link>. A <fr:em><fr:strong>geometric transformation</fr:strong></fr:em> <fr:tex>\alpha \colon f \to g</fr:tex> is a natural transformation <fr:tex>\alpha \colon f _{*} \to g _{*}</fr:tex>.</fr:p></fr:mainmatter></fr:tree></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>
+href="topo-0003.xml"
+addr="topo-0003"
+title="Geometric morphism">geometric morphisms</fr:link>. A <fr:em><fr:strong>geometric transformation</fr:strong></fr:em> <fr:tex
+display="inline"><![CDATA[\alpha \colon f\to g]]></fr:tex> is a natural transformation <fr:tex
+display="inline"><![CDATA[\alpha \colon f_{*}\to g_{*}]]></fr:tex>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
+text="Related">Related</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1203</fr:anchor><fr:addr
+type="user">topo-0001</fr:addr><fr:route>topo-0001.xml</fr:route><fr:title
+text="Elementary topos">Elementary topos</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>An <fr:em><fr:strong>(elementary) topos</fr:strong></fr:em> is a finitely complete and cartesian closed category equipped with a <fr:link
+type="local"
+href="ct-0009.xml"
+addr="ct-0009"
+title="Subobject classifier">subobject classifier</fr:link>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

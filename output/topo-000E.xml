@@ -1,132 +1,211 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="default.xsl"?>
 <fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="true"
 numbered="true"
 show-heading="true"
 show-metadata="true"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1184</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-000E</fr:addr><fr:route>topo-000E.xml</fr:route><fr:title>Separated object</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>j</fr:tex> be a <fr:link
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1143</fr:anchor><fr:addr
+type="user">topo-000E</fr:addr><fr:route>topo-000E.xml</fr:route><fr:title
+text="Separated object">Separated object</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[j]]></fr:tex> be a <fr:link
+type="local"
 href="topo-000A.xml"
+addr="topo-000A"
+title="Lawvere-Tierney topology">topology</fr:link> on a <fr:link
 type="local"
-addr="topo-000A">topology</fr:link> on a <fr:link
 href="topo-0001.xml"
+addr="topo-0001"
+title="Elementary topos">topos</fr:link> <fr:tex
+display="inline"><![CDATA[\mathcal {E}]]></fr:tex>. An object <fr:tex
+display="inline"><![CDATA[S \in  \mathcal {E}]]></fr:tex> is said to be <fr:em><fr:strong><fr:tex
+display="inline"><![CDATA[j]]></fr:tex>-separated</fr:strong></fr:em> if for any <fr:link
 type="local"
-addr="topo-0001">topos</fr:link> <fr:tex>\mathcal { E }</fr:tex>. An object <fr:tex>S  \in   \mathcal { E }</fr:tex> is said to be <fr:em><fr:strong><fr:tex>j</fr:tex>-separated</fr:strong></fr:em> if for any <fr:link
 href="topo-000D.xml"
-type="local"
-addr="topo-000D">dense</fr:link> subobject <fr:tex>m \colon  A  \rightarrowtail  B</fr:tex> and any morphism <fr:tex>f \colon  A  \to  S</fr:tex>, there is <fr:em>at most</fr:em> one morphism <fr:tex>g \colon  B  \to  S</fr:tex> such that <fr:tex>f = gm</fr:tex>.</fr:p></fr:mainmatter><fr:backmatter><fr:contributions></fr:contributions><fr:context></fr:context><fr:related><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+addr="topo-000D"
+title="Dense subobject">dense</fr:link> subobject <fr:tex
+display="inline"><![CDATA[m\colon  A \rightarrowtail  B]]></fr:tex> and any morphism <fr:tex
+display="inline"><![CDATA[f\colon  A \to  S]]></fr:tex>, there is <fr:em>at most</fr:em> one morphism <fr:tex
+display="inline"><![CDATA[g\colon  B \to  S]]></fr:tex> such that <fr:tex
+display="inline"><![CDATA[f = gm]]></fr:tex>.</fr:p></fr:mainmatter><fr:backmatter><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
+text="Backlinks">Backlinks</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1181</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-000A</fr:addr><fr:route>topo-000A.xml</fr:route><fr:title>Lawvere-Tierney topology</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>A <fr:em><fr:strong>(Lawvere-Tierney) topology</fr:strong></fr:em> on a <fr:link
-href="topo-0001.xml"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1144</fr:anchor><fr:addr
+type="user">topo-000G</fr:addr><fr:route>topo-000G.xml</fr:route><fr:title
+text="Separated objects correspond to closed diagonal relations"><fr:link
 type="local"
-addr="topo-0001">topos</fr:link> <fr:tex>\mathcal { E }</fr:tex> is a morphism <fr:tex>j \colon   \Omega   \to   \Omega</fr:tex> satisfying the following equations.</fr:p><fr:ol><fr:li><fr:tex>j \top  =  \top</fr:tex></fr:li>
-  <fr:li><fr:tex>jj = j</fr:tex></fr:li>
-  <fr:li><fr:tex>j \wedge  =  \wedge (j  \times  j)</fr:tex></fr:li></fr:ol></fr:mainmatter></fr:tree><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="true"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1182</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-000D</fr:addr><fr:route>topo-000D.xml</fr:route><fr:title>Dense subobject</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>j</fr:tex> be a <fr:link
-href="topo-000A.xml"
-type="local"
-addr="topo-000A">topology</fr:link> on a <fr:link
-href="topo-0001.xml"
-type="local"
-addr="topo-0001">topos</fr:link>. A subobject <fr:tex>m \colon  A  \rightarrowtail  B</fr:tex> is said to be <fr:em><fr:strong><fr:tex>j</fr:tex>-dense</fr:strong></fr:em> if its <fr:link
-href="topo-000C.xml"
-type="local"
-addr="topo-000C">closure</fr:link> is an isomorphism.</fr:p></fr:mainmatter></fr:tree><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="true"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1183</fr:anchor><fr:taxon>Definition</fr:taxon><fr:addr>topo-0001</fr:addr><fr:route>topo-0001.xml</fr:route><fr:title>Elementary topos</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>An <fr:em><fr:strong>(elementary) topos</fr:strong></fr:em> is a finitely complete and cartesian closed category equipped with a <fr:link
-href="ct-0009.xml"
-type="local"
-addr="ct-0009">subobject classifier</fr:link>.</fr:p></fr:mainmatter></fr:tree></fr:related><fr:backlinks><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="true"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1179</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>topo-000G</fr:addr><fr:route>topo-000G.xml</fr:route><fr:title><fr:link
 href="topo-000E.xml"
+addr="topo-000E"
+title="Separated object">Separated</fr:link> objects correspond to <fr:link
 type="local"
-addr="topo-000E">Separated</fr:link> objects correspond to <fr:link
 href="topo-000B.xml"
+addr="topo-000B"
+title="Closed subobject">closed</fr:link> diagonal relations</fr:title><fr:taxon>Lemma</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>An object <fr:tex
+display="inline"><![CDATA[A]]></fr:tex> of a <fr:link
 type="local"
-addr="topo-000B">closed</fr:link> diagonal relations</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>An object <fr:tex>A</fr:tex> of a <fr:link
 href="topo-0001.xml"
+addr="topo-0001"
+title="Elementary topos">topos</fr:link> <fr:tex
+display="inline"><![CDATA[\mathcal {E}]]></fr:tex> is <fr:link
 type="local"
-addr="topo-0001">topos</fr:link> <fr:tex>\mathcal { E }</fr:tex> is <fr:link
 href="topo-000E.xml"
+addr="topo-000E"
+title="Separated object">separated</fr:link> iff the diagonal subobject <fr:tex
+display="inline"><![CDATA[\Delta \colon  A \rightarrowtail  A \times  A]]></fr:tex> is <fr:link
 type="local"
-addr="topo-000E">separated</fr:link> iff the diagonal subobject <fr:tex>\Delta \colon  A  \rightarrowtail  A  \times  A</fr:tex> is <fr:link
 href="topo-000B.xml"
-type="local"
-addr="topo-000B">closed</fr:link>.</fr:p>
+addr="topo-000B"
+title="Closed subobject">closed</fr:link>.</fr:p>
     
       
       <fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="false"
 numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>572</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:parent>topo-000G</fr:parent></fr:frontmatter><fr:mainmatter>
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1084</fr:anchor><fr:addr
+type="machine">#236</fr:addr><fr:route>unstable-236.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors /><fr:parent>topo-000G</fr:parent></fr:frontmatter><fr:mainmatter>
   <fr:link
-href="todo.xml"
 type="local"
-addr="todo">TODO</fr:link>
-</fr:mainmatter></fr:tree>
+href="todo.xml"
+addr="todo"
+title="TODO">TODO</fr:link>
+</fr:mainmatter><fr:backmatter /></fr:tree>
     
-  </fr:mainmatter></fr:tree><fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
+  </fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
 toc="true"
 numbered="false"
 show-heading="true"
 show-metadata="true"
-expanded="true"
-root="false"><fr:frontmatter><fr:anchor>1180</fr:anchor><fr:taxon>Lemma</fr:taxon><fr:addr>topo-000H</fr:addr><fr:route>topo-000H.xml</fr:route><fr:title>Subobjects of separated objects are separated</fr:title><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex>A</fr:tex> be a <fr:link
-href="topo-000E.xml"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1145</fr:anchor><fr:addr
+type="user">topo-000H</fr:addr><fr:route>topo-000H.xml</fr:route><fr:title
+text="Subobjects of separated objects are separated">Subobjects of separated objects are separated</fr:title><fr:taxon>Lemma</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[A]]></fr:tex> be a <fr:link
 type="local"
-addr="topo-000E">separated</fr:link> object in a <fr:link
+href="topo-000E.xml"
+addr="topo-000E"
+title="Separated object">separated</fr:link> object in a <fr:link
+type="local"
 href="topo-0001.xml"
+addr="topo-0001"
+title="Elementary topos">topos</fr:link> <fr:tex
+display="inline"><![CDATA[\mathcal {E}]]></fr:tex>. Any subobject <fr:tex
+display="inline"><![CDATA[m\colon  A' \rightarrowtail  A]]></fr:tex> is <fr:link
 type="local"
-addr="topo-0001">topos</fr:link> <fr:tex>\mathcal { E }</fr:tex>. Any subobject <fr:tex>m \colon  A'  \rightarrowtail  A</fr:tex> is <fr:link
 href="topo-000E.xml"
-type="local"
-addr="topo-000E">separated</fr:link>.</fr:p>
+addr="topo-000E"
+title="Separated object">separated</fr:link>.</fr:p>
     
       
       <fr:tree
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"
 toc="false"
 numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
-root="false"><fr:frontmatter><fr:anchor>585</fr:anchor><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:parent>topo-000H</fr:parent></fr:frontmatter><fr:mainmatter>
-  Let <fr:tex>m' \colon  B'  \rightarrowtail  B</fr:tex> be a <fr:link
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1092</fr:anchor><fr:addr
+type="machine">#235</fr:addr><fr:route>unstable-235.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors /><fr:parent>topo-000H</fr:parent></fr:frontmatter><fr:mainmatter>
+  Let <fr:tex
+display="inline"><![CDATA[m'\colon  B' \rightarrowtail  B]]></fr:tex> be a <fr:link
+type="local"
 href="topo-000D.xml"
+addr="topo-000D"
+title="Dense subobject">dense</fr:link> subobject and <fr:tex
+display="inline"><![CDATA[f\colon  B' \to  A']]></fr:tex> be any morphism. If <fr:tex
+display="inline"><![CDATA[f = gm' = hm']]></fr:tex> then <fr:tex
+display="inline"><![CDATA[mf = mgm' = mhm']]></fr:tex>. First, <fr:tex
+display="inline"><![CDATA[mg = mh]]></fr:tex> because <fr:tex
+display="inline"><![CDATA[A]]></fr:tex> is <fr:link
 type="local"
-addr="topo-000D">dense</fr:link> subobject and <fr:tex>f \colon  B'  \to  A'</fr:tex> be any morphism. If <fr:tex>f = gm' = hm'</fr:tex> then <fr:tex>mf = mgm' = mhm'</fr:tex>. First, <fr:tex>mg = mh</fr:tex> because <fr:tex>A</fr:tex> is <fr:link
 href="topo-000E.xml"
-type="local"
-addr="topo-000E">separated</fr:link>. Then it follows that <fr:tex>g = h</fr:tex> because <fr:tex>m</fr:tex> is a monomorphism.
-</fr:mainmatter></fr:tree>
+addr="topo-000E"
+title="Separated object">separated</fr:link>. Then it follows that <fr:tex
+display="inline"><![CDATA[g = h]]></fr:tex> because <fr:tex
+display="inline"><![CDATA[m]]></fr:tex> is a monomorphism.
+</fr:mainmatter><fr:backmatter /></fr:tree>
     
-  </fr:mainmatter></fr:tree></fr:backlinks><fr:references></fr:references></fr:backmatter></fr:tree>
+  </fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
+text="Related">Related</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1146</fr:anchor><fr:addr
+type="user">topo-000A</fr:addr><fr:route>topo-000A.xml</fr:route><fr:title
+text="Lawvere-Tierney topology">Lawvere-Tierney topology</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>A <fr:em><fr:strong>(Lawvere-Tierney) topology</fr:strong></fr:em> on a <fr:link
+type="local"
+href="topo-0001.xml"
+addr="topo-0001"
+title="Elementary topos">topos</fr:link> <fr:tex
+display="inline"><![CDATA[\mathcal {E}]]></fr:tex> is a morphism <fr:tex
+display="inline"><![CDATA[j\colon  \Omega  \to  \Omega ]]></fr:tex> satisfying the following equations.</fr:p><fr:ol><fr:li><fr:tex
+display="inline"><![CDATA[j\top  = \top ]]></fr:tex></fr:li>
+  <fr:li><fr:tex
+display="inline"><![CDATA[jj = j]]></fr:tex></fr:li>
+  <fr:li><fr:tex
+display="inline"><![CDATA[j\wedge  = \wedge (j \times  j)]]></fr:tex></fr:li></fr:ol></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1147</fr:anchor><fr:addr
+type="user">topo-000D</fr:addr><fr:route>topo-000D.xml</fr:route><fr:title
+text="Dense subobject">Dense subobject</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[j]]></fr:tex> be a <fr:link
+type="local"
+href="topo-000A.xml"
+addr="topo-000A"
+title="Lawvere-Tierney topology">topology</fr:link> on a <fr:link
+type="local"
+href="topo-0001.xml"
+addr="topo-0001"
+title="Elementary topos">topos</fr:link>. A subobject <fr:tex
+display="inline"><![CDATA[m\colon  A \rightarrowtail  B]]></fr:tex> is said to be <fr:em><fr:strong><fr:tex
+display="inline"><![CDATA[j]]></fr:tex>-dense</fr:strong></fr:em> if its <fr:link
+type="local"
+href="topo-000C.xml"
+addr="topo-000C"
+title="Closure">closure</fr:link> is an isomorphism.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1148</fr:anchor><fr:addr
+type="user">topo-0001</fr:addr><fr:route>topo-0001.xml</fr:route><fr:title
+text="Elementary topos">Elementary topos</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>27</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>An <fr:em><fr:strong>(elementary) topos</fr:strong></fr:em> is a finitely complete and cartesian closed category equipped with a <fr:link
+type="local"
+href="ct-0009.xml"
+addr="ct-0009"
+title="Subobject classifier">subobject classifier</fr:link>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>
