@@ -7,118 +7,26 @@ show-heading="true"
 show-metadata="true"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>648</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>664</fr:anchor><fr:addr
 type="user">log-000P</fr:addr><fr:route>log-000P.xml</fr:route><fr:title
-text="Internal language of a category">Internal language of a category</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>7</fr:month><fr:day>2</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:link
+text="Internal language of a category">Internal language of a category</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>7</fr:month><fr:day>2</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> be a category.
+  The <fr:em><fr:strong>internal language</fr:strong></fr:em> of <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> consists of the signature <fr:tex
+display="inline"><![CDATA[\Sigma ]]></fr:tex> whose sorts are the objects of <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex>, function symbols are the morphisms of <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex>, and relation symbols are the subobjects in <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex>.</fr:p><fr:p>We write <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> for the canonical <fr:link
 type="local"
-href="todo.xml"
-addr="todo"
-title="TODO">TODO</fr:link><fr:p>Fix quantifiers.</fr:p><fr:p>Let <fr:tex
-display="inline"><![CDATA[\mathcal {C}]]></fr:tex> be a sufficiently structured category.
-  We device an (informal) <fr:em><fr:strong>internal language</fr:strong></fr:em> for <fr:tex
-display="inline"><![CDATA[\mathcal {C}]]></fr:tex> as follows:</fr:p><fr:ul><fr:li><fr:em><fr:strong>Terms</fr:strong></fr:em>:
-    <fr:ul><fr:li>For any pair of objects <fr:tex
-display="inline"><![CDATA[\Gamma , \Delta  \in  \mathcal {C}]]></fr:tex>, we write <fr:tex
-display="inline"><![CDATA[f]]></fr:tex>, <fr:tex
-display="inline"><![CDATA[g]]></fr:tex>, <fr:tex
-display="inline"><![CDATA[h]]></fr:tex>, etc for morphisms <fr:tex
-display="inline"><![CDATA[\Gamma  \to  \Delta ]]></fr:tex> in <fr:tex
-display="inline"><![CDATA[\mathcal {C}]]></fr:tex>.</fr:li>
-      <fr:li>For any pair of composable morphisms <fr:tex
-display="inline"><![CDATA[f\colon \Delta \to \Xi ]]></fr:tex> and <fr:tex
-display="inline"><![CDATA[x\colon \Gamma \to \Delta ]]></fr:tex>, we write <fr:tex
-display="inline"><![CDATA[f(x)]]></fr:tex> for their composite.</fr:li>
-      <fr:li>For any pair of morphisms <fr:tex
-display="inline"><![CDATA[f\colon \Gamma \to \Delta ]]></fr:tex> and <fr:tex
-display="inline"><![CDATA[x\colon \Xi \to \Delta ]]></fr:tex>, we write <fr:tex
-display="inline"><![CDATA[f{\mathopen {}[x]\mathclose {}}]]></fr:tex> for the morphism with codomain <fr:tex
-display="inline"><![CDATA[\Xi ]]></fr:tex> obtained by applying the pullback functor <fr:tex
-display="inline"><![CDATA[x^{*}]]></fr:tex> to the object <fr:tex
-display="inline"><![CDATA[f]]></fr:tex> in <fr:tex
-display="inline"><![CDATA[{{\mathcal {C}}_{/{\Delta }}}]]></fr:tex>.</fr:li></fr:ul></fr:li>
-  <fr:li><fr:em><fr:strong>Formulas</fr:strong></fr:em>:
-    <fr:ul><fr:li>For each object <fr:tex
-display="inline"><![CDATA[\Gamma  \in  \mathcal {C}]]></fr:tex>, we write <fr:tex
-display="inline"><![CDATA[\varphi ]]></fr:tex>, <fr:tex
-display="inline"><![CDATA[\psi ]]></fr:tex>, <fr:tex
-display="inline"><![CDATA[\chi ]]></fr:tex>, etc for objects in <fr:tex
-display="inline"><![CDATA[\mathsf {Sub}(\Gamma )]]></fr:tex>.</fr:li>
-      <fr:li>For any two parallel pair of morphisms <fr:tex
-display="inline"><![CDATA[s,t\colon \Gamma \rightrightarrows \Delta ]]></fr:tex> in <fr:tex
-display="inline"><![CDATA[\mathcal {C}]]></fr:tex>, we write <fr:tex
-display="inline"><![CDATA[s = t]]></fr:tex> for the equalizer (considered as a subobject of <fr:tex
-display="inline"><![CDATA[\Gamma ]]></fr:tex>) of <fr:tex
-display="inline"><![CDATA[s]]></fr:tex> and <fr:tex
-display="inline"><![CDATA[t]]></fr:tex>.</fr:li>
-      <fr:li>For any two objects <fr:tex
-display="inline"><![CDATA[\varphi , \psi  \in  \mathsf {Sub}(\Gamma )]]></fr:tex>, we write <fr:tex
-display="inline"><![CDATA[\varphi  \wedge  \psi ]]></fr:tex> for their intersection.</fr:li>
-      <fr:li>For any object <fr:tex
-display="inline"><![CDATA[\Gamma  \in  \mathcal {C}]]></fr:tex>, we write <fr:tex
-display="inline"><![CDATA[\top ]]></fr:tex> for the terminal object in <fr:tex
-display="inline"><![CDATA[\mathsf {Sub}(\Gamma )]]></fr:tex>.</fr:li>
-      <fr:li>For any object <fr:tex
-display="inline"><![CDATA[\Gamma  \in  \mathcal {C}]]></fr:tex>, we write <fr:tex
-display="inline"><![CDATA[\bot ]]></fr:tex> for the initial object in <fr:tex
-display="inline"><![CDATA[\mathsf {Sub}(\Gamma )]]></fr:tex>.</fr:li>
-      <fr:li>For any two objects <fr:tex
-display="inline"><![CDATA[\varphi , \psi  \in  \mathsf {Sub}(\Gamma )]]></fr:tex>, we write <fr:tex
-display="inline"><![CDATA[\varphi  \vee  \psi ]]></fr:tex> for their union.</fr:li>
-      <fr:li>For any two objects <fr:tex
-display="inline"><![CDATA[\varphi , \psi  \in  \mathsf {Sub}(\Gamma )]]></fr:tex>, we write <fr:tex
-display="inline"><![CDATA[\varphi  \Rightarrow  \psi ]]></fr:tex> for their <fr:link
-type="local"
-href="ct-001C.xml"
-addr="ct-001C"
-title="Heyting implication">Heyting implication</fr:link>.</fr:li>
-      <fr:li>For any object <fr:tex
-display="inline"><![CDATA[\varphi  \in  \mathsf {Sub}(\Gamma )]]></fr:tex>, we write <fr:tex
-display="inline"><![CDATA[\lnot  \varphi ]]></fr:tex> for its <fr:link
-type="local"
-href="ct-001B.xml"
-addr="ct-001B"
-title="Pseudocomplement">pseudocomplement</fr:link>.</fr:li>
-      <fr:li>For any object <fr:tex
-display="inline"><![CDATA[\varphi  \in  \mathsf {Sub}(\Gamma )]]></fr:tex> and morphism <fr:tex
-display="inline"><![CDATA[f\colon \Gamma \to \Delta ]]></fr:tex>, we write <fr:tex
-display="inline"><![CDATA[\exists _{f}\varphi ]]></fr:tex> for the subobject of <fr:tex
-display="inline"><![CDATA[\Delta ]]></fr:tex> obtained by applying the left adjoint <fr:tex
-display="inline"><![CDATA[\exists _{f}]]></fr:tex> to <fr:tex
-display="inline"><![CDATA[\varphi ]]></fr:tex>.</fr:li>
-      <fr:li>For any object <fr:tex
-display="inline"><![CDATA[\varphi  \in  \mathsf {Sub}(\Gamma )]]></fr:tex> and morphism <fr:tex
-display="inline"><![CDATA[f\colon \Gamma \to \Delta ]]></fr:tex>, we write <fr:tex
-display="inline"><![CDATA[\forall _{f}\varphi ]]></fr:tex> for for the subobject of <fr:tex
-display="inline"><![CDATA[\Delta ]]></fr:tex> obtained by applying the right adjoint <fr:tex
-display="inline"><![CDATA[\forall _{f}]]></fr:tex> to <fr:tex
-display="inline"><![CDATA[\varphi ]]></fr:tex>.</fr:li>
-      <fr:li>For any object <fr:tex
-display="inline"><![CDATA[\psi  \in  \mathsf {Sub}(\Delta )]]></fr:tex> and morphism <fr:tex
-display="inline"><![CDATA[f\colon \Gamma \to \Delta ]]></fr:tex>, we write <fr:tex
-display="inline"><![CDATA[\psi {\mathopen {}[f]\mathclose {}}]]></fr:tex> for the subobject of <fr:tex
-display="inline"><![CDATA[\Gamma ]]></fr:tex> obtained by applying the functor <fr:tex
-display="inline"><![CDATA[f^{*}]]></fr:tex> to <fr:tex
-display="inline"><![CDATA[\psi ]]></fr:tex>.</fr:li></fr:ul></fr:li>
-  <fr:li><fr:em><fr:strong>Contexts</fr:strong></fr:em>: A list <fr:tex
-display="inline"><![CDATA[x_{1}\colon A_{1},\ldots ,x_{n}\colon A_{n}]]></fr:tex> represents the product <fr:tex
-display="inline"><![CDATA[A_{1} \times  \cdots  \times  A_{n}]]></fr:tex> in <fr:tex
-display="inline"><![CDATA[\mathcal {C}]]></fr:tex>.
-    Each variable <fr:tex
-display="inline"><![CDATA[x_{i}]]></fr:tex> represents the <fr:tex
-display="inline"><![CDATA[i]]></fr:tex>-th projection <fr:tex
-display="inline"><![CDATA[\pi _{1}\colon A_{1} \times  \cdots  \times  A_{n}\to A_{i}]]></fr:tex>.
-    If <fr:tex
-display="inline"><![CDATA[n = 1]]></fr:tex>, then the unique variable <fr:tex
-display="inline"><![CDATA[x]]></fr:tex> represents the identity morphism.</fr:li>
-  <fr:li><fr:em><fr:strong>Sequents</fr:strong></fr:em>: A sequent <fr:tex
-display="inline"><![CDATA[\Gamma |\varphi  \vdash  \psi ]]></fr:tex> is intended to mean <fr:tex
-display="inline"><![CDATA[\varphi  \leq  \psi ]]></fr:tex> in the preorder <fr:tex
-display="inline"><![CDATA[\mathsf {Sub}(\Gamma )]]></fr:tex>.
-    We say that a sequent <fr:tex
-display="inline"><![CDATA[\Gamma |\varphi  \vdash  \psi ]]></fr:tex> is <fr:em><fr:strong>satisfied</fr:strong></fr:em> (in <fr:tex
-display="inline"><![CDATA[\mathcal {C}]]></fr:tex>) if <fr:tex
-display="inline"><![CDATA[\varphi  \leq  \psi ]]></fr:tex> in <fr:tex
-display="inline"><![CDATA[\mathsf {Sub}(\Gamma )]]></fr:tex>.</fr:li></fr:ul></fr:mainmatter><fr:backmatter><fr:tree
+href="log-0006.xml"
+addr="log-0006"
+title="Sigma structure"><fr:tex
+display="inline"><![CDATA[\Sigma ]]></fr:tex>-structure</fr:link> that maps each variable to the appropriate product projection, each function symbol <fr:tex
+display="inline"><![CDATA[f\colon A_{1},\ldots ,A_{n}\to B]]></fr:tex> to its underlying morphism <fr:tex
+display="inline"><![CDATA[f\colon A_{1} \times  \cdots  \times  A_{n}\to B]]></fr:tex>, and each relation symbol <fr:tex
+display="inline"><![CDATA[R \rightarrowtail  A_{1},\ldots ,A_{n}]]></fr:tex> to its underlying subobject <fr:tex
+display="inline"><![CDATA[R \rightarrowtail  A_{1} \times  \cdots  \times  A_{n}]]></fr:tex>.</fr:p></fr:mainmatter><fr:backmatter><fr:tree
 toc="false"
 numbered="false"
 show-heading="true"
@@ -133,7 +41,7 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>649</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>665</fr:anchor><fr:addr
 type="user">fnd-000B</fr:addr><fr:route>fnd-000B.xml</fr:route><fr:title
 text="Doctrine">Doctrine</fr:title><fr:taxon>Section</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>7</fr:month><fr:day>2</fr:day></fr:date><fr:authors><fr:author><fr:link
 type="local"
@@ -146,7 +54,7 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>381</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>388</fr:anchor><fr:addr
 type="user">log-000C</fr:addr><fr:route>log-000C.xml</fr:route><fr:title
 text="Doctrine">Doctrine</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>21</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
 display="inline"><![CDATA[\mathcal {C}]]></fr:tex> be a category with finite products.
@@ -403,7 +311,7 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>382</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>389</fr:anchor><fr:addr
 type="user">log-000E</fr:addr><fr:route>log-000E.xml</fr:route><fr:title
 text="Beck-Chevalley condition">Beck-Chevalley condition</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>24</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
 display="inline"><![CDATA[T\colon \mathcal {C}^\mathrm {op}\to \mathsf {CAT}]]></fr:tex> be a <fr:link
@@ -665,7 +573,7 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>383</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>390</fr:anchor><fr:addr
 type="user">log-000D</fr:addr><fr:route>log-000D.xml</fr:route><fr:title
 text="Frobenius reciprocity">Frobenius reciprocity</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>24</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
 display="inline"><![CDATA[T\colon \mathcal {C}^\mathrm {op}\to \mathsf {CAT}]]></fr:tex> be a <fr:link
@@ -694,7 +602,7 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>384</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>391</fr:anchor><fr:addr
 type="user">log-000F</fr:addr><fr:route>log-000F.xml</fr:route><fr:title
 text="Hyperdoctrine">Hyperdoctrine</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>24</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>A <fr:em><fr:strong>(first-order) hyperdoctrine</fr:strong></fr:em> is a <fr:link
 type="local"
@@ -979,7 +887,7 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>385</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>392</fr:anchor><fr:addr
 type="user">log-000H</fr:addr><fr:route>log-000H.xml</fr:route><fr:title
 text="Naming fucntor">Naming fucntor</fr:title><fr:taxon>Lemma</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>24</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
 display="inline"><![CDATA[\mathcal {C}]]></fr:tex> be a category with finite limits and <fr:tex
@@ -1245,8 +1153,8 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>386</fr:anchor><fr:addr
-type="machine">#245</fr:addr><fr:route>unstable-245.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>24</fr:day></fr:date><fr:authors /><fr:parent>log-000H</fr:parent></fr:frontmatter><fr:mainmatter>
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>393</fr:anchor><fr:addr
+type="machine">#246</fr:addr><fr:route>unstable-246.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>24</fr:day></fr:date><fr:authors /><fr:parent>log-000H</fr:parent></fr:frontmatter><fr:mainmatter>
   <fr:p>For each object <fr:tex
 display="inline"><![CDATA[f\colon X\to Y]]></fr:tex> in <fr:tex
 display="inline"><![CDATA[{{\mathcal {C}}_{/{Y}}}]]></fr:tex>, take <fr:tex
@@ -1521,7 +1429,7 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>387</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>394</fr:anchor><fr:addr
 type="user">log-000I</fr:addr><fr:route>log-000I.xml</fr:route><fr:title
 text="Comprehension schema">Comprehension schema</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>24</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
 display="inline"><![CDATA[T\colon \mathcal {C}^\mathrm {op}\to \mathsf {Lat}]]></fr:tex> be a <fr:link
@@ -1543,7 +1451,7 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>388</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>395</fr:anchor><fr:addr
 type="user">log-000J</fr:addr><fr:route>log-000J.xml</fr:route><fr:title
 text="Subobject doctrine of a regular category">Subobject doctrine of a regular category</fr:title><fr:taxon>Lemma</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>24</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
 display="inline"><![CDATA[\mathcal {C}]]></fr:tex> be a <fr:link
@@ -1565,8 +1473,8 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>389</fr:anchor><fr:addr
-type="machine">#244</fr:addr><fr:route>unstable-244.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>24</fr:day></fr:date><fr:authors /><fr:parent>log-000J</fr:parent></fr:frontmatter><fr:mainmatter>
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>396</fr:anchor><fr:addr
+type="machine">#245</fr:addr><fr:route>unstable-245.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>24</fr:day></fr:date><fr:authors /><fr:parent>log-000J</fr:parent></fr:frontmatter><fr:mainmatter>
   <fr:p>Each fiber <fr:tex
 display="inline"><![CDATA[\mathsf {Sub}(A)]]></fr:tex> has finite limits inherited from <fr:tex
 display="inline"><![CDATA[\mathcal {C}]]></fr:tex>.
@@ -1597,125 +1505,33 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>390</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>397</fr:anchor><fr:addr
 type="user">log-000P</fr:addr><fr:route>log-000P.xml</fr:route><fr:title
-text="Internal language of a category">Internal language of a category</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>7</fr:month><fr:day>2</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:link
+text="Internal language of a category">Internal language of a category</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>7</fr:month><fr:day>2</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> be a category.
+  The <fr:em><fr:strong>internal language</fr:strong></fr:em> of <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> consists of the signature <fr:tex
+display="inline"><![CDATA[\Sigma ]]></fr:tex> whose sorts are the objects of <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex>, function symbols are the morphisms of <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex>, and relation symbols are the subobjects in <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex>.</fr:p><fr:p>We write <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> for the canonical <fr:link
 type="local"
-href="todo.xml"
-addr="todo"
-title="TODO">TODO</fr:link><fr:p>Fix quantifiers.</fr:p><fr:p>Let <fr:tex
-display="inline"><![CDATA[\mathcal {C}]]></fr:tex> be a sufficiently structured category.
-  We device an (informal) <fr:em><fr:strong>internal language</fr:strong></fr:em> for <fr:tex
-display="inline"><![CDATA[\mathcal {C}]]></fr:tex> as follows:</fr:p><fr:ul><fr:li><fr:em><fr:strong>Terms</fr:strong></fr:em>:
-    <fr:ul><fr:li>For any pair of objects <fr:tex
-display="inline"><![CDATA[\Gamma , \Delta  \in  \mathcal {C}]]></fr:tex>, we write <fr:tex
-display="inline"><![CDATA[f]]></fr:tex>, <fr:tex
-display="inline"><![CDATA[g]]></fr:tex>, <fr:tex
-display="inline"><![CDATA[h]]></fr:tex>, etc for morphisms <fr:tex
-display="inline"><![CDATA[\Gamma  \to  \Delta ]]></fr:tex> in <fr:tex
-display="inline"><![CDATA[\mathcal {C}]]></fr:tex>.</fr:li>
-      <fr:li>For any pair of composable morphisms <fr:tex
-display="inline"><![CDATA[f\colon \Delta \to \Xi ]]></fr:tex> and <fr:tex
-display="inline"><![CDATA[x\colon \Gamma \to \Delta ]]></fr:tex>, we write <fr:tex
-display="inline"><![CDATA[f(x)]]></fr:tex> for their composite.</fr:li>
-      <fr:li>For any pair of morphisms <fr:tex
-display="inline"><![CDATA[f\colon \Gamma \to \Delta ]]></fr:tex> and <fr:tex
-display="inline"><![CDATA[x\colon \Xi \to \Delta ]]></fr:tex>, we write <fr:tex
-display="inline"><![CDATA[f{\mathopen {}[x]\mathclose {}}]]></fr:tex> for the morphism with codomain <fr:tex
-display="inline"><![CDATA[\Xi ]]></fr:tex> obtained by applying the pullback functor <fr:tex
-display="inline"><![CDATA[x^{*}]]></fr:tex> to the object <fr:tex
-display="inline"><![CDATA[f]]></fr:tex> in <fr:tex
-display="inline"><![CDATA[{{\mathcal {C}}_{/{\Delta }}}]]></fr:tex>.</fr:li></fr:ul></fr:li>
-  <fr:li><fr:em><fr:strong>Formulas</fr:strong></fr:em>:
-    <fr:ul><fr:li>For each object <fr:tex
-display="inline"><![CDATA[\Gamma  \in  \mathcal {C}]]></fr:tex>, we write <fr:tex
-display="inline"><![CDATA[\varphi ]]></fr:tex>, <fr:tex
-display="inline"><![CDATA[\psi ]]></fr:tex>, <fr:tex
-display="inline"><![CDATA[\chi ]]></fr:tex>, etc for objects in <fr:tex
-display="inline"><![CDATA[\mathsf {Sub}(\Gamma )]]></fr:tex>.</fr:li>
-      <fr:li>For any two parallel pair of morphisms <fr:tex
-display="inline"><![CDATA[s,t\colon \Gamma \rightrightarrows \Delta ]]></fr:tex> in <fr:tex
-display="inline"><![CDATA[\mathcal {C}]]></fr:tex>, we write <fr:tex
-display="inline"><![CDATA[s = t]]></fr:tex> for the equalizer (considered as a subobject of <fr:tex
-display="inline"><![CDATA[\Gamma ]]></fr:tex>) of <fr:tex
-display="inline"><![CDATA[s]]></fr:tex> and <fr:tex
-display="inline"><![CDATA[t]]></fr:tex>.</fr:li>
-      <fr:li>For any two objects <fr:tex
-display="inline"><![CDATA[\varphi , \psi  \in  \mathsf {Sub}(\Gamma )]]></fr:tex>, we write <fr:tex
-display="inline"><![CDATA[\varphi  \wedge  \psi ]]></fr:tex> for their intersection.</fr:li>
-      <fr:li>For any object <fr:tex
-display="inline"><![CDATA[\Gamma  \in  \mathcal {C}]]></fr:tex>, we write <fr:tex
-display="inline"><![CDATA[\top ]]></fr:tex> for the terminal object in <fr:tex
-display="inline"><![CDATA[\mathsf {Sub}(\Gamma )]]></fr:tex>.</fr:li>
-      <fr:li>For any object <fr:tex
-display="inline"><![CDATA[\Gamma  \in  \mathcal {C}]]></fr:tex>, we write <fr:tex
-display="inline"><![CDATA[\bot ]]></fr:tex> for the initial object in <fr:tex
-display="inline"><![CDATA[\mathsf {Sub}(\Gamma )]]></fr:tex>.</fr:li>
-      <fr:li>For any two objects <fr:tex
-display="inline"><![CDATA[\varphi , \psi  \in  \mathsf {Sub}(\Gamma )]]></fr:tex>, we write <fr:tex
-display="inline"><![CDATA[\varphi  \vee  \psi ]]></fr:tex> for their union.</fr:li>
-      <fr:li>For any two objects <fr:tex
-display="inline"><![CDATA[\varphi , \psi  \in  \mathsf {Sub}(\Gamma )]]></fr:tex>, we write <fr:tex
-display="inline"><![CDATA[\varphi  \Rightarrow  \psi ]]></fr:tex> for their <fr:link
-type="local"
-href="ct-001C.xml"
-addr="ct-001C"
-title="Heyting implication">Heyting implication</fr:link>.</fr:li>
-      <fr:li>For any object <fr:tex
-display="inline"><![CDATA[\varphi  \in  \mathsf {Sub}(\Gamma )]]></fr:tex>, we write <fr:tex
-display="inline"><![CDATA[\lnot  \varphi ]]></fr:tex> for its <fr:link
-type="local"
-href="ct-001B.xml"
-addr="ct-001B"
-title="Pseudocomplement">pseudocomplement</fr:link>.</fr:li>
-      <fr:li>For any object <fr:tex
-display="inline"><![CDATA[\varphi  \in  \mathsf {Sub}(\Gamma )]]></fr:tex> and morphism <fr:tex
-display="inline"><![CDATA[f\colon \Gamma \to \Delta ]]></fr:tex>, we write <fr:tex
-display="inline"><![CDATA[\exists _{f}\varphi ]]></fr:tex> for the subobject of <fr:tex
-display="inline"><![CDATA[\Delta ]]></fr:tex> obtained by applying the left adjoint <fr:tex
-display="inline"><![CDATA[\exists _{f}]]></fr:tex> to <fr:tex
-display="inline"><![CDATA[\varphi ]]></fr:tex>.</fr:li>
-      <fr:li>For any object <fr:tex
-display="inline"><![CDATA[\varphi  \in  \mathsf {Sub}(\Gamma )]]></fr:tex> and morphism <fr:tex
-display="inline"><![CDATA[f\colon \Gamma \to \Delta ]]></fr:tex>, we write <fr:tex
-display="inline"><![CDATA[\forall _{f}\varphi ]]></fr:tex> for for the subobject of <fr:tex
-display="inline"><![CDATA[\Delta ]]></fr:tex> obtained by applying the right adjoint <fr:tex
-display="inline"><![CDATA[\forall _{f}]]></fr:tex> to <fr:tex
-display="inline"><![CDATA[\varphi ]]></fr:tex>.</fr:li>
-      <fr:li>For any object <fr:tex
-display="inline"><![CDATA[\psi  \in  \mathsf {Sub}(\Delta )]]></fr:tex> and morphism <fr:tex
-display="inline"><![CDATA[f\colon \Gamma \to \Delta ]]></fr:tex>, we write <fr:tex
-display="inline"><![CDATA[\psi {\mathopen {}[f]\mathclose {}}]]></fr:tex> for the subobject of <fr:tex
-display="inline"><![CDATA[\Gamma ]]></fr:tex> obtained by applying the functor <fr:tex
-display="inline"><![CDATA[f^{*}]]></fr:tex> to <fr:tex
-display="inline"><![CDATA[\psi ]]></fr:tex>.</fr:li></fr:ul></fr:li>
-  <fr:li><fr:em><fr:strong>Contexts</fr:strong></fr:em>: A list <fr:tex
-display="inline"><![CDATA[x_{1}\colon A_{1},\ldots ,x_{n}\colon A_{n}]]></fr:tex> represents the product <fr:tex
-display="inline"><![CDATA[A_{1} \times  \cdots  \times  A_{n}]]></fr:tex> in <fr:tex
-display="inline"><![CDATA[\mathcal {C}]]></fr:tex>.
-    Each variable <fr:tex
-display="inline"><![CDATA[x_{i}]]></fr:tex> represents the <fr:tex
-display="inline"><![CDATA[i]]></fr:tex>-th projection <fr:tex
-display="inline"><![CDATA[\pi _{1}\colon A_{1} \times  \cdots  \times  A_{n}\to A_{i}]]></fr:tex>.
-    If <fr:tex
-display="inline"><![CDATA[n = 1]]></fr:tex>, then the unique variable <fr:tex
-display="inline"><![CDATA[x]]></fr:tex> represents the identity morphism.</fr:li>
-  <fr:li><fr:em><fr:strong>Sequents</fr:strong></fr:em>: A sequent <fr:tex
-display="inline"><![CDATA[\Gamma |\varphi  \vdash  \psi ]]></fr:tex> is intended to mean <fr:tex
-display="inline"><![CDATA[\varphi  \leq  \psi ]]></fr:tex> in the preorder <fr:tex
-display="inline"><![CDATA[\mathsf {Sub}(\Gamma )]]></fr:tex>.
-    We say that a sequent <fr:tex
-display="inline"><![CDATA[\Gamma |\varphi  \vdash  \psi ]]></fr:tex> is <fr:em><fr:strong>satisfied</fr:strong></fr:em> (in <fr:tex
-display="inline"><![CDATA[\mathcal {C}]]></fr:tex>) if <fr:tex
-display="inline"><![CDATA[\varphi  \leq  \psi ]]></fr:tex> in <fr:tex
-display="inline"><![CDATA[\mathsf {Sub}(\Gamma )]]></fr:tex>.</fr:li></fr:ul></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+href="log-0006.xml"
+addr="log-0006"
+title="Sigma structure"><fr:tex
+display="inline"><![CDATA[\Sigma ]]></fr:tex>-structure</fr:link> that maps each variable to the appropriate product projection, each function symbol <fr:tex
+display="inline"><![CDATA[f\colon A_{1},\ldots ,A_{n}\to B]]></fr:tex> to its underlying morphism <fr:tex
+display="inline"><![CDATA[f\colon A_{1} \times  \cdots  \times  A_{n}\to B]]></fr:tex>, and each relation symbol <fr:tex
+display="inline"><![CDATA[R \rightarrowtail  A_{1},\ldots ,A_{n}]]></fr:tex> to its underlying subobject <fr:tex
+display="inline"><![CDATA[R \rightarrowtail  A_{1} \times  \cdots  \times  A_{n}]]></fr:tex>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
 toc="true"
 numbered="true"
 show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>391</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>398</fr:anchor><fr:addr
 type="user">log-000N</fr:addr><fr:route>log-000N.xml</fr:route><fr:title
 text="Deduction system for regular categories">Deduction system for <fr:link
 type="local"
@@ -1818,7 +1634,7 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>392</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>399</fr:anchor><fr:addr
 type="user">log-000O</fr:addr><fr:route>log-000O.xml</fr:route><fr:title
 text="Soundness of deduction system for regular categories">Soundness of <fr:link
 type="local"
@@ -1837,8 +1653,8 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>393</fr:anchor><fr:addr
-type="machine">#243</fr:addr><fr:route>unstable-243.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>7</fr:month><fr:day>2</fr:day></fr:date><fr:authors /><fr:parent>log-000O</fr:parent></fr:frontmatter><fr:mainmatter>
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>400</fr:anchor><fr:addr
+type="machine">#244</fr:addr><fr:route>unstable-244.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>7</fr:month><fr:day>2</fr:day></fr:date><fr:authors /><fr:parent>log-000O</fr:parent></fr:frontmatter><fr:mainmatter>
   <fr:p>The first two structural rules are given by reflexivity and transitivity in each preorder <fr:tex
 display="inline"><![CDATA[\mathsf {Sub}(\Gamma )]]></fr:tex>.
     The last structural rules is given by the action on morphisms of the functor <fr:tex
@@ -2359,7 +2175,7 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>394</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>401</fr:anchor><fr:addr
 type="user">log-000Q</fr:addr><fr:route>log-000Q.xml</fr:route><fr:title
 text="Functional completeness">Functional completeness</fr:title><fr:taxon>Lemma</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>7</fr:month><fr:day>2</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:link
 type="local"
@@ -2388,12 +2204,137 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>395</fr:anchor><fr:addr
-type="machine">#242</fr:addr><fr:route>unstable-242.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>7</fr:month><fr:day>2</fr:day></fr:date><fr:authors /><fr:parent>log-000Q</fr:parent></fr:frontmatter><fr:mainmatter>
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>402</fr:anchor><fr:addr
+type="machine">#243</fr:addr><fr:route>unstable-243.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>7</fr:month><fr:day>2</fr:day></fr:date><fr:authors /><fr:parent>log-000Q</fr:parent></fr:frontmatter><fr:mainmatter>
 
 </fr:mainmatter><fr:backmatter /></fr:tree>
     
   </fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
+text="Backlinks">Backlinks</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>667</fr:anchor><fr:addr
+type="user">log-000U</fr:addr><fr:route>log-000U.xml</fr:route><fr:title
+text="Composite morphisms in a regular category">Composite morphisms in a <fr:link
+type="local"
+href="ct-000O.xml"
+addr="ct-000O"
+title="Regular category">regular category</fr:link></fr:title><fr:taxon>Lemma</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>8</fr:month><fr:day>8</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> be a regular category.
+  <fr:tex
+display="inline"><![CDATA[f\colon A\to C]]></fr:tex> is the composite of <fr:tex
+display="inline"><![CDATA[g\colon A\to B]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[h\colon B\to C]]></fr:tex> iff <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> satisfies <fr:tex
+display="inline"><![CDATA[x\colon A|\top  \vdash  f(x) = h(g(x))]]></fr:tex> in its <fr:link
+type="local"
+href="log-000P.xml"
+addr="log-000P"
+title="Internal language of a category">internal language</fr:link>.</fr:p>
+    
+      
+      <fr:tree
+toc="false"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>290</fr:anchor><fr:addr
+type="machine">#240</fr:addr><fr:route>unstable-240.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>8</fr:month><fr:day>8</fr:day></fr:date><fr:authors /><fr:parent>log-000U</fr:parent></fr:frontmatter><fr:mainmatter>
+  <fr:p>Suppose that <fr:tex
+display="inline"><![CDATA[f = hg]]></fr:tex>.
+    Then <fr:tex
+display="inline"><![CDATA[{\mathopen {}\llbracket h(g(x))\rrbracket \mathclose {}}_{\mathcal {C}} = {\mathopen {}\llbracket h\rrbracket \mathclose {}}_{\mathcal {C}} \circ  {\mathopen {}\llbracket g\rrbracket \mathclose {}}_{\mathcal {C}} \circ  \mathsf {id}_{A} = hg]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[{\mathopen {}\llbracket f(x)\rrbracket \mathclose {}}_{\mathcal {C}} = {\mathopen {}\llbracket f\rrbracket \mathclose {}}_{\mathcal {C}} \circ  \mathsf {id}_{A} = f]]></fr:tex>.
+    Thus, the equalizer of <fr:tex
+display="inline"><![CDATA[{\mathopen {}\llbracket f(x)\rrbracket \mathclose {}}_{\mathcal {C}}]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[{\mathopen {}\llbracket h(g(x))\rrbracket \mathclose {}}_{\mathcal {C}}]]></fr:tex> is the terminal object, and the result follows immediately.</fr:p>
+  <fr:p>Suppose the converse.
+    Then the identity morphism <fr:tex
+display="inline"><![CDATA[\mathsf {id}_{A}]]></fr:tex> equalizes <fr:tex
+display="inline"><![CDATA[{\mathopen {}\llbracket f(x)\rrbracket \mathclose {}}_{\mathcal {C}}]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[{\mathopen {}\llbracket h(g(x))\rrbracket \mathclose {}}_{\mathcal {C}}]]></fr:tex>.
+    Thus, it follows that <fr:tex
+display="inline"><![CDATA[f = hg]]></fr:tex>.</fr:p>
+</fr:mainmatter><fr:backmatter /></fr:tree>
+    
+  </fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>668</fr:anchor><fr:addr
+type="user">log-000S</fr:addr><fr:route>log-000S.xml</fr:route><fr:title
+text="Identity morphisms in a regular category">Identity morphisms in a <fr:link
+type="local"
+href="ct-000O.xml"
+addr="ct-000O"
+title="Regular category">regular category</fr:link></fr:title><fr:taxon>Lemma</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>8</fr:month><fr:day>2</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> be a regular category.
+  <fr:tex
+display="inline"><![CDATA[f\colon A\to A]]></fr:tex> is the identity morphism iff <fr:tex
+display="inline"><![CDATA[x\colon A|\top  \vdash  f(x) = x]]></fr:tex> is <fr:link
+type="local"
+href="log-000T.xml"
+addr="log-000T"
+title="Satisfaction">satisfied</fr:link> in the <fr:link
+type="local"
+href="log-000P.xml"
+addr="log-000P"
+title="Internal language of a category">internal language</fr:link> of <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex>.</fr:p>
+    
+      
+      <fr:tree
+toc="false"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>494</fr:anchor><fr:addr
+type="machine">#241</fr:addr><fr:route>unstable-241.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>8</fr:month><fr:day>2</fr:day></fr:date><fr:authors /><fr:parent>log-000S</fr:parent></fr:frontmatter><fr:mainmatter>
+  <fr:p>Suppose that <fr:tex
+display="inline"><![CDATA[f]]></fr:tex> is the identity morphism.
+    Then by <fr:ref
+addr="log-0007"
+href="log-0007.xml"
+taxon="Definition" />, <fr:tex
+display="inline"><![CDATA[{\mathopen {}\llbracket f(x)\rrbracket \mathclose {}}_{\mathcal {C}}]]></fr:tex> is <fr:tex
+display="inline"><![CDATA[\mathsf {id}_{A} \circ  {\mathopen {}\llbracket x\rrbracket \mathclose {}}_{\mathcal {C}} = {\mathopen {}\llbracket x\rrbracket \mathclose {}}_{\mathcal {C}}]]></fr:tex>.
+    But the equalizer with itself is the terminal object.
+    Thus, <fr:tex
+display="inline"><![CDATA[\top  \leq  {\mathopen {}\llbracket f(x) = x\rrbracket \mathclose {}}_{\mathcal {C}}]]></fr:tex> in <fr:tex
+display="inline"><![CDATA[\mathsf {Sub}(A)]]></fr:tex> as required.</fr:p>
+  <fr:p>Conversely, suppose that the terminal object of <fr:tex
+display="inline"><![CDATA[\mathsf {Sub}(A)]]></fr:tex> (i.e., the identity morphism <fr:tex
+display="inline"><![CDATA[\mathsf {id}_{A}]]></fr:tex>) factors through <fr:tex
+display="inline"><![CDATA[{\mathopen {}\llbracket f(x) = x\rrbracket \mathclose {}}_{\mathcal {C}}]]></fr:tex>.
+    Then it follows that <fr:tex
+display="inline"><![CDATA[\mathsf {id}_{A}]]></fr:tex> equalizes <fr:tex
+display="inline"><![CDATA[{\mathopen {}\llbracket f(x)\rrbracket \mathclose {}}_{\mathcal {C}}]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[{\mathopen {}\llbracket x\rrbracket \mathclose {}}_{\mathcal {C}}]]></fr:tex>.
+    Since <fr:tex
+display="inline"><![CDATA[{\mathopen {}\llbracket x\rrbracket \mathclose {}}_{\mathcal {C}} = \mathsf {id}_{A}]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[{\mathopen {}\llbracket f(x)\rrbracket \mathclose {}}_{\mathcal {C}} = {\mathopen {}\llbracket f\rrbracket \mathclose {}}_{\mathcal {C}} = f]]></fr:tex>, it follows that <fr:tex
+display="inline"><![CDATA[f = \mathsf {id}_{A}]]></fr:tex>.</fr:p>
+</fr:mainmatter><fr:backmatter /></fr:tree>
+    
+  </fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
 toc="false"
 numbered="false"
 show-heading="true"
@@ -2408,48 +2349,543 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>651</fr:anchor><fr:addr
-type="user">ct-001C</fr:addr><fr:route>ct-001C.xml</fr:route><fr:title
-text="Heyting implication">Heyting implication</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>13</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
-display="inline"><![CDATA[A_{1}]]></fr:tex> and <fr:tex
-display="inline"><![CDATA[A_{2}]]></fr:tex> be two subobjects of <fr:tex
-display="inline"><![CDATA[A]]></fr:tex>.
-  The <fr:em><fr:strong>Heyting implication</fr:strong></fr:em> <fr:tex
-display="inline"><![CDATA[A_{1} \Rightarrow  A_{2}]]></fr:tex> is the largest subobject of <fr:tex
-display="inline"><![CDATA[A]]></fr:tex> such that <fr:tex
-display="inline"><![CDATA[A_{1} \cap  (A_{1} \Rightarrow  A_{2})]]></fr:tex> is contained in <fr:tex
-display="inline"><![CDATA[A_{2}]]></fr:tex>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="true"
-expanded="false"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>652</fr:anchor><fr:addr
-type="user">ct-001B</fr:addr><fr:route>ct-001B.xml</fr:route><fr:title
-text="Pseudocomplement">Pseudocomplement</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>13</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
-display="inline"><![CDATA[A' \rightarrowtail  A]]></fr:tex> be a subobject.
-  The <fr:em><fr:strong>pseudocomplement</fr:strong></fr:em> of <fr:tex
-display="inline"><![CDATA[A']]></fr:tex>, denoted as <fr:tex
-display="inline"><![CDATA[{A'}^{\circ }]]></fr:tex>, is the largest subobject of <fr:tex
-display="inline"><![CDATA[A]]></fr:tex> disjoint from <fr:tex
-display="inline"><![CDATA[A']]></fr:tex>, i.e., <fr:tex
-display="inline"><![CDATA[A' \cap  {A'}^{\circ }]]></fr:tex> is the initial object in <fr:tex
-display="inline"><![CDATA[\mathsf {Sub}(A)]]></fr:tex>.
-  Further, a pseudocomplement is a <fr:em><fr:strong>complement</fr:strong></fr:em> if <fr:tex
-display="inline"><![CDATA[A' \cup  {A'}^{\circ } \cong  A]]></fr:tex>, i.e., <fr:tex
-display="inline"><![CDATA[A' \cup  {A'}^{\circ }]]></fr:tex> is the terminal object of <fr:tex
-display="inline"><![CDATA[\mathsf {Sub}(A)]]></fr:tex>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
-toc="true"
-numbered="false"
-show-heading="true"
-show-metadata="true"
-expanded="false"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>653</fr:anchor><fr:addr
-type="user">todo</fr:addr><fr:route>todo.xml</fr:route><fr:title
-text="TODO">TODO</fr:title><fr:authors><fr:author><fr:link
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>669</fr:anchor><fr:addr
+type="user">log-0006</fr:addr><fr:route>log-0006.xml</fr:route><fr:title
+text="Sigma structure">Sigma structure</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>17</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> be a category with finite products and <fr:tex
+display="inline"><![CDATA[\Sigma ]]></fr:tex> be a <fr:link
 type="local"
-href="frankndrssn.xml"
-addr="frankndrssn"
-title="Frank Tsai">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter /><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>
+href="log-0001.xml"
+addr="log-0001"
+title="Signature">signature</fr:link>.
+  The category of <fr:em><fr:strong><fr:tex
+display="inline"><![CDATA[\Sigma ]]></fr:tex>-structures</fr:strong></fr:em> in <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex>, denoted as <fr:tex
+display="inline"><![CDATA[\Sigma \text {-}\mathsf {Str}(\mathcal {C})]]></fr:tex>, consists of the following data:</fr:p>
+  <html:table
+xmlns:html="http://www.w3.org/1999/xhtml">
+  
+  <html:tr>
+    
+  <html:th>Objects</html:th>
+
+    
+  <html:th>Morphisms</html:th>
+
+  </html:tr>
+
+  
+  <html:tr>
+    
+  <html:td>
+      A <fr:tex
+display="inline"><![CDATA[\Sigma ]]></fr:tex>-structure consists of the following data:
+      <fr:ul><fr:li>Each sort <fr:tex
+display="inline"><![CDATA[A]]></fr:tex> in <fr:tex
+display="inline"><![CDATA[\Sigma ]]></fr:tex> is associated with an object <fr:tex
+display="inline"><![CDATA[MA]]></fr:tex> in <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex>.
+          This is extended to any finite string of sorts by the assignment <fr:tex
+display="inline"><![CDATA[M(A_{1},\ldots ,A_{n}) \mapsto  MA_{1} \times  \cdots  \times  MA_{n}]]></fr:tex>.
+          The empty string is associated with the terminal object <fr:tex
+display="inline"><![CDATA[1]]></fr:tex> of <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex>.</fr:li>
+        <fr:li>Each function symbol <fr:tex
+display="inline"><![CDATA[f\colon A_{1},\ldots ,A_{n}\to B]]></fr:tex> is associated with a morphism <fr:tex
+display="inline"><![CDATA[Mf\colon M(A_{1},\ldots ,A_{n})\to MB]]></fr:tex> in <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex>.</fr:li>
+        <fr:li>Each relation symbol <fr:tex
+display="inline"><![CDATA[R \rightarrowtail  A_{1},\ldots ,A_{n}]]></fr:tex> is associated with a subobject of <fr:tex
+display="inline"><![CDATA[M(A_{1},\ldots ,A_{n})]]></fr:tex> in <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex>.</fr:li></fr:ul>
+    </html:td>
+
+    
+  <html:td>
+      Let <fr:tex
+display="inline"><![CDATA[M]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[N]]></fr:tex> be <fr:tex
+display="inline"><![CDATA[\Sigma ]]></fr:tex>-structures.
+      A <fr:em><fr:strong>homomorphism</fr:strong></fr:em> <fr:tex
+display="inline"><![CDATA[h\colon M\to N]]></fr:tex> consists of an indexed family of morphisms <fr:tex
+display="inline"><![CDATA[h_{A}\colon MA\to NA]]></fr:tex> for each sort <fr:tex
+display="inline"><![CDATA[A]]></fr:tex>.
+      This data is subject to the following conditions:
+      <fr:ul><fr:li>For each function symbol <fr:tex
+display="inline"><![CDATA[f\colon A_{1},\ldots ,A_{n}\to B]]></fr:tex>, the following square commutes:
+          
+    
+      
+      <fr:figure><fr:embedded-tex
+hash="1b5e749b0c2aedab83e8af1c80e3442d"><fr:embedded-tex-preamble><![CDATA[
+        
+  \RequirePackage {tikz}
+  \RequirePackage {amsmath}
+  \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
+
+  \definecolor {catccolor}{RGB}{255,244,138}
+  \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
+  \tikzstyle {catc}=[catccolor!60]
+  \tikzstyle {catd}=[orange!40]
+  \tikzstyle {cate}=[red!40]
+  \tikzstyle {catf}=[blue!10]
+  \tikzstyle {catg}=[green!25]
+
+
+  \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
+  \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
+
+  \NewDocumentCommand \CreateRect {D<>{} m m}{
+    \path 
+      coordinate (#1nw)
+      ++(#2,-#3) coordinate (#1se)
+      coordinate (#1sw) at (#1se -| #1nw)
+      coordinate (#1ne) at (#1nw -| #1se)
+    ;
+
+    \path [spath/save = #1north] (#1nw) to (#1ne);
+    \path [spath/save = #1west] (#1nw) to (#1sw);
+    \path [spath/save = #1east] (#1ne) to (#1se);
+    \path [spath/save = #1south] (#1sw) to (#1se);
+  }
+
+        
+   % appears to be necessary
+  \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd}
+  \usetikzlibrary{matrix,arrows}
+  \usetikzlibrary{backgrounds,fit,positioning,calc,shapes}
+  \usetikzlibrary{decorations.pathreplacing}
+  \usetikzlibrary{decorations.pathmorphing}
+  \usetikzlibrary{decorations.markings}
+
+  % basic settings
+  \tikzset{
+    diagram/.style = {
+      on grid,
+      node distance=2cm,
+      commutative diagrams/every diagram,
+      line width = .5pt,
+      every node/.append style = {
+        commutative diagrams/every cell,
+      },
+    },
+    morphism/.style = {
+      auto=left,
+      node font=\scriptsize,
+    },
+    phantom/.style = {
+      commutative diagrams/phantom,
+      node font=\scriptsize,
+      sloped,
+    },
+    between/.style args = {#1 and #2}{
+      at = ($(#1)!0.5!(#2)$)
+    },
+    desc/.style = {anchor=center,fill=white,inner sep=3pt},
+    offset/.style args = {#1} {commutative diagrams/shift right={#1}},
+    cross over/.style = {
+      commutative diagrams/crossing over
+    },
+    adjoint/.style = {
+      phantom,
+      every to/.append style = {
+        edge node = {node [sloped,allow upside down,auto=false] {$\dashv$}}
+      }
+    },
+  }
+
+  % pullback and pushout
+  \tikzset{
+    pullback/.style = {
+      append after command = {
+        \pgfextra{
+          \draw ($(\tikzlastnode) + (.2cm,-.5cm)$) -- ++(0.3cm,0) -- ++(0,0.3cm);
+        }
+      }
+    },
+    pushout/.style = {
+      append after command={
+        \pgfextra{
+          \draw ($(\tikzlastnode) + (-.2cm,.5cm)$) -- ++(-0.3cm,0) -- ++(0,-0.3cm);
+        }
+      }
+    },
+  }
+
+  % arrow styles
+  \tikzset{
+    exists/.style = {
+      densely dashed
+    },
+    embedding/.style = {
+      {right hook}->
+    },
+    cover/.style = {
+      -{Triangle[open]}
+    },
+  }
+
+  \newlength{\dontworryaboutit} % no idea what it does
+
+  \tikzset{
+    inline diagram/.style = {
+      commutative diagrams/every diagram,
+      commutative diagrams/cramped,
+      line width = .5pt,
+      every node/.append style = {
+        commutative diagrams/every cell,
+        anchor = base,
+        inner sep = 0pt
+      },
+      every path/.append style = {
+        outer xsep = 2pt
+      }
+    }
+  }
+  
+  % macros for drawing commutative squares
+  % adapted from Jon Sterling's macros (https://git.sr.ht/~jonsterling/article-template/tree/main/item/local-tikz.sty)
+  \tikzset{
+    square/nw/.style = {},
+    square/ne/.style = {},
+    square/se/.style = {},
+    square/sw/.style = {},
+    square/north/.style = {->},
+    square/south/.style = {->},
+    square/west/.style = {->},
+    square/east/.style = {->},
+    square/north/node/.style = {above},
+    square/south/node/.style = {below},
+    square/west/node/.style = {left},
+    square/east/node/.style = {right},
+  }
+
+  \ExplSyntaxOn
+  \keys_define:nn { jon-tikz/diagram } {
+    nw .tl_set:N = \l_jon_tikz_diagram_nw,
+    sw .tl_set:N = \l_jon_tikz_diagram_sw,
+    ne .tl_set:N = \l_jon_tikz_diagram_ne,
+    se .tl_set:N = \l_jon_tikz_diagram_se,
+
+    width .tl_set:N = \l_jon_tikz_diagram_width,
+    height .tl_set:N = \l_jon_tikz_diagram_height,
+
+    north .tl_set:N = \l_jon_tikz_diagram_north,
+    south .tl_set:N = \l_jon_tikz_diagram_south,
+    west .tl_set:N = \l_jon_tikz_diagram_west,
+    east .tl_set:N = \l_jon_tikz_diagram_east,
+
+    nw/style .code:n = {\tikzset{square/nw/.style = {#1}}},
+    sw/style .code:n = {\tikzset{square/sw/.style = {#1}}},
+    ne/style .code:n = {\tikzset{square/ne/.style = {#1}}},
+    se/style .code:n = {\tikzset{square/se/.style = {#1}}},
+
+    north/style .code:n = {\tikzset{square/north/.style = {#1}}},
+    north/node/style .code:n = {\tikzset{square/north/node/.style = {#1}}},
+    south/style .code:n = {\tikzset{square/south/.style = {#1}}},
+    south/node/style .code:n = {\tikzset{square/south/node/.style = {#1}}},
+    west/style .code:n = {\tikzset{square/west/.style = {#1}}},
+    west/node/style .code:n = {\tikzset{square/west/node/.style = {#1}}},
+    east/style .code:n = {\tikzset{square/east/.style = {#1}}},
+    east/node/style .code:n = {\tikzset{square/east/node/.style = {#1}}},
+
+    draft .meta:n = {
+      nw = {nw},
+      sw = {sw},
+      se = {se},
+      ne = {ne},
+      north = {north},
+      south = {south},
+      west = {west},
+      east = {east},
+    }
+  }
+
+  \tl_set:Nn \l_jon_tikz_diagram_width { 2cm }
+  \tl_set:Nn \l_jon_tikz_diagram_height { 2cm }
+
+
+  \cs_new:Nn \__jon_tikz_render_square:nn {
+    \group_begin:
+    \keys_set:nn {jon-tikz/diagram} {#2} {
+      \node (#1nw) [square/nw] {$\l_jon_tikz_diagram_nw$};
+      \node (#1sw) [below = \l_jon_tikz_diagram_height~of~#1nw,square/sw] {$\l_jon_tikz_diagram_sw$};
+      \draw[morphism,square/west] (#1nw) to node [square/west/node] {$\l_jon_tikz_diagram_west$} (#1sw);
+
+      \node (#1ne) [right = \l_jon_tikz_diagram_width~of~#1nw,square/ne] {$\l_jon_tikz_diagram_ne$};
+      \node (#1se) [below = \l_jon_tikz_diagram_height~of~#1ne,square/se] {$\l_jon_tikz_diagram_se$};
+      \draw[morphism,square/north] (#1nw) to node [square/north/node] {$\l_jon_tikz_diagram_north$} (#1ne);
+      \draw[morphism,square/east] (#1ne) to node [square/east/node] {$\l_jon_tikz_diagram_east$} (#1se);
+      \draw[morphism,square/south] (#1sw) to node [square/south/node] {$\l_jon_tikz_diagram_south$} (#1se);
+    }
+    \group_end:
+  }
+
+  % the optional argument allows one to specify a prefix to positions
+  \NewDocumentCommand\SpliceDiagramSquare{O{}m}{
+    \__jon_tikz_render_square:nn {#1} {#2}
+  }
+
+  \NewDocumentCommand\DiagramSquare{O{}O{}m}{
+    \begin{tikzpicture}[diagram,#2,baseline=(#1sw.base)]
+      \__jon_tikz_render_square:nn {#1} {#3}
+    \end{tikzpicture}
+  }
+  \ExplSyntaxOff
+
+      ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+            \DiagramSquare {
+              width = 3cm,
+              nw = {M(A_{1},\ldots ,A_{n})},
+              ne = MB,
+              sw = {N(A_{1},\ldots ,A_{n})},
+              se = NB,
+              north = Mf,
+              south = Nf,
+              west = {h_{A_{1}} \times  \cdots  \times  h_{A_{n}}},
+              east = {h_{B}},
+            }
+          ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure></fr:li>
+        <fr:li>For each relation symbol <fr:tex
+display="inline"><![CDATA[R \rightarrowtail  A_{1},\ldots ,A_{n}]]></fr:tex>, there is a morphism <fr:tex
+display="inline"><![CDATA[g\colon MR\to NR]]></fr:tex> such that the following diagram commutes:
+          
+    
+      
+      <fr:figure><fr:embedded-tex
+hash="30870d03d683d9db1ae7cdef5138ec4f"><fr:embedded-tex-preamble><![CDATA[
+        
+  \RequirePackage {tikz}
+  \RequirePackage {amsmath}
+  \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
+
+  \definecolor {catccolor}{RGB}{255,244,138}
+  \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
+  \tikzstyle {catc}=[catccolor!60]
+  \tikzstyle {catd}=[orange!40]
+  \tikzstyle {cate}=[red!40]
+  \tikzstyle {catf}=[blue!10]
+  \tikzstyle {catg}=[green!25]
+
+
+  \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
+  \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
+
+  \NewDocumentCommand \CreateRect {D<>{} m m}{
+    \path 
+      coordinate (#1nw)
+      ++(#2,-#3) coordinate (#1se)
+      coordinate (#1sw) at (#1se -| #1nw)
+      coordinate (#1ne) at (#1nw -| #1se)
+    ;
+
+    \path [spath/save = #1north] (#1nw) to (#1ne);
+    \path [spath/save = #1west] (#1nw) to (#1sw);
+    \path [spath/save = #1east] (#1ne) to (#1se);
+    \path [spath/save = #1south] (#1sw) to (#1se);
+  }
+
+        
+   % appears to be necessary
+  \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd}
+  \usetikzlibrary{matrix,arrows}
+  \usetikzlibrary{backgrounds,fit,positioning,calc,shapes}
+  \usetikzlibrary{decorations.pathreplacing}
+  \usetikzlibrary{decorations.pathmorphing}
+  \usetikzlibrary{decorations.markings}
+
+  % basic settings
+  \tikzset{
+    diagram/.style = {
+      on grid,
+      node distance=2cm,
+      commutative diagrams/every diagram,
+      line width = .5pt,
+      every node/.append style = {
+        commutative diagrams/every cell,
+      },
+    },
+    morphism/.style = {
+      auto=left,
+      node font=\scriptsize,
+    },
+    phantom/.style = {
+      commutative diagrams/phantom,
+      node font=\scriptsize,
+      sloped,
+    },
+    between/.style args = {#1 and #2}{
+      at = ($(#1)!0.5!(#2)$)
+    },
+    desc/.style = {anchor=center,fill=white,inner sep=3pt},
+    offset/.style args = {#1} {commutative diagrams/shift right={#1}},
+    cross over/.style = {
+      commutative diagrams/crossing over
+    },
+    adjoint/.style = {
+      phantom,
+      every to/.append style = {
+        edge node = {node [sloped,allow upside down,auto=false] {$\dashv$}}
+      }
+    },
+  }
+
+  % pullback and pushout
+  \tikzset{
+    pullback/.style = {
+      append after command = {
+        \pgfextra{
+          \draw ($(\tikzlastnode) + (.2cm,-.5cm)$) -- ++(0.3cm,0) -- ++(0,0.3cm);
+        }
+      }
+    },
+    pushout/.style = {
+      append after command={
+        \pgfextra{
+          \draw ($(\tikzlastnode) + (-.2cm,.5cm)$) -- ++(-0.3cm,0) -- ++(0,-0.3cm);
+        }
+      }
+    },
+  }
+
+  % arrow styles
+  \tikzset{
+    exists/.style = {
+      densely dashed
+    },
+    embedding/.style = {
+      {right hook}->
+    },
+    cover/.style = {
+      -{Triangle[open]}
+    },
+  }
+
+  \newlength{\dontworryaboutit} % no idea what it does
+
+  \tikzset{
+    inline diagram/.style = {
+      commutative diagrams/every diagram,
+      commutative diagrams/cramped,
+      line width = .5pt,
+      every node/.append style = {
+        commutative diagrams/every cell,
+        anchor = base,
+        inner sep = 0pt
+      },
+      every path/.append style = {
+        outer xsep = 2pt
+      }
+    }
+  }
+  
+  % macros for drawing commutative squares
+  % adapted from Jon Sterling's macros (https://git.sr.ht/~jonsterling/article-template/tree/main/item/local-tikz.sty)
+  \tikzset{
+    square/nw/.style = {},
+    square/ne/.style = {},
+    square/se/.style = {},
+    square/sw/.style = {},
+    square/north/.style = {->},
+    square/south/.style = {->},
+    square/west/.style = {->},
+    square/east/.style = {->},
+    square/north/node/.style = {above},
+    square/south/node/.style = {below},
+    square/west/node/.style = {left},
+    square/east/node/.style = {right},
+  }
+
+  \ExplSyntaxOn
+  \keys_define:nn { jon-tikz/diagram } {
+    nw .tl_set:N = \l_jon_tikz_diagram_nw,
+    sw .tl_set:N = \l_jon_tikz_diagram_sw,
+    ne .tl_set:N = \l_jon_tikz_diagram_ne,
+    se .tl_set:N = \l_jon_tikz_diagram_se,
+
+    width .tl_set:N = \l_jon_tikz_diagram_width,
+    height .tl_set:N = \l_jon_tikz_diagram_height,
+
+    north .tl_set:N = \l_jon_tikz_diagram_north,
+    south .tl_set:N = \l_jon_tikz_diagram_south,
+    west .tl_set:N = \l_jon_tikz_diagram_west,
+    east .tl_set:N = \l_jon_tikz_diagram_east,
+
+    nw/style .code:n = {\tikzset{square/nw/.style = {#1}}},
+    sw/style .code:n = {\tikzset{square/sw/.style = {#1}}},
+    ne/style .code:n = {\tikzset{square/ne/.style = {#1}}},
+    se/style .code:n = {\tikzset{square/se/.style = {#1}}},
+
+    north/style .code:n = {\tikzset{square/north/.style = {#1}}},
+    north/node/style .code:n = {\tikzset{square/north/node/.style = {#1}}},
+    south/style .code:n = {\tikzset{square/south/.style = {#1}}},
+    south/node/style .code:n = {\tikzset{square/south/node/.style = {#1}}},
+    west/style .code:n = {\tikzset{square/west/.style = {#1}}},
+    west/node/style .code:n = {\tikzset{square/west/node/.style = {#1}}},
+    east/style .code:n = {\tikzset{square/east/.style = {#1}}},
+    east/node/style .code:n = {\tikzset{square/east/node/.style = {#1}}},
+
+    draft .meta:n = {
+      nw = {nw},
+      sw = {sw},
+      se = {se},
+      ne = {ne},
+      north = {north},
+      south = {south},
+      west = {west},
+      east = {east},
+    }
+  }
+
+  \tl_set:Nn \l_jon_tikz_diagram_width { 2cm }
+  \tl_set:Nn \l_jon_tikz_diagram_height { 2cm }
+
+
+  \cs_new:Nn \__jon_tikz_render_square:nn {
+    \group_begin:
+    \keys_set:nn {jon-tikz/diagram} {#2} {
+      \node (#1nw) [square/nw] {$\l_jon_tikz_diagram_nw$};
+      \node (#1sw) [below = \l_jon_tikz_diagram_height~of~#1nw,square/sw] {$\l_jon_tikz_diagram_sw$};
+      \draw[morphism,square/west] (#1nw) to node [square/west/node] {$\l_jon_tikz_diagram_west$} (#1sw);
+
+      \node (#1ne) [right = \l_jon_tikz_diagram_width~of~#1nw,square/ne] {$\l_jon_tikz_diagram_ne$};
+      \node (#1se) [below = \l_jon_tikz_diagram_height~of~#1ne,square/se] {$\l_jon_tikz_diagram_se$};
+      \draw[morphism,square/north] (#1nw) to node [square/north/node] {$\l_jon_tikz_diagram_north$} (#1ne);
+      \draw[morphism,square/east] (#1ne) to node [square/east/node] {$\l_jon_tikz_diagram_east$} (#1se);
+      \draw[morphism,square/south] (#1sw) to node [square/south/node] {$\l_jon_tikz_diagram_south$} (#1se);
+    }
+    \group_end:
+  }
+
+  % the optional argument allows one to specify a prefix to positions
+  \NewDocumentCommand\SpliceDiagramSquare{O{}m}{
+    \__jon_tikz_render_square:nn {#1} {#2}
+  }
+
+  \NewDocumentCommand\DiagramSquare{O{}O{}m}{
+    \begin{tikzpicture}[diagram,#2,baseline=(#1sw.base)]
+      \__jon_tikz_render_square:nn {#1} {#3}
+    \end{tikzpicture}
+  }
+  \ExplSyntaxOff
+
+      ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
+            \DiagramSquare {
+              width = 3cm,
+              nw = {MR},
+              ne = {M(A_{1},\ldots ,A_{n})},
+              sw = {NR},
+              se = {N(A_{1},\ldots ,A_{n})},
+              north/style = {>->},
+              south/style = {>->},
+              east = {h_{A_{1}} \times  \cdots  \times  h_{A_{n}}},
+              west = {g},
+            }
+          ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure></fr:li></fr:ul>
+    </html:td>
+
+  </html:tr>
+
+</html:table>
+<fr:p>Composition and identities are defined componentwise from those in <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

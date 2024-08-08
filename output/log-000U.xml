@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="true"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>291</fr:anchor><fr:addr
+type="user">log-000U</fr:addr><fr:route>log-000U.xml</fr:route><fr:title
+text="Composite morphisms in a regular category">Composite morphisms in a <fr:link
+type="local"
+href="ct-000O.xml"
+addr="ct-000O"
+title="Regular category">regular category</fr:link></fr:title><fr:taxon>Lemma</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>8</fr:month><fr:day>8</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> be a regular category.
+  <fr:tex
+display="inline"><![CDATA[f\colon A\to C]]></fr:tex> is the composite of <fr:tex
+display="inline"><![CDATA[g\colon A\to B]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[h\colon B\to C]]></fr:tex> iff <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> satisfies <fr:tex
+display="inline"><![CDATA[x\colon A|\top  \vdash  f(x) = h(g(x))]]></fr:tex> in its <fr:link
+type="local"
+href="log-000P.xml"
+addr="log-000P"
+title="Internal language of a category">internal language</fr:link>.</fr:p>
+    
+      
+      <fr:tree
+toc="false"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>290</fr:anchor><fr:addr
+type="machine">#240</fr:addr><fr:route>unstable-240.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>8</fr:month><fr:day>8</fr:day></fr:date><fr:authors /><fr:parent>log-000U</fr:parent></fr:frontmatter><fr:mainmatter>
+  <fr:p>Suppose that <fr:tex
+display="inline"><![CDATA[f = hg]]></fr:tex>.
+    Then <fr:tex
+display="inline"><![CDATA[{\mathopen {}\llbracket h(g(x))\rrbracket \mathclose {}}_{\mathcal {C}} = {\mathopen {}\llbracket h\rrbracket \mathclose {}}_{\mathcal {C}} \circ  {\mathopen {}\llbracket g\rrbracket \mathclose {}}_{\mathcal {C}} \circ  \mathsf {id}_{A} = hg]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[{\mathopen {}\llbracket f(x)\rrbracket \mathclose {}}_{\mathcal {C}} = {\mathopen {}\llbracket f\rrbracket \mathclose {}}_{\mathcal {C}} \circ  \mathsf {id}_{A} = f]]></fr:tex>.
+    Thus, the equalizer of <fr:tex
+display="inline"><![CDATA[{\mathopen {}\llbracket f(x)\rrbracket \mathclose {}}_{\mathcal {C}}]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[{\mathopen {}\llbracket h(g(x))\rrbracket \mathclose {}}_{\mathcal {C}}]]></fr:tex> is the terminal object, and the result follows immediately.</fr:p>
+  <fr:p>Suppose the converse.
+    Then the identity morphism <fr:tex
+display="inline"><![CDATA[\mathsf {id}_{A}]]></fr:tex> equalizes <fr:tex
+display="inline"><![CDATA[{\mathopen {}\llbracket f(x)\rrbracket \mathclose {}}_{\mathcal {C}}]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[{\mathopen {}\llbracket h(g(x))\rrbracket \mathclose {}}_{\mathcal {C}}]]></fr:tex>.
+    Thus, it follows that <fr:tex
+display="inline"><![CDATA[f = hg]]></fr:tex>.</fr:p>
+</fr:mainmatter><fr:backmatter /></fr:tree>
+    
+  </fr:mainmatter><fr:backmatter><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
+text="Related">Related</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>292</fr:anchor><fr:addr
+type="user">log-000P</fr:addr><fr:route>log-000P.xml</fr:route><fr:title
+text="Internal language of a category">Internal language of a category</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>7</fr:month><fr:day>2</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> be a category.
+  The <fr:em><fr:strong>internal language</fr:strong></fr:em> of <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> consists of the signature <fr:tex
+display="inline"><![CDATA[\Sigma ]]></fr:tex> whose sorts are the objects of <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex>, function symbols are the morphisms of <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex>, and relation symbols are the subobjects in <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex>.</fr:p><fr:p>We write <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> for the canonical <fr:link
+type="local"
+href="log-0006.xml"
+addr="log-0006"
+title="Sigma structure"><fr:tex
+display="inline"><![CDATA[\Sigma ]]></fr:tex>-structure</fr:link> that maps each variable to the appropriate product projection, each function symbol <fr:tex
+display="inline"><![CDATA[f\colon A_{1},\ldots ,A_{n}\to B]]></fr:tex> to its underlying morphism <fr:tex
+display="inline"><![CDATA[f\colon A_{1} \times  \cdots  \times  A_{n}\to B]]></fr:tex>, and each relation symbol <fr:tex
+display="inline"><![CDATA[R \rightarrowtail  A_{1},\ldots ,A_{n}]]></fr:tex> to its underlying subobject <fr:tex
+display="inline"><![CDATA[R \rightarrowtail  A_{1} \times  \cdots  \times  A_{n}]]></fr:tex>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>293</fr:anchor><fr:addr
+type="user">ct-000O</fr:addr><fr:route>ct-000O.xml</fr:route><fr:title
+text="Regular category">Regular category</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>3</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>A category <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> is said to be <fr:em><fr:strong>regular</fr:strong></fr:em> if it is cartesian, has <fr:link
+type="local"
+href="ct-000K.xml"
+addr="ct-000K"
+title="Image">images</fr:link>, and <fr:link
+type="local"
+href="ct-000M.xml"
+addr="ct-000M"
+title="Extremal epimorphism">covers</fr:link> are stable under pullback.
+  A functor <fr:tex
+display="inline"><![CDATA[F\colon \mathcal {C}\to \mathcal {D}]]></fr:tex> between regular categories is said to be <fr:em><fr:strong>regular</fr:strong></fr:em> if it is cartesian and preserves covers.
+  Note that since cartesian functors preserve monomorphisms, every regular functor automatically preserves images.</fr:p>
+    
+      
+      <fr:tree
+toc="false"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>294</fr:anchor><fr:addr
+type="machine">#266</fr:addr><fr:route>unstable-266.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>3</fr:day></fr:date><fr:authors /><fr:parent>ct-000O</fr:parent></fr:frontmatter><fr:mainmatter>
+  <fr:p>Let <fr:tex
+display="inline"><![CDATA[F\colon \mathcal {C}\to \mathcal {D}]]></fr:tex> be a regular functor and <fr:tex
+display="inline"><![CDATA[f\colon A\to B]]></fr:tex> be a morphism in <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex>.
+    By <fr:ref
+addr="ct-000Q"
+href="ct-000Q.xml"
+taxon="Lemma" />, <fr:tex
+display="inline"><![CDATA[f]]></fr:tex> admits a cover-mono factorization <fr:tex
+display="inline"><![CDATA[f = \mathsf {Img}(f)\vartheta _{f}]]></fr:tex>.
+    Then since <fr:tex
+display="inline"><![CDATA[F]]></fr:tex> preserves monomorphisms and covers, <fr:tex
+display="inline"><![CDATA[F(\mathsf {Img}(f))F(\vartheta _{f})]]></fr:tex> forms a cover-mono factorization of <fr:tex
+display="inline"><![CDATA[F(f)]]></fr:tex>.
+    Then by uniqueness, <fr:tex
+display="inline"><![CDATA[\mathsf {Img}(Ff) \cong  F(\mathsf {Img}(f))]]></fr:tex>.</fr:p>
+</fr:mainmatter><fr:backmatter /></fr:tree>
+    
+  </fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

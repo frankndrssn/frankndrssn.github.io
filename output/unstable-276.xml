@@ -7,14 +7,18 @@ show-heading="true"
 show-metadata="true"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1159</fr:anchor><fr:addr
-type="machine">#276</fr:addr><fr:route>unstable-276.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:authors /><fr:parent>ct-000D</fr:parent></fr:frontmatter><fr:mainmatter>
-  By <fr:ref
-addr="ct-000B"
-href="ct-000B.xml"
-taxon="Corollary" />, <fr:tex
-display="inline"><![CDATA[\mathcal {C}]]></fr:tex> has a terminal object. Thus, it follows that <fr:tex
-display="inline"><![CDATA[\mathcal {C}]]></fr:tex> has all finite limits.
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1173</fr:anchor><fr:addr
+type="machine">#276</fr:addr><fr:route>unstable-276.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:authors /><fr:parent>ct-000E</fr:parent></fr:frontmatter><fr:mainmatter>
+  Note that the generic subobject <fr:tex
+display="inline"><![CDATA[\top \colon 1\rightarrowtail \Omega ]]></fr:tex> is a split monomorphism, so it is also a regular monomorphism. Explicitly, <fr:tex
+display="inline"><![CDATA[\top ]]></fr:tex> is the equalizer of <fr:tex
+display="inline"><![CDATA[\mathsf {id}_{\Omega }]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[\Omega  \xrightarrow {\mathsf {!}_{\Omega }} 1 \xrightarrow {\top } \Omega ]]></fr:tex>.
+  
+  <fr:p>Since every monomorphism in <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> is a pullback against <fr:tex
+display="inline"><![CDATA[\top ]]></fr:tex> and regular monomorphisms are stable under pullback, it follows that every monomorphism in <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> is regular.</fr:p>
 </fr:mainmatter><fr:backmatter><fr:tree
 toc="false"
 numbered="false"
@@ -30,15 +34,15 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1160</fr:anchor><fr:addr
-type="user">ct-000D</fr:addr><fr:route>ct-000D.xml</fr:route><fr:title
-text="Categories with a subobject classifier are cartesian">Categories with a <fr:link
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1174</fr:anchor><fr:addr
+type="user">ct-000E</fr:addr><fr:route>ct-000E.xml</fr:route><fr:title
+text="Monomorphisms in a category equipped with a subobject classifier are regular">Monomorphisms in a category equipped with a <fr:link
 type="local"
 href="ct-0009.xml"
 addr="ct-0009"
-title="Subobject classifier">subobject classifier</fr:link> are cartesian</fr:title><fr:taxon>Corollary</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>If <fr:tex
-display="inline"><![CDATA[\mathcal {C}]]></fr:tex> is a category with pullbacks equipped with a subobject classifier then <fr:tex
-display="inline"><![CDATA[\mathcal {C}]]></fr:tex> is cartesian.</fr:p>
+title="Subobject classifier">subobject classifier</fr:link> are regular</fr:title><fr:taxon>Lemma</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> be a cartesian category equipped with a subobject classifier. Every monomorphism in <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> is regular.</fr:p>
     
       
       <fr:tree
@@ -48,14 +52,18 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>557</fr:anchor><fr:addr
-type="machine">#276</fr:addr><fr:route>unstable-276.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:authors /><fr:parent>ct-000D</fr:parent></fr:frontmatter><fr:mainmatter>
-  By <fr:ref
-addr="ct-000B"
-href="ct-000B.xml"
-taxon="Corollary" />, <fr:tex
-display="inline"><![CDATA[\mathcal {C}]]></fr:tex> has a terminal object. Thus, it follows that <fr:tex
-display="inline"><![CDATA[\mathcal {C}]]></fr:tex> has all finite limits.
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>533</fr:anchor><fr:addr
+type="machine">#276</fr:addr><fr:route>unstable-276.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:authors /><fr:parent>ct-000E</fr:parent></fr:frontmatter><fr:mainmatter>
+  Note that the generic subobject <fr:tex
+display="inline"><![CDATA[\top \colon 1\rightarrowtail \Omega ]]></fr:tex> is a split monomorphism, so it is also a regular monomorphism. Explicitly, <fr:tex
+display="inline"><![CDATA[\top ]]></fr:tex> is the equalizer of <fr:tex
+display="inline"><![CDATA[\mathsf {id}_{\Omega }]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[\Omega  \xrightarrow {\mathsf {!}_{\Omega }} 1 \xrightarrow {\top } \Omega ]]></fr:tex>.
+  
+  <fr:p>Since every monomorphism in <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> is a pullback against <fr:tex
+display="inline"><![CDATA[\top ]]></fr:tex> and regular monomorphisms are stable under pullback, it follows that every monomorphism in <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> is regular.</fr:p>
 </fr:mainmatter><fr:backmatter /></fr:tree>
     
   </fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

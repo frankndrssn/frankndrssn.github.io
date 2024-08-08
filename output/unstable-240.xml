@@ -7,32 +7,23 @@ show-heading="true"
 show-metadata="true"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>610</fr:anchor><fr:addr
-type="machine">#240</fr:addr><fr:route>unstable-240.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>8</fr:month><fr:day>2</fr:day></fr:date><fr:authors /><fr:parent>log-000S</fr:parent></fr:frontmatter><fr:mainmatter>
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>288</fr:anchor><fr:addr
+type="machine">#240</fr:addr><fr:route>unstable-240.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>8</fr:month><fr:day>8</fr:day></fr:date><fr:authors /><fr:parent>log-000U</fr:parent></fr:frontmatter><fr:mainmatter>
   <fr:p>Suppose that <fr:tex
-display="inline"><![CDATA[f]]></fr:tex> is the identity morphism.
-    Then by <fr:ref
-addr="log-0007"
-href="log-0007.xml"
-taxon="Definition" />, <fr:tex
-display="inline"><![CDATA[{\mathopen {}\llbracket f(x)\rrbracket \mathclose {}}]]></fr:tex> is <fr:tex
-display="inline"><![CDATA[\mathsf {id}_{A} \circ  {\mathopen {}\llbracket x\rrbracket \mathclose {}} = {\mathopen {}\llbracket x\rrbracket \mathclose {}}]]></fr:tex>.
-    But the equalizer with itself is the terminal object.
-    Thus, <fr:tex
-display="inline"><![CDATA[\top  \leq  {\mathopen {}\llbracket f(x) = x\rrbracket \mathclose {}}]]></fr:tex> in <fr:tex
-display="inline"><![CDATA[\mathsf {Sub}(A)]]></fr:tex> as required.</fr:p>
-  <fr:p>Conversely, suppose that the terminal object of <fr:tex
-display="inline"><![CDATA[\mathsf {Sub}(A)]]></fr:tex> (i.e., the identity morphism <fr:tex
-display="inline"><![CDATA[\mathsf {id}_{A}]]></fr:tex>) factors through <fr:tex
-display="inline"><![CDATA[{\mathopen {}\llbracket f(x) = x\rrbracket \mathclose {}}]]></fr:tex>.
-    Then it follows that <fr:tex
+display="inline"><![CDATA[f = hg]]></fr:tex>.
+    Then <fr:tex
+display="inline"><![CDATA[{\mathopen {}\llbracket h(g(x))\rrbracket \mathclose {}}_{\mathcal {C}} = {\mathopen {}\llbracket h\rrbracket \mathclose {}}_{\mathcal {C}} \circ  {\mathopen {}\llbracket g\rrbracket \mathclose {}}_{\mathcal {C}} \circ  \mathsf {id}_{A} = hg]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[{\mathopen {}\llbracket f(x)\rrbracket \mathclose {}}_{\mathcal {C}} = {\mathopen {}\llbracket f\rrbracket \mathclose {}}_{\mathcal {C}} \circ  \mathsf {id}_{A} = f]]></fr:tex>.
+    Thus, the equalizer of <fr:tex
+display="inline"><![CDATA[{\mathopen {}\llbracket f(x)\rrbracket \mathclose {}}_{\mathcal {C}}]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[{\mathopen {}\llbracket h(g(x))\rrbracket \mathclose {}}_{\mathcal {C}}]]></fr:tex> is the terminal object, and the result follows immediately.</fr:p>
+  <fr:p>Suppose the converse.
+    Then the identity morphism <fr:tex
 display="inline"><![CDATA[\mathsf {id}_{A}]]></fr:tex> equalizes <fr:tex
-display="inline"><![CDATA[{\mathopen {}\llbracket f(x)\rrbracket \mathclose {}}]]></fr:tex> and <fr:tex
-display="inline"><![CDATA[{\mathopen {}\llbracket x\rrbracket \mathclose {}}]]></fr:tex>.
-    Since <fr:tex
-display="inline"><![CDATA[{\mathopen {}\llbracket x\rrbracket \mathclose {}} = \mathsf {id}_{A}]]></fr:tex> and <fr:tex
-display="inline"><![CDATA[{\mathopen {}\llbracket f(x)\rrbracket \mathclose {}} = {\mathopen {}\llbracket f\rrbracket \mathclose {}} = f]]></fr:tex>, it follows that <fr:tex
-display="inline"><![CDATA[f = \mathsf {id}_{A}]]></fr:tex>.</fr:p>
+display="inline"><![CDATA[{\mathopen {}\llbracket f(x)\rrbracket \mathclose {}}_{\mathcal {C}}]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[{\mathopen {}\llbracket h(g(x))\rrbracket \mathclose {}}_{\mathcal {C}}]]></fr:tex>.
+    Thus, it follows that <fr:tex
+display="inline"><![CDATA[f = hg]]></fr:tex>.</fr:p>
 </fr:mainmatter><fr:backmatter><fr:tree
 toc="false"
 numbered="false"
@@ -48,17 +39,24 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>611</fr:anchor><fr:addr
-type="user">log-000S</fr:addr><fr:route>log-000S.xml</fr:route><fr:title
-text="Identity morphisms in a regular category">Identity morphisms in a <fr:link
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>289</fr:anchor><fr:addr
+type="user">log-000U</fr:addr><fr:route>log-000U.xml</fr:route><fr:title
+text="Composite morphisms in a regular category">Composite morphisms in a <fr:link
 type="local"
 href="ct-000O.xml"
 addr="ct-000O"
-title="Regular category">regular category</fr:link></fr:title><fr:taxon>Lemma</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>8</fr:month><fr:day>2</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+title="Regular category">regular category</fr:link></fr:title><fr:taxon>Lemma</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>8</fr:month><fr:day>8</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
 display="inline"><![CDATA[\mathcal {C}]]></fr:tex> be a regular category.
   <fr:tex
-display="inline"><![CDATA[f\colon A\to A]]></fr:tex> is the identity morphism iff <fr:tex
-display="inline"><![CDATA[x\colon A|\top  \vdash  f(x) = x]]></fr:tex> is satisfied.</fr:p>
+display="inline"><![CDATA[f\colon A\to C]]></fr:tex> is the composite of <fr:tex
+display="inline"><![CDATA[g\colon A\to B]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[h\colon B\to C]]></fr:tex> iff <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> satisfies <fr:tex
+display="inline"><![CDATA[x\colon A|\top  \vdash  f(x) = h(g(x))]]></fr:tex> in its <fr:link
+type="local"
+href="log-000P.xml"
+addr="log-000P"
+title="Internal language of a category">internal language</fr:link>.</fr:p>
     
       
       <fr:tree
@@ -68,32 +66,23 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>485</fr:anchor><fr:addr
-type="machine">#240</fr:addr><fr:route>unstable-240.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>8</fr:month><fr:day>2</fr:day></fr:date><fr:authors /><fr:parent>log-000S</fr:parent></fr:frontmatter><fr:mainmatter>
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>290</fr:anchor><fr:addr
+type="machine">#240</fr:addr><fr:route>unstable-240.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>8</fr:month><fr:day>8</fr:day></fr:date><fr:authors /><fr:parent>log-000U</fr:parent></fr:frontmatter><fr:mainmatter>
   <fr:p>Suppose that <fr:tex
-display="inline"><![CDATA[f]]></fr:tex> is the identity morphism.
-    Then by <fr:ref
-addr="log-0007"
-href="log-0007.xml"
-taxon="Definition" />, <fr:tex
-display="inline"><![CDATA[{\mathopen {}\llbracket f(x)\rrbracket \mathclose {}}]]></fr:tex> is <fr:tex
-display="inline"><![CDATA[\mathsf {id}_{A} \circ  {\mathopen {}\llbracket x\rrbracket \mathclose {}} = {\mathopen {}\llbracket x\rrbracket \mathclose {}}]]></fr:tex>.
-    But the equalizer with itself is the terminal object.
-    Thus, <fr:tex
-display="inline"><![CDATA[\top  \leq  {\mathopen {}\llbracket f(x) = x\rrbracket \mathclose {}}]]></fr:tex> in <fr:tex
-display="inline"><![CDATA[\mathsf {Sub}(A)]]></fr:tex> as required.</fr:p>
-  <fr:p>Conversely, suppose that the terminal object of <fr:tex
-display="inline"><![CDATA[\mathsf {Sub}(A)]]></fr:tex> (i.e., the identity morphism <fr:tex
-display="inline"><![CDATA[\mathsf {id}_{A}]]></fr:tex>) factors through <fr:tex
-display="inline"><![CDATA[{\mathopen {}\llbracket f(x) = x\rrbracket \mathclose {}}]]></fr:tex>.
-    Then it follows that <fr:tex
+display="inline"><![CDATA[f = hg]]></fr:tex>.
+    Then <fr:tex
+display="inline"><![CDATA[{\mathopen {}\llbracket h(g(x))\rrbracket \mathclose {}}_{\mathcal {C}} = {\mathopen {}\llbracket h\rrbracket \mathclose {}}_{\mathcal {C}} \circ  {\mathopen {}\llbracket g\rrbracket \mathclose {}}_{\mathcal {C}} \circ  \mathsf {id}_{A} = hg]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[{\mathopen {}\llbracket f(x)\rrbracket \mathclose {}}_{\mathcal {C}} = {\mathopen {}\llbracket f\rrbracket \mathclose {}}_{\mathcal {C}} \circ  \mathsf {id}_{A} = f]]></fr:tex>.
+    Thus, the equalizer of <fr:tex
+display="inline"><![CDATA[{\mathopen {}\llbracket f(x)\rrbracket \mathclose {}}_{\mathcal {C}}]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[{\mathopen {}\llbracket h(g(x))\rrbracket \mathclose {}}_{\mathcal {C}}]]></fr:tex> is the terminal object, and the result follows immediately.</fr:p>
+  <fr:p>Suppose the converse.
+    Then the identity morphism <fr:tex
 display="inline"><![CDATA[\mathsf {id}_{A}]]></fr:tex> equalizes <fr:tex
-display="inline"><![CDATA[{\mathopen {}\llbracket f(x)\rrbracket \mathclose {}}]]></fr:tex> and <fr:tex
-display="inline"><![CDATA[{\mathopen {}\llbracket x\rrbracket \mathclose {}}]]></fr:tex>.
-    Since <fr:tex
-display="inline"><![CDATA[{\mathopen {}\llbracket x\rrbracket \mathclose {}} = \mathsf {id}_{A}]]></fr:tex> and <fr:tex
-display="inline"><![CDATA[{\mathopen {}\llbracket f(x)\rrbracket \mathclose {}} = {\mathopen {}\llbracket f\rrbracket \mathclose {}} = f]]></fr:tex>, it follows that <fr:tex
-display="inline"><![CDATA[f = \mathsf {id}_{A}]]></fr:tex>.</fr:p>
+display="inline"><![CDATA[{\mathopen {}\llbracket f(x)\rrbracket \mathclose {}}_{\mathcal {C}}]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[{\mathopen {}\llbracket h(g(x))\rrbracket \mathclose {}}_{\mathcal {C}}]]></fr:tex>.
+    Thus, it follows that <fr:tex
+display="inline"><![CDATA[f = hg]]></fr:tex>.</fr:p>
 </fr:mainmatter><fr:backmatter /></fr:tree>
     
   </fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

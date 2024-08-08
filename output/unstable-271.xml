@@ -7,35 +7,14 @@ show-heading="true"
 show-metadata="true"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1149</fr:anchor><fr:addr
-type="machine">#271</fr:addr><fr:route>unstable-271.xml</fr:route><fr:taxon>Only if</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:authors /><fr:parent>ct-000J</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Suppose that <fr:tex
-display="inline"><![CDATA[\mathcal {C}]]></fr:tex> has pullbacks. Then we can take <fr:tex
-display="inline"><![CDATA[f^{*}]]></fr:tex> to be the pullback functor. It remains to check that <fr:tex
-display="inline"><![CDATA[\Sigma _{f} \dashv  f^{*}]]></fr:tex>.</fr:p>
-  <html:table
-xmlns:html="http://www.w3.org/1999/xhtml">
-      
-  <html:tr>
-        
-  <html:th>Unit</html:th>
-
-        
-  <html:th>Counit</html:th>
-
-      </html:tr>
-
-      
-  <html:tr>
-        
-  <html:td>
-          Let <fr:tex
-display="inline"><![CDATA[h \in  {{\mathcal {C}}_{/{A}}}]]></fr:tex> be an object, we take <fr:tex
-display="inline"><![CDATA[\eta _{h}\colon h\to f^{*}(\Sigma _{f}(h))]]></fr:tex> to be the unique morphism given by the following pullback:
-          
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1163</fr:anchor><fr:addr
+type="machine">#271</fr:addr><fr:route>unstable-271.xml</fr:route><fr:taxon>If</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:authors /><fr:parent>ct-000J</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Suppose that <fr:tex
+display="inline"><![CDATA[\Sigma _{f} \dashv  f^{*}]]></fr:tex> for any <fr:tex
+display="inline"><![CDATA[f]]></fr:tex>. We show that the following diagram</fr:p>
     
       
       <fr:figure><fr:embedded-tex
-hash="00fa5bdf6f274d0c7c6027f4ec6c92bc"><fr:embedded-tex-preamble><![CDATA[
+hash="978cb4d5b9419bff7dba5ad49136cf28"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
   \RequirePackage {amsmath}
@@ -252,41 +231,34 @@ hash="00fa5bdf6f274d0c7c6027f4ec6c92bc"><fr:embedded-tex-preamble><![CDATA[
   \ExplSyntaxOff
 
       ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
-            \begin {tikzpicture}[diagram]
-              \SpliceDiagramSquare {
-                width = 3cm,
-                sw = A,
-                nw/style = pullback,
-                se = B,
-                nw = A',
-                ne = B',
-                south = f,
-                east = \Sigma _{f}(h),
-                west = f^{*}(\Sigma _{f}(h)),
-                west/node/style = {right},
-                north = \varepsilon _{\Sigma _{f}(h)},
-              }
-              \node  [above left of = nw] (c) {$B'$};
-              \draw  [->,morphism,bend right] (c) to node[swap] {$h$} (sw);
-              \draw  [double,morphism,bend left] (c) to (ne);
-              \draw  [->,morphism,exists] (c) to node[desc] {$\eta _{h}$} (nw);
-            \end {tikzpicture}
-          ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
-    
-  
-          <fr:p>where <fr:tex
-display="inline"><![CDATA[\varepsilon ]]></fr:tex> is the counit defined on the right. Then naturality is a consequence of uniqueness.</fr:p>
-        </html:td>
-
+      \begin {tikzpicture}[diagram]
         
-  <html:td>Let <fr:tex
-display="inline"><![CDATA[g \in  {{\mathcal {C}}_{/{B}}}]]></fr:tex> be an object. We take <fr:tex
-display="inline"><![CDATA[\varepsilon _{g}\colon \Sigma _{f}(f^{*}(g))\to g]]></fr:tex> to be the following morphism.
-          
+    \SpliceDiagramSquare {
+      sw = A,
+      se = B,
+      nw = A',
+      ne = B',
+      south = f,
+      east = g,
+      west = f^{*}(g),
+      west/node/style = {right},
+      north = \varepsilon _{g},
+    }
+  
+      \end {tikzpicture}
+    ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
+    
+  <fr:p>is a pullback, where <fr:tex
+display="inline"><![CDATA[\varepsilon _{g}]]></fr:tex> is the counit of the adjunction. Note that since <fr:tex
+display="inline"><![CDATA[f \circ  f^{*}(g) = \Sigma _{f}(f^{*}(g))]]></fr:tex> by construction, the component <fr:tex
+display="inline"><![CDATA[\varepsilon _{g}]]></fr:tex> makes the diagram commute.</fr:p><fr:p>Let <fr:tex
+display="inline"><![CDATA[h'\colon C\to A]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[h\colon C\to B']]></fr:tex> be morphisms such that <fr:tex
+display="inline"><![CDATA[fh' = gh]]></fr:tex>.</fr:p>
     
       
       <fr:figure><fr:embedded-tex
-hash="d06c153112f52945894dc43faf6a95dc"><fr:embedded-tex-preamble><![CDATA[
+hash="6c571ce318e6c51d13819d3e139d9fb2"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
   \RequirePackage {amsmath}
@@ -503,284 +475,38 @@ hash="d06c153112f52945894dc43faf6a95dc"><fr:embedded-tex-preamble><![CDATA[
   \ExplSyntaxOff
 
       ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
-            \DiagramSquare {
-              sw = A,
-              nw/style = pullback,
-              se = B,
-              nw = A',
-              ne = B',
-              south = f,
-              east = g,
-              west = f^{*}(g),
-              north = \varepsilon _{g},
-            }
-          ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
-    
-  
-          Let <fr:tex
-display="inline"><![CDATA[\alpha \colon g\to g']]></fr:tex> be a morphism in <fr:tex
-display="inline"><![CDATA[{{\mathcal {C}}_{/{B}}}]]></fr:tex>. By the construction of <fr:tex
-display="inline"><![CDATA[f^{*}]]></fr:tex>, we have the following commutative diagram.
-          
-    
-      
-      <fr:figure><fr:embedded-tex
-hash="e02daf32ecb0fc7d1934cd86d2bd5577"><fr:embedded-tex-preamble><![CDATA[
+      \begin {tikzpicture}[diagram]
         
-  \RequirePackage {tikz}
-  \RequirePackage {amsmath}
-  \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
-
-  \definecolor {catccolor}{RGB}{255,244,138}
-  \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
-  \tikzstyle {catc}=[catccolor!60]
-  \tikzstyle {catd}=[orange!40]
-  \tikzstyle {cate}=[red!40]
-  \tikzstyle {catf}=[blue!10]
-  \tikzstyle {catg}=[green!25]
-
-
-  \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
-  \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
-
-  \NewDocumentCommand \CreateRect {D<>{} m m}{
-    \path 
-      coordinate (#1nw)
-      ++(#2,-#3) coordinate (#1se)
-      coordinate (#1sw) at (#1se -| #1nw)
-      coordinate (#1ne) at (#1nw -| #1se)
-    ;
-
-    \path [spath/save = #1north] (#1nw) to (#1ne);
-    \path [spath/save = #1west] (#1nw) to (#1sw);
-    \path [spath/save = #1east] (#1ne) to (#1se);
-    \path [spath/save = #1south] (#1sw) to (#1se);
-  }
-
-        
-   % appears to be necessary
-  \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd}
-  \usetikzlibrary{matrix,arrows}
-  \usetikzlibrary{backgrounds,fit,positioning,calc,shapes}
-  \usetikzlibrary{decorations.pathreplacing}
-  \usetikzlibrary{decorations.pathmorphing}
-  \usetikzlibrary{decorations.markings}
-
-  % basic settings
-  \tikzset{
-    diagram/.style = {
-      on grid,
-      node distance=2cm,
-      commutative diagrams/every diagram,
-      line width = .5pt,
-      every node/.append style = {
-        commutative diagrams/every cell,
-      },
-    },
-    morphism/.style = {
-      auto=left,
-      node font=\scriptsize,
-    },
-    phantom/.style = {
-      commutative diagrams/phantom,
-      node font=\scriptsize,
-      sloped,
-    },
-    between/.style args = {#1 and #2}{
-      at = ($(#1)!0.5!(#2)$)
-    },
-    desc/.style = {anchor=center,fill=white,inner sep=3pt},
-    offset/.style args = {#1} {commutative diagrams/shift right={#1}},
-    cross over/.style = {
-      commutative diagrams/crossing over
-    },
-    adjoint/.style = {
-      phantom,
-      every to/.append style = {
-        edge node = {node [sloped,allow upside down,auto=false] {$\dashv$}}
-      }
-    },
-  }
-
-  % pullback and pushout
-  \tikzset{
-    pullback/.style = {
-      append after command = {
-        \pgfextra{
-          \draw ($(\tikzlastnode) + (.2cm,-.5cm)$) -- ++(0.3cm,0) -- ++(0,0.3cm);
-        }
-      }
-    },
-    pushout/.style = {
-      append after command={
-        \pgfextra{
-          \draw ($(\tikzlastnode) + (-.2cm,.5cm)$) -- ++(-0.3cm,0) -- ++(0,-0.3cm);
-        }
-      }
-    },
-  }
-
-  % arrow styles
-  \tikzset{
-    exists/.style = {
-      densely dashed
-    },
-    embedding/.style = {
-      {right hook}->
-    },
-    cover/.style = {
-      -{Triangle[open]}
-    },
-  }
-
-  \newlength{\dontworryaboutit} % no idea what it does
-
-  \tikzset{
-    inline diagram/.style = {
-      commutative diagrams/every diagram,
-      commutative diagrams/cramped,
-      line width = .5pt,
-      every node/.append style = {
-        commutative diagrams/every cell,
-        anchor = base,
-        inner sep = 0pt
-      },
-      every path/.append style = {
-        outer xsep = 2pt
-      }
+    \SpliceDiagramSquare {
+      sw = A,
+      se = B,
+      nw = A',
+      ne = B',
+      south = f,
+      east = g,
+      west = f^{*}(g),
+      west/node/style = {right},
+      north = \varepsilon _{g},
     }
-  }
   
-  % macros for drawing commutative squares
-  % adapted from Jon Sterling's macros (https://git.sr.ht/~jonsterling/article-template/tree/main/item/local-tikz.sty)
-  \tikzset{
-    square/nw/.style = {},
-    square/ne/.style = {},
-    square/se/.style = {},
-    square/sw/.style = {},
-    square/north/.style = {->},
-    square/south/.style = {->},
-    square/west/.style = {->},
-    square/east/.style = {->},
-    square/north/node/.style = {above},
-    square/south/node/.style = {below},
-    square/west/node/.style = {left},
-    square/east/node/.style = {right},
-  }
-
-  \ExplSyntaxOn
-  \keys_define:nn { jon-tikz/diagram } {
-    nw .tl_set:N = \l_jon_tikz_diagram_nw,
-    sw .tl_set:N = \l_jon_tikz_diagram_sw,
-    ne .tl_set:N = \l_jon_tikz_diagram_ne,
-    se .tl_set:N = \l_jon_tikz_diagram_se,
-
-    width .tl_set:N = \l_jon_tikz_diagram_width,
-    height .tl_set:N = \l_jon_tikz_diagram_height,
-
-    north .tl_set:N = \l_jon_tikz_diagram_north,
-    south .tl_set:N = \l_jon_tikz_diagram_south,
-    west .tl_set:N = \l_jon_tikz_diagram_west,
-    east .tl_set:N = \l_jon_tikz_diagram_east,
-
-    nw/style .code:n = {\tikzset{square/nw/.style = {#1}}},
-    sw/style .code:n = {\tikzset{square/sw/.style = {#1}}},
-    ne/style .code:n = {\tikzset{square/ne/.style = {#1}}},
-    se/style .code:n = {\tikzset{square/se/.style = {#1}}},
-
-    north/style .code:n = {\tikzset{square/north/.style = {#1}}},
-    north/node/style .code:n = {\tikzset{square/north/node/.style = {#1}}},
-    south/style .code:n = {\tikzset{square/south/.style = {#1}}},
-    south/node/style .code:n = {\tikzset{square/south/node/.style = {#1}}},
-    west/style .code:n = {\tikzset{square/west/.style = {#1}}},
-    west/node/style .code:n = {\tikzset{square/west/node/.style = {#1}}},
-    east/style .code:n = {\tikzset{square/east/.style = {#1}}},
-    east/node/style .code:n = {\tikzset{square/east/node/.style = {#1}}},
-
-    draft .meta:n = {
-      nw = {nw},
-      sw = {sw},
-      se = {se},
-      ne = {ne},
-      north = {north},
-      south = {south},
-      west = {west},
-      east = {east},
-    }
-  }
-
-  \tl_set:Nn \l_jon_tikz_diagram_width { 2cm }
-  \tl_set:Nn \l_jon_tikz_diagram_height { 2cm }
-
-
-  \cs_new:Nn \__jon_tikz_render_square:nn {
-    \group_begin:
-    \keys_set:nn {jon-tikz/diagram} {#2} {
-      \node (#1nw) [square/nw] {$\l_jon_tikz_diagram_nw$};
-      \node (#1sw) [below = \l_jon_tikz_diagram_height~of~#1nw,square/sw] {$\l_jon_tikz_diagram_sw$};
-      \draw[morphism,square/west] (#1nw) to node [square/west/node] {$\l_jon_tikz_diagram_west$} (#1sw);
-
-      \node (#1ne) [right = \l_jon_tikz_diagram_width~of~#1nw,square/ne] {$\l_jon_tikz_diagram_ne$};
-      \node (#1se) [below = \l_jon_tikz_diagram_height~of~#1ne,square/se] {$\l_jon_tikz_diagram_se$};
-      \draw[morphism,square/north] (#1nw) to node [square/north/node] {$\l_jon_tikz_diagram_north$} (#1ne);
-      \draw[morphism,square/east] (#1ne) to node [square/east/node] {$\l_jon_tikz_diagram_east$} (#1se);
-      \draw[morphism,square/south] (#1sw) to node [square/south/node] {$\l_jon_tikz_diagram_south$} (#1se);
-    }
-    \group_end:
-  }
-
-  % the optional argument allows one to specify a prefix to positions
-  \NewDocumentCommand\SpliceDiagramSquare{O{}m}{
-    \__jon_tikz_render_square:nn {#1} {#2}
-  }
-
-  \NewDocumentCommand\DiagramSquare{O{}O{}m}{
-    \begin{tikzpicture}[diagram,#2,baseline=(#1sw.base)]
-      \__jon_tikz_render_square:nn {#1} {#3}
-    \end{tikzpicture}
-  }
-  \ExplSyntaxOff
-
-      ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
-            \begin {tikzpicture}[diagram]
-              \SpliceDiagramSquare {
-                nw = A'',
-                nw/style = pullback,
-                ne = B'',
-                sw = A,
-                se = B,
-                north = \varepsilon _{g'},
-                west = f^{*}(g'),
-                west/node/style = {right},
-                south = f,
-                east = g',
-              }
-              \node  [above left of = nw] (a') {$A'$};
-              \draw  [->,morphism,bend right] (a') to node[swap] {$f^{*}(g)$} (sw);
-              \draw  [->,morphism,bend left] (a') to node {$\alpha \varepsilon _{g}$} (ne);
-              \draw  [->,morphism,exists] (a') to node[desc] {$f^{*}(\alpha )$} (nw);
-            \end {tikzpicture}
-          ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
+        \node  [above left = of nw] (c) {$C$};
+        \draw  [->,morphism,bend right] (c) to node[swap] {$h'$} (sw);
+        \draw  [->,morphism,bend left] (c) to node {$h$} (ne);
+        \draw  [->,morphism,exists] (c) to node[desc] {$h^{\dag }$} (nw);
+      \end {tikzpicture}
+    ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
-  
-          Thus, <fr:tex
-display="inline"><![CDATA[\varepsilon _{g'}\Sigma _{f}(f^{*}(\alpha )) = \varepsilon _{g'}f^{*}(\alpha ) = \alpha \varepsilon _{g}]]></fr:tex> as required.
-        </html:td>
-
-      </html:tr>
-
-    </html:table>
-<fr:p>By construction, <fr:tex
-display="inline"><![CDATA[\varepsilon _{\Sigma _{f}}\eta  = \mathsf {id}_{\Sigma _{f}}]]></fr:tex>. Thus, it remains to verify the other triangle equality.</fr:p><fr:p>Let <fr:tex
-display="inline"><![CDATA[g \in  {{\mathcal {C}}_{/{B}}}]]></fr:tex> be an object. We need to show that <fr:tex
-display="inline"><![CDATA[f^{*}(\varepsilon _{g})\eta _{f^{*}(g)} = \mathsf {id}_{f^{*}(g)}]]></fr:tex>. Note that <fr:tex
-display="inline"><![CDATA[f^{*}(g)f^{*}(\varepsilon _{g})\eta _{f^{*}(g)} = f^{*}(g)]]></fr:tex> by the construction of <fr:tex
-display="inline"><![CDATA[f^{*}]]></fr:tex>. Moreover, we also have the following equation.</fr:p><fr:tex
-display="block"><![CDATA[       \begin {align*}         \varepsilon _{g}f^{*}(\varepsilon _{g})\eta _{f^{*}(g)} &= \varepsilon _{g}\varepsilon _{f \circ  f^{*}(g)}\eta _{f^{*}(g)} && \text {by the construction of } f^{*}\\                                                     &= \varepsilon _{g}\mathsf {id} && \text {by the construction of } \eta \\                                                     &= \varepsilon _{g}       \end {align*}     ]]></fr:tex><fr:p>Thus, <fr:tex
-display="inline"><![CDATA[f^{*}(\varepsilon _{g})\eta _{f^{*}(g)}]]></fr:tex> corresponds to the same cone over <fr:tex
-display="inline"><![CDATA[f]]></fr:tex> and <fr:tex
-display="inline"><![CDATA[g]]></fr:tex> as <fr:tex
-display="inline"><![CDATA[\mathsf {id}_{f^{*}(g)}]]></fr:tex>. Then uniqueness implies that they are equal.</fr:p></fr:mainmatter><fr:backmatter><fr:tree
+  <fr:p>Note that <fr:tex
+display="inline"><![CDATA[h]]></fr:tex> is a morphism <fr:tex
+display="inline"><![CDATA[h\colon \Sigma _{f}(h')\to g]]></fr:tex> in <fr:tex
+display="inline"><![CDATA[{{\mathcal {C}}_{/{B}}}]]></fr:tex>. Thus, it corresponds to a unique morphism <fr:tex
+display="inline"><![CDATA[h^{\dag }\colon h'\to f^{*}(g)]]></fr:tex> under the adjunction.</fr:p><fr:p>The transpose of <fr:tex
+display="inline"><![CDATA[h^{\dag }]]></fr:tex> can be computed as <fr:tex
+display="inline"><![CDATA[\varepsilon _{g} \circ  \Sigma _{f}(h^{\dag })]]></fr:tex>. Since <fr:tex
+display="inline"><![CDATA[\Sigma _{f}]]></fr:tex> is the identity on morphisms, we have
+      <fr:tex
+display="block"><![CDATA[         (h^{\dag })^{\dag } = \varepsilon _{g} \circ  \Sigma _{f}(h^{\dag }) = \varepsilon _{g} \circ  h^{\dag } = h       ]]></fr:tex>
+      Thus, the top triangle also commutes.</fr:p></fr:mainmatter><fr:backmatter><fr:tree
 toc="false"
 numbered="false"
 show-heading="true"
@@ -795,7 +521,7 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1150</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1164</fr:anchor><fr:addr
 type="user">ct-000J</fr:addr><fr:route>ct-000J.xml</fr:route><fr:title
 text="Slice comparison functor of a locally cartesian category admits a right adjoint"><fr:link
 type="local"
@@ -824,8 +550,8 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>323</fr:anchor><fr:addr
-type="machine">#272</fr:addr><fr:route>unstable-272.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:authors /><fr:parent>ct-000J</fr:parent></fr:frontmatter><fr:mainmatter>
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>331</fr:anchor><fr:addr
+type="machine">#273</fr:addr><fr:route>unstable-273.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:authors /><fr:parent>ct-000J</fr:parent></fr:frontmatter><fr:mainmatter>
   <fr:p>By <fr:ref
 addr="ct-000H"
 href="ct-000H.xml"
@@ -838,8 +564,8 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>324</fr:anchor><fr:addr
-type="machine">#270</fr:addr><fr:route>unstable-270.xml</fr:route><fr:taxon>If</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:authors /><fr:parent>ct-000J</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Suppose that <fr:tex
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>332</fr:anchor><fr:addr
+type="machine">#271</fr:addr><fr:route>unstable-271.xml</fr:route><fr:taxon>If</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:authors /><fr:parent>ct-000J</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Suppose that <fr:tex
 display="inline"><![CDATA[\Sigma _{f} \dashv  f^{*}]]></fr:tex> for any <fr:tex
 display="inline"><![CDATA[f]]></fr:tex>. We show that the following diagram</fr:p>
     
@@ -1346,8 +1072,8 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>325</fr:anchor><fr:addr
-type="machine">#271</fr:addr><fr:route>unstable-271.xml</fr:route><fr:taxon>Only if</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:authors /><fr:parent>ct-000J</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Suppose that <fr:tex
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>333</fr:anchor><fr:addr
+type="machine">#272</fr:addr><fr:route>unstable-272.xml</fr:route><fr:taxon>Only if</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:authors /><fr:parent>ct-000J</fr:parent></fr:frontmatter><fr:mainmatter><fr:p>Suppose that <fr:tex
 display="inline"><![CDATA[\mathcal {C}]]></fr:tex> has pullbacks. Then we can take <fr:tex
 display="inline"><![CDATA[f^{*}]]></fr:tex> to be the pullback functor. It remains to check that <fr:tex
 display="inline"><![CDATA[\Sigma _{f} \dashv  f^{*}]]></fr:tex>.</fr:p>

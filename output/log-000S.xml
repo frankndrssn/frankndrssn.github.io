@@ -7,7 +7,7 @@ show-heading="true"
 show-metadata="true"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>612</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>626</fr:anchor><fr:addr
 type="user">log-000S</fr:addr><fr:route>log-000S.xml</fr:route><fr:title
 text="Identity morphisms in a regular category">Identity morphisms in a <fr:link
 type="local"
@@ -17,7 +17,16 @@ title="Regular category">regular category</fr:link></fr:title><fr:taxon>Lemma</f
 display="inline"><![CDATA[\mathcal {C}]]></fr:tex> be a regular category.
   <fr:tex
 display="inline"><![CDATA[f\colon A\to A]]></fr:tex> is the identity morphism iff <fr:tex
-display="inline"><![CDATA[x\colon A|\top  \vdash  f(x) = x]]></fr:tex> is satisfied.</fr:p>
+display="inline"><![CDATA[x\colon A|\top  \vdash  f(x) = x]]></fr:tex> is <fr:link
+type="local"
+href="log-000T.xml"
+addr="log-000T"
+title="Satisfaction">satisfied</fr:link> in the <fr:link
+type="local"
+href="log-000P.xml"
+addr="log-000P"
+title="Internal language of a category">internal language</fr:link> of <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex>.</fr:p>
     
       
       <fr:tree
@@ -27,31 +36,31 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>485</fr:anchor><fr:addr
-type="machine">#240</fr:addr><fr:route>unstable-240.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>8</fr:month><fr:day>2</fr:day></fr:date><fr:authors /><fr:parent>log-000S</fr:parent></fr:frontmatter><fr:mainmatter>
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>494</fr:anchor><fr:addr
+type="machine">#241</fr:addr><fr:route>unstable-241.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>8</fr:month><fr:day>2</fr:day></fr:date><fr:authors /><fr:parent>log-000S</fr:parent></fr:frontmatter><fr:mainmatter>
   <fr:p>Suppose that <fr:tex
 display="inline"><![CDATA[f]]></fr:tex> is the identity morphism.
     Then by <fr:ref
 addr="log-0007"
 href="log-0007.xml"
 taxon="Definition" />, <fr:tex
-display="inline"><![CDATA[{\mathopen {}\llbracket f(x)\rrbracket \mathclose {}}]]></fr:tex> is <fr:tex
-display="inline"><![CDATA[\mathsf {id}_{A} \circ  {\mathopen {}\llbracket x\rrbracket \mathclose {}} = {\mathopen {}\llbracket x\rrbracket \mathclose {}}]]></fr:tex>.
+display="inline"><![CDATA[{\mathopen {}\llbracket f(x)\rrbracket \mathclose {}}_{\mathcal {C}}]]></fr:tex> is <fr:tex
+display="inline"><![CDATA[\mathsf {id}_{A} \circ  {\mathopen {}\llbracket x\rrbracket \mathclose {}}_{\mathcal {C}} = {\mathopen {}\llbracket x\rrbracket \mathclose {}}_{\mathcal {C}}]]></fr:tex>.
     But the equalizer with itself is the terminal object.
     Thus, <fr:tex
-display="inline"><![CDATA[\top  \leq  {\mathopen {}\llbracket f(x) = x\rrbracket \mathclose {}}]]></fr:tex> in <fr:tex
+display="inline"><![CDATA[\top  \leq  {\mathopen {}\llbracket f(x) = x\rrbracket \mathclose {}}_{\mathcal {C}}]]></fr:tex> in <fr:tex
 display="inline"><![CDATA[\mathsf {Sub}(A)]]></fr:tex> as required.</fr:p>
   <fr:p>Conversely, suppose that the terminal object of <fr:tex
 display="inline"><![CDATA[\mathsf {Sub}(A)]]></fr:tex> (i.e., the identity morphism <fr:tex
 display="inline"><![CDATA[\mathsf {id}_{A}]]></fr:tex>) factors through <fr:tex
-display="inline"><![CDATA[{\mathopen {}\llbracket f(x) = x\rrbracket \mathclose {}}]]></fr:tex>.
+display="inline"><![CDATA[{\mathopen {}\llbracket f(x) = x\rrbracket \mathclose {}}_{\mathcal {C}}]]></fr:tex>.
     Then it follows that <fr:tex
 display="inline"><![CDATA[\mathsf {id}_{A}]]></fr:tex> equalizes <fr:tex
-display="inline"><![CDATA[{\mathopen {}\llbracket f(x)\rrbracket \mathclose {}}]]></fr:tex> and <fr:tex
-display="inline"><![CDATA[{\mathopen {}\llbracket x\rrbracket \mathclose {}}]]></fr:tex>.
+display="inline"><![CDATA[{\mathopen {}\llbracket f(x)\rrbracket \mathclose {}}_{\mathcal {C}}]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[{\mathopen {}\llbracket x\rrbracket \mathclose {}}_{\mathcal {C}}]]></fr:tex>.
     Since <fr:tex
-display="inline"><![CDATA[{\mathopen {}\llbracket x\rrbracket \mathclose {}} = \mathsf {id}_{A}]]></fr:tex> and <fr:tex
-display="inline"><![CDATA[{\mathopen {}\llbracket f(x)\rrbracket \mathclose {}} = {\mathopen {}\llbracket f\rrbracket \mathclose {}} = f]]></fr:tex>, it follows that <fr:tex
+display="inline"><![CDATA[{\mathopen {}\llbracket x\rrbracket \mathclose {}}_{\mathcal {C}} = \mathsf {id}_{A}]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[{\mathopen {}\llbracket f(x)\rrbracket \mathclose {}}_{\mathcal {C}} = {\mathopen {}\llbracket f\rrbracket \mathclose {}}_{\mathcal {C}} = f]]></fr:tex>, it follows that <fr:tex
 display="inline"><![CDATA[f = \mathsf {id}_{A}]]></fr:tex>.</fr:p>
 </fr:mainmatter><fr:backmatter /></fr:tree>
     
@@ -70,7 +79,61 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>613</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>627</fr:anchor><fr:addr
+type="user">log-000T</fr:addr><fr:route>log-000T.xml</fr:route><fr:title
+text="Satisfaction">Satisfaction</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>8</fr:month><fr:day>8</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[M]]></fr:tex> be a <fr:link
+type="local"
+href="log-0006.xml"
+addr="log-0006"
+title="Sigma structure"><fr:tex
+display="inline"><![CDATA[\Sigma ]]></fr:tex>-structure</fr:link> in a category <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[\sigma  = \Gamma |\varphi  \vdash  \psi ]]></fr:tex> be a <fr:link
+type="local"
+href="log-0005.xml"
+addr="log-0005"
+title="Sequent">sequent</fr:link> interpretable in <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex>.
+  We say that <fr:tex
+display="inline"><![CDATA[\sigma ]]></fr:tex> is <fr:em><fr:strong>satisfied</fr:strong></fr:em> in <fr:tex
+display="inline"><![CDATA[M]]></fr:tex>, denoted as <fr:tex
+display="inline"><![CDATA[M \models  \sigma ]]></fr:tex>, if <fr:tex
+display="inline"><![CDATA[{\mathopen {}\llbracket \Gamma .\varphi \rrbracket \mathclose {}}_{M} \leq  {\mathopen {}\llbracket \Gamma .\psi \rrbracket \mathclose {}}_{M}]]></fr:tex> in the preorder <fr:tex
+display="inline"><![CDATA[\mathsf {Sub}(M(\Gamma ))]]></fr:tex>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>628</fr:anchor><fr:addr
+type="user">log-000P</fr:addr><fr:route>log-000P.xml</fr:route><fr:title
+text="Internal language of a category">Internal language of a category</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>7</fr:month><fr:day>2</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> be a category.
+  The <fr:em><fr:strong>internal language</fr:strong></fr:em> of <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> consists of the signature <fr:tex
+display="inline"><![CDATA[\Sigma ]]></fr:tex> whose sorts are the objects of <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex>, function symbols are the morphisms of <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex>, and relation symbols are the subobjects in <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex>.</fr:p><fr:p>We write <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> for the canonical <fr:link
+type="local"
+href="log-0006.xml"
+addr="log-0006"
+title="Sigma structure"><fr:tex
+display="inline"><![CDATA[\Sigma ]]></fr:tex>-structure</fr:link> that maps each variable to the appropriate product projection, each function symbol <fr:tex
+display="inline"><![CDATA[f\colon A_{1},\ldots ,A_{n}\to B]]></fr:tex> to its underlying morphism <fr:tex
+display="inline"><![CDATA[f\colon A_{1} \times  \cdots  \times  A_{n}\to B]]></fr:tex>, and each relation symbol <fr:tex
+display="inline"><![CDATA[R \rightarrowtail  A_{1},\ldots ,A_{n}]]></fr:tex> to its underlying subobject <fr:tex
+display="inline"><![CDATA[R \rightarrowtail  A_{1} \times  \cdots  \times  A_{n}]]></fr:tex>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>629</fr:anchor><fr:addr
 type="user">log-0007</fr:addr><fr:route>log-0007.xml</fr:route><fr:title
 text="Interpretation of terms">Interpretation of <fr:link
 type="local"
@@ -108,7 +171,7 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>614</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>630</fr:anchor><fr:addr
 type="user">ct-000O</fr:addr><fr:route>ct-000O.xml</fr:route><fr:title
 text="Regular category">Regular category</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>3</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>A category <fr:tex
 display="inline"><![CDATA[\mathcal {C}]]></fr:tex> is said to be <fr:em><fr:strong>regular</fr:strong></fr:em> if it is cartesian, has <fr:link
@@ -132,8 +195,8 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>337</fr:anchor><fr:addr
-type="machine">#265</fr:addr><fr:route>unstable-265.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>3</fr:day></fr:date><fr:authors /><fr:parent>ct-000O</fr:parent></fr:frontmatter><fr:mainmatter>
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>294</fr:anchor><fr:addr
+type="machine">#266</fr:addr><fr:route>unstable-266.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>3</fr:day></fr:date><fr:authors /><fr:parent>ct-000O</fr:parent></fr:frontmatter><fr:mainmatter>
   <fr:p>Let <fr:tex
 display="inline"><![CDATA[F\colon \mathcal {C}\to \mathcal {D}]]></fr:tex> be a regular functor and <fr:tex
 display="inline"><![CDATA[f\colon A\to B]]></fr:tex> be a morphism in <fr:tex
