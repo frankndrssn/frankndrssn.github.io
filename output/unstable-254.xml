@@ -7,17 +7,14 @@ show-heading="true"
 show-metadata="true"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>949</fr:anchor><fr:addr
-type="machine">#254</fr:addr><fr:route>unstable-254.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>11</fr:day></fr:date><fr:authors /><fr:parent>ct-0015</fr:parent></fr:frontmatter><fr:mainmatter>
-  <fr:p>By <fr:ref
-addr="ct-0012"
-href="ct-0012.xml"
-taxon="Lemma" /> the following diagram is a pushout.</fr:p>
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>957</fr:anchor><fr:addr
+type="machine">#254</fr:addr><fr:route>unstable-254.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>11</fr:day></fr:date><fr:authors /><fr:parent>ct-0016</fr:parent></fr:frontmatter><fr:mainmatter>
+  <fr:p>The required morphisms are given by the universal property of pullbacks as follows.</fr:p>
   
     
       
       <fr:figure><fr:embedded-tex
-hash="5104eb0e1f6f0181cb3213ae3f1ac8ae"><fr:embedded-tex-preamble><![CDATA[
+hash="2165d09b2baf87f553a8bcbdc217c3d2"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
   \RequirePackage {amsmath}
@@ -234,21 +231,62 @@ hash="5104eb0e1f6f0181cb3213ae3f1ac8ae"><fr:embedded-tex-preamble><![CDATA[
   \ExplSyntaxOff
 
       ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
-    \DiagramSquare {
-      nw = 0,
-      ne = {A_{2}},
-      sw = {A_{1}},
-      se = {A_{1} \cup  A_{2}},
-      north/style = {>->,exists},
-      west/style = {>->,exists},
-      south/style = {>->},
-      east/style = {>->},
-    }
+    \begin {tikzpicture}[diagram]
+      \SpliceDiagramSquare {
+        nw = R,
+        nw/style = {pullback},
+        ne = A,
+        sw = A,
+        se = B,
+        north = b,
+        west = a,
+        south = f,
+        east = f,
+      }
+      \node  [above left = of nw] (a) {$A$};
+      \draw  [->,morphism,bend right] (a) to node[swap] {$\mathsf {id}_{A}$} (sw);
+      \draw  [->,morphism,exists] (a) to node[desc] {$\rho $} (nw);
+      \draw  [->,morphism,bend left] (a) to node {$\mathsf {id}_{A}$} (ne);
+    \end {tikzpicture}
+    \qquad 
+    \begin {tikzpicture}[diagram]
+      \SpliceDiagramSquare {
+        nw = R,
+        nw/style = {pullback},
+        ne = A,
+        sw = A,
+        se = B,
+        north = b,
+        west = a,
+        south = f,
+        east = f,
+      }
+      \node  [above left = of nw] (r) {$R$};
+      \draw  [->,morphism,bend right] (r) to node[swap] {$b$} (sw);
+      \draw  [->,morphism,exists] (r) to node[desc] {$\sigma $} (nw);
+      \draw  [->,morphism,bend left] (r) to node {$a$} (ne);
+    \end {tikzpicture}
+    \qquad 
+    \begin {tikzpicture}[diagram]
+      \SpliceDiagramSquare {
+        nw = R,
+        nw/style = {pullback},
+        ne = A,
+        sw = A,
+        se = B,
+        north = b,
+        west = a,
+        south = f,
+        east = f,
+      }
+      \node  [above left = of nw] (rr) {$R \times _{A} R$};
+      \draw  [->,morphism,bend right] (rr) to node[swap] {$ap$} (sw);
+      \draw  [->,morphism,exists] (rr) to node[desc] {$\tau $} (nw);
+      \draw  [->,morphism,bend left] (rr) to node {$bq$} (ne);
+    \end {tikzpicture}
   ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
-  <fr:p>But, pushouts under <fr:tex
-display="inline"><![CDATA[0]]></fr:tex> are coproducts.</fr:p>
 </fr:mainmatter><fr:backmatter><fr:tree
 toc="false"
 numbered="false"
@@ -264,23 +302,15 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>950</fr:anchor><fr:addr
-type="user">ct-0015</fr:addr><fr:route>ct-0015.xml</fr:route><fr:title
-text="Disjoint unions are coproducts">Disjoint unions are coproducts</fr:title><fr:taxon>Corollary</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>11</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
-display="inline"><![CDATA[A_{1}]]></fr:tex> and <fr:tex
-display="inline"><![CDATA[A_{2}]]></fr:tex> be subobjects of <fr:tex
-display="inline"><![CDATA[A]]></fr:tex> in a <fr:link
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>958</fr:anchor><fr:addr
+type="user">ct-0016</fr:addr><fr:route>ct-0016.xml</fr:route><fr:title
+text="Kernel pairs are equivalence relations">Kernel pairs are <fr:link
 type="local"
-href="ct-000X.xml"
-addr="ct-000X"
-title="Coherent category">coherent category</fr:link> such that <fr:tex
-display="inline"><![CDATA[A_{1} \cap  A_{2} \cong  0]]></fr:tex>.
-  Then <fr:tex
-display="inline"><![CDATA[A_{1} \cup  A_{2} \cong  A_{1} + A_{2}]]></fr:tex>.
-  Note that every coherent category has a (strict) initial object by <fr:ref
-addr="ct-000Z"
-href="ct-000Z.xml"
-taxon="Lemma" />.</fr:p>
+href="ct-0004.xml"
+addr="ct-0004"
+title="Equivalence relation">equivalence relations</fr:link></fr:title><fr:taxon>Lemma</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>11</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[f\colon A\to B]]></fr:tex> be a morphism in a cartesian category.
+  Then its kernel pair is an equivalence relation.</fr:p>
     
       
       <fr:tree
@@ -290,17 +320,14 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>377</fr:anchor><fr:addr
-type="machine">#254</fr:addr><fr:route>unstable-254.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>11</fr:day></fr:date><fr:authors /><fr:parent>ct-0015</fr:parent></fr:frontmatter><fr:mainmatter>
-  <fr:p>By <fr:ref
-addr="ct-0012"
-href="ct-0012.xml"
-taxon="Lemma" /> the following diagram is a pushout.</fr:p>
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>513</fr:anchor><fr:addr
+type="machine">#254</fr:addr><fr:route>unstable-254.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>11</fr:day></fr:date><fr:authors /><fr:parent>ct-0016</fr:parent></fr:frontmatter><fr:mainmatter>
+  <fr:p>The required morphisms are given by the universal property of pullbacks as follows.</fr:p>
   
     
       
       <fr:figure><fr:embedded-tex
-hash="5104eb0e1f6f0181cb3213ae3f1ac8ae"><fr:embedded-tex-preamble><![CDATA[
+hash="2165d09b2baf87f553a8bcbdc217c3d2"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
   \RequirePackage {amsmath}
@@ -517,21 +544,62 @@ hash="5104eb0e1f6f0181cb3213ae3f1ac8ae"><fr:embedded-tex-preamble><![CDATA[
   \ExplSyntaxOff
 
       ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
-    \DiagramSquare {
-      nw = 0,
-      ne = {A_{2}},
-      sw = {A_{1}},
-      se = {A_{1} \cup  A_{2}},
-      north/style = {>->,exists},
-      west/style = {>->,exists},
-      south/style = {>->},
-      east/style = {>->},
-    }
+    \begin {tikzpicture}[diagram]
+      \SpliceDiagramSquare {
+        nw = R,
+        nw/style = {pullback},
+        ne = A,
+        sw = A,
+        se = B,
+        north = b,
+        west = a,
+        south = f,
+        east = f,
+      }
+      \node  [above left = of nw] (a) {$A$};
+      \draw  [->,morphism,bend right] (a) to node[swap] {$\mathsf {id}_{A}$} (sw);
+      \draw  [->,morphism,exists] (a) to node[desc] {$\rho $} (nw);
+      \draw  [->,morphism,bend left] (a) to node {$\mathsf {id}_{A}$} (ne);
+    \end {tikzpicture}
+    \qquad 
+    \begin {tikzpicture}[diagram]
+      \SpliceDiagramSquare {
+        nw = R,
+        nw/style = {pullback},
+        ne = A,
+        sw = A,
+        se = B,
+        north = b,
+        west = a,
+        south = f,
+        east = f,
+      }
+      \node  [above left = of nw] (r) {$R$};
+      \draw  [->,morphism,bend right] (r) to node[swap] {$b$} (sw);
+      \draw  [->,morphism,exists] (r) to node[desc] {$\sigma $} (nw);
+      \draw  [->,morphism,bend left] (r) to node {$a$} (ne);
+    \end {tikzpicture}
+    \qquad 
+    \begin {tikzpicture}[diagram]
+      \SpliceDiagramSquare {
+        nw = R,
+        nw/style = {pullback},
+        ne = A,
+        sw = A,
+        se = B,
+        north = b,
+        west = a,
+        south = f,
+        east = f,
+      }
+      \node  [above left = of nw] (rr) {$R \times _{A} R$};
+      \draw  [->,morphism,bend right] (rr) to node[swap] {$ap$} (sw);
+      \draw  [->,morphism,exists] (rr) to node[desc] {$\tau $} (nw);
+      \draw  [->,morphism,bend left] (rr) to node {$bq$} (ne);
+    \end {tikzpicture}
   ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
-  <fr:p>But, pushouts under <fr:tex
-display="inline"><![CDATA[0]]></fr:tex> are coproducts.</fr:p>
 </fr:mainmatter><fr:backmatter /></fr:tree>
     
   </fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>
