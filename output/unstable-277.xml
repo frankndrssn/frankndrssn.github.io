@@ -7,18 +7,23 @@ show-heading="true"
 show-metadata="true"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1183</fr:anchor><fr:addr
-type="machine">#277</fr:addr><fr:route>unstable-277.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:authors /><fr:parent>ct-000E</fr:parent></fr:frontmatter><fr:mainmatter>
-  Note that the generic subobject <fr:tex
-display="inline"><![CDATA[\top \colon 1\rightarrowtail \Omega ]]></fr:tex> is a split monomorphism, so it is also a regular monomorphism. Explicitly, <fr:tex
-display="inline"><![CDATA[\top ]]></fr:tex> is the equalizer of <fr:tex
-display="inline"><![CDATA[\mathsf {id}_{\Omega }]]></fr:tex> and <fr:tex
-display="inline"><![CDATA[\Omega  \xrightarrow {\mathsf {!}_{\Omega }} 1 \xrightarrow {\top } \Omega ]]></fr:tex>.
-  
-  <fr:p>Since every monomorphism in <fr:tex
-display="inline"><![CDATA[\mathcal {C}]]></fr:tex> is a pullback against <fr:tex
-display="inline"><![CDATA[\top ]]></fr:tex> and regular monomorphisms are stable under pullback, it follows that every monomorphism in <fr:tex
-display="inline"><![CDATA[\mathcal {C}]]></fr:tex> is regular.</fr:p>
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1198</fr:anchor><fr:addr
+type="machine">#277</fr:addr><fr:route>unstable-277.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:authors /><fr:parent>ct-000H</fr:parent></fr:frontmatter><fr:mainmatter>
+  <fr:p>If <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> is locally cartesian, then <fr:tex
+display="inline"><![CDATA[{{\mathcal {C}}_{/{A}}}]]></fr:tex> has products for any object <fr:tex
+display="inline"><![CDATA[A \in  \mathcal {C}]]></fr:tex>. But, products in <fr:tex
+display="inline"><![CDATA[{{\mathcal {C}}_{/{A}}}]]></fr:tex> are pullbacks over <fr:tex
+display="inline"><![CDATA[A]]></fr:tex>. Thus, <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> has pullbacks.</fr:p>
+  <fr:p>Conversely, assume that <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> has pullbacks. Then since the forgetful functor <fr:tex
+display="inline"><![CDATA[\Sigma _{A}\colon {{\mathcal {C}}_{/{A}}}\to \mathcal {C}]]></fr:tex> creates connected limits for any object <fr:tex
+display="inline"><![CDATA[A \in  \mathcal {C}]]></fr:tex>, the slice <fr:tex
+display="inline"><![CDATA[{{\mathcal {C}}_{/{A}}}]]></fr:tex> has pullbacks. Moreover, <fr:tex
+display="inline"><![CDATA[\mathsf {id}_{A}]]></fr:tex> is the terminal object in <fr:tex
+display="inline"><![CDATA[{{\mathcal {C}}_{/{A}}}]]></fr:tex>. Thus, <fr:tex
+display="inline"><![CDATA[{{\mathcal {C}}_{/{A}}}]]></fr:tex> is cartesian.</fr:p>
 </fr:mainmatter><fr:backmatter><fr:tree
 toc="false"
 numbered="false"
@@ -34,15 +39,14 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1184</fr:anchor><fr:addr
-type="user">ct-000E</fr:addr><fr:route>ct-000E.xml</fr:route><fr:title
-text="Monomorphisms in a category equipped with a subobject classifier are regular">Monomorphisms in a category equipped with a <fr:link
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1199</fr:anchor><fr:addr
+type="user">ct-000H</fr:addr><fr:route>ct-000H.xml</fr:route><fr:title
+text="Locally cartesian categories have pullbacks"><fr:link
 type="local"
-href="ct-0009.xml"
-addr="ct-0009"
-title="Subobject classifier">subobject classifier</fr:link> are regular</fr:title><fr:taxon>Lemma</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
-display="inline"><![CDATA[\mathcal {C}]]></fr:tex> be a cartesian category equipped with a subobject classifier. Every monomorphism in <fr:tex
-display="inline"><![CDATA[\mathcal {C}]]></fr:tex> is regular.</fr:p>
+href="ct-000G.xml"
+addr="ct-000G"
+title="Locally cartesian category">Locally cartesian categories</fr:link> have pullbacks</fr:title><fr:taxon>Lemma</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>A category <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> is locally cartesian iff it has pullbacks.</fr:p>
     
       
       <fr:tree
@@ -52,18 +56,23 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>538</fr:anchor><fr:addr
-type="machine">#277</fr:addr><fr:route>unstable-277.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:authors /><fr:parent>ct-000E</fr:parent></fr:frontmatter><fr:mainmatter>
-  Note that the generic subobject <fr:tex
-display="inline"><![CDATA[\top \colon 1\rightarrowtail \Omega ]]></fr:tex> is a split monomorphism, so it is also a regular monomorphism. Explicitly, <fr:tex
-display="inline"><![CDATA[\top ]]></fr:tex> is the equalizer of <fr:tex
-display="inline"><![CDATA[\mathsf {id}_{\Omega }]]></fr:tex> and <fr:tex
-display="inline"><![CDATA[\Omega  \xrightarrow {\mathsf {!}_{\Omega }} 1 \xrightarrow {\top } \Omega ]]></fr:tex>.
-  
-  <fr:p>Since every monomorphism in <fr:tex
-display="inline"><![CDATA[\mathcal {C}]]></fr:tex> is a pullback against <fr:tex
-display="inline"><![CDATA[\top ]]></fr:tex> and regular monomorphisms are stable under pullback, it follows that every monomorphism in <fr:tex
-display="inline"><![CDATA[\mathcal {C}]]></fr:tex> is regular.</fr:p>
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>345</fr:anchor><fr:addr
+type="machine">#277</fr:addr><fr:route>unstable-277.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>30</fr:day></fr:date><fr:authors /><fr:parent>ct-000H</fr:parent></fr:frontmatter><fr:mainmatter>
+  <fr:p>If <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> is locally cartesian, then <fr:tex
+display="inline"><![CDATA[{{\mathcal {C}}_{/{A}}}]]></fr:tex> has products for any object <fr:tex
+display="inline"><![CDATA[A \in  \mathcal {C}]]></fr:tex>. But, products in <fr:tex
+display="inline"><![CDATA[{{\mathcal {C}}_{/{A}}}]]></fr:tex> are pullbacks over <fr:tex
+display="inline"><![CDATA[A]]></fr:tex>. Thus, <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> has pullbacks.</fr:p>
+  <fr:p>Conversely, assume that <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> has pullbacks. Then since the forgetful functor <fr:tex
+display="inline"><![CDATA[\Sigma _{A}\colon {{\mathcal {C}}_{/{A}}}\to \mathcal {C}]]></fr:tex> creates connected limits for any object <fr:tex
+display="inline"><![CDATA[A \in  \mathcal {C}]]></fr:tex>, the slice <fr:tex
+display="inline"><![CDATA[{{\mathcal {C}}_{/{A}}}]]></fr:tex> has pullbacks. Moreover, <fr:tex
+display="inline"><![CDATA[\mathsf {id}_{A}]]></fr:tex> is the terminal object in <fr:tex
+display="inline"><![CDATA[{{\mathcal {C}}_{/{A}}}]]></fr:tex>. Thus, <fr:tex
+display="inline"><![CDATA[{{\mathcal {C}}_{/{A}}}]]></fr:tex> is cartesian.</fr:p>
 </fr:mainmatter><fr:backmatter /></fr:tree>
     
   </fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

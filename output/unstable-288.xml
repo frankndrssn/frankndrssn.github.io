@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="true"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1261</fr:anchor><fr:addr
+type="machine">#288</fr:addr><fr:route>unstable-288.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:authors /><fr:parent>ct-0007</fr:parent></fr:frontmatter><fr:mainmatter>
+  It suffices to specify an action on morphisms. Let <fr:tex
+display="inline"><![CDATA[f\colon A\to B]]></fr:tex> be an arbitrary morphism. Since monomorphisms are stable under pullback, the pullback functor <fr:tex
+display="inline"><![CDATA[f^{*}\colon {{\mathcal {C}}_{/{B}}}\to {{\mathcal {C}}_{/{A}}}]]></fr:tex> restricts to a functor <fr:tex
+display="inline"><![CDATA[f^{*}\colon \mathsf {Sub}(B)\to \mathsf {Sub}(A)]]></fr:tex>. Then pseudofunctoriality follows from the following facts:
+  <fr:ul><fr:li>Let <fr:tex
+display="inline"><![CDATA[f\colon  A \to  B]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[g\colon  B \to  C]]></fr:tex>, and <fr:tex
+display="inline"><![CDATA[m\colon  C' \rightarrowtail  C]]></fr:tex> be given. By the <fr:link
+type="local"
+href="ct-0008.xml"
+addr="ct-0008"
+title="Pasting lemma of pullbacks">pasting lemma of pullbacks</fr:link>, the pullback <fr:tex
+display="inline"><![CDATA[f^{*}g^{*}(m)]]></fr:tex> is also a pullback along <fr:tex
+display="inline"><![CDATA[gf]]></fr:tex>. Thus, the universal property of pullbacks guarantees that <fr:tex
+display="inline"><![CDATA[(gf)^{*}(m) \cong  f^{*}g^{*}(m)]]></fr:tex> in <fr:tex
+display="inline"><![CDATA[\mathsf {Sub}(A)]]></fr:tex>.</fr:li>
+    <fr:li>The pullback against the identity is always an isomorphism. Thus, for any <fr:tex
+display="inline"><![CDATA[m\colon  A' \rightarrowtail  A]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[\mathsf {id}_{A}^{*}(m) \cong  m]]></fr:tex> in <fr:tex
+display="inline"><![CDATA[\mathsf {Sub}(A)]]></fr:tex>.</fr:li></fr:ul>
+</fr:mainmatter><fr:backmatter><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
+text="Context">Context</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1262</fr:anchor><fr:addr
+type="user">ct-0007</fr:addr><fr:route>ct-0007.xml</fr:route><fr:title
+text="Subobject pseudofunctor"><fr:link
+type="local"
+href="ct-0006.xml"
+addr="ct-0006"
+title="Subobject">Subobject</fr:link> pseudofunctor</fr:title><fr:taxon>Lemma</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>If <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> has pullbacks then the assignment <fr:tex
+display="inline"><![CDATA[A \mapsto  \mathsf {Sub}(A)]]></fr:tex> can be extended to a pseudofunctor <fr:tex
+display="inline"><![CDATA[\mathsf {Sub}\colon  \mathcal {C}^\mathrm {op} \to  \mathsf {CAT}]]></fr:tex>.</fr:p>
+    
+      
+      <fr:tree
+toc="false"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>562</fr:anchor><fr:addr
+type="machine">#288</fr:addr><fr:route>unstable-288.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:authors /><fr:parent>ct-0007</fr:parent></fr:frontmatter><fr:mainmatter>
+  It suffices to specify an action on morphisms. Let <fr:tex
+display="inline"><![CDATA[f\colon A\to B]]></fr:tex> be an arbitrary morphism. Since monomorphisms are stable under pullback, the pullback functor <fr:tex
+display="inline"><![CDATA[f^{*}\colon {{\mathcal {C}}_{/{B}}}\to {{\mathcal {C}}_{/{A}}}]]></fr:tex> restricts to a functor <fr:tex
+display="inline"><![CDATA[f^{*}\colon \mathsf {Sub}(B)\to \mathsf {Sub}(A)]]></fr:tex>. Then pseudofunctoriality follows from the following facts:
+  <fr:ul><fr:li>Let <fr:tex
+display="inline"><![CDATA[f\colon  A \to  B]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[g\colon  B \to  C]]></fr:tex>, and <fr:tex
+display="inline"><![CDATA[m\colon  C' \rightarrowtail  C]]></fr:tex> be given. By the <fr:link
+type="local"
+href="ct-0008.xml"
+addr="ct-0008"
+title="Pasting lemma of pullbacks">pasting lemma of pullbacks</fr:link>, the pullback <fr:tex
+display="inline"><![CDATA[f^{*}g^{*}(m)]]></fr:tex> is also a pullback along <fr:tex
+display="inline"><![CDATA[gf]]></fr:tex>. Thus, the universal property of pullbacks guarantees that <fr:tex
+display="inline"><![CDATA[(gf)^{*}(m) \cong  f^{*}g^{*}(m)]]></fr:tex> in <fr:tex
+display="inline"><![CDATA[\mathsf {Sub}(A)]]></fr:tex>.</fr:li>
+    <fr:li>The pullback against the identity is always an isomorphism. Thus, for any <fr:tex
+display="inline"><![CDATA[m\colon  A' \rightarrowtail  A]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[\mathsf {id}_{A}^{*}(m) \cong  m]]></fr:tex> in <fr:tex
+display="inline"><![CDATA[\mathsf {Sub}(A)]]></fr:tex>.</fr:li></fr:ul>
+</fr:mainmatter><fr:backmatter /></fr:tree>
+    
+  </fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

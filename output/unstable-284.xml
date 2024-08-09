@@ -7,14 +7,14 @@ show-heading="true"
 show-metadata="true"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1238</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1253</fr:anchor><fr:addr
 type="machine">#284</fr:addr><fr:route>unstable-284.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:authors /><fr:parent>ct-0009</fr:parent></fr:frontmatter><fr:mainmatter>
-        By definition, the two inner squares of the following diagram are pullbacks.
+        The following diagram is a pullback.
         
     
       
       <fr:figure><fr:embedded-tex
-hash="f10e7ca4e99cdfe26beb30ee87a77179"><fr:embedded-tex-preamble><![CDATA[
+hash="e97fe9df8e3d008429f046b8a8f512b4"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
   \RequirePackage {amsmath}
@@ -231,35 +231,22 @@ hash="f10e7ca4e99cdfe26beb30ee87a77179"><fr:embedded-tex-preamble><![CDATA[
   \ExplSyntaxOff
 
       ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
-          \begin {tikzpicture}[diagram]
-            \SpliceDiagramSquare {
-              nw = B',
-              nw/style = pullback,
-              ne = C',
-              sw = B,
-              se = C,
-              south = g,
-              west = n,
-              west/style = {>->},
-              west/node/style = {desc},
-              east = o,
-              east/style = {>->},
-            }
-            \node  [left = of nw, pullback] (A') {$A'$};
-            \node  [left = of sw] (A) {$A$};
-            \draw  [->,morphism] (A') to (nw);
-            \draw  [>->,morphism] (A') to node[swap] {$m$} (A);
-            \draw  [->,morphism] (A) to node[swap] {$f$} (sw);
-          \end {tikzpicture}
-          
+          \DiagramSquare {
+            nw = A',
+            nw/style = pullback,
+            ne = A',
+            sw = A,
+            se = A,
+            north/style = {double},
+            south/style = {double},
+            east = m,
+            west = m,
+            east/style = {>->},
+            west/style = {>->},
+          }
         ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
-        Then by the <fr:link
-type="local"
-href="ct-0008.xml"
-addr="ct-0008"
-title="Pasting lemma of pullbacks">pasting lemma of pullbacks</fr:link>, the outer rectangle is also a pullback.
       </fr:mainmatter><fr:backmatter><fr:tree
 toc="false"
 numbered="false"
@@ -275,7 +262,7 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1239</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1254</fr:anchor><fr:addr
 type="user">ct-0009</fr:addr><fr:route>ct-0009.xml</fr:route><fr:title
 text="Subobject classifier"><fr:link
 type="local"
@@ -571,8 +558,8 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>417</fr:anchor><fr:addr
-type="machine">#285</fr:addr><fr:route>unstable-285.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:authors /><fr:parent>ct-0009</fr:parent></fr:frontmatter><fr:mainmatter>
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>429</fr:anchor><fr:addr
+type="machine">#286</fr:addr><fr:route>unstable-286.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:authors /><fr:parent>ct-0009</fr:parent></fr:frontmatter><fr:mainmatter>
   For the definition to make sense, we need to show that <fr:tex
 display="inline"><![CDATA[\mathcal {S}_{\mathcal {C}}]]></fr:tex> is a category.
   Since identities and compositions are inherited from <fr:tex
@@ -591,8 +578,8 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>418</fr:anchor><fr:addr
-type="machine">#283</fr:addr><fr:route>unstable-283.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:authors /><fr:parent>ct-0009</fr:parent></fr:frontmatter><fr:mainmatter>
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>430</fr:anchor><fr:addr
+type="machine">#284</fr:addr><fr:route>unstable-284.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:authors /><fr:parent>ct-0009</fr:parent></fr:frontmatter><fr:mainmatter>
         The following diagram is a pullback.
         
     
@@ -846,8 +833,8 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>419</fr:anchor><fr:addr
-type="machine">#284</fr:addr><fr:route>unstable-284.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:authors /><fr:parent>ct-0009</fr:parent></fr:frontmatter><fr:mainmatter>
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>431</fr:anchor><fr:addr
+type="machine">#285</fr:addr><fr:route>unstable-285.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>29</fr:day></fr:date><fr:authors /><fr:parent>ct-0009</fr:parent></fr:frontmatter><fr:mainmatter>
         By definition, the two inner squares of the following diagram are pullbacks.
         
     

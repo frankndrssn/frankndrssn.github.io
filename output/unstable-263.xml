@@ -7,34 +7,19 @@ show-heading="true"
 show-metadata="true"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1072</fr:anchor><fr:addr
-type="machine">#263</fr:addr><fr:route>unstable-263.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>4</fr:day></fr:date><fr:authors /><fr:parent>ct-000Q</fr:parent></fr:frontmatter><fr:mainmatter>
-  <fr:p>By the construction of images, every morphism <fr:tex
-display="inline"><![CDATA[f\colon A\to B]]></fr:tex> can be factored as <fr:tex
-display="inline"><![CDATA[\mathsf {Img}(f)\vartheta _{f}]]></fr:tex>, where <fr:tex
-display="inline"><![CDATA[\vartheta ]]></fr:tex> is the unit of the image adjunction. <fr:tex
-display="inline"><![CDATA[\mathsf {Img}(f)]]></fr:tex> is monic by construction and <fr:tex
-display="inline"><![CDATA[\vartheta _{f}]]></fr:tex> is a cover by <fr:ref
-addr="ct-000N"
-href="ct-000N.xml"
-taxon="Lemma" />.</fr:p>
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1083</fr:anchor><fr:addr
+type="machine">#263</fr:addr><fr:route>unstable-263.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>4</fr:day></fr:date><fr:authors /><fr:parent>ct-000R</fr:parent></fr:frontmatter><fr:mainmatter>
+  <fr:p>By the construction of <fr:tex
+display="inline"><![CDATA[\exists _{f}]]></fr:tex>, this is equivalent to showing the following isomorphism.
+    <fr:tex
+display="block"><![CDATA[       \mathsf {Img}(f \circ  (A' \cap  f^{*}(B'))) \cong  \mathsf {Img}(f \circ  A') \cap  B'     ]]></fr:tex></fr:p>
 
-  <fr:p>To show the second half of the lemma, it suffices to show that every cover-mono factorization of a morphism <fr:tex
-display="inline"><![CDATA[f]]></fr:tex> is isomorphic to <fr:tex
-display="inline"><![CDATA[\mathsf {Img}(f)\vartheta _{f}]]></fr:tex>. Let <fr:tex
-display="inline"><![CDATA[hg]]></fr:tex> be a cover-mono factorization of <fr:tex
-display="inline"><![CDATA[f]]></fr:tex>. Then by the universal property of adjunction, there is a morphism <fr:tex
-display="inline"><![CDATA[s]]></fr:tex> in <fr:tex
-display="inline"><![CDATA[\mathsf {Sub}(B)]]></fr:tex> such that <fr:tex
-display="inline"><![CDATA[s\vartheta _{f} = g]]></fr:tex>. By the definition of <fr:tex
-display="inline"><![CDATA[\mathsf {Sub}(B)]]></fr:tex>, we also have <fr:tex
-display="inline"><![CDATA[hs = \mathsf {Img}(f)]]></fr:tex>. Then, it follows that <fr:tex
-display="inline"><![CDATA[s]]></fr:tex> is monic.</fr:p>
+  <fr:p>Form the following diagram, where the front, left, and right faces are pullbacks.</fr:p>
   
     
       
       <fr:figure><fr:embedded-tex
-hash="73a844f0751de2785bed455220880376"><fr:embedded-tex-preamble><![CDATA[
+hash="75e51c7f8b1e82a679f9d19a26eeecdc"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
   \RequirePackage {amsmath}
@@ -251,27 +236,48 @@ hash="73a844f0751de2785bed455220880376"><fr:embedded-tex-preamble><![CDATA[
   \ExplSyntaxOff
 
       ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
-    
-    \begin {tikzpicture}[diagram,node distance = 3cm]
-      \node  (1) {$A$};
-      \node  [right = of 1] (2) {$B$};
-      \node  [below = 1.5cm of 1] (1') {};
-      \node  [below = 1.5cm of 2] (2') {};
-      \node  [between = 1' and 2'] (3) {$\underline {A}$};
-      \node  [below = 1.5cm of 3] (4) {$C$};
-      \draw  [->,morphism] (1) to node {$f$} (2);
-      \draw  [cover,morphism] (1) to node[desc] {$\vartheta _{f}$} (3);
-      \draw  [cover,morphism,bend right] (1) to node[swap] {$g$} (4);
-      \draw  [>->,morphism] (3) to node[desc] {$\mathsf {Img}(f)$} (2);
-      \draw  [>->,morphism,bend right] (4) to node[swap] {$h$} (2);
-      \draw  [>->,morphism] (3) to node[desc] {$s$} (4);
+    \begin {tikzpicture}[diagram,node distance = 3.5cm]
+      \SpliceDiagramSquare {
+        width = 3.5cm,
+        height = 3.5cm,
+        nw = f^{*}(B'),
+        sw = A,
+        ne = B',
+        se = B,
+        west = f^{*}(B'),
+        west/style = {>->},
+        south = f,
+        east/style = {>->},
+      }
+      \node  [right = 2cm of nw] (ref1) {};
+      \node  [above = 1.5cm of ref1] (nw') {$A' \cap  f^{*}(B')$};
+      \node  [right = of nw'] (ne') {$\exists _{f}(A') \cap  B'$};
+      \node  [below = of nw'] (sw') {$A'$};
+      \node  [below = of ne'] (se') {$\exists _{f}(A')$};
+      \draw  [>->,morphism] (nw') to (sw');
+      \draw  [>->,morphism] (ne') to (se');
+      \draw  [cover,morphism] (sw') to node[near start,desc] {$\vartheta _{f \circ  A'}$} (se');
+      \draw  [>->,morphism] (sw') to (sw);
+      \draw  [>->,morphism] (se') to node {$\mathsf {Img}(f \circ  A')$} (se);
+      \draw  [->,morphism] (nw') to (ne');
+      \draw  [>->,morphism] (nw') to (nw);
+      \draw  [>->,morphism] (ne') to (ne);
     \end {tikzpicture}
   ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
-  <fr:p>Since <fr:tex
-display="inline"><![CDATA[g]]></fr:tex> is extremal, <fr:tex
-display="inline"><![CDATA[s]]></fr:tex> must be an isomorphism.</fr:p>
+  <fr:p>By the <fr:link
+type="local"
+href="ct-0008.xml"
+addr="ct-0008"
+title="Pasting lemma of pullbacks">pasting lemma</fr:link>, the back square is also a pullback. Then since covers are stable under pullback in a regular category, the north edge of the back square is also a cover. The diagonal of the right face is <fr:tex
+display="inline"><![CDATA[\mathsf {Img}(f \circ  A') \cap  B']]></fr:tex>, which forms a cover-mono factorization of the composite <fr:tex
+display="inline"><![CDATA[f \circ  (A' \cap  f^{*}(B'))]]></fr:tex>. Thus, by <fr:link
+type="local"
+href="ct-000Q.xml"
+addr="ct-000Q"
+title="Cover-mono factorization">uniqueness</fr:link>, <fr:tex
+display="inline"><![CDATA[\mathsf {Img}(f \circ  (A' \cap  f^{*}(B'))) \cong  \mathsf {Img}(f \circ  A') \cap  B']]></fr:tex> as required.</fr:p>
 </fr:mainmatter><fr:backmatter><fr:tree
 toc="false"
 numbered="false"
@@ -287,22 +293,23 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1073</fr:anchor><fr:addr
-type="user">ct-000Q</fr:addr><fr:route>ct-000Q.xml</fr:route><fr:title
-text="Cover-mono factorization"><fr:link
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1084</fr:anchor><fr:addr
+type="user">ct-000R</fr:addr><fr:route>ct-000R.xml</fr:route><fr:title
+text="Frobenius reciprocity">Frobenius reciprocity</fr:title><fr:taxon>Lemma</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>4</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[f\colon A\to B]]></fr:tex> be a morphism in a <fr:link
 type="local"
-href="ct-000M.xml"
-addr="ct-000M"
-title="Extremal epimorphism">Cover</fr:link>-mono factorization</fr:title><fr:taxon>Lemma</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>4</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
-display="inline"><![CDATA[\mathcal {C}]]></fr:tex> be a category with <fr:link
-type="local"
-href="ct-000K.xml"
-addr="ct-000K"
-title="Image">images</fr:link> and equalizers. Then every morphism of <fr:tex
-display="inline"><![CDATA[\mathcal {C}]]></fr:tex> can be factored as a cover followed by a monomorphism. Moreover, this factorization is unique up to isomorphism in the sense that if <fr:tex
-display="inline"><![CDATA[A \twoheadrightarrow  C \rightarrowtail  B]]></fr:tex> and <fr:tex
-display="inline"><![CDATA[A \twoheadrightarrow  C' \rightarrowtail  B]]></fr:tex> are both cover-mono factorizations of the same morphism, then <fr:tex
-display="inline"><![CDATA[C \cong  C']]></fr:tex>.</fr:p>
+href="ct-000O.xml"
+addr="ct-000O"
+title="Regular category">regular category</fr:link>. Then for any two subobjects <fr:tex
+display="inline"><![CDATA[A' \rightarrowtail  A]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[B' \rightarrowtail  B]]></fr:tex>, we have <fr:tex
+display="inline"><![CDATA[\exists _{f}(A' \cap  f^{*}(B')) \cong  \exists _{f}(A') \cap  B']]></fr:tex> in <fr:tex
+display="inline"><![CDATA[\mathsf {Sub}(B)]]></fr:tex>, where <fr:tex
+display="inline"><![CDATA[\exists _{f}]]></fr:tex> is the left adjoint of <fr:tex
+display="inline"><![CDATA[f^{*}]]></fr:tex> constructed in <fr:ref
+addr="ct-000L"
+href="ct-000L.xml"
+taxon="Lemma" />.</fr:p>
     
       
       <fr:tree
@@ -312,34 +319,19 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>362</fr:anchor><fr:addr
-type="machine">#263</fr:addr><fr:route>unstable-263.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>4</fr:day></fr:date><fr:authors /><fr:parent>ct-000Q</fr:parent></fr:frontmatter><fr:mainmatter>
-  <fr:p>By the construction of images, every morphism <fr:tex
-display="inline"><![CDATA[f\colon A\to B]]></fr:tex> can be factored as <fr:tex
-display="inline"><![CDATA[\mathsf {Img}(f)\vartheta _{f}]]></fr:tex>, where <fr:tex
-display="inline"><![CDATA[\vartheta ]]></fr:tex> is the unit of the image adjunction. <fr:tex
-display="inline"><![CDATA[\mathsf {Img}(f)]]></fr:tex> is monic by construction and <fr:tex
-display="inline"><![CDATA[\vartheta _{f}]]></fr:tex> is a cover by <fr:ref
-addr="ct-000N"
-href="ct-000N.xml"
-taxon="Lemma" />.</fr:p>
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>380</fr:anchor><fr:addr
+type="machine">#263</fr:addr><fr:route>unstable-263.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>4</fr:day></fr:date><fr:authors /><fr:parent>ct-000R</fr:parent></fr:frontmatter><fr:mainmatter>
+  <fr:p>By the construction of <fr:tex
+display="inline"><![CDATA[\exists _{f}]]></fr:tex>, this is equivalent to showing the following isomorphism.
+    <fr:tex
+display="block"><![CDATA[       \mathsf {Img}(f \circ  (A' \cap  f^{*}(B'))) \cong  \mathsf {Img}(f \circ  A') \cap  B'     ]]></fr:tex></fr:p>
 
-  <fr:p>To show the second half of the lemma, it suffices to show that every cover-mono factorization of a morphism <fr:tex
-display="inline"><![CDATA[f]]></fr:tex> is isomorphic to <fr:tex
-display="inline"><![CDATA[\mathsf {Img}(f)\vartheta _{f}]]></fr:tex>. Let <fr:tex
-display="inline"><![CDATA[hg]]></fr:tex> be a cover-mono factorization of <fr:tex
-display="inline"><![CDATA[f]]></fr:tex>. Then by the universal property of adjunction, there is a morphism <fr:tex
-display="inline"><![CDATA[s]]></fr:tex> in <fr:tex
-display="inline"><![CDATA[\mathsf {Sub}(B)]]></fr:tex> such that <fr:tex
-display="inline"><![CDATA[s\vartheta _{f} = g]]></fr:tex>. By the definition of <fr:tex
-display="inline"><![CDATA[\mathsf {Sub}(B)]]></fr:tex>, we also have <fr:tex
-display="inline"><![CDATA[hs = \mathsf {Img}(f)]]></fr:tex>. Then, it follows that <fr:tex
-display="inline"><![CDATA[s]]></fr:tex> is monic.</fr:p>
+  <fr:p>Form the following diagram, where the front, left, and right faces are pullbacks.</fr:p>
   
     
       
       <fr:figure><fr:embedded-tex
-hash="73a844f0751de2785bed455220880376"><fr:embedded-tex-preamble><![CDATA[
+hash="75e51c7f8b1e82a679f9d19a26eeecdc"><fr:embedded-tex-preamble><![CDATA[
         
   \RequirePackage {tikz}
   \RequirePackage {amsmath}
@@ -556,27 +548,48 @@ hash="73a844f0751de2785bed455220880376"><fr:embedded-tex-preamble><![CDATA[
   \ExplSyntaxOff
 
       ]]></fr:embedded-tex-preamble><fr:embedded-tex-body><![CDATA[
-    
-    \begin {tikzpicture}[diagram,node distance = 3cm]
-      \node  (1) {$A$};
-      \node  [right = of 1] (2) {$B$};
-      \node  [below = 1.5cm of 1] (1') {};
-      \node  [below = 1.5cm of 2] (2') {};
-      \node  [between = 1' and 2'] (3) {$\underline {A}$};
-      \node  [below = 1.5cm of 3] (4) {$C$};
-      \draw  [->,morphism] (1) to node {$f$} (2);
-      \draw  [cover,morphism] (1) to node[desc] {$\vartheta _{f}$} (3);
-      \draw  [cover,morphism,bend right] (1) to node[swap] {$g$} (4);
-      \draw  [>->,morphism] (3) to node[desc] {$\mathsf {Img}(f)$} (2);
-      \draw  [>->,morphism,bend right] (4) to node[swap] {$h$} (2);
-      \draw  [>->,morphism] (3) to node[desc] {$s$} (4);
+    \begin {tikzpicture}[diagram,node distance = 3.5cm]
+      \SpliceDiagramSquare {
+        width = 3.5cm,
+        height = 3.5cm,
+        nw = f^{*}(B'),
+        sw = A,
+        ne = B',
+        se = B,
+        west = f^{*}(B'),
+        west/style = {>->},
+        south = f,
+        east/style = {>->},
+      }
+      \node  [right = 2cm of nw] (ref1) {};
+      \node  [above = 1.5cm of ref1] (nw') {$A' \cap  f^{*}(B')$};
+      \node  [right = of nw'] (ne') {$\exists _{f}(A') \cap  B'$};
+      \node  [below = of nw'] (sw') {$A'$};
+      \node  [below = of ne'] (se') {$\exists _{f}(A')$};
+      \draw  [>->,morphism] (nw') to (sw');
+      \draw  [>->,morphism] (ne') to (se');
+      \draw  [cover,morphism] (sw') to node[near start,desc] {$\vartheta _{f \circ  A'}$} (se');
+      \draw  [>->,morphism] (sw') to (sw);
+      \draw  [>->,morphism] (se') to node {$\mathsf {Img}(f \circ  A')$} (se);
+      \draw  [->,morphism] (nw') to (ne');
+      \draw  [>->,morphism] (nw') to (nw);
+      \draw  [>->,morphism] (ne') to (ne);
     \end {tikzpicture}
   ]]></fr:embedded-tex-body></fr:embedded-tex></fr:figure>
     
   
-  <fr:p>Since <fr:tex
-display="inline"><![CDATA[g]]></fr:tex> is extremal, <fr:tex
-display="inline"><![CDATA[s]]></fr:tex> must be an isomorphism.</fr:p>
+  <fr:p>By the <fr:link
+type="local"
+href="ct-0008.xml"
+addr="ct-0008"
+title="Pasting lemma of pullbacks">pasting lemma</fr:link>, the back square is also a pullback. Then since covers are stable under pullback in a regular category, the north edge of the back square is also a cover. The diagonal of the right face is <fr:tex
+display="inline"><![CDATA[\mathsf {Img}(f \circ  A') \cap  B']]></fr:tex>, which forms a cover-mono factorization of the composite <fr:tex
+display="inline"><![CDATA[f \circ  (A' \cap  f^{*}(B'))]]></fr:tex>. Thus, by <fr:link
+type="local"
+href="ct-000Q.xml"
+addr="ct-000Q"
+title="Cover-mono factorization">uniqueness</fr:link>, <fr:tex
+display="inline"><![CDATA[\mathsf {Img}(f \circ  (A' \cap  f^{*}(B'))) \cong  \mathsf {Img}(f \circ  A') \cap  B']]></fr:tex> as required.</fr:p>
 </fr:mainmatter><fr:backmatter /></fr:tree>
     
   </fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>
