@@ -7,23 +7,13 @@ show-heading="true"
 show-metadata="true"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>310</fr:anchor><fr:addr
-type="machine">#242</fr:addr><fr:route>unstable-242.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>8</fr:month><fr:day>8</fr:day></fr:date><fr:authors /><fr:parent>log-000U</fr:parent></fr:frontmatter><fr:mainmatter>
-  <fr:p>Suppose that <fr:tex
-display="inline"><![CDATA[f = hg]]></fr:tex>.
-    Then <fr:tex
-display="inline"><![CDATA[{\mathopen {}\llbracket h(g(x))\rrbracket \mathclose {}}_{\mathcal {C}} = {\mathopen {}\llbracket h\rrbracket \mathclose {}}_{\mathcal {C}} \circ  {\mathopen {}\llbracket g\rrbracket \mathclose {}}_{\mathcal {C}} \circ  \mathsf {id}_{A} = hg]]></fr:tex> and <fr:tex
-display="inline"><![CDATA[{\mathopen {}\llbracket f(x)\rrbracket \mathclose {}}_{\mathcal {C}} = {\mathopen {}\llbracket f\rrbracket \mathclose {}}_{\mathcal {C}} \circ  \mathsf {id}_{A} = f]]></fr:tex>.
-    Thus, the equalizer of <fr:tex
-display="inline"><![CDATA[{\mathopen {}\llbracket f(x)\rrbracket \mathclose {}}_{\mathcal {C}}]]></fr:tex> and <fr:tex
-display="inline"><![CDATA[{\mathopen {}\llbracket h(g(x))\rrbracket \mathclose {}}_{\mathcal {C}}]]></fr:tex> is the terminal object, and the result follows immediately.</fr:p>
-  <fr:p>Suppose the converse.
-    Then the identity morphism <fr:tex
-display="inline"><![CDATA[\mathsf {id}_{A}]]></fr:tex> equalizes <fr:tex
-display="inline"><![CDATA[{\mathopen {}\llbracket f(x)\rrbracket \mathclose {}}_{\mathcal {C}}]]></fr:tex> and <fr:tex
-display="inline"><![CDATA[{\mathopen {}\llbracket h(g(x))\rrbracket \mathclose {}}_{\mathcal {C}}]]></fr:tex>.
-    Thus, it follows that <fr:tex
-display="inline"><![CDATA[f = hg]]></fr:tex>.</fr:p>
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1417</fr:anchor><fr:addr
+type="machine">#242</fr:addr><fr:route>unstable-242.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
+  <fr:link
+type="local"
+href="todo.xml"
+addr="todo"
+title="TODO">TODO</fr:link>
 </fr:mainmatter><fr:backmatter><fr:tree
 toc="false"
 numbered="false"
@@ -39,28 +29,32 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>311</fr:anchor><fr:addr
-type="user">log-000U</fr:addr><fr:route>log-000U.xml</fr:route><fr:title
-text="Composite morphisms in the internal language of a category">Composite morphisms in the <fr:link
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1418</fr:anchor><fr:addr
+type="user">topo-000G</fr:addr><fr:route>topo-000G.xml</fr:route><fr:title
+text="Separated objects correspond to closed diagonal relations"><fr:link
 type="local"
-href="log-000P.xml"
-addr="log-000P"
-title="Internal language of a category">internal language</fr:link> of a category</fr:title><fr:taxon>Lemma</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>8</fr:month><fr:day>8</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
-display="inline"><![CDATA[\mathcal {C}]]></fr:tex> be a <fr:link
+href="topo-000E.xml"
+addr="topo-000E"
+title="Separated object">Separated</fr:link> objects correspond to <fr:link
 type="local"
-href="ct-000O.xml"
-addr="ct-000O"
-title="Regular category">regular category</fr:link>.
-  <fr:tex
-display="inline"><![CDATA[f\colon A\to C]]></fr:tex> is the composite of <fr:tex
-display="inline"><![CDATA[g\colon A\to B]]></fr:tex> and <fr:tex
-display="inline"><![CDATA[h\colon B\to C]]></fr:tex> iff <fr:tex
-display="inline"><![CDATA[\mathcal {C}]]></fr:tex> satisfies <fr:tex
-display="inline"><![CDATA[x\colon A|\top  \vdash  f(x) = h(g(x))]]></fr:tex> in its <fr:link
+href="topo-000B.xml"
+addr="topo-000B"
+title="Closed subobject">closed</fr:link> diagonal relations</fr:title><fr:taxon>Lemma</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>An object <fr:tex
+display="inline"><![CDATA[A]]></fr:tex> of a <fr:link
 type="local"
-href="log-000P.xml"
-addr="log-000P"
-title="Internal language of a category">internal language</fr:link>.</fr:p>
+href="topo-0001.xml"
+addr="topo-0001"
+title="Elementary topos">topos</fr:link> <fr:tex
+display="inline"><![CDATA[\mathcal {E}]]></fr:tex> is <fr:link
+type="local"
+href="topo-000E.xml"
+addr="topo-000E"
+title="Separated object">separated</fr:link> iff the diagonal subobject <fr:tex
+display="inline"><![CDATA[\Delta \colon  A \rightarrowtail  A \times  A]]></fr:tex> is <fr:link
+type="local"
+href="topo-000B.xml"
+addr="topo-000B"
+title="Closed subobject">closed</fr:link>.</fr:p>
     
       
       <fr:tree
@@ -70,23 +64,13 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>312</fr:anchor><fr:addr
-type="machine">#242</fr:addr><fr:route>unstable-242.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>8</fr:month><fr:day>8</fr:day></fr:date><fr:authors /><fr:parent>log-000U</fr:parent></fr:frontmatter><fr:mainmatter>
-  <fr:p>Suppose that <fr:tex
-display="inline"><![CDATA[f = hg]]></fr:tex>.
-    Then <fr:tex
-display="inline"><![CDATA[{\mathopen {}\llbracket h(g(x))\rrbracket \mathclose {}}_{\mathcal {C}} = {\mathopen {}\llbracket h\rrbracket \mathclose {}}_{\mathcal {C}} \circ  {\mathopen {}\llbracket g\rrbracket \mathclose {}}_{\mathcal {C}} \circ  \mathsf {id}_{A} = hg]]></fr:tex> and <fr:tex
-display="inline"><![CDATA[{\mathopen {}\llbracket f(x)\rrbracket \mathclose {}}_{\mathcal {C}} = {\mathopen {}\llbracket f\rrbracket \mathclose {}}_{\mathcal {C}} \circ  \mathsf {id}_{A} = f]]></fr:tex>.
-    Thus, the equalizer of <fr:tex
-display="inline"><![CDATA[{\mathopen {}\llbracket f(x)\rrbracket \mathclose {}}_{\mathcal {C}}]]></fr:tex> and <fr:tex
-display="inline"><![CDATA[{\mathopen {}\llbracket h(g(x))\rrbracket \mathclose {}}_{\mathcal {C}}]]></fr:tex> is the terminal object, and the result follows immediately.</fr:p>
-  <fr:p>Suppose the converse.
-    Then the identity morphism <fr:tex
-display="inline"><![CDATA[\mathsf {id}_{A}]]></fr:tex> equalizes <fr:tex
-display="inline"><![CDATA[{\mathopen {}\llbracket f(x)\rrbracket \mathclose {}}_{\mathcal {C}}]]></fr:tex> and <fr:tex
-display="inline"><![CDATA[{\mathopen {}\llbracket h(g(x))\rrbracket \mathclose {}}_{\mathcal {C}}]]></fr:tex>.
-    Thus, it follows that <fr:tex
-display="inline"><![CDATA[f = hg]]></fr:tex>.</fr:p>
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>678</fr:anchor><fr:addr
+type="machine">#242</fr:addr><fr:route>unstable-242.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
+  <fr:link
+type="local"
+href="todo.xml"
+addr="todo"
+title="TODO">TODO</fr:link>
 </fr:mainmatter><fr:backmatter /></fr:tree>
     
   </fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

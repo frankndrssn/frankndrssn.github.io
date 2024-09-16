@@ -7,32 +7,13 @@ show-heading="true"
 show-metadata="true"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>665</fr:anchor><fr:addr
-type="machine">#243</fr:addr><fr:route>unstable-243.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>8</fr:month><fr:day>2</fr:day></fr:date><fr:authors /><fr:parent>log-000S</fr:parent></fr:frontmatter><fr:mainmatter>
-  <fr:p>Suppose that <fr:tex
-display="inline"><![CDATA[f]]></fr:tex> is the identity morphism.
-    Then by <fr:ref
-addr="log-0007"
-href="log-0007.xml"
-taxon="Definition" />, <fr:tex
-display="inline"><![CDATA[{\mathopen {}\llbracket f(x)\rrbracket \mathclose {}}_{\mathcal {C}}]]></fr:tex> is <fr:tex
-display="inline"><![CDATA[\mathsf {id}_{A} \circ  {\mathopen {}\llbracket x\rrbracket \mathclose {}}_{\mathcal {C}} = {\mathopen {}\llbracket x\rrbracket \mathclose {}}_{\mathcal {C}}]]></fr:tex>.
-    But the equalizer with itself is the terminal object.
-    Thus, <fr:tex
-display="inline"><![CDATA[\top  \leq  {\mathopen {}\llbracket f(x) = x\rrbracket \mathclose {}}_{\mathcal {C}}]]></fr:tex> in <fr:tex
-display="inline"><![CDATA[\mathsf {Sub}(A)]]></fr:tex> as required.</fr:p>
-  <fr:p>Conversely, suppose that the terminal object of <fr:tex
-display="inline"><![CDATA[\mathsf {Sub}(A)]]></fr:tex> (i.e., the identity morphism <fr:tex
-display="inline"><![CDATA[\mathsf {id}_{A}]]></fr:tex>) factors through <fr:tex
-display="inline"><![CDATA[{\mathopen {}\llbracket f(x) = x\rrbracket \mathclose {}}_{\mathcal {C}}]]></fr:tex>.
-    Then it follows that <fr:tex
-display="inline"><![CDATA[\mathsf {id}_{A}]]></fr:tex> equalizes <fr:tex
-display="inline"><![CDATA[{\mathopen {}\llbracket f(x)\rrbracket \mathclose {}}_{\mathcal {C}}]]></fr:tex> and <fr:tex
-display="inline"><![CDATA[{\mathopen {}\llbracket x\rrbracket \mathclose {}}_{\mathcal {C}}]]></fr:tex>.
-    Since <fr:tex
-display="inline"><![CDATA[{\mathopen {}\llbracket x\rrbracket \mathclose {}}_{\mathcal {C}} = \mathsf {id}_{A}]]></fr:tex> and <fr:tex
-display="inline"><![CDATA[{\mathopen {}\llbracket f(x)\rrbracket \mathclose {}}_{\mathcal {C}} = {\mathopen {}\llbracket f\rrbracket \mathclose {}}_{\mathcal {C}} = f]]></fr:tex>, it follows that <fr:tex
-display="inline"><![CDATA[f = \mathsf {id}_{A}]]></fr:tex>.</fr:p>
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1419</fr:anchor><fr:addr
+type="machine">#243</fr:addr><fr:route>unstable-243.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
+  <fr:link
+type="local"
+href="todo.xml"
+addr="todo"
+title="TODO">TODO</fr:link>
 </fr:mainmatter><fr:backmatter><fr:tree
 toc="false"
 numbered="false"
@@ -48,30 +29,17 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>666</fr:anchor><fr:addr
-type="user">log-000S</fr:addr><fr:route>log-000S.xml</fr:route><fr:title
-text="Identity morphisms in the internal language of a category">Identity morphisms in the <fr:link
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1420</fr:anchor><fr:addr
+type="user">topo-0009</fr:addr><fr:route>topo-0009.xml</fr:route><fr:title
+text="Every equivalence relation in a topos is effective">Every <fr:link
 type="local"
-href="log-000P.xml"
-addr="log-000P"
-title="Internal language of a category">internal language</fr:link> of a category</fr:title><fr:taxon>Lemma</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>8</fr:month><fr:day>2</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
-display="inline"><![CDATA[\mathcal {C}]]></fr:tex> be a <fr:link
+href="ct-0004.xml"
+addr="ct-0004"
+title="Equivalence relation">equivalence relation</fr:link> in a topos is <fr:link
 type="local"
-href="ct-000O.xml"
-addr="ct-000O"
-title="Regular category">regular category</fr:link>.
-  <fr:tex
-display="inline"><![CDATA[f\colon A\to A]]></fr:tex> is the identity morphism iff <fr:tex
-display="inline"><![CDATA[x\colon A|\top  \vdash  f(x) = x]]></fr:tex> is <fr:link
-type="local"
-href="log-000T.xml"
-addr="log-000T"
-title="Satisfaction">satisfied</fr:link> in the <fr:link
-type="local"
-href="log-000P.xml"
-addr="log-000P"
-title="Internal language of a category">internal language</fr:link> of <fr:tex
-display="inline"><![CDATA[\mathcal {C}]]></fr:tex>.</fr:p>
+href="ct-0005.xml"
+addr="ct-0005"
+title="Effective category">effective</fr:link></fr:title><fr:taxon>Lemma</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
     
       
       <fr:tree
@@ -81,32 +49,13 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>529</fr:anchor><fr:addr
-type="machine">#243</fr:addr><fr:route>unstable-243.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>8</fr:month><fr:day>2</fr:day></fr:date><fr:authors /><fr:parent>log-000S</fr:parent></fr:frontmatter><fr:mainmatter>
-  <fr:p>Suppose that <fr:tex
-display="inline"><![CDATA[f]]></fr:tex> is the identity morphism.
-    Then by <fr:ref
-addr="log-0007"
-href="log-0007.xml"
-taxon="Definition" />, <fr:tex
-display="inline"><![CDATA[{\mathopen {}\llbracket f(x)\rrbracket \mathclose {}}_{\mathcal {C}}]]></fr:tex> is <fr:tex
-display="inline"><![CDATA[\mathsf {id}_{A} \circ  {\mathopen {}\llbracket x\rrbracket \mathclose {}}_{\mathcal {C}} = {\mathopen {}\llbracket x\rrbracket \mathclose {}}_{\mathcal {C}}]]></fr:tex>.
-    But the equalizer with itself is the terminal object.
-    Thus, <fr:tex
-display="inline"><![CDATA[\top  \leq  {\mathopen {}\llbracket f(x) = x\rrbracket \mathclose {}}_{\mathcal {C}}]]></fr:tex> in <fr:tex
-display="inline"><![CDATA[\mathsf {Sub}(A)]]></fr:tex> as required.</fr:p>
-  <fr:p>Conversely, suppose that the terminal object of <fr:tex
-display="inline"><![CDATA[\mathsf {Sub}(A)]]></fr:tex> (i.e., the identity morphism <fr:tex
-display="inline"><![CDATA[\mathsf {id}_{A}]]></fr:tex>) factors through <fr:tex
-display="inline"><![CDATA[{\mathopen {}\llbracket f(x) = x\rrbracket \mathclose {}}_{\mathcal {C}}]]></fr:tex>.
-    Then it follows that <fr:tex
-display="inline"><![CDATA[\mathsf {id}_{A}]]></fr:tex> equalizes <fr:tex
-display="inline"><![CDATA[{\mathopen {}\llbracket f(x)\rrbracket \mathclose {}}_{\mathcal {C}}]]></fr:tex> and <fr:tex
-display="inline"><![CDATA[{\mathopen {}\llbracket x\rrbracket \mathclose {}}_{\mathcal {C}}]]></fr:tex>.
-    Since <fr:tex
-display="inline"><![CDATA[{\mathopen {}\llbracket x\rrbracket \mathclose {}}_{\mathcal {C}} = \mathsf {id}_{A}]]></fr:tex> and <fr:tex
-display="inline"><![CDATA[{\mathopen {}\llbracket f(x)\rrbracket \mathclose {}}_{\mathcal {C}} = {\mathopen {}\llbracket f\rrbracket \mathclose {}}_{\mathcal {C}} = f]]></fr:tex>, it follows that <fr:tex
-display="inline"><![CDATA[f = \mathsf {id}_{A}]]></fr:tex>.</fr:p>
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>680</fr:anchor><fr:addr
+type="machine">#243</fr:addr><fr:route>unstable-243.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>5</fr:month><fr:day>28</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
+  <fr:link
+type="local"
+href="todo.xml"
+addr="todo"
+title="TODO">TODO</fr:link>
 </fr:mainmatter><fr:backmatter /></fr:tree>
     
   </fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>
