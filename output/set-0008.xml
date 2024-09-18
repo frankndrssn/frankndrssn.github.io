@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="true"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>298</fr:anchor><fr:addr
+type="user">set-0008</fr:addr><fr:route>set-0008.xml</fr:route><fr:title
+text="Axiom schema of replacement">Axiom schema of replacement</fr:title><fr:taxon>Axiom</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>18</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>The image of every definable function is a set.</fr:p><fr:tex
+display="block"><![CDATA[   (\forall x.\mkern 5mu\exists y.\mkern 5mu\varphi (x,y)) \wedge  (\forall x,y,y'.\mkern 5mu\varphi (x,y) \wedge  \varphi (x,y') \Rightarrow  y = y') \Rightarrow \\   \forall u.\mkern 5mu\exists v.\mkern 5mu\forall y.\mkern 5muy \in  v \iff  \exists x.\mkern 5mux \in  u \Rightarrow  \varphi (x,y) ]]></fr:tex></fr:mainmatter><fr:backmatter /></fr:tree>
