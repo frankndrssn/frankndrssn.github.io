@@ -7,29 +7,81 @@ show-heading="true"
 show-metadata="true"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>968</fr:anchor><fr:addr
-type="machine">#253</fr:addr><fr:route>unstable-253.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>24</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
-  <fr:p>Each fiber <fr:tex
-display="inline"><![CDATA[\mathsf {Sub}(A)]]></fr:tex> has finite limits inherited from <fr:tex
-display="inline"><![CDATA[\mathcal {C}]]></fr:tex>.
-    By <fr:ref
-addr="ct-000L"
-href="ct-000L.xml"
-taxon="Lemma" />, each <fr:tex
-display="inline"><![CDATA[f^{*}]]></fr:tex> has the required left adjoint <fr:tex
-display="inline"><![CDATA[\exists _{f}]]></fr:tex>.
-    They satisfy the <fr:link
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>380</fr:anchor><fr:addr
+type="machine">#253</fr:addr><fr:route>unstable-253.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
+  <fr:p>The only if direction is completely trivial.
+    Assume that <fr:tex
+display="inline"><![CDATA[(x,y) = (a,b)]]></fr:tex>.
+    First, we claim that <fr:tex
+display="inline"><![CDATA[x = a]]></fr:tex>.
+    By definition, we have <fr:tex
+display="inline"><![CDATA[{\mathopen {}\{{\mathopen {}\{x\}\mathclose {}},{\mathopen {}\{x,y\}\mathclose {}}\}\mathclose {}} = {\mathopen {}\{{\mathopen {}\{a\}\mathclose {}},{\mathopen {}\{a,b\}\mathclose {}}\}\mathclose {}}]]></fr:tex>.
+    By <fr:link
 type="local"
-href="log-000E.xml"
-addr="log-000E"
-title="Beck-Chevalley condition">Beck-Chevalley condition</fr:link> because images commute with pullbacks in a regular category.
-    Then by construction the <fr:link
+href="set-0001.xml"
+addr="set-0001"
+title="Axiom of extensionality">extensionality</fr:link>, <fr:tex
+display="inline"><![CDATA[{\mathopen {}\{x\}\mathclose {}} \in  {\mathopen {}\{{\mathopen {}\{a\}\mathclose {}},{\mathopen {}\{a,b\}\mathclose {}}\}\mathclose {}}]]></fr:tex>.
+    By <fr:link
 type="local"
-href="log-000H.xml"
-addr="log-000H"
-title="Naming fucntor">naming functor</fr:link> <fr:tex
-display="inline"><![CDATA[{\mathopen {}[\mathord {\hspace {1pt}\text {--}\hspace {1pt}}]\mathclose {}}_{X}\colon {{\mathcal {C}}_{/{X}}}\to \mathsf {Sub}(X)]]></fr:tex> is just <fr:tex
-display="inline"><![CDATA[\mathsf {Img}]]></fr:tex>, which admits the inclusion functor as a right adjoint.</fr:p>
+href="set-0003.xml"
+addr="set-0003"
+title="Axiom of pairing">pairing</fr:link>, either <fr:tex
+display="inline"><![CDATA[{\mathopen {}\{x\}\mathclose {}} = {\mathopen {}\{a\}\mathclose {}}]]></fr:tex> or <fr:tex
+display="inline"><![CDATA[{\mathopen {}\{x\}\mathclose {}} = {\mathopen {}\{a,b\}\mathclose {}}]]></fr:tex>.
+    In the former case, <fr:tex
+display="inline"><![CDATA[x = a]]></fr:tex> follows as a consequence of <fr:link
+type="local"
+href="set-0003.xml"
+addr="set-0003"
+title="Axiom of pairing">pairing</fr:link>.
+    In the latter case, we have <fr:tex
+display="inline"><![CDATA[a \in  {\mathopen {}\{x\}\mathclose {}}]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[b \in  {\mathopen {}\{x\}\mathclose {}}]]></fr:tex> as a consequence of <fr:link
+type="local"
+href="set-0001.xml"
+addr="set-0001"
+title="Axiom of extensionality">extensionality</fr:link>.
+    Then by <fr:link
+type="local"
+href="set-0003.xml"
+addr="set-0003"
+title="Axiom of pairing">pairing</fr:link>, we have <fr:tex
+display="inline"><![CDATA[x = a = b]]></fr:tex>.</fr:p>
+  <fr:p>It remains to show that <fr:tex
+display="inline"><![CDATA[y = b]]></fr:tex>.
+    In this case, as a consequence of <fr:link
+type="local"
+href="set-0001.xml"
+addr="set-0001"
+title="Axiom of extensionality">extensionality</fr:link>, consider <fr:tex
+display="inline"><![CDATA[{\mathopen {}\{x,y\}\mathclose {}} \in  {\mathopen {}\{{\mathopen {}\{a\}\mathclose {}},{\mathopen {}\{a,b\}\mathclose {}}\}\mathclose {}}]]></fr:tex>.
+    By <fr:link
+type="local"
+href="set-0003.xml"
+addr="set-0003"
+title="Axiom of pairing">pairing</fr:link>, either <fr:tex
+display="inline"><![CDATA[{\mathopen {}\{x,y\}\mathclose {}} = {\mathopen {}\{a\}\mathclose {}}]]></fr:tex> or <fr:tex
+display="inline"><![CDATA[{\mathopen {}\{x,y\}\mathclose {}} = {\mathopen {}\{a,b\}\mathclose {}}]]></fr:tex>.
+    In the former case, we have <fr:tex
+display="inline"><![CDATA[x = y = a]]></fr:tex> as a consequence of <fr:link
+type="local"
+href="set-0001.xml"
+addr="set-0001"
+title="Axiom of extensionality">extensionality</fr:link> and <fr:link
+type="local"
+href="set-0003.xml"
+addr="set-0003"
+title="Axiom of pairing">pairing</fr:link>.
+    Thus, <fr:tex
+display="inline"><![CDATA[{\mathopen {}\{{\mathopen {}\{x\}\mathclose {}},{\mathopen {}\{x,y\}\mathclose {}}\}\mathclose {}} = {\mathopen {}\{{\mathopen {}\{x\}\mathclose {}},{\mathopen {}\{x\}\mathclose {}}\}\mathclose {}} = {\mathopen {}\{{\mathopen {}\{x\}\mathclose {}}\}\mathclose {}} = {\mathopen {}\{{\mathopen {}\{a\}\mathclose {}},{\mathopen {}\{a,b\}\mathclose {}}\}\mathclose {}}]]></fr:tex> demands that <fr:tex
+display="inline"><![CDATA[a = b]]></fr:tex>.
+    In the latter case, if <fr:tex
+display="inline"><![CDATA[y = a]]></fr:tex> then <fr:tex
+display="inline"><![CDATA[{\mathopen {}\{x,y\}\mathclose {}} = {\mathopen {}\{a,y\}\mathclose {}} = {\mathopen {}\{a\}\mathclose {}} = {\mathopen {}\{a,b\}\mathclose {}}]]></fr:tex> demands that <fr:tex
+display="inline"><![CDATA[a = b]]></fr:tex>.
+    But, if <fr:tex
+display="inline"><![CDATA[y = b]]></fr:tex> then there is nothing left to prove.</fr:p>
 </fr:mainmatter><fr:backmatter><fr:tree
 toc="false"
 numbered="false"
@@ -45,19 +97,18 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>969</fr:anchor><fr:addr
-type="user">log-000J</fr:addr><fr:route>log-000J.xml</fr:route><fr:title
-text="Subobject doctrine of a regular category">Subobject doctrine of a regular category</fr:title><fr:taxon>Lemma</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>24</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
-display="inline"><![CDATA[\mathcal {C}]]></fr:tex> be a <fr:link
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>381</fr:anchor><fr:addr
+type="user">set-000K</fr:addr><fr:route>set-000K.xml</fr:route><fr:title
+text="Ordered pair property"><fr:link
 type="local"
-href="ct-000O.xml"
-addr="ct-000O"
-title="Regular category">regular category</fr:link>, then the subobject doctrine <fr:tex
-display="inline"><![CDATA[\mathsf {Sub}\colon \mathcal {C}^\mathrm {op}\to \mathsf {Lat}]]></fr:tex> has <fr:link
-type="local"
-href="log-000I.xml"
-addr="log-000I"
-title="Comprehension schema">comprehension schema</fr:link>.</fr:p>
+href="set-000I.xml"
+addr="set-000I"
+title="Ordered pairs">Ordered pair</fr:link> property</fr:title><fr:taxon>Proposition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[x,y,a,b]]></fr:tex> be sets.
+  Then <fr:tex
+display="inline"><![CDATA[(x,y) = (a,b)]]></fr:tex> if and only if <fr:tex
+display="inline"><![CDATA[x = a]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[y = b]]></fr:tex>.</fr:p>
     
       
       <fr:tree
@@ -67,29 +118,81 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>664</fr:anchor><fr:addr
-type="machine">#253</fr:addr><fr:route>unstable-253.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>24</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
-  <fr:p>Each fiber <fr:tex
-display="inline"><![CDATA[\mathsf {Sub}(A)]]></fr:tex> has finite limits inherited from <fr:tex
-display="inline"><![CDATA[\mathcal {C}]]></fr:tex>.
-    By <fr:ref
-addr="ct-000L"
-href="ct-000L.xml"
-taxon="Lemma" />, each <fr:tex
-display="inline"><![CDATA[f^{*}]]></fr:tex> has the required left adjoint <fr:tex
-display="inline"><![CDATA[\exists _{f}]]></fr:tex>.
-    They satisfy the <fr:link
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>317</fr:anchor><fr:addr
+type="machine">#253</fr:addr><fr:route>unstable-253.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
+  <fr:p>The only if direction is completely trivial.
+    Assume that <fr:tex
+display="inline"><![CDATA[(x,y) = (a,b)]]></fr:tex>.
+    First, we claim that <fr:tex
+display="inline"><![CDATA[x = a]]></fr:tex>.
+    By definition, we have <fr:tex
+display="inline"><![CDATA[{\mathopen {}\{{\mathopen {}\{x\}\mathclose {}},{\mathopen {}\{x,y\}\mathclose {}}\}\mathclose {}} = {\mathopen {}\{{\mathopen {}\{a\}\mathclose {}},{\mathopen {}\{a,b\}\mathclose {}}\}\mathclose {}}]]></fr:tex>.
+    By <fr:link
 type="local"
-href="log-000E.xml"
-addr="log-000E"
-title="Beck-Chevalley condition">Beck-Chevalley condition</fr:link> because images commute with pullbacks in a regular category.
-    Then by construction the <fr:link
+href="set-0001.xml"
+addr="set-0001"
+title="Axiom of extensionality">extensionality</fr:link>, <fr:tex
+display="inline"><![CDATA[{\mathopen {}\{x\}\mathclose {}} \in  {\mathopen {}\{{\mathopen {}\{a\}\mathclose {}},{\mathopen {}\{a,b\}\mathclose {}}\}\mathclose {}}]]></fr:tex>.
+    By <fr:link
 type="local"
-href="log-000H.xml"
-addr="log-000H"
-title="Naming fucntor">naming functor</fr:link> <fr:tex
-display="inline"><![CDATA[{\mathopen {}[\mathord {\hspace {1pt}\text {--}\hspace {1pt}}]\mathclose {}}_{X}\colon {{\mathcal {C}}_{/{X}}}\to \mathsf {Sub}(X)]]></fr:tex> is just <fr:tex
-display="inline"><![CDATA[\mathsf {Img}]]></fr:tex>, which admits the inclusion functor as a right adjoint.</fr:p>
+href="set-0003.xml"
+addr="set-0003"
+title="Axiom of pairing">pairing</fr:link>, either <fr:tex
+display="inline"><![CDATA[{\mathopen {}\{x\}\mathclose {}} = {\mathopen {}\{a\}\mathclose {}}]]></fr:tex> or <fr:tex
+display="inline"><![CDATA[{\mathopen {}\{x\}\mathclose {}} = {\mathopen {}\{a,b\}\mathclose {}}]]></fr:tex>.
+    In the former case, <fr:tex
+display="inline"><![CDATA[x = a]]></fr:tex> follows as a consequence of <fr:link
+type="local"
+href="set-0003.xml"
+addr="set-0003"
+title="Axiom of pairing">pairing</fr:link>.
+    In the latter case, we have <fr:tex
+display="inline"><![CDATA[a \in  {\mathopen {}\{x\}\mathclose {}}]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[b \in  {\mathopen {}\{x\}\mathclose {}}]]></fr:tex> as a consequence of <fr:link
+type="local"
+href="set-0001.xml"
+addr="set-0001"
+title="Axiom of extensionality">extensionality</fr:link>.
+    Then by <fr:link
+type="local"
+href="set-0003.xml"
+addr="set-0003"
+title="Axiom of pairing">pairing</fr:link>, we have <fr:tex
+display="inline"><![CDATA[x = a = b]]></fr:tex>.</fr:p>
+  <fr:p>It remains to show that <fr:tex
+display="inline"><![CDATA[y = b]]></fr:tex>.
+    In this case, as a consequence of <fr:link
+type="local"
+href="set-0001.xml"
+addr="set-0001"
+title="Axiom of extensionality">extensionality</fr:link>, consider <fr:tex
+display="inline"><![CDATA[{\mathopen {}\{x,y\}\mathclose {}} \in  {\mathopen {}\{{\mathopen {}\{a\}\mathclose {}},{\mathopen {}\{a,b\}\mathclose {}}\}\mathclose {}}]]></fr:tex>.
+    By <fr:link
+type="local"
+href="set-0003.xml"
+addr="set-0003"
+title="Axiom of pairing">pairing</fr:link>, either <fr:tex
+display="inline"><![CDATA[{\mathopen {}\{x,y\}\mathclose {}} = {\mathopen {}\{a\}\mathclose {}}]]></fr:tex> or <fr:tex
+display="inline"><![CDATA[{\mathopen {}\{x,y\}\mathclose {}} = {\mathopen {}\{a,b\}\mathclose {}}]]></fr:tex>.
+    In the former case, we have <fr:tex
+display="inline"><![CDATA[x = y = a]]></fr:tex> as a consequence of <fr:link
+type="local"
+href="set-0001.xml"
+addr="set-0001"
+title="Axiom of extensionality">extensionality</fr:link> and <fr:link
+type="local"
+href="set-0003.xml"
+addr="set-0003"
+title="Axiom of pairing">pairing</fr:link>.
+    Thus, <fr:tex
+display="inline"><![CDATA[{\mathopen {}\{{\mathopen {}\{x\}\mathclose {}},{\mathopen {}\{x,y\}\mathclose {}}\}\mathclose {}} = {\mathopen {}\{{\mathopen {}\{x\}\mathclose {}},{\mathopen {}\{x\}\mathclose {}}\}\mathclose {}} = {\mathopen {}\{{\mathopen {}\{x\}\mathclose {}}\}\mathclose {}} = {\mathopen {}\{{\mathopen {}\{a\}\mathclose {}},{\mathopen {}\{a,b\}\mathclose {}}\}\mathclose {}}]]></fr:tex> demands that <fr:tex
+display="inline"><![CDATA[a = b]]></fr:tex>.
+    In the latter case, if <fr:tex
+display="inline"><![CDATA[y = a]]></fr:tex> then <fr:tex
+display="inline"><![CDATA[{\mathopen {}\{x,y\}\mathclose {}} = {\mathopen {}\{a,y\}\mathclose {}} = {\mathopen {}\{a\}\mathclose {}} = {\mathopen {}\{a,b\}\mathclose {}}]]></fr:tex> demands that <fr:tex
+display="inline"><![CDATA[a = b]]></fr:tex>.
+    But, if <fr:tex
+display="inline"><![CDATA[y = b]]></fr:tex> then there is nothing left to prove.</fr:p>
 </fr:mainmatter><fr:backmatter /></fr:tree>
     
   </fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

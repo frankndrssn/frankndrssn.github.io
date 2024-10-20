@@ -7,529 +7,174 @@ show-heading="true"
 show-metadata="true"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1141</fr:anchor><fr:addr
-type="machine">#260</fr:addr><fr:route>unstable-260.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>12</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
-  <fr:p>Let <fr:tex
-display="inline"><![CDATA[a,b\colon R\rightrightarrows A]]></fr:tex> be the kernel pair of a morphism <fr:tex
-display="inline"><![CDATA[f\colon A\to B]]></fr:tex>.
-    Consider the cover-mono factorization of <fr:tex
-display="inline"><![CDATA[f]]></fr:tex>: <fr:tex
-display="inline"><![CDATA[f = f_{m}f_{c}]]></fr:tex>.
-    By <fr:ref
-addr="ct-000T"
-href="ct-000T.xml"
-taxon="Lemma" />, it suffices to show that <fr:tex
-display="inline"><![CDATA[(a,b)]]></fr:tex> is a kernel pair of <fr:tex
-display="inline"><![CDATA[f_{c}]]></fr:tex>, i.e., the following diagram is a pullback.</fr:p>
-  
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>407</fr:anchor><fr:addr
+type="machine">#260</fr:addr><fr:route>unstable-260.xml</fr:route><fr:title
+text="Zermelo-Fraenkel set theory › basic consequences of ZF"><fr:link
+type="local"
+href="set-000D.xml"
+addr="set-000D"
+title="Zermelo-Fraenkel set theory">Zermelo-Fraenkel set theory</fr:link> › basic consequences of ZF</fr:title><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>330</fr:anchor><fr:addr
+type="user">set-000F</fr:addr><fr:route>set-000F.xml</fr:route><fr:title
+text="Uniqueness of the empty set">Uniqueness of the empty set</fr:title><fr:taxon>Proposition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>The empty set <fr:tex
+display="inline"><![CDATA[\varnothing ]]></fr:tex> is unique.</fr:p>
     
       
-      <fr:figure><fr:resource
-hash="a5a5f0bc484fa2cef535f88e8d5780bc"><fr:resource-content><fr:img
-src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4KPCEtLSBUaGlzIGZpbGUgd2FzIGdlbmVyYXRlZCBieSBkdmlzdmdtIDMuMC4zIC0tPgo8c3ZnIHZlcnNpb249JzEuMScgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJyB4bWxuczp4bGluaz0naHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluaycgd2lkdGg9JzEyOS40NjI2MDVwdCcgaGVpZ2h0PScxMTcuNjYyODI0cHQnIHZpZXdCb3g9Jy03MiAtNzIgODYuMzA4NDAzIDc4LjQ0MTg4Myc+CjxzdHlsZSB0eXBlPSd0ZXh0L2Nzcyc+CjwhW0NEQVRBW0Bmb250LWZhY2V7Zm9udC1mYW1pbHk6Y21yMTA7c3JjOnVybChkYXRhOmFwcGxpY2F0aW9uL3gtZm9udC13b2ZmO2Jhc2U2NCxkMDlHUmdBQkFBQUFBQU5nQUFvQUFBQUFBOVFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQlBVeTh5QUFBQTlBQUFBRVFBQUFCZ2hVTno3R050WVhBQUFBRTRBQUFBTEFBQUFEUUFEQUI4WjJ4NVpnQUFBV1FBQUFDZ0FBQUFyS0FDSGFSb1pXRmtBQUFDQkFBQUFDNEFBQUEySjd2Q1pXaG9aV0VBQUFJMEFBQUFId0FBQUNRRWp3RzhhRzEwZUFBQUFsUUFBQUFLQUFBQUNnUkdBR1JzYjJOaEFBQUNZQUFBQUFnQUFBQUlBQ3dBVm0xaGVIQUFBQUpvQUFBQUZ3QUFBQ0FBQlFBWmJtRnRaUUFBQW9BQUFBRE5BQUFCT0lMaEtxbHdiM04wQUFBRFVBQUFBQkFBQUFBZ0FBTUFBWGphWTJCbXZNYzRnWUdWZ1lGcEZ0UFpmeUlNL1NDYThRM2pHd1pqUms0R0lHQmpnQU5HQmlTUVVseVdEcFRVWU5Ca1p2Z1A1RE5EcEpIVS9BY0tBd0R2a1EwZWVOcGpZR0JnWW1CZ1lBWmlFU0RKQ0taWkdCU0FOQXNRZ3ZpYS8vOERTWTMvLy8vZkJQTVpBRkNiQm9WNDJtTmdaRWo1ejhBWXdzekFJTTdBd0NxaXBLYXV4Mml1Wm1adXgyakV6OGpIS000bUpNOG94aGdzbG15b0tjUElLS05tbUNiR3lCUG53Y2prRXMvUC9JMHJLVDVpbGEzVHd0RGtWQjZCeEQvdGxmLytwUWl5TUFBQkk0TWwwRnhOaUxtTVltenNmSXhLcGtCVDFVM1U5Qm5Wek0yTXhNVGxHQmsxd0NhSzhzWjZNUVg3Q0RFek1vcUM3V0dBbXBqMHQzWGhCMThoRmlhd1BRQVZKQ0ZNZU5wallHUmdZQURpenlzbk5jZnoyM3hsWUdaaEFJSEhRdlpiRVBSL0JxWUdaaENYZzRFSlJBRUFMNHdKdUFBQWVOcGpZR1JnWUdiNHo4REF3TlRBWU1sZ3lSakNBQlJCQVV3QU8yd0NVQUFDZ0FBQUFZMEFaQUE1QUFBQUFBQUFBQ3dBVm5qYVkyQmtZR0JnWnBCZ0FORU1VQklKQUFBREVBQWZBSGphUll3eGI4SXdFSVcvaUFTSmRPaFNkV0FBRDh4V29qQjNZV0JpWldJQmJLSU1jWkFUSWlHaGp2M2RQWXdsYm5qNjdyMTNCK1Q4a3ZDY2hNK2d6MG5KWkh0eHhnZGZrYWV5TFNQbnpGa3hJVWxuNGl6NGlaeEtjb2ljOGMwbDhsVDhSK1NjTlgrYnJyM2VCdXZWcmpQV3UzUHJ5Mkp2ZmQ5MFRwVzZDUHZXT3V1UGd6WHFkRmRtYlBxeGJsV2xDMTJ4b2FQbHlvMEJpMGV4RThjRWRwd2w4NVFVN0lQVDAwanFwRldpeFgzblc4bGQ2QnpESnlPZEUzZFJ3eWhYdldndGJVVVZMalhWUDJNOUx3OEFBQUI0Mm1OZ1prQUdqQXhvQUFBQWpnQUYpIGZvcm1hdCgnd29mZicpO30KQGZvbnQtZmFjZXtmb250LWZhbWlseTpjbXNzMTA7c3JjOnVybChkYXRhOmFwcGxpY2F0aW9uL3gtZm9udC13b2ZmO2Jhc2U2NCxkMDlHUmdBQkFBQUFBQVFrQUFvQUFBQUFCTVFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQlBVeTh5QUFBQTlBQUFBRVFBQUFCZ2hXMTBkMk50WVhBQUFBRTRBQUFBTXdBQUFFUUFld0VnWjJ4NVpnQUFBV3dBQUFGUkFBQUJmRHZkVFpsb1pXRmtBQUFDd0FBQUFDOEFBQUEyS0JqQ1dtaG9aV0VBQUFMd0FBQUFIZ0FBQUNRR0JBSkJhRzEwZUFBQUF4QUFBQUFRQUFBQUVBaHpBTTlzYjJOaEFBQURJQUFBQUFvQUFBQUtBTXdBaEcxaGVIQUFBQU1zQUFBQUdBQUFBQ0FBQ0FCS2JtRnRaUUFBQTBRQUFBRFRBQUFCUHFrcmRkdHdiM04wQUFBRUdBQUFBQXdBQUFBZ0FBTUFBSGphWTJCbWttR2N3TURLd01BMGkrbnNQeEdHZmhETitJYnhEWU14SXljREVMQXh3QUVqQXhKSUtTNUxCMHA2TXVReWMvNEg4cGs1R2RIVS9BY0tBd0MyMkF6VWVOcGpZR0JnWW1CZ1lBWmlFU0RKQ0taWkdBeUFOQWNRZ3VROEdkSVpjdi8vUjdEKzcvZy8rLzgwc0Zvd0FBRHNod3VWQUhqYVRWRExTc05RRUoyWld4TzFOUkJzY3JHUHFMMDBnY2JXaHREYzFtaFJmRlNLMUlwZFZHdUxPMytqK0FkK1R6ZTY2a3FFSWk0RVA4SzErTGl1bElIRE9mTmc1Z3dnWEFQQWhLYkFBSlpOWVU0R05QMXNLQTBxay91dTREdk9vQXdOT0FaQUI3bUJ1dXRwbG9NeWpMaXR3c0NDNjdtUmRHdS80RFZSMmx3QjkzUTdraFhWcmVscVRHaTZ4aDFVQlhjVFhielJPZEtndFNXU1ZFNWRaaHBlSVV6UStHRk1tUFV5dUdDdE1qYmMzeTN3WHBUYW1RbEpKSVVURThVblY5SllJcnE0N1ZQQ3o1WHhMbFVydGtiRXNtYmFNNGtXZFN2ZjJlNTBZanRlRWY1Y3NGNktqNGZFbktTRmUrd0Z3emdPRWF2Tlp2VSs0VGhhMFVkZmJCanptdktLY0E1QWIvZ01CU1hVSHlMWE01QmIvMGhvcWVzam0wZWhzazJ2WFNZTzZnR2VNbkZZcjJLM25XN0wzSmtkai9yNURBWmZUMWhhTzJKc0pELyt5R003SHlBNTlSNExJN1h5QjRnQ1BkSUFBQUI0Mm1OZ1pHQmdBT0tFRnhQNDQvbHR2akl3c3pDQXdHTWgreTBJK3I4ZTAxMm00MEF1QndNVFNCUUFIRTBLUHdCNDJtTmdaR0JnNXZ6UEFDUjFHV1FZK0pudU1nQkZVQUFMQURpMkFrd0FBQUlxQUFBQkhBQmdBZ0FBSEFNdEFGTUFBQUFBQUE0QWhBQytBQUI0Mm1OZ1pHQmdZR0h3WkdCbUFBRkdCalFBQUFnaUFGTjQyazJPc1dyRE1CQ0dQMVBiVUxmUXFSMDZGRTBaaFkzN0FJVU1tYkptTENTUk1DNVlEcEpqOEZMNkFIbm9YQlFOdllPZlQvLzlkd2lvK0NYalZoa3ZVVytWVThycnpnVlB2Q1l1cFZYaWluZFdQSkRsaitKODhKVTQ1NW52eEFWdi9DUXV4ZjlMWFBISlpUME9wL05rdmRxT3hucDNIRUpvNnAzMW9SK2RhblI5TnpiV1diK2ZyRkdIUlptNUQzTTNxRmJYdW1YTnlNQ0pNeE1XTHovYmltTWlPNDR5QzlJTk5idm9CWHFaTzhrMWFISC9KemFTY0RHMWo5ZU1wQTRzb29aWjlvSm9KM2xGRzNjMTdSWCtDREQ3QUhqYVkyQm13QXNBQUgwQUJBPT0pIGZvcm1hdCgnd29mZicpO30KQGZvbnQtZmFjZXtmb250LWZhbWlseTpjbW1pNztzcmM6dXJsKGRhdGE6YXBwbGljYXRpb24veC1mb250LXdvZmY7YmFzZTY0LGQwOUdSZ0FCQUFBQUFBVE1BQW9BQUFBQUJZZ0FBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFCUFV5OHlBQUFBOUFBQUFFTUFBQUJnaFh4MHFtTnRZWEFBQUFFNEFBQUFNZ0FBQUR3QWZRQzdaMng1WmdBQUFXd0FBQUgrQUFBQ1VFcE9qTEJvWldGa0FBQURiQUFBQUM4QUFBQTJLQUhDWldob1pXRUFBQU9jQUFBQUlBQUFBQ1FGcXdHYmFHMTBlQUFBQTd3QUFBQVFBQUFBRUFsOEFNeHNiMk5oQUFBRHpBQUFBQW9BQUFBS0FaSUF3bTFoZUhBQUFBUFlBQUFBR0FBQUFDQUFCd0JDYm1GdFpRQUFBL0FBQUFETkFBQUJPUE5mS3FOd2IzTjBBQUFFd0FBQUFBd0FBQUFnQUFNQUFIamFZMkJtaW1lY3dNREt3TUEwaStuc1B4R0dmaEROK0lieERZTXhJeWNERUxBeHdBRWpBeEpJS1M1TEIwb21NcVF4TS93SDhwa2gwa2hxL2dPRkFjK2NEUllBZU5wallHQmdZbUJnWUFaaUVTREpDS1paR0RTQU5CdVFaZ1RLSmpHay9mOFA1Q2VDNlA4TC9zOEZxd0lDQUpnL0NUSUFBSGphUlpFL2I5TlFGTVY5M25OdHh4Uy9KSTZmYWRNNnFaLzduSmJHcFRqWXFGUk9rN2FSK2srMEFxbEt4WitKQWI1Q0Z6WTJKZ1pXTmtZV0J2WktiRWg4QWlUNERHVWo0YmtNM0x2ZGM0ZmZPVWNqV2pHOUl2dTQxTHJhdHFhaHdGM3VNK0xBYTNDL1FCOVpDOXh2R0taYUdUc3dFOFJaWG00QW1tZXhqS1ZocW5PQXZFQ2U0ZFBNWXJPQnVzZk5DblBid3JKMDJ6YmcxcHFaUDZ3Ris2czdaOUQ3ekQwNFgrNXRwR2g0cVQ4U2JnaXNCV0hQa25qRDNXcnQ1UGlKbHpoOEFXUXZiaG9neEo0WnRGT0taamZvQUUrUFhweTY5UkZGT1BueGJYWTUwa25uZ1hqZHpST1FscldncVNIYXp2UTNmcEt2V3FobHloTXR5Ymh2TUJnbHZ1eXJneFNoakF1a1NqQkx2Y0M5QkNKVVZ0U1g4ZzVuNUE4Nzk1OVJPbGc2R0E4ZUEwWTNzUTNDb2tvTllPYnVXb1M4cytmZVdzVHRZS3R3TEQyd1Zzakh5Uyt1ekR3YXZ6d1J1eFRqaDlYd3krZFYvNmF0Mjh3eWRUcjc1eHhiOFowTDBWdmZaY3k1Nk13bG13cFFPNXl1azFmayszVUR0TVJVaWY3ajR6NDNUTjVTdmZTcE1HVG1wOWV3cVdySmdWRHBaN2xjaDBNWTBvd2JNVDVzVnZYcWZHV3cwZGtFSWs5U3NCWmpMRnFpaXdrN0NvakxUcG5uOEtGWTJRSUVWM28xWUt4ZUQyeHIvbmtwNDkzazhxQzIzV3ZzVUNtQ05vbU0rRWFGUUQvMDNsK2QwZERFMmJnWnkrWG92NFE1Mlgycmh4WlU5SDhCbG5kVG1BQUFlTnBqWUdSZ1lBRGlOUWNXVzhmejIzeGxZR1poQUlISFF2WmJFUFIvZmFaalRCZUJYQTRHSnBBb0FDem5DcFlBZU5wallHUmdZR2I0ejhEQXdIU013ZTcvQmFZc0JxQUlDbUFCQUdhNkJFb0N4Z0FBQW5vQVBnSUNBRU1DT2dCTEFBQUFBQUJxQU1JQktBQUFlTnBqWUdSZ1lHQmhjR1JnWWdBQlJnWTBBQUFIUXdCS2VOcE5qRDF2d2pBVVJVL1VCS2xoWUVFZEdGb1BuYTJnSUxGMVlXQmlaZW9DMkVVWmJDTW5SRUtxT3ZaMzkyRTg5QTFYNTM3WVFNMFBCZmNybUNXOVgwa2w3c0VWVSthWkorTGVNdGNzZU9lSm9ueVc1SldQektVMG41a3JYdmpLUEpIOE8zUE5pdDlOY0pmcllLUGFCV09qUHpuWHJmYzI5bDN3YXFtYjVMZlcyM2dZckZISG16SmoxNDlucDFyZDZKWU5BY2VGS3dPV2lHSW5pVW5zT1VubjZGaXpUMGt2SENSWExORTAvL3F0OUQ1dER1a25JNXNqTjFIREtJdGU5Q3hiUlp0ZWF0by95NkV2OXdBQUFIamFZMkJtd0FzQUFIMEFCQT09KSBmb3JtYXQoJ3dvZmYnKTt9CkBmb250LWZhY2V7Zm9udC1mYW1pbHk6Y21taTU7c3JjOnVybChkYXRhOmFwcGxpY2F0aW9uL3gtZm9udC13b2ZmO2Jhc2U2NCxkMDlHUmdBQkFBQUFBQU5VQUFvQUFBQUFBN3dBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQlBVeTh5QUFBQTlBQUFBRVFBQUFCZ2hYNTFQbU50WVhBQUFBRTRBQUFBS1FBQUFEUUFEQUMyWjJ4NVpnQUFBV1FBQUFDWUFBQUFtSVQzVjlwb1pXRmtBQUFCL0FBQUFDOEFBQUEyS0kvQ0gyaG9aV0VBQUFJc0FBQUFIZ0FBQUNRRjBRS09hRzEwZUFBQUFrd0FBQUFJQUFBQUNBWHRBRzFzYjJOaEFBQUNWQUFBQUFZQUFBQUdBRXdBQUcxaGVIQUFBQUpjQUFBQUZ3QUFBQ0FBQkFBd2JtRnRaUUFBQW5RQUFBRE5BQUFCT1BOYktwOXdiM04wQUFBRFJBQUFBQkFBQUFBZ0FBTUFBWGphWTJCbStzWTRnWUdWZ1lGcEZ0UFpmeUlNL1NDYThRM2pHd1pqUms0R0lHQmpnQU5HQmlTUVVseVdEcFJNWmtobVp2Z1A1RE5EcEpIVS9BY0tBd0FHYlEyc2VOcGpZR0JnWW1CZ1lBWmlFU0RKQ0taWkdCU0FOQXNRZ3ZqSi8vOUR5UC96d0h3R0FGVmhCcjhBQUFBQUFRQnQvL1FDWWdIR0FDNEFBQUV1QVFjR0J3WUhCaFVVRmhjeU5qOENIZ0lHQnc0Qkp5NEJOelkzTmpjMk56WWZBUllYRGdFakppYytBUUlQR1RzS1pEWVhEeVUrUVU1NUl4QUhCdzRCT1RRM1l4RjBhUUVEU2hNVldIWXRNZ2d4QkFJcEZTb0RBUjhCaXhFSEFRUkVHUjlPUmpZL0FTc25FQUlCRHhJMUZoTUlBUU54Umw1T0V4QkVBd0VSQWhJM0pTRUJLUm9mQUhqYVkyQmtZR0FBWW9lNTB0THgvRFpmR1poWkdFRGdzWkQ5RmdUOS93dHpDT014SUplRGdRa2tDZ0Q3MHdtbkFIamFZMkJrWUdCbStNOEFKRU1ZY2huTW1aSVlnQ0lvZ0FrQVBOb0NaZ0FBQTFRQUFBS1pBRzBBQUFBQUFFd0FBSGphWTJCa1lHQmdZdEJuQU5FTVVCSUpBQUFGTkFBMUFIamFUWXc5YjhJd0ZFVlAxQVNwWVdCQkhSaGFENTJ0b01EYWhZR0psYWtMWUJkbHNJMmNFQW1wNnRqZjNZZngwRGRjbmZ0aEF6VS9GTnl2WUpiMGZpV1Z1QWRYVEpsbm5vaDd5MXl6NEowbml2SlprbGMrTXBmU2ZHYXVlT0VyODBUeTc4dzFLMzQzd1YydWc0MXFGNHlOL3VSY3Q5N2IySGZCcTZWdWt0OWFiK05oc0VZZGI4cU1YVCtlbldwMW8xczJCQndYcmd4WUlvcWRKQ2F4NXlTZG8yUE5QaVc5Y0pCY3NVVFQvT3UzMHZ1ME9hU2ZqR3lPM0VRTm95eDYwYk5zRlcxNnFXbi9BTWdSTCs4QUFBQjQybU5nWmtBR2pBeG9BQUFBamdBRikgZm9ybWF0KCd3b2ZmJyk7fQpAZm9udC1mYWNle2ZvbnQtZmFtaWx5OmNtbWkxMDtzcmM6dXJsKGRhdGE6YXBwbGljYXRpb24veC1mb250LXdvZmY7YmFzZTY0LGQwOUdSZ0FCQUFBQUFBVDBBQW9BQUFBQUJkZ0FBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFCUFV5OHlBQUFBOUFBQUFFUUFBQUJnaFZ4MDZHTnRZWEFBQUFFNEFBQUFNd0FBQUVRQVpnRVJaMng1WmdBQUFXd0FBQUlpQUFBQ2tLRHFpMVJvWldGa0FBQURrQUFBQUM4QUFBQTJLRURDY21ob1pXRUFBQVBBQUFBQUhnQUFBQ1FHTEFIT2FHMTBlQUFBQStBQUFBQVFBQUFBRUFwMEFJUnNiMk5oQUFBRDhBQUFBQW9BQUFBS0Fad0E0bTFoZUhBQUFBUDhBQUFBR0FBQUFDQUFCd0JkYm1GdFpRQUFCQlFBQUFEU0FBQUJQcGtSZGNWd2IzTjBBQUFFNkFBQUFBd0FBQUFnQUFNQUFIamFZMkJtbXNzNGdZR1ZnWUZwRnRQWmZ5SU0vU0NhOFEzakd3WmpSazRHSUdCamdBTkdCaVNRVWx5V0RwUjBaRWhqWnZnUDVETkRwSkhVL0FjS0F3RGlRZzAwZU5wallHQmdZbUJnWUFaaUVTREpDS1paR0F5QU5BY1FndVFjR1lJWTB2Ny9SN0QrSC9pLzRmOWNzRm93QUFEbkNRdHhBSGphVlpJL2I5TkFHTWJ2dWJQUFNXcjdqQjJmR3pWT2t6aTFTNlEyVUtkbldzRDhpVklrcEhSQUNrSmlocTVJVUFTZENtSkZUQXp3UlJqZ0EvQUJZR1JnWW1CQ1lpWGgzQWx1ZXU5NTM3dDdmODk3aEpMQmNrbS8wMjlrUkhZSUthQ0tIUmtGVFprcnlVZXdzalFicTBpcVlvU2V4WnN5VXBFTHJWZHlYcUxJMlFjODRFMkhvNVJiSVd6enlXbk5oTE1TakZuZFdpd1BuWGJnTURqbTBUMGJkcjFmdnZ2WmUwcnZlcWlMUDZkU3NOZ0NZNkExWVFGMjlIRDZxam53UUlYTEs3a2hPSkxQdUVQMG9tUzQvTUZNK29sNDVENGhZTlhqSlhiVEVWSUJGMEVIVVZPQWgxem11bHRWUlBKc2IzRk5vSnU5QmwyczBpeGhWZ2VxK1I5YU1FNHlyc09ldmtNZndPbms4WFFlZE5hTWNiaTNXNHJHbTlhVUdaWUJmelZRR3BHYmtHNjhidzhELzd4aHJ2QTYzWnFlVEJnMjlwemF5eGVhM25YM08rYnJkaHE3SHBLakUyb2MzS0xIaTkvWWtOMTVlK0piTmdYMUYxK3Q0bkxVMnUrMzRoNnl3bWFVMXAyaHYyblNocmtpYjNpdDdTQno0cEl1ZnZrT04vNzFLZWpRdlhPVXRYVTRuOHpHT1FGUnkyMjZTNytRNjVVekZiVUxxNTltSlhJOVRNazFzdmFxQ0pLS01xK3NpTFR1SXRFMXFTcTJZV2xzUWF1UlozaFd1cWFJM0N2RHJnS1NVSVNnVWVMRlJwYmFzMG5zaVlQVlJ1dHdyYWNvK3FHUXdHcFhyQnM5WWRic2NMNEdUK0Q5NHVNa3VIcHgvU1lkSkhIWDk1M1UwTitEUFpyaExZczVubS9ldmtDVHdWbG13Nnd5NjA1NjZiamlJZVF2MlRsWkp3QUFlTnBqWUdSZ1lBRGlqWHpjcCtQNWJiNHlNTE13Z01CaklmdXRDUHEvSGpNcjAxMGdsNE9CQ1NRS0FBTjNDUzRBZU5wallHUmdZR2I0endBa09SbFUvaDlnWm1VQWlxQUFGZ0JKVGdNQUFBQUNkZ0FBQXdBQUpBTUpBQ29COVFBMkFBQUFBQUJVQU9JQlNBQUFlTnBqWUdSZ1lHQmhpR0ZnWWdBQlJnWTBBQUFKNWdCbGVOcE5qckZxd3pBUWhqOVR4MUNuMEtrZE9oUk5HWVdOK3dDQkRKbXlaaXdra1FnT1NBcXlZOGdTK2dCOTZGNFVEVDNCOGQxM3Y0U0FtaHNGOXlwNFRmMWVKWlZNRDU0eDV5MXpKVWRscnZsZ3dSTkYrU3ptazJYbWtoZStNODk0NTVTNUV2K1R1ZWFMMzFWdzU4dG9vOW9FWTZNL09OZTN6ZGJHb1E5ZXRicDVpTFgxTnU1R2E5VCtxc3pVRDlQUnFVNDN1bU5Gd0hIbXdvZ2x5czgyWWt4aXowRjJqcDZXaG0xeWcweEJOa3FjRnZzL3NaYUVUNmxkZXMxSWFzOVZ1bUdTekNEOUtHbEZsKzVxdWovZjlEQzdBQUI0Mm1OZ1pzQUxBQUI5QUFRPSkgZm9ybWF0KCd3b2ZmJyk7fQp0ZXh0LmYwIHtmb250LWZhbWlseTpjbXNzMTA7Zm9udC1zaXplOjkuOTYyNjRweH0KdGV4dC5mMSB7Zm9udC1mYW1pbHk6Y21taTEwO2ZvbnQtc2l6ZTo5Ljk2MjY0cHh9CnRleHQuZjIge2ZvbnQtZmFtaWx5OmNtbWk3O2ZvbnQtc2l6ZTo2Ljk3Mzg0OHB4fQp0ZXh0LmYzIHtmb250LWZhbWlseTpjbW1pNTtmb250LXNpemU6NC45ODEzMnB4fQp0ZXh0LmY0IHtmb250LWZhbWlseTpjbXIxMDtmb250LXNpemU6OS45NjI2NHB4fQpdXT4KPC9zdHlsZT4KPGcgaWQ9J3BhZ2UxJz4KPGcgc3Ryb2tlLW1pdGVybGltaXQ9JzEwJyB0cmFuc2Zvcm09J3RyYW5zbGF0ZSgtNjEuNDI0MjQ2LC02MS44MDM1MylzY2FsZSgwLjk5NjI2NCwtMC45OTYyNjQpJz4KPGcgZmlsbD0nIzAwMCcgc3Ryb2tlPScjMDAwJz4KPGcgc3Ryb2tlLXdpZHRoPScwLjQnPgo8ZyBzdHJva2Utd2lkdGg9JzAuNSc+CjxnIHRyYW5zZm9ybT0ndHJhbnNsYXRlKC0zLjgzNTA3LC0yLjUpJz4KPGcgc3Ryb2tlPSdub25lJyB0cmFuc2Zvcm09J3NjYWxlKC0xLjAwMzc1LDEuMDAzNzUpdHJhbnNsYXRlKC02MS40MjQyNDYsLTYxLjgwMzUzKXNjYWxlKC0xLC0xKSc+CjxnIGZpbGw9JyMwMDAnPgo8ZyBzdHJva2U9J25vbmUnPgo8dGV4dCBjbGFzcz0nZjEnIHg9Jy02MS40MjQyNDYnIHk9Jy02MS44MDM1Myc+UjwvdGV4dD4KPC9nPgo8L2c+CjwvZz4KPC9nPgo8ZyB0cmFuc2Zvcm09J3RyYW5zbGF0ZSgtMy43NSwtNTkuNDA1NSknPgo8ZyBzdHJva2U9J25vbmUnIHRyYW5zZm9ybT0nc2NhbGUoLTEuMDAzNzUsMS4wMDM3NSl0cmFuc2xhdGUoLTYxLjQyNDI0NiwtNjEuODAzNTMpc2NhbGUoLTEsLTEpJz4KPGcgZmlsbD0nIzAwMCc+CjxnIHN0cm9rZT0nbm9uZSc+Cjx0ZXh0IGNsYXNzPSdmMScgeD0nLTYxLjQyNDI0NicgeT0nLTYxLjgwMzUzJz5BPC90ZXh0Pgo8L2c+CjwvZz4KPC9nPgo8L2c+CjxwYXRoIGQ9J00wLTYuNDA5NzNWLTQ4LjE2MjQ2JyBmaWxsPSdub25lJy8+CjxnIHRyYW5zZm9ybT0nbWF0cml4KDAuMCwtMS4wLDEuMCwwLjAsMC4wLC00OC40MTI0NiknPgo8ZyBzdHJva2UtZGFzaGFycmF5PSdub25lJyBzdHJva2UtZGFzaG9mZnNldD0nMC4wJz4KIDxnIHN0cm9rZS1saW5lY2FwPSdyb3VuZCc+CiA8ZyBzdHJva2UtbGluZWpvaW49J3JvdW5kJz4KIDxwYXRoIGQ9J00tMi4yIDIuNTgwNjNDLTEuNzk4MDcgMS4wMzIyMy0uOTAyNCAuMzAxMDcgMCAwQy0uOTAyNC0uMzAxMDctMS43OTgwNy0xLjAzMjIzLTIuMi0yLjU4MDYzJyBmaWxsPSdub25lJy8+CiA8L2c+CiA8L2c+CiA8L2c+CjwvZz4KPGcgdHJhbnNmb3JtPSd0cmFuc2xhdGUoLTcuNjAxNTMsLTI5LjI4NjA5KSc+CjxnIHN0cm9rZT0nbm9uZScgdHJhbnNmb3JtPSdzY2FsZSgtMS4wMDM3NSwxLjAwMzc1KXRyYW5zbGF0ZSgtNjEuNDI0MjQ2LC02MS44MDM1MylzY2FsZSgtMSwtMSknPgo8ZyBmaWxsPScjMDAwJz4KPGcgc3Ryb2tlPSdub25lJz4KPHRleHQgY2xhc3M9J2YyJyB4PSctNjEuNDI0MjQ2JyB5PSctNjEuODAzNTMnPmE8L3RleHQ+CjwvZz4KPC9nPgo8L2c+CjwvZz4KPGcgdHJhbnNmb3JtPSd0cmFuc2xhdGUoNTMuMTU1NSwtMi41KSc+CjxnIHN0cm9rZT0nbm9uZScgdHJhbnNmb3JtPSdzY2FsZSgtMS4wMDM3NSwxLjAwMzc1KXRyYW5zbGF0ZSgtNjEuNDI0MjQ2LC02MS44MDM1MylzY2FsZSgtMSwtMSknPgo8ZyBmaWxsPScjMDAwJz4KPGcgc3Ryb2tlPSdub25lJz4KPHRleHQgY2xhc3M9J2YxJyB4PSctNjEuNDI0MjQ2JyB5PSctNjEuODAzNTMnPkE8L3RleHQ+CjwvZz4KPC9nPgo8L2c+CjwvZz4KPGcgdHJhbnNmb3JtPSd0cmFuc2xhdGUoNDIuMDk5OSwtNTkuNDA1NSknPgo8ZyBzdHJva2U9J25vbmUnIHRyYW5zZm9ybT0nc2NhbGUoLTEuMDAzNzUsMS4wMDM3NSl0cmFuc2xhdGUoLTYxLjQyNDI0NiwtNjEuODAzNTMpc2NhbGUoLTEsLTEpJz4KPGcgZmlsbD0nIzAwMCc+CjxnIHN0cm9rZT0nbm9uZSc+Cjx0ZXh0IGNsYXNzPSdmMCcgeD0nLTYxLjQyNDI0NicgeT0nLTYxLjgwMzUzJz5JbWc8L3RleHQ+Cjx0ZXh0IGNsYXNzPSdmNCcgeD0nLTQ1LjYyMjM1OCcgeT0nLTYxLjgwMzUzJz4oPC90ZXh0Pgo8dGV4dCBjbGFzcz0nZjEnIHg9Jy00MS43NDc5ODQnIHk9Jy02MS44MDM1Myc+ZjwvdGV4dD4KPHRleHQgY2xhc3M9J2Y0JyB4PSctMzUuNzk4MDM3JyB5PSctNjEuODAzNTMnPik8L3RleHQ+CjwvZz4KPC9nPgo8L2c+CjwvZz4KPHBhdGggZD0nTTguMzkwNjEgMEg0OC4wOTk5NicgZmlsbD0nbm9uZScvPgo8ZyB0cmFuc2Zvcm09J3RyYW5zbGF0ZSg0OC4zNDk5NiwwLjApJz4KPGcgc3Ryb2tlLWRhc2hhcnJheT0nbm9uZScgc3Ryb2tlLWRhc2hvZmZzZXQ9JzAuMCc+CiA8ZyBzdHJva2UtbGluZWNhcD0ncm91bmQnPgogPGcgc3Ryb2tlLWxpbmVqb2luPSdyb3VuZCc+CiA8cGF0aCBkPSdNLTIuMiAyLjU4MDYzQy0xLjc5ODA3IDEuMDMyMjMtLjkwMjQgLjMwMTA3IDAgMEMtLjkwMjQtLjMwMTA3LTEuNzk4MDctMS4wMzIyMy0yLjItMi41ODA2MycgZmlsbD0nbm9uZScvPgogPC9nPgogPC9nPgogPC9nPgo8L2c+CjxnIHRyYW5zZm9ybT0ndHJhbnNsYXRlKDI2LjczNjk1LDIuODExODEpJz4KPGcgc3Ryb2tlPSdub25lJyB0cmFuc2Zvcm09J3NjYWxlKC0xLjAwMzc1LDEuMDAzNzUpdHJhbnNsYXRlKC02MS40MjQyNDYsLTYxLjgwMzUzKXNjYWxlKC0xLC0xKSc+CjxnIGZpbGw9JyMwMDAnPgo8ZyBzdHJva2U9J25vbmUnPgo8dGV4dCBjbGFzcz0nZjInIHg9Jy02MS40MjQyNDYnIHk9Jy02MS44MDM1Myc+YjwvdGV4dD4KPC9nPgo8L2c+CjwvZz4KPC9nPgo8cGF0aCBkPSdNNTYuOTA1NS02LjQwOTczVi00NC4yMjM2NScgZmlsbD0nbm9uZScvPgo8ZyB0cmFuc2Zvcm09J21hdHJpeCgwLjAsLTEuMCwxLjAsMC4wLDU2LjkwNTUsLTQ0LjA5ODY1KSc+CjxnIHN0cm9rZS1kYXNoYXJyYXk9J25vbmUnIHN0cm9rZS1kYXNob2Zmc2V0PScwLjAnPgogPGcgc3Ryb2tlLWxpbmVqb2luPSdtaXRlcic+CiA8cGF0aCBkPSdNMy4zOTcxMyAwTC4yNSAxLjg3NDk0VjBWLTEuODc0OTRaJyBmaWxsPSdub25lJy8+CiA8L2c+CiA8L2c+CjwvZz4KPGcgdHJhbnNmb3JtPSd0cmFuc2xhdGUoNjAuMTY5MzksLTI4Ljk1Mjc0KSc+CjxnIHN0cm9rZT0nbm9uZScgdHJhbnNmb3JtPSdzY2FsZSgtMS4wMDM3NSwxLjAwMzc1KXRyYW5zbGF0ZSgtNjEuNDI0MjQ2LC02MS44MDM1MylzY2FsZSgtMSwtMSknPgo8ZyBmaWxsPScjMDAwJz4KPGcgc3Ryb2tlPSdub25lJz4KPHRleHQgY2xhc3M9J2YyJyB4PSctNjEuNDI0MjQ2JyB5PSctNjEuODAzNTMnPmY8L3RleHQ+Cjx0ZXh0IGNsYXNzPSdmMycgeD0nLTU3LjUzOTQ1OScgeT0nLTYwLjgwNzI2Nic+YzwvdGV4dD4KPC9nPgo8L2c+CjwvZz4KPC9nPgo8cGF0aCBkPSdNOC4zMDU1NC01Ni45MDU1SDMzLjc3MjIzJyBmaWxsPSdub25lJy8+CjxnIHRyYW5zZm9ybT0ndHJhbnNsYXRlKDMzLjY0NzIzLC01Ni45MDU1KSc+CjxnIHN0cm9rZS1kYXNoYXJyYXk9J25vbmUnIHN0cm9rZS1kYXNob2Zmc2V0PScwLjAnPgogPGcgc3Ryb2tlLWxpbmVqb2luPSdtaXRlcic+CiA8cGF0aCBkPSdNMy4zOTcxMyAwTC4yNSAxLjg3NDk0VjBWLTEuODc0OTRaJyBmaWxsPSdub25lJy8+CiA8L2c+CiA8L2c+CjwvZz4KPGcgdHJhbnNmb3JtPSd0cmFuc2xhdGUoMTkuMTAxNywtNjQuNTc4NDEpJz4KPGcgc3Ryb2tlPSdub25lJyB0cmFuc2Zvcm09J3NjYWxlKC0xLjAwMzc1LDEuMDAzNzUpdHJhbnNsYXRlKC02MS40MjQyNDYsLTYxLjgwMzUzKXNjYWxlKC0xLC0xKSc+CjxnIGZpbGw9JyMwMDAnPgo8ZyBzdHJva2U9J25vbmUnPgo8dGV4dCBjbGFzcz0nZjInIHg9Jy02MS40MjQyNDYnIHk9Jy02MS44MDM1Myc+ZjwvdGV4dD4KPHRleHQgY2xhc3M9J2YzJyB4PSctNTcuNTM5NDU5JyB5PSctNjAuODA3MjY2Jz5jPC90ZXh0Pgo8L2c+CjwvZz4KPC9nPgo8L2c+CjwvZz4KPC9nPgo8L2c+CjwvZz4KPC9nPgo8L3N2Zz4=" /></fr:resource-content><fr:resource-source
-type="latex"
-part="preamble"><![CDATA[
-        
-  \RequirePackage {tikz}
-  \RequirePackage {amsmath}
-  \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
-
-  \definecolor {catccolor}{RGB}{255,244,138}
-  \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
-  \tikzstyle {catc}=[catccolor!60]
-  \tikzstyle {catd}=[orange!40]
-  \tikzstyle {cate}=[red!40]
-  \tikzstyle {catf}=[blue!10]
-  \tikzstyle {catg}=[green!25]
-
-
-  \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
-  \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
-
-  \NewDocumentCommand \CreateRect {D<>{} m m}{
-    \path 
-      coordinate (#1nw)
-      ++(#2,-#3) coordinate (#1se)
-      coordinate (#1sw) at (#1se -| #1nw)
-      coordinate (#1ne) at (#1nw -| #1se)
-    ;
-
-    \path [spath/save = #1north] (#1nw) to (#1ne);
-    \path [spath/save = #1west] (#1nw) to (#1sw);
-    \path [spath/save = #1east] (#1ne) to (#1se);
-    \path [spath/save = #1south] (#1sw) to (#1se);
-  }
-
-        
-   % appears to be necessary
-  \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd}
-  \usetikzlibrary{matrix,arrows}
-  \usetikzlibrary{backgrounds,fit,positioning,calc,shapes}
-  \usetikzlibrary{decorations.pathreplacing}
-  \usetikzlibrary{decorations.pathmorphing}
-  \usetikzlibrary{decorations.markings}
-
-  % basic settings
-  \tikzset{
-    diagram/.style = {
-      on grid,
-      node distance=2cm,
-      commutative diagrams/every diagram,
-      line width = .5pt,
-      every node/.append style = {
-        commutative diagrams/every cell,
-      },
-    },
-    morphism/.style = {
-      auto=left,
-      node font=\scriptsize,
-    },
-    phantom/.style = {
-      commutative diagrams/phantom,
-      node font=\scriptsize,
-      sloped,
-    },
-    between/.style args = {#1 and #2}{
-      at = ($(#1)!0.5!(#2)$)
-    },
-    desc/.style = {anchor=center,fill=white,inner sep=3pt},
-    offset/.style args = {#1} {commutative diagrams/shift right={#1}},
-    cross over/.style = {
-      commutative diagrams/crossing over
-    },
-    adjoint/.style = {
-      phantom,
-      every to/.append style = {
-        edge node = {node [sloped,allow upside down,auto=false] {$\dashv$}}
-      }
-    },
-  }
-
-  % pullback and pushout
-  \tikzset{
-    pullback/.style = {
-      append after command = {
-        \pgfextra{
-          \draw ($(\tikzlastnode) + (.2cm,-.5cm)$) -- ++(0.3cm,0) -- ++(0,0.3cm);
-        }
-      }
-    },
-    pushout/.style = {
-      append after command={
-        \pgfextra{
-          \draw ($(\tikzlastnode) + (-.2cm,.5cm)$) -- ++(-0.3cm,0) -- ++(0,-0.3cm);
-        }
-      }
-    },
-  }
-
-  % arrow styles
-  \tikzset{
-    exists/.style = {
-      densely dashed
-    },
-    embedding/.style = {
-      {right hook}->
-    },
-    into/.style = {
-      {right hook}->
-    },
-    cover/.style = {
-      -{Triangle[open]}
-    },
-    twocell/.style = {
-      double, -{implies}
-    }
-  }
-
-  \newlength{\dontworryaboutit} % no idea what it does
-
-  \tikzset{
-    inline diagram/.style = {
-      commutative diagrams/every diagram,
-      commutative diagrams/cramped,
-      line width = .5pt,
-      every node/.append style = {
-        commutative diagrams/every cell,
-        anchor = base,
-        inner sep = 0pt
-      },
-      every path/.append style = {
-        outer xsep = 2pt
-      }
-    }
-  }
-  
-  % macros for drawing commutative squares
-  % adapted from Jon Sterling's macros (https://git.sr.ht/~jonsterling/article-template/tree/main/item/local-tikz.sty)
-  \tikzset{
-    square/nw/.style = {},
-    square/ne/.style = {},
-    square/se/.style = {},
-    square/sw/.style = {},
-    square/north/.style = {->},
-    square/south/.style = {->},
-    square/west/.style = {->},
-    square/east/.style = {->},
-    square/north/node/.style = {above},
-    square/south/node/.style = {below},
-    square/west/node/.style = {left},
-    square/east/node/.style = {right},
-  }
-
-  \ExplSyntaxOn
-  \keys_define:nn { jon-tikz/diagram } {
-    nw .tl_set:N = \l_jon_tikz_diagram_nw,
-    sw .tl_set:N = \l_jon_tikz_diagram_sw,
-    ne .tl_set:N = \l_jon_tikz_diagram_ne,
-    se .tl_set:N = \l_jon_tikz_diagram_se,
-
-    width .tl_set:N = \l_jon_tikz_diagram_width,
-    height .tl_set:N = \l_jon_tikz_diagram_height,
-
-    north .tl_set:N = \l_jon_tikz_diagram_north,
-    south .tl_set:N = \l_jon_tikz_diagram_south,
-    west .tl_set:N = \l_jon_tikz_diagram_west,
-    east .tl_set:N = \l_jon_tikz_diagram_east,
-
-    nw/style .code:n = {\tikzset{square/nw/.style = {#1}}},
-    sw/style .code:n = {\tikzset{square/sw/.style = {#1}}},
-    ne/style .code:n = {\tikzset{square/ne/.style = {#1}}},
-    se/style .code:n = {\tikzset{square/se/.style = {#1}}},
-
-    north/style .code:n = {\tikzset{square/north/.style = {#1}}},
-    north/node/style .code:n = {\tikzset{square/north/node/.style = {#1}}},
-    south/style .code:n = {\tikzset{square/south/.style = {#1}}},
-    south/node/style .code:n = {\tikzset{square/south/node/.style = {#1}}},
-    west/style .code:n = {\tikzset{square/west/.style = {#1}}},
-    west/node/style .code:n = {\tikzset{square/west/node/.style = {#1}}},
-    east/style .code:n = {\tikzset{square/east/.style = {#1}}},
-    east/node/style .code:n = {\tikzset{square/east/node/.style = {#1}}},
-
-    draft .meta:n = {
-      nw = {nw},
-      sw = {sw},
-      se = {se},
-      ne = {ne},
-      north = {north},
-      south = {south},
-      west = {west},
-      east = {east},
-    }
-  }
-
-  \tl_set:Nn \l_jon_tikz_diagram_width { 2cm }
-  \tl_set:Nn \l_jon_tikz_diagram_height { 2cm }
-
-
-  \cs_new:Nn \__jon_tikz_render_square:nn {
-    \group_begin:
-    \keys_set:nn {jon-tikz/diagram} {#2} {
-      \node (#1nw) [square/nw] {$\l_jon_tikz_diagram_nw$};
-      \node (#1sw) [below = \l_jon_tikz_diagram_height~of~#1nw,square/sw] {$\l_jon_tikz_diagram_sw$};
-      \draw[morphism,square/west] (#1nw) to node [square/west/node] {$\l_jon_tikz_diagram_west$} (#1sw);
-
-      \node (#1ne) [right = \l_jon_tikz_diagram_width~of~#1nw,square/ne] {$\l_jon_tikz_diagram_ne$};
-      \node (#1se) [below = \l_jon_tikz_diagram_height~of~#1ne,square/se] {$\l_jon_tikz_diagram_se$};
-      \draw[morphism,square/north] (#1nw) to node [square/north/node] {$\l_jon_tikz_diagram_north$} (#1ne);
-      \draw[morphism,square/east] (#1ne) to node [square/east/node] {$\l_jon_tikz_diagram_east$} (#1se);
-      \draw[morphism,square/south] (#1sw) to node [square/south/node] {$\l_jon_tikz_diagram_south$} (#1se);
-    }
-    \group_end:
-  }
-
-  % the optional argument allows one to specify a prefix to positions
-  \NewDocumentCommand\SpliceDiagramSquare{O{}m}{
-    \__jon_tikz_render_square:nn {#1} {#2}
-  }
-
-  \NewDocumentCommand\DiagramSquare{O{}O{}m}{
-    \begin{tikzpicture}[diagram,#2,baseline=(#1sw.base)]
-      \__jon_tikz_render_square:nn {#1} {#3}
-    \end{tikzpicture}
-  }
-  \ExplSyntaxOff
-
-      ]]></fr:resource-source><fr:resource-source
-type="latex"
-part="body"><![CDATA[
-    \DiagramSquare {
-      nw = R,
-      ne = A,
-      sw = A,
-      se = {\mathsf {Img}(f)},
-      north = b,
-      west = a,
-      south = {f_{c}},
-      south/style = {cover},
-      east = {f_{c}},
-      east/style = {cover},
-    }
-  ]]></fr:resource-source></fr:resource></fr:figure>
+      <fr:tree
+toc="false"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>331</fr:anchor><fr:addr
+type="machine">#257</fr:addr><fr:route>unstable-257.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
+  Let <fr:tex
+display="inline"><![CDATA[E]]></fr:tex> be a set such that <fr:tex
+display="inline"><![CDATA[\forall y.\mkern 5muy \notin  E]]></fr:tex>.
+  By <fr:link
+type="local"
+href="set-0001.xml"
+addr="set-0001"
+title="Axiom of extensionality">extensionality</fr:link>, it suffices to show that <fr:tex
+display="inline"><![CDATA[\forall y.\mkern 5muy \in  \varnothing  \Leftrightarrow  y \in  E]]></fr:tex>, but this holds vacuously.
+</fr:mainmatter><fr:backmatter /></fr:tree>
     
-  
-  <fr:p>First, the diagram commutes since <fr:tex
-display="inline"><![CDATA[fa = f_{m}f_{c}a = f_{m}f_{c}b = fb]]></fr:tex> by definition, and <fr:tex
-display="inline"><![CDATA[f_{m}]]></fr:tex> is monic.
-    Let <fr:tex
-display="inline"><![CDATA[h,k\colon C\rightrightarrows A]]></fr:tex> be a pair of morphisms such that <fr:tex
-display="inline"><![CDATA[f_{c}h = f_{c}k]]></fr:tex>.
-    Then <fr:tex
-display="inline"><![CDATA[f_{m}f_{c}h = fh = fk = f_{m}f_{c}k]]></fr:tex>.
-    Thus, the unique factor is given by the following pullback.</fr:p>
-  
+  </fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>332</fr:anchor><fr:addr
+type="user">set-000G</fr:addr><fr:route>set-000G.xml</fr:route><fr:title
+text="Uniqueness of pairing">Uniqueness of pairing</fr:title><fr:taxon>Proposition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[x,y]]></fr:tex> be sets.
+  Then the set <fr:tex
+display="inline"><![CDATA[{\mathopen {}\{x,y\}\mathclose {}}]]></fr:tex> is unique.</fr:p>
     
       
-      <fr:figure><fr:resource
-hash="755fa0782efc7b67ffe81caec50be45b"><fr:resource-content><fr:img
-src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4KPCEtLSBUaGlzIGZpbGUgd2FzIGdlbmVyYXRlZCBieSBkdmlzdmdtIDMuMC4zIC0tPgo8c3ZnIHZlcnNpb249JzEuMScgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJyB4bWxuczp4bGluaz0naHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluaycgd2lkdGg9JzE3My44NjE2NzlwdCcgaGVpZ2h0PScxNzQuNDQ0ODM3cHQnIHZpZXdCb3g9Jy03MiAtNzIgMTE1LjkwNzc4NiAxMTYuMjk2NTU4Jz4KPHN0eWxlIHR5cGU9J3RleHQvY3NzJz4KPCFbQ0RBVEFbQGZvbnQtZmFjZXtmb250LWZhbWlseTpjbW1pNztzcmM6dXJsKGRhdGE6YXBwbGljYXRpb24veC1mb250LXdvZmY7YmFzZTY0LGQwOUdSZ0FCQUFBQUFBWWNBQW9BQUFBQUI1Z0FBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFCUFV5OHlBQUFBOUFBQUFFTUFBQUJnaFh4MHZtTnRZWEFBQUFFNEFBQUFQQUFBQUV3QTlBRTZaMng1WmdBQUFYUUFBQU03QUFBRVJDYy9SNXhvWldGa0FBQUVzQUFBQUM4QUFBQTJLQUhDVVdob1pXRUFBQVRnQUFBQUlBQUFBQ1FGdkFHZGFHMTBlQUFBQlFBQUFBQVlBQUFBR0E2V0FXWnNiMk5oQUFBRkdBQUFBQTRBQUFBT0E3UUNYbTFoZUhBQUFBVW9BQUFBR0FBQUFDQUFDUUJZYm1GdFpRQUFCVUFBQUFETkFBQUJPUE5mS3FOd2IzTjBBQUFHRUFBQUFBd0FBQUFnQUFNQUFIamFZMkJteW1PY3dNREt3TUEwaStuc1B4R0dmaEROK0lieERZTXhJeWNERUxBeHdBRWpBeEpJS1M1TEIwb21NbVF6TS93SDhwa2gwa2hxL2dPRkFkV2dEU29BZU5wallHQmdZbUJnWUFaaUVTREpDS1paR0N5QU5CY0RCMUNPaVNHSklZMGhneUg3LzMrZ1dDS00vWC9CLzduLzUveWZCZFlCQlFCYnlRNGxlTnB0azA5ejIxUVV4WFhla3lWWnNmVnNTM3BLYTBlMkpmbEphV0k1cVIwNWNZMWR4MGxtNmlRMGFZR1FEbjlXd01CWHlBekRqZzNEc0dEQmxoMUxOaXpZZDZZN1p2Z0V6TUJuYUhja1BDVnRHWWJxN3Q3VjR2ek9PVmNoeXVUcU9YbUFwMHBYdWE4b21PQXU5eGl4NERyY20yQ0tyQW51T1pvdVI4UVc5QlJ4TnN6SEJ4MW1zWWlGcHN0bkg4TUpoaGwrTHF6VUhkUmNyaGVaM1FvTlF6Vk5EWGExbm5tN1ZmL0JuZmtaMUNtekYwODZnODArSExmdkhZUjJBS3o3d2NBUStKcmJsZXJKOFFkdWF2RUd5SDVjMTBDSVdaaTEraFQxcnA4QUh4NTljbXJYRGlpQ3l6OStLM1VpbFNUM3dxKzZ3eFNrYVRRVStSRmxmdlVDZjVKblNxQmtrb25teXJpbk1XaTVmREdWRHlJTVJEeEJYeTcwZkQvQlZvb3drQ2p5TDhrTzY4RGJUYlkvb25UV1hwelAzZ0cwYm1wcWhFWEZLc0QwdmZVSXcyVGZYbDdCbWorZVdJYnFHNnZrcDh1L3VJUjVmUDc1U2JoSGNmNndFdno2eXgydmJLb21NM1NWbHY1K2duRzhjUkVPZW51TVdSZkpyWFFrQlNxSFZ6M3lCZm45T2dHYXk1U08zdWpqSHRkMDNwUzVUR21vaWN6clg0dnR5NVFzaE5MOWJDaDZzQWhEUCtOYWpCOUhGYlZ5dXpqYlRFWkE1QW9LMW1TTVJXMjZrcklqbjlqc2xMa1czdzFYeDBESTViN2lNMWFyK2FaeCsrTjhqZTh2bnk2cTl3Zk9uSXJRYjVGSWk1ZUtCT3FoKzhQek14cm9PRHV2eDZJVC9idkNMZEg5VmcwTTVONURPYjU2UVM2azk0Y3ZuZmVKcnQwZ3VacDNWemFuNy9uSTY1UVREbVRCOGpaZFYwdGpxbVJLc1RXMC94c1FabTgzSHUwY0RFb2dEckZMWlpNMm11TWFxY3BtZVV2VmNKSnNnNVl0emduaHlmaGttUlhzVnRFd3ZXS3RXdmhPelNPckFKYU1yQU9aMExOMkg0WGVvSnlPdFh2MWRyc2FrT2xiTlVLOERZK25hbSsxdE5TS2R1ZWI3aVloODRRdkxiNFVkYllFdTh6SlhwbTl6dkVsNTc3a2ZDL256SWI1NGJpdkk3bnBrUzdUaytNd2VuMU1lVzc1d3l0NEllOUg5cEhCUWlEZUFQMXA4LzM0OUYyQktJL0phMW5PMnNOWWVNdXRBV01iS3FFRk1FZXNtVlEzaXhwUU1aM0dUanduS0ZCZ3NSMHkxUk52d3YvTU91cHNyVXR3RWxtUllRRWowWGFraEVLUjc1akZjdDJXWlZPUEkyYm1aNWZXRzZuYXo2eWFwU1Z4NFp0UmJmbC9SaWpLUHdkRWp1QUFlTnBqWUdSZ1lBRGl4OEhpaWZIOE5sOFptRmtZUU9DeGtQMHFCUDFmbitrWTAwVWdsNE9CQ1NRS0FCQW1DZVlBZU5wallHUmdZR2I0ejhEQXdIU013ZTcvQmFacUJxQUlDbUFEQUdmL0JGMEN4Z0FBQW5vQVBnSUNBRU1DT2dCTEFxd0FUUUp1QUUwQUFBQUFBR29Bd2dFb0Fad0NJZ0FBZU5wallHUmdZR0JqQ0dkZ1lnQUJSZ1kwQUFBSm53QmllTnBOakQxdndqQVVSVS9VQktsaFlFRWRHRm9QbmEyZ0lMRjFZV0JpWmVvQzJFVVpiQ01uUkVLcU92WjM5MkU4OUExWDUzN1lRTTBQQmZjcm1DVzlYMGtsN3NFVlUrYVpKK0xlTXRjc2VPZUpvbnlXNUpXUHpLVTBuNWtyWHZqS1BKSDhPM1BOaXQ5TmNKZnJZS1BhQldPalB6blhyZmMyOWwzd2FxbWI1TGZXMjNnWXJGSEhtekpqMTQ5bnAxcmQ2SllOQWNlRkt3T1dpR0luaVVuc09Vbm42Rml6VDBrdkhDUlhMTkUwLy9xdDlENXREdWtuSTVzak4xSERLSXRlOUN4YlJadGVhdG8veTZFdjl3QUFBSGphWTJCbXdBc0FBSDBBQkE9PSkgZm9ybWF0KCd3b2ZmJyk7fQpAZm9udC1mYWNle2ZvbnQtZmFtaWx5OmNtbWkxMDtzcmM6dXJsKGRhdGE6YXBwbGljYXRpb24veC1mb250LXdvZmY7YmFzZTY0LGQwOUdSZ0FCQUFBQUFBV0VBQW9BQUFBQUJud0FBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFCUFV5OHlBQUFBOUFBQUFFUUFBQUJnaFZ4MUYyTnRZWEFBQUFFNEFBQUFNZ0FBQUR3QWRRQ1JaMng1WmdBQUFXd0FBQUt3QUFBRE9GWko2SFJvWldGa0FBQUVIQUFBQUM4QUFBQTJLRWJERldob1pXRUFBQVJNQUFBQUhnQUFBQ1FHTWdIZmFHMTBlQUFBQkd3QUFBQVVBQUFBRkE1aUFLeHNiMk5oQUFBRWdBQUFBQXdBQUFBTUFXSUNURzFoZUhBQUFBU01BQUFBR0FBQUFDQUFDUUJkYm1GdFpRQUFCS1FBQUFEU0FBQUJQcGtSZGNWd2IzTjBBQUFGZUFBQUFBd0FBQUFnQUFNQUFIamFZMkJtZXNBNGdZR1ZnWUZwRnRQWmZ5SU0vU0NhOFEzakd3WmpSazRHSUdCamdBTkdCaVNRVWx5V0RwUjBaQWhpWnZnUDVETkRwSkhVL0FjS0F3RDRWUTFqZU5wallHQmdZbUJnWUFaaUVTREpDS1paR0RTQU5CdVFaZ1RLT2pNRS9mOFA1RHVDNlA4SC9tOENxd0lDQUpJOUNRQUFBSGphVlpMTGF4TkJITWZuOTV2ZDJTYlpSOHdtdXcxTlZ0TTh0bzBrS2QzdGJsTWgxY2FrdGFVUEcxcUtCb3FDRmdRRjdVTXBIcUxVZzJEeElCVEVneGR2L2dGZVBIbnFINkJIRCtKQnhKUGdUWm80V3lqVW1jdk1qeG40ZkI4RVNhN1h3Mi80bFZUSUtDRStlUDZvWWVweHcvRU1WZ0hKTHRpdVp4cWVYNEdNeE9LRzZaa3E4SGt3ZG1yZ08vUUQzR0p4aFVITktDVkFGcmM2ZlNJb0VkMmxJYW5iVzFCU3VrSkJFVGZXWkpCRGc3WFh2ekk3dUJxRmtIYlVNVFNhbG9CU3dENU5BcEROMjQyOWVDNEtxS2tzR0ljMUJ0bERXQ1o4VVhLK2QwUVpmaVFXS1pKeFRxcTdXWnR4dG93RkNSVWtDMHltQVpNeTdKaFhEK0M4Z3AwdE1JbWVuQ2wvNEx6Ykg3RFRtZ1pyN1p1MDA1cHJBVTVINTdlN3IxS3FPbUc5UFZqZlFpalg5ODdxNHIwWDdSM0VrWmxQVFFGQVhjTHFHYVFwQ2ZEcXhPeUdGbDZvemsycE5TRlFBRG8wNklObTdqS0Nsang2VHg4dTVKZG85M3VNaFFrQjR2UiswZ2grRHBpQnFwRGxqazZDVzdBNWN3QnNXdUJ6ZXdQQ3MyQnhBWHhlQnR2emcyMllodWx6T1RSOGtiSndTQVNFMWNYR3M1SG1BRE5BZUh4bGFOMXpTMHdJU1NJdE5ZZnYxeCs5b2JUbHptN3V0WWFIMkl3S01oNTIvNnFjV2RJSzErNEExTWZYMXZ2YnBaMGJDSVBGY3JzL0FvRHkzYW04QS9TZzgzeHIxbDJtUWk2dkxxcEl1ZWRJaXIwZlZPU2VSOG4xZ0Q3d3NRWmpoUW9VTkZCQjU1N0h1WVFFTXh3andPVzB3VjFpWENNdnlDVHd4OGUrODNTOCtIOTFPcFdleVQ5QXA3N1pXTkd0QWNGTlZNZHFXdmhsc2tFRlNZQll2Kzd4V2pFUkREVTlJUmYxMkxBZ1JsZ0lTNDNkT29WOFZlbDcrb1EzTGdoUDNFOFYwbW9Vc2h1N0tEU25jYnY3Qi9MR3VaVlVQU2JKQ0JqcmZwSDhDMlp5WWpDWnpvRHR5eFF4cEJSalF5S0d4WWh4S1pvczY3YVNybUgzZDB4aHd1bHU2dFpKL0xCU24zZWRmMXVTZ1pwNDJtTmdaR0JnQUdLN3RSNlQ0L2x0dmpJd3N6Q0F3R01oKzFVSSt2OXpabTZtdTBBdUJ3TVRTQlFBRlA4S0NBQjQybU5nWkdCZ1p2alBBQ1E1R1ZUK1gyRG1aZ0NLb0FCV0FFc1JBeGNBQUFKMkFBQURBQUFrQXdnQUt3TGJBRE1EQ1FBcUFBQUFBQUJVQUxBQkRnR2NlTnBqWUdSZ1lHQmxpR0ZnWmdBQlJnWTBBQUFLR0FCbmVOcE5qckZxd3pBUWhqOVR4MUNuMEtrZE9oUk5HWVdOK3dDQkRKbXlaaXdra1FnT1NBcXlZOGdTK2dCOTZGNFVEVDNCOGQxM3Y0U0FtaHNGOXlwNFRmMWVKWlZNRDU0eDV5MXpKVWRscnZsZ3dSTkYrU3ptazJYbWtoZStNODk0NTVTNUV2K1R1ZWFMMzFWdzU4dG9vOW9FWTZNL09OZTN6ZGJHb1E5ZXRicDVpTFgxTnU1R2E5VCtxc3pVRDlQUnFVNDN1bU5Gd0hIbXdvZ2x5czgyWWt4aXowRjJqcDZXaG0xeWcweEJOa3FjRnZzL3NaYUVUNmxkZXMxSWFzOVZ1bUdTekNEOUtHbEZsKzVxdWovZjlEQzdBQUI0Mm1OZ1pzQUxBQUI5QUFRPSkgZm9ybWF0KCd3b2ZmJyk7fQp0ZXh0LmYwIHtmb250LWZhbWlseTpjbW1pMTA7Zm9udC1zaXplOjkuOTYyNjRweH0KdGV4dC5mMSB7Zm9udC1mYW1pbHk6Y21taTc7Zm9udC1zaXplOjYuOTczODQ4cHh9Cl1dPgo8L3N0eWxlPgo8ZyBpZD0ncGFnZTEnPgo8ZyBzdHJva2UtbWl0ZXJsaW1pdD0nMTAnIHRyYW5zZm9ybT0ndHJhbnNsYXRlKC0yMy43MDYwMjQsLTIzLjk0ODg1OClzY2FsZSgwLjk5NjI2NCwtMC45OTYyNjQpJz4KPGcgZmlsbD0nIzAwMCcgc3Ryb2tlPScjMDAwJz4KPGcgc3Ryb2tlLXdpZHRoPScwLjQnPgo8ZyBzdHJva2Utd2lkdGg9JzAuNSc+CjxwYXRoIGQ9J001LjY5MDQ2LTE0LjIyNjM2SDE0LjIyNjM2Vi01LjY5MDQ2JyBmaWxsPSdub25lJy8+CjxnIHRyYW5zZm9ybT0ndHJhbnNsYXRlKC0zLjgzNTA3LC0yLjUpJz4KPGcgc3Ryb2tlPSdub25lJyB0cmFuc2Zvcm09J3NjYWxlKC0xLjAwMzc1LDEuMDAzNzUpdHJhbnNsYXRlKC0yMy43MDYwMjQsLTIzLjk0ODg1OClzY2FsZSgtMSwtMSknPgo8ZyBmaWxsPScjMDAwJz4KPGcgc3Ryb2tlPSdub25lJz4KPHRleHQgY2xhc3M9J2YwJyB4PSctMjMuNzA2MDI0JyB5PSctMjMuOTQ4ODU4Jz5SPC90ZXh0Pgo8L2c+CjwvZz4KPC9nPgo8L2c+CjxnIHRyYW5zZm9ybT0ndHJhbnNsYXRlKC0zLjc1LC01OS40MDU1KSc+CjxnIHN0cm9rZT0nbm9uZScgdHJhbnNmb3JtPSdzY2FsZSgtMS4wMDM3NSwxLjAwMzc1KXRyYW5zbGF0ZSgtMjMuNzA2MDI0LC0yMy45NDg4NTgpc2NhbGUoLTEsLTEpJz4KPGcgZmlsbD0nIzAwMCc+CjxnIHN0cm9rZT0nbm9uZSc+Cjx0ZXh0IGNsYXNzPSdmMCcgeD0nLTIzLjcwNjAyNCcgeT0nLTIzLjk0ODg1OCc+QTwvdGV4dD4KPC9nPgo8L2c+CjwvZz4KPC9nPgo8cGF0aCBkPSdNMC02LjQwOTczVi00OC4xNjI0NicgZmlsbD0nbm9uZScvPgo8ZyB0cmFuc2Zvcm09J21hdHJpeCgwLjAsLTEuMCwxLjAsMC4wLDAuMCwtNDguNDEyNDYpJz4KPGcgc3Ryb2tlLWRhc2hhcnJheT0nbm9uZScgc3Ryb2tlLWRhc2hvZmZzZXQ9JzAuMCc+CiA8ZyBzdHJva2UtbGluZWNhcD0ncm91bmQnPgogPGcgc3Ryb2tlLWxpbmVqb2luPSdyb3VuZCc+CiA8cGF0aCBkPSdNLTIuMiAyLjU4MDYzQy0xLjc5ODA3IDEuMDMyMjMtLjkwMjQgLjMwMTA3IDAgMEMtLjkwMjQtLjMwMTA3LTEuNzk4MDctMS4wMzIyMy0yLjItMi41ODA2MycgZmlsbD0nbm9uZScvPgogPC9nPgogPC9nPgogPC9nPgo8L2c+CjxnIHRyYW5zZm9ybT0ndHJhbnNsYXRlKC03LjYwMTUzLC0yOS4yODYwOSknPgo8ZyBzdHJva2U9J25vbmUnIHRyYW5zZm9ybT0nc2NhbGUoLTEuMDAzNzUsMS4wMDM3NSl0cmFuc2xhdGUoLTIzLjcwNjAyNCwtMjMuOTQ4ODU4KXNjYWxlKC0xLC0xKSc+CjxnIGZpbGw9JyMwMDAnPgo8ZyBzdHJva2U9J25vbmUnPgo8dGV4dCBjbGFzcz0nZjEnIHg9Jy0yMy43MDYwMjQnIHk9Jy0yMy45NDg4NTgnPmE8L3RleHQ+CjwvZz4KPC9nPgo8L2c+CjwvZz4KPGcgdHJhbnNmb3JtPSd0cmFuc2xhdGUoNTMuMTU1NSwtMi41KSc+CjxnIHN0cm9rZT0nbm9uZScgdHJhbnNmb3JtPSdzY2FsZSgtMS4wMDM3NSwxLjAwMzc1KXRyYW5zbGF0ZSgtMjMuNzA2MDI0LC0yMy45NDg4NTgpc2NhbGUoLTEsLTEpJz4KPGcgZmlsbD0nIzAwMCc+CjxnIHN0cm9rZT0nbm9uZSc+Cjx0ZXh0IGNsYXNzPSdmMCcgeD0nLTIzLjcwNjAyNCcgeT0nLTIzLjk0ODg1OCc+QTwvdGV4dD4KPC9nPgo8L2c+CjwvZz4KPC9nPgo8ZyB0cmFuc2Zvcm09J3RyYW5zbGF0ZSg1Mi44NjIxLC01OS40MDU1KSc+CjxnIHN0cm9rZT0nbm9uZScgdHJhbnNmb3JtPSdzY2FsZSgtMS4wMDM3NSwxLjAwMzc1KXRyYW5zbGF0ZSgtMjMuNzA2MDI0LC0yMy45NDg4NTgpc2NhbGUoLTEsLTEpJz4KPGcgZmlsbD0nIzAwMCc+CjxnIHN0cm9rZT0nbm9uZSc+Cjx0ZXh0IGNsYXNzPSdmMCcgeD0nLTIzLjcwNjAyNCcgeT0nLTIzLjk0ODg1OCc+QjwvdGV4dD4KPC9nPgo8L2c+CjwvZz4KPC9nPgo8cGF0aCBkPSdNOC4zOTA2MSAwSDQ4LjA5OTk2JyBmaWxsPSdub25lJy8+CjxnIHRyYW5zZm9ybT0ndHJhbnNsYXRlKDQ4LjM0OTk2LDAuMCknPgo8ZyBzdHJva2UtZGFzaGFycmF5PSdub25lJyBzdHJva2UtZGFzaG9mZnNldD0nMC4wJz4KIDxnIHN0cm9rZS1saW5lY2FwPSdyb3VuZCc+CiA8ZyBzdHJva2UtbGluZWpvaW49J3JvdW5kJz4KIDxwYXRoIGQ9J00tMi4yIDIuNTgwNjNDLTEuNzk4MDcgMS4wMzIyMy0uOTAyNCAuMzAxMDcgMCAwQy0uOTAyNC0uMzAxMDctMS43OTgwNy0xLjAzMjIzLTIuMi0yLjU4MDYzJyBmaWxsPSdub25lJy8+CiA8L2c+CiA8L2c+CiA8L2c+CjwvZz4KPGcgdHJhbnNmb3JtPSd0cmFuc2xhdGUoMjYuNzM2OTUsMi44MTE4MSknPgo8ZyBzdHJva2U9J25vbmUnIHRyYW5zZm9ybT0nc2NhbGUoLTEuMDAzNzUsMS4wMDM3NSl0cmFuc2xhdGUoLTIzLjcwNjAyNCwtMjMuOTQ4ODU4KXNjYWxlKC0xLC0xKSc+CjxnIGZpbGw9JyMwMDAnPgo8ZyBzdHJva2U9J25vbmUnPgo8dGV4dCBjbGFzcz0nZjEnIHg9Jy0yMy43MDYwMjQnIHk9Jy0yMy45NDg4NTgnPmI8L3RleHQ+CjwvZz4KPC9nPgo8L2c+CjwvZz4KPHBhdGggZD0nTTU2LjkwNTUtNi40MDk3M1YtNDguMTYyNDYnIGZpbGw9J25vbmUnLz4KPGcgdHJhbnNmb3JtPSdtYXRyaXgoMC4wLC0xLjAsMS4wLDAuMCw1Ni45MDU1LC00OC40MTI0NiknPgo8ZyBzdHJva2UtZGFzaGFycmF5PSdub25lJyBzdHJva2UtZGFzaG9mZnNldD0nMC4wJz4KIDxnIHN0cm9rZS1saW5lY2FwPSdyb3VuZCc+CiA8ZyBzdHJva2UtbGluZWpvaW49J3JvdW5kJz4KIDxwYXRoIGQ9J00tMi4yIDIuNTgwNjNDLTEuNzk4MDcgMS4wMzIyMy0uOTAyNCAuMzAxMDcgMCAwQy0uOTAyNC0uMzAxMDctMS43OTgwNy0xLjAzMjIzLTIuMi0yLjU4MDYzJyBmaWxsPSdub25lJy8+CiA8L2c+CiA8L2c+CiA8L2c+CjwvZz4KPGcgdHJhbnNmb3JtPSd0cmFuc2xhdGUoNjAuMTY5MzksLTI5LjI4NjA5KSc+CjxnIHN0cm9rZT0nbm9uZScgdHJhbnNmb3JtPSdzY2FsZSgtMS4wMDM3NSwxLjAwMzc1KXRyYW5zbGF0ZSgtMjMuNzA2MDI0LC0yMy45NDg4NTgpc2NhbGUoLTEsLTEpJz4KPGcgZmlsbD0nIzAwMCc+CjxnIHN0cm9rZT0nbm9uZSc+Cjx0ZXh0IGNsYXNzPSdmMScgeD0nLTIzLjcwNjAyNCcgeT0nLTIzLjk0ODg1OCc+ZjwvdGV4dD4KPC9nPgo8L2c+CjwvZz4KPC9nPgo8cGF0aCBkPSdNOC4zMDU1NC01Ni45MDU1SDQ3LjgwNjU2JyBmaWxsPSdub25lJy8+CjxnIHRyYW5zZm9ybT0ndHJhbnNsYXRlKDQ4LjA1NjU2LC01Ni45MDU1KSc+CjxnIHN0cm9rZS1kYXNoYXJyYXk9J25vbmUnIHN0cm9rZS1kYXNob2Zmc2V0PScwLjAnPgogPGcgc3Ryb2tlLWxpbmVjYXA9J3JvdW5kJz4KIDxnIHN0cm9rZS1saW5lam9pbj0ncm91bmQnPgogPHBhdGggZD0nTS0yLjIgMi41ODA2M0MtMS43OTgwNyAxLjAzMjIzLS45MDI0IC4zMDEwNyAwIDBDLS45MDI0LS4zMDEwNy0xLjc5ODA3LTEuMDMyMjMtMi4yLTIuNTgwNjMnIGZpbGw9J25vbmUnLz4KIDwvZz4KIDwvZz4KIDwvZz4KPC9nPgo8ZyB0cmFuc2Zvcm09J3RyYW5zbGF0ZSgyNS45NjQsLTY0LjU3ODQxKSc+CjxnIHN0cm9rZT0nbm9uZScgdHJhbnNmb3JtPSdzY2FsZSgtMS4wMDM3NSwxLjAwMzc1KXRyYW5zbGF0ZSgtMjMuNzA2MDI0LC0yMy45NDg4NTgpc2NhbGUoLTEsLTEpJz4KPGcgZmlsbD0nIzAwMCc+CjxnIHN0cm9rZT0nbm9uZSc+Cjx0ZXh0IGNsYXNzPSdmMScgeD0nLTIzLjcwNjAyNCcgeT0nLTIzLjk0ODg1OCc+ZjwvdGV4dD4KPC9nPgo8L2c+CjwvZz4KPC9nPgo8ZyB0cmFuc2Zvcm09J3RyYW5zbGF0ZSgtNDQuMTY5NTQsMzcuNzM4MyknPgo8ZyBzdHJva2U9J25vbmUnIHRyYW5zZm9ybT0nc2NhbGUoLTEuMDAzNzUsMS4wMDM3NSl0cmFuc2xhdGUoLTIzLjcwNjAyNCwtMjMuOTQ4ODU4KXNjYWxlKC0xLC0xKSc+CjxnIGZpbGw9JyMwMDAnPgo8ZyBzdHJva2U9J25vbmUnPgo8dGV4dCBjbGFzcz0nZjAnIHg9Jy0yMy43MDYwMjQnIHk9Jy0yMy45NDg4NTgnPkM8L3RleHQ+CjwvZz4KPC9nPgo8L2c+CjwvZz4KPHBhdGggZD0nTS00MS4wODExOCAzMy44Mjg1N0MtNDYuNDc0NDktMS4xMzQzNS0zNS44ODc2LTI4LjM4NTMtOC42OTUzNi01MC4yMjQ1JyBmaWxsPSdub25lJy8+CjxnIHRyYW5zZm9ybT0nbWF0cml4KDAuNzc5NjUsLTAuNjI2MTYsMC42MjYxNiwwLjc3OTY1LC04LjUwMDQ2LC01MC4zODEwNCknPgo8ZyBzdHJva2UtZGFzaGFycmF5PSdub25lJyBzdHJva2UtZGFzaG9mZnNldD0nMC4wJz4KIDxnIHN0cm9rZS1saW5lY2FwPSdyb3VuZCc+CiA8ZyBzdHJva2UtbGluZWpvaW49J3JvdW5kJz4KIDxwYXRoIGQ9J00tMi4yIDIuNTgwNjNDLTEuNzk4MDcgMS4wMzIyMy0uOTAyNCAuMzAxMDcgMCAwQy0uOTAyNC0uMzAxMDctMS43OTgwNy0xLjAzMjIzLTIuMi0yLjU4MDYzJyBmaWxsPSdub25lJy8+CiA8L2c+CiA8L2c+CiA8L2c+CjwvZz4KPGcgdHJhbnNmb3JtPSd0cmFuc2xhdGUoLTQ1LjAwNDczLC0yMC44MzEzOCknPgo8ZyBzdHJva2U9J25vbmUnIHRyYW5zZm9ybT0nc2NhbGUoLTEuMDAzNzUsMS4wMDM3NSl0cmFuc2xhdGUoLTIzLjcwNjAyNCwtMjMuOTQ4ODU4KXNjYWxlKC0xLC0xKSc+CjxnIGZpbGw9JyMwMDAnPgo8ZyBzdHJva2U9J25vbmUnPgo8dGV4dCBjbGFzcz0nZjEnIHg9Jy0yMy43MDYwMjQnIHk9Jy0yMy45NDg4NTgnPmg8L3RleHQ+CjwvZz4KPC9nPgo8L2c+CjwvZz4KPGcgc3Ryb2tlLWRhc2hhcnJheT0nMy4wLDIuMCcgc3Ryb2tlLWRhc2hvZmZzZXQ9JzAuMCc+CjxwYXRoIGQ9J00tMzMuODI4ODcgMzMuODI4NTdMLTguNTkyOTQgOC41OTY1NicgZmlsbD0nbm9uZScvPgo8ZyB0cmFuc2Zvcm09J21hdHJpeCgwLjcwNzE0LC0wLjcwNzAzLDAuNzA3MDMsMC43MDcxNCwtOC40MTYxNSw4LjQxOTgpJz4KPGcgc3Ryb2tlLWRhc2hhcnJheT0nbm9uZScgc3Ryb2tlLWRhc2hvZmZzZXQ9JzAuMCc+CiA8ZyBzdHJva2UtbGluZWNhcD0ncm91bmQnPgogPGcgc3Ryb2tlLWxpbmVqb2luPSdyb3VuZCc+CiA8cGF0aCBkPSdNLTIuMiAyLjU4MDYzQy0xLjc5ODA3IDEuMDMyMjMtLjkwMjQgLjMwMTA3IDAgMEMtLjkwMjQtLjMwMTA3LTEuNzk4MDctMS4wMzIyMy0yLjItMi41ODA2MycgZmlsbD0nbm9uZScvPgogPC9nPgogPC9nPgogPC9nPgo8L2c+CjwvZz4KPHBhdGggZD0nTS0zMS43NTE1MSA0MS4zNTQzMUMyLjU3NDY1IDQ2LjIzNTI2IDI5LjE5NTMxIDM1LjUyOTgyIDUwLjI3NzA0IDguNjM2NTQnIGZpbGw9J25vbmUnLz4KPGcgdHJhbnNmb3JtPSdtYXRyaXgoMC42MTY5MSwtMC43ODY5OSwwLjc4Njk5LDAuNjE2OTEsNTAuNDMxMjcsOC40Mzk3OSknPgo8ZyBzdHJva2UtZGFzaGFycmF5PSdub25lJyBzdHJva2UtZGFzaG9mZnNldD0nMC4wJz4KIDxnIHN0cm9rZS1saW5lY2FwPSdyb3VuZCc+CiA8ZyBzdHJva2UtbGluZWpvaW49J3JvdW5kJz4KIDxwYXRoIGQ9J00tMi4yIDIuNTgwNjNDLTEuNzk4MDcgMS4wMzIyMy0uOTAyNCAuMzAxMDcgMCAwQy0uOTAyNC0uMzAxMDctMS43OTgwNy0xLjAzMjIzLTIuMi0yLjU4MDYzJyBmaWxsPSdub25lJy8+CiA8L2c+CiA8L2c+CiA8L2c+CjwvZz4KPGcgdHJhbnNmb3JtPSd0cmFuc2xhdGUoMTcuNTMxODYsMzkuNjczMzcpJz4KPGcgc3Ryb2tlPSdub25lJyB0cmFuc2Zvcm09J3NjYWxlKC0xLjAwMzc1LDEuMDAzNzUpdHJhbnNsYXRlKC0yMy43MDYwMjQsLTIzLjk0ODg1OClzY2FsZSgtMSwtMSknPgo8ZyBmaWxsPScjMDAwJz4KPGcgc3Ryb2tlPSdub25lJz4KPHRleHQgY2xhc3M9J2YxJyB4PSctMjMuNzA2MDI0JyB5PSctMjMuOTQ4ODU4Jz5rPC90ZXh0Pgo8L2c+CjwvZz4KPC9nPgo8L2c+CjwvZz4KPC9nPgo8L2c+CjwvZz4KPC9nPgo8L3N2Zz4=" /></fr:resource-content><fr:resource-source
-type="latex"
-part="preamble"><![CDATA[
-        
-  \RequirePackage {tikz}
-  \RequirePackage {amsmath}
-  \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
+      <fr:tree
+toc="false"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>333</fr:anchor><fr:addr
+type="machine">#256</fr:addr><fr:route>unstable-256.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
+  Let <fr:tex
+display="inline"><![CDATA[P]]></fr:tex> be a set such that <fr:tex
+display="inline"><![CDATA[\forall a.\mkern 5mua \in  P \Leftrightarrow  a = x \vee  a = y]]></fr:tex>.
+  It suffices, by <fr:link
+type="local"
+href="set-0001.xml"
+addr="set-0001"
+title="Axiom of extensionality">extensionality</fr:link>, to show that <fr:tex
+display="inline"><![CDATA[\forall b.\mkern 5mub \in  {\mathopen {}\{x,y\}\mathclose {}} \Leftrightarrow  b \in  P]]></fr:tex>.
 
-  \definecolor {catccolor}{RGB}{255,244,138}
-  \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
-  \tikzstyle {catc}=[catccolor!60]
-  \tikzstyle {catd}=[orange!40]
-  \tikzstyle {cate}=[red!40]
-  \tikzstyle {catf}=[blue!10]
-  \tikzstyle {catg}=[green!25]
-
-
-  \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
-  \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
-
-  \NewDocumentCommand \CreateRect {D<>{} m m}{
-    \path 
-      coordinate (#1nw)
-      ++(#2,-#3) coordinate (#1se)
-      coordinate (#1sw) at (#1se -| #1nw)
-      coordinate (#1ne) at (#1nw -| #1se)
-    ;
-
-    \path [spath/save = #1north] (#1nw) to (#1ne);
-    \path [spath/save = #1west] (#1nw) to (#1sw);
-    \path [spath/save = #1east] (#1ne) to (#1se);
-    \path [spath/save = #1south] (#1sw) to (#1se);
-  }
-
-        
-   % appears to be necessary
-  \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd}
-  \usetikzlibrary{matrix,arrows}
-  \usetikzlibrary{backgrounds,fit,positioning,calc,shapes}
-  \usetikzlibrary{decorations.pathreplacing}
-  \usetikzlibrary{decorations.pathmorphing}
-  \usetikzlibrary{decorations.markings}
-
-  % basic settings
-  \tikzset{
-    diagram/.style = {
-      on grid,
-      node distance=2cm,
-      commutative diagrams/every diagram,
-      line width = .5pt,
-      every node/.append style = {
-        commutative diagrams/every cell,
-      },
-    },
-    morphism/.style = {
-      auto=left,
-      node font=\scriptsize,
-    },
-    phantom/.style = {
-      commutative diagrams/phantom,
-      node font=\scriptsize,
-      sloped,
-    },
-    between/.style args = {#1 and #2}{
-      at = ($(#1)!0.5!(#2)$)
-    },
-    desc/.style = {anchor=center,fill=white,inner sep=3pt},
-    offset/.style args = {#1} {commutative diagrams/shift right={#1}},
-    cross over/.style = {
-      commutative diagrams/crossing over
-    },
-    adjoint/.style = {
-      phantom,
-      every to/.append style = {
-        edge node = {node [sloped,allow upside down,auto=false] {$\dashv$}}
-      }
-    },
-  }
-
-  % pullback and pushout
-  \tikzset{
-    pullback/.style = {
-      append after command = {
-        \pgfextra{
-          \draw ($(\tikzlastnode) + (.2cm,-.5cm)$) -- ++(0.3cm,0) -- ++(0,0.3cm);
-        }
-      }
-    },
-    pushout/.style = {
-      append after command={
-        \pgfextra{
-          \draw ($(\tikzlastnode) + (-.2cm,.5cm)$) -- ++(-0.3cm,0) -- ++(0,-0.3cm);
-        }
-      }
-    },
-  }
-
-  % arrow styles
-  \tikzset{
-    exists/.style = {
-      densely dashed
-    },
-    embedding/.style = {
-      {right hook}->
-    },
-    into/.style = {
-      {right hook}->
-    },
-    cover/.style = {
-      -{Triangle[open]}
-    },
-    twocell/.style = {
-      double, -{implies}
-    }
-  }
-
-  \newlength{\dontworryaboutit} % no idea what it does
-
-  \tikzset{
-    inline diagram/.style = {
-      commutative diagrams/every diagram,
-      commutative diagrams/cramped,
-      line width = .5pt,
-      every node/.append style = {
-        commutative diagrams/every cell,
-        anchor = base,
-        inner sep = 0pt
-      },
-      every path/.append style = {
-        outer xsep = 2pt
-      }
-    }
-  }
-  
-  % macros for drawing commutative squares
-  % adapted from Jon Sterling's macros (https://git.sr.ht/~jonsterling/article-template/tree/main/item/local-tikz.sty)
-  \tikzset{
-    square/nw/.style = {},
-    square/ne/.style = {},
-    square/se/.style = {},
-    square/sw/.style = {},
-    square/north/.style = {->},
-    square/south/.style = {->},
-    square/west/.style = {->},
-    square/east/.style = {->},
-    square/north/node/.style = {above},
-    square/south/node/.style = {below},
-    square/west/node/.style = {left},
-    square/east/node/.style = {right},
-  }
-
-  \ExplSyntaxOn
-  \keys_define:nn { jon-tikz/diagram } {
-    nw .tl_set:N = \l_jon_tikz_diagram_nw,
-    sw .tl_set:N = \l_jon_tikz_diagram_sw,
-    ne .tl_set:N = \l_jon_tikz_diagram_ne,
-    se .tl_set:N = \l_jon_tikz_diagram_se,
-
-    width .tl_set:N = \l_jon_tikz_diagram_width,
-    height .tl_set:N = \l_jon_tikz_diagram_height,
-
-    north .tl_set:N = \l_jon_tikz_diagram_north,
-    south .tl_set:N = \l_jon_tikz_diagram_south,
-    west .tl_set:N = \l_jon_tikz_diagram_west,
-    east .tl_set:N = \l_jon_tikz_diagram_east,
-
-    nw/style .code:n = {\tikzset{square/nw/.style = {#1}}},
-    sw/style .code:n = {\tikzset{square/sw/.style = {#1}}},
-    ne/style .code:n = {\tikzset{square/ne/.style = {#1}}},
-    se/style .code:n = {\tikzset{square/se/.style = {#1}}},
-
-    north/style .code:n = {\tikzset{square/north/.style = {#1}}},
-    north/node/style .code:n = {\tikzset{square/north/node/.style = {#1}}},
-    south/style .code:n = {\tikzset{square/south/.style = {#1}}},
-    south/node/style .code:n = {\tikzset{square/south/node/.style = {#1}}},
-    west/style .code:n = {\tikzset{square/west/.style = {#1}}},
-    west/node/style .code:n = {\tikzset{square/west/node/.style = {#1}}},
-    east/style .code:n = {\tikzset{square/east/.style = {#1}}},
-    east/node/style .code:n = {\tikzset{square/east/node/.style = {#1}}},
-
-    draft .meta:n = {
-      nw = {nw},
-      sw = {sw},
-      se = {se},
-      ne = {ne},
-      north = {north},
-      south = {south},
-      west = {west},
-      east = {east},
-    }
-  }
-
-  \tl_set:Nn \l_jon_tikz_diagram_width { 2cm }
-  \tl_set:Nn \l_jon_tikz_diagram_height { 2cm }
-
-
-  \cs_new:Nn \__jon_tikz_render_square:nn {
-    \group_begin:
-    \keys_set:nn {jon-tikz/diagram} {#2} {
-      \node (#1nw) [square/nw] {$\l_jon_tikz_diagram_nw$};
-      \node (#1sw) [below = \l_jon_tikz_diagram_height~of~#1nw,square/sw] {$\l_jon_tikz_diagram_sw$};
-      \draw[morphism,square/west] (#1nw) to node [square/west/node] {$\l_jon_tikz_diagram_west$} (#1sw);
-
-      \node (#1ne) [right = \l_jon_tikz_diagram_width~of~#1nw,square/ne] {$\l_jon_tikz_diagram_ne$};
-      \node (#1se) [below = \l_jon_tikz_diagram_height~of~#1ne,square/se] {$\l_jon_tikz_diagram_se$};
-      \draw[morphism,square/north] (#1nw) to node [square/north/node] {$\l_jon_tikz_diagram_north$} (#1ne);
-      \draw[morphism,square/east] (#1ne) to node [square/east/node] {$\l_jon_tikz_diagram_east$} (#1se);
-      \draw[morphism,square/south] (#1sw) to node [square/south/node] {$\l_jon_tikz_diagram_south$} (#1se);
-    }
-    \group_end:
-  }
-
-  % the optional argument allows one to specify a prefix to positions
-  \NewDocumentCommand\SpliceDiagramSquare{O{}m}{
-    \__jon_tikz_render_square:nn {#1} {#2}
-  }
-
-  \NewDocumentCommand\DiagramSquare{O{}O{}m}{
-    \begin{tikzpicture}[diagram,#2,baseline=(#1sw.base)]
-      \__jon_tikz_render_square:nn {#1} {#3}
-    \end{tikzpicture}
-  }
-  \ExplSyntaxOff
-
-      ]]></fr:resource-source><fr:resource-source
-type="latex"
-part="body"><![CDATA[
-    \begin {tikzpicture}[diagram]
-      \SpliceDiagramSquare {
-        nw = R,
-        nw/style = {pullback},
-        ne = A,
-        sw = A,
-        se = {B},
-        north = b,
-        west = a,
-        south = {f},
-        east = {f},
-      }
-      \node  [above left = of nw] (c) {$C$};
-      \draw  [->,morphism,bend right] (c) to node[swap] {$h$} (sw);
-      \draw  [->,morphism,exists] (c) to (nw);
-      \draw  [->,morphism,bend left] (c) to node {$k$} (ne);
-    \end {tikzpicture}
-  ]]></fr:resource-source></fr:resource></fr:figure>
+  If <fr:tex
+display="inline"><![CDATA[b \in  {\mathopen {}\{x,y\}\mathclose {}}]]></fr:tex>, then by <fr:link
+type="local"
+href="set-0003.xml"
+addr="set-0003"
+title="Axiom of pairing">pairing</fr:link>, <fr:tex
+display="inline"><![CDATA[b = x]]></fr:tex> or <fr:tex
+display="inline"><![CDATA[b = y]]></fr:tex>.
+  Thus, it follows that <fr:tex
+display="inline"><![CDATA[b \in  P]]></fr:tex>.
+  The converse is completely analogous.
+</fr:mainmatter><fr:backmatter /></fr:tree>
     
-  
-</fr:mainmatter><fr:backmatter><fr:tree
+  </fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>334</fr:anchor><fr:addr
+type="user">set-000H</fr:addr><fr:route>set-000H.xml</fr:route><fr:title
+text="Existence of singletons">Existence of singletons</fr:title><fr:taxon>Proposition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>For any set <fr:tex
+display="inline"><![CDATA[x]]></fr:tex>, the set <fr:tex
+display="inline"><![CDATA[{\mathopen {}\{x\}\mathclose {}}]]></fr:tex> exists.</fr:p>
+    
+      
+      <fr:tree
+toc="false"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>335</fr:anchor><fr:addr
+type="machine">#255</fr:addr><fr:route>unstable-255.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
+  By <fr:link
+type="local"
+href="set-0003.xml"
+addr="set-0003"
+title="Axiom of pairing">pairing</fr:link>, there is a set <fr:tex
+display="inline"><![CDATA[p]]></fr:tex> such that <fr:tex
+display="inline"><![CDATA[\forall a.\mkern 5mua \in  p \Leftrightarrow  a = x \vee  a = x]]></fr:tex>, or equivalently, <fr:tex
+display="inline"><![CDATA[\forall a.\mkern 5mua \in  p \Leftrightarrow  a = x]]></fr:tex>.
+</fr:mainmatter><fr:backmatter /></fr:tree>
+    
+  </fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>336</fr:anchor><fr:addr
+type="user">set-000X</fr:addr><fr:route>set-000X.xml</fr:route><fr:title
+text="The membership relation is irreflexive">The membership relation is irreflexive</fr:title><fr:taxon>Proposition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>For any set <fr:tex
+display="inline"><![CDATA[x]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[x \notin  x]]></fr:tex>.</fr:p>
+    
+      
+      <fr:tree
+toc="false"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>337</fr:anchor><fr:addr
+type="machine">#246</fr:addr><fr:route>unstable-246.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
+  Let <fr:tex
+display="inline"><![CDATA[x]]></fr:tex> be a set.
+  Suppose that <fr:tex
+display="inline"><![CDATA[x \in  x]]></fr:tex>.
+  Consider <fr:tex
+display="inline"><![CDATA[{\mathopen {}\{x\}\mathclose {}}]]></fr:tex>.
+  This is a non-empty set, so <fr:link
+type="local"
+href="set-0009.xml"
+addr="set-0009"
+title="Axiom of foundation">foundation</fr:link> implies that there is a set <fr:tex
+display="inline"><![CDATA[z \in  {\mathopen {}\{x\}\mathclose {}}]]></fr:tex> such that <fr:tex
+display="inline"><![CDATA[z \cap  {\mathopen {}\{x\}\mathclose {}} = \varnothing ]]></fr:tex>.
+  By <fr:ref
+addr="set-000H"
+href="set-000H.xml"
+taxon="Proposition" />, <fr:tex
+display="inline"><![CDATA[z = x]]></fr:tex>.
+  Then since <fr:tex
+display="inline"><![CDATA[x \in  x]]></fr:tex>, we have that <fr:tex
+display="inline"><![CDATA[x \in  z]]></fr:tex>.
+  Thus, <fr:tex
+display="inline"><![CDATA[x \in  z \cap  {\mathopen {}\{x\}\mathclose {}}]]></fr:tex>, which is a contradiction.
+</fr:mainmatter><fr:backmatter /></fr:tree>
+    
+  </fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter><fr:tree
 toc="false"
 numbered="false"
 show-heading="true"
@@ -544,14 +189,145 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1142</fr:anchor><fr:addr
-type="user">ct-0017</fr:addr><fr:route>ct-0017.xml</fr:route><fr:title
-text="Every kernel pair has a coequalizer">Every kernel pair has a coequalizer</fr:title><fr:taxon>Corollary</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>12</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>In a <fr:link
-type="local"
-href="ct-000O.xml"
-addr="ct-000O"
-title="Regular category">regular category</fr:link>, every kernel pair has a coequalizer.
-  Moreover, the given kernel pair is also a kernel pair of the coequalizer.</fr:p>
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>408</fr:anchor><fr:addr
+type="user">set-000D</fr:addr><fr:route>set-000D.xml</fr:route><fr:title
+text="Zermelo-Fraenkel set theory">Zermelo-Fraenkel set theory</fr:title><fr:taxon>Section</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
+  <fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>319</fr:anchor><fr:addr
+type="machine">#259</fr:addr><fr:route>unstable-259.xml</fr:route><fr:title
+text="Axioms of ZF">Axioms of ZF</fr:title><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>320</fr:anchor><fr:addr
+type="user">set-0001</fr:addr><fr:route>set-0001.xml</fr:route><fr:title
+text="Axiom of extensionality">Axiom of extensionality</fr:title><fr:taxon>Axiom</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>15</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Two sets are equal iff they have the same elements.</fr:p><fr:tex
+display="block"><![CDATA[   \forall x,y.\mkern 5mux = y \Leftrightarrow  \forall z.\mkern 5muz \in  x \Leftrightarrow  z \in  y ]]></fr:tex></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>321</fr:anchor><fr:addr
+type="user">set-0002</fr:addr><fr:route>set-0002.xml</fr:route><fr:title
+text="Axiom of empty set">Axiom of empty set</fr:title><fr:taxon>Axiom</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>15</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>The empty set <fr:tex
+display="inline"><![CDATA[\varnothing ]]></fr:tex> exists.</fr:p><fr:tex
+display="block"><![CDATA[   \exists x.\mkern 5mu\forall y.\mkern 5muy \notin  x ]]></fr:tex></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>322</fr:anchor><fr:addr
+type="user">set-0003</fr:addr><fr:route>set-0003.xml</fr:route><fr:title
+text="Axiom of pairing">Axiom of pairing</fr:title><fr:taxon>Axiom</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>15</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>For any two set <fr:tex
+display="inline"><![CDATA[x]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[y]]></fr:tex>, the set <fr:tex
+display="inline"><![CDATA[\{x,y\}]]></fr:tex> exists.</fr:p><fr:tex
+display="block"><![CDATA[   \forall x,y.\mkern 5mu\exists p.\mkern 5mu\forall z.\mkern 5muz \in  p \Leftrightarrow  z = x \vee  z = y ]]></fr:tex></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>323</fr:anchor><fr:addr
+type="user">set-0005</fr:addr><fr:route>set-0005.xml</fr:route><fr:title
+text="Axiom schema of separation">Axiom schema of separation</fr:title><fr:taxon>Axiom</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>15</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[\varphi ]]></fr:tex> be any formula in the language of ZF set theory with free variables among <fr:tex
+display="inline"><![CDATA[x]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[z]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[p_{1},\ldots ,p_{n}]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[x]]></fr:tex> be a set.
+  The set <fr:tex
+display="inline"><![CDATA[\{z \in  x \mid  \varphi (x,p_{1},\ldots ,p_{n},z)\}]]></fr:tex> exists.</fr:p><fr:tex
+display="block"><![CDATA[   \forall x,p_{1},\ldots ,p_{n}.\mkern 5mu\exists y.\mkern 5mu\forall z.\mkern 5muz \in  y \Leftrightarrow  z \in  x \wedge  \varphi (x,p_{1},\ldots ,p_{n},z) ]]></fr:tex></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>324</fr:anchor><fr:addr
+type="user">set-0006</fr:addr><fr:route>set-0006.xml</fr:route><fr:title
+text="Axiom of powerset">Axiom of powerset</fr:title><fr:taxon>Axiom</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>15</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>For any set <fr:tex
+display="inline"><![CDATA[x]]></fr:tex>, the powerset <fr:tex
+display="inline"><![CDATA[P(x)]]></fr:tex> is a set.</fr:p><fr:tex
+display="block"><![CDATA[   \forall x.\mkern 5mu\exists p.\mkern 5mu\forall y.\mkern 5muy \in  p \Leftrightarrow  \forall z.\mkern 5muz \in  y \Rightarrow  z \in  x ]]></fr:tex></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>325</fr:anchor><fr:addr
+type="user">set-0004</fr:addr><fr:route>set-0004.xml</fr:route><fr:title
+text="Axiom of union">Axiom of union</fr:title><fr:taxon>Axiom</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>15</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Given a set <fr:tex
+display="inline"><![CDATA[x]]></fr:tex> (of sets), the union <fr:tex
+display="inline"><![CDATA[\bigcup  x]]></fr:tex> exists.</fr:p><fr:tex
+display="block"><![CDATA[   \forall x.\mkern 5mu\exists y.\mkern 5mu\forall z.\mkern 5muz \in  y \Leftrightarrow  \exists v.\mkern 5muv \in  x \wedge  z \in  v ]]></fr:tex></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>326</fr:anchor><fr:addr
+type="user">set-0007</fr:addr><fr:route>set-0007.xml</fr:route><fr:title
+text="Axiom of infinity">Axiom of infinity</fr:title><fr:taxon>Axiom</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>15</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>An inductive set exists.</fr:p><fr:tex
+display="block"><![CDATA[   \exists x.\mkern 5mu\varnothing  \in  x \wedge  \forall y.\mkern 5muy \in  x \Rightarrow  y \cup  \{y\} \in  x ]]></fr:tex></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>327</fr:anchor><fr:addr
+type="user">set-0008</fr:addr><fr:route>set-0008.xml</fr:route><fr:title
+text="Axiom schema of replacement">Axiom schema of replacement</fr:title><fr:taxon>Axiom</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>18</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>The image of every definable function is a set.</fr:p><fr:tex
+display="block"><![CDATA[   (\forall x.\mkern 5mu\exists y.\mkern 5mu\varphi (x,y)) \wedge  (\forall x,y,y'.\mkern 5mu\varphi (x,y) \wedge  \varphi (x,y') \Rightarrow  y = y') \Rightarrow \\   \forall u.\mkern 5mu\exists v.\mkern 5mu\forall y.\mkern 5muy \in  v \Leftrightarrow  \exists x.\mkern 5mux \in  u \Rightarrow  \varphi (x,y) ]]></fr:tex></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>328</fr:anchor><fr:addr
+type="user">set-0009</fr:addr><fr:route>set-0009.xml</fr:route><fr:title
+text="Axiom of foundation">Axiom of foundation</fr:title><fr:taxon>Axiom</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>18</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p><fr:tex
+display="inline"><![CDATA[\forall x.\mkern 5mu(\exists y.\mkern 5muy \in  x) \Rightarrow  \exists z.\mkern 5muz \in  x \wedge  (\lnot \exists a.\mkern 5mua \in  x \wedge  a \in  z)]]></fr:tex></fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree>
+
+  <fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>329</fr:anchor><fr:addr
+type="machine">#260</fr:addr><fr:route>unstable-260.xml</fr:route><fr:title
+text="Basic consequences of ZF">Basic consequences of ZF</fr:title><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>330</fr:anchor><fr:addr
+type="user">set-000F</fr:addr><fr:route>set-000F.xml</fr:route><fr:title
+text="Uniqueness of the empty set">Uniqueness of the empty set</fr:title><fr:taxon>Proposition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>The empty set <fr:tex
+display="inline"><![CDATA[\varnothing ]]></fr:tex> is unique.</fr:p>
     
       
       <fr:tree
@@ -561,528 +337,841 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>699</fr:anchor><fr:addr
-type="machine">#260</fr:addr><fr:route>unstable-260.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>12</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
-  <fr:p>Let <fr:tex
-display="inline"><![CDATA[a,b\colon R\rightrightarrows A]]></fr:tex> be the kernel pair of a morphism <fr:tex
-display="inline"><![CDATA[f\colon A\to B]]></fr:tex>.
-    Consider the cover-mono factorization of <fr:tex
-display="inline"><![CDATA[f]]></fr:tex>: <fr:tex
-display="inline"><![CDATA[f = f_{m}f_{c}]]></fr:tex>.
-    By <fr:ref
-addr="ct-000T"
-href="ct-000T.xml"
-taxon="Lemma" />, it suffices to show that <fr:tex
-display="inline"><![CDATA[(a,b)]]></fr:tex> is a kernel pair of <fr:tex
-display="inline"><![CDATA[f_{c}]]></fr:tex>, i.e., the following diagram is a pullback.</fr:p>
-  
-    
-      
-      <fr:figure><fr:resource
-hash="a5a5f0bc484fa2cef535f88e8d5780bc"><fr:resource-content><fr:img
-src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4KPCEtLSBUaGlzIGZpbGUgd2FzIGdlbmVyYXRlZCBieSBkdmlzdmdtIDMuMC4zIC0tPgo8c3ZnIHZlcnNpb249JzEuMScgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJyB4bWxuczp4bGluaz0naHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluaycgd2lkdGg9JzEyOS40NjI2MDVwdCcgaGVpZ2h0PScxMTcuNjYyODI0cHQnIHZpZXdCb3g9Jy03MiAtNzIgODYuMzA4NDAzIDc4LjQ0MTg4Myc+CjxzdHlsZSB0eXBlPSd0ZXh0L2Nzcyc+CjwhW0NEQVRBW0Bmb250LWZhY2V7Zm9udC1mYW1pbHk6Y21yMTA7c3JjOnVybChkYXRhOmFwcGxpY2F0aW9uL3gtZm9udC13b2ZmO2Jhc2U2NCxkMDlHUmdBQkFBQUFBQU5nQUFvQUFBQUFBOVFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQlBVeTh5QUFBQTlBQUFBRVFBQUFCZ2hVTno3R050WVhBQUFBRTRBQUFBTEFBQUFEUUFEQUI4WjJ4NVpnQUFBV1FBQUFDZ0FBQUFyS0FDSGFSb1pXRmtBQUFDQkFBQUFDNEFBQUEySjd2Q1pXaG9aV0VBQUFJMEFBQUFId0FBQUNRRWp3RzhhRzEwZUFBQUFsUUFBQUFLQUFBQUNnUkdBR1JzYjJOaEFBQUNZQUFBQUFnQUFBQUlBQ3dBVm0xaGVIQUFBQUpvQUFBQUZ3QUFBQ0FBQlFBWmJtRnRaUUFBQW9BQUFBRE5BQUFCT0lMaEtxbHdiM04wQUFBRFVBQUFBQkFBQUFBZ0FBTUFBWGphWTJCbXZNYzRnWUdWZ1lGcEZ0UFpmeUlNL1NDYThRM2pHd1pqUms0R0lHQmpnQU5HQmlTUVVseVdEcFRVWU5Ca1p2Z1A1RE5EcEpIVS9BY0tBd0R2a1EwZWVOcGpZR0JnWW1CZ1lBWmlFU0RKQ0taWkdCU0FOQXNRZ3ZpYS8vOERTWTMvLy8vZkJQTVpBRkNiQm9WNDJtTmdaRWo1ejhBWXdzekFJTTdBd0NxaXBLYXV4Mml1Wm1adXgyakV6OGpIS000bUpNOG94aGdzbG15b0tjUElLS05tbUNiR3lCUG53Y2prRXMvUC9JMHJLVDVpbGEzVHd0RGtWQjZCeEQvdGxmLytwUWl5TUFBQkk0TWwwRnhOaUxtTVltenNmSXhLcGtCVDFVM1U5Qm5Wek0yTXhNVGxHQmsxd0NhSzhzWjZNUVg3Q0RFek1vcUM3V0dBbXBqMHQzWGhCMThoRmlhd1BRQVZKQ0ZNZU5wallHUmdZQURpenlzbk5jZnoyM3hsWUdaaEFJSEhRdlpiRVBSL0JxWUdaaENYZzRFSlJBRUFMNHdKdUFBQWVOcGpZR1JnWUdiNHo4REF3TlRBWU1sZ3lSakNBQlJCQVV3QU8yd0NVQUFDZ0FBQUFZMEFaQUE1QUFBQUFBQUFBQ3dBVm5qYVkyQmtZR0JnWnBCZ0FORU1VQklKQUFBREVBQWZBSGphUll3eGI4SXdFSVcvaUFTSmRPaFNkV0FBRDh4V29qQjNZV0JpWldJQmJLSU1jWkFUSWlHaGp2M2RQWXdsYm5qNjdyMTNCK1Q4a3ZDY2hNK2d6MG5KWkh0eHhnZGZrYWV5TFNQbnpGa3hJVWxuNGl6NGlaeEtjb2ljOGMwbDhsVDhSK1NjTlgrYnJyM2VCdXZWcmpQV3UzUHJ5Mkp2ZmQ5MFRwVzZDUHZXT3V1UGd6WHFkRmRtYlBxeGJsV2xDMTJ4b2FQbHlvMEJpMGV4RThjRWRwd2w4NVFVN0lQVDAwanFwRldpeFgzblc4bGQ2QnpESnlPZEUzZFJ3eWhYdldndGJVVVZMalhWUDJNOUx3OEFBQUI0Mm1OZ1prQUdqQXhvQUFBQWpnQUYpIGZvcm1hdCgnd29mZicpO30KQGZvbnQtZmFjZXtmb250LWZhbWlseTpjbXNzMTA7c3JjOnVybChkYXRhOmFwcGxpY2F0aW9uL3gtZm9udC13b2ZmO2Jhc2U2NCxkMDlHUmdBQkFBQUFBQVFrQUFvQUFBQUFCTVFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQlBVeTh5QUFBQTlBQUFBRVFBQUFCZ2hXMTBkMk50WVhBQUFBRTRBQUFBTXdBQUFFUUFld0VnWjJ4NVpnQUFBV3dBQUFGUkFBQUJmRHZkVFpsb1pXRmtBQUFDd0FBQUFDOEFBQUEyS0JqQ1dtaG9aV0VBQUFMd0FBQUFIZ0FBQUNRR0JBSkJhRzEwZUFBQUF4QUFBQUFRQUFBQUVBaHpBTTlzYjJOaEFBQURJQUFBQUFvQUFBQUtBTXdBaEcxaGVIQUFBQU1zQUFBQUdBQUFBQ0FBQ0FCS2JtRnRaUUFBQTBRQUFBRFRBQUFCUHFrcmRkdHdiM04wQUFBRUdBQUFBQXdBQUFBZ0FBTUFBSGphWTJCbWttR2N3TURLd01BMGkrbnNQeEdHZmhETitJYnhEWU14SXljREVMQXh3QUVqQXhKSUtTNUxCMHA2TXVReWMvNEg4cGs1R2RIVS9BY0tBd0MyMkF6VWVOcGpZR0JnWW1CZ1lBWmlFU0RKQ0taWkdBeUFOQWNRZ3VROEdkSVpjdi8vUjdEKzcvZy8rLzgwc0Zvd0FBRHNod3VWQUhqYVRWRExTc05RRUoyWld4TzFOUkJzY3JHUHFMMDBnY2JXaHREYzFtaFJmRlNLMUlwZFZHdUxPMytqK0FkK1R6ZTY2a3FFSWk0RVA4SzErTGl1bElIRE9mTmc1Z3dnWEFQQWhLYkFBSlpOWVU0R05QMXNLQTBxay91dTREdk9vQXdOT0FaQUI3bUJ1dXRwbG9NeWpMaXR3c0NDNjdtUmRHdS80RFZSMmx3QjkzUTdraFhWcmVscVRHaTZ4aDFVQlhjVFhielJPZEtndFNXU1ZFNWRaaHBlSVV6UStHRk1tUFV5dUdDdE1qYmMzeTN3WHBUYW1RbEpKSVVURThVblY5SllJcnE0N1ZQQ3o1WHhMbFVydGtiRXNtYmFNNGtXZFN2ZjJlNTBZanRlRWY1Y3NGNktqNGZFbktTRmUrd0Z3emdPRWF2Tlp2VSs0VGhhMFVkZmJCanptdktLY0E1QWIvZ01CU1hVSHlMWE01QmIvMGhvcWVzam0wZWhzazJ2WFNZTzZnR2VNbkZZcjJLM25XN0wzSmtkai9yNURBWmZUMWhhTzJKc0pELyt5R003SHlBNTlSNExJN1h5QjRnQ1BkSUFBQUI0Mm1OZ1pHQmdBT0tFRnhQNDQvbHR2akl3c3pDQXdHTWgreTBJK3I4ZTAxMm00MEF1QndNVFNCUUFIRTBLUHdCNDJtTmdaR0JnNXZ6UEFDUjFHV1FZK0pudU1nQkZVQUFMQURpMkFrd0FBQUlxQUFBQkhBQmdBZ0FBSEFNdEFGTUFBQUFBQUE0QWhBQytBQUI0Mm1OZ1pHQmdZR0h3WkdCbUFBRkdCalFBQUFnaUFGTjQyazJPc1dyRE1CQ0dQMVBiVUxmUXFSMDZGRTBaaFkzN0FJVU1tYkptTENTUk1DNVlEcEpqOEZMNkFIbm9YQlFOdllPZlQvLzlkd2lvK0NYalZoa3ZVVytWVThycnpnVlB2Q1l1cFZYaWluZFdQSkRsaitKODhKVTQ1NW52eEFWdi9DUXV4ZjlMWFBISlpUME9wL05rdmRxT3hucDNIRUpvNnAzMW9SK2RhblI5TnpiV1diK2ZyRkdIUlptNUQzTTNxRmJYdW1YTnlNQ0pNeE1XTHovYmltTWlPNDR5QzlJTk5idm9CWHFaTzhrMWFISC9KemFTY0RHMWo5ZU1wQTRzb29aWjlvSm9KM2xGRzNjMTdSWCtDREQ3QUhqYVkyQm13QXNBQUgwQUJBPT0pIGZvcm1hdCgnd29mZicpO30KQGZvbnQtZmFjZXtmb250LWZhbWlseTpjbW1pNztzcmM6dXJsKGRhdGE6YXBwbGljYXRpb24veC1mb250LXdvZmY7YmFzZTY0LGQwOUdSZ0FCQUFBQUFBVE1BQW9BQUFBQUJZZ0FBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFCUFV5OHlBQUFBOUFBQUFFTUFBQUJnaFh4MHFtTnRZWEFBQUFFNEFBQUFNZ0FBQUR3QWZRQzdaMng1WmdBQUFXd0FBQUgrQUFBQ1VFcE9qTEJvWldGa0FBQURiQUFBQUM4QUFBQTJLQUhDWldob1pXRUFBQU9jQUFBQUlBQUFBQ1FGcXdHYmFHMTBlQUFBQTd3QUFBQVFBQUFBRUFsOEFNeHNiMk5oQUFBRHpBQUFBQW9BQUFBS0FaSUF3bTFoZUhBQUFBUFlBQUFBR0FBQUFDQUFCd0JDYm1GdFpRQUFBL0FBQUFETkFBQUJPUE5mS3FOd2IzTjBBQUFFd0FBQUFBd0FBQUFnQUFNQUFIamFZMkJtaW1lY3dNREt3TUEwaStuc1B4R0dmaEROK0lieERZTXhJeWNERUxBeHdBRWpBeEpJS1M1TEIwb21NcVF4TS93SDhwa2gwa2hxL2dPRkFjK2NEUllBZU5wallHQmdZbUJnWUFaaUVTREpDS1paR0RTQU5CdVFaZ1RLSmpHay9mOFA1Q2VDNlA4TC9zOEZxd0lDQUpnL0NUSUFBSGphUlpFL2I5TlFGTVY5M25OdHh4Uy9KSTZmYWRNNnFaLzduSmJHcFRqWXFGUk9rN2FSK2srMEFxbEt4WitKQWI1Q0Z6WTJKZ1pXTmtZV0J2WktiRWg4QWlUNERHVWo0YmtNM0x2ZGM0ZmZPVWNqV2pHOUl2dTQxTHJhdHFhaHdGM3VNK0xBYTNDL1FCOVpDOXh2R0taYUdUc3dFOFJaWG00QW1tZXhqS1ZocW5PQXZFQ2U0ZFBNWXJPQnVzZk5DblBid3JKMDJ6YmcxcHFaUDZ3Ris2czdaOUQ3ekQwNFgrNXRwR2g0cVQ4U2JnaXNCV0hQa25qRDNXcnQ1UGlKbHpoOEFXUXZiaG9neEo0WnRGT0taamZvQUUrUFhweTY5UkZGT1BueGJYWTUwa25uZ1hqZHpST1FscldncVNIYXp2UTNmcEt2V3FobHloTXR5Ymh2TUJnbHZ1eXJneFNoakF1a1NqQkx2Y0M5QkNKVVZ0U1g4ZzVuNUE4Nzk1OVJPbGc2R0E4ZUEwWTNzUTNDb2tvTllPYnVXb1M4cytmZVdzVHRZS3R3TEQyd1Zzakh5Uyt1ekR3YXZ6d1J1eFRqaDlYd3krZFYvNmF0Mjh3eWRUcjc1eHhiOFowTDBWdmZaY3k1Nk13bG13cFFPNXl1azFmayszVUR0TVJVaWY3ajR6NDNUTjVTdmZTcE1HVG1wOWV3cVdySmdWRHBaN2xjaDBNWTBvd2JNVDVzVnZYcWZHV3cwZGtFSWs5U3NCWmpMRnFpaXdrN0NvakxUcG5uOEtGWTJRSUVWM28xWUt4ZUQyeHIvbmtwNDkzazhxQzIzV3ZzVUNtQ05vbU0rRWFGUUQvMDNsK2QwZERFMmJnWnkrWG92NFE1Mlgycmh4WlU5SDhCbG5kVG1BQUFlTnBqWUdSZ1lBRGlOUWNXVzhmejIzeGxZR1poQUlISFF2WmJFUFIvZmFaalRCZUJYQTRHSnBBb0FDem5DcFlBZU5wallHUmdZR2I0ejhEQXdIU013ZTcvQmFZc0JxQUlDbUFCQUdhNkJFb0N4Z0FBQW5vQVBnSUNBRU1DT2dCTEFBQUFBQUJxQU1JQktBQUFlTnBqWUdSZ1lHQmhjR1JnWWdBQlJnWTBBQUFIUXdCS2VOcE5qRDF2d2pBVVJVL1VCS2xoWUVFZEdGb1BuYTJnSUxGMVlXQmlaZW9DMkVVWmJDTW5SRUtxT3ZaMzkyRTg5QTFYNTM3WVFNMFBCZmNybUNXOVgwa2w3c0VWVSthWkorTGVNdGNzZU9lSm9ueVc1SldQektVMG41a3JYdmpLUEpIOE8zUE5pdDlOY0pmcllLUGFCV09qUHpuWHJmYzI5bDN3YXFtYjVMZlcyM2dZckZISG16SmoxNDlucDFyZDZKWU5BY2VGS3dPV2lHSW5pVW5zT1VubjZGaXpUMGt2SENSWExORTAvL3F0OUQ1dER1a25JNXNqTjFIREtJdGU5Q3hiUlp0ZWF0by95NkV2OXdBQUFIamFZMkJtd0FzQUFIMEFCQT09KSBmb3JtYXQoJ3dvZmYnKTt9CkBmb250LWZhY2V7Zm9udC1mYW1pbHk6Y21taTU7c3JjOnVybChkYXRhOmFwcGxpY2F0aW9uL3gtZm9udC13b2ZmO2Jhc2U2NCxkMDlHUmdBQkFBQUFBQU5VQUFvQUFBQUFBN3dBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQlBVeTh5QUFBQTlBQUFBRVFBQUFCZ2hYNTFQbU50WVhBQUFBRTRBQUFBS1FBQUFEUUFEQUMyWjJ4NVpnQUFBV1FBQUFDWUFBQUFtSVQzVjlwb1pXRmtBQUFCL0FBQUFDOEFBQUEyS0kvQ0gyaG9aV0VBQUFJc0FBQUFIZ0FBQUNRRjBRS09hRzEwZUFBQUFrd0FBQUFJQUFBQUNBWHRBRzFzYjJOaEFBQUNWQUFBQUFZQUFBQUdBRXdBQUcxaGVIQUFBQUpjQUFBQUZ3QUFBQ0FBQkFBd2JtRnRaUUFBQW5RQUFBRE5BQUFCT1BOYktwOXdiM04wQUFBRFJBQUFBQkFBQUFBZ0FBTUFBWGphWTJCbStzWTRnWUdWZ1lGcEZ0UFpmeUlNL1NDYThRM2pHd1pqUms0R0lHQmpnQU5HQmlTUVVseVdEcFJNWmtobVp2Z1A1RE5EcEpIVS9BY0tBd0FHYlEyc2VOcGpZR0JnWW1CZ1lBWmlFU0RKQ0taWkdCU0FOQXNRZ3ZqSi8vOUR5UC96d0h3R0FGVmhCcjhBQUFBQUFRQnQvL1FDWWdIR0FDNEFBQUV1QVFjR0J3WUhCaFVVRmhjeU5qOENIZ0lHQnc0Qkp5NEJOelkzTmpjMk56WWZBUllYRGdFakppYytBUUlQR1RzS1pEWVhEeVUrUVU1NUl4QUhCdzRCT1RRM1l4RjBhUUVEU2hNVldIWXRNZ2d4QkFJcEZTb0RBUjhCaXhFSEFRUkVHUjlPUmpZL0FTc25FQUlCRHhJMUZoTUlBUU54Umw1T0V4QkVBd0VSQWhJM0pTRUJLUm9mQUhqYVkyQmtZR0FBWW9lNTB0THgvRFpmR1poWkdFRGdzWkQ5RmdUOS93dHpDT014SUplRGdRa2tDZ0Q3MHdtbkFIamFZMkJrWUdCbStNOEFKRU1ZY2huTW1aSVlnQ0lvZ0FrQVBOb0NaZ0FBQTFRQUFBS1pBRzBBQUFBQUFFd0FBSGphWTJCa1lHQmdZdEJuQU5FTVVCSUpBQUFGTkFBMUFIamFUWXc5YjhJd0ZFVlAxQVNwWVdCQkhSaGFENTJ0b01EYWhZR0psYWtMWUJkbHNJMmNFQW1wNnRqZjNZZngwRGRjbmZ0aEF6VS9GTnl2WUpiMGZpV1Z1QWRYVEpsbm5vaDd5MXl6NEowbml2SlprbGMrTXBmU2ZHYXVlT0VyODBUeTc4dzFLMzQzd1YydWc0MXFGNHlOL3VSY3Q5N2IySGZCcTZWdWt0OWFiK05oc0VZZGI4cU1YVCtlbldwMW8xczJCQndYcmd4WUlvcWRKQ2F4NXlTZG8yUE5QaVc5Y0pCY3NVVFQvT3UzMHZ1ME9hU2ZqR3lPM0VRTm95eDYwYk5zRlcxNnFXbi9BTWdSTCs4QUFBQjQybU5nWmtBR2pBeG9BQUFBamdBRikgZm9ybWF0KCd3b2ZmJyk7fQpAZm9udC1mYWNle2ZvbnQtZmFtaWx5OmNtbWkxMDtzcmM6dXJsKGRhdGE6YXBwbGljYXRpb24veC1mb250LXdvZmY7YmFzZTY0LGQwOUdSZ0FCQUFBQUFBVDBBQW9BQUFBQUJkZ0FBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFCUFV5OHlBQUFBOUFBQUFFUUFBQUJnaFZ4MDZHTnRZWEFBQUFFNEFBQUFNd0FBQUVRQVpnRVJaMng1WmdBQUFXd0FBQUlpQUFBQ2tLRHFpMVJvWldGa0FBQURrQUFBQUM4QUFBQTJLRURDY21ob1pXRUFBQVBBQUFBQUhnQUFBQ1FHTEFIT2FHMTBlQUFBQStBQUFBQVFBQUFBRUFwMEFJUnNiMk5oQUFBRDhBQUFBQW9BQUFBS0Fad0E0bTFoZUhBQUFBUDhBQUFBR0FBQUFDQUFCd0JkYm1GdFpRQUFCQlFBQUFEU0FBQUJQcGtSZGNWd2IzTjBBQUFFNkFBQUFBd0FBQUFnQUFNQUFIamFZMkJtbXNzNGdZR1ZnWUZwRnRQWmZ5SU0vU0NhOFEzakd3WmpSazRHSUdCamdBTkdCaVNRVWx5V0RwUjBaRWhqWnZnUDVETkRwSkhVL0FjS0F3RGlRZzAwZU5wallHQmdZbUJnWUFaaUVTREpDS1paR0F5QU5BY1FndVFjR1lJWTB2Ny9SN0QrSC9pLzRmOWNzRm93QUFEbkNRdHhBSGphVlpJL2I5TkFHTWJ2dWJQUFNXcjdqQjJmR3pWT2t6aTFTNlEyVUtkbldzRDhpVklrcEhSQUNrSmlocTVJVUFTZENtSkZUQXp3UlJqZ0EvQUJZR1JnWW1CQ1lpWGgzQWx1ZXU5NTM3dDdmODk3aEpMQmNrbS8wMjlrUkhZSUthQ0tIUmtGVFprcnlVZXdzalFicTBpcVlvU2V4WnN5VXBFTHJWZHlYcUxJMlFjODRFMkhvNVJiSVd6enlXbk5oTE1TakZuZFdpd1BuWGJnTURqbTBUMGJkcjFmdnZ2WmUwcnZlcWlMUDZkU3NOZ0NZNkExWVFGMjlIRDZxam53UUlYTEs3a2hPSkxQdUVQMG9tUzQvTUZNK29sNDVENGhZTlhqSlhiVEVWSUJGMEVIVVZPQWgxem11bHRWUlBKc2IzRk5vSnU5QmwyczBpeGhWZ2VxK1I5YU1FNHlyc09ldmtNZndPbms4WFFlZE5hTWNiaTNXNHJHbTlhVUdaWUJmelZRR3BHYmtHNjhidzhELzd4aHJ2QTYzWnFlVEJnMjlwemF5eGVhM25YM08rYnJkaHE3SHBLakUyb2MzS0xIaTkvWWtOMTVlK0piTmdYMUYxK3Q0bkxVMnUrMzRoNnl3bWFVMXAyaHYyblNocmtpYjNpdDdTQno0cEl1ZnZrT04vNzFLZWpRdlhPVXRYVTRuOHpHT1FGUnkyMjZTNytRNjVVekZiVUxxNTltSlhJOVRNazFzdmFxQ0pLS01xK3NpTFR1SXRFMXFTcTJZV2xzUWF1UlozaFd1cWFJM0N2RHJnS1NVSVNnVWVMRlJwYmFzMG5zaVlQVlJ1dHdyYWNvK3FHUXdHcFhyQnM5WWRic2NMNEdUK0Q5NHVNa3VIcHgvU1lkSkhIWDk1M1UwTitEUFpyaExZczVubS9ldmtDVHdWbG13Nnd5NjA1NjZiamlJZVF2MlRsWkp3QUFlTnBqWUdSZ1lBRGlqWHpjcCtQNWJiNHlNTE13Z01CaklmdXRDUHEvSGpNcjAxMGdsNE9CQ1NRS0FBTjNDUzRBZU5wallHUmdZR2I0endBa09SbFUvaDlnWm1VQWlxQUFGZ0JKVGdNQUFBQUNkZ0FBQXdBQUpBTUpBQ29COVFBMkFBQUFBQUJVQU9JQlNBQUFlTnBqWUdSZ1lHQmhpR0ZnWWdBQlJnWTBBQUFKNWdCbGVOcE5qckZxd3pBUWhqOVR4MUNuMEtrZE9oUk5HWVdOK3dDQkRKbXlaaXdra1FnT1NBcXlZOGdTK2dCOTZGNFVEVDNCOGQxM3Y0U0FtaHNGOXlwNFRmMWVKWlZNRDU0eDV5MXpKVWRscnZsZ3dSTkYrU3ptazJYbWtoZStNODk0NTVTNUV2K1R1ZWFMMzFWdzU4dG9vOW9FWTZNL09OZTN6ZGJHb1E5ZXRicDVpTFgxTnU1R2E5VCtxc3pVRDlQUnFVNDN1bU5Gd0hIbXdvZ2x5czgyWWt4aXowRjJqcDZXaG0xeWcweEJOa3FjRnZzL3NaYUVUNmxkZXMxSWFzOVZ1bUdTekNEOUtHbEZsKzVxdWovZjlEQzdBQUI0Mm1OZ1pzQUxBQUI5QUFRPSkgZm9ybWF0KCd3b2ZmJyk7fQp0ZXh0LmYwIHtmb250LWZhbWlseTpjbXNzMTA7Zm9udC1zaXplOjkuOTYyNjRweH0KdGV4dC5mMSB7Zm9udC1mYW1pbHk6Y21taTEwO2ZvbnQtc2l6ZTo5Ljk2MjY0cHh9CnRleHQuZjIge2ZvbnQtZmFtaWx5OmNtbWk3O2ZvbnQtc2l6ZTo2Ljk3Mzg0OHB4fQp0ZXh0LmYzIHtmb250LWZhbWlseTpjbW1pNTtmb250LXNpemU6NC45ODEzMnB4fQp0ZXh0LmY0IHtmb250LWZhbWlseTpjbXIxMDtmb250LXNpemU6OS45NjI2NHB4fQpdXT4KPC9zdHlsZT4KPGcgaWQ9J3BhZ2UxJz4KPGcgc3Ryb2tlLW1pdGVybGltaXQ9JzEwJyB0cmFuc2Zvcm09J3RyYW5zbGF0ZSgtNjEuNDI0MjQ2LC02MS44MDM1MylzY2FsZSgwLjk5NjI2NCwtMC45OTYyNjQpJz4KPGcgZmlsbD0nIzAwMCcgc3Ryb2tlPScjMDAwJz4KPGcgc3Ryb2tlLXdpZHRoPScwLjQnPgo8ZyBzdHJva2Utd2lkdGg9JzAuNSc+CjxnIHRyYW5zZm9ybT0ndHJhbnNsYXRlKC0zLjgzNTA3LC0yLjUpJz4KPGcgc3Ryb2tlPSdub25lJyB0cmFuc2Zvcm09J3NjYWxlKC0xLjAwMzc1LDEuMDAzNzUpdHJhbnNsYXRlKC02MS40MjQyNDYsLTYxLjgwMzUzKXNjYWxlKC0xLC0xKSc+CjxnIGZpbGw9JyMwMDAnPgo8ZyBzdHJva2U9J25vbmUnPgo8dGV4dCBjbGFzcz0nZjEnIHg9Jy02MS40MjQyNDYnIHk9Jy02MS44MDM1Myc+UjwvdGV4dD4KPC9nPgo8L2c+CjwvZz4KPC9nPgo8ZyB0cmFuc2Zvcm09J3RyYW5zbGF0ZSgtMy43NSwtNTkuNDA1NSknPgo8ZyBzdHJva2U9J25vbmUnIHRyYW5zZm9ybT0nc2NhbGUoLTEuMDAzNzUsMS4wMDM3NSl0cmFuc2xhdGUoLTYxLjQyNDI0NiwtNjEuODAzNTMpc2NhbGUoLTEsLTEpJz4KPGcgZmlsbD0nIzAwMCc+CjxnIHN0cm9rZT0nbm9uZSc+Cjx0ZXh0IGNsYXNzPSdmMScgeD0nLTYxLjQyNDI0NicgeT0nLTYxLjgwMzUzJz5BPC90ZXh0Pgo8L2c+CjwvZz4KPC9nPgo8L2c+CjxwYXRoIGQ9J00wLTYuNDA5NzNWLTQ4LjE2MjQ2JyBmaWxsPSdub25lJy8+CjxnIHRyYW5zZm9ybT0nbWF0cml4KDAuMCwtMS4wLDEuMCwwLjAsMC4wLC00OC40MTI0NiknPgo8ZyBzdHJva2UtZGFzaGFycmF5PSdub25lJyBzdHJva2UtZGFzaG9mZnNldD0nMC4wJz4KIDxnIHN0cm9rZS1saW5lY2FwPSdyb3VuZCc+CiA8ZyBzdHJva2UtbGluZWpvaW49J3JvdW5kJz4KIDxwYXRoIGQ9J00tMi4yIDIuNTgwNjNDLTEuNzk4MDcgMS4wMzIyMy0uOTAyNCAuMzAxMDcgMCAwQy0uOTAyNC0uMzAxMDctMS43OTgwNy0xLjAzMjIzLTIuMi0yLjU4MDYzJyBmaWxsPSdub25lJy8+CiA8L2c+CiA8L2c+CiA8L2c+CjwvZz4KPGcgdHJhbnNmb3JtPSd0cmFuc2xhdGUoLTcuNjAxNTMsLTI5LjI4NjA5KSc+CjxnIHN0cm9rZT0nbm9uZScgdHJhbnNmb3JtPSdzY2FsZSgtMS4wMDM3NSwxLjAwMzc1KXRyYW5zbGF0ZSgtNjEuNDI0MjQ2LC02MS44MDM1MylzY2FsZSgtMSwtMSknPgo8ZyBmaWxsPScjMDAwJz4KPGcgc3Ryb2tlPSdub25lJz4KPHRleHQgY2xhc3M9J2YyJyB4PSctNjEuNDI0MjQ2JyB5PSctNjEuODAzNTMnPmE8L3RleHQ+CjwvZz4KPC9nPgo8L2c+CjwvZz4KPGcgdHJhbnNmb3JtPSd0cmFuc2xhdGUoNTMuMTU1NSwtMi41KSc+CjxnIHN0cm9rZT0nbm9uZScgdHJhbnNmb3JtPSdzY2FsZSgtMS4wMDM3NSwxLjAwMzc1KXRyYW5zbGF0ZSgtNjEuNDI0MjQ2LC02MS44MDM1MylzY2FsZSgtMSwtMSknPgo8ZyBmaWxsPScjMDAwJz4KPGcgc3Ryb2tlPSdub25lJz4KPHRleHQgY2xhc3M9J2YxJyB4PSctNjEuNDI0MjQ2JyB5PSctNjEuODAzNTMnPkE8L3RleHQ+CjwvZz4KPC9nPgo8L2c+CjwvZz4KPGcgdHJhbnNmb3JtPSd0cmFuc2xhdGUoNDIuMDk5OSwtNTkuNDA1NSknPgo8ZyBzdHJva2U9J25vbmUnIHRyYW5zZm9ybT0nc2NhbGUoLTEuMDAzNzUsMS4wMDM3NSl0cmFuc2xhdGUoLTYxLjQyNDI0NiwtNjEuODAzNTMpc2NhbGUoLTEsLTEpJz4KPGcgZmlsbD0nIzAwMCc+CjxnIHN0cm9rZT0nbm9uZSc+Cjx0ZXh0IGNsYXNzPSdmMCcgeD0nLTYxLjQyNDI0NicgeT0nLTYxLjgwMzUzJz5JbWc8L3RleHQ+Cjx0ZXh0IGNsYXNzPSdmNCcgeD0nLTQ1LjYyMjM1OCcgeT0nLTYxLjgwMzUzJz4oPC90ZXh0Pgo8dGV4dCBjbGFzcz0nZjEnIHg9Jy00MS43NDc5ODQnIHk9Jy02MS44MDM1Myc+ZjwvdGV4dD4KPHRleHQgY2xhc3M9J2Y0JyB4PSctMzUuNzk4MDM3JyB5PSctNjEuODAzNTMnPik8L3RleHQ+CjwvZz4KPC9nPgo8L2c+CjwvZz4KPHBhdGggZD0nTTguMzkwNjEgMEg0OC4wOTk5NicgZmlsbD0nbm9uZScvPgo8ZyB0cmFuc2Zvcm09J3RyYW5zbGF0ZSg0OC4zNDk5NiwwLjApJz4KPGcgc3Ryb2tlLWRhc2hhcnJheT0nbm9uZScgc3Ryb2tlLWRhc2hvZmZzZXQ9JzAuMCc+CiA8ZyBzdHJva2UtbGluZWNhcD0ncm91bmQnPgogPGcgc3Ryb2tlLWxpbmVqb2luPSdyb3VuZCc+CiA8cGF0aCBkPSdNLTIuMiAyLjU4MDYzQy0xLjc5ODA3IDEuMDMyMjMtLjkwMjQgLjMwMTA3IDAgMEMtLjkwMjQtLjMwMTA3LTEuNzk4MDctMS4wMzIyMy0yLjItMi41ODA2MycgZmlsbD0nbm9uZScvPgogPC9nPgogPC9nPgogPC9nPgo8L2c+CjxnIHRyYW5zZm9ybT0ndHJhbnNsYXRlKDI2LjczNjk1LDIuODExODEpJz4KPGcgc3Ryb2tlPSdub25lJyB0cmFuc2Zvcm09J3NjYWxlKC0xLjAwMzc1LDEuMDAzNzUpdHJhbnNsYXRlKC02MS40MjQyNDYsLTYxLjgwMzUzKXNjYWxlKC0xLC0xKSc+CjxnIGZpbGw9JyMwMDAnPgo8ZyBzdHJva2U9J25vbmUnPgo8dGV4dCBjbGFzcz0nZjInIHg9Jy02MS40MjQyNDYnIHk9Jy02MS44MDM1Myc+YjwvdGV4dD4KPC9nPgo8L2c+CjwvZz4KPC9nPgo8cGF0aCBkPSdNNTYuOTA1NS02LjQwOTczVi00NC4yMjM2NScgZmlsbD0nbm9uZScvPgo8ZyB0cmFuc2Zvcm09J21hdHJpeCgwLjAsLTEuMCwxLjAsMC4wLDU2LjkwNTUsLTQ0LjA5ODY1KSc+CjxnIHN0cm9rZS1kYXNoYXJyYXk9J25vbmUnIHN0cm9rZS1kYXNob2Zmc2V0PScwLjAnPgogPGcgc3Ryb2tlLWxpbmVqb2luPSdtaXRlcic+CiA8cGF0aCBkPSdNMy4zOTcxMyAwTC4yNSAxLjg3NDk0VjBWLTEuODc0OTRaJyBmaWxsPSdub25lJy8+CiA8L2c+CiA8L2c+CjwvZz4KPGcgdHJhbnNmb3JtPSd0cmFuc2xhdGUoNjAuMTY5MzksLTI4Ljk1Mjc0KSc+CjxnIHN0cm9rZT0nbm9uZScgdHJhbnNmb3JtPSdzY2FsZSgtMS4wMDM3NSwxLjAwMzc1KXRyYW5zbGF0ZSgtNjEuNDI0MjQ2LC02MS44MDM1MylzY2FsZSgtMSwtMSknPgo8ZyBmaWxsPScjMDAwJz4KPGcgc3Ryb2tlPSdub25lJz4KPHRleHQgY2xhc3M9J2YyJyB4PSctNjEuNDI0MjQ2JyB5PSctNjEuODAzNTMnPmY8L3RleHQ+Cjx0ZXh0IGNsYXNzPSdmMycgeD0nLTU3LjUzOTQ1OScgeT0nLTYwLjgwNzI2Nic+YzwvdGV4dD4KPC9nPgo8L2c+CjwvZz4KPC9nPgo8cGF0aCBkPSdNOC4zMDU1NC01Ni45MDU1SDMzLjc3MjIzJyBmaWxsPSdub25lJy8+CjxnIHRyYW5zZm9ybT0ndHJhbnNsYXRlKDMzLjY0NzIzLC01Ni45MDU1KSc+CjxnIHN0cm9rZS1kYXNoYXJyYXk9J25vbmUnIHN0cm9rZS1kYXNob2Zmc2V0PScwLjAnPgogPGcgc3Ryb2tlLWxpbmVqb2luPSdtaXRlcic+CiA8cGF0aCBkPSdNMy4zOTcxMyAwTC4yNSAxLjg3NDk0VjBWLTEuODc0OTRaJyBmaWxsPSdub25lJy8+CiA8L2c+CiA8L2c+CjwvZz4KPGcgdHJhbnNmb3JtPSd0cmFuc2xhdGUoMTkuMTAxNywtNjQuNTc4NDEpJz4KPGcgc3Ryb2tlPSdub25lJyB0cmFuc2Zvcm09J3NjYWxlKC0xLjAwMzc1LDEuMDAzNzUpdHJhbnNsYXRlKC02MS40MjQyNDYsLTYxLjgwMzUzKXNjYWxlKC0xLC0xKSc+CjxnIGZpbGw9JyMwMDAnPgo8ZyBzdHJva2U9J25vbmUnPgo8dGV4dCBjbGFzcz0nZjInIHg9Jy02MS40MjQyNDYnIHk9Jy02MS44MDM1Myc+ZjwvdGV4dD4KPHRleHQgY2xhc3M9J2YzJyB4PSctNTcuNTM5NDU5JyB5PSctNjAuODA3MjY2Jz5jPC90ZXh0Pgo8L2c+CjwvZz4KPC9nPgo8L2c+CjwvZz4KPC9nPgo8L2c+CjwvZz4KPC9nPgo8L3N2Zz4=" /></fr:resource-content><fr:resource-source
-type="latex"
-part="preamble"><![CDATA[
-        
-  \RequirePackage {tikz}
-  \RequirePackage {amsmath}
-  \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
-
-  \definecolor {catccolor}{RGB}{255,244,138}
-  \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
-  \tikzstyle {catc}=[catccolor!60]
-  \tikzstyle {catd}=[orange!40]
-  \tikzstyle {cate}=[red!40]
-  \tikzstyle {catf}=[blue!10]
-  \tikzstyle {catg}=[green!25]
-
-
-  \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
-  \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
-
-  \NewDocumentCommand \CreateRect {D<>{} m m}{
-    \path 
-      coordinate (#1nw)
-      ++(#2,-#3) coordinate (#1se)
-      coordinate (#1sw) at (#1se -| #1nw)
-      coordinate (#1ne) at (#1nw -| #1se)
-    ;
-
-    \path [spath/save = #1north] (#1nw) to (#1ne);
-    \path [spath/save = #1west] (#1nw) to (#1sw);
-    \path [spath/save = #1east] (#1ne) to (#1se);
-    \path [spath/save = #1south] (#1sw) to (#1se);
-  }
-
-        
-   % appears to be necessary
-  \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd}
-  \usetikzlibrary{matrix,arrows}
-  \usetikzlibrary{backgrounds,fit,positioning,calc,shapes}
-  \usetikzlibrary{decorations.pathreplacing}
-  \usetikzlibrary{decorations.pathmorphing}
-  \usetikzlibrary{decorations.markings}
-
-  % basic settings
-  \tikzset{
-    diagram/.style = {
-      on grid,
-      node distance=2cm,
-      commutative diagrams/every diagram,
-      line width = .5pt,
-      every node/.append style = {
-        commutative diagrams/every cell,
-      },
-    },
-    morphism/.style = {
-      auto=left,
-      node font=\scriptsize,
-    },
-    phantom/.style = {
-      commutative diagrams/phantom,
-      node font=\scriptsize,
-      sloped,
-    },
-    between/.style args = {#1 and #2}{
-      at = ($(#1)!0.5!(#2)$)
-    },
-    desc/.style = {anchor=center,fill=white,inner sep=3pt},
-    offset/.style args = {#1} {commutative diagrams/shift right={#1}},
-    cross over/.style = {
-      commutative diagrams/crossing over
-    },
-    adjoint/.style = {
-      phantom,
-      every to/.append style = {
-        edge node = {node [sloped,allow upside down,auto=false] {$\dashv$}}
-      }
-    },
-  }
-
-  % pullback and pushout
-  \tikzset{
-    pullback/.style = {
-      append after command = {
-        \pgfextra{
-          \draw ($(\tikzlastnode) + (.2cm,-.5cm)$) -- ++(0.3cm,0) -- ++(0,0.3cm);
-        }
-      }
-    },
-    pushout/.style = {
-      append after command={
-        \pgfextra{
-          \draw ($(\tikzlastnode) + (-.2cm,.5cm)$) -- ++(-0.3cm,0) -- ++(0,-0.3cm);
-        }
-      }
-    },
-  }
-
-  % arrow styles
-  \tikzset{
-    exists/.style = {
-      densely dashed
-    },
-    embedding/.style = {
-      {right hook}->
-    },
-    into/.style = {
-      {right hook}->
-    },
-    cover/.style = {
-      -{Triangle[open]}
-    },
-    twocell/.style = {
-      double, -{implies}
-    }
-  }
-
-  \newlength{\dontworryaboutit} % no idea what it does
-
-  \tikzset{
-    inline diagram/.style = {
-      commutative diagrams/every diagram,
-      commutative diagrams/cramped,
-      line width = .5pt,
-      every node/.append style = {
-        commutative diagrams/every cell,
-        anchor = base,
-        inner sep = 0pt
-      },
-      every path/.append style = {
-        outer xsep = 2pt
-      }
-    }
-  }
-  
-  % macros for drawing commutative squares
-  % adapted from Jon Sterling's macros (https://git.sr.ht/~jonsterling/article-template/tree/main/item/local-tikz.sty)
-  \tikzset{
-    square/nw/.style = {},
-    square/ne/.style = {},
-    square/se/.style = {},
-    square/sw/.style = {},
-    square/north/.style = {->},
-    square/south/.style = {->},
-    square/west/.style = {->},
-    square/east/.style = {->},
-    square/north/node/.style = {above},
-    square/south/node/.style = {below},
-    square/west/node/.style = {left},
-    square/east/node/.style = {right},
-  }
-
-  \ExplSyntaxOn
-  \keys_define:nn { jon-tikz/diagram } {
-    nw .tl_set:N = \l_jon_tikz_diagram_nw,
-    sw .tl_set:N = \l_jon_tikz_diagram_sw,
-    ne .tl_set:N = \l_jon_tikz_diagram_ne,
-    se .tl_set:N = \l_jon_tikz_diagram_se,
-
-    width .tl_set:N = \l_jon_tikz_diagram_width,
-    height .tl_set:N = \l_jon_tikz_diagram_height,
-
-    north .tl_set:N = \l_jon_tikz_diagram_north,
-    south .tl_set:N = \l_jon_tikz_diagram_south,
-    west .tl_set:N = \l_jon_tikz_diagram_west,
-    east .tl_set:N = \l_jon_tikz_diagram_east,
-
-    nw/style .code:n = {\tikzset{square/nw/.style = {#1}}},
-    sw/style .code:n = {\tikzset{square/sw/.style = {#1}}},
-    ne/style .code:n = {\tikzset{square/ne/.style = {#1}}},
-    se/style .code:n = {\tikzset{square/se/.style = {#1}}},
-
-    north/style .code:n = {\tikzset{square/north/.style = {#1}}},
-    north/node/style .code:n = {\tikzset{square/north/node/.style = {#1}}},
-    south/style .code:n = {\tikzset{square/south/.style = {#1}}},
-    south/node/style .code:n = {\tikzset{square/south/node/.style = {#1}}},
-    west/style .code:n = {\tikzset{square/west/.style = {#1}}},
-    west/node/style .code:n = {\tikzset{square/west/node/.style = {#1}}},
-    east/style .code:n = {\tikzset{square/east/.style = {#1}}},
-    east/node/style .code:n = {\tikzset{square/east/node/.style = {#1}}},
-
-    draft .meta:n = {
-      nw = {nw},
-      sw = {sw},
-      se = {se},
-      ne = {ne},
-      north = {north},
-      south = {south},
-      west = {west},
-      east = {east},
-    }
-  }
-
-  \tl_set:Nn \l_jon_tikz_diagram_width { 2cm }
-  \tl_set:Nn \l_jon_tikz_diagram_height { 2cm }
-
-
-  \cs_new:Nn \__jon_tikz_render_square:nn {
-    \group_begin:
-    \keys_set:nn {jon-tikz/diagram} {#2} {
-      \node (#1nw) [square/nw] {$\l_jon_tikz_diagram_nw$};
-      \node (#1sw) [below = \l_jon_tikz_diagram_height~of~#1nw,square/sw] {$\l_jon_tikz_diagram_sw$};
-      \draw[morphism,square/west] (#1nw) to node [square/west/node] {$\l_jon_tikz_diagram_west$} (#1sw);
-
-      \node (#1ne) [right = \l_jon_tikz_diagram_width~of~#1nw,square/ne] {$\l_jon_tikz_diagram_ne$};
-      \node (#1se) [below = \l_jon_tikz_diagram_height~of~#1ne,square/se] {$\l_jon_tikz_diagram_se$};
-      \draw[morphism,square/north] (#1nw) to node [square/north/node] {$\l_jon_tikz_diagram_north$} (#1ne);
-      \draw[morphism,square/east] (#1ne) to node [square/east/node] {$\l_jon_tikz_diagram_east$} (#1se);
-      \draw[morphism,square/south] (#1sw) to node [square/south/node] {$\l_jon_tikz_diagram_south$} (#1se);
-    }
-    \group_end:
-  }
-
-  % the optional argument allows one to specify a prefix to positions
-  \NewDocumentCommand\SpliceDiagramSquare{O{}m}{
-    \__jon_tikz_render_square:nn {#1} {#2}
-  }
-
-  \NewDocumentCommand\DiagramSquare{O{}O{}m}{
-    \begin{tikzpicture}[diagram,#2,baseline=(#1sw.base)]
-      \__jon_tikz_render_square:nn {#1} {#3}
-    \end{tikzpicture}
-  }
-  \ExplSyntaxOff
-
-      ]]></fr:resource-source><fr:resource-source
-type="latex"
-part="body"><![CDATA[
-    \DiagramSquare {
-      nw = R,
-      ne = A,
-      sw = A,
-      se = {\mathsf {Img}(f)},
-      north = b,
-      west = a,
-      south = {f_{c}},
-      south/style = {cover},
-      east = {f_{c}},
-      east/style = {cover},
-    }
-  ]]></fr:resource-source></fr:resource></fr:figure>
-    
-  
-  <fr:p>First, the diagram commutes since <fr:tex
-display="inline"><![CDATA[fa = f_{m}f_{c}a = f_{m}f_{c}b = fb]]></fr:tex> by definition, and <fr:tex
-display="inline"><![CDATA[f_{m}]]></fr:tex> is monic.
-    Let <fr:tex
-display="inline"><![CDATA[h,k\colon C\rightrightarrows A]]></fr:tex> be a pair of morphisms such that <fr:tex
-display="inline"><![CDATA[f_{c}h = f_{c}k]]></fr:tex>.
-    Then <fr:tex
-display="inline"><![CDATA[f_{m}f_{c}h = fh = fk = f_{m}f_{c}k]]></fr:tex>.
-    Thus, the unique factor is given by the following pullback.</fr:p>
-  
-    
-      
-      <fr:figure><fr:resource
-hash="755fa0782efc7b67ffe81caec50be45b"><fr:resource-content><fr:img
-src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4KPCEtLSBUaGlzIGZpbGUgd2FzIGdlbmVyYXRlZCBieSBkdmlzdmdtIDMuMC4zIC0tPgo8c3ZnIHZlcnNpb249JzEuMScgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJyB4bWxuczp4bGluaz0naHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluaycgd2lkdGg9JzE3My44NjE2NzlwdCcgaGVpZ2h0PScxNzQuNDQ0ODM3cHQnIHZpZXdCb3g9Jy03MiAtNzIgMTE1LjkwNzc4NiAxMTYuMjk2NTU4Jz4KPHN0eWxlIHR5cGU9J3RleHQvY3NzJz4KPCFbQ0RBVEFbQGZvbnQtZmFjZXtmb250LWZhbWlseTpjbW1pNztzcmM6dXJsKGRhdGE6YXBwbGljYXRpb24veC1mb250LXdvZmY7YmFzZTY0LGQwOUdSZ0FCQUFBQUFBWWNBQW9BQUFBQUI1Z0FBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFCUFV5OHlBQUFBOUFBQUFFTUFBQUJnaFh4MHZtTnRZWEFBQUFFNEFBQUFQQUFBQUV3QTlBRTZaMng1WmdBQUFYUUFBQU03QUFBRVJDYy9SNXhvWldGa0FBQUVzQUFBQUM4QUFBQTJLQUhDVVdob1pXRUFBQVRnQUFBQUlBQUFBQ1FGdkFHZGFHMTBlQUFBQlFBQUFBQVlBQUFBR0E2V0FXWnNiMk5oQUFBRkdBQUFBQTRBQUFBT0E3UUNYbTFoZUhBQUFBVW9BQUFBR0FBQUFDQUFDUUJZYm1GdFpRQUFCVUFBQUFETkFBQUJPUE5mS3FOd2IzTjBBQUFHRUFBQUFBd0FBQUFnQUFNQUFIamFZMkJteW1PY3dNREt3TUEwaStuc1B4R0dmaEROK0lieERZTXhJeWNERUxBeHdBRWpBeEpJS1M1TEIwb21NbVF6TS93SDhwa2gwa2hxL2dPRkFkV2dEU29BZU5wallHQmdZbUJnWUFaaUVTREpDS1paR0N5QU5CY0RCMUNPaVNHSklZMGhneUg3LzMrZ1dDS00vWC9CLzduLzUveWZCZFlCQlFCYnlRNGxlTnB0azA5ejIxUVV4WFhla3lWWnNmVnNTM3BLYTBlMkpmbEphV0k1cVIwNWNZMWR4MGxtNmlRMGFZR1FEbjlXd01CWHlBekRqZzNEc0dEQmxoMUxOaXpZZDZZN1p2Z0V6TUJuYUhja1BDVnRHWWJxN3Q3VjR2ek9PVmNoeXVUcU9YbUFwMHBYdWE4b21PQXU5eGl4NERyY20yQ0tyQW51T1pvdVI4UVc5QlJ4TnN6SEJ4MW1zWWlGcHN0bkg4TUpoaGwrTHF6VUhkUmNyaGVaM1FvTlF6Vk5EWGExbm5tN1ZmL0JuZmtaMUNtekYwODZnODArSExmdkhZUjJBS3o3d2NBUStKcmJsZXJKOFFkdWF2RUd5SDVjMTBDSVdaaTEraFQxcnA4QUh4NTljbXJYRGlpQ3l6OStLM1VpbFNUM3dxKzZ3eFNrYVRRVStSRmxmdlVDZjVKblNxQmtrb25teXJpbk1XaTVmREdWRHlJTVJEeEJYeTcwZkQvQlZvb3drQ2p5TDhrTzY4RGJUYlkvb25UV1hwelAzZ0cwYm1wcWhFWEZLc0QwdmZVSXcyVGZYbDdCbWorZVdJYnFHNnZrcDh1L3VJUjVmUDc1U2JoSGNmNndFdno2eXgydmJLb21NM1NWbHY1K2duRzhjUkVPZW51TVdSZkpyWFFrQlNxSFZ6M3lCZm45T2dHYXk1U08zdWpqSHRkMDNwUzVUR21vaWN6clg0dnR5NVFzaE5MOWJDaDZzQWhEUCtOYWpCOUhGYlZ5dXpqYlRFWkE1QW9LMW1TTVJXMjZrcklqbjlqc2xMa1czdzFYeDBESTViN2lNMWFyK2FaeCsrTjhqZTh2bnk2cTl3Zk9uSXJRYjVGSWk1ZUtCT3FoKzhQek14cm9PRHV2eDZJVC9idkNMZEg5VmcwTTVONURPYjU2UVM2azk0Y3ZuZmVKcnQwZ3VacDNWemFuNy9uSTY1UVREbVRCOGpaZFYwdGpxbVJLc1RXMC94c1FabTgzSHUwY0RFb2dEckZMWlpNMm11TWFxY3BtZVV2VmNKSnNnNVl0emduaHlmaGttUlhzVnRFd3ZXS3RXdmhPelNPckFKYU1yQU9aMExOMkg0WGVvSnlPdFh2MWRyc2FrT2xiTlVLOERZK25hbSsxdE5TS2R1ZWI3aVloODRRdkxiNFVkYllFdTh6SlhwbTl6dkVsNTc3a2ZDL256SWI1NGJpdkk3bnBrUzdUaytNd2VuMU1lVzc1d3l0NEllOUg5cEhCUWlEZUFQMXA4LzM0OUYyQktJL0phMW5PMnNOWWVNdXRBV01iS3FFRk1FZXNtVlEzaXhwUU1aM0dUanduS0ZCZ3NSMHkxUk52d3YvTU91cHNyVXR3RWxtUllRRWowWGFraEVLUjc1akZjdDJXWlZPUEkyYm1aNWZXRzZuYXo2eWFwU1Z4NFp0UmJmbC9SaWpLUHdkRWp1QUFlTnBqWUdSZ1lBRGl4OEhpaWZIOE5sOFptRmtZUU9DeGtQMHFCUDFmbitrWTAwVWdsNE9CQ1NRS0FCQW1DZVlBZU5wallHUmdZR2I0ejhEQXdIU013ZTcvQmFacUJxQUlDbUFEQUdmL0JGMEN4Z0FBQW5vQVBnSUNBRU1DT2dCTEFxd0FUUUp1QUUwQUFBQUFBR29Bd2dFb0Fad0NJZ0FBZU5wallHUmdZR0JqQ0dkZ1lnQUJSZ1kwQUFBSm53QmllTnBOakQxdndqQVVSVS9VQktsaFlFRWRHRm9QbmEyZ0lMRjFZV0JpWmVvQzJFVVpiQ01uUkVLcU92WjM5MkU4OUExWDUzN1lRTTBQQmZjcm1DVzlYMGtsN3NFVlUrYVpKK0xlTXRjc2VPZUpvbnlXNUpXUHpLVTBuNWtyWHZqS1BKSDhPM1BOaXQ5TmNKZnJZS1BhQldPalB6blhyZmMyOWwzd2FxbWI1TGZXMjNnWXJGSEhtekpqMTQ5bnAxcmQ2SllOQWNlRkt3T1dpR0luaVVuc09Vbm42Rml6VDBrdkhDUlhMTkUwLy9xdDlENXREdWtuSTVzak4xSERLSXRlOUN4YlJadGVhdG8veTZFdjl3QUFBSGphWTJCbXdBc0FBSDBBQkE9PSkgZm9ybWF0KCd3b2ZmJyk7fQpAZm9udC1mYWNle2ZvbnQtZmFtaWx5OmNtbWkxMDtzcmM6dXJsKGRhdGE6YXBwbGljYXRpb24veC1mb250LXdvZmY7YmFzZTY0LGQwOUdSZ0FCQUFBQUFBV0VBQW9BQUFBQUJud0FBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFCUFV5OHlBQUFBOUFBQUFFUUFBQUJnaFZ4MUYyTnRZWEFBQUFFNEFBQUFNZ0FBQUR3QWRRQ1JaMng1WmdBQUFXd0FBQUt3QUFBRE9GWko2SFJvWldGa0FBQUVIQUFBQUM4QUFBQTJLRWJERldob1pXRUFBQVJNQUFBQUhnQUFBQ1FHTWdIZmFHMTBlQUFBQkd3QUFBQVVBQUFBRkE1aUFLeHNiMk5oQUFBRWdBQUFBQXdBQUFBTUFXSUNURzFoZUhBQUFBU01BQUFBR0FBQUFDQUFDUUJkYm1GdFpRQUFCS1FBQUFEU0FBQUJQcGtSZGNWd2IzTjBBQUFGZUFBQUFBd0FBQUFnQUFNQUFIamFZMkJtZXNBNGdZR1ZnWUZwRnRQWmZ5SU0vU0NhOFEzakd3WmpSazRHSUdCamdBTkdCaVNRVWx5V0RwUjBaQWhpWnZnUDVETkRwSkhVL0FjS0F3RDRWUTFqZU5wallHQmdZbUJnWUFaaUVTREpDS1paR0RTQU5CdVFaZ1RLT2pNRS9mOFA1RHVDNlA4SC9tOENxd0lDQUpJOUNRQUFBSGphVlpMTGF4TkJITWZuOTV2ZDJTYlpSOHdtdXcxTlZ0TTh0bzBrS2QzdGJsTWgxY2FrdGFVUEcxcUtCb3FDRmdRRjdVTXBIcUxVZzJEeElCVEVneGR2L2dGZVBIbnFINkJIRCtKQnhKUGdUWm80V3lqVW1jdk1qeG40ZkI4RVNhN1h3Mi80bFZUSUtDRStlUDZvWWVweHcvRU1WZ0hKTHRpdVp4cWVYNEdNeE9LRzZaa3E4SGt3ZG1yZ08vUUQzR0p4aFVITktDVkFGcmM2ZlNJb0VkMmxJYW5iVzFCU3VrSkJFVGZXWkpCRGc3WFh2ekk3dUJxRmtIYlVNVFNhbG9CU3dENU5BcEROMjQyOWVDNEtxS2tzR0ljMUJ0bERXQ1o4VVhLK2QwUVpmaVFXS1pKeFRxcTdXWnR4dG93RkNSVWtDMHltQVpNeTdKaFhEK0M4Z3AwdE1JbWVuQ2wvNEx6Ykg3RFRtZ1pyN1p1MDA1cHJBVTVINTdlN3IxS3FPbUc5UFZqZlFpalg5ODdxNHIwWDdSM0VrWmxQVFFGQVhjTHFHYVFwQ2ZEcXhPeUdGbDZvemsycE5TRlFBRG8wNklObTdqS0Nsang2VHg4dTVKZG85M3VNaFFrQjR2UiswZ2grRHBpQnFwRGxqazZDVzdBNWN3QnNXdUJ6ZXdQQ3MyQnhBWHhlQnR2emcyMllodWx6T1RSOGtiSndTQVNFMWNYR3M1SG1BRE5BZUh4bGFOMXpTMHdJU1NJdE5ZZnYxeCs5b2JUbHptN3V0WWFIMkl3S01oNTIvNnFjV2RJSzErNEExTWZYMXZ2YnBaMGJDSVBGY3JzL0FvRHkzYW04QS9TZzgzeHIxbDJtUWk2dkxxcEl1ZWRJaXIwZlZPU2VSOG4xZ0Q3d3NRWmpoUW9VTkZCQjU1N0h1WVFFTXh3andPVzB3VjFpWENNdnlDVHd4OGUrODNTOCtIOTFPcFdleVQ5QXA3N1pXTkd0QWNGTlZNZHFXdmhsc2tFRlNZQll2Kzd4V2pFUkREVTlJUmYxMkxBZ1JsZ0lTNDNkT29WOFZlbDcrb1EzTGdoUDNFOFYwbW9Vc2h1N0tEU25jYnY3Qi9MR3VaVlVQU2JKQ0JqcmZwSDhDMlp5WWpDWnpvRHR5eFF4cEJSalF5S0d4WWh4S1pvczY3YVNybUgzZDB4aHd1bHU2dFpKL0xCU24zZWRmMXVTZ1pwNDJtTmdaR0JnQUdLN3RSNlQ0L2x0dmpJd3N6Q0F3R01oKzFVSSt2OXpabTZtdTBBdUJ3TVRTQlFBRlA4S0NBQjQybU5nWkdCZ1p2alBBQ1E1R1ZUK1gyRG1aZ0NLb0FCV0FFc1JBeGNBQUFKMkFBQURBQUFrQXdnQUt3TGJBRE1EQ1FBcUFBQUFBQUJVQUxBQkRnR2NlTnBqWUdSZ1lHQmxpR0ZnWmdBQlJnWTBBQUFLR0FCbmVOcE5qckZxd3pBUWhqOVR4MUNuMEtrZE9oUk5HWVdOK3dDQkRKbXlaaXdra1FnT1NBcXlZOGdTK2dCOTZGNFVEVDNCOGQxM3Y0U0FtaHNGOXlwNFRmMWVKWlZNRDU0eDV5MXpKVWRscnZsZ3dSTkYrU3ptazJYbWtoZStNODk0NTVTNUV2K1R1ZWFMMzFWdzU4dG9vOW9FWTZNL09OZTN6ZGJHb1E5ZXRicDVpTFgxTnU1R2E5VCtxc3pVRDlQUnFVNDN1bU5Gd0hIbXdvZ2x5czgyWWt4aXowRjJqcDZXaG0xeWcweEJOa3FjRnZzL3NaYUVUNmxkZXMxSWFzOVZ1bUdTekNEOUtHbEZsKzVxdWovZjlEQzdBQUI0Mm1OZ1pzQUxBQUI5QUFRPSkgZm9ybWF0KCd3b2ZmJyk7fQp0ZXh0LmYwIHtmb250LWZhbWlseTpjbW1pMTA7Zm9udC1zaXplOjkuOTYyNjRweH0KdGV4dC5mMSB7Zm9udC1mYW1pbHk6Y21taTc7Zm9udC1zaXplOjYuOTczODQ4cHh9Cl1dPgo8L3N0eWxlPgo8ZyBpZD0ncGFnZTEnPgo8ZyBzdHJva2UtbWl0ZXJsaW1pdD0nMTAnIHRyYW5zZm9ybT0ndHJhbnNsYXRlKC0yMy43MDYwMjQsLTIzLjk0ODg1OClzY2FsZSgwLjk5NjI2NCwtMC45OTYyNjQpJz4KPGcgZmlsbD0nIzAwMCcgc3Ryb2tlPScjMDAwJz4KPGcgc3Ryb2tlLXdpZHRoPScwLjQnPgo8ZyBzdHJva2Utd2lkdGg9JzAuNSc+CjxwYXRoIGQ9J001LjY5MDQ2LTE0LjIyNjM2SDE0LjIyNjM2Vi01LjY5MDQ2JyBmaWxsPSdub25lJy8+CjxnIHRyYW5zZm9ybT0ndHJhbnNsYXRlKC0zLjgzNTA3LC0yLjUpJz4KPGcgc3Ryb2tlPSdub25lJyB0cmFuc2Zvcm09J3NjYWxlKC0xLjAwMzc1LDEuMDAzNzUpdHJhbnNsYXRlKC0yMy43MDYwMjQsLTIzLjk0ODg1OClzY2FsZSgtMSwtMSknPgo8ZyBmaWxsPScjMDAwJz4KPGcgc3Ryb2tlPSdub25lJz4KPHRleHQgY2xhc3M9J2YwJyB4PSctMjMuNzA2MDI0JyB5PSctMjMuOTQ4ODU4Jz5SPC90ZXh0Pgo8L2c+CjwvZz4KPC9nPgo8L2c+CjxnIHRyYW5zZm9ybT0ndHJhbnNsYXRlKC0zLjc1LC01OS40MDU1KSc+CjxnIHN0cm9rZT0nbm9uZScgdHJhbnNmb3JtPSdzY2FsZSgtMS4wMDM3NSwxLjAwMzc1KXRyYW5zbGF0ZSgtMjMuNzA2MDI0LC0yMy45NDg4NTgpc2NhbGUoLTEsLTEpJz4KPGcgZmlsbD0nIzAwMCc+CjxnIHN0cm9rZT0nbm9uZSc+Cjx0ZXh0IGNsYXNzPSdmMCcgeD0nLTIzLjcwNjAyNCcgeT0nLTIzLjk0ODg1OCc+QTwvdGV4dD4KPC9nPgo8L2c+CjwvZz4KPC9nPgo8cGF0aCBkPSdNMC02LjQwOTczVi00OC4xNjI0NicgZmlsbD0nbm9uZScvPgo8ZyB0cmFuc2Zvcm09J21hdHJpeCgwLjAsLTEuMCwxLjAsMC4wLDAuMCwtNDguNDEyNDYpJz4KPGcgc3Ryb2tlLWRhc2hhcnJheT0nbm9uZScgc3Ryb2tlLWRhc2hvZmZzZXQ9JzAuMCc+CiA8ZyBzdHJva2UtbGluZWNhcD0ncm91bmQnPgogPGcgc3Ryb2tlLWxpbmVqb2luPSdyb3VuZCc+CiA8cGF0aCBkPSdNLTIuMiAyLjU4MDYzQy0xLjc5ODA3IDEuMDMyMjMtLjkwMjQgLjMwMTA3IDAgMEMtLjkwMjQtLjMwMTA3LTEuNzk4MDctMS4wMzIyMy0yLjItMi41ODA2MycgZmlsbD0nbm9uZScvPgogPC9nPgogPC9nPgogPC9nPgo8L2c+CjxnIHRyYW5zZm9ybT0ndHJhbnNsYXRlKC03LjYwMTUzLC0yOS4yODYwOSknPgo8ZyBzdHJva2U9J25vbmUnIHRyYW5zZm9ybT0nc2NhbGUoLTEuMDAzNzUsMS4wMDM3NSl0cmFuc2xhdGUoLTIzLjcwNjAyNCwtMjMuOTQ4ODU4KXNjYWxlKC0xLC0xKSc+CjxnIGZpbGw9JyMwMDAnPgo8ZyBzdHJva2U9J25vbmUnPgo8dGV4dCBjbGFzcz0nZjEnIHg9Jy0yMy43MDYwMjQnIHk9Jy0yMy45NDg4NTgnPmE8L3RleHQ+CjwvZz4KPC9nPgo8L2c+CjwvZz4KPGcgdHJhbnNmb3JtPSd0cmFuc2xhdGUoNTMuMTU1NSwtMi41KSc+CjxnIHN0cm9rZT0nbm9uZScgdHJhbnNmb3JtPSdzY2FsZSgtMS4wMDM3NSwxLjAwMzc1KXRyYW5zbGF0ZSgtMjMuNzA2MDI0LC0yMy45NDg4NTgpc2NhbGUoLTEsLTEpJz4KPGcgZmlsbD0nIzAwMCc+CjxnIHN0cm9rZT0nbm9uZSc+Cjx0ZXh0IGNsYXNzPSdmMCcgeD0nLTIzLjcwNjAyNCcgeT0nLTIzLjk0ODg1OCc+QTwvdGV4dD4KPC9nPgo8L2c+CjwvZz4KPC9nPgo8ZyB0cmFuc2Zvcm09J3RyYW5zbGF0ZSg1Mi44NjIxLC01OS40MDU1KSc+CjxnIHN0cm9rZT0nbm9uZScgdHJhbnNmb3JtPSdzY2FsZSgtMS4wMDM3NSwxLjAwMzc1KXRyYW5zbGF0ZSgtMjMuNzA2MDI0LC0yMy45NDg4NTgpc2NhbGUoLTEsLTEpJz4KPGcgZmlsbD0nIzAwMCc+CjxnIHN0cm9rZT0nbm9uZSc+Cjx0ZXh0IGNsYXNzPSdmMCcgeD0nLTIzLjcwNjAyNCcgeT0nLTIzLjk0ODg1OCc+QjwvdGV4dD4KPC9nPgo8L2c+CjwvZz4KPC9nPgo8cGF0aCBkPSdNOC4zOTA2MSAwSDQ4LjA5OTk2JyBmaWxsPSdub25lJy8+CjxnIHRyYW5zZm9ybT0ndHJhbnNsYXRlKDQ4LjM0OTk2LDAuMCknPgo8ZyBzdHJva2UtZGFzaGFycmF5PSdub25lJyBzdHJva2UtZGFzaG9mZnNldD0nMC4wJz4KIDxnIHN0cm9rZS1saW5lY2FwPSdyb3VuZCc+CiA8ZyBzdHJva2UtbGluZWpvaW49J3JvdW5kJz4KIDxwYXRoIGQ9J00tMi4yIDIuNTgwNjNDLTEuNzk4MDcgMS4wMzIyMy0uOTAyNCAuMzAxMDcgMCAwQy0uOTAyNC0uMzAxMDctMS43OTgwNy0xLjAzMjIzLTIuMi0yLjU4MDYzJyBmaWxsPSdub25lJy8+CiA8L2c+CiA8L2c+CiA8L2c+CjwvZz4KPGcgdHJhbnNmb3JtPSd0cmFuc2xhdGUoMjYuNzM2OTUsMi44MTE4MSknPgo8ZyBzdHJva2U9J25vbmUnIHRyYW5zZm9ybT0nc2NhbGUoLTEuMDAzNzUsMS4wMDM3NSl0cmFuc2xhdGUoLTIzLjcwNjAyNCwtMjMuOTQ4ODU4KXNjYWxlKC0xLC0xKSc+CjxnIGZpbGw9JyMwMDAnPgo8ZyBzdHJva2U9J25vbmUnPgo8dGV4dCBjbGFzcz0nZjEnIHg9Jy0yMy43MDYwMjQnIHk9Jy0yMy45NDg4NTgnPmI8L3RleHQ+CjwvZz4KPC9nPgo8L2c+CjwvZz4KPHBhdGggZD0nTTU2LjkwNTUtNi40MDk3M1YtNDguMTYyNDYnIGZpbGw9J25vbmUnLz4KPGcgdHJhbnNmb3JtPSdtYXRyaXgoMC4wLC0xLjAsMS4wLDAuMCw1Ni45MDU1LC00OC40MTI0NiknPgo8ZyBzdHJva2UtZGFzaGFycmF5PSdub25lJyBzdHJva2UtZGFzaG9mZnNldD0nMC4wJz4KIDxnIHN0cm9rZS1saW5lY2FwPSdyb3VuZCc+CiA8ZyBzdHJva2UtbGluZWpvaW49J3JvdW5kJz4KIDxwYXRoIGQ9J00tMi4yIDIuNTgwNjNDLTEuNzk4MDcgMS4wMzIyMy0uOTAyNCAuMzAxMDcgMCAwQy0uOTAyNC0uMzAxMDctMS43OTgwNy0xLjAzMjIzLTIuMi0yLjU4MDYzJyBmaWxsPSdub25lJy8+CiA8L2c+CiA8L2c+CiA8L2c+CjwvZz4KPGcgdHJhbnNmb3JtPSd0cmFuc2xhdGUoNjAuMTY5MzksLTI5LjI4NjA5KSc+CjxnIHN0cm9rZT0nbm9uZScgdHJhbnNmb3JtPSdzY2FsZSgtMS4wMDM3NSwxLjAwMzc1KXRyYW5zbGF0ZSgtMjMuNzA2MDI0LC0yMy45NDg4NTgpc2NhbGUoLTEsLTEpJz4KPGcgZmlsbD0nIzAwMCc+CjxnIHN0cm9rZT0nbm9uZSc+Cjx0ZXh0IGNsYXNzPSdmMScgeD0nLTIzLjcwNjAyNCcgeT0nLTIzLjk0ODg1OCc+ZjwvdGV4dD4KPC9nPgo8L2c+CjwvZz4KPC9nPgo8cGF0aCBkPSdNOC4zMDU1NC01Ni45MDU1SDQ3LjgwNjU2JyBmaWxsPSdub25lJy8+CjxnIHRyYW5zZm9ybT0ndHJhbnNsYXRlKDQ4LjA1NjU2LC01Ni45MDU1KSc+CjxnIHN0cm9rZS1kYXNoYXJyYXk9J25vbmUnIHN0cm9rZS1kYXNob2Zmc2V0PScwLjAnPgogPGcgc3Ryb2tlLWxpbmVjYXA9J3JvdW5kJz4KIDxnIHN0cm9rZS1saW5lam9pbj0ncm91bmQnPgogPHBhdGggZD0nTS0yLjIgMi41ODA2M0MtMS43OTgwNyAxLjAzMjIzLS45MDI0IC4zMDEwNyAwIDBDLS45MDI0LS4zMDEwNy0xLjc5ODA3LTEuMDMyMjMtMi4yLTIuNTgwNjMnIGZpbGw9J25vbmUnLz4KIDwvZz4KIDwvZz4KIDwvZz4KPC9nPgo8ZyB0cmFuc2Zvcm09J3RyYW5zbGF0ZSgyNS45NjQsLTY0LjU3ODQxKSc+CjxnIHN0cm9rZT0nbm9uZScgdHJhbnNmb3JtPSdzY2FsZSgtMS4wMDM3NSwxLjAwMzc1KXRyYW5zbGF0ZSgtMjMuNzA2MDI0LC0yMy45NDg4NTgpc2NhbGUoLTEsLTEpJz4KPGcgZmlsbD0nIzAwMCc+CjxnIHN0cm9rZT0nbm9uZSc+Cjx0ZXh0IGNsYXNzPSdmMScgeD0nLTIzLjcwNjAyNCcgeT0nLTIzLjk0ODg1OCc+ZjwvdGV4dD4KPC9nPgo8L2c+CjwvZz4KPC9nPgo8ZyB0cmFuc2Zvcm09J3RyYW5zbGF0ZSgtNDQuMTY5NTQsMzcuNzM4MyknPgo8ZyBzdHJva2U9J25vbmUnIHRyYW5zZm9ybT0nc2NhbGUoLTEuMDAzNzUsMS4wMDM3NSl0cmFuc2xhdGUoLTIzLjcwNjAyNCwtMjMuOTQ4ODU4KXNjYWxlKC0xLC0xKSc+CjxnIGZpbGw9JyMwMDAnPgo8ZyBzdHJva2U9J25vbmUnPgo8dGV4dCBjbGFzcz0nZjAnIHg9Jy0yMy43MDYwMjQnIHk9Jy0yMy45NDg4NTgnPkM8L3RleHQ+CjwvZz4KPC9nPgo8L2c+CjwvZz4KPHBhdGggZD0nTS00MS4wODExOCAzMy44Mjg1N0MtNDYuNDc0NDktMS4xMzQzNS0zNS44ODc2LTI4LjM4NTMtOC42OTUzNi01MC4yMjQ1JyBmaWxsPSdub25lJy8+CjxnIHRyYW5zZm9ybT0nbWF0cml4KDAuNzc5NjUsLTAuNjI2MTYsMC42MjYxNiwwLjc3OTY1LC04LjUwMDQ2LC01MC4zODEwNCknPgo8ZyBzdHJva2UtZGFzaGFycmF5PSdub25lJyBzdHJva2UtZGFzaG9mZnNldD0nMC4wJz4KIDxnIHN0cm9rZS1saW5lY2FwPSdyb3VuZCc+CiA8ZyBzdHJva2UtbGluZWpvaW49J3JvdW5kJz4KIDxwYXRoIGQ9J00tMi4yIDIuNTgwNjNDLTEuNzk4MDcgMS4wMzIyMy0uOTAyNCAuMzAxMDcgMCAwQy0uOTAyNC0uMzAxMDctMS43OTgwNy0xLjAzMjIzLTIuMi0yLjU4MDYzJyBmaWxsPSdub25lJy8+CiA8L2c+CiA8L2c+CiA8L2c+CjwvZz4KPGcgdHJhbnNmb3JtPSd0cmFuc2xhdGUoLTQ1LjAwNDczLC0yMC44MzEzOCknPgo8ZyBzdHJva2U9J25vbmUnIHRyYW5zZm9ybT0nc2NhbGUoLTEuMDAzNzUsMS4wMDM3NSl0cmFuc2xhdGUoLTIzLjcwNjAyNCwtMjMuOTQ4ODU4KXNjYWxlKC0xLC0xKSc+CjxnIGZpbGw9JyMwMDAnPgo8ZyBzdHJva2U9J25vbmUnPgo8dGV4dCBjbGFzcz0nZjEnIHg9Jy0yMy43MDYwMjQnIHk9Jy0yMy45NDg4NTgnPmg8L3RleHQ+CjwvZz4KPC9nPgo8L2c+CjwvZz4KPGcgc3Ryb2tlLWRhc2hhcnJheT0nMy4wLDIuMCcgc3Ryb2tlLWRhc2hvZmZzZXQ9JzAuMCc+CjxwYXRoIGQ9J00tMzMuODI4ODcgMzMuODI4NTdMLTguNTkyOTQgOC41OTY1NicgZmlsbD0nbm9uZScvPgo8ZyB0cmFuc2Zvcm09J21hdHJpeCgwLjcwNzE0LC0wLjcwNzAzLDAuNzA3MDMsMC43MDcxNCwtOC40MTYxNSw4LjQxOTgpJz4KPGcgc3Ryb2tlLWRhc2hhcnJheT0nbm9uZScgc3Ryb2tlLWRhc2hvZmZzZXQ9JzAuMCc+CiA8ZyBzdHJva2UtbGluZWNhcD0ncm91bmQnPgogPGcgc3Ryb2tlLWxpbmVqb2luPSdyb3VuZCc+CiA8cGF0aCBkPSdNLTIuMiAyLjU4MDYzQy0xLjc5ODA3IDEuMDMyMjMtLjkwMjQgLjMwMTA3IDAgMEMtLjkwMjQtLjMwMTA3LTEuNzk4MDctMS4wMzIyMy0yLjItMi41ODA2MycgZmlsbD0nbm9uZScvPgogPC9nPgogPC9nPgogPC9nPgo8L2c+CjwvZz4KPHBhdGggZD0nTS0zMS43NTE1MSA0MS4zNTQzMUMyLjU3NDY1IDQ2LjIzNTI2IDI5LjE5NTMxIDM1LjUyOTgyIDUwLjI3NzA0IDguNjM2NTQnIGZpbGw9J25vbmUnLz4KPGcgdHJhbnNmb3JtPSdtYXRyaXgoMC42MTY5MSwtMC43ODY5OSwwLjc4Njk5LDAuNjE2OTEsNTAuNDMxMjcsOC40Mzk3OSknPgo8ZyBzdHJva2UtZGFzaGFycmF5PSdub25lJyBzdHJva2UtZGFzaG9mZnNldD0nMC4wJz4KIDxnIHN0cm9rZS1saW5lY2FwPSdyb3VuZCc+CiA8ZyBzdHJva2UtbGluZWpvaW49J3JvdW5kJz4KIDxwYXRoIGQ9J00tMi4yIDIuNTgwNjNDLTEuNzk4MDcgMS4wMzIyMy0uOTAyNCAuMzAxMDcgMCAwQy0uOTAyNC0uMzAxMDctMS43OTgwNy0xLjAzMjIzLTIuMi0yLjU4MDYzJyBmaWxsPSdub25lJy8+CiA8L2c+CiA8L2c+CiA8L2c+CjwvZz4KPGcgdHJhbnNmb3JtPSd0cmFuc2xhdGUoMTcuNTMxODYsMzkuNjczMzcpJz4KPGcgc3Ryb2tlPSdub25lJyB0cmFuc2Zvcm09J3NjYWxlKC0xLjAwMzc1LDEuMDAzNzUpdHJhbnNsYXRlKC0yMy43MDYwMjQsLTIzLjk0ODg1OClzY2FsZSgtMSwtMSknPgo8ZyBmaWxsPScjMDAwJz4KPGcgc3Ryb2tlPSdub25lJz4KPHRleHQgY2xhc3M9J2YxJyB4PSctMjMuNzA2MDI0JyB5PSctMjMuOTQ4ODU4Jz5rPC90ZXh0Pgo8L2c+CjwvZz4KPC9nPgo8L2c+CjwvZz4KPC9nPgo8L2c+CjwvZz4KPC9nPgo8L3N2Zz4=" /></fr:resource-content><fr:resource-source
-type="latex"
-part="preamble"><![CDATA[
-        
-  \RequirePackage {tikz}
-  \RequirePackage {amsmath}
-  \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
-
-  \definecolor {catccolor}{RGB}{255,244,138}
-  \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
-  \tikzstyle {catc}=[catccolor!60]
-  \tikzstyle {catd}=[orange!40]
-  \tikzstyle {cate}=[red!40]
-  \tikzstyle {catf}=[blue!10]
-  \tikzstyle {catg}=[green!25]
-
-
-  \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
-  \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
-
-  \NewDocumentCommand \CreateRect {D<>{} m m}{
-    \path 
-      coordinate (#1nw)
-      ++(#2,-#3) coordinate (#1se)
-      coordinate (#1sw) at (#1se -| #1nw)
-      coordinate (#1ne) at (#1nw -| #1se)
-    ;
-
-    \path [spath/save = #1north] (#1nw) to (#1ne);
-    \path [spath/save = #1west] (#1nw) to (#1sw);
-    \path [spath/save = #1east] (#1ne) to (#1se);
-    \path [spath/save = #1south] (#1sw) to (#1se);
-  }
-
-        
-   % appears to be necessary
-  \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd}
-  \usetikzlibrary{matrix,arrows}
-  \usetikzlibrary{backgrounds,fit,positioning,calc,shapes}
-  \usetikzlibrary{decorations.pathreplacing}
-  \usetikzlibrary{decorations.pathmorphing}
-  \usetikzlibrary{decorations.markings}
-
-  % basic settings
-  \tikzset{
-    diagram/.style = {
-      on grid,
-      node distance=2cm,
-      commutative diagrams/every diagram,
-      line width = .5pt,
-      every node/.append style = {
-        commutative diagrams/every cell,
-      },
-    },
-    morphism/.style = {
-      auto=left,
-      node font=\scriptsize,
-    },
-    phantom/.style = {
-      commutative diagrams/phantom,
-      node font=\scriptsize,
-      sloped,
-    },
-    between/.style args = {#1 and #2}{
-      at = ($(#1)!0.5!(#2)$)
-    },
-    desc/.style = {anchor=center,fill=white,inner sep=3pt},
-    offset/.style args = {#1} {commutative diagrams/shift right={#1}},
-    cross over/.style = {
-      commutative diagrams/crossing over
-    },
-    adjoint/.style = {
-      phantom,
-      every to/.append style = {
-        edge node = {node [sloped,allow upside down,auto=false] {$\dashv$}}
-      }
-    },
-  }
-
-  % pullback and pushout
-  \tikzset{
-    pullback/.style = {
-      append after command = {
-        \pgfextra{
-          \draw ($(\tikzlastnode) + (.2cm,-.5cm)$) -- ++(0.3cm,0) -- ++(0,0.3cm);
-        }
-      }
-    },
-    pushout/.style = {
-      append after command={
-        \pgfextra{
-          \draw ($(\tikzlastnode) + (-.2cm,.5cm)$) -- ++(-0.3cm,0) -- ++(0,-0.3cm);
-        }
-      }
-    },
-  }
-
-  % arrow styles
-  \tikzset{
-    exists/.style = {
-      densely dashed
-    },
-    embedding/.style = {
-      {right hook}->
-    },
-    into/.style = {
-      {right hook}->
-    },
-    cover/.style = {
-      -{Triangle[open]}
-    },
-    twocell/.style = {
-      double, -{implies}
-    }
-  }
-
-  \newlength{\dontworryaboutit} % no idea what it does
-
-  \tikzset{
-    inline diagram/.style = {
-      commutative diagrams/every diagram,
-      commutative diagrams/cramped,
-      line width = .5pt,
-      every node/.append style = {
-        commutative diagrams/every cell,
-        anchor = base,
-        inner sep = 0pt
-      },
-      every path/.append style = {
-        outer xsep = 2pt
-      }
-    }
-  }
-  
-  % macros for drawing commutative squares
-  % adapted from Jon Sterling's macros (https://git.sr.ht/~jonsterling/article-template/tree/main/item/local-tikz.sty)
-  \tikzset{
-    square/nw/.style = {},
-    square/ne/.style = {},
-    square/se/.style = {},
-    square/sw/.style = {},
-    square/north/.style = {->},
-    square/south/.style = {->},
-    square/west/.style = {->},
-    square/east/.style = {->},
-    square/north/node/.style = {above},
-    square/south/node/.style = {below},
-    square/west/node/.style = {left},
-    square/east/node/.style = {right},
-  }
-
-  \ExplSyntaxOn
-  \keys_define:nn { jon-tikz/diagram } {
-    nw .tl_set:N = \l_jon_tikz_diagram_nw,
-    sw .tl_set:N = \l_jon_tikz_diagram_sw,
-    ne .tl_set:N = \l_jon_tikz_diagram_ne,
-    se .tl_set:N = \l_jon_tikz_diagram_se,
-
-    width .tl_set:N = \l_jon_tikz_diagram_width,
-    height .tl_set:N = \l_jon_tikz_diagram_height,
-
-    north .tl_set:N = \l_jon_tikz_diagram_north,
-    south .tl_set:N = \l_jon_tikz_diagram_south,
-    west .tl_set:N = \l_jon_tikz_diagram_west,
-    east .tl_set:N = \l_jon_tikz_diagram_east,
-
-    nw/style .code:n = {\tikzset{square/nw/.style = {#1}}},
-    sw/style .code:n = {\tikzset{square/sw/.style = {#1}}},
-    ne/style .code:n = {\tikzset{square/ne/.style = {#1}}},
-    se/style .code:n = {\tikzset{square/se/.style = {#1}}},
-
-    north/style .code:n = {\tikzset{square/north/.style = {#1}}},
-    north/node/style .code:n = {\tikzset{square/north/node/.style = {#1}}},
-    south/style .code:n = {\tikzset{square/south/.style = {#1}}},
-    south/node/style .code:n = {\tikzset{square/south/node/.style = {#1}}},
-    west/style .code:n = {\tikzset{square/west/.style = {#1}}},
-    west/node/style .code:n = {\tikzset{square/west/node/.style = {#1}}},
-    east/style .code:n = {\tikzset{square/east/.style = {#1}}},
-    east/node/style .code:n = {\tikzset{square/east/node/.style = {#1}}},
-
-    draft .meta:n = {
-      nw = {nw},
-      sw = {sw},
-      se = {se},
-      ne = {ne},
-      north = {north},
-      south = {south},
-      west = {west},
-      east = {east},
-    }
-  }
-
-  \tl_set:Nn \l_jon_tikz_diagram_width { 2cm }
-  \tl_set:Nn \l_jon_tikz_diagram_height { 2cm }
-
-
-  \cs_new:Nn \__jon_tikz_render_square:nn {
-    \group_begin:
-    \keys_set:nn {jon-tikz/diagram} {#2} {
-      \node (#1nw) [square/nw] {$\l_jon_tikz_diagram_nw$};
-      \node (#1sw) [below = \l_jon_tikz_diagram_height~of~#1nw,square/sw] {$\l_jon_tikz_diagram_sw$};
-      \draw[morphism,square/west] (#1nw) to node [square/west/node] {$\l_jon_tikz_diagram_west$} (#1sw);
-
-      \node (#1ne) [right = \l_jon_tikz_diagram_width~of~#1nw,square/ne] {$\l_jon_tikz_diagram_ne$};
-      \node (#1se) [below = \l_jon_tikz_diagram_height~of~#1ne,square/se] {$\l_jon_tikz_diagram_se$};
-      \draw[morphism,square/north] (#1nw) to node [square/north/node] {$\l_jon_tikz_diagram_north$} (#1ne);
-      \draw[morphism,square/east] (#1ne) to node [square/east/node] {$\l_jon_tikz_diagram_east$} (#1se);
-      \draw[morphism,square/south] (#1sw) to node [square/south/node] {$\l_jon_tikz_diagram_south$} (#1se);
-    }
-    \group_end:
-  }
-
-  % the optional argument allows one to specify a prefix to positions
-  \NewDocumentCommand\SpliceDiagramSquare{O{}m}{
-    \__jon_tikz_render_square:nn {#1} {#2}
-  }
-
-  \NewDocumentCommand\DiagramSquare{O{}O{}m}{
-    \begin{tikzpicture}[diagram,#2,baseline=(#1sw.base)]
-      \__jon_tikz_render_square:nn {#1} {#3}
-    \end{tikzpicture}
-  }
-  \ExplSyntaxOff
-
-      ]]></fr:resource-source><fr:resource-source
-type="latex"
-part="body"><![CDATA[
-    \begin {tikzpicture}[diagram]
-      \SpliceDiagramSquare {
-        nw = R,
-        nw/style = {pullback},
-        ne = A,
-        sw = A,
-        se = {B},
-        north = b,
-        west = a,
-        south = {f},
-        east = {f},
-      }
-      \node  [above left = of nw] (c) {$C$};
-      \draw  [->,morphism,bend right] (c) to node[swap] {$h$} (sw);
-      \draw  [->,morphism,exists] (c) to (nw);
-      \draw  [->,morphism,bend left] (c) to node {$k$} (ne);
-    \end {tikzpicture}
-  ]]></fr:resource-source></fr:resource></fr:figure>
-    
-  
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>331</fr:anchor><fr:addr
+type="machine">#257</fr:addr><fr:route>unstable-257.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
+  Let <fr:tex
+display="inline"><![CDATA[E]]></fr:tex> be a set such that <fr:tex
+display="inline"><![CDATA[\forall y.\mkern 5muy \notin  E]]></fr:tex>.
+  By <fr:link
+type="local"
+href="set-0001.xml"
+addr="set-0001"
+title="Axiom of extensionality">extensionality</fr:link>, it suffices to show that <fr:tex
+display="inline"><![CDATA[\forall y.\mkern 5muy \in  \varnothing  \Leftrightarrow  y \in  E]]></fr:tex>, but this holds vacuously.
 </fr:mainmatter><fr:backmatter /></fr:tree>
     
-  </fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>
+  </fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>332</fr:anchor><fr:addr
+type="user">set-000G</fr:addr><fr:route>set-000G.xml</fr:route><fr:title
+text="Uniqueness of pairing">Uniqueness of pairing</fr:title><fr:taxon>Proposition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[x,y]]></fr:tex> be sets.
+  Then the set <fr:tex
+display="inline"><![CDATA[{\mathopen {}\{x,y\}\mathclose {}}]]></fr:tex> is unique.</fr:p>
+    
+      
+      <fr:tree
+toc="false"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>333</fr:anchor><fr:addr
+type="machine">#256</fr:addr><fr:route>unstable-256.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
+  Let <fr:tex
+display="inline"><![CDATA[P]]></fr:tex> be a set such that <fr:tex
+display="inline"><![CDATA[\forall a.\mkern 5mua \in  P \Leftrightarrow  a = x \vee  a = y]]></fr:tex>.
+  It suffices, by <fr:link
+type="local"
+href="set-0001.xml"
+addr="set-0001"
+title="Axiom of extensionality">extensionality</fr:link>, to show that <fr:tex
+display="inline"><![CDATA[\forall b.\mkern 5mub \in  {\mathopen {}\{x,y\}\mathclose {}} \Leftrightarrow  b \in  P]]></fr:tex>.
+
+  If <fr:tex
+display="inline"><![CDATA[b \in  {\mathopen {}\{x,y\}\mathclose {}}]]></fr:tex>, then by <fr:link
+type="local"
+href="set-0003.xml"
+addr="set-0003"
+title="Axiom of pairing">pairing</fr:link>, <fr:tex
+display="inline"><![CDATA[b = x]]></fr:tex> or <fr:tex
+display="inline"><![CDATA[b = y]]></fr:tex>.
+  Thus, it follows that <fr:tex
+display="inline"><![CDATA[b \in  P]]></fr:tex>.
+  The converse is completely analogous.
+</fr:mainmatter><fr:backmatter /></fr:tree>
+    
+  </fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>334</fr:anchor><fr:addr
+type="user">set-000H</fr:addr><fr:route>set-000H.xml</fr:route><fr:title
+text="Existence of singletons">Existence of singletons</fr:title><fr:taxon>Proposition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>For any set <fr:tex
+display="inline"><![CDATA[x]]></fr:tex>, the set <fr:tex
+display="inline"><![CDATA[{\mathopen {}\{x\}\mathclose {}}]]></fr:tex> exists.</fr:p>
+    
+      
+      <fr:tree
+toc="false"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>335</fr:anchor><fr:addr
+type="machine">#255</fr:addr><fr:route>unstable-255.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
+  By <fr:link
+type="local"
+href="set-0003.xml"
+addr="set-0003"
+title="Axiom of pairing">pairing</fr:link>, there is a set <fr:tex
+display="inline"><![CDATA[p]]></fr:tex> such that <fr:tex
+display="inline"><![CDATA[\forall a.\mkern 5mua \in  p \Leftrightarrow  a = x \vee  a = x]]></fr:tex>, or equivalently, <fr:tex
+display="inline"><![CDATA[\forall a.\mkern 5mua \in  p \Leftrightarrow  a = x]]></fr:tex>.
+</fr:mainmatter><fr:backmatter /></fr:tree>
+    
+  </fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>336</fr:anchor><fr:addr
+type="user">set-000X</fr:addr><fr:route>set-000X.xml</fr:route><fr:title
+text="The membership relation is irreflexive">The membership relation is irreflexive</fr:title><fr:taxon>Proposition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>For any set <fr:tex
+display="inline"><![CDATA[x]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[x \notin  x]]></fr:tex>.</fr:p>
+    
+      
+      <fr:tree
+toc="false"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>337</fr:anchor><fr:addr
+type="machine">#246</fr:addr><fr:route>unstable-246.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
+  Let <fr:tex
+display="inline"><![CDATA[x]]></fr:tex> be a set.
+  Suppose that <fr:tex
+display="inline"><![CDATA[x \in  x]]></fr:tex>.
+  Consider <fr:tex
+display="inline"><![CDATA[{\mathopen {}\{x\}\mathclose {}}]]></fr:tex>.
+  This is a non-empty set, so <fr:link
+type="local"
+href="set-0009.xml"
+addr="set-0009"
+title="Axiom of foundation">foundation</fr:link> implies that there is a set <fr:tex
+display="inline"><![CDATA[z \in  {\mathopen {}\{x\}\mathclose {}}]]></fr:tex> such that <fr:tex
+display="inline"><![CDATA[z \cap  {\mathopen {}\{x\}\mathclose {}} = \varnothing ]]></fr:tex>.
+  By <fr:ref
+addr="set-000H"
+href="set-000H.xml"
+taxon="Proposition" />, <fr:tex
+display="inline"><![CDATA[z = x]]></fr:tex>.
+  Then since <fr:tex
+display="inline"><![CDATA[x \in  x]]></fr:tex>, we have that <fr:tex
+display="inline"><![CDATA[x \in  z]]></fr:tex>.
+  Thus, <fr:tex
+display="inline"><![CDATA[x \in  z \cap  {\mathopen {}\{x\}\mathclose {}}]]></fr:tex>, which is a contradiction.
+</fr:mainmatter><fr:backmatter /></fr:tree>
+    
+  </fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree>
+
+  <fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>338</fr:anchor><fr:addr
+type="machine">#261</fr:addr><fr:route>unstable-261.xml</fr:route><fr:title
+text="Ordered pairs">Ordered pairs</fr:title><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>339</fr:anchor><fr:addr
+type="user">set-000I</fr:addr><fr:route>set-000I.xml</fr:route><fr:title
+text="Ordered pairs">Ordered pairs</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[x,y]]></fr:tex> be sets.
+  We define the <fr:em><fr:strong>ordered pair</fr:strong></fr:em> <fr:tex
+display="inline"><![CDATA[(x,y)]]></fr:tex> as the set <fr:tex
+display="inline"><![CDATA[{\mathopen {}\{{\mathopen {}\{x\}\mathclose {}},{\mathopen {}\{x,y\}\mathclose {}}\}\mathclose {}}]]></fr:tex>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>340</fr:anchor><fr:addr
+type="user">set-000J</fr:addr><fr:route>set-000J.xml</fr:route><fr:title
+text="Existence of ordered pairs">Existence of <fr:link
+type="local"
+href="set-000I.xml"
+addr="set-000I"
+title="Ordered pairs">ordered pairs</fr:link></fr:title><fr:taxon>Proposition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[x,y]]></fr:tex> be sets.
+  The ordered pair <fr:tex
+display="inline"><![CDATA[(x,y)]]></fr:tex> exists.</fr:p>
+    
+      
+      <fr:tree
+toc="false"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>341</fr:anchor><fr:addr
+type="machine">#254</fr:addr><fr:route>unstable-254.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
+  By <fr:ref
+addr="set-000H"
+href="set-000H.xml"
+taxon="Proposition" />, <fr:tex
+display="inline"><![CDATA[{\mathopen {}\{x\}\mathclose {}}]]></fr:tex> exists.
+  By <fr:link
+type="local"
+href="set-0003.xml"
+addr="set-0003"
+title="Axiom of pairing">pairing</fr:link>, <fr:tex
+display="inline"><![CDATA[{\mathopen {}\{x,y\}\mathclose {}}]]></fr:tex> exists.
+  By <fr:link
+type="local"
+href="set-0003.xml"
+addr="set-0003"
+title="Axiom of pairing">pairing</fr:link> again, <fr:tex
+display="inline"><![CDATA[{\mathopen {}\{{\mathopen {}\{x\}\mathclose {}},{\mathopen {}\{x,y\}\mathclose {}}\}\mathclose {}}]]></fr:tex> exists.
+</fr:mainmatter><fr:backmatter /></fr:tree>
+    
+  </fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>342</fr:anchor><fr:addr
+type="user">set-000K</fr:addr><fr:route>set-000K.xml</fr:route><fr:title
+text="Ordered pair property"><fr:link
+type="local"
+href="set-000I.xml"
+addr="set-000I"
+title="Ordered pairs">Ordered pair</fr:link> property</fr:title><fr:taxon>Proposition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[x,y,a,b]]></fr:tex> be sets.
+  Then <fr:tex
+display="inline"><![CDATA[(x,y) = (a,b)]]></fr:tex> if and only if <fr:tex
+display="inline"><![CDATA[x = a]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[y = b]]></fr:tex>.</fr:p>
+    
+      
+      <fr:tree
+toc="false"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>317</fr:anchor><fr:addr
+type="machine">#253</fr:addr><fr:route>unstable-253.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
+  <fr:p>The only if direction is completely trivial.
+    Assume that <fr:tex
+display="inline"><![CDATA[(x,y) = (a,b)]]></fr:tex>.
+    First, we claim that <fr:tex
+display="inline"><![CDATA[x = a]]></fr:tex>.
+    By definition, we have <fr:tex
+display="inline"><![CDATA[{\mathopen {}\{{\mathopen {}\{x\}\mathclose {}},{\mathopen {}\{x,y\}\mathclose {}}\}\mathclose {}} = {\mathopen {}\{{\mathopen {}\{a\}\mathclose {}},{\mathopen {}\{a,b\}\mathclose {}}\}\mathclose {}}]]></fr:tex>.
+    By <fr:link
+type="local"
+href="set-0001.xml"
+addr="set-0001"
+title="Axiom of extensionality">extensionality</fr:link>, <fr:tex
+display="inline"><![CDATA[{\mathopen {}\{x\}\mathclose {}} \in  {\mathopen {}\{{\mathopen {}\{a\}\mathclose {}},{\mathopen {}\{a,b\}\mathclose {}}\}\mathclose {}}]]></fr:tex>.
+    By <fr:link
+type="local"
+href="set-0003.xml"
+addr="set-0003"
+title="Axiom of pairing">pairing</fr:link>, either <fr:tex
+display="inline"><![CDATA[{\mathopen {}\{x\}\mathclose {}} = {\mathopen {}\{a\}\mathclose {}}]]></fr:tex> or <fr:tex
+display="inline"><![CDATA[{\mathopen {}\{x\}\mathclose {}} = {\mathopen {}\{a,b\}\mathclose {}}]]></fr:tex>.
+    In the former case, <fr:tex
+display="inline"><![CDATA[x = a]]></fr:tex> follows as a consequence of <fr:link
+type="local"
+href="set-0003.xml"
+addr="set-0003"
+title="Axiom of pairing">pairing</fr:link>.
+    In the latter case, we have <fr:tex
+display="inline"><![CDATA[a \in  {\mathopen {}\{x\}\mathclose {}}]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[b \in  {\mathopen {}\{x\}\mathclose {}}]]></fr:tex> as a consequence of <fr:link
+type="local"
+href="set-0001.xml"
+addr="set-0001"
+title="Axiom of extensionality">extensionality</fr:link>.
+    Then by <fr:link
+type="local"
+href="set-0003.xml"
+addr="set-0003"
+title="Axiom of pairing">pairing</fr:link>, we have <fr:tex
+display="inline"><![CDATA[x = a = b]]></fr:tex>.</fr:p>
+  <fr:p>It remains to show that <fr:tex
+display="inline"><![CDATA[y = b]]></fr:tex>.
+    In this case, as a consequence of <fr:link
+type="local"
+href="set-0001.xml"
+addr="set-0001"
+title="Axiom of extensionality">extensionality</fr:link>, consider <fr:tex
+display="inline"><![CDATA[{\mathopen {}\{x,y\}\mathclose {}} \in  {\mathopen {}\{{\mathopen {}\{a\}\mathclose {}},{\mathopen {}\{a,b\}\mathclose {}}\}\mathclose {}}]]></fr:tex>.
+    By <fr:link
+type="local"
+href="set-0003.xml"
+addr="set-0003"
+title="Axiom of pairing">pairing</fr:link>, either <fr:tex
+display="inline"><![CDATA[{\mathopen {}\{x,y\}\mathclose {}} = {\mathopen {}\{a\}\mathclose {}}]]></fr:tex> or <fr:tex
+display="inline"><![CDATA[{\mathopen {}\{x,y\}\mathclose {}} = {\mathopen {}\{a,b\}\mathclose {}}]]></fr:tex>.
+    In the former case, we have <fr:tex
+display="inline"><![CDATA[x = y = a]]></fr:tex> as a consequence of <fr:link
+type="local"
+href="set-0001.xml"
+addr="set-0001"
+title="Axiom of extensionality">extensionality</fr:link> and <fr:link
+type="local"
+href="set-0003.xml"
+addr="set-0003"
+title="Axiom of pairing">pairing</fr:link>.
+    Thus, <fr:tex
+display="inline"><![CDATA[{\mathopen {}\{{\mathopen {}\{x\}\mathclose {}},{\mathopen {}\{x,y\}\mathclose {}}\}\mathclose {}} = {\mathopen {}\{{\mathopen {}\{x\}\mathclose {}},{\mathopen {}\{x\}\mathclose {}}\}\mathclose {}} = {\mathopen {}\{{\mathopen {}\{x\}\mathclose {}}\}\mathclose {}} = {\mathopen {}\{{\mathopen {}\{a\}\mathclose {}},{\mathopen {}\{a,b\}\mathclose {}}\}\mathclose {}}]]></fr:tex> demands that <fr:tex
+display="inline"><![CDATA[a = b]]></fr:tex>.
+    In the latter case, if <fr:tex
+display="inline"><![CDATA[y = a]]></fr:tex> then <fr:tex
+display="inline"><![CDATA[{\mathopen {}\{x,y\}\mathclose {}} = {\mathopen {}\{a,y\}\mathclose {}} = {\mathopen {}\{a\}\mathclose {}} = {\mathopen {}\{a,b\}\mathclose {}}]]></fr:tex> demands that <fr:tex
+display="inline"><![CDATA[a = b]]></fr:tex>.
+    But, if <fr:tex
+display="inline"><![CDATA[y = b]]></fr:tex> then there is nothing left to prove.</fr:p>
+</fr:mainmatter><fr:backmatter /></fr:tree>
+    
+  </fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>343</fr:anchor><fr:addr
+type="user">set-000L</fr:addr><fr:route>set-000L.xml</fr:route><fr:title
+text="Cartesian product">Cartesian product</fr:title><fr:taxon>Proposition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[A,B]]></fr:tex> be sets.
+  Then <fr:tex
+display="inline"><![CDATA[A \times  B := {\mathopen {}\{(a,b)\colon a \in  A \wedge  b \in  B\}\mathclose {}}]]></fr:tex> is a set.</fr:p>
+    
+      
+      <fr:tree
+toc="false"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>344</fr:anchor><fr:addr
+type="machine">#252</fr:addr><fr:route>unstable-252.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
+  Let <fr:tex
+display="inline"><![CDATA[a \in  A, b \in  B]]></fr:tex>.
+  By <fr:link
+type="local"
+href="set-000I.xml"
+addr="set-000I"
+title="Ordered pairs">definition</fr:link>, <fr:tex
+display="inline"><![CDATA[(a,b) = {\mathopen {}\{{\mathopen {}\{a\}\mathclose {}},{\mathopen {}\{a,b\}\mathclose {}}\}\mathclose {}}]]></fr:tex>.
+  Thus, by the <fr:link
+type="local"
+href="set-0006.xml"
+addr="set-0006"
+title="Axiom of powerset">powerset axiom</fr:link>, <fr:tex
+display="inline"><![CDATA[(a,b) \in  \mathcal {P}(\mathcal {P}(A \cup  B))]]></fr:tex>.
+  By <fr:link
+type="local"
+href="set-0005.xml"
+addr="set-0005"
+title="Axiom schema of separation">separation</fr:link>,
+  <fr:tex
+display="block"><![CDATA[     A \times  B = {\mathopen {}\{p \in  \mathcal {P}(\mathcal {P}(A \cup  B))\colon \exists a.\mkern 5mu\exists b.\mkern 5mup = (a,b)\}\mathclose {}}   ]]></fr:tex>
+  is a set.
+</fr:mainmatter><fr:backmatter /></fr:tree>
+    
+  </fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree>
+
+  <fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>345</fr:anchor><fr:addr
+type="machine">#262</fr:addr><fr:route>unstable-262.xml</fr:route><fr:title
+text="Relations and functions">Relations and functions</fr:title><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>346</fr:anchor><fr:addr
+type="user">set-000M</fr:addr><fr:route>set-000M.xml</fr:route><fr:title
+text="Relation">Relation</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>A <fr:em><fr:strong>(binary) relation</fr:strong></fr:em> <fr:tex
+display="inline"><![CDATA[R\colon A\nrightarrow B]]></fr:tex> is a subset <fr:tex
+display="inline"><![CDATA[R \subseteq  A \times  B]]></fr:tex>.
+  Its <fr:em><fr:strong>support</fr:strong></fr:em> is the set <fr:tex
+display="inline"><![CDATA[\mathsf {supp}(R) := {\mathopen {}\{a \in  A\colon \exists b \in  B.\mkern 5mu(a,b) \in  R\}\mathclose {}}]]></fr:tex> and its <fr:em><fr:strong>range</fr:strong></fr:em> is the set <fr:tex
+display="inline"><![CDATA[\mathsf {ran}(R) := {\mathopen {}\{b \in  B\colon \exists a \in  A.\mkern 5mu(a,b) \in  R\}\mathclose {}}]]></fr:tex>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>347</fr:anchor><fr:addr
+type="user">set-000N</fr:addr><fr:route>set-000N.xml</fr:route><fr:title
+text="Total relation">Total <fr:link
+type="local"
+href="set-000M.xml"
+addr="set-000M"
+title="Relation">relation</fr:link></fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>A relation <fr:tex
+display="inline"><![CDATA[R\colon A\nrightarrow B]]></fr:tex> is <fr:em><fr:strong>total</fr:strong></fr:em> if <fr:tex
+display="inline"><![CDATA[\mathsf {supp}(R) = A]]></fr:tex>.
+  In other words, for all <fr:tex
+display="inline"><![CDATA[a \in  A]]></fr:tex> there exists <fr:tex
+display="inline"><![CDATA[b \in  B]]></fr:tex> such that <fr:tex
+display="inline"><![CDATA[(a,b) \in  R]]></fr:tex>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>348</fr:anchor><fr:addr
+type="user">set-000O</fr:addr><fr:route>set-000O.xml</fr:route><fr:title
+text="Functional relation">Functional <fr:link
+type="local"
+href="set-000M.xml"
+addr="set-000M"
+title="Relation">relation</fr:link></fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>A relation <fr:tex
+display="inline"><![CDATA[R\colon A\nrightarrow B]]></fr:tex> is <fr:em><fr:strong>functional</fr:strong></fr:em> if for any <fr:tex
+display="inline"><![CDATA[(a,b),(c,d) \in  R]]></fr:tex> if <fr:tex
+display="inline"><![CDATA[a = c]]></fr:tex> then <fr:tex
+display="inline"><![CDATA[b = d]]></fr:tex>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>349</fr:anchor><fr:addr
+type="user">set-000P</fr:addr><fr:route>set-000P.xml</fr:route><fr:title
+text="Injective relation">Injective <fr:link
+type="local"
+href="set-000M.xml"
+addr="set-000M"
+title="Relation">relation</fr:link></fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>A relation <fr:tex
+display="inline"><![CDATA[R\colon A\nrightarrow B]]></fr:tex> is <fr:em><fr:strong>injective</fr:strong></fr:em> if for every <fr:tex
+display="inline"><![CDATA[(a,b),(c,d) \in  R]]></fr:tex> if <fr:tex
+display="inline"><![CDATA[b = d]]></fr:tex> then <fr:tex
+display="inline"><![CDATA[a = c]]></fr:tex>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>350</fr:anchor><fr:addr
+type="user">set-000Q</fr:addr><fr:route>set-000Q.xml</fr:route><fr:title
+text="Surjective relation">Surjective <fr:link
+type="local"
+href="set-000M.xml"
+addr="set-000M"
+title="Relation">relation</fr:link></fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>A relation <fr:tex
+display="inline"><![CDATA[R\colon A\nrightarrow B]]></fr:tex> is <fr:em><fr:strong>surjective</fr:strong></fr:em> if <fr:tex
+display="inline"><![CDATA[\mathsf {ran}(R) = B]]></fr:tex>.
+  In other words, for every <fr:tex
+display="inline"><![CDATA[b \in  B]]></fr:tex> there is <fr:tex
+display="inline"><![CDATA[a \in  A]]></fr:tex> such that <fr:tex
+display="inline"><![CDATA[(a,b) \in  R]]></fr:tex>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>351</fr:anchor><fr:addr
+type="user">set-000R</fr:addr><fr:route>set-000R.xml</fr:route><fr:title
+text="Function">Function</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>A <fr:em><fr:strong>function</fr:strong></fr:em> <fr:tex
+display="inline"><![CDATA[f\colon A\to B]]></fr:tex> is a <fr:link
+type="local"
+href="set-000N.xml"
+addr="set-000N"
+title="Total relation">total</fr:link> and <fr:link
+type="local"
+href="set-000O.xml"
+addr="set-000O"
+title="Functional relation">functional</fr:link> <fr:link
+type="local"
+href="set-000M.xml"
+addr="set-000M"
+title="Relation">relation</fr:link> <fr:tex
+display="inline"><![CDATA[f\colon A\nrightarrow B]]></fr:tex>.
+  We define <fr:tex
+display="inline"><![CDATA[B^{A} := {\mathopen {}\{f \in  \mathcal {P}(A \times  B)\colon \text {$f$ is a function}\}\mathclose {}}]]></fr:tex>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>352</fr:anchor><fr:addr
+type="user">set-000S</fr:addr><fr:route>set-000S.xml</fr:route><fr:title
+text="Functional extensionality">Functional extensionality</fr:title><fr:taxon>Proposition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[f,g\colon A\to B]]></fr:tex> be <fr:link
+type="local"
+href="set-000R.xml"
+addr="set-000R"
+title="Function">functions</fr:link>.
+  Then <fr:tex
+display="inline"><![CDATA[f = g]]></fr:tex> if and only if for all <fr:tex
+display="inline"><![CDATA[a \in  A]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[f(a) = g(a)]]></fr:tex>.</fr:p>
+    
+      
+      <fr:tree
+toc="false"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>353</fr:anchor><fr:addr
+type="machine">#251</fr:addr><fr:route>unstable-251.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
+  The if direction is trivial.
+  For the only if direction, assume that <fr:tex
+display="inline"><![CDATA[f(a) = g(a)]]></fr:tex> for all <fr:tex
+display="inline"><![CDATA[a \in  A]]></fr:tex>.
+  By <fr:link
+type="local"
+href="set-0001.xml"
+addr="set-0001"
+title="Axiom of extensionality">extensionality</fr:link>, it suffices to show that for any <fr:tex
+display="inline"><![CDATA[(a,b) \in  A \times  B]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[(a,b) \in  f]]></fr:tex> if and only if <fr:tex
+display="inline"><![CDATA[(a,b) \in  g]]></fr:tex>.
+  Suppose that <fr:tex
+display="inline"><![CDATA[(a,b) \in  f]]></fr:tex>, then by <fr:link
+type="local"
+href="set-000O.xml"
+addr="set-000O"
+title="Functional relation">functionality</fr:link>, <fr:tex
+display="inline"><![CDATA[b = f(a)]]></fr:tex>.
+  By <fr:link
+type="local"
+href="set-000N.xml"
+addr="set-000N"
+title="Total relation">totality</fr:link>, <fr:tex
+display="inline"><![CDATA[(a,g(a)) \in  g]]></fr:tex>.
+  By hypothesis, <fr:tex
+display="inline"><![CDATA[(a,f(a)) = (a,g(a))]]></fr:tex>.
+  Thus, <fr:tex
+display="inline"><![CDATA[(a,f(a)) \in  g]]></fr:tex>.
+  The converse is analogous.
+</fr:mainmatter><fr:backmatter /></fr:tree>
+    
+  </fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree>
+
+  <fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>354</fr:anchor><fr:addr
+type="machine">#263</fr:addr><fr:route>unstable-263.xml</fr:route><fr:title
+text="Natural numbers">Natural numbers</fr:title><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>355</fr:anchor><fr:addr
+type="user">set-000T</fr:addr><fr:route>set-000T.xml</fr:route><fr:title
+text="Natural number set">Natural number set</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>A set <fr:tex
+display="inline"><![CDATA[N]]></fr:tex> is called a <fr:em><fr:strong>natural number set</fr:strong></fr:em> if it is equipped with
+  <fr:ul><fr:li>an element <fr:tex
+display="inline"><![CDATA[0 \in  N]]></fr:tex>;</fr:li>
+    <fr:li>a successor <fr:link
+type="local"
+href="set-000R.xml"
+addr="set-000R"
+title="Function">function</fr:link> <fr:tex
+display="inline"><![CDATA[s\colon N\to N]]></fr:tex>.</fr:li></fr:ul>
+  These data are subject to the following requirements.
+  <fr:ul><fr:li><fr:tex
+display="inline"><![CDATA[s\colon N\to N]]></fr:tex> is <fr:link
+type="local"
+href="set-000P.xml"
+addr="set-000P"
+title="Injective relation">injective</fr:link>;</fr:li>
+    <fr:li>non-looping: for every <fr:tex
+display="inline"><![CDATA[x \in  N]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[s(x) \neq  0]]></fr:tex>;</fr:li>
+    <fr:li>induction principle: for every set <fr:tex
+display="inline"><![CDATA[P \subseteq  N]]></fr:tex>, if <fr:tex
+display="inline"><![CDATA[0 \in  P]]></fr:tex> and for all <fr:tex
+display="inline"><![CDATA[x \in  N]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[x \in  P]]></fr:tex> implies that <fr:tex
+display="inline"><![CDATA[s(x) \in  P]]></fr:tex> then <fr:tex
+display="inline"><![CDATA[P = N]]></fr:tex>.</fr:li></fr:ul></fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>356</fr:anchor><fr:addr
+type="user">set-000U</fr:addr><fr:route>set-000U.xml</fr:route><fr:title
+text="Successor inequality">Successor inequality</fr:title><fr:taxon>Proposition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[N]]></fr:tex> be a <fr:link
+type="local"
+href="set-000T.xml"
+addr="set-000T"
+title="Natural number set">natural number set</fr:link>.
+  Then for any <fr:tex
+display="inline"><![CDATA[n \in  N]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[s(n) \neq  n]]></fr:tex>.</fr:p>
+    
+      
+      <fr:tree
+toc="false"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>357</fr:anchor><fr:addr
+type="machine">#250</fr:addr><fr:route>unstable-250.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
+  Consider the subset <fr:tex
+display="inline"><![CDATA[P := {\mathopen {}\{x \in  N\colon s(x) \neq  x\}\mathclose {}}]]></fr:tex>.
+  By the induction principle, it suffices to show that <fr:tex
+display="inline"><![CDATA[0 \in  P]]></fr:tex> and for any <fr:tex
+display="inline"><![CDATA[x \in  N]]></fr:tex>, if <fr:tex
+display="inline"><![CDATA[x \in  P]]></fr:tex> then <fr:tex
+display="inline"><![CDATA[s(x) \in  P]]></fr:tex>.
+  First, <fr:tex
+display="inline"><![CDATA[0 \in  P]]></fr:tex> follows from the non-looping property.
+  Now assume that <fr:tex
+display="inline"><![CDATA[x \in  P]]></fr:tex>, i.e., <fr:tex
+display="inline"><![CDATA[s(x) \neq  x]]></fr:tex>.
+  Then if <fr:tex
+display="inline"><![CDATA[s(s(x)) = s(x)]]></fr:tex>, by injectivity, <fr:tex
+display="inline"><![CDATA[s(x) = x]]></fr:tex>, which is a contradiction.
+  Thus, <fr:tex
+display="inline"><![CDATA[s(s(x)) \neq  s(x)]]></fr:tex>.
+  In other words, <fr:tex
+display="inline"><![CDATA[s(x) \in  P]]></fr:tex>.
+</fr:mainmatter><fr:backmatter /></fr:tree>
+    
+  </fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>358</fr:anchor><fr:addr
+type="user">set-000W</fr:addr><fr:route>set-000W.xml</fr:route><fr:title
+text="Set membership respects successor">Set membership respects successor</fr:title><fr:taxon>Lemma</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[N]]></fr:tex> be an inductive set admitting the induction principle defined in <fr:link
+type="local"
+href="set-000T.xml"
+addr="set-000T"
+title="Natural number set">natural number set</fr:link>.
+  For each <fr:tex
+display="inline"><![CDATA[n \in  N]]></fr:tex>, we define <fr:tex
+display="inline"><![CDATA[s(n) := n \cup  {\mathopen {}\{n\}\mathclose {}}]]></fr:tex>.
+  Then for any <fr:tex
+display="inline"><![CDATA[m,n \in  N]]></fr:tex>, if <fr:tex
+display="inline"><![CDATA[m \in  n]]></fr:tex> then <fr:tex
+display="inline"><![CDATA[s(m) \in  s(n)]]></fr:tex>.</fr:p>
+    
+      
+      <fr:tree
+toc="false"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>359</fr:anchor><fr:addr
+type="machine">#247</fr:addr><fr:route>unstable-247.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
+  <fr:p>Fix <fr:tex
+display="inline"><![CDATA[m \in  N]]></fr:tex>.
+    Consider <fr:tex
+display="inline"><![CDATA[P := {\mathopen {}\{n \in  N\colon m \in  n \Rightarrow  s(m) \in  s(n)\}\mathclose {}}]]></fr:tex>.
+    Note that <fr:tex
+display="inline"><![CDATA[\varnothing  \in  P]]></fr:tex> vacuously.</fr:p>
+  <fr:p>Now let <fr:tex
+display="inline"><![CDATA[n \in  P]]></fr:tex>, i.e., <fr:tex
+display="inline"><![CDATA[m \in  n \Rightarrow  s(m) \in  s(n)]]></fr:tex>.
+    We need to show that <fr:tex
+display="inline"><![CDATA[s(n) \in  P]]></fr:tex>, i.e., <fr:tex
+display="inline"><![CDATA[m \in  s(n) \Rightarrow  s(m) \in  s(s(n))]]></fr:tex>.
+    Suppose that <fr:tex
+display="inline"><![CDATA[m \in  s(n) = n \cup  {\mathopen {}\{n\}\mathclose {}}]]></fr:tex>.
+    By <fr:link
+type="local"
+href="set-0004.xml"
+addr="set-0004"
+title="Axiom of union">union</fr:link>, <fr:tex
+display="inline"><![CDATA[m \in  n]]></fr:tex> or <fr:tex
+display="inline"><![CDATA[m \in  {\mathopen {}\{n\}\mathclose {}}]]></fr:tex>.
+    In the former case, we have <fr:tex
+display="inline"><![CDATA[s(m) \in  s(n) \subseteq  s(n) \cup  {\mathopen {}\{s(n)\}\mathclose {}} = s(s(n))]]></fr:tex>.
+    In the latter case, we have <fr:tex
+display="inline"><![CDATA[m = n]]></fr:tex> by <fr:ref
+addr="set-000H"
+href="set-000H.xml"
+taxon="Proposition" />.
+    Then <fr:tex
+display="inline"><![CDATA[s(m) = s(n) \in  s(n) \cup  {\mathopen {}\{s(n)\}\mathclose {}} = s(s(n))]]></fr:tex>.</fr:p>
+</fr:mainmatter><fr:backmatter /></fr:tree>
+    
+  </fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>360</fr:anchor><fr:addr
+type="user">set-000V</fr:addr><fr:route>set-000V.xml</fr:route><fr:title
+text="Natural numbers">Natural numbers</fr:title><fr:taxon>Construction</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[I]]></fr:tex> be the inductive set guaranteed by <fr:link
+type="local"
+href="set-0007.xml"
+addr="set-0007"
+title="Axiom of infinity">infinity</fr:link>.
+  Define
+  <fr:tex
+display="block"><![CDATA[     \mathbb {N} := \bigcap {\mathopen {}\{S \in  \mathcal {P}(I)\colon \text {$S$ is inductive}\}\mathclose {}}.   ]]></fr:tex>
+  For this construction to work, we must show that <fr:tex
+display="inline"><![CDATA[\mathbb {N}]]></fr:tex> is inductive.</fr:p>
+    
+      
+      <fr:tree
+toc="false"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>361</fr:anchor><fr:addr
+type="machine">#248</fr:addr><fr:route>unstable-248.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
+  By definition, every inductive set <fr:tex
+display="inline"><![CDATA[S]]></fr:tex> contains <fr:tex
+display="inline"><![CDATA[\varnothing ]]></fr:tex>.
+  Thus, it follows that <fr:tex
+display="inline"><![CDATA[\varnothing  \in  \mathbb {N}]]></fr:tex>.
+  Now for any <fr:tex
+display="inline"><![CDATA[x \in  \mathbb {N}]]></fr:tex>, we have <fr:tex
+display="inline"><![CDATA[x \in  S]]></fr:tex> for any inductive set <fr:tex
+display="inline"><![CDATA[S \subseteq  I]]></fr:tex>.
+  Thus, <fr:tex
+display="inline"><![CDATA[x \cup  {\mathopen {}\{x\}\mathclose {}}]]></fr:tex> is an element of every inductive subset of <fr:tex
+display="inline"><![CDATA[I]]></fr:tex>.
+  Then it follows that <fr:tex
+display="inline"><![CDATA[x \cup  {\mathopen {}\{x\}\mathclose {}} \in  \mathbb {N}]]></fr:tex>.
+</fr:mainmatter><fr:backmatter /></fr:tree>
+    
+  <fr:p>We take <fr:tex
+display="inline"><![CDATA[0 := \varnothing  \in  \mathbb {N}]]></fr:tex> and we define <fr:tex
+display="inline"><![CDATA[s\colon \mathbb {N}\to \mathbb {N}]]></fr:tex> by <fr:tex
+display="inline"><![CDATA[s(x) = x \cup  {\mathopen {}\{x\}\mathclose {}}]]></fr:tex>.
+  It remains to show that <fr:tex
+display="inline"><![CDATA[\mathbb {N}]]></fr:tex> is a <fr:link
+type="local"
+href="set-000T.xml"
+addr="set-000T"
+title="Natural number set">natural number set</fr:link>.</fr:p>
+    
+      
+      <fr:tree
+toc="false"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>362</fr:anchor><fr:addr
+type="machine">#249</fr:addr><fr:route>unstable-249.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
+  <fr:p>First, we prove the non-looping property.
+    Observe that <fr:tex
+display="inline"><![CDATA[s(\varnothing ) = \varnothing  \cup  {\mathopen {}\{\varnothing \}\mathclose {}} = {\mathopen {}\{\varnothing \}\mathclose {}} \neq  \varnothing ]]></fr:tex>.</fr:p>
+  <fr:p>To show the induction principle, let <fr:tex
+display="inline"><![CDATA[P \subseteq  \mathbb {N}]]></fr:tex> such that <fr:tex
+display="inline"><![CDATA[0 \in  P]]></fr:tex> and for any <fr:tex
+display="inline"><![CDATA[x \in  \mathbb {N}]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[x \in  P]]></fr:tex> implies that <fr:tex
+display="inline"><![CDATA[s(x) \in  P]]></fr:tex>.
+    Note that the hypothesis implies that <fr:tex
+display="inline"><![CDATA[P]]></fr:tex> is inductive.
+    Thus, <fr:tex
+display="inline"><![CDATA[\mathbb {N} \subseteq  P]]></fr:tex> by construction.
+    Then by <fr:link
+type="local"
+href="set-0001.xml"
+addr="set-0001"
+title="Axiom of extensionality">extensionality</fr:link>, <fr:tex
+display="inline"><![CDATA[\mathbb {N} = P]]></fr:tex>.</fr:p>
+  <fr:p>It remains to show that <fr:tex
+display="inline"><![CDATA[s]]></fr:tex> is <fr:link
+type="local"
+href="set-000P.xml"
+addr="set-000P"
+title="Injective relation">injective</fr:link>.
+    Let <fr:tex
+display="inline"><![CDATA[n,m \in  \mathbb {N}]]></fr:tex>.
+    Suppose that <fr:tex
+display="inline"><![CDATA[s(n) = s(m)]]></fr:tex>.
+    Then by definition <fr:tex
+display="inline"><![CDATA[n \cup  {\mathopen {}\{n\}\mathclose {}} = m \cup  {\mathopen {}\{m\}\mathclose {}}]]></fr:tex>.
+    Since <fr:tex
+display="inline"><![CDATA[n \in  n \cup  {\mathopen {}\{n\}\mathclose {}}]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[n \in  m \cup  {\mathopen {}\{m\}\mathclose {}}]]></fr:tex>.
+    By <fr:link
+type="local"
+href="set-0004.xml"
+addr="set-0004"
+title="Axiom of union">union</fr:link>, <fr:tex
+display="inline"><![CDATA[n \in  {\mathopen {}\{m\}\mathclose {}}]]></fr:tex> or <fr:tex
+display="inline"><![CDATA[n \in  m]]></fr:tex>.
+    In the former case, <fr:tex
+display="inline"><![CDATA[n = m]]></fr:tex> by <fr:ref
+addr="set-000H"
+href="set-000H.xml"
+taxon="Proposition" />.
+    In the latter case, we have <fr:tex
+display="inline"><![CDATA[s(n) \in  s(m)]]></fr:tex> by <fr:ref
+addr="set-000W"
+href="set-000W.xml"
+taxon="Lemma" />.
+    But this means that we have <fr:tex
+display="inline"><![CDATA[s(n) \in  s(m) = s(n)]]></fr:tex>, which contradicts <fr:ref
+addr="set-000X"
+href="set-000X.xml"
+taxon="Proposition" />.</fr:p>
+</fr:mainmatter><fr:backmatter /></fr:tree>
+    
+  </fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree>
+</fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>
