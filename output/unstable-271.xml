@@ -7,29 +7,23 @@ show-heading="true"
 show-metadata="true"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1096</fr:anchor><fr:addr
-type="machine">#271</fr:addr><fr:route>unstable-271.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>24</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
-  <fr:p>Each fiber <fr:tex
-display="inline"><![CDATA[\mathsf {Sub}(A)]]></fr:tex> has finite limits inherited from <fr:tex
-display="inline"><![CDATA[\mathcal {C}]]></fr:tex>.
-    By <fr:ref
-addr="ct-000L"
-href="ct-000L.xml"
-taxon="Lemma" />, each <fr:tex
-display="inline"><![CDATA[f^{*}]]></fr:tex> has the required left adjoint <fr:tex
-display="inline"><![CDATA[\exists _{f}]]></fr:tex>.
-    They satisfy the <fr:link
-type="local"
-href="log-000E.xml"
-addr="log-000E"
-title="Beck-Chevalley condition">Beck-Chevalley condition</fr:link> because images commute with pullbacks in a regular category.
-    Then by construction the <fr:link
-type="local"
-href="log-000H.xml"
-addr="log-000H"
-title="Naming fucntor">naming functor</fr:link> <fr:tex
-display="inline"><![CDATA[{\mathopen {}[\mathord {\hspace {1pt}\text {--}\hspace {1pt}}]\mathclose {}}_{X}\colon {{\mathcal {C}}_{/{X}}}\to \mathsf {Sub}(X)]]></fr:tex> is just <fr:tex
-display="inline"><![CDATA[\mathsf {Img}]]></fr:tex>, which admits the inclusion functor as a right adjoint.</fr:p>
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>742</fr:anchor><fr:addr
+type="machine">#271</fr:addr><fr:route>unstable-271.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>8</fr:month><fr:day>8</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
+  <fr:p>Suppose that <fr:tex
+display="inline"><![CDATA[f = hg]]></fr:tex>.
+    Then <fr:tex
+display="inline"><![CDATA[{\mathopen {}\llbracket h(g(x))\rrbracket \mathclose {}}_{\mathcal {C}} = {\mathopen {}\llbracket h\rrbracket \mathclose {}}_{\mathcal {C}} \circ  {\mathopen {}\llbracket g\rrbracket \mathclose {}}_{\mathcal {C}} \circ  \mathsf {id}_{A} = hg]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[{\mathopen {}\llbracket f(x)\rrbracket \mathclose {}}_{\mathcal {C}} = {\mathopen {}\llbracket f\rrbracket \mathclose {}}_{\mathcal {C}} \circ  \mathsf {id}_{A} = f]]></fr:tex>.
+    Thus, the equalizer of <fr:tex
+display="inline"><![CDATA[{\mathopen {}\llbracket f(x)\rrbracket \mathclose {}}_{\mathcal {C}}]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[{\mathopen {}\llbracket h(g(x))\rrbracket \mathclose {}}_{\mathcal {C}}]]></fr:tex> is the terminal object, and the result follows immediately.</fr:p>
+  <fr:p>Suppose the converse.
+    Then the identity morphism <fr:tex
+display="inline"><![CDATA[\mathsf {id}_{A}]]></fr:tex> equalizes <fr:tex
+display="inline"><![CDATA[{\mathopen {}\llbracket f(x)\rrbracket \mathclose {}}_{\mathcal {C}}]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[{\mathopen {}\llbracket h(g(x))\rrbracket \mathclose {}}_{\mathcal {C}}]]></fr:tex>.
+    Thus, it follows that <fr:tex
+display="inline"><![CDATA[f = hg]]></fr:tex>.</fr:p>
 </fr:mainmatter><fr:backmatter><fr:tree
 toc="false"
 numbered="false"
@@ -45,19 +39,28 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1097</fr:anchor><fr:addr
-type="user">log-000J</fr:addr><fr:route>log-000J.xml</fr:route><fr:title
-text="Subobject doctrine of a regular category">Subobject doctrine of a regular category</fr:title><fr:taxon>Lemma</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>24</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>743</fr:anchor><fr:addr
+type="user">log-000U</fr:addr><fr:route>log-000U.xml</fr:route><fr:title
+text="Composite morphisms in the internal language of a category">Composite morphisms in the <fr:link
+type="local"
+href="log-000P.xml"
+addr="log-000P"
+title="Internal language of a category">internal language</fr:link> of a category</fr:title><fr:taxon>Lemma</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>8</fr:month><fr:day>8</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
 display="inline"><![CDATA[\mathcal {C}]]></fr:tex> be a <fr:link
 type="local"
 href="ct-000O.xml"
 addr="ct-000O"
-title="Regular category">regular category</fr:link>, then the subobject doctrine <fr:tex
-display="inline"><![CDATA[\mathsf {Sub}\colon \mathcal {C}^\mathrm {op}\to \mathsf {Lat}]]></fr:tex> has <fr:link
+title="Regular category">regular category</fr:link>.
+  <fr:tex
+display="inline"><![CDATA[f\colon A\to C]]></fr:tex> is the composite of <fr:tex
+display="inline"><![CDATA[g\colon A\to B]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[h\colon B\to C]]></fr:tex> iff <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> satisfies <fr:tex
+display="inline"><![CDATA[x\colon A|\top  \vdash  f(x) = h(g(x))]]></fr:tex> in its <fr:link
 type="local"
-href="log-000I.xml"
-addr="log-000I"
-title="Comprehension schema">comprehension schema</fr:link>.</fr:p>
+href="log-000P.xml"
+addr="log-000P"
+title="Internal language of a category">internal language</fr:link>.</fr:p>
     
       
       <fr:tree
@@ -67,29 +70,23 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>780</fr:anchor><fr:addr
-type="machine">#271</fr:addr><fr:route>unstable-271.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>24</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
-  <fr:p>Each fiber <fr:tex
-display="inline"><![CDATA[\mathsf {Sub}(A)]]></fr:tex> has finite limits inherited from <fr:tex
-display="inline"><![CDATA[\mathcal {C}]]></fr:tex>.
-    By <fr:ref
-addr="ct-000L"
-href="ct-000L.xml"
-taxon="Lemma" />, each <fr:tex
-display="inline"><![CDATA[f^{*}]]></fr:tex> has the required left adjoint <fr:tex
-display="inline"><![CDATA[\exists _{f}]]></fr:tex>.
-    They satisfy the <fr:link
-type="local"
-href="log-000E.xml"
-addr="log-000E"
-title="Beck-Chevalley condition">Beck-Chevalley condition</fr:link> because images commute with pullbacks in a regular category.
-    Then by construction the <fr:link
-type="local"
-href="log-000H.xml"
-addr="log-000H"
-title="Naming fucntor">naming functor</fr:link> <fr:tex
-display="inline"><![CDATA[{\mathopen {}[\mathord {\hspace {1pt}\text {--}\hspace {1pt}}]\mathclose {}}_{X}\colon {{\mathcal {C}}_{/{X}}}\to \mathsf {Sub}(X)]]></fr:tex> is just <fr:tex
-display="inline"><![CDATA[\mathsf {Img}]]></fr:tex>, which admits the inclusion functor as a right adjoint.</fr:p>
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>744</fr:anchor><fr:addr
+type="machine">#271</fr:addr><fr:route>unstable-271.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>8</fr:month><fr:day>8</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
+  <fr:p>Suppose that <fr:tex
+display="inline"><![CDATA[f = hg]]></fr:tex>.
+    Then <fr:tex
+display="inline"><![CDATA[{\mathopen {}\llbracket h(g(x))\rrbracket \mathclose {}}_{\mathcal {C}} = {\mathopen {}\llbracket h\rrbracket \mathclose {}}_{\mathcal {C}} \circ  {\mathopen {}\llbracket g\rrbracket \mathclose {}}_{\mathcal {C}} \circ  \mathsf {id}_{A} = hg]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[{\mathopen {}\llbracket f(x)\rrbracket \mathclose {}}_{\mathcal {C}} = {\mathopen {}\llbracket f\rrbracket \mathclose {}}_{\mathcal {C}} \circ  \mathsf {id}_{A} = f]]></fr:tex>.
+    Thus, the equalizer of <fr:tex
+display="inline"><![CDATA[{\mathopen {}\llbracket f(x)\rrbracket \mathclose {}}_{\mathcal {C}}]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[{\mathopen {}\llbracket h(g(x))\rrbracket \mathclose {}}_{\mathcal {C}}]]></fr:tex> is the terminal object, and the result follows immediately.</fr:p>
+  <fr:p>Suppose the converse.
+    Then the identity morphism <fr:tex
+display="inline"><![CDATA[\mathsf {id}_{A}]]></fr:tex> equalizes <fr:tex
+display="inline"><![CDATA[{\mathopen {}\llbracket f(x)\rrbracket \mathclose {}}_{\mathcal {C}}]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[{\mathopen {}\llbracket h(g(x))\rrbracket \mathclose {}}_{\mathcal {C}}]]></fr:tex>.
+    Thus, it follows that <fr:tex
+display="inline"><![CDATA[f = hg]]></fr:tex>.</fr:p>
 </fr:mainmatter><fr:backmatter /></fr:tree>
     
   </fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

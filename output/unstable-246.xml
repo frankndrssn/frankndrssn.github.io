@@ -7,31 +7,25 @@ show-heading="true"
 show-metadata="true"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>366</fr:anchor><fr:addr
-type="machine">#246</fr:addr><fr:route>unstable-246.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
-  Let <fr:tex
-display="inline"><![CDATA[x]]></fr:tex> be a set.
-  Suppose that <fr:tex
-display="inline"><![CDATA[x \in  x]]></fr:tex>.
-  Consider <fr:tex
-display="inline"><![CDATA[{\mathopen {}\{x\}\mathclose {}}]]></fr:tex>.
-  This is a non-empty set, so <fr:link
-type="local"
-href="set-0009.xml"
-addr="set-0009"
-title="Axiom of foundation">foundation</fr:link> implies that there is a set <fr:tex
-display="inline"><![CDATA[z \in  {\mathopen {}\{x\}\mathclose {}}]]></fr:tex> such that <fr:tex
-display="inline"><![CDATA[z \cap  {\mathopen {}\{x\}\mathclose {}} = \varnothing ]]></fr:tex>.
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>494</fr:anchor><fr:addr
+type="machine">#246</fr:addr><fr:route>unstable-246.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>21</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
   By <fr:ref
-addr="set-000H"
-href="set-000H.xml"
-taxon="Proposition" />, <fr:tex
-display="inline"><![CDATA[z = x]]></fr:tex>.
-  Then since <fr:tex
-display="inline"><![CDATA[x \in  x]]></fr:tex>, we have that <fr:tex
-display="inline"><![CDATA[x \in  z]]></fr:tex>.
-  Thus, <fr:tex
-display="inline"><![CDATA[x \in  z \cap  {\mathopen {}\{x\}\mathclose {}}]]></fr:tex>, which is a contradiction.
+addr="set-0011"
+href="set-0011.xml"
+taxon="Proposition" />, for each <fr:tex
+display="inline"><![CDATA[n \in  \mathbb {N}]]></fr:tex>, an <fr:tex
+display="inline"><![CDATA[n]]></fr:tex>-germ exists uniquely.
+  Consider
+  <fr:tex
+display="block"><![CDATA[     f = \bigcup {\mathopen {}\{g \in  \mathcal {P}(\mathbb {N} \times  X)\colon \exists n \in  \mathbb {N}.\mkern 5mu\text {$g$ is an $n$-germ}\}\mathclose {}}.   ]]></fr:tex>
+  By construction, each <fr:tex
+display="inline"><![CDATA[s(n)]]></fr:tex>-germ is the unique extension of <fr:tex
+display="inline"><![CDATA[n]]></fr:tex>-germ.
+  Thus, it follows that <fr:tex
+display="inline"><![CDATA[f]]></fr:tex> is a function.
+  By an easy induction on <fr:tex
+display="inline"><![CDATA[n]]></fr:tex>, one sees that <fr:tex
+display="inline"><![CDATA[f]]></fr:tex> is the unique function with the required properties.
 </fr:mainmatter><fr:backmatter><fr:tree
 toc="false"
 numbered="false"
@@ -47,11 +41,22 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>367</fr:anchor><fr:addr
-type="user">set-000X</fr:addr><fr:route>set-000X.xml</fr:route><fr:title
-text="The membership relation is irreflexive">The membership relation is irreflexive</fr:title><fr:taxon>Proposition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>For any set <fr:tex
-display="inline"><![CDATA[x]]></fr:tex>, <fr:tex
-display="inline"><![CDATA[x \notin  x]]></fr:tex>.</fr:p>
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>495</fr:anchor><fr:addr
+type="user">set-0012</fr:addr><fr:route>set-0012.xml</fr:route><fr:title
+text="Natural numbers are the initial discrete dynamical system"><fr:link
+type="local"
+href="set-000V.xml"
+addr="set-000V"
+title="Natural numbers">Natural numbers</fr:link> are the initial discrete dynamical system</fr:title><fr:taxon>Proposition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>21</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> be a set equipped with a distinguished element <fr:tex
+display="inline"><![CDATA[x_{0} \in  X]]></fr:tex> and an endofunction <fr:tex
+display="inline"><![CDATA[h\colon X\to X]]></fr:tex>.
+  Then there is a unique function <fr:tex
+display="inline"><![CDATA[f\colon \mathbb {N}\to X]]></fr:tex> such that
+  <fr:ul><fr:li><fr:tex
+display="inline"><![CDATA[f(0) = x_{0}]]></fr:tex>;</fr:li>
+    <fr:li><fr:tex
+display="inline"><![CDATA[f(s(n)) = h(f(n))]]></fr:tex>.</fr:li></fr:ul></fr:p>
     
       
       <fr:tree
@@ -61,31 +66,25 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>337</fr:anchor><fr:addr
-type="machine">#246</fr:addr><fr:route>unstable-246.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
-  Let <fr:tex
-display="inline"><![CDATA[x]]></fr:tex> be a set.
-  Suppose that <fr:tex
-display="inline"><![CDATA[x \in  x]]></fr:tex>.
-  Consider <fr:tex
-display="inline"><![CDATA[{\mathopen {}\{x\}\mathclose {}}]]></fr:tex>.
-  This is a non-empty set, so <fr:link
-type="local"
-href="set-0009.xml"
-addr="set-0009"
-title="Axiom of foundation">foundation</fr:link> implies that there is a set <fr:tex
-display="inline"><![CDATA[z \in  {\mathopen {}\{x\}\mathclose {}}]]></fr:tex> such that <fr:tex
-display="inline"><![CDATA[z \cap  {\mathopen {}\{x\}\mathclose {}} = \varnothing ]]></fr:tex>.
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>487</fr:anchor><fr:addr
+type="machine">#246</fr:addr><fr:route>unstable-246.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>21</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
   By <fr:ref
-addr="set-000H"
-href="set-000H.xml"
-taxon="Proposition" />, <fr:tex
-display="inline"><![CDATA[z = x]]></fr:tex>.
-  Then since <fr:tex
-display="inline"><![CDATA[x \in  x]]></fr:tex>, we have that <fr:tex
-display="inline"><![CDATA[x \in  z]]></fr:tex>.
-  Thus, <fr:tex
-display="inline"><![CDATA[x \in  z \cap  {\mathopen {}\{x\}\mathclose {}}]]></fr:tex>, which is a contradiction.
+addr="set-0011"
+href="set-0011.xml"
+taxon="Proposition" />, for each <fr:tex
+display="inline"><![CDATA[n \in  \mathbb {N}]]></fr:tex>, an <fr:tex
+display="inline"><![CDATA[n]]></fr:tex>-germ exists uniquely.
+  Consider
+  <fr:tex
+display="block"><![CDATA[     f = \bigcup {\mathopen {}\{g \in  \mathcal {P}(\mathbb {N} \times  X)\colon \exists n \in  \mathbb {N}.\mkern 5mu\text {$g$ is an $n$-germ}\}\mathclose {}}.   ]]></fr:tex>
+  By construction, each <fr:tex
+display="inline"><![CDATA[s(n)]]></fr:tex>-germ is the unique extension of <fr:tex
+display="inline"><![CDATA[n]]></fr:tex>-germ.
+  Thus, it follows that <fr:tex
+display="inline"><![CDATA[f]]></fr:tex> is a function.
+  By an easy induction on <fr:tex
+display="inline"><![CDATA[n]]></fr:tex>, one sees that <fr:tex
+display="inline"><![CDATA[f]]></fr:tex> is the unique function with the required properties.
 </fr:mainmatter><fr:backmatter /></fr:tree>
     
   </fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>
