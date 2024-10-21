@@ -7,25 +7,15 @@ show-heading="true"
 show-metadata="true"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>494</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>395</fr:anchor><fr:addr
 type="machine">#246</fr:addr><fr:route>unstable-246.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>21</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
-  By <fr:ref
-addr="set-0011"
-href="set-0011.xml"
-taxon="Proposition" />, for each <fr:tex
-display="inline"><![CDATA[n \in  \mathbb {N}]]></fr:tex>, an <fr:tex
-display="inline"><![CDATA[n]]></fr:tex>-germ exists uniquely.
-  Consider
+  Define
   <fr:tex
-display="block"><![CDATA[     f = \bigcup {\mathopen {}\{g \in  \mathcal {P}(\mathbb {N} \times  X)\colon \exists n \in  \mathbb {N}.\mkern 5mu\text {$g$ is an $n$-germ}\}\mathclose {}}.   ]]></fr:tex>
-  By construction, each <fr:tex
-display="inline"><![CDATA[s(n)]]></fr:tex>-germ is the unique extension of <fr:tex
-display="inline"><![CDATA[n]]></fr:tex>-germ.
-  Thus, it follows that <fr:tex
-display="inline"><![CDATA[f]]></fr:tex> is a function.
-  By an easy induction on <fr:tex
-display="inline"><![CDATA[n]]></fr:tex>, one sees that <fr:tex
-display="inline"><![CDATA[f]]></fr:tex> is the unique function with the required properties.
+display="block"><![CDATA[     \varphi  := (a \in  A \Rightarrow  \exists b \in  B.\mkern 5mu(a,b) \in  f) \wedge  (a \notin  A \Rightarrow  y = \varnothing ).   ]]></fr:tex>
+  The fact that <fr:tex
+display="inline"><![CDATA[f]]></fr:tex> is a function makes <fr:tex
+display="inline"><![CDATA[\varphi ]]></fr:tex> a definable mapping.
+  The required condition is easy to verify.
 </fr:mainmatter><fr:backmatter><fr:tree
 toc="false"
 numbered="false"
@@ -41,22 +31,17 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>495</fr:anchor><fr:addr
-type="user">set-0012</fr:addr><fr:route>set-0012.xml</fr:route><fr:title
-text="Natural numbers are the initial discrete dynamical system"><fr:link
-type="local"
-href="set-000V.xml"
-addr="set-000V"
-title="Natural numbers">Natural numbers</fr:link> are the initial discrete dynamical system</fr:title><fr:taxon>Proposition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>21</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
-display="inline"><![CDATA[X]]></fr:tex> be a set equipped with a distinguished element <fr:tex
-display="inline"><![CDATA[x_{0} \in  X]]></fr:tex> and an endofunction <fr:tex
-display="inline"><![CDATA[h\colon X\to X]]></fr:tex>.
-  Then there is a unique function <fr:tex
-display="inline"><![CDATA[f\colon \mathbb {N}\to X]]></fr:tex> such that
-  <fr:ul><fr:li><fr:tex
-display="inline"><![CDATA[f(0) = x_{0}]]></fr:tex>;</fr:li>
-    <fr:li><fr:tex
-display="inline"><![CDATA[f(s(n)) = h(f(n))]]></fr:tex>.</fr:li></fr:ul></fr:p>
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>396</fr:anchor><fr:addr
+type="user">set-0016</fr:addr><fr:route>set-0016.xml</fr:route><fr:title
+text="Every function can be externalized">Every function can be externalized</fr:title><fr:taxon>Proposition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>21</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[f\colon A\to B]]></fr:tex> be a function.
+  Then there is a definable mapping <fr:tex
+display="inline"><![CDATA[\varphi ]]></fr:tex> with <fr:tex
+display="inline"><![CDATA[x,y]]></fr:tex> free such that for any <fr:tex
+display="inline"><![CDATA[a \in  A]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[b \in  B]]></fr:tex>,
+  <fr:tex
+display="block"><![CDATA[     f(a) = b \Leftrightarrow  \varphi (a,b).   ]]></fr:tex></fr:p>
     
       
       <fr:tree
@@ -66,25 +51,15 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>487</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>366</fr:anchor><fr:addr
 type="machine">#246</fr:addr><fr:route>unstable-246.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>21</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
-  By <fr:ref
-addr="set-0011"
-href="set-0011.xml"
-taxon="Proposition" />, for each <fr:tex
-display="inline"><![CDATA[n \in  \mathbb {N}]]></fr:tex>, an <fr:tex
-display="inline"><![CDATA[n]]></fr:tex>-germ exists uniquely.
-  Consider
+  Define
   <fr:tex
-display="block"><![CDATA[     f = \bigcup {\mathopen {}\{g \in  \mathcal {P}(\mathbb {N} \times  X)\colon \exists n \in  \mathbb {N}.\mkern 5mu\text {$g$ is an $n$-germ}\}\mathclose {}}.   ]]></fr:tex>
-  By construction, each <fr:tex
-display="inline"><![CDATA[s(n)]]></fr:tex>-germ is the unique extension of <fr:tex
-display="inline"><![CDATA[n]]></fr:tex>-germ.
-  Thus, it follows that <fr:tex
-display="inline"><![CDATA[f]]></fr:tex> is a function.
-  By an easy induction on <fr:tex
-display="inline"><![CDATA[n]]></fr:tex>, one sees that <fr:tex
-display="inline"><![CDATA[f]]></fr:tex> is the unique function with the required properties.
+display="block"><![CDATA[     \varphi  := (a \in  A \Rightarrow  \exists b \in  B.\mkern 5mu(a,b) \in  f) \wedge  (a \notin  A \Rightarrow  y = \varnothing ).   ]]></fr:tex>
+  The fact that <fr:tex
+display="inline"><![CDATA[f]]></fr:tex> is a function makes <fr:tex
+display="inline"><![CDATA[\varphi ]]></fr:tex> a definable mapping.
+  The required condition is easy to verify.
 </fr:mainmatter><fr:backmatter /></fr:tree>
     
   </fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

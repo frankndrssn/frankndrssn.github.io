@@ -7,38 +7,47 @@ show-heading="true"
 show-metadata="true"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>518</fr:anchor><fr:addr
-type="machine">#250</fr:addr><fr:route>unstable-250.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
-  <fr:p>Fix <fr:tex
-display="inline"><![CDATA[m \in  N]]></fr:tex>.
-    Consider <fr:tex
-display="inline"><![CDATA[P := {\mathopen {}\{n \in  N\colon m \in  n \Rightarrow  s(m) \in  s(n)\}\mathclose {}}]]></fr:tex>.
-    Note that <fr:tex
-display="inline"><![CDATA[\varnothing  \in  P]]></fr:tex> vacuously.</fr:p>
-  <fr:p>Now let <fr:tex
-display="inline"><![CDATA[n \in  P]]></fr:tex>, i.e., <fr:tex
-display="inline"><![CDATA[m \in  n \Rightarrow  s(m) \in  s(n)]]></fr:tex>.
-    We need to show that <fr:tex
-display="inline"><![CDATA[s(n) \in  P]]></fr:tex>, i.e., <fr:tex
-display="inline"><![CDATA[m \in  s(n) \Rightarrow  s(m) \in  s(s(n))]]></fr:tex>.
-    Suppose that <fr:tex
-display="inline"><![CDATA[m \in  s(n) = n \cup  {\mathopen {}\{n\}\mathclose {}}]]></fr:tex>.
-    By <fr:link
-type="local"
-href="set-0004.xml"
-addr="set-0004"
-title="Axiom of union">union</fr:link>, <fr:tex
-display="inline"><![CDATA[m \in  n]]></fr:tex> or <fr:tex
-display="inline"><![CDATA[m \in  {\mathopen {}\{n\}\mathclose {}}]]></fr:tex>.
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>403</fr:anchor><fr:addr
+type="machine">#250</fr:addr><fr:route>unstable-250.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>21</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
+  <fr:p>We proceed by induction on <fr:tex
+display="inline"><![CDATA[n]]></fr:tex>.
+    In the base case, we define the function <fr:tex
+display="inline"><![CDATA[g_{0}\colon s(0)\to X]]></fr:tex> by <fr:tex
+display="inline"><![CDATA[g(0) = x_{0}]]></fr:tex>.
+    Note that this is a <fr:tex
+display="inline"><![CDATA[0]]></fr:tex>-germ and uniqueness is an immediate consequence of <fr:ref
+addr="set-000S"
+href="set-000S.xml"
+taxon="Proposition" />.</fr:p>
+  <fr:p>In the induction step, the induction hypothesis says there is a unique <fr:tex
+display="inline"><![CDATA[n]]></fr:tex>-germ <fr:tex
+display="inline"><![CDATA[g_{n}\colon s(n)\to X]]></fr:tex>.
+    Consider the function <fr:tex
+display="inline"><![CDATA[g_{s(n)}\colon s(s(n))\to X]]></fr:tex> defined by
+    <fr:tex
+display="block"><![CDATA[       g_{s(n)}(k) =       \begin {cases}         h(g_{n}(n)) & \text {if $k = s(n)$}\\         g_{n}(k) & \text {if $k < s(n)$}       \end {cases}     ]]></fr:tex></fr:p>
+  <fr:p>By direct computation, we have <fr:tex
+display="inline"><![CDATA[g_{s(n)}(0) = g_{n}(0) = x_{0}]]></fr:tex>.
+    For any <fr:tex
+display="inline"><![CDATA[m < s(n)]]></fr:tex>, we have <fr:tex
+display="inline"><![CDATA[m < n]]></fr:tex> or <fr:tex
+display="inline"><![CDATA[m = n]]></fr:tex>.
     In the former case, we have <fr:tex
-display="inline"><![CDATA[s(m) \in  s(n) \subseteq  s(n) \cup  {\mathopen {}\{s(n)\}\mathclose {}} = s(s(n))]]></fr:tex>.
+display="inline"><![CDATA[g_{s(n)}(s(m)) = g_{n}(s(m)) = h(g_{n}(m))]]></fr:tex>.
     In the latter case, we have <fr:tex
-display="inline"><![CDATA[m = n]]></fr:tex> by <fr:ref
-addr="set-000H"
-href="set-000H.xml"
-taxon="Proposition" />.
-    Then <fr:tex
-display="inline"><![CDATA[s(m) = s(n) \in  s(n) \cup  {\mathopen {}\{s(n)\}\mathclose {}} = s(s(n))]]></fr:tex>.</fr:p>
+display="inline"><![CDATA[g_{s(n)}(s(m)) = h(g_{n}(m)) = h(g_{s(n)}(m))]]></fr:tex>.</fr:p>
+  <fr:p>It remains to show that <fr:tex
+display="inline"><![CDATA[g_{s(n)}]]></fr:tex> is unique.
+    Note that the domain restriction of any <fr:tex
+display="inline"><![CDATA[s(n)]]></fr:tex>-germ to <fr:tex
+display="inline"><![CDATA[s(n)]]></fr:tex> is an <fr:tex
+display="inline"><![CDATA[n]]></fr:tex>-germ.
+    By the induction hypothesis, <fr:tex
+display="inline"><![CDATA[n]]></fr:tex>-germ exists uniquely.
+    Thus, picking <fr:tex
+display="inline"><![CDATA[g_{s(n)}(s(n)) = h(g_{n}(n))]]></fr:tex> is the only way to extend the unique <fr:tex
+display="inline"><![CDATA[n]]></fr:tex>-germ to an <fr:tex
+display="inline"><![CDATA[s(n)]]></fr:tex>-germ.</fr:p>
 </fr:mainmatter><fr:backmatter><fr:tree
 toc="false"
 numbered="false"
@@ -54,21 +63,20 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>519</fr:anchor><fr:addr
-type="user">set-000W</fr:addr><fr:route>set-000W.xml</fr:route><fr:title
-text="Set membership respects successor">Set membership respects successor</fr:title><fr:taxon>Lemma</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
-display="inline"><![CDATA[N]]></fr:tex> be an inductive set admitting the induction principle defined in <fr:link
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>404</fr:anchor><fr:addr
+type="user">set-0011</fr:addr><fr:route>set-0011.xml</fr:route><fr:title
+text="Existence and uniqueness of n-germ">Existence and uniqueness of <fr:link
 type="local"
-href="set-000T.xml"
-addr="set-000T"
-title="Natural number set">natural number set</fr:link>.
+href="set-0010.xml"
+addr="set-0010"
+title="Germs"><fr:tex
+display="inline"><![CDATA[n]]></fr:tex>-germ</fr:link></fr:title><fr:taxon>Proposition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>21</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> be a set equipped with a distinguished element <fr:tex
+display="inline"><![CDATA[x_{0} \in  X]]></fr:tex> and an endofunction <fr:tex
+display="inline"><![CDATA[h\colon X\to X]]></fr:tex>.
   For each <fr:tex
-display="inline"><![CDATA[n \in  N]]></fr:tex>, we define <fr:tex
-display="inline"><![CDATA[s(n) := n \cup  {\mathopen {}\{n\}\mathclose {}}]]></fr:tex>.
-  Then for any <fr:tex
-display="inline"><![CDATA[m,n \in  N]]></fr:tex>, if <fr:tex
-display="inline"><![CDATA[m \in  n]]></fr:tex> then <fr:tex
-display="inline"><![CDATA[s(m) \in  s(n)]]></fr:tex>.</fr:p>
+display="inline"><![CDATA[n \in  \mathbb {N}]]></fr:tex>, there is a unique <fr:tex
+display="inline"><![CDATA[n]]></fr:tex>-germ.</fr:p>
     
       
       <fr:tree
@@ -78,38 +86,47 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>475</fr:anchor><fr:addr
-type="machine">#250</fr:addr><fr:route>unstable-250.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
-  <fr:p>Fix <fr:tex
-display="inline"><![CDATA[m \in  N]]></fr:tex>.
-    Consider <fr:tex
-display="inline"><![CDATA[P := {\mathopen {}\{n \in  N\colon m \in  n \Rightarrow  s(m) \in  s(n)\}\mathclose {}}]]></fr:tex>.
-    Note that <fr:tex
-display="inline"><![CDATA[\varnothing  \in  P]]></fr:tex> vacuously.</fr:p>
-  <fr:p>Now let <fr:tex
-display="inline"><![CDATA[n \in  P]]></fr:tex>, i.e., <fr:tex
-display="inline"><![CDATA[m \in  n \Rightarrow  s(m) \in  s(n)]]></fr:tex>.
-    We need to show that <fr:tex
-display="inline"><![CDATA[s(n) \in  P]]></fr:tex>, i.e., <fr:tex
-display="inline"><![CDATA[m \in  s(n) \Rightarrow  s(m) \in  s(s(n))]]></fr:tex>.
-    Suppose that <fr:tex
-display="inline"><![CDATA[m \in  s(n) = n \cup  {\mathopen {}\{n\}\mathclose {}}]]></fr:tex>.
-    By <fr:link
-type="local"
-href="set-0004.xml"
-addr="set-0004"
-title="Axiom of union">union</fr:link>, <fr:tex
-display="inline"><![CDATA[m \in  n]]></fr:tex> or <fr:tex
-display="inline"><![CDATA[m \in  {\mathopen {}\{n\}\mathclose {}}]]></fr:tex>.
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>383</fr:anchor><fr:addr
+type="machine">#250</fr:addr><fr:route>unstable-250.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>21</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
+  <fr:p>We proceed by induction on <fr:tex
+display="inline"><![CDATA[n]]></fr:tex>.
+    In the base case, we define the function <fr:tex
+display="inline"><![CDATA[g_{0}\colon s(0)\to X]]></fr:tex> by <fr:tex
+display="inline"><![CDATA[g(0) = x_{0}]]></fr:tex>.
+    Note that this is a <fr:tex
+display="inline"><![CDATA[0]]></fr:tex>-germ and uniqueness is an immediate consequence of <fr:ref
+addr="set-000S"
+href="set-000S.xml"
+taxon="Proposition" />.</fr:p>
+  <fr:p>In the induction step, the induction hypothesis says there is a unique <fr:tex
+display="inline"><![CDATA[n]]></fr:tex>-germ <fr:tex
+display="inline"><![CDATA[g_{n}\colon s(n)\to X]]></fr:tex>.
+    Consider the function <fr:tex
+display="inline"><![CDATA[g_{s(n)}\colon s(s(n))\to X]]></fr:tex> defined by
+    <fr:tex
+display="block"><![CDATA[       g_{s(n)}(k) =       \begin {cases}         h(g_{n}(n)) & \text {if $k = s(n)$}\\         g_{n}(k) & \text {if $k < s(n)$}       \end {cases}     ]]></fr:tex></fr:p>
+  <fr:p>By direct computation, we have <fr:tex
+display="inline"><![CDATA[g_{s(n)}(0) = g_{n}(0) = x_{0}]]></fr:tex>.
+    For any <fr:tex
+display="inline"><![CDATA[m < s(n)]]></fr:tex>, we have <fr:tex
+display="inline"><![CDATA[m < n]]></fr:tex> or <fr:tex
+display="inline"><![CDATA[m = n]]></fr:tex>.
     In the former case, we have <fr:tex
-display="inline"><![CDATA[s(m) \in  s(n) \subseteq  s(n) \cup  {\mathopen {}\{s(n)\}\mathclose {}} = s(s(n))]]></fr:tex>.
+display="inline"><![CDATA[g_{s(n)}(s(m)) = g_{n}(s(m)) = h(g_{n}(m))]]></fr:tex>.
     In the latter case, we have <fr:tex
-display="inline"><![CDATA[m = n]]></fr:tex> by <fr:ref
-addr="set-000H"
-href="set-000H.xml"
-taxon="Proposition" />.
-    Then <fr:tex
-display="inline"><![CDATA[s(m) = s(n) \in  s(n) \cup  {\mathopen {}\{s(n)\}\mathclose {}} = s(s(n))]]></fr:tex>.</fr:p>
+display="inline"><![CDATA[g_{s(n)}(s(m)) = h(g_{n}(m)) = h(g_{s(n)}(m))]]></fr:tex>.</fr:p>
+  <fr:p>It remains to show that <fr:tex
+display="inline"><![CDATA[g_{s(n)}]]></fr:tex> is unique.
+    Note that the domain restriction of any <fr:tex
+display="inline"><![CDATA[s(n)]]></fr:tex>-germ to <fr:tex
+display="inline"><![CDATA[s(n)]]></fr:tex> is an <fr:tex
+display="inline"><![CDATA[n]]></fr:tex>-germ.
+    By the induction hypothesis, <fr:tex
+display="inline"><![CDATA[n]]></fr:tex>-germ exists uniquely.
+    Thus, picking <fr:tex
+display="inline"><![CDATA[g_{s(n)}(s(n)) = h(g_{n}(n))]]></fr:tex> is the only way to extend the unique <fr:tex
+display="inline"><![CDATA[n]]></fr:tex>-germ to an <fr:tex
+display="inline"><![CDATA[s(n)]]></fr:tex>-germ.</fr:p>
 </fr:mainmatter><fr:backmatter /></fr:tree>
     
   </fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>
