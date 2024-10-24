@@ -7,22 +7,15 @@ show-heading="true"
 show-metadata="true"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>595</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>517</fr:anchor><fr:addr
 type="machine">#252</fr:addr><fr:route>unstable-252.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>21</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
-  Consider the definable mapping <fr:tex
-display="inline"><![CDATA[\psi (n,g) := (n \in  \mathbb {N} \Rightarrow  g~\text {is an $n$-germ}) \wedge  (n \notin  \mathbb {N} \Rightarrow  g = \varnothing )]]></fr:tex>.
-  By <fr:link
-type="local"
-href="set-0008.xml"
-addr="set-0008"
-title="Axiom schema of replacement">replacement</fr:link>, we define
+  Define
   <fr:tex
-display="block"><![CDATA[     f := {\mathopen {}\{g\colon n \in  \mathbb {N}, g~\text {is an $n$-germ}\}\mathclose {}}.   ]]></fr:tex>
-  <fr:link
-type="local"
-href="todo.xml"
-addr="todo"
-title="TODO">TODO</fr:link>
+display="block"><![CDATA[     \varphi  := (a \in  A \Rightarrow  \exists b \in  B.\mkern 5mu(a,b) \in  f) \wedge  (a \notin  A \Rightarrow  y = \varnothing ).   ]]></fr:tex>
+  The fact that <fr:tex
+display="inline"><![CDATA[f]]></fr:tex> is a function makes <fr:tex
+display="inline"><![CDATA[\varphi ]]></fr:tex> a definable mapping.
+  The required condition is easy to verify.
 </fr:mainmatter><fr:backmatter><fr:tree
 toc="false"
 numbered="false"
@@ -38,20 +31,17 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>596</fr:anchor><fr:addr
-type="user">set-0013</fr:addr><fr:route>set-0013.xml</fr:route><fr:title
-text="Class recursion">Class recursion</fr:title><fr:taxon>Proposition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>21</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
-display="inline"><![CDATA[\varphi ]]></fr:tex> be a definable mapping with at most <fr:tex
-display="inline"><![CDATA[x,y]]></fr:tex> free.
-  Then for any set <fr:tex
-display="inline"><![CDATA[x_{0}]]></fr:tex> there is a unique function <fr:tex
-display="inline"><![CDATA[f]]></fr:tex> with <fr:tex
-display="inline"><![CDATA[\mathsf {dom}(f) = \mathbb {N}]]></fr:tex> such that
-  <fr:ul><fr:li><fr:tex
-display="inline"><![CDATA[f(0) = x_{0}]]></fr:tex>;</fr:li>
-    <fr:li><fr:tex
-display="inline"><![CDATA[\varphi (f(n),f(s(n)))]]></fr:tex> for every <fr:tex
-display="inline"><![CDATA[n \in  \mathbb {N}]]></fr:tex>.</fr:li></fr:ul></fr:p>
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>518</fr:anchor><fr:addr
+type="user">set-0016</fr:addr><fr:route>set-0016.xml</fr:route><fr:title
+text="Every function can be externalized">Every function can be externalized</fr:title><fr:taxon>Proposition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>21</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[f\colon A\to B]]></fr:tex> be a function.
+  Then there is a definable mapping <fr:tex
+display="inline"><![CDATA[\varphi ]]></fr:tex> with <fr:tex
+display="inline"><![CDATA[x,y]]></fr:tex> free such that for any <fr:tex
+display="inline"><![CDATA[a \in  A]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[b \in  B]]></fr:tex>,
+  <fr:tex
+display="block"><![CDATA[     f(a) = b \Leftrightarrow  \varphi (a,b).   ]]></fr:tex></fr:p>
     
       
       <fr:tree
@@ -61,22 +51,15 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>515</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>375</fr:anchor><fr:addr
 type="machine">#252</fr:addr><fr:route>unstable-252.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>21</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
-  Consider the definable mapping <fr:tex
-display="inline"><![CDATA[\psi (n,g) := (n \in  \mathbb {N} \Rightarrow  g~\text {is an $n$-germ}) \wedge  (n \notin  \mathbb {N} \Rightarrow  g = \varnothing )]]></fr:tex>.
-  By <fr:link
-type="local"
-href="set-0008.xml"
-addr="set-0008"
-title="Axiom schema of replacement">replacement</fr:link>, we define
+  Define
   <fr:tex
-display="block"><![CDATA[     f := {\mathopen {}\{g\colon n \in  \mathbb {N}, g~\text {is an $n$-germ}\}\mathclose {}}.   ]]></fr:tex>
-  <fr:link
-type="local"
-href="todo.xml"
-addr="todo"
-title="TODO">TODO</fr:link>
+display="block"><![CDATA[     \varphi  := (a \in  A \Rightarrow  \exists b \in  B.\mkern 5mu(a,b) \in  f) \wedge  (a \notin  A \Rightarrow  y = \varnothing ).   ]]></fr:tex>
+  The fact that <fr:tex
+display="inline"><![CDATA[f]]></fr:tex> is a function makes <fr:tex
+display="inline"><![CDATA[\varphi ]]></fr:tex> a definable mapping.
+  The required condition is easy to verify.
 </fr:mainmatter><fr:backmatter /></fr:tree>
     
   </fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

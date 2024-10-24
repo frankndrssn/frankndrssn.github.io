@@ -7,30 +7,27 @@ show-heading="true"
 show-metadata="true"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>643</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>566</fr:anchor><fr:addr
 type="machine">#262</fr:addr><fr:route>unstable-262.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
-  Let <fr:tex
-display="inline"><![CDATA[a \in  A, b \in  B]]></fr:tex>.
-  By <fr:link
-type="local"
-href="set-000I.xml"
-addr="set-000I"
-title="Ordered pairs">definition</fr:link>, <fr:tex
-display="inline"><![CDATA[(a,b) = {\mathopen {}\{{\mathopen {}\{a\}\mathclose {}},{\mathopen {}\{a,b\}\mathclose {}}\}\mathclose {}}]]></fr:tex>.
-  Thus, by the <fr:link
-type="local"
-href="set-0006.xml"
-addr="set-0006"
-title="Axiom of powerset">powerset axiom</fr:link>, <fr:tex
-display="inline"><![CDATA[(a,b) \in  \mathcal {P}(\mathcal {P}(A \cup  B))]]></fr:tex>.
-  By <fr:link
-type="local"
-href="set-0005.xml"
-addr="set-0005"
-title="Axiom schema of separation">separation</fr:link>,
-  <fr:tex
-display="block"><![CDATA[     A \times  B = {\mathopen {}\{p \in  \mathcal {P}(\mathcal {P}(A \cup  B))\colon \exists a.\mkern 5mu\exists b.\mkern 5mup = (a,b)\}\mathclose {}}   ]]></fr:tex>
-  is a set.
+  Consider the subset <fr:tex
+display="inline"><![CDATA[P := {\mathopen {}\{x \in  N\colon s(x) \neq  x\}\mathclose {}}]]></fr:tex>.
+  By the induction principle, it suffices to show that <fr:tex
+display="inline"><![CDATA[0 \in  P]]></fr:tex> and for any <fr:tex
+display="inline"><![CDATA[x \in  N]]></fr:tex>, if <fr:tex
+display="inline"><![CDATA[x \in  P]]></fr:tex> then <fr:tex
+display="inline"><![CDATA[s(x) \in  P]]></fr:tex>.
+  First, <fr:tex
+display="inline"><![CDATA[0 \in  P]]></fr:tex> follows from the non-looping property.
+  Now assume that <fr:tex
+display="inline"><![CDATA[x \in  P]]></fr:tex>, i.e., <fr:tex
+display="inline"><![CDATA[s(x) \neq  x]]></fr:tex>.
+  Then if <fr:tex
+display="inline"><![CDATA[s(s(x)) = s(x)]]></fr:tex>, by injectivity, <fr:tex
+display="inline"><![CDATA[s(x) = x]]></fr:tex>, which is a contradiction.
+  Thus, <fr:tex
+display="inline"><![CDATA[s(s(x)) \neq  s(x)]]></fr:tex>.
+  In other words, <fr:tex
+display="inline"><![CDATA[s(x) \in  P]]></fr:tex>.
 </fr:mainmatter><fr:backmatter><fr:tree
 toc="false"
 numbered="false"
@@ -46,12 +43,17 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>644</fr:anchor><fr:addr
-type="user">set-000L</fr:addr><fr:route>set-000L.xml</fr:route><fr:title
-text="Cartesian product">Cartesian product</fr:title><fr:taxon>Proposition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
-display="inline"><![CDATA[A,B]]></fr:tex> be sets.
-  Then <fr:tex
-display="inline"><![CDATA[A \times  B := {\mathopen {}\{(a,b)\colon a \in  A \wedge  b \in  B\}\mathclose {}}]]></fr:tex> is a set.</fr:p>
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>567</fr:anchor><fr:addr
+type="user">set-000U</fr:addr><fr:route>set-000U.xml</fr:route><fr:title
+text="Successor inequality">Successor inequality</fr:title><fr:taxon>Proposition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[N]]></fr:tex> be a <fr:link
+type="local"
+href="set-000T.xml"
+addr="set-000T"
+title="Natural number set">natural number set</fr:link>.
+  Then for any <fr:tex
+display="inline"><![CDATA[n \in  N]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[s(n) \neq  n]]></fr:tex>.</fr:p>
     
       
       <fr:tree
@@ -61,30 +63,27 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>475</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>384</fr:anchor><fr:addr
 type="machine">#262</fr:addr><fr:route>unstable-262.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
-  Let <fr:tex
-display="inline"><![CDATA[a \in  A, b \in  B]]></fr:tex>.
-  By <fr:link
-type="local"
-href="set-000I.xml"
-addr="set-000I"
-title="Ordered pairs">definition</fr:link>, <fr:tex
-display="inline"><![CDATA[(a,b) = {\mathopen {}\{{\mathopen {}\{a\}\mathclose {}},{\mathopen {}\{a,b\}\mathclose {}}\}\mathclose {}}]]></fr:tex>.
-  Thus, by the <fr:link
-type="local"
-href="set-0006.xml"
-addr="set-0006"
-title="Axiom of powerset">powerset axiom</fr:link>, <fr:tex
-display="inline"><![CDATA[(a,b) \in  \mathcal {P}(\mathcal {P}(A \cup  B))]]></fr:tex>.
-  By <fr:link
-type="local"
-href="set-0005.xml"
-addr="set-0005"
-title="Axiom schema of separation">separation</fr:link>,
-  <fr:tex
-display="block"><![CDATA[     A \times  B = {\mathopen {}\{p \in  \mathcal {P}(\mathcal {P}(A \cup  B))\colon \exists a.\mkern 5mu\exists b.\mkern 5mup = (a,b)\}\mathclose {}}   ]]></fr:tex>
-  is a set.
+  Consider the subset <fr:tex
+display="inline"><![CDATA[P := {\mathopen {}\{x \in  N\colon s(x) \neq  x\}\mathclose {}}]]></fr:tex>.
+  By the induction principle, it suffices to show that <fr:tex
+display="inline"><![CDATA[0 \in  P]]></fr:tex> and for any <fr:tex
+display="inline"><![CDATA[x \in  N]]></fr:tex>, if <fr:tex
+display="inline"><![CDATA[x \in  P]]></fr:tex> then <fr:tex
+display="inline"><![CDATA[s(x) \in  P]]></fr:tex>.
+  First, <fr:tex
+display="inline"><![CDATA[0 \in  P]]></fr:tex> follows from the non-looping property.
+  Now assume that <fr:tex
+display="inline"><![CDATA[x \in  P]]></fr:tex>, i.e., <fr:tex
+display="inline"><![CDATA[s(x) \neq  x]]></fr:tex>.
+  Then if <fr:tex
+display="inline"><![CDATA[s(s(x)) = s(x)]]></fr:tex>, by injectivity, <fr:tex
+display="inline"><![CDATA[s(x) = x]]></fr:tex>, which is a contradiction.
+  Thus, <fr:tex
+display="inline"><![CDATA[s(s(x)) \neq  s(x)]]></fr:tex>.
+  In other words, <fr:tex
+display="inline"><![CDATA[s(x) \in  P]]></fr:tex>.
 </fr:mainmatter><fr:backmatter /></fr:tree>
     
   </fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

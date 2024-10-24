@@ -7,15 +7,59 @@ show-heading="true"
 show-metadata="true"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>536</fr:anchor><fr:addr
-type="machine">#248</fr:addr><fr:route>unstable-248.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>22</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
-  Take <fr:tex
-display="inline"><![CDATA[\sup  A := \bigcup  A]]></fr:tex>.
-  <fr:link
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>448</fr:anchor><fr:addr
+type="machine">#248</fr:addr><fr:route>unstable-248.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>23</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
+  <fr:p>AC implies (1): <fr:ref
+addr="set-001I"
+href="set-001I.xml"
+taxon="Lemma" />.</fr:p>
+  <fr:p>(1) implies (2): Given an index set <fr:tex
+display="inline"><![CDATA[I]]></fr:tex> and a function <fr:tex
+display="inline"><![CDATA[A]]></fr:tex> with <fr:tex
+display="inline"><![CDATA[\mathsf {dom}(I)]]></fr:tex>.
+    Consider the function <fr:tex
+display="inline"><![CDATA[A']]></fr:tex> defined by <fr:tex
+display="inline"><![CDATA[A'_{i} = (A_{i},i)]]></fr:tex>.
+    Note that there is an evident surjection <fr:tex
+display="inline"><![CDATA[r\colon \bigcup _{i \in  I}A'_{i}\to I]]></fr:tex> that maps each <fr:tex
+display="inline"><![CDATA[(A_{i},i)]]></fr:tex> to the index <fr:tex
+display="inline"><![CDATA[i]]></fr:tex>.
+    This surjection admits a section <fr:tex
+display="inline"><![CDATA[s\colon I\to \bigcup _{i \in  I}A'_{i}]]></fr:tex>.
+    Then we can define the required choice function <fr:tex
+display="inline"><![CDATA[c\colon I\to \bigcup _{i \in  I}A_{i}]]></fr:tex> by <fr:tex
+display="inline"><![CDATA[c(i) = \pi _{1} \circ  s(i)]]></fr:tex>.</fr:p>
+  <fr:p>(2) implies (3): Let <fr:tex
+display="inline"><![CDATA[A]]></fr:tex> be a non-empty set.
+    Set <fr:tex
+display="inline"><![CDATA[I := \mathcal {P}(A) \setminus  {\mathopen {}\{\varnothing \}\mathclose {}}]]></fr:tex>.
+    Consider the identity function <fr:tex
+display="inline"><![CDATA[B_{i} := i]]></fr:tex>.
+    Then there is a choice function <fr:tex
+display="inline"><![CDATA[c\colon \mathcal {P}(A) \setminus  {\mathopen {}\{\varnothing \}\mathclose {}}\to \bigcup _{i \in  I} B_{i}]]></fr:tex>.
+    Note that <fr:tex
+display="inline"><![CDATA[\bigcup _{i \in  I} B_{i} = A]]></fr:tex> so this is the required choice function.</fr:p>
+  <fr:p>(3) implies (4): Let <fr:tex
+display="inline"><![CDATA[F]]></fr:tex> be a family of non-empty and pairwise disjoint family of sets.
+    Observe that <fr:tex
+display="inline"><![CDATA[F \subseteq  \mathcal {P}(\bigcup  F) \setminus  {\mathopen {}\{\varnothing \}\mathclose {}}]]></fr:tex>.
+    Thus, we can acquire the required choice function by restricting the choice function <fr:tex
+display="inline"><![CDATA[c\colon \mathcal {P}(\bigcup  F) \setminus  {\mathopen {}\{\varnothing \}\mathclose {}}\to \bigcup  F]]></fr:tex>.</fr:p>
+  <fr:p>(4) implies AC: Let <fr:tex
+display="inline"><![CDATA[F]]></fr:tex> be a family of non-empty sets.
+    Consider the family <fr:tex
+display="inline"><![CDATA[F' := {\mathopen {}\{A \times  {\mathopen {}\{A\}\mathclose {}}\colon A \in  F\}\mathclose {}}]]></fr:tex>.
+    By <fr:link
 type="local"
-href="todo.xml"
-addr="todo"
-title="TODO">TODO</fr:link>
+href="set-0008.xml"
+addr="set-0008"
+title="Axiom schema of replacement">replacement</fr:link>, this is a set.
+    In particular, it consists of non-empty and pairwise disjoint sets.
+    Thus, there is a choice function <fr:tex
+display="inline"><![CDATA[c'\colon F'\to \bigcup  F']]></fr:tex>.
+    Then we define the required choice function <fr:tex
+display="inline"><![CDATA[c\colon F\to \bigcup  F]]></fr:tex> by <fr:tex
+display="inline"><![CDATA[c(A) = \pi _{1} \circ  c'(A \times  {\mathopen {}\{A\}\mathclose {}})]]></fr:tex>.</fr:p>
 </fr:mainmatter><fr:backmatter><fr:tree
 toc="false"
 numbered="false"
@@ -31,14 +75,33 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>537</fr:anchor><fr:addr
-type="user">set-001F</fr:addr><fr:route>set-001F.xml</fr:route><fr:title
-text="Completeness">Completeness</fr:title><fr:taxon>Theorem</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>22</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
-display="inline"><![CDATA[A \subseteq  \mathbb {R}]]></fr:tex> be a non-empty subset with an upper bound <fr:tex
-display="inline"><![CDATA[b \in  \mathbb {R}]]></fr:tex>.
-  Then <fr:tex
-display="inline"><![CDATA[A]]></fr:tex> has a supremum in <fr:tex
-display="inline"><![CDATA[\mathbb {R}]]></fr:tex>.</fr:p>
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>449</fr:anchor><fr:addr
+type="user">set-001J</fr:addr><fr:route>set-001J.xml</fr:route><fr:title
+text="Equivalent forms of AC">Equivalent forms of <fr:link
+type="local"
+href="set-001H.xml"
+addr="set-001H"
+title="Axiom of choice">AC</fr:link></fr:title><fr:taxon>Proposition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>23</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>The following statements are equivalent to the axiom of choice.</fr:p><fr:ol><fr:li>Every surjection is a retraction.</fr:li>
+  <fr:li>Let <fr:tex
+display="inline"><![CDATA[I]]></fr:tex> be a set and <fr:tex
+display="inline"><![CDATA[A]]></fr:tex> be a function with <fr:tex
+display="inline"><![CDATA[\mathsf {dom}(A) = I]]></fr:tex> such that <fr:tex
+display="inline"><![CDATA[A_{i} \neq  \varnothing ]]></fr:tex> for all <fr:tex
+display="inline"><![CDATA[i \in  I]]></fr:tex>.
+    Then there is a function <fr:tex
+display="inline"><![CDATA[c\colon I\to \bigcup _{i \in  I}A_{i}]]></fr:tex> such that <fr:tex
+display="inline"><![CDATA[c(i) \in  A_{i}]]></fr:tex> for all <fr:tex
+display="inline"><![CDATA[i \in  I]]></fr:tex>.</fr:li>
+  <fr:li>For any non-empty set <fr:tex
+display="inline"><![CDATA[A]]></fr:tex>, there is a choice function <fr:tex
+display="inline"><![CDATA[c\colon \mathcal {P}(A) \setminus  {\mathopen {}\{\varnothing \}\mathclose {}}\to A]]></fr:tex> such that <fr:tex
+display="inline"><![CDATA[c(x) \in  x]]></fr:tex> for all non-empty <fr:tex
+display="inline"><![CDATA[x \subseteq  A]]></fr:tex>.</fr:li>
+  <fr:li>For any family <fr:tex
+display="inline"><![CDATA[F]]></fr:tex> of non-empty and pairwise disjoint sets, there is a choice function <fr:tex
+display="inline"><![CDATA[c\colon F\to \bigcup  F]]></fr:tex> such that <fr:tex
+display="inline"><![CDATA[c(x) \in  x]]></fr:tex> for all <fr:tex
+display="inline"><![CDATA[x \in  F]]></fr:tex>.</fr:li></fr:ol>
     
       
       <fr:tree
@@ -48,15 +111,59 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>523</fr:anchor><fr:addr
-type="machine">#248</fr:addr><fr:route>unstable-248.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>22</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
-  Take <fr:tex
-display="inline"><![CDATA[\sup  A := \bigcup  A]]></fr:tex>.
-  <fr:link
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>417</fr:anchor><fr:addr
+type="machine">#248</fr:addr><fr:route>unstable-248.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>23</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
+  <fr:p>AC implies (1): <fr:ref
+addr="set-001I"
+href="set-001I.xml"
+taxon="Lemma" />.</fr:p>
+  <fr:p>(1) implies (2): Given an index set <fr:tex
+display="inline"><![CDATA[I]]></fr:tex> and a function <fr:tex
+display="inline"><![CDATA[A]]></fr:tex> with <fr:tex
+display="inline"><![CDATA[\mathsf {dom}(I)]]></fr:tex>.
+    Consider the function <fr:tex
+display="inline"><![CDATA[A']]></fr:tex> defined by <fr:tex
+display="inline"><![CDATA[A'_{i} = (A_{i},i)]]></fr:tex>.
+    Note that there is an evident surjection <fr:tex
+display="inline"><![CDATA[r\colon \bigcup _{i \in  I}A'_{i}\to I]]></fr:tex> that maps each <fr:tex
+display="inline"><![CDATA[(A_{i},i)]]></fr:tex> to the index <fr:tex
+display="inline"><![CDATA[i]]></fr:tex>.
+    This surjection admits a section <fr:tex
+display="inline"><![CDATA[s\colon I\to \bigcup _{i \in  I}A'_{i}]]></fr:tex>.
+    Then we can define the required choice function <fr:tex
+display="inline"><![CDATA[c\colon I\to \bigcup _{i \in  I}A_{i}]]></fr:tex> by <fr:tex
+display="inline"><![CDATA[c(i) = \pi _{1} \circ  s(i)]]></fr:tex>.</fr:p>
+  <fr:p>(2) implies (3): Let <fr:tex
+display="inline"><![CDATA[A]]></fr:tex> be a non-empty set.
+    Set <fr:tex
+display="inline"><![CDATA[I := \mathcal {P}(A) \setminus  {\mathopen {}\{\varnothing \}\mathclose {}}]]></fr:tex>.
+    Consider the identity function <fr:tex
+display="inline"><![CDATA[B_{i} := i]]></fr:tex>.
+    Then there is a choice function <fr:tex
+display="inline"><![CDATA[c\colon \mathcal {P}(A) \setminus  {\mathopen {}\{\varnothing \}\mathclose {}}\to \bigcup _{i \in  I} B_{i}]]></fr:tex>.
+    Note that <fr:tex
+display="inline"><![CDATA[\bigcup _{i \in  I} B_{i} = A]]></fr:tex> so this is the required choice function.</fr:p>
+  <fr:p>(3) implies (4): Let <fr:tex
+display="inline"><![CDATA[F]]></fr:tex> be a family of non-empty and pairwise disjoint family of sets.
+    Observe that <fr:tex
+display="inline"><![CDATA[F \subseteq  \mathcal {P}(\bigcup  F) \setminus  {\mathopen {}\{\varnothing \}\mathclose {}}]]></fr:tex>.
+    Thus, we can acquire the required choice function by restricting the choice function <fr:tex
+display="inline"><![CDATA[c\colon \mathcal {P}(\bigcup  F) \setminus  {\mathopen {}\{\varnothing \}\mathclose {}}\to \bigcup  F]]></fr:tex>.</fr:p>
+  <fr:p>(4) implies AC: Let <fr:tex
+display="inline"><![CDATA[F]]></fr:tex> be a family of non-empty sets.
+    Consider the family <fr:tex
+display="inline"><![CDATA[F' := {\mathopen {}\{A \times  {\mathopen {}\{A\}\mathclose {}}\colon A \in  F\}\mathclose {}}]]></fr:tex>.
+    By <fr:link
 type="local"
-href="todo.xml"
-addr="todo"
-title="TODO">TODO</fr:link>
+href="set-0008.xml"
+addr="set-0008"
+title="Axiom schema of replacement">replacement</fr:link>, this is a set.
+    In particular, it consists of non-empty and pairwise disjoint sets.
+    Thus, there is a choice function <fr:tex
+display="inline"><![CDATA[c'\colon F'\to \bigcup  F']]></fr:tex>.
+    Then we define the required choice function <fr:tex
+display="inline"><![CDATA[c\colon F\to \bigcup  F]]></fr:tex> by <fr:tex
+display="inline"><![CDATA[c(A) = \pi _{1} \circ  c'(A \times  {\mathopen {}\{A\}\mathclose {}})]]></fr:tex>.</fr:p>
 </fr:mainmatter><fr:backmatter /></fr:tree>
     
   </fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

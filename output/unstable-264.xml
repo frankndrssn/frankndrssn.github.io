@@ -7,25 +7,30 @@ show-heading="true"
 show-metadata="true"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>647</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>570</fr:anchor><fr:addr
 type="machine">#264</fr:addr><fr:route>unstable-264.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
-  By <fr:ref
-addr="set-000H"
-href="set-000H.xml"
-taxon="Proposition" />, <fr:tex
-display="inline"><![CDATA[{\mathopen {}\{x\}\mathclose {}}]]></fr:tex> exists.
+  Let <fr:tex
+display="inline"><![CDATA[a \in  A, b \in  B]]></fr:tex>.
   By <fr:link
 type="local"
-href="set-0003.xml"
-addr="set-0003"
-title="Axiom of pairing">pairing</fr:link>, <fr:tex
-display="inline"><![CDATA[{\mathopen {}\{x,y\}\mathclose {}}]]></fr:tex> exists.
+href="set-000I.xml"
+addr="set-000I"
+title="Ordered pairs">definition</fr:link>, <fr:tex
+display="inline"><![CDATA[(a,b) = {\mathopen {}\{{\mathopen {}\{a\}\mathclose {}},{\mathopen {}\{a,b\}\mathclose {}}\}\mathclose {}}]]></fr:tex>.
+  Thus, by the <fr:link
+type="local"
+href="set-0006.xml"
+addr="set-0006"
+title="Axiom of powerset">powerset axiom</fr:link>, <fr:tex
+display="inline"><![CDATA[(a,b) \in  \mathcal {P}(\mathcal {P}(A \cup  B))]]></fr:tex>.
   By <fr:link
 type="local"
-href="set-0003.xml"
-addr="set-0003"
-title="Axiom of pairing">pairing</fr:link> again, <fr:tex
-display="inline"><![CDATA[{\mathopen {}\{{\mathopen {}\{x\}\mathclose {}},{\mathopen {}\{x,y\}\mathclose {}}\}\mathclose {}}]]></fr:tex> exists.
+href="set-0005.xml"
+addr="set-0005"
+title="Axiom schema of separation">separation</fr:link>,
+  <fr:tex
+display="block"><![CDATA[     A \times  B = {\mathopen {}\{p \in  \mathcal {P}(\mathcal {P}(A \cup  B))\colon \exists a.\mkern 5mu\exists b.\mkern 5mup = (a,b)\}\mathclose {}}   ]]></fr:tex>
+  is a set.
 </fr:mainmatter><fr:backmatter><fr:tree
 toc="false"
 numbered="false"
@@ -41,16 +46,12 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>648</fr:anchor><fr:addr
-type="user">set-000J</fr:addr><fr:route>set-000J.xml</fr:route><fr:title
-text="Existence of ordered pairs">Existence of <fr:link
-type="local"
-href="set-000I.xml"
-addr="set-000I"
-title="Ordered pairs">ordered pairs</fr:link></fr:title><fr:taxon>Proposition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
-display="inline"><![CDATA[x,y]]></fr:tex> be sets.
-  The ordered pair <fr:tex
-display="inline"><![CDATA[(x,y)]]></fr:tex> exists.</fr:p>
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>571</fr:anchor><fr:addr
+type="user">set-000L</fr:addr><fr:route>set-000L.xml</fr:route><fr:title
+text="Cartesian product">Cartesian product</fr:title><fr:taxon>Proposition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[A,B]]></fr:tex> be sets.
+  Then <fr:tex
+display="inline"><![CDATA[A \times  B := {\mathopen {}\{(a,b)\colon a \in  A \wedge  b \in  B\}\mathclose {}}]]></fr:tex> is a set.</fr:p>
     
       
       <fr:tree
@@ -60,25 +61,30 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>471</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>362</fr:anchor><fr:addr
 type="machine">#264</fr:addr><fr:route>unstable-264.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
-  By <fr:ref
-addr="set-000H"
-href="set-000H.xml"
-taxon="Proposition" />, <fr:tex
-display="inline"><![CDATA[{\mathopen {}\{x\}\mathclose {}}]]></fr:tex> exists.
+  Let <fr:tex
+display="inline"><![CDATA[a \in  A, b \in  B]]></fr:tex>.
   By <fr:link
 type="local"
-href="set-0003.xml"
-addr="set-0003"
-title="Axiom of pairing">pairing</fr:link>, <fr:tex
-display="inline"><![CDATA[{\mathopen {}\{x,y\}\mathclose {}}]]></fr:tex> exists.
+href="set-000I.xml"
+addr="set-000I"
+title="Ordered pairs">definition</fr:link>, <fr:tex
+display="inline"><![CDATA[(a,b) = {\mathopen {}\{{\mathopen {}\{a\}\mathclose {}},{\mathopen {}\{a,b\}\mathclose {}}\}\mathclose {}}]]></fr:tex>.
+  Thus, by the <fr:link
+type="local"
+href="set-0006.xml"
+addr="set-0006"
+title="Axiom of powerset">powerset axiom</fr:link>, <fr:tex
+display="inline"><![CDATA[(a,b) \in  \mathcal {P}(\mathcal {P}(A \cup  B))]]></fr:tex>.
   By <fr:link
 type="local"
-href="set-0003.xml"
-addr="set-0003"
-title="Axiom of pairing">pairing</fr:link> again, <fr:tex
-display="inline"><![CDATA[{\mathopen {}\{{\mathopen {}\{x\}\mathclose {}},{\mathopen {}\{x,y\}\mathclose {}}\}\mathclose {}}]]></fr:tex> exists.
+href="set-0005.xml"
+addr="set-0005"
+title="Axiom schema of separation">separation</fr:link>,
+  <fr:tex
+display="block"><![CDATA[     A \times  B = {\mathopen {}\{p \in  \mathcal {P}(\mathcal {P}(A \cup  B))\colon \exists a.\mkern 5mu\exists b.\mkern 5mup = (a,b)\}\mathclose {}}   ]]></fr:tex>
+  is a set.
 </fr:mainmatter><fr:backmatter /></fr:tree>
     
   </fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

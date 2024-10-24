@@ -7,31 +7,47 @@ show-heading="true"
 show-metadata="true"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>631</fr:anchor><fr:addr
-type="machine">#256</fr:addr><fr:route>unstable-256.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
-  Let <fr:tex
-display="inline"><![CDATA[x]]></fr:tex> be a set.
-  Suppose that <fr:tex
-display="inline"><![CDATA[x \in  x]]></fr:tex>.
-  Consider <fr:tex
-display="inline"><![CDATA[{\mathopen {}\{x\}\mathclose {}}]]></fr:tex>.
-  This is a non-empty set, so <fr:link
-type="local"
-href="set-0009.xml"
-addr="set-0009"
-title="Axiom of foundation">foundation</fr:link> implies that there is a set <fr:tex
-display="inline"><![CDATA[z \in  {\mathopen {}\{x\}\mathclose {}}]]></fr:tex> such that <fr:tex
-display="inline"><![CDATA[z \cap  {\mathopen {}\{x\}\mathclose {}} = \varnothing ]]></fr:tex>.
-  By <fr:ref
-addr="set-000H"
-href="set-000H.xml"
-taxon="Proposition" />, <fr:tex
-display="inline"><![CDATA[z = x]]></fr:tex>.
-  Then since <fr:tex
-display="inline"><![CDATA[x \in  x]]></fr:tex>, we have that <fr:tex
-display="inline"><![CDATA[x \in  z]]></fr:tex>.
-  Thus, <fr:tex
-display="inline"><![CDATA[x \in  z \cap  {\mathopen {}\{x\}\mathclose {}}]]></fr:tex>, which is a contradiction.
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>525</fr:anchor><fr:addr
+type="machine">#256</fr:addr><fr:route>unstable-256.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>21</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
+  <fr:p>We proceed by induction on <fr:tex
+display="inline"><![CDATA[n]]></fr:tex>.
+    In the base case, we define the function <fr:tex
+display="inline"><![CDATA[g_{0}\colon s(0)\to X]]></fr:tex> by <fr:tex
+display="inline"><![CDATA[g(0) = x_{0}]]></fr:tex>.
+    Note that this is a <fr:tex
+display="inline"><![CDATA[0]]></fr:tex>-germ and uniqueness is an immediate consequence of <fr:ref
+addr="set-000S"
+href="set-000S.xml"
+taxon="Proposition" />.</fr:p>
+  <fr:p>In the induction step, the induction hypothesis says there is a unique <fr:tex
+display="inline"><![CDATA[n]]></fr:tex>-germ <fr:tex
+display="inline"><![CDATA[g_{n}\colon s(n)\to X]]></fr:tex>.
+    Consider the function <fr:tex
+display="inline"><![CDATA[g_{s(n)}\colon s(s(n))\to X]]></fr:tex> defined by
+    <fr:tex
+display="block"><![CDATA[       g_{s(n)}(k) =       \begin {cases}         h(g_{n}(n)) & \text {if $k = s(n)$}\\         g_{n}(k) & \text {if $k < s(n)$}       \end {cases}     ]]></fr:tex></fr:p>
+  <fr:p>By direct computation, we have <fr:tex
+display="inline"><![CDATA[g_{s(n)}(0) = g_{n}(0) = x_{0}]]></fr:tex>.
+    For any <fr:tex
+display="inline"><![CDATA[m < s(n)]]></fr:tex>, we have <fr:tex
+display="inline"><![CDATA[m < n]]></fr:tex> or <fr:tex
+display="inline"><![CDATA[m = n]]></fr:tex>.
+    In the former case, we have <fr:tex
+display="inline"><![CDATA[g_{s(n)}(s(m)) = g_{n}(s(m)) = h(g_{n}(m))]]></fr:tex>.
+    In the latter case, we have <fr:tex
+display="inline"><![CDATA[g_{s(n)}(s(m)) = h(g_{n}(m)) = h(g_{s(n)}(m))]]></fr:tex>.</fr:p>
+  <fr:p>It remains to show that <fr:tex
+display="inline"><![CDATA[g_{s(n)}]]></fr:tex> is unique.
+    Note that the domain restriction of any <fr:tex
+display="inline"><![CDATA[s(n)]]></fr:tex>-germ to <fr:tex
+display="inline"><![CDATA[s(n)]]></fr:tex> is an <fr:tex
+display="inline"><![CDATA[n]]></fr:tex>-germ.
+    By the induction hypothesis, <fr:tex
+display="inline"><![CDATA[n]]></fr:tex>-germ exists uniquely.
+    Thus, picking <fr:tex
+display="inline"><![CDATA[g_{s(n)}(s(n)) = h(g_{n}(n))]]></fr:tex> is the only way to extend the unique <fr:tex
+display="inline"><![CDATA[n]]></fr:tex>-germ to an <fr:tex
+display="inline"><![CDATA[s(n)]]></fr:tex>-germ.</fr:p>
 </fr:mainmatter><fr:backmatter><fr:tree
 toc="false"
 numbered="false"
@@ -47,11 +63,20 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>632</fr:anchor><fr:addr
-type="user">set-000X</fr:addr><fr:route>set-000X.xml</fr:route><fr:title
-text="The membership relation is irreflexive">The membership relation is irreflexive</fr:title><fr:taxon>Proposition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>For any set <fr:tex
-display="inline"><![CDATA[x]]></fr:tex>, <fr:tex
-display="inline"><![CDATA[x \notin  x]]></fr:tex>.</fr:p>
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>526</fr:anchor><fr:addr
+type="user">set-0011</fr:addr><fr:route>set-0011.xml</fr:route><fr:title
+text="Existence and uniqueness of n-germ">Existence and uniqueness of <fr:link
+type="local"
+href="set-0010.xml"
+addr="set-0010"
+title="Germs"><fr:tex
+display="inline"><![CDATA[n]]></fr:tex>-germ</fr:link></fr:title><fr:taxon>Proposition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>21</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> be a set equipped with a distinguished element <fr:tex
+display="inline"><![CDATA[x_{0} \in  X]]></fr:tex> and an endofunction <fr:tex
+display="inline"><![CDATA[h\colon X\to X]]></fr:tex>.
+  For each <fr:tex
+display="inline"><![CDATA[n \in  \mathbb {N}]]></fr:tex>, there is a unique <fr:tex
+display="inline"><![CDATA[n]]></fr:tex>-germ.</fr:p>
     
       
       <fr:tree
@@ -61,31 +86,47 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>467</fr:anchor><fr:addr
-type="machine">#256</fr:addr><fr:route>unstable-256.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
-  Let <fr:tex
-display="inline"><![CDATA[x]]></fr:tex> be a set.
-  Suppose that <fr:tex
-display="inline"><![CDATA[x \in  x]]></fr:tex>.
-  Consider <fr:tex
-display="inline"><![CDATA[{\mathopen {}\{x\}\mathclose {}}]]></fr:tex>.
-  This is a non-empty set, so <fr:link
-type="local"
-href="set-0009.xml"
-addr="set-0009"
-title="Axiom of foundation">foundation</fr:link> implies that there is a set <fr:tex
-display="inline"><![CDATA[z \in  {\mathopen {}\{x\}\mathclose {}}]]></fr:tex> such that <fr:tex
-display="inline"><![CDATA[z \cap  {\mathopen {}\{x\}\mathclose {}} = \varnothing ]]></fr:tex>.
-  By <fr:ref
-addr="set-000H"
-href="set-000H.xml"
-taxon="Proposition" />, <fr:tex
-display="inline"><![CDATA[z = x]]></fr:tex>.
-  Then since <fr:tex
-display="inline"><![CDATA[x \in  x]]></fr:tex>, we have that <fr:tex
-display="inline"><![CDATA[x \in  z]]></fr:tex>.
-  Thus, <fr:tex
-display="inline"><![CDATA[x \in  z \cap  {\mathopen {}\{x\}\mathclose {}}]]></fr:tex>, which is a contradiction.
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>398</fr:anchor><fr:addr
+type="machine">#256</fr:addr><fr:route>unstable-256.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>21</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
+  <fr:p>We proceed by induction on <fr:tex
+display="inline"><![CDATA[n]]></fr:tex>.
+    In the base case, we define the function <fr:tex
+display="inline"><![CDATA[g_{0}\colon s(0)\to X]]></fr:tex> by <fr:tex
+display="inline"><![CDATA[g(0) = x_{0}]]></fr:tex>.
+    Note that this is a <fr:tex
+display="inline"><![CDATA[0]]></fr:tex>-germ and uniqueness is an immediate consequence of <fr:ref
+addr="set-000S"
+href="set-000S.xml"
+taxon="Proposition" />.</fr:p>
+  <fr:p>In the induction step, the induction hypothesis says there is a unique <fr:tex
+display="inline"><![CDATA[n]]></fr:tex>-germ <fr:tex
+display="inline"><![CDATA[g_{n}\colon s(n)\to X]]></fr:tex>.
+    Consider the function <fr:tex
+display="inline"><![CDATA[g_{s(n)}\colon s(s(n))\to X]]></fr:tex> defined by
+    <fr:tex
+display="block"><![CDATA[       g_{s(n)}(k) =       \begin {cases}         h(g_{n}(n)) & \text {if $k = s(n)$}\\         g_{n}(k) & \text {if $k < s(n)$}       \end {cases}     ]]></fr:tex></fr:p>
+  <fr:p>By direct computation, we have <fr:tex
+display="inline"><![CDATA[g_{s(n)}(0) = g_{n}(0) = x_{0}]]></fr:tex>.
+    For any <fr:tex
+display="inline"><![CDATA[m < s(n)]]></fr:tex>, we have <fr:tex
+display="inline"><![CDATA[m < n]]></fr:tex> or <fr:tex
+display="inline"><![CDATA[m = n]]></fr:tex>.
+    In the former case, we have <fr:tex
+display="inline"><![CDATA[g_{s(n)}(s(m)) = g_{n}(s(m)) = h(g_{n}(m))]]></fr:tex>.
+    In the latter case, we have <fr:tex
+display="inline"><![CDATA[g_{s(n)}(s(m)) = h(g_{n}(m)) = h(g_{s(n)}(m))]]></fr:tex>.</fr:p>
+  <fr:p>It remains to show that <fr:tex
+display="inline"><![CDATA[g_{s(n)}]]></fr:tex> is unique.
+    Note that the domain restriction of any <fr:tex
+display="inline"><![CDATA[s(n)]]></fr:tex>-germ to <fr:tex
+display="inline"><![CDATA[s(n)]]></fr:tex> is an <fr:tex
+display="inline"><![CDATA[n]]></fr:tex>-germ.
+    By the induction hypothesis, <fr:tex
+display="inline"><![CDATA[n]]></fr:tex>-germ exists uniquely.
+    Thus, picking <fr:tex
+display="inline"><![CDATA[g_{s(n)}(s(n)) = h(g_{n}(n))]]></fr:tex> is the only way to extend the unique <fr:tex
+display="inline"><![CDATA[n]]></fr:tex>-germ to an <fr:tex
+display="inline"><![CDATA[s(n)]]></fr:tex>-germ.</fr:p>
 </fr:mainmatter><fr:backmatter /></fr:tree>
     
   </fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>
