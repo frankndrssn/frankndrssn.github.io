@@ -7,16 +7,38 @@ show-heading="true"
 show-metadata="true"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>454</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>641</fr:anchor><fr:addr
 type="machine">#261</fr:addr><fr:route>unstable-261.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
+  The if direction is trivial.
+  For the only if direction, assume that <fr:tex
+display="inline"><![CDATA[f(a) = g(a)]]></fr:tex> for all <fr:tex
+display="inline"><![CDATA[a \in  A]]></fr:tex>.
   By <fr:link
 type="local"
-href="set-0003.xml"
-addr="set-0003"
-title="Axiom of pairing">pairing</fr:link>, there is a set <fr:tex
-display="inline"><![CDATA[p]]></fr:tex> such that <fr:tex
-display="inline"><![CDATA[\forall a.\mkern 5mua \in  p \Leftrightarrow  a = x \vee  a = x]]></fr:tex>, or equivalently, <fr:tex
-display="inline"><![CDATA[\forall a.\mkern 5mua \in  p \Leftrightarrow  a = x]]></fr:tex>.
+href="set-0001.xml"
+addr="set-0001"
+title="Axiom of extensionality">extensionality</fr:link>, it suffices to show that for any <fr:tex
+display="inline"><![CDATA[(a,b) \in  A \times  B]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[(a,b) \in  f]]></fr:tex> if and only if <fr:tex
+display="inline"><![CDATA[(a,b) \in  g]]></fr:tex>.
+  Suppose that <fr:tex
+display="inline"><![CDATA[(a,b) \in  f]]></fr:tex>, then by <fr:link
+type="local"
+href="set-000O.xml"
+addr="set-000O"
+title="Functional relation">functionality</fr:link>, <fr:tex
+display="inline"><![CDATA[b = f(a)]]></fr:tex>.
+  By <fr:link
+type="local"
+href="set-000N.xml"
+addr="set-000N"
+title="Total relation">totality</fr:link>, <fr:tex
+display="inline"><![CDATA[(a,g(a)) \in  g]]></fr:tex>.
+  By hypothesis, <fr:tex
+display="inline"><![CDATA[(a,f(a)) = (a,g(a))]]></fr:tex>.
+  Thus, <fr:tex
+display="inline"><![CDATA[(a,f(a)) \in  g]]></fr:tex>.
+  The converse is analogous.
 </fr:mainmatter><fr:backmatter><fr:tree
 toc="false"
 numbered="false"
@@ -32,11 +54,18 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>455</fr:anchor><fr:addr
-type="user">set-000H</fr:addr><fr:route>set-000H.xml</fr:route><fr:title
-text="Existence of singletons">Existence of singletons</fr:title><fr:taxon>Proposition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>For any set <fr:tex
-display="inline"><![CDATA[x]]></fr:tex>, the set <fr:tex
-display="inline"><![CDATA[{\mathopen {}\{x\}\mathclose {}}]]></fr:tex> exists.</fr:p>
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>642</fr:anchor><fr:addr
+type="user">set-000S</fr:addr><fr:route>set-000S.xml</fr:route><fr:title
+text="Functional extensionality">Functional extensionality</fr:title><fr:taxon>Proposition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[f,g\colon A\to B]]></fr:tex> be <fr:link
+type="local"
+href="set-000R.xml"
+addr="set-000R"
+title="Function">functions</fr:link>.
+  Then <fr:tex
+display="inline"><![CDATA[f = g]]></fr:tex> if and only if for all <fr:tex
+display="inline"><![CDATA[a \in  A]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[f(a) = g(a)]]></fr:tex>.</fr:p>
     
       
       <fr:tree
@@ -46,16 +75,38 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>343</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>484</fr:anchor><fr:addr
 type="machine">#261</fr:addr><fr:route>unstable-261.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
+  The if direction is trivial.
+  For the only if direction, assume that <fr:tex
+display="inline"><![CDATA[f(a) = g(a)]]></fr:tex> for all <fr:tex
+display="inline"><![CDATA[a \in  A]]></fr:tex>.
   By <fr:link
 type="local"
-href="set-0003.xml"
-addr="set-0003"
-title="Axiom of pairing">pairing</fr:link>, there is a set <fr:tex
-display="inline"><![CDATA[p]]></fr:tex> such that <fr:tex
-display="inline"><![CDATA[\forall a.\mkern 5mua \in  p \Leftrightarrow  a = x \vee  a = x]]></fr:tex>, or equivalently, <fr:tex
-display="inline"><![CDATA[\forall a.\mkern 5mua \in  p \Leftrightarrow  a = x]]></fr:tex>.
+href="set-0001.xml"
+addr="set-0001"
+title="Axiom of extensionality">extensionality</fr:link>, it suffices to show that for any <fr:tex
+display="inline"><![CDATA[(a,b) \in  A \times  B]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[(a,b) \in  f]]></fr:tex> if and only if <fr:tex
+display="inline"><![CDATA[(a,b) \in  g]]></fr:tex>.
+  Suppose that <fr:tex
+display="inline"><![CDATA[(a,b) \in  f]]></fr:tex>, then by <fr:link
+type="local"
+href="set-000O.xml"
+addr="set-000O"
+title="Functional relation">functionality</fr:link>, <fr:tex
+display="inline"><![CDATA[b = f(a)]]></fr:tex>.
+  By <fr:link
+type="local"
+href="set-000N.xml"
+addr="set-000N"
+title="Total relation">totality</fr:link>, <fr:tex
+display="inline"><![CDATA[(a,g(a)) \in  g]]></fr:tex>.
+  By hypothesis, <fr:tex
+display="inline"><![CDATA[(a,f(a)) = (a,g(a))]]></fr:tex>.
+  Thus, <fr:tex
+display="inline"><![CDATA[(a,f(a)) \in  g]]></fr:tex>.
+  The converse is analogous.
 </fr:mainmatter><fr:backmatter /></fr:tree>
     
   </fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

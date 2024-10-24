@@ -7,38 +7,38 @@ show-heading="true"
 show-metadata="true"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>446</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>633</fr:anchor><fr:addr
 type="machine">#257</fr:addr><fr:route>unstable-257.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
-  The if direction is trivial.
-  For the only if direction, assume that <fr:tex
-display="inline"><![CDATA[f(a) = g(a)]]></fr:tex> for all <fr:tex
-display="inline"><![CDATA[a \in  A]]></fr:tex>.
-  By <fr:link
+  <fr:p>Fix <fr:tex
+display="inline"><![CDATA[m \in  N]]></fr:tex>.
+    Consider <fr:tex
+display="inline"><![CDATA[P := {\mathopen {}\{n \in  N\colon m \in  n \Rightarrow  s(m) \in  s(n)\}\mathclose {}}]]></fr:tex>.
+    Note that <fr:tex
+display="inline"><![CDATA[\varnothing  \in  P]]></fr:tex> vacuously.</fr:p>
+  <fr:p>Now let <fr:tex
+display="inline"><![CDATA[n \in  P]]></fr:tex>, i.e., <fr:tex
+display="inline"><![CDATA[m \in  n \Rightarrow  s(m) \in  s(n)]]></fr:tex>.
+    We need to show that <fr:tex
+display="inline"><![CDATA[s(n) \in  P]]></fr:tex>, i.e., <fr:tex
+display="inline"><![CDATA[m \in  s(n) \Rightarrow  s(m) \in  s(s(n))]]></fr:tex>.
+    Suppose that <fr:tex
+display="inline"><![CDATA[m \in  s(n) = n \cup  {\mathopen {}\{n\}\mathclose {}}]]></fr:tex>.
+    By <fr:link
 type="local"
-href="set-0001.xml"
-addr="set-0001"
-title="Axiom of extensionality">extensionality</fr:link>, it suffices to show that for any <fr:tex
-display="inline"><![CDATA[(a,b) \in  A \times  B]]></fr:tex>, <fr:tex
-display="inline"><![CDATA[(a,b) \in  f]]></fr:tex> if and only if <fr:tex
-display="inline"><![CDATA[(a,b) \in  g]]></fr:tex>.
-  Suppose that <fr:tex
-display="inline"><![CDATA[(a,b) \in  f]]></fr:tex>, then by <fr:link
-type="local"
-href="set-000O.xml"
-addr="set-000O"
-title="Functional relation">functionality</fr:link>, <fr:tex
-display="inline"><![CDATA[b = f(a)]]></fr:tex>.
-  By <fr:link
-type="local"
-href="set-000N.xml"
-addr="set-000N"
-title="Total relation">totality</fr:link>, <fr:tex
-display="inline"><![CDATA[(a,g(a)) \in  g]]></fr:tex>.
-  By hypothesis, <fr:tex
-display="inline"><![CDATA[(a,f(a)) = (a,g(a))]]></fr:tex>.
-  Thus, <fr:tex
-display="inline"><![CDATA[(a,f(a)) \in  g]]></fr:tex>.
-  The converse is analogous.
+href="set-0004.xml"
+addr="set-0004"
+title="Axiom of union">union</fr:link>, <fr:tex
+display="inline"><![CDATA[m \in  n]]></fr:tex> or <fr:tex
+display="inline"><![CDATA[m \in  {\mathopen {}\{n\}\mathclose {}}]]></fr:tex>.
+    In the former case, we have <fr:tex
+display="inline"><![CDATA[s(m) \in  s(n) \subseteq  s(n) \cup  {\mathopen {}\{s(n)\}\mathclose {}} = s(s(n))]]></fr:tex>.
+    In the latter case, we have <fr:tex
+display="inline"><![CDATA[m = n]]></fr:tex> by <fr:ref
+addr="set-000H"
+href="set-000H.xml"
+taxon="Proposition" />.
+    Then <fr:tex
+display="inline"><![CDATA[s(m) = s(n) \in  s(n) \cup  {\mathopen {}\{s(n)\}\mathclose {}} = s(s(n))]]></fr:tex>.</fr:p>
 </fr:mainmatter><fr:backmatter><fr:tree
 toc="false"
 numbered="false"
@@ -54,18 +54,21 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>447</fr:anchor><fr:addr
-type="user">set-000S</fr:addr><fr:route>set-000S.xml</fr:route><fr:title
-text="Functional extensionality">Functional extensionality</fr:title><fr:taxon>Proposition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
-display="inline"><![CDATA[f,g\colon A\to B]]></fr:tex> be <fr:link
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>634</fr:anchor><fr:addr
+type="user">set-000W</fr:addr><fr:route>set-000W.xml</fr:route><fr:title
+text="Set membership respects successor">Set membership respects successor</fr:title><fr:taxon>Lemma</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[N]]></fr:tex> be an inductive set admitting the induction principle defined in <fr:link
 type="local"
-href="set-000R.xml"
-addr="set-000R"
-title="Function">functions</fr:link>.
-  Then <fr:tex
-display="inline"><![CDATA[f = g]]></fr:tex> if and only if for all <fr:tex
-display="inline"><![CDATA[a \in  A]]></fr:tex>, <fr:tex
-display="inline"><![CDATA[f(a) = g(a)]]></fr:tex>.</fr:p>
+href="set-000T.xml"
+addr="set-000T"
+title="Natural number set">natural number set</fr:link>.
+  For each <fr:tex
+display="inline"><![CDATA[n \in  N]]></fr:tex>, we define <fr:tex
+display="inline"><![CDATA[s(n) := n \cup  {\mathopen {}\{n\}\mathclose {}}]]></fr:tex>.
+  Then for any <fr:tex
+display="inline"><![CDATA[m,n \in  N]]></fr:tex>, if <fr:tex
+display="inline"><![CDATA[m \in  n]]></fr:tex> then <fr:tex
+display="inline"><![CDATA[s(m) \in  s(n)]]></fr:tex>.</fr:p>
     
       
       <fr:tree
@@ -75,38 +78,38 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>362</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>499</fr:anchor><fr:addr
 type="machine">#257</fr:addr><fr:route>unstable-257.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
-  The if direction is trivial.
-  For the only if direction, assume that <fr:tex
-display="inline"><![CDATA[f(a) = g(a)]]></fr:tex> for all <fr:tex
-display="inline"><![CDATA[a \in  A]]></fr:tex>.
-  By <fr:link
+  <fr:p>Fix <fr:tex
+display="inline"><![CDATA[m \in  N]]></fr:tex>.
+    Consider <fr:tex
+display="inline"><![CDATA[P := {\mathopen {}\{n \in  N\colon m \in  n \Rightarrow  s(m) \in  s(n)\}\mathclose {}}]]></fr:tex>.
+    Note that <fr:tex
+display="inline"><![CDATA[\varnothing  \in  P]]></fr:tex> vacuously.</fr:p>
+  <fr:p>Now let <fr:tex
+display="inline"><![CDATA[n \in  P]]></fr:tex>, i.e., <fr:tex
+display="inline"><![CDATA[m \in  n \Rightarrow  s(m) \in  s(n)]]></fr:tex>.
+    We need to show that <fr:tex
+display="inline"><![CDATA[s(n) \in  P]]></fr:tex>, i.e., <fr:tex
+display="inline"><![CDATA[m \in  s(n) \Rightarrow  s(m) \in  s(s(n))]]></fr:tex>.
+    Suppose that <fr:tex
+display="inline"><![CDATA[m \in  s(n) = n \cup  {\mathopen {}\{n\}\mathclose {}}]]></fr:tex>.
+    By <fr:link
 type="local"
-href="set-0001.xml"
-addr="set-0001"
-title="Axiom of extensionality">extensionality</fr:link>, it suffices to show that for any <fr:tex
-display="inline"><![CDATA[(a,b) \in  A \times  B]]></fr:tex>, <fr:tex
-display="inline"><![CDATA[(a,b) \in  f]]></fr:tex> if and only if <fr:tex
-display="inline"><![CDATA[(a,b) \in  g]]></fr:tex>.
-  Suppose that <fr:tex
-display="inline"><![CDATA[(a,b) \in  f]]></fr:tex>, then by <fr:link
-type="local"
-href="set-000O.xml"
-addr="set-000O"
-title="Functional relation">functionality</fr:link>, <fr:tex
-display="inline"><![CDATA[b = f(a)]]></fr:tex>.
-  By <fr:link
-type="local"
-href="set-000N.xml"
-addr="set-000N"
-title="Total relation">totality</fr:link>, <fr:tex
-display="inline"><![CDATA[(a,g(a)) \in  g]]></fr:tex>.
-  By hypothesis, <fr:tex
-display="inline"><![CDATA[(a,f(a)) = (a,g(a))]]></fr:tex>.
-  Thus, <fr:tex
-display="inline"><![CDATA[(a,f(a)) \in  g]]></fr:tex>.
-  The converse is analogous.
+href="set-0004.xml"
+addr="set-0004"
+title="Axiom of union">union</fr:link>, <fr:tex
+display="inline"><![CDATA[m \in  n]]></fr:tex> or <fr:tex
+display="inline"><![CDATA[m \in  {\mathopen {}\{n\}\mathclose {}}]]></fr:tex>.
+    In the former case, we have <fr:tex
+display="inline"><![CDATA[s(m) \in  s(n) \subseteq  s(n) \cup  {\mathopen {}\{s(n)\}\mathclose {}} = s(s(n))]]></fr:tex>.
+    In the latter case, we have <fr:tex
+display="inline"><![CDATA[m = n]]></fr:tex> by <fr:ref
+addr="set-000H"
+href="set-000H.xml"
+taxon="Proposition" />.
+    Then <fr:tex
+display="inline"><![CDATA[s(m) = s(n) \in  s(n) \cup  {\mathopen {}\{s(n)\}\mathclose {}} = s(s(n))]]></fr:tex>.</fr:p>
 </fr:mainmatter><fr:backmatter /></fr:tree>
     
   </fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

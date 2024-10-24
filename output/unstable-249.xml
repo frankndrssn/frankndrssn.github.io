@@ -7,25 +7,21 @@ show-heading="true"
 show-metadata="true"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>401</fr:anchor><fr:addr
-type="machine">#249</fr:addr><fr:route>unstable-249.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>21</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
-  By <fr:ref
-addr="set-0011"
-href="set-0011.xml"
-taxon="Proposition" />, for each <fr:tex
-display="inline"><![CDATA[n \in  \mathbb {N}]]></fr:tex>, an <fr:tex
-display="inline"><![CDATA[n]]></fr:tex>-germ exists uniquely.
-  Consider
-  <fr:tex
-display="block"><![CDATA[     f = \bigcup {\mathopen {}\{g \in  \mathcal {P}(\mathbb {N} \times  X)\colon \exists n \in  \mathbb {N}.\mkern 5mu\text {$g$ is an $n$-germ}\}\mathclose {}}.   ]]></fr:tex>
-  By construction, each <fr:tex
-display="inline"><![CDATA[s(n)]]></fr:tex>-germ is the unique extension of <fr:tex
-display="inline"><![CDATA[n]]></fr:tex>-germ.
-  Thus, it follows that <fr:tex
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>538</fr:anchor><fr:addr
+type="machine">#249</fr:addr><fr:route>unstable-249.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>22</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
+  <fr:p>For any <fr:tex
+display="inline"><![CDATA[{\mathopen {}[x_{1}]\mathclose {}},\ldots ,{\mathopen {}[x_{n}]\mathclose {}} \in  {{X}_{/{\sim }}}]]></fr:tex>, there is some <fr:tex
+display="inline"><![CDATA[y \in  Y]]></fr:tex> such that <fr:tex
+display="inline"><![CDATA[f(x_{1},\ldots ,x_{n}) = y]]></fr:tex> since <fr:tex
 display="inline"><![CDATA[f]]></fr:tex> is a function.
-  By an easy induction on <fr:tex
-display="inline"><![CDATA[n]]></fr:tex>, one sees that <fr:tex
-display="inline"><![CDATA[f]]></fr:tex> is the unique function with the required properties.
+    Thus, <fr:tex
+display="inline"><![CDATA[({\mathopen {}[x_{1}]\mathclose {}},\ldots ,{\mathopen {}[x_{n}]\mathclose {}}, y) \in  g]]></fr:tex>.</fr:p>
+  <fr:p>Suppose that <fr:tex
+display="inline"><![CDATA[({\mathopen {}[x_{1}]\mathclose {}},\ldots ,{\mathopen {}[x_{n}]\mathclose {}},y), ({\mathopen {}[x_{1}']\mathclose {}},\ldots ,{\mathopen {}[x_{n}']\mathclose {}},y') \in  g]]></fr:tex> where <fr:tex
+display="inline"><![CDATA[x_{i} \sim  x_{i}']]></fr:tex>.
+    Then since <fr:tex
+display="inline"><![CDATA[f]]></fr:tex> is a congruence, <fr:tex
+display="inline"><![CDATA[y = y']]></fr:tex>.</fr:p>
 </fr:mainmatter><fr:backmatter><fr:tree
 toc="false"
 numbered="false"
@@ -41,22 +37,22 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>402</fr:anchor><fr:addr
-type="user">set-0012</fr:addr><fr:route>set-0012.xml</fr:route><fr:title
-text="Natural numbers are the initial discrete dynamical system"><fr:link
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>539</fr:anchor><fr:addr
+type="user">set-001A</fr:addr><fr:route>set-001A.xml</fr:route><fr:title
+text="Congruent functions induce functions on equivalence classes">Congruent functions induce functions on equivalence classes</fr:title><fr:taxon>Lemma</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>22</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[\sim \colon X\nrightarrow X]]></fr:tex> be an <fr:link
 type="local"
-href="set-000V.xml"
-addr="set-000V"
-title="Natural numbers">Natural numbers</fr:link> are the initial discrete dynamical system</fr:title><fr:taxon>Proposition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>21</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
-display="inline"><![CDATA[X]]></fr:tex> be a set equipped with a distinguished element <fr:tex
-display="inline"><![CDATA[x_{0} \in  X]]></fr:tex> and an endofunction <fr:tex
-display="inline"><![CDATA[h\colon X\to X]]></fr:tex>.
-  Then there is a unique function <fr:tex
-display="inline"><![CDATA[f\colon \mathbb {N}\to X]]></fr:tex> such that
-  <fr:ul><fr:li><fr:tex
-display="inline"><![CDATA[f(0) = x_{0}]]></fr:tex>;</fr:li>
-    <fr:li><fr:tex
-display="inline"><![CDATA[f(s(n)) = h(f(n))]]></fr:tex>.</fr:li></fr:ul></fr:p>
+href="set-0017.xml"
+addr="set-0017"
+title="Equivalence relations">equivalence relation</fr:link> and <fr:tex
+display="inline"><![CDATA[f\colon X^{n}\to Y]]></fr:tex> be a <fr:link
+type="local"
+href="set-0019.xml"
+addr="set-0019"
+title="Congruence">congruence</fr:link> on <fr:tex
+display="inline"><![CDATA[\sim ]]></fr:tex>.
+  Then <fr:tex
+display="inline"><![CDATA[g := {\mathopen {}\{({\mathopen {}[x_{1}]\mathclose {}},\ldots ,{\mathopen {}[x_{n}]\mathclose {}},y) \in  ({{X}_{/{\sim }}})^{n} \times  Y\colon f(x_{1},\ldots ,x_{n}) = y\}\mathclose {}}]]></fr:tex> is a function.</fr:p>
     
       
       <fr:tree
@@ -66,25 +62,21 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>385</fr:anchor><fr:addr
-type="machine">#249</fr:addr><fr:route>unstable-249.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>21</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
-  By <fr:ref
-addr="set-0011"
-href="set-0011.xml"
-taxon="Proposition" />, for each <fr:tex
-display="inline"><![CDATA[n \in  \mathbb {N}]]></fr:tex>, an <fr:tex
-display="inline"><![CDATA[n]]></fr:tex>-germ exists uniquely.
-  Consider
-  <fr:tex
-display="block"><![CDATA[     f = \bigcup {\mathopen {}\{g \in  \mathcal {P}(\mathbb {N} \times  X)\colon \exists n \in  \mathbb {N}.\mkern 5mu\text {$g$ is an $n$-germ}\}\mathclose {}}.   ]]></fr:tex>
-  By construction, each <fr:tex
-display="inline"><![CDATA[s(n)]]></fr:tex>-germ is the unique extension of <fr:tex
-display="inline"><![CDATA[n]]></fr:tex>-germ.
-  Thus, it follows that <fr:tex
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>493</fr:anchor><fr:addr
+type="machine">#249</fr:addr><fr:route>unstable-249.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>22</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
+  <fr:p>For any <fr:tex
+display="inline"><![CDATA[{\mathopen {}[x_{1}]\mathclose {}},\ldots ,{\mathopen {}[x_{n}]\mathclose {}} \in  {{X}_{/{\sim }}}]]></fr:tex>, there is some <fr:tex
+display="inline"><![CDATA[y \in  Y]]></fr:tex> such that <fr:tex
+display="inline"><![CDATA[f(x_{1},\ldots ,x_{n}) = y]]></fr:tex> since <fr:tex
 display="inline"><![CDATA[f]]></fr:tex> is a function.
-  By an easy induction on <fr:tex
-display="inline"><![CDATA[n]]></fr:tex>, one sees that <fr:tex
-display="inline"><![CDATA[f]]></fr:tex> is the unique function with the required properties.
+    Thus, <fr:tex
+display="inline"><![CDATA[({\mathopen {}[x_{1}]\mathclose {}},\ldots ,{\mathopen {}[x_{n}]\mathclose {}}, y) \in  g]]></fr:tex>.</fr:p>
+  <fr:p>Suppose that <fr:tex
+display="inline"><![CDATA[({\mathopen {}[x_{1}]\mathclose {}},\ldots ,{\mathopen {}[x_{n}]\mathclose {}},y), ({\mathopen {}[x_{1}']\mathclose {}},\ldots ,{\mathopen {}[x_{n}']\mathclose {}},y') \in  g]]></fr:tex> where <fr:tex
+display="inline"><![CDATA[x_{i} \sim  x_{i}']]></fr:tex>.
+    Then since <fr:tex
+display="inline"><![CDATA[f]]></fr:tex> is a congruence, <fr:tex
+display="inline"><![CDATA[y = y']]></fr:tex>.</fr:p>
 </fr:mainmatter><fr:backmatter /></fr:tree>
     
   </fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

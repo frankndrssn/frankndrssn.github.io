@@ -7,21 +7,22 @@ show-heading="true"
 show-metadata="true"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>397</fr:anchor><fr:addr
-type="machine">#247</fr:addr><fr:route>unstable-247.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>21</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
-  By <fr:link
-type="local"
-href="set-0008.xml"
-addr="set-0008"
-title="Axiom schema of replacement">replacement</fr:link>, <fr:tex
-display="inline"><![CDATA[\mathsf {ran}(\varphi ) := {\mathopen {}\{y\colon \exists x \in  A.\mkern 5mu\varphi (x,y)\}\mathclose {}}]]></fr:tex> is a set.
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>444</fr:anchor><fr:addr
+type="machine">#247</fr:addr><fr:route>unstable-247.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>23</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
+  Let <fr:tex
+display="inline"><![CDATA[f\colon A\to B]]></fr:tex> be a surjection.
+  Consider the family <fr:tex
+display="inline"><![CDATA[F := {\mathopen {}\{f^{-1}(b)\colon b \in  B\}\mathclose {}}]]></fr:tex>.
+  Note that this is a family of non-empty sets since <fr:tex
+display="inline"><![CDATA[f]]></fr:tex> is a surjection.
+  Then AC gives a choice function <fr:tex
+display="inline"><![CDATA[c\colon F\to \bigcup  F]]></fr:tex>.
+  Note that <fr:tex
+display="inline"><![CDATA[\bigcup  F = A]]></fr:tex>.
   Then we define <fr:tex
-display="inline"><![CDATA[f\colon A\to \mathsf {ran}(\varphi )]]></fr:tex> by
-  <fr:tex
-display="block"><![CDATA[     (a,b) \in  f \Leftrightarrow  \varphi (a,b).   ]]></fr:tex>
-  The requirements placed on <fr:tex
-display="inline"><![CDATA[\varphi ]]></fr:tex> guarantee that <fr:tex
-display="inline"><![CDATA[f]]></fr:tex> is a function.
+display="inline"><![CDATA[i\colon B\to A]]></fr:tex> by <fr:tex
+display="inline"><![CDATA[i(b) := c(f^{-1}(b))]]></fr:tex>.
+  It is routine to verify that it is the required injection.
 </fr:mainmatter><fr:backmatter><fr:tree
 toc="false"
 numbered="false"
@@ -37,21 +38,13 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>398</fr:anchor><fr:addr
-type="user">set-0015</fr:addr><fr:route>set-0015.xml</fr:route><fr:title
-text="External functions can be internalized">External functions can be internalized</fr:title><fr:taxon>Proposition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>21</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
-display="inline"><![CDATA[\varphi ]]></fr:tex> be a formula with at most <fr:tex
-display="inline"><![CDATA[x,y]]></fr:tex> free such that the following two conditions hold:
-  <fr:ul><fr:li><fr:tex
-display="inline"><![CDATA[\forall a.\mkern 5mu\exists b.\mkern 5mu\varphi (a,b)]]></fr:tex>;</fr:li>
-    <fr:li><fr:tex
-display="inline"><![CDATA[\forall a,b,b'.\mkern 5mu\varphi (a,b) \wedge  \varphi (a,b') \Rightarrow  b = b']]></fr:tex>.</fr:li></fr:ul>
-  Then for any set <fr:tex
-display="inline"><![CDATA[A]]></fr:tex>, there is a function <fr:tex
-display="inline"><![CDATA[f]]></fr:tex> with <fr:tex
-display="inline"><![CDATA[\mathsf {dom}(f) = A]]></fr:tex> such that
-  <fr:tex
-display="block"><![CDATA[     f(a) = b \Leftrightarrow  \varphi (a,b).   ]]></fr:tex></fr:p>
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>445</fr:anchor><fr:addr
+type="user">set-001I</fr:addr><fr:route>set-001I.xml</fr:route><fr:title
+text="Inverting surjections">Inverting surjections</fr:title><fr:taxon>Lemma</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>23</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Assuming <fr:link
+type="local"
+href="set-001H.xml"
+addr="set-001H"
+title="Axiom of choice">AC</fr:link>, every surjection is a retraction.</fr:p>
     
       
       <fr:tree
@@ -61,21 +54,22 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>364</fr:anchor><fr:addr
-type="machine">#247</fr:addr><fr:route>unstable-247.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>21</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
-  By <fr:link
-type="local"
-href="set-0008.xml"
-addr="set-0008"
-title="Axiom schema of replacement">replacement</fr:link>, <fr:tex
-display="inline"><![CDATA[\mathsf {ran}(\varphi ) := {\mathopen {}\{y\colon \exists x \in  A.\mkern 5mu\varphi (x,y)\}\mathclose {}}]]></fr:tex> is a set.
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>446</fr:anchor><fr:addr
+type="machine">#247</fr:addr><fr:route>unstable-247.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>23</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
+  Let <fr:tex
+display="inline"><![CDATA[f\colon A\to B]]></fr:tex> be a surjection.
+  Consider the family <fr:tex
+display="inline"><![CDATA[F := {\mathopen {}\{f^{-1}(b)\colon b \in  B\}\mathclose {}}]]></fr:tex>.
+  Note that this is a family of non-empty sets since <fr:tex
+display="inline"><![CDATA[f]]></fr:tex> is a surjection.
+  Then AC gives a choice function <fr:tex
+display="inline"><![CDATA[c\colon F\to \bigcup  F]]></fr:tex>.
+  Note that <fr:tex
+display="inline"><![CDATA[\bigcup  F = A]]></fr:tex>.
   Then we define <fr:tex
-display="inline"><![CDATA[f\colon A\to \mathsf {ran}(\varphi )]]></fr:tex> by
-  <fr:tex
-display="block"><![CDATA[     (a,b) \in  f \Leftrightarrow  \varphi (a,b).   ]]></fr:tex>
-  The requirements placed on <fr:tex
-display="inline"><![CDATA[\varphi ]]></fr:tex> guarantee that <fr:tex
-display="inline"><![CDATA[f]]></fr:tex> is a function.
+display="inline"><![CDATA[i\colon B\to A]]></fr:tex> by <fr:tex
+display="inline"><![CDATA[i(b) := c(f^{-1}(b))]]></fr:tex>.
+  It is routine to verify that it is the required injection.
 </fr:mainmatter><fr:backmatter /></fr:tree>
     
   </fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>
