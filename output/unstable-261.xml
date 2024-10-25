@@ -7,64 +7,22 @@ show-heading="true"
 show-metadata="true"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>564</fr:anchor><fr:addr
-type="machine">#261</fr:addr><fr:route>unstable-261.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
-  <fr:p>First, we prove the non-looping property.
-    Observe that <fr:tex
-display="inline"><![CDATA[s(\varnothing ) = \varnothing  \cup  {\mathopen {}\{\varnothing \}\mathclose {}} = {\mathopen {}\{\varnothing \}\mathclose {}} \neq  \varnothing ]]></fr:tex>.</fr:p>
-  <fr:p>To show the induction principle, let <fr:tex
-display="inline"><![CDATA[P \subseteq  \mathbb {N}]]></fr:tex> such that <fr:tex
-display="inline"><![CDATA[0 \in  P]]></fr:tex> and for any <fr:tex
-display="inline"><![CDATA[x \in  \mathbb {N}]]></fr:tex>, <fr:tex
-display="inline"><![CDATA[x \in  P]]></fr:tex> implies that <fr:tex
-display="inline"><![CDATA[s(x) \in  P]]></fr:tex>.
-    Note that the hypothesis implies that <fr:tex
-display="inline"><![CDATA[P]]></fr:tex> is inductive.
-    Thus, <fr:tex
-display="inline"><![CDATA[\mathbb {N} \subseteq  P]]></fr:tex> by construction.
-    Then by <fr:link
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>730</fr:anchor><fr:addr
+type="machine">#261</fr:addr><fr:route>unstable-261.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>21</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
+  Consider the definable mapping <fr:tex
+display="inline"><![CDATA[\psi (n,g) := (n \in  \mathbb {N} \Rightarrow  g~\text {is an $n$-germ}) \wedge  (n \notin  \mathbb {N} \Rightarrow  g = \varnothing )]]></fr:tex>.
+  By <fr:link
 type="local"
-href="set-0001.xml"
-addr="set-0001"
-title="Axiom of extensionality">extensionality</fr:link>, <fr:tex
-display="inline"><![CDATA[\mathbb {N} = P]]></fr:tex>.</fr:p>
-  <fr:p>It remains to show that <fr:tex
-display="inline"><![CDATA[s]]></fr:tex> is <fr:link
+href="set-0008.xml"
+addr="set-0008"
+title="Axiom schema of replacement">replacement</fr:link>, we define
+  <fr:tex
+display="block"><![CDATA[     f := {\mathopen {}\{g\colon n \in  \mathbb {N}, g~\text {is an $n$-germ}\}\mathclose {}}.   ]]></fr:tex>
+  <fr:link
 type="local"
-href="set-000P.xml"
-addr="set-000P"
-title="Injective relation">injective</fr:link>.
-    Let <fr:tex
-display="inline"><![CDATA[n,m \in  \mathbb {N}]]></fr:tex>.
-    Suppose that <fr:tex
-display="inline"><![CDATA[s(n) = s(m)]]></fr:tex>.
-    Then by definition <fr:tex
-display="inline"><![CDATA[n \cup  {\mathopen {}\{n\}\mathclose {}} = m \cup  {\mathopen {}\{m\}\mathclose {}}]]></fr:tex>.
-    Since <fr:tex
-display="inline"><![CDATA[n \in  n \cup  {\mathopen {}\{n\}\mathclose {}}]]></fr:tex>, <fr:tex
-display="inline"><![CDATA[n \in  m \cup  {\mathopen {}\{m\}\mathclose {}}]]></fr:tex>.
-    By <fr:link
-type="local"
-href="set-0004.xml"
-addr="set-0004"
-title="Axiom of union">union</fr:link>, <fr:tex
-display="inline"><![CDATA[n \in  {\mathopen {}\{m\}\mathclose {}}]]></fr:tex> or <fr:tex
-display="inline"><![CDATA[n \in  m]]></fr:tex>.
-    In the former case, <fr:tex
-display="inline"><![CDATA[n = m]]></fr:tex> by <fr:ref
-addr="set-000H"
-href="set-000H.xml"
-taxon="Proposition" />.
-    In the latter case, we have <fr:tex
-display="inline"><![CDATA[s(n) \in  s(m)]]></fr:tex> by <fr:ref
-addr="set-000W"
-href="set-000W.xml"
-taxon="Lemma" />.
-    But this means that we have <fr:tex
-display="inline"><![CDATA[s(n) \in  s(m) = s(n)]]></fr:tex>, which contradicts <fr:ref
-addr="set-000X"
-href="set-000X.xml"
-taxon="Proposition" />.</fr:p>
+href="todo.xml"
+addr="todo"
+title="TODO">TODO</fr:link>
 </fr:mainmatter><fr:backmatter><fr:tree
 toc="false"
 numbered="false"
@@ -80,123 +38,45 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>565</fr:anchor><fr:addr
-type="user">set-000V</fr:addr><fr:route>set-000V.xml</fr:route><fr:title
-text="Natural numbers">Natural numbers</fr:title><fr:taxon>Construction</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
-display="inline"><![CDATA[I]]></fr:tex> be the inductive set guaranteed by <fr:link
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>731</fr:anchor><fr:addr
+type="user">set-0013</fr:addr><fr:route>set-0013.xml</fr:route><fr:title
+text="Class recursion">Class recursion</fr:title><fr:taxon>Proposition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>21</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[\varphi ]]></fr:tex> be a definable mapping with at most <fr:tex
+display="inline"><![CDATA[x,y]]></fr:tex> free.
+  Then for any set <fr:tex
+display="inline"><![CDATA[x_{0}]]></fr:tex> there is a unique function <fr:tex
+display="inline"><![CDATA[f]]></fr:tex> with <fr:tex
+display="inline"><![CDATA[\mathsf {dom}(f) = \mathbb {N}]]></fr:tex> such that
+  <fr:ul><fr:li><fr:tex
+display="inline"><![CDATA[f(0) = x_{0}]]></fr:tex>;</fr:li>
+    <fr:li><fr:tex
+display="inline"><![CDATA[\varphi (f(n),f(s(n)))]]></fr:tex> for every <fr:tex
+display="inline"><![CDATA[n \in  \mathbb {N}]]></fr:tex>.</fr:li></fr:ul></fr:p>
+    
+      
+      <fr:tree
+toc="false"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>523</fr:anchor><fr:addr
+type="machine">#261</fr:addr><fr:route>unstable-261.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>21</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
+  Consider the definable mapping <fr:tex
+display="inline"><![CDATA[\psi (n,g) := (n \in  \mathbb {N} \Rightarrow  g~\text {is an $n$-germ}) \wedge  (n \notin  \mathbb {N} \Rightarrow  g = \varnothing )]]></fr:tex>.
+  By <fr:link
 type="local"
-href="set-0007.xml"
-addr="set-0007"
-title="Axiom of infinity">infinity</fr:link>.
-  Define
+href="set-0008.xml"
+addr="set-0008"
+title="Axiom schema of replacement">replacement</fr:link>, we define
   <fr:tex
-display="block"><![CDATA[     \mathbb {N} := \bigcap {\mathopen {}\{S \in  \mathcal {P}(I)\colon \text {$S$ is inductive}\}\mathclose {}}.   ]]></fr:tex>
-  For this construction to work, we must show that <fr:tex
-display="inline"><![CDATA[\mathbb {N}]]></fr:tex> is inductive.</fr:p>
-    
-      
-      <fr:tree
-toc="false"
-numbered="true"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>388</fr:anchor><fr:addr
-type="machine">#260</fr:addr><fr:route>unstable-260.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
-  By definition, every inductive set <fr:tex
-display="inline"><![CDATA[S]]></fr:tex> contains <fr:tex
-display="inline"><![CDATA[\varnothing ]]></fr:tex>.
-  Thus, it follows that <fr:tex
-display="inline"><![CDATA[\varnothing  \in  \mathbb {N}]]></fr:tex>.
-  Now for any <fr:tex
-display="inline"><![CDATA[x \in  \mathbb {N}]]></fr:tex>, we have <fr:tex
-display="inline"><![CDATA[x \in  S]]></fr:tex> for any inductive set <fr:tex
-display="inline"><![CDATA[S \subseteq  I]]></fr:tex>.
-  Thus, <fr:tex
-display="inline"><![CDATA[x \cup  {\mathopen {}\{x\}\mathclose {}}]]></fr:tex> is an element of every inductive subset of <fr:tex
-display="inline"><![CDATA[I]]></fr:tex>.
-  Then it follows that <fr:tex
-display="inline"><![CDATA[x \cup  {\mathopen {}\{x\}\mathclose {}} \in  \mathbb {N}]]></fr:tex>.
-</fr:mainmatter><fr:backmatter /></fr:tree>
-    
-  <fr:p>We take <fr:tex
-display="inline"><![CDATA[0 := \varnothing  \in  \mathbb {N}]]></fr:tex> and we define <fr:tex
-display="inline"><![CDATA[s\colon \mathbb {N}\to \mathbb {N}]]></fr:tex> by <fr:tex
-display="inline"><![CDATA[s(x) = x \cup  {\mathopen {}\{x\}\mathclose {}}]]></fr:tex>.
-  It remains to show that <fr:tex
-display="inline"><![CDATA[\mathbb {N}]]></fr:tex> is a <fr:link
+display="block"><![CDATA[     f := {\mathopen {}\{g\colon n \in  \mathbb {N}, g~\text {is an $n$-germ}\}\mathclose {}}.   ]]></fr:tex>
+  <fr:link
 type="local"
-href="set-000T.xml"
-addr="set-000T"
-title="Natural number set">natural number set</fr:link>.</fr:p>
-    
-      
-      <fr:tree
-toc="false"
-numbered="true"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>389</fr:anchor><fr:addr
-type="machine">#261</fr:addr><fr:route>unstable-261.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
-  <fr:p>First, we prove the non-looping property.
-    Observe that <fr:tex
-display="inline"><![CDATA[s(\varnothing ) = \varnothing  \cup  {\mathopen {}\{\varnothing \}\mathclose {}} = {\mathopen {}\{\varnothing \}\mathclose {}} \neq  \varnothing ]]></fr:tex>.</fr:p>
-  <fr:p>To show the induction principle, let <fr:tex
-display="inline"><![CDATA[P \subseteq  \mathbb {N}]]></fr:tex> such that <fr:tex
-display="inline"><![CDATA[0 \in  P]]></fr:tex> and for any <fr:tex
-display="inline"><![CDATA[x \in  \mathbb {N}]]></fr:tex>, <fr:tex
-display="inline"><![CDATA[x \in  P]]></fr:tex> implies that <fr:tex
-display="inline"><![CDATA[s(x) \in  P]]></fr:tex>.
-    Note that the hypothesis implies that <fr:tex
-display="inline"><![CDATA[P]]></fr:tex> is inductive.
-    Thus, <fr:tex
-display="inline"><![CDATA[\mathbb {N} \subseteq  P]]></fr:tex> by construction.
-    Then by <fr:link
-type="local"
-href="set-0001.xml"
-addr="set-0001"
-title="Axiom of extensionality">extensionality</fr:link>, <fr:tex
-display="inline"><![CDATA[\mathbb {N} = P]]></fr:tex>.</fr:p>
-  <fr:p>It remains to show that <fr:tex
-display="inline"><![CDATA[s]]></fr:tex> is <fr:link
-type="local"
-href="set-000P.xml"
-addr="set-000P"
-title="Injective relation">injective</fr:link>.
-    Let <fr:tex
-display="inline"><![CDATA[n,m \in  \mathbb {N}]]></fr:tex>.
-    Suppose that <fr:tex
-display="inline"><![CDATA[s(n) = s(m)]]></fr:tex>.
-    Then by definition <fr:tex
-display="inline"><![CDATA[n \cup  {\mathopen {}\{n\}\mathclose {}} = m \cup  {\mathopen {}\{m\}\mathclose {}}]]></fr:tex>.
-    Since <fr:tex
-display="inline"><![CDATA[n \in  n \cup  {\mathopen {}\{n\}\mathclose {}}]]></fr:tex>, <fr:tex
-display="inline"><![CDATA[n \in  m \cup  {\mathopen {}\{m\}\mathclose {}}]]></fr:tex>.
-    By <fr:link
-type="local"
-href="set-0004.xml"
-addr="set-0004"
-title="Axiom of union">union</fr:link>, <fr:tex
-display="inline"><![CDATA[n \in  {\mathopen {}\{m\}\mathclose {}}]]></fr:tex> or <fr:tex
-display="inline"><![CDATA[n \in  m]]></fr:tex>.
-    In the former case, <fr:tex
-display="inline"><![CDATA[n = m]]></fr:tex> by <fr:ref
-addr="set-000H"
-href="set-000H.xml"
-taxon="Proposition" />.
-    In the latter case, we have <fr:tex
-display="inline"><![CDATA[s(n) \in  s(m)]]></fr:tex> by <fr:ref
-addr="set-000W"
-href="set-000W.xml"
-taxon="Lemma" />.
-    But this means that we have <fr:tex
-display="inline"><![CDATA[s(n) \in  s(m) = s(n)]]></fr:tex>, which contradicts <fr:ref
-addr="set-000X"
-href="set-000X.xml"
-taxon="Proposition" />.</fr:p>
+href="todo.xml"
+addr="todo"
+title="TODO">TODO</fr:link>
 </fr:mainmatter><fr:backmatter /></fr:tree>
     
   </fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

@@ -7,15 +7,24 @@ show-heading="true"
 show-metadata="true"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>517</fr:anchor><fr:addr
-type="machine">#252</fr:addr><fr:route>unstable-252.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>21</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
-  Define
-  <fr:tex
-display="block"><![CDATA[     \varphi  := (a \in  A \Rightarrow  \exists b \in  B.\mkern 5mu(a,b) \in  f) \wedge  (a \notin  A \Rightarrow  y = \varnothing ).   ]]></fr:tex>
-  The fact that <fr:tex
-display="inline"><![CDATA[f]]></fr:tex> is a function makes <fr:tex
-display="inline"><![CDATA[\varphi ]]></fr:tex> a definable mapping.
-  The required condition is easy to verify.
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>631</fr:anchor><fr:addr
+type="machine">#252</fr:addr><fr:route>unstable-252.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>24</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
+  Consider the set <fr:tex
+display="inline"><![CDATA[W := {\mathopen {}\{f \subseteq  A \times  B\colon \text {$f$ is a injection}\}\mathclose {}}]]></fr:tex>.
+  Note that the usual <fr:tex
+display="inline"><![CDATA[\subseteq ]]></fr:tex> relation partially orders <fr:tex
+display="inline"><![CDATA[W]]></fr:tex>.
+  For any chain <fr:tex
+display="inline"><![CDATA[C]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[\bigcup  C]]></fr:tex> is an upper bound.
+  Thus, there is an maximal element <fr:tex
+display="inline"><![CDATA[f]]></fr:tex>.
+  If <fr:tex
+display="inline"><![CDATA[\mathsf {dom}(f) = A]]></fr:tex>, then we are done.
+  If not, then <fr:tex
+display="inline"><![CDATA[\mathsf {cod}(f) = B]]></fr:tex>, so we can reverse the mapping to get an injection from <fr:tex
+display="inline"><![CDATA[B]]></fr:tex> to <fr:tex
+display="inline"><![CDATA[A]]></fr:tex>.
 </fr:mainmatter><fr:backmatter><fr:tree
 toc="false"
 numbered="false"
@@ -31,17 +40,16 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>518</fr:anchor><fr:addr
-type="user">set-0016</fr:addr><fr:route>set-0016.xml</fr:route><fr:title
-text="Every function can be externalized">Every function can be externalized</fr:title><fr:taxon>Proposition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>21</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
-display="inline"><![CDATA[f\colon A\to B]]></fr:tex> be a function.
-  Then there is a definable mapping <fr:tex
-display="inline"><![CDATA[\varphi ]]></fr:tex> with <fr:tex
-display="inline"><![CDATA[x,y]]></fr:tex> free such that for any <fr:tex
-display="inline"><![CDATA[a \in  A]]></fr:tex> and <fr:tex
-display="inline"><![CDATA[b \in  B]]></fr:tex>,
-  <fr:tex
-display="block"><![CDATA[     f(a) = b \Leftrightarrow  \varphi (a,b).   ]]></fr:tex></fr:p>
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>632</fr:anchor><fr:addr
+type="user">set-001O</fr:addr><fr:route>set-001O.xml</fr:route><fr:title
+text="Totality of injection">Totality of injection</fr:title><fr:taxon>Proposition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>24</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Assuming <fr:link
+type="local"
+href="set-001L.xml"
+addr="set-001L"
+title="Zorn's lemma">Zorn's lemma</fr:link>, for any two sets <fr:tex
+display="inline"><![CDATA[A,B]]></fr:tex>, there is either an injection <fr:tex
+display="inline"><![CDATA[A \to  B]]></fr:tex> or there is an injection <fr:tex
+display="inline"><![CDATA[B \to  A]]></fr:tex>.</fr:p>
     
       
       <fr:tree
@@ -51,15 +59,24 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>375</fr:anchor><fr:addr
-type="machine">#252</fr:addr><fr:route>unstable-252.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>21</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
-  Define
-  <fr:tex
-display="block"><![CDATA[     \varphi  := (a \in  A \Rightarrow  \exists b \in  B.\mkern 5mu(a,b) \in  f) \wedge  (a \notin  A \Rightarrow  y = \varnothing ).   ]]></fr:tex>
-  The fact that <fr:tex
-display="inline"><![CDATA[f]]></fr:tex> is a function makes <fr:tex
-display="inline"><![CDATA[\varphi ]]></fr:tex> a definable mapping.
-  The required condition is easy to verify.
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>545</fr:anchor><fr:addr
+type="machine">#252</fr:addr><fr:route>unstable-252.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>24</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
+  Consider the set <fr:tex
+display="inline"><![CDATA[W := {\mathopen {}\{f \subseteq  A \times  B\colon \text {$f$ is a injection}\}\mathclose {}}]]></fr:tex>.
+  Note that the usual <fr:tex
+display="inline"><![CDATA[\subseteq ]]></fr:tex> relation partially orders <fr:tex
+display="inline"><![CDATA[W]]></fr:tex>.
+  For any chain <fr:tex
+display="inline"><![CDATA[C]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[\bigcup  C]]></fr:tex> is an upper bound.
+  Thus, there is an maximal element <fr:tex
+display="inline"><![CDATA[f]]></fr:tex>.
+  If <fr:tex
+display="inline"><![CDATA[\mathsf {dom}(f) = A]]></fr:tex>, then we are done.
+  If not, then <fr:tex
+display="inline"><![CDATA[\mathsf {cod}(f) = B]]></fr:tex>, so we can reverse the mapping to get an injection from <fr:tex
+display="inline"><![CDATA[B]]></fr:tex> to <fr:tex
+display="inline"><![CDATA[A]]></fr:tex>.
 </fr:mainmatter><fr:backmatter /></fr:tree>
     
   </fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

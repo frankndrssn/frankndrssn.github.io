@@ -7,15 +7,27 @@ show-heading="true"
 show-metadata="true"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>582</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>801</fr:anchor><fr:addr
 type="machine">#270</fr:addr><fr:route>unstable-270.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
-  Consider the set <fr:tex
-display="inline"><![CDATA[R := {\mathopen {}\{x\colon x \notin  x\}\mathclose {}}]]></fr:tex>.
-  If <fr:tex
-display="inline"><![CDATA[R \in  R]]></fr:tex> then by definition <fr:tex
-display="inline"><![CDATA[R \notin  R]]></fr:tex>, but if <fr:tex
-display="inline"><![CDATA[R \notin  R]]></fr:tex> then by definition <fr:tex
-display="inline"><![CDATA[R \in  R]]></fr:tex>, so we have a contradiction in both cases.
+  Consider the subset <fr:tex
+display="inline"><![CDATA[P := {\mathopen {}\{x \in  N\colon s(x) \neq  x\}\mathclose {}}]]></fr:tex>.
+  By the induction principle, it suffices to show that <fr:tex
+display="inline"><![CDATA[0 \in  P]]></fr:tex> and for any <fr:tex
+display="inline"><![CDATA[x \in  N]]></fr:tex>, if <fr:tex
+display="inline"><![CDATA[x \in  P]]></fr:tex> then <fr:tex
+display="inline"><![CDATA[s(x) \in  P]]></fr:tex>.
+  First, <fr:tex
+display="inline"><![CDATA[0 \in  P]]></fr:tex> follows from the non-looping property.
+  Now assume that <fr:tex
+display="inline"><![CDATA[x \in  P]]></fr:tex>, i.e., <fr:tex
+display="inline"><![CDATA[s(x) \neq  x]]></fr:tex>.
+  Then if <fr:tex
+display="inline"><![CDATA[s(s(x)) = s(x)]]></fr:tex>, by injectivity, <fr:tex
+display="inline"><![CDATA[s(x) = x]]></fr:tex>, which is a contradiction.
+  Thus, <fr:tex
+display="inline"><![CDATA[s(s(x)) \neq  s(x)]]></fr:tex>.
+  In other words, <fr:tex
+display="inline"><![CDATA[s(x) \in  P]]></fr:tex>.
 </fr:mainmatter><fr:backmatter><fr:tree
 toc="false"
 numbered="false"
@@ -31,9 +43,17 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>583</fr:anchor><fr:addr
-type="user">set-000E</fr:addr><fr:route>set-000E.xml</fr:route><fr:title
-text="Inconsistency of naive set theory">Inconsistency of naive set theory</fr:title><fr:taxon>Theorem</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Naive set theory is inconsistent.</fr:p>
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>802</fr:anchor><fr:addr
+type="user">set-000U</fr:addr><fr:route>set-000U.xml</fr:route><fr:title
+text="" /><fr:taxon>Proposition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[N]]></fr:tex> be a <fr:link
+type="local"
+href="set-000T.xml"
+addr="set-000T"
+title="Natural number set">natural number set</fr:link>.
+  Then for any <fr:tex
+display="inline"><![CDATA[n \in  N]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[s(n) \neq  n]]></fr:tex>.</fr:p>
     
       
       <fr:tree
@@ -43,15 +63,27 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>584</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>503</fr:anchor><fr:addr
 type="machine">#270</fr:addr><fr:route>unstable-270.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
-  Consider the set <fr:tex
-display="inline"><![CDATA[R := {\mathopen {}\{x\colon x \notin  x\}\mathclose {}}]]></fr:tex>.
-  If <fr:tex
-display="inline"><![CDATA[R \in  R]]></fr:tex> then by definition <fr:tex
-display="inline"><![CDATA[R \notin  R]]></fr:tex>, but if <fr:tex
-display="inline"><![CDATA[R \notin  R]]></fr:tex> then by definition <fr:tex
-display="inline"><![CDATA[R \in  R]]></fr:tex>, so we have a contradiction in both cases.
+  Consider the subset <fr:tex
+display="inline"><![CDATA[P := {\mathopen {}\{x \in  N\colon s(x) \neq  x\}\mathclose {}}]]></fr:tex>.
+  By the induction principle, it suffices to show that <fr:tex
+display="inline"><![CDATA[0 \in  P]]></fr:tex> and for any <fr:tex
+display="inline"><![CDATA[x \in  N]]></fr:tex>, if <fr:tex
+display="inline"><![CDATA[x \in  P]]></fr:tex> then <fr:tex
+display="inline"><![CDATA[s(x) \in  P]]></fr:tex>.
+  First, <fr:tex
+display="inline"><![CDATA[0 \in  P]]></fr:tex> follows from the non-looping property.
+  Now assume that <fr:tex
+display="inline"><![CDATA[x \in  P]]></fr:tex>, i.e., <fr:tex
+display="inline"><![CDATA[s(x) \neq  x]]></fr:tex>.
+  Then if <fr:tex
+display="inline"><![CDATA[s(s(x)) = s(x)]]></fr:tex>, by injectivity, <fr:tex
+display="inline"><![CDATA[s(x) = x]]></fr:tex>, which is a contradiction.
+  Thus, <fr:tex
+display="inline"><![CDATA[s(s(x)) \neq  s(x)]]></fr:tex>.
+  In other words, <fr:tex
+display="inline"><![CDATA[s(x) \in  P]]></fr:tex>.
 </fr:mainmatter><fr:backmatter /></fr:tree>
     
   </fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

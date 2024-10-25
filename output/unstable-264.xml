@@ -7,30 +7,31 @@ show-heading="true"
 show-metadata="true"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>570</fr:anchor><fr:addr
-type="machine">#264</fr:addr><fr:route>unstable-264.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
-  Let <fr:tex
-display="inline"><![CDATA[a \in  A, b \in  B]]></fr:tex>.
-  By <fr:link
-type="local"
-href="set-000I.xml"
-addr="set-000I"
-title="Ordered pairs">definition</fr:link>, <fr:tex
-display="inline"><![CDATA[(a,b) = {\mathopen {}\{{\mathopen {}\{a\}\mathclose {}},{\mathopen {}\{a,b\}\mathclose {}}\}\mathclose {}}]]></fr:tex>.
-  Thus, by the <fr:link
-type="local"
-href="set-0006.xml"
-addr="set-0006"
-title="Axiom of powerset">powerset axiom</fr:link>, <fr:tex
-display="inline"><![CDATA[(a,b) \in  \mathcal {P}(\mathcal {P}(A \cup  B))]]></fr:tex>.
-  By <fr:link
-type="local"
-href="set-0005.xml"
-addr="set-0005"
-title="Axiom schema of separation">separation</fr:link>,
-  <fr:tex
-display="block"><![CDATA[     A \times  B = {\mathopen {}\{p \in  \mathcal {P}(\mathcal {P}(A \cup  B))\colon \exists a.\mkern 5mu\exists b.\mkern 5mup = (a,b)\}\mathclose {}}   ]]></fr:tex>
-  is a set.
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>736</fr:anchor><fr:addr
+type="machine">#264</fr:addr><fr:route>unstable-264.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>21</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
+  <fr:p>We approximate <fr:tex
+display="inline"><![CDATA[f]]></fr:tex> by means of <fr:tex
+display="inline"><![CDATA[x]]></fr:tex>-germs.
+    For <fr:tex
+display="inline"><![CDATA[x \in  X]]></fr:tex>, an <fr:tex
+display="inline"><![CDATA[x]]></fr:tex>-germ is a function <fr:tex
+display="inline"><![CDATA[f_{x}]]></fr:tex> with domain <fr:tex
+display="inline"><![CDATA[\mathsf {IS}_{<}(x) \cup  {\mathopen {}\{x\}\mathclose {}}]]></fr:tex> such that
+    <fr:tex
+display="inline"><![CDATA[f_{x}(x') = F(x',f_{x}{\upharpoonright }x')]]></fr:tex> for all <fr:tex
+display="inline"><![CDATA[x' \in  \mathsf {dom}(f_{x})]]></fr:tex>.</fr:p>
+  <fr:p>By <fr:ref
+addr="set-001U"
+href="set-001U.xml"
+taxon="Proposition" />, <fr:tex
+display="inline"><![CDATA[(X,<)]]></fr:tex> admits <fr:tex
+display="inline"><![CDATA[<]]></fr:tex>-induction.
+    Then we use induction to show that each <fr:tex
+display="inline"><![CDATA[x]]></fr:tex>-germ exists uniquely.
+    The rest of the argument is analogous to <fr:ref
+addr="set-0012"
+href="set-0012.xml"
+taxon="Proposition" />.</fr:p>
 </fr:mainmatter><fr:backmatter><fr:tree
 toc="false"
 numbered="false"
@@ -46,12 +47,22 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>571</fr:anchor><fr:addr
-type="user">set-000L</fr:addr><fr:route>set-000L.xml</fr:route><fr:title
-text="Cartesian product">Cartesian product</fr:title><fr:taxon>Proposition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
-display="inline"><![CDATA[A,B]]></fr:tex> be sets.
-  Then <fr:tex
-display="inline"><![CDATA[A \times  B := {\mathopen {}\{(a,b)\colon a \in  A \wedge  b \in  B\}\mathclose {}}]]></fr:tex> is a set.</fr:p>
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>737</fr:anchor><fr:addr
+type="user">set-0010</fr:addr><fr:route>set-0010.xml</fr:route><fr:title
+text="Well-founded recursion">Well-founded recursion</fr:title><fr:taxon>Proposition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>21</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> be a set equipped with a strict <fr:link
+type="local"
+href="set-000Y.xml"
+addr="set-000Y"
+title="Well orders">well-order</fr:link> and <fr:tex
+display="inline"><![CDATA[F]]></fr:tex> be a binary definable mapping.
+  Then there is a function <fr:tex
+display="inline"><![CDATA[f]]></fr:tex> with domain <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> such that
+  <fr:tex
+display="block"><![CDATA[     F(x,f{\upharpoonright }x) = f(x),   ]]></fr:tex>
+  where <fr:tex
+display="inline"><![CDATA[f{\upharpoonright }x := {\mathopen {}\{(x',z) \in  f\colon x' < x\}\mathclose {}}]]></fr:tex>.</fr:p>
     
       
       <fr:tree
@@ -61,30 +72,31 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>362</fr:anchor><fr:addr
-type="machine">#264</fr:addr><fr:route>unstable-264.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
-  Let <fr:tex
-display="inline"><![CDATA[a \in  A, b \in  B]]></fr:tex>.
-  By <fr:link
-type="local"
-href="set-000I.xml"
-addr="set-000I"
-title="Ordered pairs">definition</fr:link>, <fr:tex
-display="inline"><![CDATA[(a,b) = {\mathopen {}\{{\mathopen {}\{a\}\mathclose {}},{\mathopen {}\{a,b\}\mathclose {}}\}\mathclose {}}]]></fr:tex>.
-  Thus, by the <fr:link
-type="local"
-href="set-0006.xml"
-addr="set-0006"
-title="Axiom of powerset">powerset axiom</fr:link>, <fr:tex
-display="inline"><![CDATA[(a,b) \in  \mathcal {P}(\mathcal {P}(A \cup  B))]]></fr:tex>.
-  By <fr:link
-type="local"
-href="set-0005.xml"
-addr="set-0005"
-title="Axiom schema of separation">separation</fr:link>,
-  <fr:tex
-display="block"><![CDATA[     A \times  B = {\mathopen {}\{p \in  \mathcal {P}(\mathcal {P}(A \cup  B))\colon \exists a.\mkern 5mu\exists b.\mkern 5mup = (a,b)\}\mathclose {}}   ]]></fr:tex>
-  is a set.
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>517</fr:anchor><fr:addr
+type="machine">#264</fr:addr><fr:route>unstable-264.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>21</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
+  <fr:p>We approximate <fr:tex
+display="inline"><![CDATA[f]]></fr:tex> by means of <fr:tex
+display="inline"><![CDATA[x]]></fr:tex>-germs.
+    For <fr:tex
+display="inline"><![CDATA[x \in  X]]></fr:tex>, an <fr:tex
+display="inline"><![CDATA[x]]></fr:tex>-germ is a function <fr:tex
+display="inline"><![CDATA[f_{x}]]></fr:tex> with domain <fr:tex
+display="inline"><![CDATA[\mathsf {IS}_{<}(x) \cup  {\mathopen {}\{x\}\mathclose {}}]]></fr:tex> such that
+    <fr:tex
+display="inline"><![CDATA[f_{x}(x') = F(x',f_{x}{\upharpoonright }x')]]></fr:tex> for all <fr:tex
+display="inline"><![CDATA[x' \in  \mathsf {dom}(f_{x})]]></fr:tex>.</fr:p>
+  <fr:p>By <fr:ref
+addr="set-001U"
+href="set-001U.xml"
+taxon="Proposition" />, <fr:tex
+display="inline"><![CDATA[(X,<)]]></fr:tex> admits <fr:tex
+display="inline"><![CDATA[<]]></fr:tex>-induction.
+    Then we use induction to show that each <fr:tex
+display="inline"><![CDATA[x]]></fr:tex>-germ exists uniquely.
+    The rest of the argument is analogous to <fr:ref
+addr="set-0012"
+href="set-0012.xml"
+taxon="Proposition" />.</fr:p>
 </fr:mainmatter><fr:backmatter /></fr:tree>
     
   </fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

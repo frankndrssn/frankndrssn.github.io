@@ -7,24 +7,25 @@ show-heading="true"
 show-metadata="true"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>429</fr:anchor><fr:addr
-type="machine">#246</fr:addr><fr:route>unstable-246.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>24</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
-  Consider the set <fr:tex
-display="inline"><![CDATA[W := {\mathopen {}\{f \subseteq  A \times  B\colon \text {$f$ is a injection}\}\mathclose {}}]]></fr:tex>.
-  Note that the usual <fr:tex
-display="inline"><![CDATA[\subseteq ]]></fr:tex> relation partially orders <fr:tex
-display="inline"><![CDATA[W]]></fr:tex>.
-  For any chain <fr:tex
-display="inline"><![CDATA[C]]></fr:tex>, <fr:tex
-display="inline"><![CDATA[\bigcup  C]]></fr:tex> is an upper bound.
-  Thus, there is an maximal element <fr:tex
-display="inline"><![CDATA[f]]></fr:tex>.
-  If <fr:tex
-display="inline"><![CDATA[\mathsf {dom}(f) = A]]></fr:tex>, then we are done.
-  If not, then <fr:tex
-display="inline"><![CDATA[\mathsf {cod}(f) = B]]></fr:tex>, so we can reverse the mapping to get an injection from <fr:tex
-display="inline"><![CDATA[B]]></fr:tex> to <fr:tex
-display="inline"><![CDATA[A]]></fr:tex>.
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>591</fr:anchor><fr:addr
+type="machine">#246</fr:addr><fr:route>unstable-246.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>25</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
+  Suppose that there is some <fr:tex
+display="inline"><![CDATA[\beta  \in  \alpha ]]></fr:tex> such that <fr:tex
+display="inline"><![CDATA[\beta {^{+}} = \alpha ]]></fr:tex>.
+  In this case, we are done.
+  Suppose the contrary.
+  By <fr:ref
+addr="set-001Y"
+href="set-001Y.xml"
+taxon="Corollary" />, we have <fr:tex
+display="inline"><![CDATA[\alpha  \in  \beta {^{+}}]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[\alpha  = \beta {^{+}}]]></fr:tex> or <fr:tex
+display="inline"><![CDATA[\beta {^{+}} \in  \alpha ]]></fr:tex>.
+  The first case contradicts <fr:link
+type="local"
+href="set-0009.xml"
+addr="set-0009"
+title="Axiom of foundation">foundation</fr:link> and the second case contradicts the hypothesis, so they can be ruled out.
 </fr:mainmatter><fr:backmatter><fr:tree
 toc="false"
 numbered="false"
@@ -40,16 +41,24 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>430</fr:anchor><fr:addr
-type="user">set-001O</fr:addr><fr:route>set-001O.xml</fr:route><fr:title
-text="Totality of injection">Totality of injection</fr:title><fr:taxon>Proposition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>24</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Assuming <fr:link
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>592</fr:anchor><fr:addr
+type="user">set-0020</fr:addr><fr:route>set-0020.xml</fr:route><fr:title
+text="" /><fr:taxon>Proposition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>25</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[\alpha ]]></fr:tex> be an <fr:link
 type="local"
-href="set-001L.xml"
-addr="set-001L"
-title="Zorn's lemma">Zorn's lemma</fr:link>, for any two sets <fr:tex
-display="inline"><![CDATA[A,B]]></fr:tex>, there is either an injection <fr:tex
-display="inline"><![CDATA[A \to  B]]></fr:tex> or there is an injection <fr:tex
-display="inline"><![CDATA[B \to  A]]></fr:tex>.</fr:p>
+href="set-0011.xml"
+addr="set-0011"
+title="Ordinal">ordinal</fr:link>.
+  Then <fr:tex
+display="inline"><![CDATA[\alpha ]]></fr:tex> is either a <fr:link
+type="local"
+href="set-001Z.xml"
+addr="set-001Z"
+title="Successor and limit ordinals">successor ordinal</fr:link> or a <fr:link
+type="local"
+href="set-001Z.xml"
+addr="set-001Z"
+title="Successor and limit ordinals">limit ordinal</fr:link>.</fr:p>
     
       
       <fr:tree
@@ -59,24 +68,25 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>423</fr:anchor><fr:addr
-type="machine">#246</fr:addr><fr:route>unstable-246.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>24</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
-  Consider the set <fr:tex
-display="inline"><![CDATA[W := {\mathopen {}\{f \subseteq  A \times  B\colon \text {$f$ is a injection}\}\mathclose {}}]]></fr:tex>.
-  Note that the usual <fr:tex
-display="inline"><![CDATA[\subseteq ]]></fr:tex> relation partially orders <fr:tex
-display="inline"><![CDATA[W]]></fr:tex>.
-  For any chain <fr:tex
-display="inline"><![CDATA[C]]></fr:tex>, <fr:tex
-display="inline"><![CDATA[\bigcup  C]]></fr:tex> is an upper bound.
-  Thus, there is an maximal element <fr:tex
-display="inline"><![CDATA[f]]></fr:tex>.
-  If <fr:tex
-display="inline"><![CDATA[\mathsf {dom}(f) = A]]></fr:tex>, then we are done.
-  If not, then <fr:tex
-display="inline"><![CDATA[\mathsf {cod}(f) = B]]></fr:tex>, so we can reverse the mapping to get an injection from <fr:tex
-display="inline"><![CDATA[B]]></fr:tex> to <fr:tex
-display="inline"><![CDATA[A]]></fr:tex>.
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>565</fr:anchor><fr:addr
+type="machine">#246</fr:addr><fr:route>unstable-246.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>25</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
+  Suppose that there is some <fr:tex
+display="inline"><![CDATA[\beta  \in  \alpha ]]></fr:tex> such that <fr:tex
+display="inline"><![CDATA[\beta {^{+}} = \alpha ]]></fr:tex>.
+  In this case, we are done.
+  Suppose the contrary.
+  By <fr:ref
+addr="set-001Y"
+href="set-001Y.xml"
+taxon="Corollary" />, we have <fr:tex
+display="inline"><![CDATA[\alpha  \in  \beta {^{+}}]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[\alpha  = \beta {^{+}}]]></fr:tex> or <fr:tex
+display="inline"><![CDATA[\beta {^{+}} \in  \alpha ]]></fr:tex>.
+  The first case contradicts <fr:link
+type="local"
+href="set-0009.xml"
+addr="set-0009"
+title="Axiom of foundation">foundation</fr:link> and the second case contradicts the hypothesis, so they can be ruled out.
 </fr:mainmatter><fr:backmatter /></fr:tree>
     
   </fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>
