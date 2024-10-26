@@ -7,22 +7,21 @@ show-heading="true"
 show-metadata="true"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>730</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>641</fr:anchor><fr:addr
 type="machine">#261</fr:addr><fr:route>unstable-261.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>21</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
-  Consider the definable mapping <fr:tex
-display="inline"><![CDATA[\psi (n,g) := (n \in  \mathbb {N} \Rightarrow  g~\text {is an $n$-germ}) \wedge  (n \notin  \mathbb {N} \Rightarrow  g = \varnothing )]]></fr:tex>.
   By <fr:link
 type="local"
 href="set-0008.xml"
 addr="set-0008"
-title="Axiom schema of replacement">replacement</fr:link>, we define
-  <fr:tex
-display="block"><![CDATA[     f := {\mathopen {}\{g\colon n \in  \mathbb {N}, g~\text {is an $n$-germ}\}\mathclose {}}.   ]]></fr:tex>
-  <fr:link
+title="Axiom schema of replacement">replacement</fr:link>, <fr:tex
+display="inline"><![CDATA[\mathsf {ran}(F) := {\mathopen {}\{b\colon \exists a \in  A.\mkern 5muF(a,b)\}\mathclose {}}]]></fr:tex> is a set.
+  Then we can define <fr:tex
+display="inline"><![CDATA[f]]></fr:tex> by <fr:link
 type="local"
-href="todo.xml"
-addr="todo"
-title="TODO">TODO</fr:link>
+href="set-0005.xml"
+addr="set-0005"
+title="Axiom schema of separation">separation</fr:link> <fr:tex
+display="inline"><![CDATA[f := {\mathopen {}\{(a,b) \in  A \times  \mathsf {ran}(F)\colon F(a,b)\}\mathclose {}}]]></fr:tex>.
 </fr:mainmatter><fr:backmatter><fr:tree
 toc="false"
 numbered="false"
@@ -38,20 +37,21 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>731</fr:anchor><fr:addr
-type="user">set-0013</fr:addr><fr:route>set-0013.xml</fr:route><fr:title
-text="Class recursion">Class recursion</fr:title><fr:taxon>Proposition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>21</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
-display="inline"><![CDATA[\varphi ]]></fr:tex> be a definable mapping with at most <fr:tex
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>642</fr:anchor><fr:addr
+type="user">set-0015</fr:addr><fr:route>set-0015.xml</fr:route><fr:title
+text="External functions can be internalized">External functions can be internalized</fr:title><fr:taxon>Proposition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>21</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[F]]></fr:tex> be a <fr:link
+type="local"
+href="set-001V.xml"
+addr="set-001V"
+title="Definable mapping">binary definable mapping</fr:link> with <fr:tex
 display="inline"><![CDATA[x,y]]></fr:tex> free.
   Then for any set <fr:tex
-display="inline"><![CDATA[x_{0}]]></fr:tex> there is a unique function <fr:tex
+display="inline"><![CDATA[A]]></fr:tex>, there is a function <fr:tex
 display="inline"><![CDATA[f]]></fr:tex> with <fr:tex
-display="inline"><![CDATA[\mathsf {dom}(f) = \mathbb {N}]]></fr:tex> such that
-  <fr:ul><fr:li><fr:tex
-display="inline"><![CDATA[f(0) = x_{0}]]></fr:tex>;</fr:li>
-    <fr:li><fr:tex
-display="inline"><![CDATA[\varphi (f(n),f(s(n)))]]></fr:tex> for every <fr:tex
-display="inline"><![CDATA[n \in  \mathbb {N}]]></fr:tex>.</fr:li></fr:ul></fr:p>
+display="inline"><![CDATA[\mathsf {dom}(f) = A]]></fr:tex> such that
+  <fr:tex
+display="block"><![CDATA[     f(a) = b \Leftrightarrow  F{\mathopen {}[a/x,b/y]\mathclose {}}.   ]]></fr:tex></fr:p>
     
       
       <fr:tree
@@ -61,22 +61,21 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>523</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>386</fr:anchor><fr:addr
 type="machine">#261</fr:addr><fr:route>unstable-261.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>21</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
-  Consider the definable mapping <fr:tex
-display="inline"><![CDATA[\psi (n,g) := (n \in  \mathbb {N} \Rightarrow  g~\text {is an $n$-germ}) \wedge  (n \notin  \mathbb {N} \Rightarrow  g = \varnothing )]]></fr:tex>.
   By <fr:link
 type="local"
 href="set-0008.xml"
 addr="set-0008"
-title="Axiom schema of replacement">replacement</fr:link>, we define
-  <fr:tex
-display="block"><![CDATA[     f := {\mathopen {}\{g\colon n \in  \mathbb {N}, g~\text {is an $n$-germ}\}\mathclose {}}.   ]]></fr:tex>
-  <fr:link
+title="Axiom schema of replacement">replacement</fr:link>, <fr:tex
+display="inline"><![CDATA[\mathsf {ran}(F) := {\mathopen {}\{b\colon \exists a \in  A.\mkern 5muF(a,b)\}\mathclose {}}]]></fr:tex> is a set.
+  Then we can define <fr:tex
+display="inline"><![CDATA[f]]></fr:tex> by <fr:link
 type="local"
-href="todo.xml"
-addr="todo"
-title="TODO">TODO</fr:link>
+href="set-0005.xml"
+addr="set-0005"
+title="Axiom schema of separation">separation</fr:link> <fr:tex
+display="inline"><![CDATA[f := {\mathopen {}\{(a,b) \in  A \times  \mathsf {ran}(F)\colon F(a,b)\}\mathclose {}}]]></fr:tex>.
 </fr:mainmatter><fr:backmatter /></fr:tree>
     
   </fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

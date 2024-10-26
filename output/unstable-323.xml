@@ -7,23 +7,8 @@ show-heading="true"
 show-metadata="true"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1960</fr:anchor><fr:addr
-type="machine">#323</fr:addr><fr:route>unstable-323.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>2</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
-  <fr:p>By <fr:ref
-addr="ct-000J"
-href="ct-000J.xml"
-taxon="Lemma" />, the pullback functor <fr:tex
-display="inline"><![CDATA[f^{*}\colon {{\mathcal {C}}_{/{B}}}\to {{\mathcal {C}}_{/{A}}}]]></fr:tex> admits <fr:tex
-display="inline"><![CDATA[\Sigma _{f}\colon {{\mathcal {C}}_{/{A}}}\to {{\mathcal {C}}_{/{B}}}]]></fr:tex> as a left adjoint.</fr:p>
-  <fr:tree
-toc="true"
-numbered="true"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1200</fr:anchor><fr:addr
-type="machine">#321</fr:addr><fr:route>unstable-321.xml</fr:route><fr:taxon>If</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>2</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1878</fr:anchor><fr:addr
+type="machine">#323</fr:addr><fr:route>unstable-323.xml</fr:route><fr:taxon>If</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>2</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
 display="inline"><![CDATA[g\colon B'\rightarrowtail B]]></fr:tex> be an arbitrary object in <fr:tex
 display="inline"><![CDATA[\mathsf {Sub}(B)]]></fr:tex>. We need to construct a functor <fr:tex
 display="inline"><![CDATA[\mathsf {Img}\colon {{\mathcal {C}}_{/{B}}}\to \mathsf {Sub}(B)]]></fr:tex> so that each morphism <fr:tex
@@ -851,35 +836,6 @@ display="inline"><![CDATA[f]]></fr:tex>.</fr:p>
       </html:tr>
 
     </html:table>
-</fr:mainmatter><fr:backmatter /></fr:tree>
-  
-  <fr:tree
-toc="true"
-numbered="true"
-show-heading="true"
-show-metadata="false"
-expanded="true"
-root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1201</fr:anchor><fr:addr
-type="machine">#322</fr:addr><fr:route>unstable-322.xml</fr:route><fr:taxon>Only if</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>2</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>If <fr:tex
-display="inline"><![CDATA[\mathcal {C}]]></fr:tex> has images, then we may define <fr:tex
-display="inline"><![CDATA[\exists _{f}\colon \mathsf {Sub}(A)\to \mathsf {Sub}(B)]]></fr:tex> as the following composite:</fr:p><fr:tex
-display="block"><![CDATA[       \mathsf {Sub}(A) \hookrightarrow  {{\mathcal {C}}_{/{A}}} \xrightarrow {\Sigma _{f}} {{\mathcal {C}}_{/{B}}} \xrightarrow {\mathsf {Img}} \mathsf {Sub}(B)     ]]></fr:tex><fr:p>Let <fr:tex
-display="inline"><![CDATA[i_{A}\colon \mathsf {Sub}(A)\hookrightarrow {{\mathcal {C}}_{/{A}}}]]></fr:tex> and <fr:tex
-display="inline"><![CDATA[i_{B}\colon \mathsf {Sub}(B)\hookrightarrow {{\mathcal {C}}_{/{B}}}]]></fr:tex> be the inclusion functors. Note that</fr:p><fr:tex
-display="block"><![CDATA[       \mathsf {Img}\Sigma _{f} \dashv  f^{*}i_{B}     ]]></fr:tex><fr:p>Since <fr:tex
-display="inline"><![CDATA[f^{*}i_{B} \cong  i_{A}f^{*}]]></fr:tex> by construction, we have</fr:p><fr:tex
-display="block"><![CDATA[       \mathsf {Img}\Sigma _{f} \dashv  i_{A}f^{*}     ]]></fr:tex><fr:p>Let <fr:tex
-display="inline"><![CDATA[\eta ]]></fr:tex> and <fr:tex
-display="inline"><![CDATA[\varepsilon ]]></fr:tex> be the unit and counit of this adjunction respectively. Since <fr:tex
-display="inline"><![CDATA[\mathsf {Sub}(A)]]></fr:tex> is a full subcategory of <fr:tex
-display="inline"><![CDATA[{{\mathcal {C}}_{/{A}}}]]></fr:tex>, there is a natural isomorphism <fr:tex
-display="inline"><![CDATA[\iota \colon \mathsf {id}_{{{\mathcal {C}}_{/{A}}}}\stackrel {\sim }{\smash {\longrightarrow }\rule {0pt}{0.4ex}}i_{A}]]></fr:tex>. Then we can define <fr:tex
-display="inline"><![CDATA[\eta ']]></fr:tex> as follows:</fr:p><fr:tex
-display="block"><![CDATA[       \eta ' := \mathsf {id}_{{{\mathcal {C}}_{/{A}}}} \xrightarrow {\eta } i_{A}f^{*}\mathsf {Img}\Sigma _{f}       \xrightarrow {\iota _{f^{*}\mathsf {Img}\Sigma _{f}}} f^{*}\mathsf {Img}\Sigma _{f}       \xrightarrow {f^{*}\mathsf {Img}\Sigma _{f}(\iota )} f^{*}\mathsf {Img}\Sigma _{f}i_{A}     ]]></fr:tex><fr:p>Then <fr:tex
-display="inline"><![CDATA[\eta ']]></fr:tex> and <fr:tex
-display="inline"><![CDATA[\varepsilon ]]></fr:tex> form the unit and counit of the adjunction <fr:tex
-display="inline"><![CDATA[\mathsf {Img}\Sigma _{f}i_{A} \dashv  f^{*}]]></fr:tex>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree>
 </fr:mainmatter><fr:backmatter><fr:tree
 toc="false"
 numbered="false"
@@ -895,7 +851,7 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1961</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1879</fr:anchor><fr:addr
 type="user">ct-000L</fr:addr><fr:route>ct-000L.xml</fr:route><fr:title
 text="Equivalent condition for the existence of images">Equivalent condition for the existence of <fr:link
 type="local"
@@ -916,8 +872,8 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1199</fr:anchor><fr:addr
-type="machine">#323</fr:addr><fr:route>unstable-323.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>2</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1118</fr:anchor><fr:addr
+type="machine">#325</fr:addr><fr:route>unstable-325.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>2</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
   <fr:p>By <fr:ref
 addr="ct-000J"
 href="ct-000J.xml"
@@ -931,8 +887,8 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1200</fr:anchor><fr:addr
-type="machine">#321</fr:addr><fr:route>unstable-321.xml</fr:route><fr:taxon>If</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>2</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1119</fr:anchor><fr:addr
+type="machine">#323</fr:addr><fr:route>unstable-323.xml</fr:route><fr:taxon>If</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>2</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
 display="inline"><![CDATA[g\colon B'\rightarrowtail B]]></fr:tex> be an arbitrary object in <fr:tex
 display="inline"><![CDATA[\mathsf {Sub}(B)]]></fr:tex>. We need to construct a functor <fr:tex
 display="inline"><![CDATA[\mathsf {Img}\colon {{\mathcal {C}}_{/{B}}}\to \mathsf {Sub}(B)]]></fr:tex> so that each morphism <fr:tex
@@ -1769,8 +1725,8 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1201</fr:anchor><fr:addr
-type="machine">#322</fr:addr><fr:route>unstable-322.xml</fr:route><fr:taxon>Only if</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>2</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>If <fr:tex
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1120</fr:anchor><fr:addr
+type="machine">#324</fr:addr><fr:route>unstable-324.xml</fr:route><fr:taxon>Only if</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>6</fr:month><fr:day>2</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>If <fr:tex
 display="inline"><![CDATA[\mathcal {C}]]></fr:tex> has images, then we may define <fr:tex
 display="inline"><![CDATA[\exists _{f}\colon \mathsf {Sub}(A)\to \mathsf {Sub}(B)]]></fr:tex> as the following composite:</fr:p><fr:tex
 display="block"><![CDATA[       \mathsf {Sub}(A) \hookrightarrow  {{\mathcal {C}}_{/{A}}} \xrightarrow {\Sigma _{f}} {{\mathcal {C}}_{/{B}}} \xrightarrow {\mathsf {Img}} \mathsf {Sub}(B)     ]]></fr:tex><fr:p>Let <fr:tex

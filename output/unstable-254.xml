@@ -7,59 +7,24 @@ show-heading="true"
 show-metadata="true"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>650</fr:anchor><fr:addr
-type="machine">#254</fr:addr><fr:route>unstable-254.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>23</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
-  <fr:p>AC implies (1): <fr:ref
-addr="set-001I"
-href="set-001I.xml"
-taxon="Lemma" />.</fr:p>
-  <fr:p>(1) implies (2): Given an index set <fr:tex
-display="inline"><![CDATA[I]]></fr:tex> and a function <fr:tex
-display="inline"><![CDATA[A]]></fr:tex> with <fr:tex
-display="inline"><![CDATA[\mathsf {dom}(I)]]></fr:tex>.
-    Consider the function <fr:tex
-display="inline"><![CDATA[A']]></fr:tex> defined by <fr:tex
-display="inline"><![CDATA[A'_{i} = (A_{i},i)]]></fr:tex>.
-    Note that there is an evident surjection <fr:tex
-display="inline"><![CDATA[r\colon \bigcup _{i \in  I}A'_{i}\to I]]></fr:tex> that maps each <fr:tex
-display="inline"><![CDATA[(A_{i},i)]]></fr:tex> to the index <fr:tex
-display="inline"><![CDATA[i]]></fr:tex>.
-    This surjection admits a section <fr:tex
-display="inline"><![CDATA[s\colon I\to \bigcup _{i \in  I}A'_{i}]]></fr:tex>.
-    Then we can define the required choice function <fr:tex
-display="inline"><![CDATA[c\colon I\to \bigcup _{i \in  I}A_{i}]]></fr:tex> by <fr:tex
-display="inline"><![CDATA[c(i) = \pi _{1} \circ  s(i)]]></fr:tex>.</fr:p>
-  <fr:p>(2) implies (3): Let <fr:tex
-display="inline"><![CDATA[A]]></fr:tex> be a non-empty set.
-    Set <fr:tex
-display="inline"><![CDATA[I := \mathcal {P}(A) \setminus  {\mathopen {}\{\varnothing \}\mathclose {}}]]></fr:tex>.
-    Consider the identity function <fr:tex
-display="inline"><![CDATA[B_{i} := i]]></fr:tex>.
-    Then there is a choice function <fr:tex
-display="inline"><![CDATA[c\colon \mathcal {P}(A) \setminus  {\mathopen {}\{\varnothing \}\mathclose {}}\to \bigcup _{i \in  I} B_{i}]]></fr:tex>.
-    Note that <fr:tex
-display="inline"><![CDATA[\bigcup _{i \in  I} B_{i} = A]]></fr:tex> so this is the required choice function.</fr:p>
-  <fr:p>(3) implies (4): Let <fr:tex
-display="inline"><![CDATA[F]]></fr:tex> be a family of non-empty and pairwise disjoint family of sets.
-    Observe that <fr:tex
-display="inline"><![CDATA[F \subseteq  \mathcal {P}(\bigcup  F) \setminus  {\mathopen {}\{\varnothing \}\mathclose {}}]]></fr:tex>.
-    Thus, we can acquire the required choice function by restricting the choice function <fr:tex
-display="inline"><![CDATA[c\colon \mathcal {P}(\bigcup  F) \setminus  {\mathopen {}\{\varnothing \}\mathclose {}}\to \bigcup  F]]></fr:tex>.</fr:p>
-  <fr:p>(4) implies AC: Let <fr:tex
-display="inline"><![CDATA[F]]></fr:tex> be a family of non-empty sets.
-    Consider the family <fr:tex
-display="inline"><![CDATA[F' := {\mathopen {}\{A \times  {\mathopen {}\{A\}\mathclose {}}\colon A \in  F\}\mathclose {}}]]></fr:tex>.
-    By <fr:link
-type="local"
-href="set-0008.xml"
-addr="set-0008"
-title="Axiom schema of replacement">replacement</fr:link>, this is a set.
-    In particular, it consists of non-empty and pairwise disjoint sets.
-    Thus, there is a choice function <fr:tex
-display="inline"><![CDATA[c'\colon F'\to \bigcup  F']]></fr:tex>.
-    Then we define the required choice function <fr:tex
-display="inline"><![CDATA[c\colon F\to \bigcup  F]]></fr:tex> by <fr:tex
-display="inline"><![CDATA[c(A) = \pi _{1} \circ  c'(A \times  {\mathopen {}\{A\}\mathclose {}})]]></fr:tex>.</fr:p>
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>545</fr:anchor><fr:addr
+type="machine">#254</fr:addr><fr:route>unstable-254.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>24</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
+  Consider the set <fr:tex
+display="inline"><![CDATA[W := {\mathopen {}\{f \subseteq  A \times  B\colon \text {$f$ is a injection}\}\mathclose {}}]]></fr:tex>.
+  Note that the usual <fr:tex
+display="inline"><![CDATA[\subseteq ]]></fr:tex> relation partially orders <fr:tex
+display="inline"><![CDATA[W]]></fr:tex>.
+  For any chain <fr:tex
+display="inline"><![CDATA[C]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[\bigcup  C]]></fr:tex> is an upper bound.
+  Thus, there is an maximal element <fr:tex
+display="inline"><![CDATA[f]]></fr:tex>.
+  If <fr:tex
+display="inline"><![CDATA[\mathsf {dom}(f) = A]]></fr:tex>, then we are done.
+  If not, then <fr:tex
+display="inline"><![CDATA[\mathsf {cod}(f) = B]]></fr:tex>, so we can reverse the mapping to get an injection from <fr:tex
+display="inline"><![CDATA[B]]></fr:tex> to <fr:tex
+display="inline"><![CDATA[A]]></fr:tex>.
 </fr:mainmatter><fr:backmatter><fr:tree
 toc="false"
 numbered="false"
@@ -75,33 +40,16 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>651</fr:anchor><fr:addr
-type="user">set-001J</fr:addr><fr:route>set-001J.xml</fr:route><fr:title
-text="Equivalent forms of AC">Equivalent forms of <fr:link
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>546</fr:anchor><fr:addr
+type="user">set-001O</fr:addr><fr:route>set-001O.xml</fr:route><fr:title
+text="Totality of injection">Totality of injection</fr:title><fr:taxon>Proposition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>24</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Assuming <fr:link
 type="local"
-href="set-001H.xml"
-addr="set-001H"
-title="Axiom of choice">AC</fr:link></fr:title><fr:taxon>Proposition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>23</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>The following statements are equivalent to the axiom of choice.</fr:p><fr:ol><fr:li>Every surjection is a retraction.</fr:li>
-  <fr:li>Let <fr:tex
-display="inline"><![CDATA[I]]></fr:tex> be a set and <fr:tex
-display="inline"><![CDATA[A]]></fr:tex> be a function with <fr:tex
-display="inline"><![CDATA[\mathsf {dom}(A) = I]]></fr:tex> such that <fr:tex
-display="inline"><![CDATA[A_{i} \neq  \varnothing ]]></fr:tex> for all <fr:tex
-display="inline"><![CDATA[i \in  I]]></fr:tex>.
-    Then there is a function <fr:tex
-display="inline"><![CDATA[c\colon I\to \bigcup _{i \in  I}A_{i}]]></fr:tex> such that <fr:tex
-display="inline"><![CDATA[c(i) \in  A_{i}]]></fr:tex> for all <fr:tex
-display="inline"><![CDATA[i \in  I]]></fr:tex>.</fr:li>
-  <fr:li>For any non-empty set <fr:tex
-display="inline"><![CDATA[A]]></fr:tex>, there is a choice function <fr:tex
-display="inline"><![CDATA[c\colon \mathcal {P}(A) \setminus  {\mathopen {}\{\varnothing \}\mathclose {}}\to A]]></fr:tex> such that <fr:tex
-display="inline"><![CDATA[c(x) \in  x]]></fr:tex> for all non-empty <fr:tex
-display="inline"><![CDATA[x \subseteq  A]]></fr:tex>.</fr:li>
-  <fr:li>For any family <fr:tex
-display="inline"><![CDATA[F]]></fr:tex> of non-empty and pairwise disjoint sets, there is a choice function <fr:tex
-display="inline"><![CDATA[c\colon F\to \bigcup  F]]></fr:tex> such that <fr:tex
-display="inline"><![CDATA[c(x) \in  x]]></fr:tex> for all <fr:tex
-display="inline"><![CDATA[x \in  F]]></fr:tex>.</fr:li></fr:ol>
+href="set-001L.xml"
+addr="set-001L"
+title="Zorn's lemma">Zorn's lemma</fr:link>, for any two sets <fr:tex
+display="inline"><![CDATA[A,B]]></fr:tex>, there is either an injection <fr:tex
+display="inline"><![CDATA[A \to  B]]></fr:tex> or there is an injection <fr:tex
+display="inline"><![CDATA[B \to  A]]></fr:tex>.</fr:p>
     
       
       <fr:tree
@@ -111,59 +59,24 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>538</fr:anchor><fr:addr
-type="machine">#254</fr:addr><fr:route>unstable-254.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>23</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
-  <fr:p>AC implies (1): <fr:ref
-addr="set-001I"
-href="set-001I.xml"
-taxon="Lemma" />.</fr:p>
-  <fr:p>(1) implies (2): Given an index set <fr:tex
-display="inline"><![CDATA[I]]></fr:tex> and a function <fr:tex
-display="inline"><![CDATA[A]]></fr:tex> with <fr:tex
-display="inline"><![CDATA[\mathsf {dom}(I)]]></fr:tex>.
-    Consider the function <fr:tex
-display="inline"><![CDATA[A']]></fr:tex> defined by <fr:tex
-display="inline"><![CDATA[A'_{i} = (A_{i},i)]]></fr:tex>.
-    Note that there is an evident surjection <fr:tex
-display="inline"><![CDATA[r\colon \bigcup _{i \in  I}A'_{i}\to I]]></fr:tex> that maps each <fr:tex
-display="inline"><![CDATA[(A_{i},i)]]></fr:tex> to the index <fr:tex
-display="inline"><![CDATA[i]]></fr:tex>.
-    This surjection admits a section <fr:tex
-display="inline"><![CDATA[s\colon I\to \bigcup _{i \in  I}A'_{i}]]></fr:tex>.
-    Then we can define the required choice function <fr:tex
-display="inline"><![CDATA[c\colon I\to \bigcup _{i \in  I}A_{i}]]></fr:tex> by <fr:tex
-display="inline"><![CDATA[c(i) = \pi _{1} \circ  s(i)]]></fr:tex>.</fr:p>
-  <fr:p>(2) implies (3): Let <fr:tex
-display="inline"><![CDATA[A]]></fr:tex> be a non-empty set.
-    Set <fr:tex
-display="inline"><![CDATA[I := \mathcal {P}(A) \setminus  {\mathopen {}\{\varnothing \}\mathclose {}}]]></fr:tex>.
-    Consider the identity function <fr:tex
-display="inline"><![CDATA[B_{i} := i]]></fr:tex>.
-    Then there is a choice function <fr:tex
-display="inline"><![CDATA[c\colon \mathcal {P}(A) \setminus  {\mathopen {}\{\varnothing \}\mathclose {}}\to \bigcup _{i \in  I} B_{i}]]></fr:tex>.
-    Note that <fr:tex
-display="inline"><![CDATA[\bigcup _{i \in  I} B_{i} = A]]></fr:tex> so this is the required choice function.</fr:p>
-  <fr:p>(3) implies (4): Let <fr:tex
-display="inline"><![CDATA[F]]></fr:tex> be a family of non-empty and pairwise disjoint family of sets.
-    Observe that <fr:tex
-display="inline"><![CDATA[F \subseteq  \mathcal {P}(\bigcup  F) \setminus  {\mathopen {}\{\varnothing \}\mathclose {}}]]></fr:tex>.
-    Thus, we can acquire the required choice function by restricting the choice function <fr:tex
-display="inline"><![CDATA[c\colon \mathcal {P}(\bigcup  F) \setminus  {\mathopen {}\{\varnothing \}\mathclose {}}\to \bigcup  F]]></fr:tex>.</fr:p>
-  <fr:p>(4) implies AC: Let <fr:tex
-display="inline"><![CDATA[F]]></fr:tex> be a family of non-empty sets.
-    Consider the family <fr:tex
-display="inline"><![CDATA[F' := {\mathopen {}\{A \times  {\mathopen {}\{A\}\mathclose {}}\colon A \in  F\}\mathclose {}}]]></fr:tex>.
-    By <fr:link
-type="local"
-href="set-0008.xml"
-addr="set-0008"
-title="Axiom schema of replacement">replacement</fr:link>, this is a set.
-    In particular, it consists of non-empty and pairwise disjoint sets.
-    Thus, there is a choice function <fr:tex
-display="inline"><![CDATA[c'\colon F'\to \bigcup  F']]></fr:tex>.
-    Then we define the required choice function <fr:tex
-display="inline"><![CDATA[c\colon F\to \bigcup  F]]></fr:tex> by <fr:tex
-display="inline"><![CDATA[c(A) = \pi _{1} \circ  c'(A \times  {\mathopen {}\{A\}\mathclose {}})]]></fr:tex>.</fr:p>
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>438</fr:anchor><fr:addr
+type="machine">#254</fr:addr><fr:route>unstable-254.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>24</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
+  Consider the set <fr:tex
+display="inline"><![CDATA[W := {\mathopen {}\{f \subseteq  A \times  B\colon \text {$f$ is a injection}\}\mathclose {}}]]></fr:tex>.
+  Note that the usual <fr:tex
+display="inline"><![CDATA[\subseteq ]]></fr:tex> relation partially orders <fr:tex
+display="inline"><![CDATA[W]]></fr:tex>.
+  For any chain <fr:tex
+display="inline"><![CDATA[C]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[\bigcup  C]]></fr:tex> is an upper bound.
+  Thus, there is an maximal element <fr:tex
+display="inline"><![CDATA[f]]></fr:tex>.
+  If <fr:tex
+display="inline"><![CDATA[\mathsf {dom}(f) = A]]></fr:tex>, then we are done.
+  If not, then <fr:tex
+display="inline"><![CDATA[\mathsf {cod}(f) = B]]></fr:tex>, so we can reverse the mapping to get an injection from <fr:tex
+display="inline"><![CDATA[B]]></fr:tex> to <fr:tex
+display="inline"><![CDATA[A]]></fr:tex>.
 </fr:mainmatter><fr:backmatter /></fr:tree>
     
   </fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

@@ -7,31 +7,50 @@ show-heading="true"
 show-metadata="true"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>736</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>647</fr:anchor><fr:addr
 type="machine">#264</fr:addr><fr:route>unstable-264.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>21</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
-  <fr:p>We approximate <fr:tex
-display="inline"><![CDATA[f]]></fr:tex> by means of <fr:tex
-display="inline"><![CDATA[x]]></fr:tex>-germs.
-    For <fr:tex
-display="inline"><![CDATA[x \in  X]]></fr:tex>, an <fr:tex
-display="inline"><![CDATA[x]]></fr:tex>-germ is a function <fr:tex
-display="inline"><![CDATA[f_{x}]]></fr:tex> with domain <fr:tex
-display="inline"><![CDATA[\mathsf {IS}_{<}(x) \cup  {\mathopen {}\{x\}\mathclose {}}]]></fr:tex> such that
+  <fr:p>We approximate the required function <fr:tex
+display="inline"><![CDATA[f]]></fr:tex> by means of <fr:em><fr:strong><fr:tex
+display="inline"><![CDATA[n]]></fr:tex>-germs</fr:strong></fr:em>.
+    An <fr:tex
+display="inline"><![CDATA[n]]></fr:tex>-germ is a function <fr:tex
+display="inline"><![CDATA[f_{n}]]></fr:tex> with <fr:tex
+display="inline"><![CDATA[\mathsf {dom}(f_{n}) = s(n)]]></fr:tex> such that
+    <fr:ul><fr:li><fr:tex
+display="inline"><![CDATA[f_{n}(0) = x_{0}]]></fr:tex>;</fr:li>
+      <fr:li><fr:tex
+display="inline"><![CDATA[f_{n}(s(m)) = F(f_{n}(m))]]></fr:tex> for all <fr:tex
+display="inline"><![CDATA[m < n]]></fr:tex>.</fr:li></fr:ul>
+    By induction, we show that each <fr:tex
+display="inline"><![CDATA[n]]></fr:tex>-germ exists uniquely.</fr:p>
+  <fr:p>In the base case, there is one choice: we set <fr:tex
+display="inline"><![CDATA[f_{0} = {\mathopen {}\{(0,x_{0})\}\mathclose {}}]]></fr:tex>.
+    Now, suppose that <fr:tex
+display="inline"><![CDATA[f_{n}]]></fr:tex> exists uniquely.
+    We define <fr:tex
+display="inline"><![CDATA[f_{s(n)}]]></fr:tex> by
     <fr:tex
-display="inline"><![CDATA[f_{x}(x') = F(x',f_{x}{\upharpoonright }x')]]></fr:tex> for all <fr:tex
-display="inline"><![CDATA[x' \in  \mathsf {dom}(f_{x})]]></fr:tex>.</fr:p>
-  <fr:p>By <fr:ref
-addr="set-001U"
-href="set-001U.xml"
-taxon="Proposition" />, <fr:tex
-display="inline"><![CDATA[(X,<)]]></fr:tex> admits <fr:tex
-display="inline"><![CDATA[<]]></fr:tex>-induction.
-    Then we use induction to show that each <fr:tex
-display="inline"><![CDATA[x]]></fr:tex>-germ exists uniquely.
-    The rest of the argument is analogous to <fr:ref
-addr="set-0012"
-href="set-0012.xml"
-taxon="Proposition" />.</fr:p>
+display="block"><![CDATA[       f_{s(n)}(m) =       \begin {cases}         F(f_{n}(n)) & \text {if $m = s(n)$,}\\         f_{n}(m) & \text {if $m \leq  n$.}       \end {cases}     ]]></fr:tex>
+    It is clear by <fr:ref
+addr="set-000S"
+href="set-000S.xml"
+taxon="Proposition" /> and the required equations that <fr:tex
+display="inline"><![CDATA[f_{s(n)}]]></fr:tex> is the unique <fr:tex
+display="inline"><![CDATA[s(n)]]></fr:tex>-germ and moreover <fr:tex
+display="inline"><![CDATA[f_{s(n)}]]></fr:tex> extends <fr:tex
+display="inline"><![CDATA[f_{n}]]></fr:tex>.</fr:p>
+  <fr:p>Since each <fr:tex
+display="inline"><![CDATA[n]]></fr:tex>-germ exists uniquely, the following formula is a definable mapping:
+    <fr:tex
+display="block"><![CDATA[       G(n,g) := (n \in  \mathbb {N} \Rightarrow  g = f_{n}) \wedge  (n \notin  \mathbb {N} \Rightarrow  g = \varnothing ).     ]]></fr:tex>
+    By <fr:link
+type="local"
+href="set-0008.xml"
+addr="set-0008"
+title="Axiom schema of replacement">replacement</fr:link>, <fr:tex
+display="inline"><![CDATA[{\mathopen {}\{G(n)\colon n \in  \mathbb {N}\}\mathclose {}}]]></fr:tex> is a set.
+    Then <fr:tex
+display="inline"><![CDATA[f := \bigcup {\mathopen {}\{G(n)\colon n \in  \mathbb {N}\}\mathclose {}}]]></fr:tex> is the required function.</fr:p>
 </fr:mainmatter><fr:backmatter><fr:tree
 toc="false"
 numbered="false"
@@ -47,22 +66,22 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>737</fr:anchor><fr:addr
-type="user">set-0010</fr:addr><fr:route>set-0010.xml</fr:route><fr:title
-text="Well-founded recursion">Well-founded recursion</fr:title><fr:taxon>Proposition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>21</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
-display="inline"><![CDATA[X]]></fr:tex> be a set equipped with a strict <fr:link
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>648</fr:anchor><fr:addr
+type="user">set-0012</fr:addr><fr:route>set-0012.xml</fr:route><fr:title
+text="Basic recursion">Basic recursion</fr:title><fr:taxon>Proposition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>21</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[x_{0}]]></fr:tex> be given and <fr:tex
+display="inline"><![CDATA[F]]></fr:tex> be a <fr:link
 type="local"
-href="set-000Y.xml"
-addr="set-000Y"
-title="Well orders">well-order</fr:link> and <fr:tex
-display="inline"><![CDATA[F]]></fr:tex> be a binary definable mapping.
-  Then there is a function <fr:tex
-display="inline"><![CDATA[f]]></fr:tex> with domain <fr:tex
-display="inline"><![CDATA[X]]></fr:tex> such that
-  <fr:tex
-display="block"><![CDATA[     F(x,f{\upharpoonright }x) = f(x),   ]]></fr:tex>
-  where <fr:tex
-display="inline"><![CDATA[f{\upharpoonright }x := {\mathopen {}\{(x',z) \in  f\colon x' < x\}\mathclose {}}]]></fr:tex>.</fr:p>
+href="set-001V.xml"
+addr="set-001V"
+title="Definable mapping">definable mapping</fr:link>.
+  Then there is a unique function <fr:tex
+display="inline"><![CDATA[f]]></fr:tex> with <fr:tex
+display="inline"><![CDATA[\mathsf {dom}(f) = \mathbb {N}]]></fr:tex> such that
+  <fr:ul><fr:li><fr:tex
+display="inline"><![CDATA[f(0) = x_{0}]]></fr:tex>;</fr:li>
+    <fr:li><fr:tex
+display="inline"><![CDATA[f(s(n)) = F(f(n))]]></fr:tex>.</fr:li></fr:ul></fr:p>
     
       
       <fr:tree
@@ -72,31 +91,69 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>517</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>413</fr:anchor><fr:addr
 type="machine">#264</fr:addr><fr:route>unstable-264.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>21</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
-  <fr:p>We approximate <fr:tex
-display="inline"><![CDATA[f]]></fr:tex> by means of <fr:tex
-display="inline"><![CDATA[x]]></fr:tex>-germs.
-    For <fr:tex
-display="inline"><![CDATA[x \in  X]]></fr:tex>, an <fr:tex
-display="inline"><![CDATA[x]]></fr:tex>-germ is a function <fr:tex
-display="inline"><![CDATA[f_{x}]]></fr:tex> with domain <fr:tex
-display="inline"><![CDATA[\mathsf {IS}_{<}(x) \cup  {\mathopen {}\{x\}\mathclose {}}]]></fr:tex> such that
+  <fr:p>We approximate the required function <fr:tex
+display="inline"><![CDATA[f]]></fr:tex> by means of <fr:em><fr:strong><fr:tex
+display="inline"><![CDATA[n]]></fr:tex>-germs</fr:strong></fr:em>.
+    An <fr:tex
+display="inline"><![CDATA[n]]></fr:tex>-germ is a function <fr:tex
+display="inline"><![CDATA[f_{n}]]></fr:tex> with <fr:tex
+display="inline"><![CDATA[\mathsf {dom}(f_{n}) = s(n)]]></fr:tex> such that
+    <fr:ul><fr:li><fr:tex
+display="inline"><![CDATA[f_{n}(0) = x_{0}]]></fr:tex>;</fr:li>
+      <fr:li><fr:tex
+display="inline"><![CDATA[f_{n}(s(m)) = F(f_{n}(m))]]></fr:tex> for all <fr:tex
+display="inline"><![CDATA[m < n]]></fr:tex>.</fr:li></fr:ul>
+    By induction, we show that each <fr:tex
+display="inline"><![CDATA[n]]></fr:tex>-germ exists uniquely.</fr:p>
+  <fr:p>In the base case, there is one choice: we set <fr:tex
+display="inline"><![CDATA[f_{0} = {\mathopen {}\{(0,x_{0})\}\mathclose {}}]]></fr:tex>.
+    Now, suppose that <fr:tex
+display="inline"><![CDATA[f_{n}]]></fr:tex> exists uniquely.
+    We define <fr:tex
+display="inline"><![CDATA[f_{s(n)}]]></fr:tex> by
     <fr:tex
-display="inline"><![CDATA[f_{x}(x') = F(x',f_{x}{\upharpoonright }x')]]></fr:tex> for all <fr:tex
-display="inline"><![CDATA[x' \in  \mathsf {dom}(f_{x})]]></fr:tex>.</fr:p>
-  <fr:p>By <fr:ref
-addr="set-001U"
-href="set-001U.xml"
-taxon="Proposition" />, <fr:tex
-display="inline"><![CDATA[(X,<)]]></fr:tex> admits <fr:tex
-display="inline"><![CDATA[<]]></fr:tex>-induction.
-    Then we use induction to show that each <fr:tex
-display="inline"><![CDATA[x]]></fr:tex>-germ exists uniquely.
-    The rest of the argument is analogous to <fr:ref
-addr="set-0012"
-href="set-0012.xml"
-taxon="Proposition" />.</fr:p>
+display="block"><![CDATA[       f_{s(n)}(m) =       \begin {cases}         F(f_{n}(n)) & \text {if $m = s(n)$,}\\         f_{n}(m) & \text {if $m \leq  n$.}       \end {cases}     ]]></fr:tex>
+    It is clear by <fr:ref
+addr="set-000S"
+href="set-000S.xml"
+taxon="Proposition" /> and the required equations that <fr:tex
+display="inline"><![CDATA[f_{s(n)}]]></fr:tex> is the unique <fr:tex
+display="inline"><![CDATA[s(n)]]></fr:tex>-germ and moreover <fr:tex
+display="inline"><![CDATA[f_{s(n)}]]></fr:tex> extends <fr:tex
+display="inline"><![CDATA[f_{n}]]></fr:tex>.</fr:p>
+  <fr:p>Since each <fr:tex
+display="inline"><![CDATA[n]]></fr:tex>-germ exists uniquely, the following formula is a definable mapping:
+    <fr:tex
+display="block"><![CDATA[       G(n,g) := (n \in  \mathbb {N} \Rightarrow  g = f_{n}) \wedge  (n \notin  \mathbb {N} \Rightarrow  g = \varnothing ).     ]]></fr:tex>
+    By <fr:link
+type="local"
+href="set-0008.xml"
+addr="set-0008"
+title="Axiom schema of replacement">replacement</fr:link>, <fr:tex
+display="inline"><![CDATA[{\mathopen {}\{G(n)\colon n \in  \mathbb {N}\}\mathclose {}}]]></fr:tex> is a set.
+    Then <fr:tex
+display="inline"><![CDATA[f := \bigcup {\mathopen {}\{G(n)\colon n \in  \mathbb {N}\}\mathclose {}}]]></fr:tex> is the required function.</fr:p>
 </fr:mainmatter><fr:backmatter /></fr:tree>
     
-  </fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>
+  
+  <fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>414</fr:anchor><fr:addr
+type="machine">#265</fr:addr><fr:route>unstable-265.xml</fr:route><fr:taxon>Remark</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>21</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>If we are given a set <fr:tex
+display="inline"><![CDATA[X]]></fr:tex> and a function <fr:tex
+display="inline"><![CDATA[h\colon X\to X]]></fr:tex> in place of <fr:tex
+display="inline"><![CDATA[F]]></fr:tex>.
+      Then the same argument goes through.
+      In particular, <fr:link
+type="local"
+href="set-0005.xml"
+addr="set-0005"
+title="Axiom schema of separation">separation</fr:link> suffices in the last step.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree>
+</fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

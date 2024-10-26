@@ -7,36 +7,9 @@ show-heading="true"
 show-metadata="true"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>728</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>639</fr:anchor><fr:addr
 type="machine">#260</fr:addr><fr:route>unstable-260.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>21</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
-  <fr:p>Let <fr:tex
-display="inline"><![CDATA[\gamma  \in  \beta ]]></fr:tex>.
-    Transitivity in <fr:tex
-display="inline"><![CDATA[\alpha ]]></fr:tex> implies that <fr:tex
-display="inline"><![CDATA[\gamma  \in  \alpha ]]></fr:tex>.
-    Thus, <fr:tex
-display="inline"><![CDATA[\gamma  \in  \mathsf {IS}_{\in }(\beta )]]></fr:tex>.
-    Conversely, assume that <fr:tex
-display="inline"><![CDATA[\gamma  \in  \mathsf {IS}_{\in }(\beta )]]></fr:tex>, then <fr:tex
-display="inline"><![CDATA[\gamma  \in  \beta ]]></fr:tex> by definition.
-    Thus, <fr:link
-type="local"
-href="set-0001.xml"
-addr="set-0001"
-title="Axiom of extensionality">extensionality</fr:link> gives <fr:tex
-display="inline"><![CDATA[\beta  = \mathsf {IS}_{\in }(\beta )]]></fr:tex>.</fr:p>
-  <fr:p>Transitivity in <fr:tex
-display="inline"><![CDATA[\alpha ]]></fr:tex> implies that <fr:tex
-display="inline"><![CDATA[\beta  \subseteq  \alpha ]]></fr:tex>.
-    Thus, <fr:tex
-display="inline"><![CDATA[(\beta ,\in )]]></fr:tex> is a well order.
-    It remains to show that <fr:tex
-display="inline"><![CDATA[\beta ]]></fr:tex> is transitive.
-    To this end, suppose that <fr:tex
-display="inline"><![CDATA[\delta  \in  \gamma  \in  \beta ]]></fr:tex>.
-    Then since <fr:tex
-display="inline"><![CDATA[\beta  = \mathsf {IS}_{\in }(\beta )]]></fr:tex>, we have <fr:tex
-display="inline"><![CDATA[\delta  \in  \beta ]]></fr:tex>.</fr:p>
+  By inspection.
 </fr:mainmatter><fr:backmatter><fr:tree
 toc="false"
 numbered="false"
@@ -52,20 +25,15 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>729</fr:anchor><fr:addr
-type="user">set-0014</fr:addr><fr:route>set-0014.xml</fr:route><fr:title
-text="" /><fr:taxon>Lemma</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>21</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
-display="inline"><![CDATA[\alpha ]]></fr:tex> be an <fr:link
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>640</fr:anchor><fr:addr
+type="user">set-0016</fr:addr><fr:route>set-0016.xml</fr:route><fr:title
+text="" /><fr:taxon>Lemma</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>21</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>If <fr:tex
+display="inline"><![CDATA[\alpha ]]></fr:tex> is an <fr:link
 type="local"
 href="set-0011.xml"
 addr="set-0011"
-title="Ordinal">ordinal</fr:link>.
-  Then for any <fr:tex
-display="inline"><![CDATA[\beta  \in  \alpha ]]></fr:tex>
-  <fr:ul><fr:li><fr:tex
-display="inline"><![CDATA[\beta  = \mathsf {IS}_{\in }(\beta )]]></fr:tex>.</fr:li>
-    <fr:li><fr:tex
-display="inline"><![CDATA[\beta ]]></fr:tex> is an ordinal.</fr:li></fr:ul></fr:p>
+title="Ordinal">ordinal</fr:link>, then so is <fr:tex
+display="inline"><![CDATA[\alpha {^{+}} := \alpha  \cup  {\mathopen {}\{\alpha \}\mathclose {}}]]></fr:tex>.</fr:p>
     
       
       <fr:tree
@@ -75,36 +43,9 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>554</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>449</fr:anchor><fr:addr
 type="machine">#260</fr:addr><fr:route>unstable-260.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>21</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
-  <fr:p>Let <fr:tex
-display="inline"><![CDATA[\gamma  \in  \beta ]]></fr:tex>.
-    Transitivity in <fr:tex
-display="inline"><![CDATA[\alpha ]]></fr:tex> implies that <fr:tex
-display="inline"><![CDATA[\gamma  \in  \alpha ]]></fr:tex>.
-    Thus, <fr:tex
-display="inline"><![CDATA[\gamma  \in  \mathsf {IS}_{\in }(\beta )]]></fr:tex>.
-    Conversely, assume that <fr:tex
-display="inline"><![CDATA[\gamma  \in  \mathsf {IS}_{\in }(\beta )]]></fr:tex>, then <fr:tex
-display="inline"><![CDATA[\gamma  \in  \beta ]]></fr:tex> by definition.
-    Thus, <fr:link
-type="local"
-href="set-0001.xml"
-addr="set-0001"
-title="Axiom of extensionality">extensionality</fr:link> gives <fr:tex
-display="inline"><![CDATA[\beta  = \mathsf {IS}_{\in }(\beta )]]></fr:tex>.</fr:p>
-  <fr:p>Transitivity in <fr:tex
-display="inline"><![CDATA[\alpha ]]></fr:tex> implies that <fr:tex
-display="inline"><![CDATA[\beta  \subseteq  \alpha ]]></fr:tex>.
-    Thus, <fr:tex
-display="inline"><![CDATA[(\beta ,\in )]]></fr:tex> is a well order.
-    It remains to show that <fr:tex
-display="inline"><![CDATA[\beta ]]></fr:tex> is transitive.
-    To this end, suppose that <fr:tex
-display="inline"><![CDATA[\delta  \in  \gamma  \in  \beta ]]></fr:tex>.
-    Then since <fr:tex
-display="inline"><![CDATA[\beta  = \mathsf {IS}_{\in }(\beta )]]></fr:tex>, we have <fr:tex
-display="inline"><![CDATA[\delta  \in  \beta ]]></fr:tex>.</fr:p>
+  By inspection.
 </fr:mainmatter><fr:backmatter /></fr:tree>
     
   </fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

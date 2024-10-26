@@ -7,32 +7,527 @@ show-heading="true"
 show-metadata="true"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1421</fr:anchor><fr:addr
-type="machine">#294</fr:addr><fr:route>unstable-294.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>8</fr:month><fr:day>2</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>944</fr:anchor><fr:addr
+type="machine">#294</fr:addr><fr:route>unstable-294.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>8</fr:month><fr:day>8</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
   <fr:p>Suppose that <fr:tex
-display="inline"><![CDATA[f]]></fr:tex> is the identity morphism.
-    Then by <fr:ref
-addr="log-0007"
-href="log-0007.xml"
-taxon="Definition" />, <fr:tex
-display="inline"><![CDATA[{\mathopen {}\llbracket f(x)\rrbracket \mathclose {}}_{\mathcal {C}}]]></fr:tex> is <fr:tex
-display="inline"><![CDATA[\mathsf {id}_{A} \circ  {\mathopen {}\llbracket x\rrbracket \mathclose {}}_{\mathcal {C}} = {\mathopen {}\llbracket x\rrbracket \mathclose {}}_{\mathcal {C}}]]></fr:tex>.
-    But the equalizer with itself is the terminal object.
-    Thus, <fr:tex
-display="inline"><![CDATA[\top  \leq  {\mathopen {}\llbracket f(x) = x\rrbracket \mathclose {}}_{\mathcal {C}}]]></fr:tex> in <fr:tex
-display="inline"><![CDATA[\mathsf {Sub}(A)]]></fr:tex> as required.</fr:p>
-  <fr:p>Conversely, suppose that the terminal object of <fr:tex
-display="inline"><![CDATA[\mathsf {Sub}(A)]]></fr:tex> (i.e., the identity morphism <fr:tex
-display="inline"><![CDATA[\mathsf {id}_{A}]]></fr:tex>) factors through <fr:tex
-display="inline"><![CDATA[{\mathopen {}\llbracket f(x) = x\rrbracket \mathclose {}}_{\mathcal {C}}]]></fr:tex>.
+display="inline"><![CDATA[f]]></fr:tex> is monic.
+    Let <fr:tex
+display="inline"><![CDATA[e\colon E\rightarrowtail A \times  A]]></fr:tex> be the equalizer of <fr:tex
+display="inline"><![CDATA[{\mathopen {}\llbracket f(x)\rrbracket \mathclose {}}_{\mathcal {C}} = f\pi _{1}]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[{\mathopen {}\llbracket f(x')\rrbracket \mathclose {}}_{\mathcal {C}} = f\pi _{2}]]></fr:tex>.
     Then it follows that <fr:tex
-display="inline"><![CDATA[\mathsf {id}_{A}]]></fr:tex> equalizes <fr:tex
-display="inline"><![CDATA[{\mathopen {}\llbracket f(x)\rrbracket \mathclose {}}_{\mathcal {C}}]]></fr:tex> and <fr:tex
-display="inline"><![CDATA[{\mathopen {}\llbracket x\rrbracket \mathclose {}}_{\mathcal {C}}]]></fr:tex>.
+display="inline"><![CDATA[f\pi _{1}e = f\pi _{2}e]]></fr:tex>.
     Since <fr:tex
-display="inline"><![CDATA[{\mathopen {}\llbracket x\rrbracket \mathclose {}}_{\mathcal {C}} = \mathsf {id}_{A}]]></fr:tex> and <fr:tex
-display="inline"><![CDATA[{\mathopen {}\llbracket f(x)\rrbracket \mathclose {}}_{\mathcal {C}} = {\mathopen {}\llbracket f\rrbracket \mathclose {}}_{\mathcal {C}} = f]]></fr:tex>, it follows that <fr:tex
-display="inline"><![CDATA[f = \mathsf {id}_{A}]]></fr:tex>.</fr:p>
+display="inline"><![CDATA[f]]></fr:tex> is monic, <fr:tex
+display="inline"><![CDATA[\pi _{1}e = \pi _{2}e]]></fr:tex>.
+    Then it follows that <fr:tex
+display="inline"><![CDATA[e]]></fr:tex> factors through <fr:tex
+display="inline"><![CDATA[{\mathopen {}\llbracket x = x'\rrbracket \mathclose {}}_{\mathcal {C}}]]></fr:tex>.</fr:p>
+  
+    
+      
+      <fr:figure><fr:resource
+hash="2401cd6b79c0d16c06449d0fe4dd9e3c"><fr:resource-content><fr:img
+src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4KPCEtLSBUaGlzIGZpbGUgd2FzIGdlbmVyYXRlZCBieSBkdmlzdmdtIDMuMC4zIC0tPgo8c3ZnIHZlcnNpb249JzEuMScgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJyB4bWxuczp4bGluaz0naHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluaycgd2lkdGg9JzE5NC40OTc1MDlwdCcgaGVpZ2h0PScxMTMuNjc3NzYzcHQnIHZpZXdCb3g9Jy03MiAtNzIgMTI5LjY2NTAwNiA3NS43ODUxNzYnPgo8c3R5bGUgdHlwZT0ndGV4dC9jc3MnPgo8IVtDREFUQVtAZm9udC1mYWNle2ZvbnQtZmFtaWx5OmNtcjc7c3JjOnVybChkYXRhOmFwcGxpY2F0aW9uL3gtZm9udC13b2ZmO2Jhc2U2NCxkMDlHUmdBQkFBQUFBQU1JQUFvQUFBQUFBMndBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQlBVeTh5QUFBQTlBQUFBRVVBQUFCZ3AyQ1hOV050WVhBQUFBRThBQUFBS2dBQUFEUUFEQ0paWjJ4NVpnQUFBV2dBQUFCTUFBQUFURU4yaUt0b1pXRmtBQUFCdEFBQUFDOEFBQUEyS1IyazJXaG9aV0VBQUFIa0FBQUFIZ0FBQUNRR3dRTUNhRzEwZUFBQUFnUUFBQUFJQUFBQUNBYVVBRHhzYjJOaEFBQUNEQUFBQUFZQUFBQUdBQ1lBQUcxaGVIQUFBQUlVQUFBQUZnQUFBQ0FBQlFBVWJtRnRaUUFBQWl3QUFBREtBQUFCTXUwS2tlcHdiM04wQUFBQytBQUFBQkFBQUFBZ0FBTUFBWGphWTJCbTltS2N3TURLd01BMGkrbnNQeEdHZmhETitJYnhEWU14SXljREVMQXhvQUFIR0NPbHVDeWRnVTBKQ0prWi9nUDV6QXlNSUdGR2hOTC9RR0VBeGowTXlnQUFBSGphWTJCZ1lHSmdZR0FHWWhFZ3lRaW1XUmdVZ0RRTEVBTDVTbXovLzBQSXU3L0I4Z3dBVUt3R2hBQUFBQUlBUFAvOUE0TUMzUUFQQUJJQUFBa0JGaU1VSnlFR05TSTNBVFlYTWhZSEFTRUNBUUY1Q1FJWi9POFpBZ29CZVE0U0R3dzkvdE1DV2dMRC9WWVBEUU1ERFE4Q3JoWURDbHI5M25qYVkyQmtZR0FBNG83cUJlSHgvRFpmR1poWkdFRGdzZU9HUmdUOS95OXpNOU5kSUplRGdRa2tDZ0E4N3d1NEFIamFZMkJrWUdCbStNOEFKQTh5MkREWU1UY3pBRVZRQUJNQVJqSUN5d0FBQXRNQUFBUEJBRHdBQUFBQUFDWUFBSGphWTJCa1lHQmdZaEFHWWhCZ1pFQURBQUtQQUJvQUFIamFQWXd4cThJd0ZJVy9ZaFh0R3h3RWh6ZEk4QWVFU2grNHVEazR1VHE4elpvZ0hacEtXb3N1NGsvM05nUnY0UERkYzg0TmtQRWlZWmlFZWRCaFVubnp5R04rV0VTZWlMK0tuUEhMbWhGSk9oTm54UzV5eXBUL3lHT1dsSkVuNGo4aVovengzamYxN2Q1WnI0Nk5zZDVkYXI4OVdkOVdqVk1iblEvcndUcnJ6NTAxcW53cTAxZHRmNjFWb1hOZHNLZWg1c2FkRG90SGNSVEhCSFpjSlBOc09ZVzlwWkxNU1dlREp2K21CMGxkYUp6REwwWWFKVTlSUXk4M3JlaFZ1b29pM0dtS0QxaXNMa3NBQUhqYVkyQm1RQWFNREdnQUFBQ09BQVU9KSBmb3JtYXQoJ3dvZmYnKTt9CkBmb250LWZhY2V7Zm9udC1mYW1pbHk6Y21yNTtzcmM6dXJsKGRhdGE6YXBwbGljYXRpb24veC1mb250LXdvZmY7YmFzZTY0LGQwOUdSZ0FCQUFBQUFBT3dBQW9BQUFBQUJCZ0FBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFCUFV5OHlBQUFBOUFBQUFFUUFBQUJnaFV4MUFtTnRZWEFBQUFFNEFBQUFMQUFBQURRQURBQ0ZaMng1WmdBQUFXUUFBQUQwQUFBQTlOdSsrWkpvWldGa0FBQUNXQUFBQUMwQUFBQTJLT3VrcW1ob1pXRUFBQUtJQUFBQUhnQUFBQ1FGdWdLeWFHMTBlQUFBQXFnQUFBQUtBQUFBQ2dabkFKSnNiMk5oQUFBQ3RBQUFBQWdBQUFBSUFESUFlbTFoZUhBQUFBSzhBQUFBRndBQUFDQUFCUUF0Ym1GdFpRQUFBdFFBQUFES0FBQUJNdXNJa2Vad2IzTjBBQUFEb0FBQUFCQUFBQUFnQUFNQUFYamFZMkJtZXMwNGdZR1ZnWUZwRnRQWmZ5SU0vU0NhOFEzakd3WmpSazRHSUdCamdBTkdCaVNRVWx5V0RwUTBaREJpWnZnUDVETkRwSkhVL0FjS0F3RDJ4QTArZU5wallHQmdZbUJnWUFaaUVTREpDS1paR0JTQU5Bc1FndmhHLy84RFNjUC8vLzlmQVBNWkFGRllCbzRBQVFDU0FBQUNOd0tyQUI0QUFBRVJCaFk3QVJVbUp5TUdCelV6TWpZbkVRNEJKeU0xTXhZL0FUWTNOaFlCbUFRaVRqTXNPdEU2TEROT0lRTXVWQk1TRWhJK0J6ODVHQTRDaS8zTkZ4UXRBd0VCQXkwVUZ3SUFFZ3dCTFFJS0Fnb3VBUWtBQUFFQVhRQUFBbHNDcWdBckFBQWxCeUUxTkQ4Q1BnRTNMZ0VuSWdZSEhnRVhEZ0VqQmlZblBnRTNNaFlYRGdFSEJnOEJKVFkzUGdFM0Fsc2kvaVFEQ2ZvOVRRRUNhRTAwVWhZWUlRRUJKaFVPTEFJQ2hHcHdtd01DYUVndk5Xa0JBaW9LRFE4Q3hzWWZCUUlKMURGcVAweFRBU29qQWg4YklCMEJHU2ROWlFKcFkxQnBMaUFuVGdFQkJBdEJFZ0FBZU5wallHUmdZQURpUmFjZHl1UDViYjR5TUxNd2dNQmp4dzJOeURSekVOTnFJTVhCd0FUaUFRQWhKUW1EQUFBQWVOcGpZR1JnWUdiNHp3QWtneGhpR1dLWm9obUFJaWlBQ1FBOTBRSnpBQUFEVWdBQUFyZ0FrZ0JkQUFBQUFBQUFBRElBZW5qYVkyQmtZR0JnWnRCaEFORU1VQklKQUFBRkJBQXpBSGphUFl3eHE4SXdGSVcvWWhYdEd4d0VoemRJOEFlRVNwK2JtNE9UcThQYnJBblNvYW1rdGVnaS9uUnZRL0FHRHQ4OTU5d0FHUzhTaGttWUJ4MG1sVGVQUE9hSFJlU0orS3ZJR2Irc0daR2tNM0ZXN0NLblRQbVBQR1pKR1hraS9pTnl4aC92ZlZQZjdwMzE2dGdZNjkybDl0dVQ5VzNWT0xYUitiQWVyTFArM0ZtanlxY3lmZFgyMTFvVk90Y0ZleHBxYnR6cHNIZ1VSM0ZNWU1kRk1zK1dVOWhiS3NtY2REWm84bTk2a05TRnhqbjhZcVJSOGhRMTlITFRpbDZscXlqQ25hYjRBRlV5TGtNQUFIamFZMkJtUUFhTURHZ0FBQUNPQUFVPSkgZm9ybWF0KCd3b2ZmJyk7fQpAZm9udC1mYWNle2ZvbnQtZmFtaWx5OmNtbWk3O3NyYzp1cmwoZGF0YTphcHBsaWNhdGlvbi94LWZvbnQtd29mZjtiYXNlNjQsZDA5R1JnQUJBQUFBQUFRSUFBb0FBQUFBQkpBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUJQVXk4eUFBQUE5QUFBQUVZQUFBQmdoZ0I0TG1OdFlYQUFBQUU4QUFBQU1RQUFBRHdITFAxbloyeDVaZ0FBQVhBQUFBRStBQUFCWU5DWDN5aG9aV0ZrQUFBQ3NBQUFBQzhBQUFBMktHQ2p1R2hvWldFQUFBTGdBQUFBSUFBQUFDUUZ3d0hqYUcxMGVBQUFBd0FBQUFBTUFBQUFEQWVkQUhOc2IyTmhBQUFEREFBQUFBZ0FBQUFJQUZZQXNHMWhlSEFBQUFNVUFBQUFHQUFBQUNBQUJnQTRibUZ0WlFBQUF5d0FBQUROQUFBQk9QTmZLcU53YjNOMEFBQUQvQUFBQUF3QUFBQWdBQU1BQUhqYVkyQm02bVNjd01ES3dNQTBpK25zUHhHR2ZoRE4rSWJ4RFlNeEl5Y0RFTEF4d0VFakF4SklLUzVMQjBxbU1oOWdadmdQNURNek1JS0VHUkVxL2dPRkFRTjFEaUVBQUhqYVkyQmdZR0pnWUdBR1loRWd5UWltV1JnMGdEUWJrR1lFeXFZeUgvai9IOGdIMC8vbi9IRUNxd0lDQUtNbENaRUFBQUI0MmlXUHNVNkRVQUJGMzMybGowQXBJUEtnTklLdFdHaFRVNW9TZUNhMTBLR05icHBvWW5Ud0V4eE1aNlArZ2ovZ2R6ajdLdzd1NnVKUXFXN241QTczWGtMSmN2Mk5IN3lSaU9TRWlKQVpDSkE2SlhLUkIrQzJBU2FQa0ZVbThuVGl1QTZUbVJ5bnpzYkZDR0ZVS1h1Zks2RElFM05temFkcXN6RnBGNnZyRyttRXQ4NHZ4REVRSGg2TUh5ZitVVzh2azVDRVRxbzNzNDgrRDRxQ2FuVnozb0RHOUlIWmwranQyZDNDTnJMeHNEWGp1dVNCMVhWYkJKMmFMYXNkQWpKYWY5Rm52RzZXUXRhcjhxeEVBUkZHMVlZRVVWeHhBYmViTzI2Vnh2OWZYS2RpbVVYeFg0eWkzQXFDL1pyZFdyUkw2M1JRMTFVR09uUzZXWUFuWXdjMXlmVWVWRXJCVFFYd3JTYlhHb0NuWWZXNVhFcStFWTlmTHFtYmF0VmRSWm5hSFE0bzNGQXNLbmFUOHNyWFZOc0R0bnVkYVhtZkVFSitBVFBlTUVzQUFIamFZMkJrWUdBQTR1a0N6bzd4L0RaZkdaaFpHRURnc2VPR1JnVDkveXZUTWNZalFDNEhBeE5JRkFBYTVnc0pBSGphWTJCa1lHQm0rTS9Bd01CMGpFR1BRWkpwTWdOUUJBVXdBd0JEWndLc0FzWUFBQUlyQUVVQ3JBQXVBQUFBQUFCV0FMQjQybU5nWkdCZ1lHWXdaMkJpQUFGR0JqUUFBQVl1QUQ5NDJrMk1QVy9DTUJSRlQ5UUVxV0ZnUVIwWVdnK2RyYUFnc1hWaFlHSmw2Z0xZUlJsc0l5ZEVRcW82OW5mM1lUejBEVmZuZnRoQXpROEY5eXVZSmIxZlNTWHV3UlZUNXBrbjR0NHkxeXg0NTRtaWZKYmtsWS9NcFRTZm1TdGUrTW84a2Z3N2M4MkszMDF3bCt0Z285b0ZZNk0vT2RldDl6YjJYZkJxcVp2a3Q5YmJlQmlzVWNlYk1tUFhqMmVuV3Qzb2xnMEJ4NFVyQTVhSVlpZUpTZXc1U2Vmb1dMTlBTUzhjSkZjczBUVC8rcTMwUG0wTzZTY2pteU0zVWNNb2kxNzBMRnRGbTE1cTJqL0xvUy8zQUFBQWVOcGpZR2JBQ3dBQWZRQUUpIGZvcm1hdCgnd29mZicpO30KQGZvbnQtZmFjZXtmb250LWZhbWlseTpjbXN5MTA7c3JjOnVybChkYXRhOmFwcGxpY2F0aW9uL3gtZm9udC13b2ZmO2Jhc2U2NCxkMDlHUmdBQkFBQUFBQU04QUFvQUFBQUFBNlFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQlBVeTh5QUFBQTlBQUFBRW9BQUFCZ2lPUnpHMk50WVhBQUFBRkFBQUFBS1FBQUFEUUFEQUVxWjJ4NVpnQUFBV3dBQUFCNEFBQUFlSk1TUEpGb1pXRmtBQUFCNUFBQUFDd0FBQUEyS0xXajkyaG9aV0VBQUFJUUFBQUFIZ0FBQUNRR05mL2RhRzEwZUFBQUFqQUFBQUFHQUFBQUJnT3dBQUJzYjJOaEFBQUNPQUFBQUFZQUFBQUdBRHdBQUcxaGVIQUFBQUpBQUFBQUZ3QUFBQ0FBQkFBa2JtRnRaUUFBQWxnQUFBRFRBQUFCUHE4M2RlRndiM04wQUFBRExBQUFBQkFBQUFBZ0FBTUFBWGphWTJCbWxtR2N3TURLd01BMGkrbnNQeEdHZmhETitJYnhEWU14SXljREVMQXh3QUVUQXhKSUtTNUxCMHBlWjdqT0xQVkhrNEdCV1lyNU9sQ1lFYUhpLzM4R0JnRHJuUTd2QUFCNDJtTmdZR0JpWUdCZ0JtSVJJTWtJcGxrWUZJQTBDeENDK05mLy80ZVEvN1hBZkFZQVh1VUhNd0FBQUFBQkFKUUFDUUtHQWZnQUlnQUFBVGMyRnhZWEJnOENId0VXQndZSEppOEJCdzRCSXlZbkpqOEJKeVkzTmpjeUZ3R095dzRLRXdFQ0F4cTdwVElFQVFFVEN3WFV5d2tJQmhFREF4RE56UkFEQXhFR0JBRWR5aEVCQWhNS0F4cTdwVElJQXhNQ0FnVFV5d29GQWhNSERjN09EUWNUQWdJQUFIamFZMkJrWUdBQTRwWHBUUEx4L0RaZkdaaFpHRURnc2VPR1JtU2FXWWJ4QjVEaVlHQUM4UUQzMlFpbWVOcGpZR1JnWUpiNm93a2taUmltTUV4amFtTUFpcUFBUmdCTXlnTVhBQUFESEFBQUFKUUFBQUFBQUFBQVBBQUFlTnBqWUdSZ1lHQmlVR1lBMFF4UUVna0FBQVFJQUNrQWVOcE5qckZxd3pBUWhqOVR4MUFua0trZE9oUk5HWVdOOHdDRkRKbXlaaXdra1FnT1dBNlNZL0JTOGdCOTZGNFVEVDNCOGVtLzc0U0FraDh5SHBXeGpQMVJPWVhjbmp4anpsdmlRbzVLWFBMQmloZXkvRldTVDc0UzV5ejRUanpqblV2aVF2Sjc0cEkxdjV1K3U5NEc2OVd1TjlhN1V4ZW11dHBiSDlyZXFWcFh6MkJybmZXSHdScDFuSlFaMnpDZU85WG9TamRzNk9tNGNtUEE0dVZuTzBsTVpNZEpab0dKbW9wOXpBS3R6SjE0TlZyUy84WldEQmV0UTN6TmlIV1VtUklhWlM5SVA0dXZhT0t1cHZrRENWRXhFd0I0Mm1OZ1prQUdqQXhvQUFBQWpnQUYpIGZvcm1hdCgnd29mZicpO30KQGZvbnQtZmFjZXtmb250LWZhbWlseTpjbW1pMTA7c3JjOnVybChkYXRhOmFwcGxpY2F0aW9uL3gtZm9udC13b2ZmO2Jhc2U2NCxkMDlHUmdBQkFBQUFBQVEwQUFvQUFBQUFCTVFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQlBVeTh5QUFBQTlBQUFBRVFBQUFCZ2hWeDArR050WVhBQUFBRTRBQUFBTVFBQUFEd0FXd0NhWjJ4NVpnQUFBV3dBQUFGc0FBQUJqQ2RCaWYxb1pXRmtBQUFDMkFBQUFDOEFBQUEyS0txazJXaG9aV0VBQUFNSUFBQUFIUUFBQUNRR053SG9hRzEwZUFBQUF5Z0FBQUFNQUFBQURBaHFBRXRzYjJOaEFBQUROQUFBQUFnQUFBQUlBRlFBeG0xaGVIQUFBQU04QUFBQUdBQUFBQ0FBQmdCTWJtRnRaUUFBQTFRQUFBRFNBQUFCUHBrUmRjVndiM04wQUFBRUtBQUFBQXdBQUFBZ0FBTUFBSGphWTJCbU9zYzRnWUdWZ1lGcEZ0UFpmeUlNL1NDYThRM2pHd1pqUms0R0lHQmpnQU5HQmlTUVVseVdEcFIwWkhCbFp2Z1A1RE5EcEpIVS9BY0tBd0R3VWcxRWVOcGpZR0JnWW1CZ1lBWmlFU0RKQ0taWkdEU0FOQnVRWmdUS09qSzQvdjhQNUlQcC93Zis3d1dyQWdJQWtJQUk3d0FBQUhqYUpZOHhUOXRBQUlYdjNkbDNjV0w3M0p3NUYrb0VoUVJiQWtFa096a3JyWENFMUN3ZE9qQ2dEbFhWaFNBeFYrM0tnTVRNeUgvbzBnbnhEL2dEakNBeElvUVltWkxncUc5Nit0NGIzaU9VOUJZTCtrRHZTSjlraEJRd1JhWWpGZXJjYU42SFNKTjBZQ0p0aWo0NmdvYzZNcEdQaWk5eFhxTEkyUldPZU9oeGxIcG5CYTc5NjdSbXcydW9BWFBFZlBIVmk1WEg0Tm5IMzF5NHprWjUrZFQ1VFE4RE9ISjJxaVZyQ1RBR1dwTUNjS1BwNUN6c0JhRFM1MHRjbHh6ZEd4eVFTaURwWXNZQ2VrMitFTElwZkhRNy9QOHdOY1l1bHI1anRFU1lqT25RSktLYmNJbThpbzJPQkUrR2c4S2tKa203VElMblVUYXVmcHBzSGZUMmgrVUdzK2VXOUQrMjdYTUwyQnpKZ05wTmw0VXhZTkg5N3hmcnl0NzcrWG5vc1FpZnJQZk1vU3d1cDVPcTZ2LzlZMlMyaFJXS2wzdlhabTBPcURadHZ4T2VzT0xxa2FQK3hWWmR4V3ZsRUFoV1g3RXpVbWk4YUZhM3hMWlFIekIvYlBJNmRuMXowckQ0R3pmTk84UjQybU5nWkdCZ0FPSlZSc0d6NC9sdHZqSXdzekNBd0dQSERZMEkrdjlmWmdHbXUwQXVCd01UU0JRQUxvOExGUUI0Mm1OZ1pHQmdadmpQQUNJWlZQNC9ZUlpnQUlxZ0FHWUFUREVESlFBQUFBSjJBQUFEQUFBa0F2UUFKd0FBQUFBQVZBREdlTnBqWUdSZ1lHQm04R1pnWWdBQlJnWTBBQUFJSWdCVGVOcE5qckZxd3pBUWhqOVR4MUNuMEtrZE9oUk5HWVdOK3dDQkRKbXlaaXdra1FnT1NBcXlZOGdTK2dCOTZGNFVEVDNCOGQxM3Y0U0FtaHNGOXlwNFRmMWVKWlZNRDU0eDV5MXpKVWRscnZsZ3dSTkYrU3ptazJYbWtoZStNODk0NTVTNUV2K1R1ZWFMMzFWdzU4dG9vOW9FWTZNL09OZTN6ZGJHb1E5ZXRicDVpTFgxTnU1R2E5VCtxc3pVRDlQUnFVNDN1bU5Gd0hIbXdvZ2x5czgyWWt4aXowRjJqcDZXaG0xeWcweEJOa3FjRnZzL3NaYUVUNmxkZXMxSWFzOVZ1bUdTekNEOUtHbEZsKzVxdWovZjlEQzdBQUI0Mm1OZ1pzQUxBQUI5QUFRPSkgZm9ybWF0KCd3b2ZmJyk7fQp0ZXh0LmYwIHtmb250LWZhbWlseTpjbXN5MTA7Zm9udC1zaXplOjkuOTYyNjRweH0KdGV4dC5mMSB7Zm9udC1mYW1pbHk6Y21taTEwO2ZvbnQtc2l6ZTo5Ljk2MjY0cHh9CnRleHQuZjIge2ZvbnQtZmFtaWx5OmNtbWk3O2ZvbnQtc2l6ZTo2Ljk3Mzg0OHB4fQp0ZXh0LmYzIHtmb250LWZhbWlseTpjbXI3O2ZvbnQtc2l6ZTo2Ljk3Mzg0OHB4fQp0ZXh0LmY0IHtmb250LWZhbWlseTpjbXI1O2ZvbnQtc2l6ZTo0Ljk4MTMycHh9Cl1dPgo8L3N0eWxlPgo8ZyBpZD0ncGFnZTEnPgo8ZyBzdHJva2UtbWl0ZXJsaW1pdD0nMTAnIHRyYW5zZm9ybT0ndHJhbnNsYXRlKC03LjA1MzM1MywtNTkuMDQ0NDUyKXNjYWxlKDAuOTk2MjY0LC0wLjk5NjI2NCknPgo8ZyBmaWxsPScjMDAwJyBzdHJva2U9JyMwMDAnPgo8ZyBzdHJva2Utd2lkdGg9JzAuNCc+CjxnIHN0cm9rZS13aWR0aD0nMC41Jz4KPGcgdHJhbnNmb3JtPSd0cmFuc2xhdGUoLTEzLjYxMTA4LC0yLjUpJz4KPGcgc3Ryb2tlPSdub25lJyB0cmFuc2Zvcm09J3NjYWxlKC0xLjAwMzc1LDEuMDAzNzUpdHJhbnNsYXRlKC03LjA1MzM1MywtNTkuMDQ0NDUyKXNjYWxlKC0xLC0xKSc+CjxnIGZpbGw9JyMwMDAnPgo8ZyBzdHJva2U9J25vbmUnPgo8dGV4dCBjbGFzcz0nZjEnIHg9Jy03LjA1MzM1MycgeT0nLTU5LjA0NDQ1Mic+QTwvdGV4dD4KPHRleHQgY2xhc3M9J2YwJyB4PScyLjYzMjUxMicgeT0nLTU5LjA0NDQ1Mic+w5c8L3RleHQ+Cjx0ZXh0IGNsYXNzPSdmMScgeD0nMTIuNTk1MTI1JyB5PSctNTkuMDQ0NDUyJz5BPC90ZXh0Pgo8L2c+CjwvZz4KPC9nPgo8L2c+CjxnIHRyYW5zZm9ybT0ndHJhbnNsYXRlKDUzLjE1NTUsLTIuNSknPgo8ZyBzdHJva2U9J25vbmUnIHRyYW5zZm9ybT0nc2NhbGUoLTEuMDAzNzUsMS4wMDM3NSl0cmFuc2xhdGUoLTcuMDUzMzUzLC01OS4wNDQ0NTIpc2NhbGUoLTEsLTEpJz4KPGcgZmlsbD0nIzAwMCc+CjxnIHN0cm9rZT0nbm9uZSc+Cjx0ZXh0IGNsYXNzPSdmMScgeD0nLTcuMDUzMzUzJyB5PSctNTkuMDQ0NDUyJz5BPC90ZXh0Pgo8L2c+CjwvZz4KPC9nPgo8L2c+CjxnIHRyYW5zZm9ybT0ndHJhbnNsYXRlKC02MC42NTU1LC0yLjUpJz4KPGcgc3Ryb2tlPSdub25lJyB0cmFuc2Zvcm09J3NjYWxlKC0xLjAwMzc1LDEuMDAzNzUpdHJhbnNsYXRlKC03LjA1MzM1MywtNTkuMDQ0NDUyKXNjYWxlKC0xLC0xKSc+CjxnIGZpbGw9JyMwMDAnPgo8ZyBzdHJva2U9J25vbmUnPgo8dGV4dCBjbGFzcz0nZjEnIHg9Jy03LjA1MzM1MycgeT0nLTU5LjA0NDQ1Mic+QTwvdGV4dD4KPC9nPgo8L2c+CjwvZz4KPC9nPgo8ZyB0cmFuc2Zvcm09J3RyYW5zbGF0ZSgtNjAuODg0NjYsLTU5LjQwNTUpJz4KPGcgc3Ryb2tlPSdub25lJyB0cmFuc2Zvcm09J3NjYWxlKC0xLjAwMzc1LDEuMDAzNzUpdHJhbnNsYXRlKC03LjA1MzM1MywtNTkuMDQ0NDUyKXNjYWxlKC0xLC0xKSc+CjxnIGZpbGw9JyMwMDAnPgo8ZyBzdHJva2U9J25vbmUnPgo8dGV4dCBjbGFzcz0nZjEnIHg9Jy03LjA1MzM1MycgeT0nLTU5LjA0NDQ1Mic+RTwvdGV4dD4KPC9nPgo8L2c+CjwvZz4KPC9nPgo8cGF0aCBkPSdNMTguMTY2NjMgMy42MTY2Mkg0OC4wOTk5NicgZmlsbD0nbm9uZScvPgo8ZyB0cmFuc2Zvcm09J3RyYW5zbGF0ZSg0OC4zNDk5NiwzLjYxNjYyKSc+CjxnIHN0cm9rZS1kYXNoYXJyYXk9J25vbmUnIHN0cm9rZS1kYXNob2Zmc2V0PScwLjAnPgogPGcgc3Ryb2tlLWxpbmVjYXA9J3JvdW5kJz4KIDxnIHN0cm9rZS1saW5lam9pbj0ncm91bmQnPgogPHBhdGggZD0nTS0yLjIgMi41ODA2M0MtMS43OTgwNyAxLjAzMjIzLS45MDI0IC4zMDEwNyAwIDBDLS45MDI0LS4zMDEwNy0xLjc5ODA3LTEuMDMyMjMtMi4yLTIuNTgwNjMnIGZpbGw9J25vbmUnLz4KIDwvZz4KIDwvZz4KIDwvZz4KPC9nPgo8ZyB0cmFuc2Zvcm09J3RyYW5zbGF0ZSgyOS4wOTM3Miw3LjQyODQ0KSc+CjxnIHN0cm9rZT0nbm9uZScgdHJhbnNmb3JtPSdzY2FsZSgtMS4wMDM3NSwxLjAwMzc1KXRyYW5zbGF0ZSgtNy4wNTMzNTMsLTU5LjA0NDQ1MilzY2FsZSgtMSwtMSknPgo8ZyBmaWxsPScjMDAwJz4KPGcgc3Ryb2tlPSdub25lJz4KPHRleHQgY2xhc3M9J2YyJyB4PSctNy4wNTMzNTMnIHk9Jy01OS4wNDQ0NTInPs+APC90ZXh0Pgo8dGV4dCBjbGFzcz0nZjQnIHg9Jy0yLjM5NDUwOScgeT0nLTU4LjA0ODE4OCc+MTwvdGV4dD4KPC9nPgo8L2c+CjwvZz4KPC9nPgo8cGF0aCBkPSdNMTguMTY2NjMtMy42MTY2Mkg0OC4wOTk5NicgZmlsbD0nbm9uZScvPgo8ZyB0cmFuc2Zvcm09J3RyYW5zbGF0ZSg0OC4zNDk5NiwtMy42MTY2MiknPgo8ZyBzdHJva2UtZGFzaGFycmF5PSdub25lJyBzdHJva2UtZGFzaG9mZnNldD0nMC4wJz4KIDxnIHN0cm9rZS1saW5lY2FwPSdyb3VuZCc+CiA8ZyBzdHJva2UtbGluZWpvaW49J3JvdW5kJz4KIDxwYXRoIGQ9J00tMi4yIDIuNTgwNjNDLTEuNzk4MDcgMS4wMzIyMy0uOTAyNCAuMzAxMDcgMCAwQy0uOTAyNC0uMzAxMDctMS43OTgwNy0xLjAzMjIzLTIuMi0yLjU4MDYzJyBmaWxsPSdub25lJy8+CiA8L2c+CiA8L2c+CiA8L2c+CjwvZz4KPGcgdHJhbnNmb3JtPSd0cmFuc2xhdGUoMjkuMDkzNzIsLTkuNDQyMzIpJz4KPGcgc3Ryb2tlPSdub25lJyB0cmFuc2Zvcm09J3NjYWxlKC0xLjAwMzc1LDEuMDAzNzUpdHJhbnNsYXRlKC03LjA1MzM1MywtNTkuMDQ0NDUyKXNjYWxlKC0xLC0xKSc+CjxnIGZpbGw9JyMwMDAnPgo8ZyBzdHJva2U9J25vbmUnPgo8dGV4dCBjbGFzcz0nZjInIHg9Jy03LjA1MzM1MycgeT0nLTU5LjA0NDQ1Mic+z4A8L3RleHQ+Cjx0ZXh0IGNsYXNzPSdmNCcgeD0nLTIuMzk0NTA5JyB5PSctNTguMDQ4MTg4Jz4yPC90ZXh0Pgo8L2c+CjwvZz4KPC9nPgo8L2c+CjxwYXRoIGQ9J00tNDYuMzk5OTYgMEgtMTguNjY2NjMnIGZpbGw9J25vbmUnLz4KPGcgdHJhbnNmb3JtPSdtYXRyaXgoLTEuMCwwLjAsMC4wLC0xLjAsLTQ2LjE0OTk2LDAuMCknPgo8ZyBzdHJva2UtZGFzaGFycmF5PSdub25lJyBzdHJva2UtZGFzaG9mZnNldD0nMC4wJz4KIDxnIHN0cm9rZS1saW5lY2FwPSdyb3VuZCc+CiA8ZyBzdHJva2UtbGluZWpvaW49J3JvdW5kJz4KIDxwYXRoIGQ9J00yLjIgMi41ODA2M0MxLjc5ODA3IDEuMDMyMjMgLjkwMjQgLjMwMTA3IDAgMEMuOTAyNC0uMzAxMDcgMS43OTgwNy0xLjAzMjIzIDIuMi0yLjU4MDYzJyBmaWxsPSdub25lJy8+CiA8L2c+CiA8L2c+CiA8L2c+CjwvZz4KPGcgdHJhbnNmb3JtPSd0cmFuc2xhdGUoLTE4LjQxNjYzLDAuMCknPgo8ZyBzdHJva2UtZGFzaGFycmF5PSdub25lJyBzdHJva2UtZGFzaG9mZnNldD0nMC4wJz4KIDxnIHN0cm9rZS1saW5lY2FwPSdyb3VuZCc+CiA8ZyBzdHJva2UtbGluZWpvaW49J3JvdW5kJz4KIDxwYXRoIGQ9J00tMi4yIDIuNTgwNjNDLTEuNzk4MDcgMS4wMzIyMy0uOTAyNCAuMzAxMDcgMCAwQy0uOTAyNC0uMzAxMDctMS43OTgwNy0xLjAzMjIzLTIuMi0yLjU4MDYzJyBmaWxsPSdub25lJy8+CiA8L2c+CiA8L2c+CiA8L2c+CjwvZz4KPGcgdHJhbnNmb3JtPSd0cmFuc2xhdGUoLTM2LjY2ODAzLDIuODExODEpJz4KPGcgc3Ryb2tlPSdub25lJyB0cmFuc2Zvcm09J3NjYWxlKC0xLjAwMzc1LDEuMDAzNzUpdHJhbnNsYXRlKC03LjA1MzM1MywtNTkuMDQ0NDUyKXNjYWxlKC0xLC0xKSc+CjxnIGZpbGw9JyMwMDAnPgo8ZyBzdHJva2U9J25vbmUnPgo8dGV4dCBjbGFzcz0nZjMnIHg9Jy03LjA1MzM1MycgeT0nLTU5LjA0NDQ1Mic+4oiGPC90ZXh0Pgo8L2c+CjwvZz4KPC9nPgo8L2c+CjxwYXRoIGQ9J00tNDcuMTEwMDItNDcuMTA3TC03LjU5MjQtNy41OTY1NicgZmlsbD0nbm9uZScvPgo8ZyB0cmFuc2Zvcm09J21hdHJpeCgtMC43MDcxNSwtMC43MDcwMywwLjcwNzAzLC0wLjcwNzE1LC00Ni45MzMyMywtNDYuOTMwMjQpJz4KPGcgc3Ryb2tlLWRhc2hhcnJheT0nbm9uZScgc3Ryb2tlLWRhc2hvZmZzZXQ9JzAuMCc+CiA8ZyBzdHJva2UtbGluZWNhcD0ncm91bmQnPgogPGcgc3Ryb2tlLWxpbmVqb2luPSdyb3VuZCc+CiA8cGF0aCBkPSdNMi4yIDIuNTgwNjNDMS43OTgwNyAxLjAzMjIzIC45MDI0IC4zMDEwNyAwIDBDLjkwMjQtLjMwMTA3IDEuNzk4MDctMS4wMzIyMyAyLjItMi41ODA2MycgZmlsbD0nbm9uZScvPgogPC9nPgogPC9nPgogPC9nPgo8L2c+CjxnIHRyYW5zZm9ybT0nbWF0cml4KDAuNzA3MTUsMC43MDcwMywtMC43MDcwMywwLjcwNzE1LC03LjQxNTYyLC03LjQxOTgpJz4KPGcgc3Ryb2tlLWRhc2hhcnJheT0nbm9uZScgc3Ryb2tlLWRhc2hvZmZzZXQ9JzAuMCc+CiA8ZyBzdHJva2UtbGluZWNhcD0ncm91bmQnPgogPGcgc3Ryb2tlLWxpbmVqb2luPSdyb3VuZCc+CiA8cGF0aCBkPSdNLTIuMiAyLjU4MDYzQy0xLjc5ODA3IDEuMDMyMjMtLjkwMjQgLjMwMTA3IDAgMEMtLjkwMjQtLjMwMTA3LTEuNzk4MDctMS4wMzIyMy0yLjItMi41ODA2MycgZmlsbD0nbm9uZScvPgogPC9nPgogPC9nPgogPC9nPgo8L2c+CjxnIHRyYW5zZm9ybT0ndHJhbnNsYXRlKC0yNC42ODg0LC0zMy43Nzg0NiknPgo8ZyBzdHJva2U9J25vbmUnIHRyYW5zZm9ybT0nc2NhbGUoLTEuMDAzNzUsMS4wMDM3NSl0cmFuc2xhdGUoLTcuMDUzMzUzLC01OS4wNDQ0NTIpc2NhbGUoLTEsLTEpJz4KPGcgZmlsbD0nIzAwMCc+CjxnIHN0cm9rZT0nbm9uZSc+Cjx0ZXh0IGNsYXNzPSdmMicgeD0nLTcuMDUzMzUzJyB5PSctNTkuMDQ0NDUyJz5lPC90ZXh0Pgo8L2c+CjwvZz4KPC9nPgo8L2c+CjxnIHN0cm9rZS1kYXNoYXJyYXk9JzMuMCwyLjAnIHN0cm9rZS1kYXNob2Zmc2V0PScwLjAnPgo8cGF0aCBkPSdNLTU2LjkwNTUtNDguNjYyNDZWLTYuOTA5NzMnIGZpbGw9J25vbmUnLz4KPGcgdHJhbnNmb3JtPSdtYXRyaXgoMC4wLDEuMCwtMS4wLDAuMCwtNTYuOTA1NSwtNi42NTk3MyknPgo8ZyBzdHJva2UtZGFzaGFycmF5PSdub25lJyBzdHJva2UtZGFzaG9mZnNldD0nMC4wJz4KIDxnIHN0cm9rZS1saW5lY2FwPSdyb3VuZCc+CiA8ZyBzdHJva2UtbGluZWpvaW49J3JvdW5kJz4KIDxwYXRoIGQ9J00tMi4yIDIuNTgwNjNDLTEuNzk4MDcgMS4wMzIyMy0uOTAyNCAuMzAxMDcgMCAwQy0uOTAyNC0uMzAxMDctMS43OTgwNy0xLjAzMjIzLTIuMi0yLjU4MDYzJyBmaWxsPSdub25lJy8+CiA8L2c+CiA8L2c+CiA8L2c+CjwvZz4KPC9nPgo8L2c+CjwvZz4KPC9nPgo8L2c+CjwvZz4KPC9zdmc+" /></fr:resource-content><fr:resource-source
+type="latex"
+part="preamble"><![CDATA[
+        
+  \RequirePackage {tikz}
+  \RequirePackage {amsmath}
+  \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
+
+  \definecolor {catccolor}{RGB}{255,244,138}
+  \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
+  \tikzstyle {catc}=[catccolor!60]
+  \tikzstyle {catd}=[orange!40]
+  \tikzstyle {cate}=[red!40]
+  \tikzstyle {catf}=[blue!10]
+  \tikzstyle {catg}=[green!25]
+
+
+  \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
+  \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
+
+  \NewDocumentCommand \CreateRect {D<>{} m m}{
+    \path 
+      coordinate (#1nw)
+      ++(#2,-#3) coordinate (#1se)
+      coordinate (#1sw) at (#1se -| #1nw)
+      coordinate (#1ne) at (#1nw -| #1se)
+    ;
+
+    \path [spath/save = #1north] (#1nw) to (#1ne);
+    \path [spath/save = #1west] (#1nw) to (#1sw);
+    \path [spath/save = #1east] (#1ne) to (#1se);
+    \path [spath/save = #1south] (#1sw) to (#1se);
+  }
+
+        
+   % appears to be necessary
+  \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd}
+  \usetikzlibrary{matrix,arrows}
+  \usetikzlibrary{backgrounds,fit,positioning,calc,shapes}
+  \usetikzlibrary{decorations.pathreplacing}
+  \usetikzlibrary{decorations.pathmorphing}
+  \usetikzlibrary{decorations.markings}
+
+  % basic settings
+  \tikzset{
+    diagram/.style = {
+      on grid,
+      node distance=2cm,
+      commutative diagrams/every diagram,
+      line width = .5pt,
+      every node/.append style = {
+        commutative diagrams/every cell,
+      },
+    },
+    morphism/.style = {
+      auto=left,
+      node font=\scriptsize,
+    },
+    phantom/.style = {
+      commutative diagrams/phantom,
+      node font=\scriptsize,
+      sloped,
+    },
+    between/.style args = {#1 and #2}{
+      at = ($(#1)!0.5!(#2)$)
+    },
+    desc/.style = {anchor=center,fill=white,inner sep=3pt},
+    offset/.style args = {#1} {commutative diagrams/shift right={#1}},
+    cross over/.style = {
+      commutative diagrams/crossing over
+    },
+    adjoint/.style = {
+      phantom,
+      every to/.append style = {
+        edge node = {node [sloped,allow upside down,auto=false] {$\dashv$}}
+      }
+    },
+  }
+
+  % pullback and pushout
+  \tikzset{
+    pullback/.style = {
+      append after command = {
+        \pgfextra{
+          \draw ($(\tikzlastnode) + (.2cm,-.5cm)$) -- ++(0.3cm,0) -- ++(0,0.3cm);
+        }
+      }
+    },
+    pushout/.style = {
+      append after command={
+        \pgfextra{
+          \draw ($(\tikzlastnode) + (-.2cm,.5cm)$) -- ++(-0.3cm,0) -- ++(0,-0.3cm);
+        }
+      }
+    },
+  }
+
+  % arrow styles
+  \tikzset{
+    exists/.style = {
+      densely dashed
+    },
+    embedding/.style = {
+      {right hook}->
+    },
+    into/.style = {
+      {right hook}->
+    },
+    cover/.style = {
+      -{Triangle[open]}
+    },
+    twocell/.style = {
+      double, -{implies}
+    }
+  }
+
+  \newlength{\dontworryaboutit} % no idea what it does
+
+  \tikzset{
+    inline diagram/.style = {
+      commutative diagrams/every diagram,
+      commutative diagrams/cramped,
+      line width = .5pt,
+      every node/.append style = {
+        commutative diagrams/every cell,
+        anchor = base,
+        inner sep = 0pt
+      },
+      every path/.append style = {
+        outer xsep = 2pt
+      }
+    }
+  }
+  
+  % macros for drawing commutative squares
+  % adapted from Jon Sterling's macros (https://git.sr.ht/~jonsterling/article-template/tree/main/item/local-tikz.sty)
+  \tikzset{
+    square/nw/.style = {},
+    square/ne/.style = {},
+    square/se/.style = {},
+    square/sw/.style = {},
+    square/north/.style = {->},
+    square/south/.style = {->},
+    square/west/.style = {->},
+    square/east/.style = {->},
+    square/north/node/.style = {above},
+    square/south/node/.style = {below},
+    square/west/node/.style = {left},
+    square/east/node/.style = {right},
+  }
+
+  \ExplSyntaxOn
+  \keys_define:nn { jon-tikz/diagram } {
+    nw .tl_set:N = \l_jon_tikz_diagram_nw,
+    sw .tl_set:N = \l_jon_tikz_diagram_sw,
+    ne .tl_set:N = \l_jon_tikz_diagram_ne,
+    se .tl_set:N = \l_jon_tikz_diagram_se,
+
+    width .tl_set:N = \l_jon_tikz_diagram_width,
+    height .tl_set:N = \l_jon_tikz_diagram_height,
+
+    north .tl_set:N = \l_jon_tikz_diagram_north,
+    south .tl_set:N = \l_jon_tikz_diagram_south,
+    west .tl_set:N = \l_jon_tikz_diagram_west,
+    east .tl_set:N = \l_jon_tikz_diagram_east,
+
+    nw/style .code:n = {\tikzset{square/nw/.style = {#1}}},
+    sw/style .code:n = {\tikzset{square/sw/.style = {#1}}},
+    ne/style .code:n = {\tikzset{square/ne/.style = {#1}}},
+    se/style .code:n = {\tikzset{square/se/.style = {#1}}},
+
+    north/style .code:n = {\tikzset{square/north/.style = {#1}}},
+    north/node/style .code:n = {\tikzset{square/north/node/.style = {#1}}},
+    south/style .code:n = {\tikzset{square/south/.style = {#1}}},
+    south/node/style .code:n = {\tikzset{square/south/node/.style = {#1}}},
+    west/style .code:n = {\tikzset{square/west/.style = {#1}}},
+    west/node/style .code:n = {\tikzset{square/west/node/.style = {#1}}},
+    east/style .code:n = {\tikzset{square/east/.style = {#1}}},
+    east/node/style .code:n = {\tikzset{square/east/node/.style = {#1}}},
+
+    draft .meta:n = {
+      nw = {nw},
+      sw = {sw},
+      se = {se},
+      ne = {ne},
+      north = {north},
+      south = {south},
+      west = {west},
+      east = {east},
+    }
+  }
+
+  \tl_set:Nn \l_jon_tikz_diagram_width { 2cm }
+  \tl_set:Nn \l_jon_tikz_diagram_height { 2cm }
+
+
+  \cs_new:Nn \__jon_tikz_render_square:nn {
+    \group_begin:
+    \keys_set:nn {jon-tikz/diagram} {#2} {
+      \node (#1nw) [square/nw] {$\l_jon_tikz_diagram_nw$};
+      \node (#1sw) [below = \l_jon_tikz_diagram_height~of~#1nw,square/sw] {$\l_jon_tikz_diagram_sw$};
+      \draw[morphism,square/west] (#1nw) to node [square/west/node] {$\l_jon_tikz_diagram_west$} (#1sw);
+
+      \node (#1ne) [right = \l_jon_tikz_diagram_width~of~#1nw,square/ne] {$\l_jon_tikz_diagram_ne$};
+      \node (#1se) [below = \l_jon_tikz_diagram_height~of~#1ne,square/se] {$\l_jon_tikz_diagram_se$};
+      \draw[morphism,square/north] (#1nw) to node [square/north/node] {$\l_jon_tikz_diagram_north$} (#1ne);
+      \draw[morphism,square/east] (#1ne) to node [square/east/node] {$\l_jon_tikz_diagram_east$} (#1se);
+      \draw[morphism,square/south] (#1sw) to node [square/south/node] {$\l_jon_tikz_diagram_south$} (#1se);
+    }
+    \group_end:
+  }
+
+  % the optional argument allows one to specify a prefix to positions
+  \NewDocumentCommand\SpliceDiagramSquare{O{}m}{
+    \__jon_tikz_render_square:nn {#1} {#2}
+  }
+
+  \NewDocumentCommand\DiagramSquare{O{}O{}m}{
+    \begin{tikzpicture}[diagram,#2,baseline=(#1sw.base)]
+      \__jon_tikz_render_square:nn {#1} {#3}
+    \end{tikzpicture}
+  }
+  \ExplSyntaxOff
+
+      ]]></fr:resource-source><fr:resource-source
+type="latex"
+part="body"><![CDATA[
+    \begin {tikzpicture}[diagram]
+      \node  (1) {$A \times  A$};
+      \node  (2) [right = of 1] {$A$};
+      \node  (3) [left = of 1] {$A$};
+      \node  (4) [below = of 3] {$E$};
+      \draw  [->,morphism,offset=-1.5] (1) to node {$\pi _{1}$} (2);
+      \draw  [->,morphism,offset=1.5] (1) to node[swap] {$\pi _{2}$} (2);
+      \draw  [>->,morphism] (3) to node {$\Delta $} (1);
+      \draw  [>->,morphism] (4) to node[swap] {$e$} (1);
+      \draw  [->,morphism,exists] (4) to (3);
+    \end {tikzpicture}
+  ]]></fr:resource-source></fr:resource></fr:figure>
+    
+  
+  <fr:p>Assume the converse.
+    Suppose that <fr:tex
+display="inline"><![CDATA[fu = fv]]></fr:tex> for some parallel pair of morphisms <fr:tex
+display="inline"><![CDATA[u,v\colon C\rightrightarrows A]]></fr:tex>.
+    Then it follows that <fr:tex
+display="inline"><![CDATA[(u,v)]]></fr:tex> factors through <fr:tex
+display="inline"><![CDATA[e]]></fr:tex>.</fr:p>
+  
+    
+      
+      <fr:figure><fr:resource
+hash="4ba2b50d858cf45d1a327497867a03df"><fr:resource-content><fr:img
+src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4KPCEtLSBUaGlzIGZpbGUgd2FzIGdlbmVyYXRlZCBieSBkdmlzdmdtIDMuMC4zIC0tPgo8c3ZnIHZlcnNpb249JzEuMScgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJyB4bWxuczp4bGluaz0naHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluaycgd2lkdGg9JzIwMC44NjM0MTJwdCcgaGVpZ2h0PScxMTYuOTc3ODUzcHQnIHZpZXdCb3g9Jy03MiAtNzIgMTMzLjkwODk0MSA3Ny45ODUyMzUnPgo8c3R5bGUgdHlwZT0ndGV4dC9jc3MnPgo8IVtDREFUQVtAZm9udC1mYWNle2ZvbnQtZmFtaWx5OmNtcjc7c3JjOnVybChkYXRhOmFwcGxpY2F0aW9uL3gtZm9udC13b2ZmO2Jhc2U2NCxkMDlHUmdBQkFBQUFBQU40QUFvQUFBQUFBK1FBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQlBVeTh5QUFBQTlBQUFBRU1BQUFCZ2hVTjBMMk50WVhBQUFBRTRBQUFBTEFBQUFEUUFEQUI4WjJ4NVpnQUFBV1FBQUFDNkFBQUF3RXA3Ymxab1pXRmtBQUFDSUFBQUFDNEFBQUEyS0cya1BtaG9aV0VBQUFKUUFBQUFId0FBQUNRRXlnSWZhRzEwZUFBQUFuQUFBQUFLQUFBQUNnVGtBSFJzYjJOaEFBQUNmQUFBQUFnQUFBQUlBREFBWUcxaGVIQUFBQUtFQUFBQUZ3QUFBQ0FBQlFBY2JtRnRaUUFBQXB3QUFBREtBQUFCTXUwS2tlcHdiM04wQUFBRGFBQUFBQkFBQUFBZ0FBTUFBWGphWTJCbVVtU2N3TURLd01BMGkrbnNQeEdHZmhETitJYnhEWU14SXljREVMQXh3QUVqQXhKSUtTNUxCMHBxTUdneU0vd0g4cGtoMGtocS9nT0ZBYXRHREdJQWVOcGpZR0JnWW1CZ1lBWmlFU0RKQ0taWkdCU0FOQXNRZ3ZpYS8vOERTWTMvLy8vZkJQTVpBRkNiQm9WNDJtTmdaQ2o1ejhqWXdNekFJTVhBd0NndUpzTE94cy9JeHM0bUJtVHlNNnFwQTZHNW1qMmpHV01PTHp1N294VzdKVE5qV0JvWE8yK3JLUiszS2hPVExwOFpNd01qa3dDYlNZNUE0YkhlbjdHY0FreU1TYldLQ3JYSlJjMnFUVUFqR1R5QTVvZEF6QmNHbWlvdXhpN0N4czdIcUdadVlzOW94Mml1eDZpdVptcG1IdE5pQmpKUVU4a3NUNXFSbVQ4a2hwRzUwSTJUa1kyWkFXSmExRUtIeEdRbUxtWVdRWi8zQzQ4OHRlSmk0MlJpWUdBQUFON0lJSFFBQUhqYVkyQmtZR0FBNHVOdU1lZmorVzIrTWpDek1JREFZOGNOQ3hEMGYwYW15OHdnTGdjREU0Z0NBRGpGQ3FzQUFIamFZMkJrWUdCbStNL0F3TUIwbWNHRHdaT3hnUUVvZ2dLWUFFbDBBdTRBQXRNQUFBSEpBSFFBU0FBQUFBQUFBQUF3QUdCNDJtTmdaR0JnWUdhUVpnRFJERkFTQ1FBQUExc0FJZ0I0MmoyTU1hdkNNQlNGdjJJVjdSc2NCSWMzU1BBSGhFb2Z1TGc1T0xrNnZNMmFJQjJhU2xxTEx1SlA5ellFYitEdzNYUE9EWkR4SW1HWWhIblFZVko1ODhoamZsaEVub2kvaXB6eHk1b1JTVG9UWjhVdWNzcVUvOGhqbHBTUkorSS9JbWY4OGQ0MzllM2VXYStPamJIZVhXcS9QVm5mVm8xVEc1MFA2OEU2NjgrZE5hcDhLdE5YYlgrdFZhRnpYYkNub2ViR25RNkxSM0VVeHdSMlhDVHpiRG1GdmFXU3pFbG5neWIvcGdkSlhXaWN3eTlHR2lWUFVVTXZONjNvVmJxS0l0eHBpZzlZckM1TEFBQjQybU5nWmtBR2pBeG9BQUFBamdBRikgZm9ybWF0KCd3b2ZmJyk7fQpAZm9udC1mYWNle2ZvbnQtZmFtaWx5OmNtcjU7c3JjOnVybChkYXRhOmFwcGxpY2F0aW9uL3gtZm9udC13b2ZmO2Jhc2U2NCxkMDlHUmdBQkFBQUFBQU93QUFvQUFBQUFCQmdBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQlBVeTh5QUFBQTlBQUFBRVFBQUFCZ2hVeDFBbU50WVhBQUFBRTRBQUFBTEFBQUFEUUFEQUNGWjJ4NVpnQUFBV1FBQUFEMEFBQUE5TnUrK1pKb1pXRmtBQUFDV0FBQUFDMEFBQUEyS091azZHaG9aV0VBQUFLSUFBQUFIZ0FBQUNRRnVnS3lhRzEwZUFBQUFxZ0FBQUFLQUFBQUNnWm5BSkpzYjJOaEFBQUN0QUFBQUFnQUFBQUlBRElBZW0xaGVIQUFBQUs4QUFBQUZ3QUFBQ0FBQlFBdGJtRnRaUUFBQXRRQUFBREtBQUFCTXVzSWtlWndiM04wQUFBRG9BQUFBQkFBQUFBZ0FBTUFBWGphWTJCbWVzMDRnWUdWZ1lGcEZ0UFpmeUlNL1NDYThRM2pHd1pqUms0R0lHQmpnQU5HQmlTUVVseVdEcFEwWkRCaVp2Z1A1RE5EcEpIVS9BY0tBd0QyeEEwK2VOcGpZR0JnWW1CZ1lBWmlFU0RKQ0taWkdCU0FOQXNRZ3ZoRy8vOERTY1AvLy85ZkFQTVpBRkZZQm80QUFRQ1NBQUFDTndLckFCNEFBQUVSQmhZN0FSVW1KeU1HQnpVek1qWW5FUTRCSnlNMU14WS9BVFkzTmhZQm1BUWlUak1zT3RFNkxETk9JUU11VkJNU0VoSStCejg1R0E0Q2kvM05GeFF0QXdFQkF5MFVGd0lBRWd3QkxRSUtBZ291QVFrQUFBRUFYUUFBQWxzQ3FnQXJBQUFsQnlFMU5EOENQZ0UzTGdFbklnWUhIZ0VYRGdFakJpWW5QZ0UzTWhZWERnRUhCZzhCSlRZM1BnRTNBbHNpL2lRRENmbzlUUUVDYUUwMFVoWVlJUUVCSmhVT0xBSUNoR3B3bXdNQ2FFZ3ZOV2tCQWlvS0RROEN4c1lmQlFJSjFERnFQMHhUQVNvakFoOGJJQjBCR1NkTlpRSnBZMUJwTGlBblRnRUJCQXRCRWdBQWVOcGpZR1JnWUFEaVJhZnRmOGZ6MjN4bFlHWmhBSUhIamhzV0lOUE1RVXlyZ1JRSEF4T0lCd0E4dHdwRUFBQUFlTnBqWUdSZ1lHYjR6d0FrZ3hoaUdXS1pvaG1BSWlpQUNRQTkwUUp6QUFBRFVnQUFBcmdBa2dCZEFBQUFBQUFBQURJQWVuamFZMkJrWUdCZ1p0QmhBTkVNVUJJSkFBQUZCQUF6QUhqYVBZd3hxOEl3RklXL1loWHRHeHdFaHpkSThBZUVTcCtibTRPVHE4UGJyQW5Tb2Fta3RlZ2kvblJ2US9BR0R0ODk1OXdBR1M4U2hrbVlCeDBtbFRlUFBPYUhSZVNKK0t2SUdiK3NHWkdrTTNGVzdDS25UUG1QUEdaSkdYa2kvaU55eGgvdmZWUGY3cDMxNnRnWTY5Mmw5dHVUOVczVk9MWFIrYkFlckxQKzNGbWp5cWN5ZmRYMjExb1ZPdGNGZXhwcWJ0enBzSGdVUjNGTVlNZEZNcytXVTloYktzbWNkRFpvOG05NmtOU0Z4am44WXFSUjhoUTE5SExUaWw2bHF5akNuYWI0QUZVeUxrTUFBSGphWTJCbVFBYU1ER2dBQUFDT0FBVT0pIGZvcm1hdCgnd29mZicpO30KQGZvbnQtZmFjZXtmb250LWZhbWlseTpjbXN5MTA7c3JjOnVybChkYXRhOmFwcGxpY2F0aW9uL3gtZm9udC13b2ZmO2Jhc2U2NCxkMDlHUmdBQkFBQUFBQU5BQUFvQUFBQUFBNlFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQlBVeTh5QUFBQTlBQUFBRW9BQUFCZ2lPUnpHMk50WVhBQUFBRkFBQUFBS1FBQUFEUUFEQUVxWjJ4NVpnQUFBV3dBQUFCNEFBQUFlSk1TUEpGb1pXRmtBQUFCNUFBQUFDMEFBQUEyS0xXa05XaG9aV0VBQUFJVUFBQUFIZ0FBQUNRR05mL2RhRzEwZUFBQUFqUUFBQUFHQUFBQUJnT3dBQUJzYjJOaEFBQUNQQUFBQUFZQUFBQUdBRHdBQUcxaGVIQUFBQUpFQUFBQUZ3QUFBQ0FBQkFBa2JtRnRaUUFBQWx3QUFBRFRBQUFCUHE4M2RlRndiM04wQUFBRE1BQUFBQkFBQUFBZ0FBTUFBWGphWTJCbWxtR2N3TURLd01BMGkrbnNQeEdHZmhETitJYnhEWU14SXljREVMQXh3QUVUQXhKSUtTNUxCMHBlWjdqT0xQVkhrNEdCV1lyNU9sQ1lFYUhpLzM4R0JnRHJuUTd2QUFCNDJtTmdZR0JpWUdCZ0JtSVJJTWtJcGxrWUZJQTBDeENDK05mLy80ZVEvN1hBZkFZQVh1VUhNd0FBQUFBQkFKUUFDUUtHQWZnQUlnQUFBVGMyRnhZWEJnOENId0VXQndZSEppOEJCdzRCSXlZbkpqOEJKeVkzTmpjeUZ3R095dzRLRXdFQ0F4cTdwVElFQVFFVEN3WFV5d2tJQmhFREF4RE56UkFEQXhFR0JBRWR5aEVCQWhNS0F4cTdwVElJQXhNQ0FnVFV5d29GQWhNSERjN09EUWNUQWdJQUFIamFZMkJrWUdBQTRwWHBqSXZqK1cyK01qQ3pNSURBWThjTkM1QnBaaG5HSDBDS2c0RUp4QU1BRTNvSlp3QUFBSGphWTJCa1lHQ1crcU1KSkdVWXBqQk1ZMnBqQUlxZ0FFWUFUTW9ERndBQUF4d0FBQUNVQUFBQUFBQUFBRHdBQUhqYVkyQmtZR0JnWWxCbUFORU1VQklKQUFBRUNBQXBBSGphVFk2eGFzTXdFSVkvVThkUUo1Q3BIVG9VVFJtRmpmTUFoUXlac21Zc0pKRUlEbGdPa21Qd1V2SUFmZWhlRkEwOXdmSHB2KytFZ0pJZk1oNlZzWXo5VVRtRjNKNDhZODViNGtLT1Nsenl3WW9Yc3Z4VmtrKytFdWNzK0U0ODQ1MUw0a0x5ZStLU05iK2J2cnZlQnV2VnJqZld1MU1YcHJyYVd4L2EzcWxhVjg5Z2E1MzFoOEVhZFp5VUdkc3duanZWNkVvM2JPanB1SEpqd09MbFp6dEpUR1RIU1dhQmlacUtmY3dDcmN5ZGVEVmEwdi9HVmd3WHJVTjh6WWgxbEprU0dtVXZTRCtMcjJqaXJxYjVBd2xSTVJNQWVOcGpZR1pBQm93TWFBQUFBSTRBQlE9PSkgZm9ybWF0KCd3b2ZmJyk7fQpAZm9udC1mYWNle2ZvbnQtZmFtaWx5OmNtbWk3O3NyYzp1cmwoZGF0YTphcHBsaWNhdGlvbi94LWZvbnQtd29mZjtiYXNlNjQsZDA5R1JnQUJBQUFBQUFia0FBb0FBQUFBQ0pnQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUJQVXk4eUFBQUE5QUFBQUVZQUFBQmdoY2Q0RkdOdFlYQUFBQUU4QUFBQVFBQUFBRXdIeFAyWVoyeDVaZ0FBQVh3QUFBUHdBQUFGT0QyelY4NW9aV0ZrQUFBRmJBQUFBQzhBQUFBMktMbWtQV2hvWldFQUFBV2NBQUFBSGdBQUFDUUdVQUluYUcxMGVBQUFCYndBQUFBZ0FBQUFJQk44QWNGc2IyTmhBQUFGM0FBQUFCSUFBQUFTQldZRUhtMWhlSEFBQUFYd0FBQUFHQUFBQUNBQUN3QlpibUZ0WlFBQUJnZ0FBQUROQUFBQk9QTmZLcU53YjNOMEFBQUcyQUFBQUF3QUFBQWdBQU1BQUhqYVkyQm15bWVjd01ES3dNQTBpK25zUHhHR2ZoRE4rSWJ4RFlNeEl5Y0RFTEF4d0VFakF4SklLUzVMQjBycU1COWdadmdQNURNek1JS0VHUkVxL2dPRkFmTU5EYzRBQUhqYVkyQmdZR0pnWUdBR1loRWd5UWltV1Jnc2dEUVhBd2RRam9sQmh5R05vWno1d1AvL1FERWRobFNHVWhENy85WC9jLy8zLzNFSDY0QUNBR000RGxkNDJuMlV5NC9iVkJqRmZhNWZTZXpZVHVKSGtrbHN4MDdzaE5BNFQzdG1rckZUT3NOVW5VRXRMVEFxQWtaaWdWUVdMT2lvUzhSanhZWU5MQkFyMkxCbnk3b1NheFpJL0FNczJIZllJSFc0VGxvaEZRbnZQbi8yZDMvbm5Ic3ZBK2JoMVQ1enlUeGlUSVpKUkVFY1lSNG5OZ3hCaFNBR1laeWsrRjJXYWkzSGJYYTdYSy9ZVXlVV3dzelJDaUxRbVhhQWRISzJLRTlCeWlJL09XZm9RNWlqcTcvd054NHpBUlBUcVQ2ZFpXTm1ab2lUbUk3Vzg5RWpMR2lWeExPcGFaa0NYVGljbVhtZGpPQUh0QlQrV0JkQkVFZmFRWFc5TEpXbGFUTzllUHM5N3FaUnYvZEdjZ3o0dXkrUFA1dTJWejF2d1NIeXpabFNYdnpaTit3MEpUS3ZyU1hJZ2pMUStoejU2TTdIaDdxNkdBL3JCNGJDTlNEd2lwN1lMcXVMSlpjQmMzSVZrUS9Kcjh5YVljRG1aQXBFTHdoVENweURtUTVTWkt3dkJMRTFTMEh0eUlrVkNoa0djUkpFVUlpS1dXd0tJWDdZMXppdFdidys2ZThEWFNOZ29UcXFxblk3Ykh1a250cWtwcjZ1R29yNWlqOVlVWHlUOWpWYlZhdFZ1MVJvbnVkdGZQUDA4YTNLZXE3ZllBUGZka2xYQ0tVaUFYZGlmSHQ1eG5vaXp1N3ZoRUd2KzI4TGplRGFWNXhYUU80N21QSFZFL0lGOWYyVVlYcVVkR3JwS2xHbzRhWkZOU0IyWUZwNjdyVVFoRlNsRUk1STd2aGM5T2dyUHd6QytTWUJxbS9qZ3BEL1Jtdjh0QkQwUFU3d1RhR28xRnkvVU9Da2tvQmF0YldRai9YR1FiUS8zcEZSN1ZmUWNGWTFWQ1FCbGx6eDAvNHVVTFk4RUhNV3BTcmhmL3l0MFhWRTY4dDNqSkZpdEVHT3doMEJoSlQ0ZFdkT2lCazFCaUIrWTgrOS9ZSHY5WkNsR2lGRlpXd1pJMzdjdCt6ZEIxRWw0OG15eWVyUHRGNFNINzh3KzdUUU43aTVyT0IvQkJtQ1pWcWJUVGRDbUNlY3hDYng2L0t3dmJpM09tZFI3MUFGN3ZKRkJlMFdrYlc5NjhPZTNrQzlyTEx3REg2SWkydHZqdDd0M2VTd09tbStkZmUvd0hYbjFYT3Y0dnM4djVydTNsZ09KTEZ1ZEVDYXozTmlIY3ArUmdzVkNqWmNPYzlpL2h3c0QycTdFeFdFUWdRcUxjbS9lVUdhRFpveG5TRGEyQXdJNXhtYndpSTdiWVZqeStyZXVxZTNDMXF3b1M0TVNPQXBKNGZqMDJwM3JRMW1Sc1NUVW1rZ3NRMzNXV3gxcWVKbkw4WGdxcG9Mc25TYW5WSlg1R1JiTHg5d09INllHdDFjME5JK2NnK2txYnRWMUVyQzd3Nzl1NXpuVFF4Q2FsTHJUaTNvUHpCdkljMDJma3hNNmdjbVBWa1pEZDRmTEFNQ3ZUeHM2Wlc5UjYvdHdObnUyeEhOOG12OG5OOFdFUE96dGNqb3FVdjhnR3JOcFcvT25kV2hydEJ1dUwxUExITVRlckExaks1V3NlMHVxOWNQbTFuMTlvQlg2QTRsUTdPenNQRzUyZ0xMV1kxUFM0VEEwSXBBdTFvMlpJbWVIaGtYVDQ2T3VMWWFqcjgvSTlaTXBsZE9zYmpVWFFNb0dtcXhTaElueXU2MzVSSU5IN1dldTh3K2lTanlQeTNFckpkNDJtTmdaR0JnQU9JWjZXb3o0L2x0dmpJd3N6Q0F3R1BIRFFzUTlIOTlabm1taTBBdUJ3TVRTQlFBSmxFS2ZBQjQybU5nWkdCZ1p2alBBQ1Q5R1BUK1gyQ1dad0NLb0FBT0FGUXpBMzBBQUFMR0FBQUJXd0J6QWlzQVJRSTZBRXNDc3dBd0Fra0FNQU5PQURBQ3JBQXVBQUFBQUFBcUFJQUE1Z0ZjQWJvQ1FnS2NBQUI0Mm1OZ1pHQmc0R0NJWUdCaUFBRkdCalFBQUFudUFHVjQyazJNUFcvQ01CUkZUOVFFcVdGZ1FSMFlXZytkcmFBZ3NYVmhZR0psNmdMWVJSbHNJeWRFUXFvNjluZjNZVHowRFZmbmZ0aEF6UThGOXl1WUpiMWZTU1h1d1JWVDVwa240dDR5MXl4NDU0bWlmSmJrbFkvTXBUU2ZtU3RlK01vOGtmdzdjODJLMzAxd2wrdGdvOW9GWTZNL09kZXQ5emIyWGZCcXFadmt0OWJiZUJpc1VjZWJNbVBYajJlbld0M29sZzBCeDRVckE1YUlZaWVKU2V3NVNlZm9XTE5QU1M4Y0pGY3MwVFQvK3EzMFBtME82U2NqbXlNM1VjTW9pMTcwTEZ0Rm0xNXEyai9Mb1MvM0FBQUFlTnBqWUdiQUN3QUFmUUFFKSBmb3JtYXQoJ3dvZmYnKTt9CkBmb250LWZhY2V7Zm9udC1mYW1pbHk6Y21taTEwO3NyYzp1cmwoZGF0YTphcHBsaWNhdGlvbi94LWZvbnQtd29mZjtiYXNlNjQsZDA5R1JnQUJBQUFBQUFWc0FBb0FBQUFBQmtRQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUJQVXk4eUFBQUE5QUFBQUVRQUFBQmdoVngxQm1OdFlYQUFBQUU0QUFBQU1nQUFBRHdBV3dDZVoyeDVaZ0FBQVd3QUFBS1ZBQUFEQUZ4VWoxTm9aV0ZrQUFBRUJBQUFBQzhBQUFBMktLcWxBMmhvWldFQUFBUTBBQUFBSGdBQUFDUUdOd0hlYUcxMGVBQUFCRlFBQUFBVUFBQUFGQTVOQUtsc2IyTmhBQUFFYUFBQUFBd0FBQUFNQVdJQ01HMWhlSEFBQUFSMEFBQUFHQUFBQUNBQUNRQk1ibUZ0WlFBQUJJd0FBQURTQUFBQlBwa1JkY1Z3YjNOMEFBQUZZQUFBQUF3QUFBQWdBQU1BQUhqYVkyQm11c000Z1lHVmdZRnBGdFBaZnlJTS9TQ2E4UTNqR3daalJrNEdJR0JqZ0FOR0JpU1FVbHlXRHBSMFpIQmxadmdQNURORHBKSFUvQWNLQXdEMWFBMVNlTnBqWUdCZ1ltQmdZQVppRVNESkNLWlpHRFNBTkJ1UVpnVEtPak80L3Y4UDVEdUM2UDhIL3U4SHF3SUNBSkRFQ1BNQUFIamFQWkxQVHhOQkdJYm5uZG1kb2UxMnQ3QmxGNlFzZ2RJdVA5SkMyckpMTWJZcVVMRkVRSm9RWWhwUkV5RWgwVVJGOE9DaEI0d3gwWU14SVRFZXZIalRpeWRqNHNrVGY0QWVOVEdlaURFY1BSaGFaNGs2YzVtOE00Zm5mYjRobEF5Mld2UWIvVUxHU0k0UUg1NmZzMnd6YnVVOWk0OUJ1R20zNE5tVzU0K2hYL0M0Wlh1MkRwa0hjYjRFUDgvZTRUcVBSemxLVnFZVG1yclZhRk1SalpnRkZoTE4xa0kwWVVZWm91ckdxZ1l0TkZCNi9xTi9tNjdFRURLT0dwYkJlZ1VZQTIwekJLRFo2N083OGNFWXFLSHpJQTRiSE1sOUxCTzVHQmx0SFRGT1B4Q0hqSkJKU1dvV2tpNlhiUDBPT25VSUJ6WTN3RVUvUCtZMUF6Z3Y3U2JUWExCL1p5WWY1Rjg5NlhGN0RRT3I5V3VzVVp1dmdaNkxYYmpiZkpiUTlTbm41ZDdhRmtWMmVyZlBWRzgrcm05VE9qNzNzYUlBK2hJdHRsT1dFS0FYcDZvYlJuaWhPSDlXTHlsQkE1aVlaYmNyZ3pNVVJ2ZlJhN2F6a0ZwaXplOGRQRXdJU0w1MXdDTDBVOEFNcGlNcGpaWlJTTHVTT1FDMkhmaFNiMERZQjBjV2tIa1dydWNIMjdJdDI1ZDFXUGcwNCtHUUNvcVZ4ZGtINDVVZWJrRzVmMzVvelN0a3VCSVNLc3RVaG05TjMzdkJXSzFRdmJOYkd4N2ljem8wdXQvOHJVdG1ZYVF2YlFMVGs2dHJYZlhNOWxXS2daRnN2U3NDVU8zRzJWUWViSy94YUt0YVdHYktZRXBmMUNrakFic3JuY2ZvZTFJbEpDWEJrbi9sK21ZWldSekw5eXdEOFhTWlRuaHBJVjBieU10cno3SUZUMDhVZk0vOXI5M09sZVhmOG5KOW9KOHZLMXJzNkdldklZV3JENlhjVk5HSVViVkRZL0VFb05BejlhZFMvNmtyTXhOUlp1T2swc1ZDMG54cGZUYVl3NXNkejhpTm9KUGk4S3VtTW9kTC9RNTEya1ZVS0hJNkNKbHZFMHJZVEp3b1RRQ3g3bC9JRkUxRURxVkNSWXdLc3dmTkF6a1laSFZ2TTZMd1A0Rm9mVFlBQUFCNDJtTmdaR0JnQUdJakZVdmxlSDZicnd6TUxBd2c4Tmh4d3dJRS9mOGxzd0RUWFNDWGc0RUpKQW9BQWs4S0p3QjQybU5nWkdCZ1p2alBBQ1E1R0ZUK1gyQVdZQUNLb0FCV0FFdFhBeHNBQUFKMkFBQURBQUFrQXdnQUt3TGJBRE1DOUFBbkFBQUFBQUJVQUxBQkRnR0FlTnBqWUdSZ1lHQmw4R1pnWmdBQlJnWTBBQUFJYndCV2VOcE5qckZxd3pBUWhqOVR4MUNuMEtrZE9oUk5HWVdOK3dDQkRKbXlaaXdra1FnT1NBcXlZOGdTK2dCOTZGNFVEVDNCOGQxM3Y0U0FtaHNGOXlwNFRmMWVKWlZNRDU0eDV5MXpKVWRscnZsZ3dSTkYrU3ptazJYbWtoZStNODk0NTVTNUV2K1R1ZWFMMzFWdzU4dG9vOW9FWTZNL09OZTN6ZGJHb1E5ZXRicDVpTFgxTnU1R2E5VCtxc3pVRDlQUnFVNDN1bU5Gd0hIbXdvZ2x5czgyWWt4aXowRjJqcDZXaG0xeWcweEJOa3FjRnZzL3NaYUVUNmxkZXMxSWFzOVZ1bUdTekNEOUtHbEZsKzVxdWovZjlEQzdBQUI0Mm1OZ1pzQUxBQUI5QUFRPSkgZm9ybWF0KCd3b2ZmJyk7fQp0ZXh0LmYwIHtmb250LWZhbWlseTpjbXN5MTA7Zm9udC1zaXplOjkuOTYyNjRweH0KdGV4dC5mMSB7Zm9udC1mYW1pbHk6Y21taTEwO2ZvbnQtc2l6ZTo5Ljk2MjY0cHh9CnRleHQuZjIge2ZvbnQtZmFtaWx5OmNtbWk3O2ZvbnQtc2l6ZTo2Ljk3Mzg0OHB4fQp0ZXh0LmYzIHtmb250LWZhbWlseTpjbXI3O2ZvbnQtc2l6ZTo2Ljk3Mzg0OHB4fQp0ZXh0LmY0IHtmb250LWZhbWlseTpjbXI1O2ZvbnQtc2l6ZTo0Ljk4MTMycHh9Cl1dPgo8L3N0eWxlPgo8ZyBpZD0ncGFnZTEnPgo8ZyBzdHJva2UtbWl0ZXJsaW1pdD0nMTAnIHRyYW5zZm9ybT0ndHJhbnNsYXRlKC0zLjEwMTcxMSwtNTYuODQ0Mzkpc2NhbGUoMC45OTYyNjQsLTAuOTk2MjY0KSc+CjxnIGZpbGw9JyMwMDAnIHN0cm9rZT0nIzAwMCc+CjxnIHN0cm9rZS13aWR0aD0nMC40Jz4KPGcgc3Ryb2tlLXdpZHRoPScwLjUnPgo8ZyB0cmFuc2Zvcm09J3RyYW5zbGF0ZSgtMTMuNjExMDgsLTIuNSknPgo8ZyBzdHJva2U9J25vbmUnIHRyYW5zZm9ybT0nc2NhbGUoLTEuMDAzNzUsMS4wMDM3NSl0cmFuc2xhdGUoLTMuMTAxNzExLC01Ni44NDQzOSlzY2FsZSgtMSwtMSknPgo8ZyBmaWxsPScjMDAwJz4KPGcgc3Ryb2tlPSdub25lJz4KPHRleHQgY2xhc3M9J2YxJyB4PSctMy4xMDE3MTEnIHk9Jy01Ni44NDQzOSc+QTwvdGV4dD4KPHRleHQgY2xhc3M9J2YwJyB4PSc2LjU4NDE1NCcgeT0nLTU2Ljg0NDM5Jz7DlzwvdGV4dD4KPHRleHQgY2xhc3M9J2YxJyB4PScxNi41NDY3NjgnIHk9Jy01Ni44NDQzOSc+QTwvdGV4dD4KPC9nPgo8L2c+CjwvZz4KPC9nPgo8ZyB0cmFuc2Zvcm09J3RyYW5zbGF0ZSg1Mi44NjIxLC0yLjUpJz4KPGcgc3Ryb2tlPSdub25lJyB0cmFuc2Zvcm09J3NjYWxlKC0xLjAwMzc1LDEuMDAzNzUpdHJhbnNsYXRlKC0zLjEwMTcxMSwtNTYuODQ0Mzkpc2NhbGUoLTEsLTEpJz4KPGcgZmlsbD0nIzAwMCc+CjxnIHN0cm9rZT0nbm9uZSc+Cjx0ZXh0IGNsYXNzPSdmMScgeD0nLTMuMTAxNzExJyB5PSctNTYuODQ0MzknPkI8L3RleHQ+CjwvZz4KPC9nPgo8L2c+CjwvZz4KPGcgdHJhbnNmb3JtPSd0cmFuc2xhdGUoLTYwLjg4NDY2LC0yLjUpJz4KPGcgc3Ryb2tlPSdub25lJyB0cmFuc2Zvcm09J3NjYWxlKC0xLjAwMzc1LDEuMDAzNzUpdHJhbnNsYXRlKC0zLjEwMTcxMSwtNTYuODQ0Mzkpc2NhbGUoLTEsLTEpJz4KPGcgZmlsbD0nIzAwMCc+CjxnIHN0cm9rZT0nbm9uZSc+Cjx0ZXh0IGNsYXNzPSdmMScgeD0nLTMuMTAxNzExJyB5PSctNTYuODQ0MzknPkU8L3RleHQ+CjwvZz4KPC9nPgo8L2c+CjwvZz4KPGcgdHJhbnNmb3JtPSd0cmFuc2xhdGUoLTYwLjgzNjc1LC01OS40MDU1KSc+CjxnIHN0cm9rZT0nbm9uZScgdHJhbnNmb3JtPSdzY2FsZSgtMS4wMDM3NSwxLjAwMzc1KXRyYW5zbGF0ZSgtMy4xMDE3MTEsLTU2Ljg0NDM5KXNjYWxlKC0xLC0xKSc+CjxnIGZpbGw9JyMwMDAnPgo8ZyBzdHJva2U9J25vbmUnPgo8dGV4dCBjbGFzcz0nZjEnIHg9Jy0zLjEwMTcxMScgeT0nLTU2Ljg0NDM5Jz5DPC90ZXh0Pgo8L2c+CjwvZz4KPC9nPgo8L2c+CjxwYXRoIGQ9J00xOC4xNjY2MyAzLjYxNjYySDQ3LjgwNjU2JyBmaWxsPSdub25lJy8+CjxnIHRyYW5zZm9ybT0ndHJhbnNsYXRlKDQ4LjA1NjU2LDMuNjE2NjIpJz4KPGcgc3Ryb2tlLWRhc2hhcnJheT0nbm9uZScgc3Ryb2tlLWRhc2hvZmZzZXQ9JzAuMCc+CiA8ZyBzdHJva2UtbGluZWNhcD0ncm91bmQnPgogPGcgc3Ryb2tlLWxpbmVqb2luPSdyb3VuZCc+CiA8cGF0aCBkPSdNLTIuMiAyLjU4MDYzQy0xLjc5ODA3IDEuMDMyMjMtLjkwMjQgLjMwMTA3IDAgMEMtLjkwMjQtLjMwMTA3LTEuNzk4MDctMS4wMzIyMy0yLjItMi41ODA2MycgZmlsbD0nbm9uZScvPgogPC9nPgogPC9nPgogPC9nPgo8L2c+CjxnIHRyYW5zZm9ybT0ndHJhbnNsYXRlKDI2LjYwNDk4LDcuNzg5NTQpJz4KPGcgc3Ryb2tlPSdub25lJyB0cmFuc2Zvcm09J3NjYWxlKC0xLjAwMzc1LDEuMDAzNzUpdHJhbnNsYXRlKC0zLjEwMTcxMSwtNTYuODQ0Mzkpc2NhbGUoLTEsLTEpJz4KPGcgZmlsbD0nIzAwMCc+CjxnIHN0cm9rZT0nbm9uZSc+Cjx0ZXh0IGNsYXNzPSdmMicgeD0nLTMuMTAxNzExJyB5PSctNTYuODQ0MzknPmY8dHNwYW4geD0nMS41NjQ4NzMnPs+APC90c3Bhbj48L3RleHQ+Cjx0ZXh0IGNsYXNzPSdmNCcgeD0nNi4yMjM3MTgnIHk9Jy01NS44NDgxMjYnPjE8L3RleHQ+CjwvZz4KPC9nPgo8L2c+CjwvZz4KPHBhdGggZD0nTTE4LjE2NjYzLTMuNjE2NjJINDcuODA2NTYnIGZpbGw9J25vbmUnLz4KPGcgdHJhbnNmb3JtPSd0cmFuc2xhdGUoNDguMDU2NTYsLTMuNjE2NjIpJz4KPGcgc3Ryb2tlLWRhc2hhcnJheT0nbm9uZScgc3Ryb2tlLWRhc2hvZmZzZXQ9JzAuMCc+CiA8ZyBzdHJva2UtbGluZWNhcD0ncm91bmQnPgogPGcgc3Ryb2tlLWxpbmVqb2luPSdyb3VuZCc+CiA8cGF0aCBkPSdNLTIuMiAyLjU4MDYzQy0xLjc5ODA3IDEuMDMyMjMtLjkwMjQgLjMwMTA3IDAgMEMtLjkwMjQtLjMwMTA3LTEuNzk4MDctMS4wMzIyMy0yLjItMi41ODA2MycgZmlsbD0nbm9uZScvPgogPC9nPgogPC9nPgogPC9nPgo8L2c+CjxnIHRyYW5zZm9ybT0ndHJhbnNsYXRlKDI2LjYwNDk4LC0xMS4yODk1NCknPgo8ZyBzdHJva2U9J25vbmUnIHRyYW5zZm9ybT0nc2NhbGUoLTEuMDAzNzUsMS4wMDM3NSl0cmFuc2xhdGUoLTMuMTAxNzExLC01Ni44NDQzOSlzY2FsZSgtMSwtMSknPgo8ZyBmaWxsPScjMDAwJz4KPGcgc3Ryb2tlPSdub25lJz4KPHRleHQgY2xhc3M9J2YyJyB4PSctMy4xMDE3MTEnIHk9Jy01Ni44NDQzOSc+Zjx0c3BhbiB4PScxLjU2NDg3Myc+z4A8L3RzcGFuPjwvdGV4dD4KPHRleHQgY2xhc3M9J2Y0JyB4PSc2LjIyMzcxOCcgeT0nLTU1Ljg0ODEyNic+MjwvdGV4dD4KPC9nPgo8L2c+CjwvZz4KPC9nPgo8cGF0aCBkPSdNLTQ2LjE3MDggMEgtMTguNjY2NjMnIGZpbGw9J25vbmUnLz4KPGcgdHJhbnNmb3JtPSdtYXRyaXgoLTEuMCwwLjAsMC4wLC0xLjAsLTQ1LjkyMDgsMC4wKSc+CjxnIHN0cm9rZS1kYXNoYXJyYXk9J25vbmUnIHN0cm9rZS1kYXNob2Zmc2V0PScwLjAnPgogPGcgc3Ryb2tlLWxpbmVjYXA9J3JvdW5kJz4KIDxnIHN0cm9rZS1saW5lam9pbj0ncm91bmQnPgogPHBhdGggZD0nTTIuMiAyLjU4MDYzQzEuNzk4MDcgMS4wMzIyMyAuOTAyNCAuMzAxMDcgMCAwQy45MDI0LS4zMDEwNyAxLjc5ODA3LTEuMDMyMjMgMi4yLTIuNTgwNjMnIGZpbGw9J25vbmUnLz4KIDwvZz4KIDwvZz4KIDwvZz4KPC9nPgo8ZyB0cmFuc2Zvcm09J3RyYW5zbGF0ZSgtMTguNDE2NjMsMC4wKSc+CjxnIHN0cm9rZS1kYXNoYXJyYXk9J25vbmUnIHN0cm9rZS1kYXNob2Zmc2V0PScwLjAnPgogPGcgc3Ryb2tlLWxpbmVjYXA9J3JvdW5kJz4KIDxnIHN0cm9rZS1saW5lam9pbj0ncm91bmQnPgogPHBhdGggZD0nTS0yLjIgMi41ODA2M0MtMS43OTgwNyAxLjAzMjIzLS45MDI0IC4zMDEwNyAwIDBDLS45MDI0LS4zMDEwNy0xLjc5ODA3LTEuMDMyMjMtMi4yLTIuNTgwNjMnIGZpbGw9J25vbmUnLz4KIDwvZz4KIDwvZz4KIDwvZz4KPC9nPgo8ZyB0cmFuc2Zvcm09J3RyYW5zbGF0ZSgtMzUuMTY1NzcsMi44MTE4MSknPgo8ZyBzdHJva2U9J25vbmUnIHRyYW5zZm9ybT0nc2NhbGUoLTEuMDAzNzUsMS4wMDM3NSl0cmFuc2xhdGUoLTMuMTAxNzExLC01Ni44NDQzOSlzY2FsZSgtMSwtMSknPgo8ZyBmaWxsPScjMDAwJz4KPGcgc3Ryb2tlPSdub25lJz4KPHRleHQgY2xhc3M9J2YyJyB4PSctMy4xMDE3MTEnIHk9Jy01Ni44NDQzOSc+ZTwvdGV4dD4KPC9nPgo8L2c+CjwvZz4KPC9nPgo8cGF0aCBkPSdNLTQ3LjExMDAyLTQ3LjEwN0wtNy41OTI0LTcuNTk2NTYnIGZpbGw9J25vbmUnLz4KPGcgdHJhbnNmb3JtPSdtYXRyaXgoLTAuNzA3MTUsLTAuNzA3MDMsMC43MDcwMywtMC43MDcxNSwtNDYuOTMzMjMsLTQ2LjkzMDI0KSc+CjxnIHN0cm9rZS1kYXNoYXJyYXk9J25vbmUnIHN0cm9rZS1kYXNob2Zmc2V0PScwLjAnPgogPGcgc3Ryb2tlLWxpbmVjYXA9J3JvdW5kJz4KIDxnIHN0cm9rZS1saW5lam9pbj0ncm91bmQnPgogPHBhdGggZD0nTTIuMiAyLjU4MDYzQzEuNzk4MDcgMS4wMzIyMyAuOTAyNCAuMzAxMDcgMCAwQy45MDI0LS4zMDEwNyAxLjc5ODA3LTEuMDMyMjMgMi4yLTIuNTgwNjMnIGZpbGw9J25vbmUnLz4KIDwvZz4KIDwvZz4KIDwvZz4KPC9nPgo8ZyB0cmFuc2Zvcm09J21hdHJpeCgwLjcwNzE1LDAuNzA3MDMsLTAuNzA3MDMsMC43MDcxNSwtNy40MTU2MiwtNy40MTk4KSc+CjxnIHN0cm9rZS1kYXNoYXJyYXk9J25vbmUnIHN0cm9rZS1kYXNob2Zmc2V0PScwLjAnPgogPGcgc3Ryb2tlLWxpbmVjYXA9J3JvdW5kJz4KIDxnIHN0cm9rZS1saW5lam9pbj0ncm91bmQnPgogPHBhdGggZD0nTS0yLjIgMi41ODA2M0MtMS43OTgwNyAxLjAzMjIzLS45MDI0IC4zMDEwNyAwIDBDLS45MDI0LS4zMDEwNy0xLjc5ODA3LTEuMDMyMjMtMi4yLTIuNTgwNjMnIGZpbGw9J25vbmUnLz4KIDwvZz4KIDwvZz4KIDwvZz4KPC9nPgo8ZyB0cmFuc2Zvcm09J3RyYW5zbGF0ZSgtMjQuNjg4NCwtMzYuMDE0NTcpJz4KPGcgc3Ryb2tlPSdub25lJyB0cmFuc2Zvcm09J3NjYWxlKC0xLjAwMzc1LDEuMDAzNzUpdHJhbnNsYXRlKC0zLjEwMTcxMSwtNTYuODQ0Mzkpc2NhbGUoLTEsLTEpJz4KPGcgZmlsbD0nIzAwMCc+CjxnIHN0cm9rZT0nbm9uZSc+Cjx0ZXh0IGNsYXNzPSdmMycgeD0nLTMuMTAxNzExJyB5PSctNTYuODQ0MzknPig8L3RleHQ+Cjx0ZXh0IGNsYXNzPSdmMicgeD0nLjAxMTYzMicgeT0nLTU2Ljg0NDM5Jz51LDx0c3BhbiB4PSc4LjQ0ODgwNCc+djwvdHNwYW4+PC90ZXh0Pgo8dGV4dCBjbGFzcz0nZjMnIHg9JzEyLjY4NDExMycgeT0nLTU2Ljg0NDM5Jz4pPC90ZXh0Pgo8L2c+CjwvZz4KPC9nPgo8L2c+CjxnIHN0cm9rZS1kYXNoYXJyYXk9JzMuMCwyLjAnIHN0cm9rZS1kYXNob2Zmc2V0PScwLjAnPgo8cGF0aCBkPSdNLTU2LjkwNTUtNDguNjYyNDZWLTYuOTA5NzMnIGZpbGw9J25vbmUnLz4KPGcgdHJhbnNmb3JtPSdtYXRyaXgoMC4wLDEuMCwtMS4wLDAuMCwtNTYuOTA1NSwtNi42NTk3MyknPgo8ZyBzdHJva2UtZGFzaGFycmF5PSdub25lJyBzdHJva2UtZGFzaG9mZnNldD0nMC4wJz4KIDxnIHN0cm9rZS1saW5lY2FwPSdyb3VuZCc+CiA8ZyBzdHJva2UtbGluZWpvaW49J3JvdW5kJz4KIDxwYXRoIGQ9J00tMi4yIDIuNTgwNjNDLTEuNzk4MDcgMS4wMzIyMy0uOTAyNCAuMzAxMDcgMCAwQy0uOTAyNC0uMzAxMDctMS43OTgwNy0xLjAzMjIzLTIuMi0yLjU4MDYzJyBmaWxsPSdub25lJy8+CiA8L2c+CiA8L2c+CiA8L2c+CjwvZz4KPGcgdHJhbnNmb3JtPSd0cmFuc2xhdGUoLTY2LjE0Mjc4LC0yOS4yODYxKSc+CjxnIHN0cm9rZT0nbm9uZScgdHJhbnNmb3JtPSdzY2FsZSgtMS4wMDM3NSwxLjAwMzc1KXRyYW5zbGF0ZSgtMy4xMDE3MTEsLTU2Ljg0NDM5KXNjYWxlKC0xLC0xKSc+CjxnIGZpbGw9JyMwMDAnPgo8ZyBzdHJva2U9J25vbmUnPgo8dGV4dCBjbGFzcz0nZjInIHg9Jy0zLjEwMTcxMScgeT0nLTU2Ljg0NDM5Jz53PC90ZXh0Pgo8L2c+CjwvZz4KPC9nPgo8L2c+CjwvZz4KPC9nPgo8L2c+CjwvZz4KPC9nPgo8L2c+Cjwvc3ZnPg==" /></fr:resource-content><fr:resource-source
+type="latex"
+part="preamble"><![CDATA[
+        
+  \RequirePackage {tikz}
+  \RequirePackage {amsmath}
+  \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
+
+  \definecolor {catccolor}{RGB}{255,244,138}
+  \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
+  \tikzstyle {catc}=[catccolor!60]
+  \tikzstyle {catd}=[orange!40]
+  \tikzstyle {cate}=[red!40]
+  \tikzstyle {catf}=[blue!10]
+  \tikzstyle {catg}=[green!25]
+
+
+  \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
+  \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
+
+  \NewDocumentCommand \CreateRect {D<>{} m m}{
+    \path 
+      coordinate (#1nw)
+      ++(#2,-#3) coordinate (#1se)
+      coordinate (#1sw) at (#1se -| #1nw)
+      coordinate (#1ne) at (#1nw -| #1se)
+    ;
+
+    \path [spath/save = #1north] (#1nw) to (#1ne);
+    \path [spath/save = #1west] (#1nw) to (#1sw);
+    \path [spath/save = #1east] (#1ne) to (#1se);
+    \path [spath/save = #1south] (#1sw) to (#1se);
+  }
+
+        
+   % appears to be necessary
+  \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd}
+  \usetikzlibrary{matrix,arrows}
+  \usetikzlibrary{backgrounds,fit,positioning,calc,shapes}
+  \usetikzlibrary{decorations.pathreplacing}
+  \usetikzlibrary{decorations.pathmorphing}
+  \usetikzlibrary{decorations.markings}
+
+  % basic settings
+  \tikzset{
+    diagram/.style = {
+      on grid,
+      node distance=2cm,
+      commutative diagrams/every diagram,
+      line width = .5pt,
+      every node/.append style = {
+        commutative diagrams/every cell,
+      },
+    },
+    morphism/.style = {
+      auto=left,
+      node font=\scriptsize,
+    },
+    phantom/.style = {
+      commutative diagrams/phantom,
+      node font=\scriptsize,
+      sloped,
+    },
+    between/.style args = {#1 and #2}{
+      at = ($(#1)!0.5!(#2)$)
+    },
+    desc/.style = {anchor=center,fill=white,inner sep=3pt},
+    offset/.style args = {#1} {commutative diagrams/shift right={#1}},
+    cross over/.style = {
+      commutative diagrams/crossing over
+    },
+    adjoint/.style = {
+      phantom,
+      every to/.append style = {
+        edge node = {node [sloped,allow upside down,auto=false] {$\dashv$}}
+      }
+    },
+  }
+
+  % pullback and pushout
+  \tikzset{
+    pullback/.style = {
+      append after command = {
+        \pgfextra{
+          \draw ($(\tikzlastnode) + (.2cm,-.5cm)$) -- ++(0.3cm,0) -- ++(0,0.3cm);
+        }
+      }
+    },
+    pushout/.style = {
+      append after command={
+        \pgfextra{
+          \draw ($(\tikzlastnode) + (-.2cm,.5cm)$) -- ++(-0.3cm,0) -- ++(0,-0.3cm);
+        }
+      }
+    },
+  }
+
+  % arrow styles
+  \tikzset{
+    exists/.style = {
+      densely dashed
+    },
+    embedding/.style = {
+      {right hook}->
+    },
+    into/.style = {
+      {right hook}->
+    },
+    cover/.style = {
+      -{Triangle[open]}
+    },
+    twocell/.style = {
+      double, -{implies}
+    }
+  }
+
+  \newlength{\dontworryaboutit} % no idea what it does
+
+  \tikzset{
+    inline diagram/.style = {
+      commutative diagrams/every diagram,
+      commutative diagrams/cramped,
+      line width = .5pt,
+      every node/.append style = {
+        commutative diagrams/every cell,
+        anchor = base,
+        inner sep = 0pt
+      },
+      every path/.append style = {
+        outer xsep = 2pt
+      }
+    }
+  }
+  
+  % macros for drawing commutative squares
+  % adapted from Jon Sterling's macros (https://git.sr.ht/~jonsterling/article-template/tree/main/item/local-tikz.sty)
+  \tikzset{
+    square/nw/.style = {},
+    square/ne/.style = {},
+    square/se/.style = {},
+    square/sw/.style = {},
+    square/north/.style = {->},
+    square/south/.style = {->},
+    square/west/.style = {->},
+    square/east/.style = {->},
+    square/north/node/.style = {above},
+    square/south/node/.style = {below},
+    square/west/node/.style = {left},
+    square/east/node/.style = {right},
+  }
+
+  \ExplSyntaxOn
+  \keys_define:nn { jon-tikz/diagram } {
+    nw .tl_set:N = \l_jon_tikz_diagram_nw,
+    sw .tl_set:N = \l_jon_tikz_diagram_sw,
+    ne .tl_set:N = \l_jon_tikz_diagram_ne,
+    se .tl_set:N = \l_jon_tikz_diagram_se,
+
+    width .tl_set:N = \l_jon_tikz_diagram_width,
+    height .tl_set:N = \l_jon_tikz_diagram_height,
+
+    north .tl_set:N = \l_jon_tikz_diagram_north,
+    south .tl_set:N = \l_jon_tikz_diagram_south,
+    west .tl_set:N = \l_jon_tikz_diagram_west,
+    east .tl_set:N = \l_jon_tikz_diagram_east,
+
+    nw/style .code:n = {\tikzset{square/nw/.style = {#1}}},
+    sw/style .code:n = {\tikzset{square/sw/.style = {#1}}},
+    ne/style .code:n = {\tikzset{square/ne/.style = {#1}}},
+    se/style .code:n = {\tikzset{square/se/.style = {#1}}},
+
+    north/style .code:n = {\tikzset{square/north/.style = {#1}}},
+    north/node/style .code:n = {\tikzset{square/north/node/.style = {#1}}},
+    south/style .code:n = {\tikzset{square/south/.style = {#1}}},
+    south/node/style .code:n = {\tikzset{square/south/node/.style = {#1}}},
+    west/style .code:n = {\tikzset{square/west/.style = {#1}}},
+    west/node/style .code:n = {\tikzset{square/west/node/.style = {#1}}},
+    east/style .code:n = {\tikzset{square/east/.style = {#1}}},
+    east/node/style .code:n = {\tikzset{square/east/node/.style = {#1}}},
+
+    draft .meta:n = {
+      nw = {nw},
+      sw = {sw},
+      se = {se},
+      ne = {ne},
+      north = {north},
+      south = {south},
+      west = {west},
+      east = {east},
+    }
+  }
+
+  \tl_set:Nn \l_jon_tikz_diagram_width { 2cm }
+  \tl_set:Nn \l_jon_tikz_diagram_height { 2cm }
+
+
+  \cs_new:Nn \__jon_tikz_render_square:nn {
+    \group_begin:
+    \keys_set:nn {jon-tikz/diagram} {#2} {
+      \node (#1nw) [square/nw] {$\l_jon_tikz_diagram_nw$};
+      \node (#1sw) [below = \l_jon_tikz_diagram_height~of~#1nw,square/sw] {$\l_jon_tikz_diagram_sw$};
+      \draw[morphism,square/west] (#1nw) to node [square/west/node] {$\l_jon_tikz_diagram_west$} (#1sw);
+
+      \node (#1ne) [right = \l_jon_tikz_diagram_width~of~#1nw,square/ne] {$\l_jon_tikz_diagram_ne$};
+      \node (#1se) [below = \l_jon_tikz_diagram_height~of~#1ne,square/se] {$\l_jon_tikz_diagram_se$};
+      \draw[morphism,square/north] (#1nw) to node [square/north/node] {$\l_jon_tikz_diagram_north$} (#1ne);
+      \draw[morphism,square/east] (#1ne) to node [square/east/node] {$\l_jon_tikz_diagram_east$} (#1se);
+      \draw[morphism,square/south] (#1sw) to node [square/south/node] {$\l_jon_tikz_diagram_south$} (#1se);
+    }
+    \group_end:
+  }
+
+  % the optional argument allows one to specify a prefix to positions
+  \NewDocumentCommand\SpliceDiagramSquare{O{}m}{
+    \__jon_tikz_render_square:nn {#1} {#2}
+  }
+
+  \NewDocumentCommand\DiagramSquare{O{}O{}m}{
+    \begin{tikzpicture}[diagram,#2,baseline=(#1sw.base)]
+      \__jon_tikz_render_square:nn {#1} {#3}
+    \end{tikzpicture}
+  }
+  \ExplSyntaxOff
+
+      ]]></fr:resource-source><fr:resource-source
+type="latex"
+part="body"><![CDATA[
+    \begin {tikzpicture}[diagram]
+      \node  (1) {$A \times  A$};
+      \node  (2) [right = of 1] {$B$};
+      \node  (3) [left = of 1] {$E$};
+      \node  (4) [below = of 3] {$C$};
+      \draw  [->,morphism,offset=-1.5] (1) to node {$f\pi _{1}$} (2);
+      \draw  [->,morphism,offset=1.5] (1) to node[swap] {$f\pi _{2}$} (2);
+      \draw  [>->,morphism] (3) to node {$e$} (1);
+      \draw  [>->,morphism] (4) to node[swap] {$(u,v)$} (1);
+      \draw  [->,morphism,exists] (4) to node {$w$} (3);
+    \end {tikzpicture}
+  ]]></fr:resource-source></fr:resource></fr:figure>
+    
+  
+  <fr:p>Thus, <fr:tex
+display="inline"><![CDATA[u = \pi _{1}(u,v) = \pi _{1}ew]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[v = \pi _{2}(u,v) = \pi _{2}ew]]></fr:tex>.
+    By assumption, <fr:tex
+display="inline"><![CDATA[\pi _{1}e = \pi _{2}e]]></fr:tex> so <fr:tex
+display="inline"><![CDATA[u = v]]></fr:tex>.</fr:p>
 </fr:mainmatter><fr:backmatter><fr:tree
 toc="false"
 numbered="false"
@@ -48,30 +543,26 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1422</fr:anchor><fr:addr
-type="user">log-000S</fr:addr><fr:route>log-000S.xml</fr:route><fr:title
-text="Identity morphisms in the internal language of a category">Identity morphisms in the <fr:link
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>945</fr:anchor><fr:addr
+type="user">log-000V</fr:addr><fr:route>log-000V.xml</fr:route><fr:title
+text="Monomorphisms in the internal language of a category">Monomorphisms in the <fr:link
 type="local"
 href="log-000P.xml"
 addr="log-000P"
-title="Internal language of a category">internal language</fr:link> of a category</fr:title><fr:taxon>Lemma</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>8</fr:month><fr:day>2</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+title="Internal language of a category">internal language</fr:link> of a category</fr:title><fr:taxon>Lemma</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>8</fr:month><fr:day>8</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
 display="inline"><![CDATA[\mathcal {C}]]></fr:tex> be a <fr:link
 type="local"
 href="ct-000O.xml"
 addr="ct-000O"
 title="Regular category">regular category</fr:link>.
   <fr:tex
-display="inline"><![CDATA[f\colon A\to A]]></fr:tex> is the identity morphism iff <fr:tex
-display="inline"><![CDATA[x\colon A|\top  \vdash  f(x) = x]]></fr:tex> is <fr:link
-type="local"
-href="log-000T.xml"
-addr="log-000T"
-title="Satisfaction">satisfied</fr:link> in the <fr:link
+display="inline"><![CDATA[f\colon A\to B]]></fr:tex> is a monomorphism iff <fr:tex
+display="inline"><![CDATA[\mathcal {C}]]></fr:tex> satisfies <fr:tex
+display="inline"><![CDATA[x,x'\colon A|f(x) = f(x') \vdash  x = x']]></fr:tex> in its <fr:link
 type="local"
 href="log-000P.xml"
 addr="log-000P"
-title="Internal language of a category">internal language</fr:link> of <fr:tex
-display="inline"><![CDATA[\mathcal {C}]]></fr:tex>.</fr:p>
+title="Internal language of a category">internal language</fr:link>.</fr:p>
     
       
       <fr:tree
@@ -81,32 +572,527 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>1292</fr:anchor><fr:addr
-type="machine">#294</fr:addr><fr:route>unstable-294.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>8</fr:month><fr:day>2</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>946</fr:anchor><fr:addr
+type="machine">#294</fr:addr><fr:route>unstable-294.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>8</fr:month><fr:day>8</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
   <fr:p>Suppose that <fr:tex
-display="inline"><![CDATA[f]]></fr:tex> is the identity morphism.
-    Then by <fr:ref
-addr="log-0007"
-href="log-0007.xml"
-taxon="Definition" />, <fr:tex
-display="inline"><![CDATA[{\mathopen {}\llbracket f(x)\rrbracket \mathclose {}}_{\mathcal {C}}]]></fr:tex> is <fr:tex
-display="inline"><![CDATA[\mathsf {id}_{A} \circ  {\mathopen {}\llbracket x\rrbracket \mathclose {}}_{\mathcal {C}} = {\mathopen {}\llbracket x\rrbracket \mathclose {}}_{\mathcal {C}}]]></fr:tex>.
-    But the equalizer with itself is the terminal object.
-    Thus, <fr:tex
-display="inline"><![CDATA[\top  \leq  {\mathopen {}\llbracket f(x) = x\rrbracket \mathclose {}}_{\mathcal {C}}]]></fr:tex> in <fr:tex
-display="inline"><![CDATA[\mathsf {Sub}(A)]]></fr:tex> as required.</fr:p>
-  <fr:p>Conversely, suppose that the terminal object of <fr:tex
-display="inline"><![CDATA[\mathsf {Sub}(A)]]></fr:tex> (i.e., the identity morphism <fr:tex
-display="inline"><![CDATA[\mathsf {id}_{A}]]></fr:tex>) factors through <fr:tex
-display="inline"><![CDATA[{\mathopen {}\llbracket f(x) = x\rrbracket \mathclose {}}_{\mathcal {C}}]]></fr:tex>.
+display="inline"><![CDATA[f]]></fr:tex> is monic.
+    Let <fr:tex
+display="inline"><![CDATA[e\colon E\rightarrowtail A \times  A]]></fr:tex> be the equalizer of <fr:tex
+display="inline"><![CDATA[{\mathopen {}\llbracket f(x)\rrbracket \mathclose {}}_{\mathcal {C}} = f\pi _{1}]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[{\mathopen {}\llbracket f(x')\rrbracket \mathclose {}}_{\mathcal {C}} = f\pi _{2}]]></fr:tex>.
     Then it follows that <fr:tex
-display="inline"><![CDATA[\mathsf {id}_{A}]]></fr:tex> equalizes <fr:tex
-display="inline"><![CDATA[{\mathopen {}\llbracket f(x)\rrbracket \mathclose {}}_{\mathcal {C}}]]></fr:tex> and <fr:tex
-display="inline"><![CDATA[{\mathopen {}\llbracket x\rrbracket \mathclose {}}_{\mathcal {C}}]]></fr:tex>.
+display="inline"><![CDATA[f\pi _{1}e = f\pi _{2}e]]></fr:tex>.
     Since <fr:tex
-display="inline"><![CDATA[{\mathopen {}\llbracket x\rrbracket \mathclose {}}_{\mathcal {C}} = \mathsf {id}_{A}]]></fr:tex> and <fr:tex
-display="inline"><![CDATA[{\mathopen {}\llbracket f(x)\rrbracket \mathclose {}}_{\mathcal {C}} = {\mathopen {}\llbracket f\rrbracket \mathclose {}}_{\mathcal {C}} = f]]></fr:tex>, it follows that <fr:tex
-display="inline"><![CDATA[f = \mathsf {id}_{A}]]></fr:tex>.</fr:p>
+display="inline"><![CDATA[f]]></fr:tex> is monic, <fr:tex
+display="inline"><![CDATA[\pi _{1}e = \pi _{2}e]]></fr:tex>.
+    Then it follows that <fr:tex
+display="inline"><![CDATA[e]]></fr:tex> factors through <fr:tex
+display="inline"><![CDATA[{\mathopen {}\llbracket x = x'\rrbracket \mathclose {}}_{\mathcal {C}}]]></fr:tex>.</fr:p>
+  
+    
+      
+      <fr:figure><fr:resource
+hash="2401cd6b79c0d16c06449d0fe4dd9e3c"><fr:resource-content><fr:img
+src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4KPCEtLSBUaGlzIGZpbGUgd2FzIGdlbmVyYXRlZCBieSBkdmlzdmdtIDMuMC4zIC0tPgo8c3ZnIHZlcnNpb249JzEuMScgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJyB4bWxuczp4bGluaz0naHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluaycgd2lkdGg9JzE5NC40OTc1MDlwdCcgaGVpZ2h0PScxMTMuNjc3NzYzcHQnIHZpZXdCb3g9Jy03MiAtNzIgMTI5LjY2NTAwNiA3NS43ODUxNzYnPgo8c3R5bGUgdHlwZT0ndGV4dC9jc3MnPgo8IVtDREFUQVtAZm9udC1mYWNle2ZvbnQtZmFtaWx5OmNtcjc7c3JjOnVybChkYXRhOmFwcGxpY2F0aW9uL3gtZm9udC13b2ZmO2Jhc2U2NCxkMDlHUmdBQkFBQUFBQU1JQUFvQUFBQUFBMndBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQlBVeTh5QUFBQTlBQUFBRVVBQUFCZ3AyQ1hOV050WVhBQUFBRThBQUFBS2dBQUFEUUFEQ0paWjJ4NVpnQUFBV2dBQUFCTUFBQUFURU4yaUt0b1pXRmtBQUFCdEFBQUFDOEFBQUEyS1IyazJXaG9aV0VBQUFIa0FBQUFIZ0FBQUNRR3dRTUNhRzEwZUFBQUFnUUFBQUFJQUFBQUNBYVVBRHhzYjJOaEFBQUNEQUFBQUFZQUFBQUdBQ1lBQUcxaGVIQUFBQUlVQUFBQUZnQUFBQ0FBQlFBVWJtRnRaUUFBQWl3QUFBREtBQUFCTXUwS2tlcHdiM04wQUFBQytBQUFBQkFBQUFBZ0FBTUFBWGphWTJCbTltS2N3TURLd01BMGkrbnNQeEdHZmhETitJYnhEWU14SXljREVMQXhvQUFIR0NPbHVDeWRnVTBKQ0prWi9nUDV6QXlNSUdGR2hOTC9RR0VBeGowTXlnQUFBSGphWTJCZ1lHSmdZR0FHWWhFZ3lRaW1XUmdVZ0RRTEVBTDVTbXovLzBQSXU3L0I4Z3dBVUt3R2hBQUFBQUlBUFAvOUE0TUMzUUFQQUJJQUFBa0JGaU1VSnlFR05TSTNBVFlYTWhZSEFTRUNBUUY1Q1FJWi9POFpBZ29CZVE0U0R3dzkvdE1DV2dMRC9WWVBEUU1ERFE4Q3JoWURDbHI5M25qYVkyQmtZR0FBNG83cUJlSHgvRFpmR1poWkdFRGdzZU9HUmdUOS95OXpNOU5kSUplRGdRa2tDZ0E4N3d1NEFIamFZMkJrWUdCbStNOEFKQTh5MkREWU1UY3pBRVZRQUJNQVJqSUN5d0FBQXRNQUFBUEJBRHdBQUFBQUFDWUFBSGphWTJCa1lHQmdZaEFHWWhCZ1pFQURBQUtQQUJvQUFIamFQWXd4cThJd0ZJVy9ZaFh0R3h3RWh6ZEk4QWVFU2grNHVEazR1VHE4elpvZ0hacEtXb3N1NGsvM05nUnY0UERkYzg0TmtQRWlZWmlFZWRCaFVubnp5R04rV0VTZWlMK0tuUEhMbWhGSk9oTm54UzV5eXBUL3lHT1dsSkVuNGo4aVovengzamYxN2Q1WnI0Nk5zZDVkYXI4OVdkOVdqVk1iblEvcndUcnJ6NTAxcW53cTAxZHRmNjFWb1hOZHNLZWg1c2FkRG90SGNSVEhCSFpjSlBOc09ZVzlwWkxNU1dlREp2K21CMGxkYUp6REwwWWFKVTlSUXk4M3JlaFZ1b29pM0dtS0QxaXNMa3NBQUhqYVkyQm1RQWFNREdnQUFBQ09BQVU9KSBmb3JtYXQoJ3dvZmYnKTt9CkBmb250LWZhY2V7Zm9udC1mYW1pbHk6Y21yNTtzcmM6dXJsKGRhdGE6YXBwbGljYXRpb24veC1mb250LXdvZmY7YmFzZTY0LGQwOUdSZ0FCQUFBQUFBT3dBQW9BQUFBQUJCZ0FBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFCUFV5OHlBQUFBOUFBQUFFUUFBQUJnaFV4MUFtTnRZWEFBQUFFNEFBQUFMQUFBQURRQURBQ0ZaMng1WmdBQUFXUUFBQUQwQUFBQTlOdSsrWkpvWldGa0FBQUNXQUFBQUMwQUFBQTJLT3VrcW1ob1pXRUFBQUtJQUFBQUhnQUFBQ1FGdWdLeWFHMTBlQUFBQXFnQUFBQUtBQUFBQ2dabkFKSnNiMk5oQUFBQ3RBQUFBQWdBQUFBSUFESUFlbTFoZUhBQUFBSzhBQUFBRndBQUFDQUFCUUF0Ym1GdFpRQUFBdFFBQUFES0FBQUJNdXNJa2Vad2IzTjBBQUFEb0FBQUFCQUFBQUFnQUFNQUFYamFZMkJtZXMwNGdZR1ZnWUZwRnRQWmZ5SU0vU0NhOFEzakd3WmpSazRHSUdCamdBTkdCaVNRVWx5V0RwUTBaREJpWnZnUDVETkRwSkhVL0FjS0F3RDJ4QTArZU5wallHQmdZbUJnWUFaaUVTREpDS1paR0JTQU5Bc1FndmhHLy84RFNjUC8vLzlmQVBNWkFGRllCbzRBQVFDU0FBQUNOd0tyQUI0QUFBRVJCaFk3QVJVbUp5TUdCelV6TWpZbkVRNEJKeU0xTXhZL0FUWTNOaFlCbUFRaVRqTXNPdEU2TEROT0lRTXVWQk1TRWhJK0J6ODVHQTRDaS8zTkZ4UXRBd0VCQXkwVUZ3SUFFZ3dCTFFJS0Fnb3VBUWtBQUFFQVhRQUFBbHNDcWdBckFBQWxCeUUxTkQ4Q1BnRTNMZ0VuSWdZSEhnRVhEZ0VqQmlZblBnRTNNaFlYRGdFSEJnOEJKVFkzUGdFM0Fsc2kvaVFEQ2ZvOVRRRUNhRTAwVWhZWUlRRUJKaFVPTEFJQ2hHcHdtd01DYUVndk5Xa0JBaW9LRFE4Q3hzWWZCUUlKMURGcVAweFRBU29qQWg4YklCMEJHU2ROWlFKcFkxQnBMaUFuVGdFQkJBdEJFZ0FBZU5wallHUmdZQURpUmFjZHl1UDViYjR5TUxNd2dNQmp4dzJOeURSekVOTnFJTVhCd0FUaUFRQWhKUW1EQUFBQWVOcGpZR1JnWUdiNHp3QWtneGhpR1dLWm9obUFJaWlBQ1FBOTBRSnpBQUFEVWdBQUFyZ0FrZ0JkQUFBQUFBQUFBRElBZW5qYVkyQmtZR0JnWnRCaEFORU1VQklKQUFBRkJBQXpBSGphUFl3eHE4SXdGSVcvWWhYdEd4d0VoemRJOEFlRVNwK2JtNE9UcThQYnJBblNvYW1rdGVnaS9uUnZRL0FHRHQ4OTU5d0FHUzhTaGttWUJ4MG1sVGVQUE9hSFJlU0orS3ZJR2Irc0daR2tNM0ZXN0NLblRQbVBQR1pKR1hraS9pTnl4aC92ZlZQZjdwMzE2dGdZNjkybDl0dVQ5VzNWT0xYUitiQWVyTFArM0ZtanlxY3lmZFgyMTFvVk90Y0ZleHBxYnR6cHNIZ1VSM0ZNWU1kRk1zK1dVOWhiS3NtY2REWm84bTk2a05TRnhqbjhZcVJSOGhRMTlITFRpbDZscXlqQ25hYjRBRlV5TGtNQUFIamFZMkJtUUFhTURHZ0FBQUNPQUFVPSkgZm9ybWF0KCd3b2ZmJyk7fQpAZm9udC1mYWNle2ZvbnQtZmFtaWx5OmNtbWk3O3NyYzp1cmwoZGF0YTphcHBsaWNhdGlvbi94LWZvbnQtd29mZjtiYXNlNjQsZDA5R1JnQUJBQUFBQUFRSUFBb0FBQUFBQkpBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUJQVXk4eUFBQUE5QUFBQUVZQUFBQmdoZ0I0TG1OdFlYQUFBQUU4QUFBQU1RQUFBRHdITFAxbloyeDVaZ0FBQVhBQUFBRStBQUFCWU5DWDN5aG9aV0ZrQUFBQ3NBQUFBQzhBQUFBMktHQ2p1R2hvWldFQUFBTGdBQUFBSUFBQUFDUUZ3d0hqYUcxMGVBQUFBd0FBQUFBTUFBQUFEQWVkQUhOc2IyTmhBQUFEREFBQUFBZ0FBQUFJQUZZQXNHMWhlSEFBQUFNVUFBQUFHQUFBQUNBQUJnQTRibUZ0WlFBQUF5d0FBQUROQUFBQk9QTmZLcU53YjNOMEFBQUQvQUFBQUF3QUFBQWdBQU1BQUhqYVkyQm02bVNjd01ES3dNQTBpK25zUHhHR2ZoRE4rSWJ4RFlNeEl5Y0RFTEF4d0VFakF4SklLUzVMQjBxbU1oOWdadmdQNURNek1JS0VHUkVxL2dPRkFRTjFEaUVBQUhqYVkyQmdZR0pnWUdBR1loRWd5UWltV1JnMGdEUWJrR1lFeXFZeUgvai9IOGdIMC8vbi9IRUNxd0lDQUtNbENaRUFBQUI0MmlXUHNVNkRVQUJGMzMybGowQXBJUEtnTklLdFdHaFRVNW9TZUNhMTBLR05icHBvWW5Ud0V4eE1aNlArZ2ovZ2R6ajdLdzd1NnVKUXFXN241QTczWGtMSmN2Mk5IN3lSaU9TRWlKQVpDSkE2SlhLUkIrQzJBU2FQa0ZVbThuVGl1QTZUbVJ5bnpzYkZDR0ZVS1h1Zks2RElFM05temFkcXN6RnBGNnZyRyttRXQ4NHZ4REVRSGg2TUh5ZitVVzh2azVDRVRxbzNzNDgrRDRxQ2FuVnozb0RHOUlIWmwranQyZDNDTnJMeHNEWGp1dVNCMVhWYkJKMmFMYXNkQWpKYWY5Rm52RzZXUXRhcjhxeEVBUkZHMVlZRVVWeHhBYmViTzI2Vnh2OWZYS2RpbVVYeFg0eWkzQXFDL1pyZFdyUkw2M1JRMTFVR09uUzZXWUFuWXdjMXlmVWVWRXJCVFFYd3JTYlhHb0NuWWZXNVhFcStFWTlmTHFtYmF0VmRSWm5hSFE0bzNGQXNLbmFUOHNyWFZOc0R0bnVkYVhtZkVFSitBVFBlTUVzQUFIamFZMkJrWUdBQTR1a0N6bzd4L0RaZkdaaFpHRURnc2VPR1JnVDkveXZUTWNZalFDNEhBeE5JRkFBYTVnc0pBSGphWTJCa1lHQm0rTS9Bd01CMGpFR1BRWkpwTWdOUUJBVXdBd0JEWndLc0FzWUFBQUlyQUVVQ3JBQXVBQUFBQUFCV0FMQjQybU5nWkdCZ1lHWXdaMkJpQUFGR0JqUUFBQVl1QUQ5NDJrMk1QVy9DTUJSRlQ5UUVxV0ZnUVIwWVdnK2RyYUFnc1hWaFlHSmw2Z0xZUlJsc0l5ZEVRcW82OW5mM1lUejBEVmZuZnRoQXpROEY5eXVZSmIxZlNTWHV3UlZUNXBrbjR0NHkxeXg0NTRtaWZKYmtsWS9NcFRTZm1TdGUrTW84a2Z3N2M4MkszMDF3bCt0Z285b0ZZNk0vT2RldDl6YjJYZkJxcVp2a3Q5YmJlQmlzVWNlYk1tUFhqMmVuV3Qzb2xnMEJ4NFVyQTVhSVlpZUpTZXc1U2Vmb1dMTlBTUzhjSkZjczBUVC8rcTMwUG0wTzZTY2pteU0zVWNNb2kxNzBMRnRGbTE1cTJqL0xvUy8zQUFBQWVOcGpZR2JBQ3dBQWZRQUUpIGZvcm1hdCgnd29mZicpO30KQGZvbnQtZmFjZXtmb250LWZhbWlseTpjbXN5MTA7c3JjOnVybChkYXRhOmFwcGxpY2F0aW9uL3gtZm9udC13b2ZmO2Jhc2U2NCxkMDlHUmdBQkFBQUFBQU04QUFvQUFBQUFBNlFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQlBVeTh5QUFBQTlBQUFBRW9BQUFCZ2lPUnpHMk50WVhBQUFBRkFBQUFBS1FBQUFEUUFEQUVxWjJ4NVpnQUFBV3dBQUFCNEFBQUFlSk1TUEpGb1pXRmtBQUFCNUFBQUFDd0FBQUEyS0xXajkyaG9aV0VBQUFJUUFBQUFIZ0FBQUNRR05mL2RhRzEwZUFBQUFqQUFBQUFHQUFBQUJnT3dBQUJzYjJOaEFBQUNPQUFBQUFZQUFBQUdBRHdBQUcxaGVIQUFBQUpBQUFBQUZ3QUFBQ0FBQkFBa2JtRnRaUUFBQWxnQUFBRFRBQUFCUHE4M2RlRndiM04wQUFBRExBQUFBQkFBQUFBZ0FBTUFBWGphWTJCbWxtR2N3TURLd01BMGkrbnNQeEdHZmhETitJYnhEWU14SXljREVMQXh3QUVUQXhKSUtTNUxCMHBlWjdqT0xQVkhrNEdCV1lyNU9sQ1lFYUhpLzM4R0JnRHJuUTd2QUFCNDJtTmdZR0JpWUdCZ0JtSVJJTWtJcGxrWUZJQTBDeENDK05mLy80ZVEvN1hBZkFZQVh1VUhNd0FBQUFBQkFKUUFDUUtHQWZnQUlnQUFBVGMyRnhZWEJnOENId0VXQndZSEppOEJCdzRCSXlZbkpqOEJKeVkzTmpjeUZ3R095dzRLRXdFQ0F4cTdwVElFQVFFVEN3WFV5d2tJQmhFREF4RE56UkFEQXhFR0JBRWR5aEVCQWhNS0F4cTdwVElJQXhNQ0FnVFV5d29GQWhNSERjN09EUWNUQWdJQUFIamFZMkJrWUdBQTRwWHBUUEx4L0RaZkdaaFpHRURnc2VPR1JtU2FXWWJ4QjVEaVlHQUM4UUQzMlFpbWVOcGpZR1JnWUpiNm93a2taUmltTUV4amFtTUFpcUFBUmdCTXlnTVhBQUFESEFBQUFKUUFBQUFBQUFBQVBBQUFlTnBqWUdSZ1lHQmlVR1lBMFF4UUVna0FBQVFJQUNrQWVOcE5qckZxd3pBUWhqOVR4MUFua0trZE9oUk5HWVdOOHdDRkRKbXlaaXdra1FnT1dBNlNZL0JTOGdCOTZGNFVEVDNCOGVtLzc0U0FraDh5SHBXeGpQMVJPWVhjbmp4anpsdmlRbzVLWFBMQmloZXkvRldTVDc0UzV5ejRUanpqblV2aVF2Sjc0cEkxdjV1K3U5NEc2OVd1TjlhN1V4ZW11dHBiSDlyZXFWcFh6MkJybmZXSHdScDFuSlFaMnpDZU85WG9TamRzNk9tNGNtUEE0dVZuTzBsTVpNZEpab0dKbW9wOXpBS3R6SjE0TlZyUy84WldEQmV0UTN6TmlIV1VtUklhWlM5SVA0dXZhT0t1cHZrRENWRXhFd0I0Mm1OZ1prQUdqQXhvQUFBQWpnQUYpIGZvcm1hdCgnd29mZicpO30KQGZvbnQtZmFjZXtmb250LWZhbWlseTpjbW1pMTA7c3JjOnVybChkYXRhOmFwcGxpY2F0aW9uL3gtZm9udC13b2ZmO2Jhc2U2NCxkMDlHUmdBQkFBQUFBQVEwQUFvQUFBQUFCTVFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQlBVeTh5QUFBQTlBQUFBRVFBQUFCZ2hWeDArR050WVhBQUFBRTRBQUFBTVFBQUFEd0FXd0NhWjJ4NVpnQUFBV3dBQUFGc0FBQUJqQ2RCaWYxb1pXRmtBQUFDMkFBQUFDOEFBQUEyS0txazJXaG9aV0VBQUFNSUFBQUFIUUFBQUNRR053SG9hRzEwZUFBQUF5Z0FBQUFNQUFBQURBaHFBRXRzYjJOaEFBQUROQUFBQUFnQUFBQUlBRlFBeG0xaGVIQUFBQU04QUFBQUdBQUFBQ0FBQmdCTWJtRnRaUUFBQTFRQUFBRFNBQUFCUHBrUmRjVndiM04wQUFBRUtBQUFBQXdBQUFBZ0FBTUFBSGphWTJCbU9zYzRnWUdWZ1lGcEZ0UFpmeUlNL1NDYThRM2pHd1pqUms0R0lHQmpnQU5HQmlTUVVseVdEcFIwWkhCbFp2Z1A1RE5EcEpIVS9BY0tBd0R3VWcxRWVOcGpZR0JnWW1CZ1lBWmlFU0RKQ0taWkdEU0FOQnVRWmdUS09qSzQvdjhQNUlQcC93Zis3d1dyQWdJQWtJQUk3d0FBQUhqYUpZOHhUOXRBQUlYdjNkbDNjV0w3M0p3NUYrb0VoUVJiQWtFa096a3JyWENFMUN3ZE9qQ2dEbFhWaFNBeFYrM0tnTVRNeUgvbzBnbnhEL2dEakNBeElvUVltWkxncUc5Nit0NGIzaU9VOUJZTCtrRHZTSjlraEJRd1JhWWpGZXJjYU42SFNKTjBZQ0p0aWo0NmdvYzZNcEdQaWk5eFhxTEkyUldPZU9oeGxIcG5CYTc5NjdSbXcydW9BWFBFZlBIVmk1WEg0Tm5IMzF5NHprWjUrZFQ1VFE4RE9ISjJxaVZyQ1RBR1dwTUNjS1BwNUN6c0JhRFM1MHRjbHh6ZEd4eVFTaURwWXNZQ2VrMitFTElwZkhRNy9QOHdOY1l1bHI1anRFU1lqT25RSktLYmNJbThpbzJPQkUrR2c4S2tKa203VElMblVUYXVmcHBzSGZUMmgrVUdzK2VXOUQrMjdYTUwyQnpKZ05wTmw0VXhZTkg5N3hmcnl0NzcrWG5vc1FpZnJQZk1vU3d1cDVPcTZ2LzlZMlMyaFJXS2wzdlhabTBPcURadHZ4T2VzT0xxa2FQK3hWWmR4V3ZsRUFoV1g3RXpVbWk4YUZhM3hMWlFIekIvYlBJNmRuMXowckQ0R3pmTk84UjQybU5nWkdCZ0FPSlZSc0d6NC9sdHZqSXdzekNBd0dQSERZMEkrdjlmWmdHbXUwQXVCd01UU0JRQUxvOExGUUI0Mm1OZ1pHQmdadmpQQUNJWlZQNC9ZUlpnQUlxZ0FHWUFUREVESlFBQUFBSjJBQUFEQUFBa0F2UUFKd0FBQUFBQVZBREdlTnBqWUdSZ1lHQm04R1pnWWdBQlJnWTBBQUFJSWdCVGVOcE5qckZxd3pBUWhqOVR4MUNuMEtrZE9oUk5HWVdOK3dDQkRKbXlaaXdra1FnT1NBcXlZOGdTK2dCOTZGNFVEVDNCOGQxM3Y0U0FtaHNGOXlwNFRmMWVKWlZNRDU0eDV5MXpKVWRscnZsZ3dSTkYrU3ptazJYbWtoZStNODk0NTVTNUV2K1R1ZWFMMzFWdzU4dG9vOW9FWTZNL09OZTN6ZGJHb1E5ZXRicDVpTFgxTnU1R2E5VCtxc3pVRDlQUnFVNDN1bU5Gd0hIbXdvZ2x5czgyWWt4aXowRjJqcDZXaG0xeWcweEJOa3FjRnZzL3NaYUVUNmxkZXMxSWFzOVZ1bUdTekNEOUtHbEZsKzVxdWovZjlEQzdBQUI0Mm1OZ1pzQUxBQUI5QUFRPSkgZm9ybWF0KCd3b2ZmJyk7fQp0ZXh0LmYwIHtmb250LWZhbWlseTpjbXN5MTA7Zm9udC1zaXplOjkuOTYyNjRweH0KdGV4dC5mMSB7Zm9udC1mYW1pbHk6Y21taTEwO2ZvbnQtc2l6ZTo5Ljk2MjY0cHh9CnRleHQuZjIge2ZvbnQtZmFtaWx5OmNtbWk3O2ZvbnQtc2l6ZTo2Ljk3Mzg0OHB4fQp0ZXh0LmYzIHtmb250LWZhbWlseTpjbXI3O2ZvbnQtc2l6ZTo2Ljk3Mzg0OHB4fQp0ZXh0LmY0IHtmb250LWZhbWlseTpjbXI1O2ZvbnQtc2l6ZTo0Ljk4MTMycHh9Cl1dPgo8L3N0eWxlPgo8ZyBpZD0ncGFnZTEnPgo8ZyBzdHJva2UtbWl0ZXJsaW1pdD0nMTAnIHRyYW5zZm9ybT0ndHJhbnNsYXRlKC03LjA1MzM1MywtNTkuMDQ0NDUyKXNjYWxlKDAuOTk2MjY0LC0wLjk5NjI2NCknPgo8ZyBmaWxsPScjMDAwJyBzdHJva2U9JyMwMDAnPgo8ZyBzdHJva2Utd2lkdGg9JzAuNCc+CjxnIHN0cm9rZS13aWR0aD0nMC41Jz4KPGcgdHJhbnNmb3JtPSd0cmFuc2xhdGUoLTEzLjYxMTA4LC0yLjUpJz4KPGcgc3Ryb2tlPSdub25lJyB0cmFuc2Zvcm09J3NjYWxlKC0xLjAwMzc1LDEuMDAzNzUpdHJhbnNsYXRlKC03LjA1MzM1MywtNTkuMDQ0NDUyKXNjYWxlKC0xLC0xKSc+CjxnIGZpbGw9JyMwMDAnPgo8ZyBzdHJva2U9J25vbmUnPgo8dGV4dCBjbGFzcz0nZjEnIHg9Jy03LjA1MzM1MycgeT0nLTU5LjA0NDQ1Mic+QTwvdGV4dD4KPHRleHQgY2xhc3M9J2YwJyB4PScyLjYzMjUxMicgeT0nLTU5LjA0NDQ1Mic+w5c8L3RleHQ+Cjx0ZXh0IGNsYXNzPSdmMScgeD0nMTIuNTk1MTI1JyB5PSctNTkuMDQ0NDUyJz5BPC90ZXh0Pgo8L2c+CjwvZz4KPC9nPgo8L2c+CjxnIHRyYW5zZm9ybT0ndHJhbnNsYXRlKDUzLjE1NTUsLTIuNSknPgo8ZyBzdHJva2U9J25vbmUnIHRyYW5zZm9ybT0nc2NhbGUoLTEuMDAzNzUsMS4wMDM3NSl0cmFuc2xhdGUoLTcuMDUzMzUzLC01OS4wNDQ0NTIpc2NhbGUoLTEsLTEpJz4KPGcgZmlsbD0nIzAwMCc+CjxnIHN0cm9rZT0nbm9uZSc+Cjx0ZXh0IGNsYXNzPSdmMScgeD0nLTcuMDUzMzUzJyB5PSctNTkuMDQ0NDUyJz5BPC90ZXh0Pgo8L2c+CjwvZz4KPC9nPgo8L2c+CjxnIHRyYW5zZm9ybT0ndHJhbnNsYXRlKC02MC42NTU1LC0yLjUpJz4KPGcgc3Ryb2tlPSdub25lJyB0cmFuc2Zvcm09J3NjYWxlKC0xLjAwMzc1LDEuMDAzNzUpdHJhbnNsYXRlKC03LjA1MzM1MywtNTkuMDQ0NDUyKXNjYWxlKC0xLC0xKSc+CjxnIGZpbGw9JyMwMDAnPgo8ZyBzdHJva2U9J25vbmUnPgo8dGV4dCBjbGFzcz0nZjEnIHg9Jy03LjA1MzM1MycgeT0nLTU5LjA0NDQ1Mic+QTwvdGV4dD4KPC9nPgo8L2c+CjwvZz4KPC9nPgo8ZyB0cmFuc2Zvcm09J3RyYW5zbGF0ZSgtNjAuODg0NjYsLTU5LjQwNTUpJz4KPGcgc3Ryb2tlPSdub25lJyB0cmFuc2Zvcm09J3NjYWxlKC0xLjAwMzc1LDEuMDAzNzUpdHJhbnNsYXRlKC03LjA1MzM1MywtNTkuMDQ0NDUyKXNjYWxlKC0xLC0xKSc+CjxnIGZpbGw9JyMwMDAnPgo8ZyBzdHJva2U9J25vbmUnPgo8dGV4dCBjbGFzcz0nZjEnIHg9Jy03LjA1MzM1MycgeT0nLTU5LjA0NDQ1Mic+RTwvdGV4dD4KPC9nPgo8L2c+CjwvZz4KPC9nPgo8cGF0aCBkPSdNMTguMTY2NjMgMy42MTY2Mkg0OC4wOTk5NicgZmlsbD0nbm9uZScvPgo8ZyB0cmFuc2Zvcm09J3RyYW5zbGF0ZSg0OC4zNDk5NiwzLjYxNjYyKSc+CjxnIHN0cm9rZS1kYXNoYXJyYXk9J25vbmUnIHN0cm9rZS1kYXNob2Zmc2V0PScwLjAnPgogPGcgc3Ryb2tlLWxpbmVjYXA9J3JvdW5kJz4KIDxnIHN0cm9rZS1saW5lam9pbj0ncm91bmQnPgogPHBhdGggZD0nTS0yLjIgMi41ODA2M0MtMS43OTgwNyAxLjAzMjIzLS45MDI0IC4zMDEwNyAwIDBDLS45MDI0LS4zMDEwNy0xLjc5ODA3LTEuMDMyMjMtMi4yLTIuNTgwNjMnIGZpbGw9J25vbmUnLz4KIDwvZz4KIDwvZz4KIDwvZz4KPC9nPgo8ZyB0cmFuc2Zvcm09J3RyYW5zbGF0ZSgyOS4wOTM3Miw3LjQyODQ0KSc+CjxnIHN0cm9rZT0nbm9uZScgdHJhbnNmb3JtPSdzY2FsZSgtMS4wMDM3NSwxLjAwMzc1KXRyYW5zbGF0ZSgtNy4wNTMzNTMsLTU5LjA0NDQ1MilzY2FsZSgtMSwtMSknPgo8ZyBmaWxsPScjMDAwJz4KPGcgc3Ryb2tlPSdub25lJz4KPHRleHQgY2xhc3M9J2YyJyB4PSctNy4wNTMzNTMnIHk9Jy01OS4wNDQ0NTInPs+APC90ZXh0Pgo8dGV4dCBjbGFzcz0nZjQnIHg9Jy0yLjM5NDUwOScgeT0nLTU4LjA0ODE4OCc+MTwvdGV4dD4KPC9nPgo8L2c+CjwvZz4KPC9nPgo8cGF0aCBkPSdNMTguMTY2NjMtMy42MTY2Mkg0OC4wOTk5NicgZmlsbD0nbm9uZScvPgo8ZyB0cmFuc2Zvcm09J3RyYW5zbGF0ZSg0OC4zNDk5NiwtMy42MTY2MiknPgo8ZyBzdHJva2UtZGFzaGFycmF5PSdub25lJyBzdHJva2UtZGFzaG9mZnNldD0nMC4wJz4KIDxnIHN0cm9rZS1saW5lY2FwPSdyb3VuZCc+CiA8ZyBzdHJva2UtbGluZWpvaW49J3JvdW5kJz4KIDxwYXRoIGQ9J00tMi4yIDIuNTgwNjNDLTEuNzk4MDcgMS4wMzIyMy0uOTAyNCAuMzAxMDcgMCAwQy0uOTAyNC0uMzAxMDctMS43OTgwNy0xLjAzMjIzLTIuMi0yLjU4MDYzJyBmaWxsPSdub25lJy8+CiA8L2c+CiA8L2c+CiA8L2c+CjwvZz4KPGcgdHJhbnNmb3JtPSd0cmFuc2xhdGUoMjkuMDkzNzIsLTkuNDQyMzIpJz4KPGcgc3Ryb2tlPSdub25lJyB0cmFuc2Zvcm09J3NjYWxlKC0xLjAwMzc1LDEuMDAzNzUpdHJhbnNsYXRlKC03LjA1MzM1MywtNTkuMDQ0NDUyKXNjYWxlKC0xLC0xKSc+CjxnIGZpbGw9JyMwMDAnPgo8ZyBzdHJva2U9J25vbmUnPgo8dGV4dCBjbGFzcz0nZjInIHg9Jy03LjA1MzM1MycgeT0nLTU5LjA0NDQ1Mic+z4A8L3RleHQ+Cjx0ZXh0IGNsYXNzPSdmNCcgeD0nLTIuMzk0NTA5JyB5PSctNTguMDQ4MTg4Jz4yPC90ZXh0Pgo8L2c+CjwvZz4KPC9nPgo8L2c+CjxwYXRoIGQ9J00tNDYuMzk5OTYgMEgtMTguNjY2NjMnIGZpbGw9J25vbmUnLz4KPGcgdHJhbnNmb3JtPSdtYXRyaXgoLTEuMCwwLjAsMC4wLC0xLjAsLTQ2LjE0OTk2LDAuMCknPgo8ZyBzdHJva2UtZGFzaGFycmF5PSdub25lJyBzdHJva2UtZGFzaG9mZnNldD0nMC4wJz4KIDxnIHN0cm9rZS1saW5lY2FwPSdyb3VuZCc+CiA8ZyBzdHJva2UtbGluZWpvaW49J3JvdW5kJz4KIDxwYXRoIGQ9J00yLjIgMi41ODA2M0MxLjc5ODA3IDEuMDMyMjMgLjkwMjQgLjMwMTA3IDAgMEMuOTAyNC0uMzAxMDcgMS43OTgwNy0xLjAzMjIzIDIuMi0yLjU4MDYzJyBmaWxsPSdub25lJy8+CiA8L2c+CiA8L2c+CiA8L2c+CjwvZz4KPGcgdHJhbnNmb3JtPSd0cmFuc2xhdGUoLTE4LjQxNjYzLDAuMCknPgo8ZyBzdHJva2UtZGFzaGFycmF5PSdub25lJyBzdHJva2UtZGFzaG9mZnNldD0nMC4wJz4KIDxnIHN0cm9rZS1saW5lY2FwPSdyb3VuZCc+CiA8ZyBzdHJva2UtbGluZWpvaW49J3JvdW5kJz4KIDxwYXRoIGQ9J00tMi4yIDIuNTgwNjNDLTEuNzk4MDcgMS4wMzIyMy0uOTAyNCAuMzAxMDcgMCAwQy0uOTAyNC0uMzAxMDctMS43OTgwNy0xLjAzMjIzLTIuMi0yLjU4MDYzJyBmaWxsPSdub25lJy8+CiA8L2c+CiA8L2c+CiA8L2c+CjwvZz4KPGcgdHJhbnNmb3JtPSd0cmFuc2xhdGUoLTM2LjY2ODAzLDIuODExODEpJz4KPGcgc3Ryb2tlPSdub25lJyB0cmFuc2Zvcm09J3NjYWxlKC0xLjAwMzc1LDEuMDAzNzUpdHJhbnNsYXRlKC03LjA1MzM1MywtNTkuMDQ0NDUyKXNjYWxlKC0xLC0xKSc+CjxnIGZpbGw9JyMwMDAnPgo8ZyBzdHJva2U9J25vbmUnPgo8dGV4dCBjbGFzcz0nZjMnIHg9Jy03LjA1MzM1MycgeT0nLTU5LjA0NDQ1Mic+4oiGPC90ZXh0Pgo8L2c+CjwvZz4KPC9nPgo8L2c+CjxwYXRoIGQ9J00tNDcuMTEwMDItNDcuMTA3TC03LjU5MjQtNy41OTY1NicgZmlsbD0nbm9uZScvPgo8ZyB0cmFuc2Zvcm09J21hdHJpeCgtMC43MDcxNSwtMC43MDcwMywwLjcwNzAzLC0wLjcwNzE1LC00Ni45MzMyMywtNDYuOTMwMjQpJz4KPGcgc3Ryb2tlLWRhc2hhcnJheT0nbm9uZScgc3Ryb2tlLWRhc2hvZmZzZXQ9JzAuMCc+CiA8ZyBzdHJva2UtbGluZWNhcD0ncm91bmQnPgogPGcgc3Ryb2tlLWxpbmVqb2luPSdyb3VuZCc+CiA8cGF0aCBkPSdNMi4yIDIuNTgwNjNDMS43OTgwNyAxLjAzMjIzIC45MDI0IC4zMDEwNyAwIDBDLjkwMjQtLjMwMTA3IDEuNzk4MDctMS4wMzIyMyAyLjItMi41ODA2MycgZmlsbD0nbm9uZScvPgogPC9nPgogPC9nPgogPC9nPgo8L2c+CjxnIHRyYW5zZm9ybT0nbWF0cml4KDAuNzA3MTUsMC43MDcwMywtMC43MDcwMywwLjcwNzE1LC03LjQxNTYyLC03LjQxOTgpJz4KPGcgc3Ryb2tlLWRhc2hhcnJheT0nbm9uZScgc3Ryb2tlLWRhc2hvZmZzZXQ9JzAuMCc+CiA8ZyBzdHJva2UtbGluZWNhcD0ncm91bmQnPgogPGcgc3Ryb2tlLWxpbmVqb2luPSdyb3VuZCc+CiA8cGF0aCBkPSdNLTIuMiAyLjU4MDYzQy0xLjc5ODA3IDEuMDMyMjMtLjkwMjQgLjMwMTA3IDAgMEMtLjkwMjQtLjMwMTA3LTEuNzk4MDctMS4wMzIyMy0yLjItMi41ODA2MycgZmlsbD0nbm9uZScvPgogPC9nPgogPC9nPgogPC9nPgo8L2c+CjxnIHRyYW5zZm9ybT0ndHJhbnNsYXRlKC0yNC42ODg0LC0zMy43Nzg0NiknPgo8ZyBzdHJva2U9J25vbmUnIHRyYW5zZm9ybT0nc2NhbGUoLTEuMDAzNzUsMS4wMDM3NSl0cmFuc2xhdGUoLTcuMDUzMzUzLC01OS4wNDQ0NTIpc2NhbGUoLTEsLTEpJz4KPGcgZmlsbD0nIzAwMCc+CjxnIHN0cm9rZT0nbm9uZSc+Cjx0ZXh0IGNsYXNzPSdmMicgeD0nLTcuMDUzMzUzJyB5PSctNTkuMDQ0NDUyJz5lPC90ZXh0Pgo8L2c+CjwvZz4KPC9nPgo8L2c+CjxnIHN0cm9rZS1kYXNoYXJyYXk9JzMuMCwyLjAnIHN0cm9rZS1kYXNob2Zmc2V0PScwLjAnPgo8cGF0aCBkPSdNLTU2LjkwNTUtNDguNjYyNDZWLTYuOTA5NzMnIGZpbGw9J25vbmUnLz4KPGcgdHJhbnNmb3JtPSdtYXRyaXgoMC4wLDEuMCwtMS4wLDAuMCwtNTYuOTA1NSwtNi42NTk3MyknPgo8ZyBzdHJva2UtZGFzaGFycmF5PSdub25lJyBzdHJva2UtZGFzaG9mZnNldD0nMC4wJz4KIDxnIHN0cm9rZS1saW5lY2FwPSdyb3VuZCc+CiA8ZyBzdHJva2UtbGluZWpvaW49J3JvdW5kJz4KIDxwYXRoIGQ9J00tMi4yIDIuNTgwNjNDLTEuNzk4MDcgMS4wMzIyMy0uOTAyNCAuMzAxMDcgMCAwQy0uOTAyNC0uMzAxMDctMS43OTgwNy0xLjAzMjIzLTIuMi0yLjU4MDYzJyBmaWxsPSdub25lJy8+CiA8L2c+CiA8L2c+CiA8L2c+CjwvZz4KPC9nPgo8L2c+CjwvZz4KPC9nPgo8L2c+CjwvZz4KPC9zdmc+" /></fr:resource-content><fr:resource-source
+type="latex"
+part="preamble"><![CDATA[
+        
+  \RequirePackage {tikz}
+  \RequirePackage {amsmath}
+  \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
+
+  \definecolor {catccolor}{RGB}{255,244,138}
+  \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
+  \tikzstyle {catc}=[catccolor!60]
+  \tikzstyle {catd}=[orange!40]
+  \tikzstyle {cate}=[red!40]
+  \tikzstyle {catf}=[blue!10]
+  \tikzstyle {catg}=[green!25]
+
+
+  \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
+  \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
+
+  \NewDocumentCommand \CreateRect {D<>{} m m}{
+    \path 
+      coordinate (#1nw)
+      ++(#2,-#3) coordinate (#1se)
+      coordinate (#1sw) at (#1se -| #1nw)
+      coordinate (#1ne) at (#1nw -| #1se)
+    ;
+
+    \path [spath/save = #1north] (#1nw) to (#1ne);
+    \path [spath/save = #1west] (#1nw) to (#1sw);
+    \path [spath/save = #1east] (#1ne) to (#1se);
+    \path [spath/save = #1south] (#1sw) to (#1se);
+  }
+
+        
+   % appears to be necessary
+  \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd}
+  \usetikzlibrary{matrix,arrows}
+  \usetikzlibrary{backgrounds,fit,positioning,calc,shapes}
+  \usetikzlibrary{decorations.pathreplacing}
+  \usetikzlibrary{decorations.pathmorphing}
+  \usetikzlibrary{decorations.markings}
+
+  % basic settings
+  \tikzset{
+    diagram/.style = {
+      on grid,
+      node distance=2cm,
+      commutative diagrams/every diagram,
+      line width = .5pt,
+      every node/.append style = {
+        commutative diagrams/every cell,
+      },
+    },
+    morphism/.style = {
+      auto=left,
+      node font=\scriptsize,
+    },
+    phantom/.style = {
+      commutative diagrams/phantom,
+      node font=\scriptsize,
+      sloped,
+    },
+    between/.style args = {#1 and #2}{
+      at = ($(#1)!0.5!(#2)$)
+    },
+    desc/.style = {anchor=center,fill=white,inner sep=3pt},
+    offset/.style args = {#1} {commutative diagrams/shift right={#1}},
+    cross over/.style = {
+      commutative diagrams/crossing over
+    },
+    adjoint/.style = {
+      phantom,
+      every to/.append style = {
+        edge node = {node [sloped,allow upside down,auto=false] {$\dashv$}}
+      }
+    },
+  }
+
+  % pullback and pushout
+  \tikzset{
+    pullback/.style = {
+      append after command = {
+        \pgfextra{
+          \draw ($(\tikzlastnode) + (.2cm,-.5cm)$) -- ++(0.3cm,0) -- ++(0,0.3cm);
+        }
+      }
+    },
+    pushout/.style = {
+      append after command={
+        \pgfextra{
+          \draw ($(\tikzlastnode) + (-.2cm,.5cm)$) -- ++(-0.3cm,0) -- ++(0,-0.3cm);
+        }
+      }
+    },
+  }
+
+  % arrow styles
+  \tikzset{
+    exists/.style = {
+      densely dashed
+    },
+    embedding/.style = {
+      {right hook}->
+    },
+    into/.style = {
+      {right hook}->
+    },
+    cover/.style = {
+      -{Triangle[open]}
+    },
+    twocell/.style = {
+      double, -{implies}
+    }
+  }
+
+  \newlength{\dontworryaboutit} % no idea what it does
+
+  \tikzset{
+    inline diagram/.style = {
+      commutative diagrams/every diagram,
+      commutative diagrams/cramped,
+      line width = .5pt,
+      every node/.append style = {
+        commutative diagrams/every cell,
+        anchor = base,
+        inner sep = 0pt
+      },
+      every path/.append style = {
+        outer xsep = 2pt
+      }
+    }
+  }
+  
+  % macros for drawing commutative squares
+  % adapted from Jon Sterling's macros (https://git.sr.ht/~jonsterling/article-template/tree/main/item/local-tikz.sty)
+  \tikzset{
+    square/nw/.style = {},
+    square/ne/.style = {},
+    square/se/.style = {},
+    square/sw/.style = {},
+    square/north/.style = {->},
+    square/south/.style = {->},
+    square/west/.style = {->},
+    square/east/.style = {->},
+    square/north/node/.style = {above},
+    square/south/node/.style = {below},
+    square/west/node/.style = {left},
+    square/east/node/.style = {right},
+  }
+
+  \ExplSyntaxOn
+  \keys_define:nn { jon-tikz/diagram } {
+    nw .tl_set:N = \l_jon_tikz_diagram_nw,
+    sw .tl_set:N = \l_jon_tikz_diagram_sw,
+    ne .tl_set:N = \l_jon_tikz_diagram_ne,
+    se .tl_set:N = \l_jon_tikz_diagram_se,
+
+    width .tl_set:N = \l_jon_tikz_diagram_width,
+    height .tl_set:N = \l_jon_tikz_diagram_height,
+
+    north .tl_set:N = \l_jon_tikz_diagram_north,
+    south .tl_set:N = \l_jon_tikz_diagram_south,
+    west .tl_set:N = \l_jon_tikz_diagram_west,
+    east .tl_set:N = \l_jon_tikz_diagram_east,
+
+    nw/style .code:n = {\tikzset{square/nw/.style = {#1}}},
+    sw/style .code:n = {\tikzset{square/sw/.style = {#1}}},
+    ne/style .code:n = {\tikzset{square/ne/.style = {#1}}},
+    se/style .code:n = {\tikzset{square/se/.style = {#1}}},
+
+    north/style .code:n = {\tikzset{square/north/.style = {#1}}},
+    north/node/style .code:n = {\tikzset{square/north/node/.style = {#1}}},
+    south/style .code:n = {\tikzset{square/south/.style = {#1}}},
+    south/node/style .code:n = {\tikzset{square/south/node/.style = {#1}}},
+    west/style .code:n = {\tikzset{square/west/.style = {#1}}},
+    west/node/style .code:n = {\tikzset{square/west/node/.style = {#1}}},
+    east/style .code:n = {\tikzset{square/east/.style = {#1}}},
+    east/node/style .code:n = {\tikzset{square/east/node/.style = {#1}}},
+
+    draft .meta:n = {
+      nw = {nw},
+      sw = {sw},
+      se = {se},
+      ne = {ne},
+      north = {north},
+      south = {south},
+      west = {west},
+      east = {east},
+    }
+  }
+
+  \tl_set:Nn \l_jon_tikz_diagram_width { 2cm }
+  \tl_set:Nn \l_jon_tikz_diagram_height { 2cm }
+
+
+  \cs_new:Nn \__jon_tikz_render_square:nn {
+    \group_begin:
+    \keys_set:nn {jon-tikz/diagram} {#2} {
+      \node (#1nw) [square/nw] {$\l_jon_tikz_diagram_nw$};
+      \node (#1sw) [below = \l_jon_tikz_diagram_height~of~#1nw,square/sw] {$\l_jon_tikz_diagram_sw$};
+      \draw[morphism,square/west] (#1nw) to node [square/west/node] {$\l_jon_tikz_diagram_west$} (#1sw);
+
+      \node (#1ne) [right = \l_jon_tikz_diagram_width~of~#1nw,square/ne] {$\l_jon_tikz_diagram_ne$};
+      \node (#1se) [below = \l_jon_tikz_diagram_height~of~#1ne,square/se] {$\l_jon_tikz_diagram_se$};
+      \draw[morphism,square/north] (#1nw) to node [square/north/node] {$\l_jon_tikz_diagram_north$} (#1ne);
+      \draw[morphism,square/east] (#1ne) to node [square/east/node] {$\l_jon_tikz_diagram_east$} (#1se);
+      \draw[morphism,square/south] (#1sw) to node [square/south/node] {$\l_jon_tikz_diagram_south$} (#1se);
+    }
+    \group_end:
+  }
+
+  % the optional argument allows one to specify a prefix to positions
+  \NewDocumentCommand\SpliceDiagramSquare{O{}m}{
+    \__jon_tikz_render_square:nn {#1} {#2}
+  }
+
+  \NewDocumentCommand\DiagramSquare{O{}O{}m}{
+    \begin{tikzpicture}[diagram,#2,baseline=(#1sw.base)]
+      \__jon_tikz_render_square:nn {#1} {#3}
+    \end{tikzpicture}
+  }
+  \ExplSyntaxOff
+
+      ]]></fr:resource-source><fr:resource-source
+type="latex"
+part="body"><![CDATA[
+    \begin {tikzpicture}[diagram]
+      \node  (1) {$A \times  A$};
+      \node  (2) [right = of 1] {$A$};
+      \node  (3) [left = of 1] {$A$};
+      \node  (4) [below = of 3] {$E$};
+      \draw  [->,morphism,offset=-1.5] (1) to node {$\pi _{1}$} (2);
+      \draw  [->,morphism,offset=1.5] (1) to node[swap] {$\pi _{2}$} (2);
+      \draw  [>->,morphism] (3) to node {$\Delta $} (1);
+      \draw  [>->,morphism] (4) to node[swap] {$e$} (1);
+      \draw  [->,morphism,exists] (4) to (3);
+    \end {tikzpicture}
+  ]]></fr:resource-source></fr:resource></fr:figure>
+    
+  
+  <fr:p>Assume the converse.
+    Suppose that <fr:tex
+display="inline"><![CDATA[fu = fv]]></fr:tex> for some parallel pair of morphisms <fr:tex
+display="inline"><![CDATA[u,v\colon C\rightrightarrows A]]></fr:tex>.
+    Then it follows that <fr:tex
+display="inline"><![CDATA[(u,v)]]></fr:tex> factors through <fr:tex
+display="inline"><![CDATA[e]]></fr:tex>.</fr:p>
+  
+    
+      
+      <fr:figure><fr:resource
+hash="4ba2b50d858cf45d1a327497867a03df"><fr:resource-content><fr:img
+src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0nMS4wJyBlbmNvZGluZz0nVVRGLTgnPz4KPCEtLSBUaGlzIGZpbGUgd2FzIGdlbmVyYXRlZCBieSBkdmlzdmdtIDMuMC4zIC0tPgo8c3ZnIHZlcnNpb249JzEuMScgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJyB4bWxuczp4bGluaz0naHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluaycgd2lkdGg9JzIwMC44NjM0MTJwdCcgaGVpZ2h0PScxMTYuOTc3ODUzcHQnIHZpZXdCb3g9Jy03MiAtNzIgMTMzLjkwODk0MSA3Ny45ODUyMzUnPgo8c3R5bGUgdHlwZT0ndGV4dC9jc3MnPgo8IVtDREFUQVtAZm9udC1mYWNle2ZvbnQtZmFtaWx5OmNtcjc7c3JjOnVybChkYXRhOmFwcGxpY2F0aW9uL3gtZm9udC13b2ZmO2Jhc2U2NCxkMDlHUmdBQkFBQUFBQU40QUFvQUFBQUFBK1FBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQlBVeTh5QUFBQTlBQUFBRU1BQUFCZ2hVTjBMMk50WVhBQUFBRTRBQUFBTEFBQUFEUUFEQUI4WjJ4NVpnQUFBV1FBQUFDNkFBQUF3RXA3Ymxab1pXRmtBQUFDSUFBQUFDNEFBQUEyS0cya1BtaG9aV0VBQUFKUUFBQUFId0FBQUNRRXlnSWZhRzEwZUFBQUFuQUFBQUFLQUFBQUNnVGtBSFJzYjJOaEFBQUNmQUFBQUFnQUFBQUlBREFBWUcxaGVIQUFBQUtFQUFBQUZ3QUFBQ0FBQlFBY2JtRnRaUUFBQXB3QUFBREtBQUFCTXUwS2tlcHdiM04wQUFBRGFBQUFBQkFBQUFBZ0FBTUFBWGphWTJCbVVtU2N3TURLd01BMGkrbnNQeEdHZmhETitJYnhEWU14SXljREVMQXh3QUVqQXhKSUtTNUxCMHBxTUdneU0vd0g4cGtoMGtocS9nT0ZBYXRHREdJQWVOcGpZR0JnWW1CZ1lBWmlFU0RKQ0taWkdCU0FOQXNRZ3ZpYS8vOERTWTMvLy8vZkJQTVpBRkNiQm9WNDJtTmdaQ2o1ejhqWXdNekFJTVhBd0NndUpzTE94cy9JeHM0bUJtVHlNNnFwQTZHNW1qMmpHV01PTHp1N294VzdKVE5qV0JvWE8yK3JLUiszS2hPVExwOFpNd01qa3dDYlNZNUE0YkhlbjdHY0FreU1TYldLQ3JYSlJjMnFUVUFqR1R5QTVvZEF6QmNHbWlvdXhpN0N4czdIcUdadVlzOW94Mml1eDZpdVptcG1IdE5pQmpKUVU4a3NUNXFSbVQ4a2hwRzUwSTJUa1kyWkFXSmExRUtIeEdRbUxtWVdRWi8zQzQ4OHRlSmk0MlJpWUdBQUFON0lJSFFBQUhqYVkyQmtZR0FBNHVOdU1lZmorVzIrTWpDek1JREFZOGNOQ3hEMGYwYW15OHdnTGdjREU0Z0NBRGpGQ3FzQUFIamFZMkJrWUdCbStNL0F3TUIwbWNHRHdaT3hnUUVvZ2dLWUFFbDBBdTRBQXRNQUFBSEpBSFFBU0FBQUFBQUFBQUF3QUdCNDJtTmdaR0JnWUdhUVpnRFJERkFTQ1FBQUExc0FJZ0I0MmoyTU1hdkNNQlNGdjJJVjdSc2NCSWMzU1BBSGhFb2Z1TGc1T0xrNnZNMmFJQjJhU2xxTEx1SlA5ellFYitEdzNYUE9EWkR4SW1HWWhIblFZVko1ODhoamZsaEVub2kvaXB6eHk1b1JTVG9UWjhVdWNzcVUvOGhqbHBTUkorSS9JbWY4OGQ0MzllM2VXYStPamJIZVhXcS9QVm5mVm8xVEc1MFA2OEU2NjgrZE5hcDhLdE5YYlgrdFZhRnpYYkNub2ViR25RNkxSM0VVeHdSMlhDVHpiRG1GdmFXU3pFbG5neWIvcGdkSlhXaWN3eTlHR2lWUFVVTXZONjNvVmJxS0l0eHBpZzlZckM1TEFBQjQybU5nWmtBR2pBeG9BQUFBamdBRikgZm9ybWF0KCd3b2ZmJyk7fQpAZm9udC1mYWNle2ZvbnQtZmFtaWx5OmNtcjU7c3JjOnVybChkYXRhOmFwcGxpY2F0aW9uL3gtZm9udC13b2ZmO2Jhc2U2NCxkMDlHUmdBQkFBQUFBQU93QUFvQUFBQUFCQmdBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQlBVeTh5QUFBQTlBQUFBRVFBQUFCZ2hVeDFBbU50WVhBQUFBRTRBQUFBTEFBQUFEUUFEQUNGWjJ4NVpnQUFBV1FBQUFEMEFBQUE5TnUrK1pKb1pXRmtBQUFDV0FBQUFDMEFBQUEyS091azZHaG9aV0VBQUFLSUFBQUFIZ0FBQUNRRnVnS3lhRzEwZUFBQUFxZ0FBQUFLQUFBQUNnWm5BSkpzYjJOaEFBQUN0QUFBQUFnQUFBQUlBRElBZW0xaGVIQUFBQUs4QUFBQUZ3QUFBQ0FBQlFBdGJtRnRaUUFBQXRRQUFBREtBQUFCTXVzSWtlWndiM04wQUFBRG9BQUFBQkFBQUFBZ0FBTUFBWGphWTJCbWVzMDRnWUdWZ1lGcEZ0UFpmeUlNL1NDYThRM2pHd1pqUms0R0lHQmpnQU5HQmlTUVVseVdEcFEwWkRCaVp2Z1A1RE5EcEpIVS9BY0tBd0QyeEEwK2VOcGpZR0JnWW1CZ1lBWmlFU0RKQ0taWkdCU0FOQXNRZ3ZoRy8vOERTY1AvLy85ZkFQTVpBRkZZQm80QUFRQ1NBQUFDTndLckFCNEFBQUVSQmhZN0FSVW1KeU1HQnpVek1qWW5FUTRCSnlNMU14WS9BVFkzTmhZQm1BUWlUak1zT3RFNkxETk9JUU11VkJNU0VoSStCejg1R0E0Q2kvM05GeFF0QXdFQkF5MFVGd0lBRWd3QkxRSUtBZ291QVFrQUFBRUFYUUFBQWxzQ3FnQXJBQUFsQnlFMU5EOENQZ0UzTGdFbklnWUhIZ0VYRGdFakJpWW5QZ0UzTWhZWERnRUhCZzhCSlRZM1BnRTNBbHNpL2lRRENmbzlUUUVDYUUwMFVoWVlJUUVCSmhVT0xBSUNoR3B3bXdNQ2FFZ3ZOV2tCQWlvS0RROEN4c1lmQlFJSjFERnFQMHhUQVNvakFoOGJJQjBCR1NkTlpRSnBZMUJwTGlBblRnRUJCQXRCRWdBQWVOcGpZR1JnWUFEaVJhZnRmOGZ6MjN4bFlHWmhBSUhIamhzV0lOUE1RVXlyZ1JRSEF4T0lCd0E4dHdwRUFBQUFlTnBqWUdSZ1lHYjR6d0FrZ3hoaUdXS1pvaG1BSWlpQUNRQTkwUUp6QUFBRFVnQUFBcmdBa2dCZEFBQUFBQUFBQURJQWVuamFZMkJrWUdCZ1p0QmhBTkVNVUJJSkFBQUZCQUF6QUhqYVBZd3hxOEl3RklXL1loWHRHeHdFaHpkSThBZUVTcCtibTRPVHE4UGJyQW5Tb2Fta3RlZ2kvblJ2US9BR0R0ODk1OXdBR1M4U2hrbVlCeDBtbFRlUFBPYUhSZVNKK0t2SUdiK3NHWkdrTTNGVzdDS25UUG1QUEdaSkdYa2kvaU55eGgvdmZWUGY3cDMxNnRnWTY5Mmw5dHVUOVczVk9MWFIrYkFlckxQKzNGbWp5cWN5ZmRYMjExb1ZPdGNGZXhwcWJ0enBzSGdVUjNGTVlNZEZNcytXVTloYktzbWNkRFpvOG05NmtOU0Z4am44WXFSUjhoUTE5SExUaWw2bHF5akNuYWI0QUZVeUxrTUFBSGphWTJCbVFBYU1ER2dBQUFDT0FBVT0pIGZvcm1hdCgnd29mZicpO30KQGZvbnQtZmFjZXtmb250LWZhbWlseTpjbXN5MTA7c3JjOnVybChkYXRhOmFwcGxpY2F0aW9uL3gtZm9udC13b2ZmO2Jhc2U2NCxkMDlHUmdBQkFBQUFBQU5BQUFvQUFBQUFBNlFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQlBVeTh5QUFBQTlBQUFBRW9BQUFCZ2lPUnpHMk50WVhBQUFBRkFBQUFBS1FBQUFEUUFEQUVxWjJ4NVpnQUFBV3dBQUFCNEFBQUFlSk1TUEpGb1pXRmtBQUFCNUFBQUFDMEFBQUEyS0xXa05XaG9aV0VBQUFJVUFBQUFIZ0FBQUNRR05mL2RhRzEwZUFBQUFqUUFBQUFHQUFBQUJnT3dBQUJzYjJOaEFBQUNQQUFBQUFZQUFBQUdBRHdBQUcxaGVIQUFBQUpFQUFBQUZ3QUFBQ0FBQkFBa2JtRnRaUUFBQWx3QUFBRFRBQUFCUHE4M2RlRndiM04wQUFBRE1BQUFBQkFBQUFBZ0FBTUFBWGphWTJCbWxtR2N3TURLd01BMGkrbnNQeEdHZmhETitJYnhEWU14SXljREVMQXh3QUVUQXhKSUtTNUxCMHBlWjdqT0xQVkhrNEdCV1lyNU9sQ1lFYUhpLzM4R0JnRHJuUTd2QUFCNDJtTmdZR0JpWUdCZ0JtSVJJTWtJcGxrWUZJQTBDeENDK05mLy80ZVEvN1hBZkFZQVh1VUhNd0FBQUFBQkFKUUFDUUtHQWZnQUlnQUFBVGMyRnhZWEJnOENId0VXQndZSEppOEJCdzRCSXlZbkpqOEJKeVkzTmpjeUZ3R095dzRLRXdFQ0F4cTdwVElFQVFFVEN3WFV5d2tJQmhFREF4RE56UkFEQXhFR0JBRWR5aEVCQWhNS0F4cTdwVElJQXhNQ0FnVFV5d29GQWhNSERjN09EUWNUQWdJQUFIamFZMkJrWUdBQTRwWHBqSXZqK1cyK01qQ3pNSURBWThjTkM1QnBaaG5HSDBDS2c0RUp4QU1BRTNvSlp3QUFBSGphWTJCa1lHQ1crcU1KSkdVWXBqQk1ZMnBqQUlxZ0FFWUFUTW9ERndBQUF4d0FBQUNVQUFBQUFBQUFBRHdBQUhqYVkyQmtZR0JnWWxCbUFORU1VQklKQUFBRUNBQXBBSGphVFk2eGFzTXdFSVkvVThkUUo1Q3BIVG9VVFJtRmpmTUFoUXlac21Zc0pKRUlEbGdPa21Qd1V2SUFmZWhlRkEwOXdmSHB2KytFZ0pJZk1oNlZzWXo5VVRtRjNKNDhZODViNGtLT1Nsenl3WW9Yc3Z4VmtrKytFdWNzK0U0ODQ1MUw0a0x5ZStLU05iK2J2cnZlQnV2VnJqZld1MU1YcHJyYVd4L2EzcWxhVjg5Z2E1MzFoOEVhZFp5VUdkc3duanZWNkVvM2JPanB1SEpqd09MbFp6dEpUR1RIU1dhQmlacUtmY3dDcmN5ZGVEVmEwdi9HVmd3WHJVTjh6WWgxbEprU0dtVXZTRCtMcjJqaXJxYjVBd2xSTVJNQWVOcGpZR1pBQm93TWFBQUFBSTRBQlE9PSkgZm9ybWF0KCd3b2ZmJyk7fQpAZm9udC1mYWNle2ZvbnQtZmFtaWx5OmNtbWk3O3NyYzp1cmwoZGF0YTphcHBsaWNhdGlvbi94LWZvbnQtd29mZjtiYXNlNjQsZDA5R1JnQUJBQUFBQUFia0FBb0FBQUFBQ0pnQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUJQVXk4eUFBQUE5QUFBQUVZQUFBQmdoY2Q0RkdOdFlYQUFBQUU4QUFBQVFBQUFBRXdIeFAyWVoyeDVaZ0FBQVh3QUFBUHdBQUFGT0QyelY4NW9aV0ZrQUFBRmJBQUFBQzhBQUFBMktMbWtQV2hvWldFQUFBV2NBQUFBSGdBQUFDUUdVQUluYUcxMGVBQUFCYndBQUFBZ0FBQUFJQk44QWNGc2IyTmhBQUFGM0FBQUFCSUFBQUFTQldZRUhtMWhlSEFBQUFYd0FBQUFHQUFBQUNBQUN3QlpibUZ0WlFBQUJnZ0FBQUROQUFBQk9QTmZLcU53YjNOMEFBQUcyQUFBQUF3QUFBQWdBQU1BQUhqYVkyQm15bWVjd01ES3dNQTBpK25zUHhHR2ZoRE4rSWJ4RFlNeEl5Y0RFTEF4d0VFakF4SklLUzVMQjBycU1COWdadmdQNURNek1JS0VHUkVxL2dPRkFmTU5EYzRBQUhqYVkyQmdZR0pnWUdBR1loRWd5UWltV1Jnc2dEUVhBd2RRam9sQmh5R05vWno1d1AvL1FERWRobFNHVWhENy85WC9jLy8zLzNFSDY0QUNBR000RGxkNDJuMlV5NC9iVkJqRmZhNWZTZXpZVHVKSGtrbHN4MDdzaE5BNFQzdG1rckZUT3NOVW5VRXRMVEFxQWtaaWdWUVdMT2lvUzhSanhZWU5MQkFyMkxCbnk3b1NheFpJL0FNczJIZllJSFc0VGxvaEZRbnZQbi8yZDMvbm5Ic3ZBK2JoMVQ1enlUeGlUSVpKUkVFY1lSNG5OZ3hCaFNBR1laeWsrRjJXYWkzSGJYYTdYSy9ZVXlVV3dzelJDaUxRbVhhQWRISzJLRTlCeWlJL09XZm9RNWlqcTcvd054NHpBUlBUcVQ2ZFpXTm1ab2lUbUk3Vzg5RWpMR2lWeExPcGFaa0NYVGljbVhtZGpPQUh0QlQrV0JkQkVFZmFRWFc5TEpXbGFUTzllUHM5N3FaUnYvZEdjZ3o0dXkrUFA1dTJWejF2d1NIeXpabFNYdnpaTit3MEpUS3ZyU1hJZ2pMUStoejU2TTdIaDdxNkdBL3JCNGJDTlNEd2lwN1lMcXVMSlpjQmMzSVZrUS9Kcjh5YVljRG1aQXBFTHdoVENweURtUTVTWkt3dkJMRTFTMEh0eUlrVkNoa0djUkpFVUlpS1dXd0tJWDdZMXppdFdidys2ZThEWFNOZ29UcXFxblk3Ykh1a250cWtwcjZ1R29yNWlqOVlVWHlUOWpWYlZhdFZ1MVJvbnVkdGZQUDA4YTNLZXE3ZllBUGZka2xYQ0tVaUFYZGlmSHQ1eG5vaXp1N3ZoRUd2KzI4TGplRGFWNXhYUU80N21QSFZFL0lGOWYyVVlYcVVkR3JwS2xHbzRhWkZOU0IyWUZwNjdyVVFoRlNsRUk1STd2aGM5T2dyUHd6QytTWUJxbS9qZ3BEL1Jtdjh0QkQwUFU3d1RhR28xRnkvVU9Da2tvQmF0YldRai9YR1FiUS8zcEZSN1ZmUWNGWTFWQ1FCbGx6eDAvNHVVTFk4RUhNV3BTcmhmL3l0MFhWRTY4dDNqSkZpdEVHT3doMEJoSlQ0ZFdkT2lCazFCaUIrWTgrOS9ZSHY5WkNsR2lGRlpXd1pJMzdjdCt6ZEIxRWw0OG15eWVyUHRGNFNINzh3KzdUUU43aTVyT0IvQkJtQ1pWcWJUVGRDbUNlY3hDYng2L0t3dmJpM09tZFI3MUFGN3ZKRkJlMFdrYlc5NjhPZTNrQzlyTEx3REg2SWkydHZqdDd0M2VTd09tbStkZmUvd0hYbjFYT3Y0dnM4djVydTNsZ09KTEZ1ZEVDYXozTmlIY3ArUmdzVkNqWmNPYzlpL2h3c0QycTdFeFdFUWdRcUxjbS9lVUdhRFpveG5TRGEyQXdJNXhtYndpSTdiWVZqeStyZXVxZTNDMXF3b1M0TVNPQXBKNGZqMDJwM3JRMW1Sc1NUVW1rZ3NRMzNXV3gxcWVKbkw4WGdxcG9Mc25TYW5WSlg1R1JiTHg5d09INllHdDFjME5JK2NnK2txYnRWMUVyQzd3Nzl1NXpuVFF4Q2FsTHJUaTNvUHpCdkljMDJma3hNNmdjbVBWa1pEZDRmTEFNQ3ZUeHM2Wlc5UjYvdHdObnUyeEhOOG12OG5OOFdFUE96dGNqb3FVdjhnR3JOcFcvT25kV2hydEJ1dUwxUExITVRlckExaks1V3NlMHVxOWNQbTFuMTlvQlg2QTRsUTdPenNQRzUyZ0xMV1kxUFM0VEEwSXBBdTFvMlpJbWVIaGtYVDQ2T3VMWWFqcjgvSTlaTXBsZE9zYmpVWFFNb0dtcXhTaElueXU2MzVSSU5IN1dldTh3K2lTanlQeTNFckpkNDJtTmdaR0JnQU9JWjZXb3o0L2x0dmpJd3N6Q0F3R1BIRFFzUTlIOTlabm1taTBBdUJ3TVRTQlFBSmxFS2ZBQjQybU5nWkdCZ1p2alBBQ1Q5R1BUK1gyQ1dad0NLb0FBT0FGUXpBMzBBQUFMR0FBQUJXd0J6QWlzQVJRSTZBRXNDc3dBd0Fra0FNQU5PQURBQ3JBQXVBQUFBQUFBcUFJQUE1Z0ZjQWJvQ1FnS2NBQUI0Mm1OZ1pHQmc0R0NJWUdCaUFBRkdCalFBQUFudUFHVjQyazJNUFcvQ01CUkZUOVFFcVdGZ1FSMFlXZytkcmFBZ3NYVmhZR0psNmdMWVJSbHNJeWRFUXFvNjluZjNZVHowRFZmbmZ0aEF6UThGOXl1WUpiMWZTU1h1d1JWVDVwa240dDR5MXl4NDU0bWlmSmJrbFkvTXBUU2ZtU3RlK01vOGtmdzdjODJLMzAxd2wrdGdvOW9GWTZNL09kZXQ5emIyWGZCcXFadmt0OWJiZUJpc1VjZWJNbVBYajJlbld0M29sZzBCeDRVckE1YUlZaWVKU2V3NVNlZm9XTE5QU1M4Y0pGY3MwVFQvK3EzMFBtME82U2NqbXlNM1VjTW9pMTcwTEZ0Rm0xNXEyai9Mb1MvM0FBQUFlTnBqWUdiQUN3QUFmUUFFKSBmb3JtYXQoJ3dvZmYnKTt9CkBmb250LWZhY2V7Zm9udC1mYW1pbHk6Y21taTEwO3NyYzp1cmwoZGF0YTphcHBsaWNhdGlvbi94LWZvbnQtd29mZjtiYXNlNjQsZDA5R1JnQUJBQUFBQUFWc0FBb0FBQUFBQmtRQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUJQVXk4eUFBQUE5QUFBQUVRQUFBQmdoVngxQm1OdFlYQUFBQUU0QUFBQU1nQUFBRHdBV3dDZVoyeDVaZ0FBQVd3QUFBS1ZBQUFEQUZ4VWoxTm9aV0ZrQUFBRUJBQUFBQzhBQUFBMktLcWxBMmhvWldFQUFBUTBBQUFBSGdBQUFDUUdOd0hlYUcxMGVBQUFCRlFBQUFBVUFBQUFGQTVOQUtsc2IyTmhBQUFFYUFBQUFBd0FBQUFNQVdJQ01HMWhlSEFBQUFSMEFBQUFHQUFBQUNBQUNRQk1ibUZ0WlFBQUJJd0FBQURTQUFBQlBwa1JkY1Z3YjNOMEFBQUZZQUFBQUF3QUFBQWdBQU1BQUhqYVkyQm11c000Z1lHVmdZRnBGdFBaZnlJTS9TQ2E4UTNqR3daalJrNEdJR0JqZ0FOR0JpU1FVbHlXRHBSMFpIQmxadmdQNURORHBKSFUvQWNLQXdEMWFBMVNlTnBqWUdCZ1ltQmdZQVppRVNESkNLWlpHRFNBTkJ1UVpnVEtPak80L3Y4UDVEdUM2UDhIL3U4SHF3SUNBSkRFQ1BNQUFIamFQWkxQVHhOQkdJYm5uZG1kb2UxMnQ3QmxGNlFzZ2RJdVA5SkMyckpMTWJZcVVMRkVRSm9RWWhwUkV5RWgwVVJGOE9DaEI0d3gwWU14SVRFZXZIalRpeWRqNHNrVGY0QWVOVEdlaURFY1BSaGFaNGs2YzVtOE00Zm5mYjRobEF5Mld2UWIvVUxHU0k0UUg1NmZzMnd6YnVVOWk0OUJ1R20zNE5tVzU0K2hYL0M0Wlh1MkRwa0hjYjRFUDgvZTRUcVBSemxLVnFZVG1yclZhRk1SalpnRkZoTE4xa0kwWVVZWm91ckdxZ1l0TkZCNi9xTi9tNjdFRURLT0dwYkJlZ1VZQTIwekJLRFo2N083OGNFWXFLSHpJQTRiSE1sOUxCTzVHQmx0SFRGT1B4Q0hqSkJKU1dvV2tpNlhiUDBPT25VSUJ6WTN3RVUvUCtZMUF6Z3Y3U2JUWExCL1p5WWY1Rjg5NlhGN0RRT3I5V3VzVVp1dmdaNkxYYmpiZkpiUTlTbm41ZDdhRmtWMmVyZlBWRzgrcm05VE9qNzNzYUlBK2hJdHRsT1dFS0FYcDZvYlJuaWhPSDlXTHlsQkE1aVlaYmNyZ3pNVVJ2ZlJhN2F6a0ZwaXplOGRQRXdJU0w1MXdDTDBVOEFNcGlNcGpaWlJTTHVTT1FDMkhmaFNiMERZQjBjV2tIa1dydWNIMjdJdDI1ZDFXUGcwNCtHUUNvcVZ4ZGtINDVVZWJrRzVmMzVvelN0a3VCSVNLc3RVaG05TjMzdkJXSzFRdmJOYkd4N2ljem8wdXQvOHJVdG1ZYVF2YlFMVGs2dHJYZlhNOWxXS2daRnN2U3NDVU8zRzJWUWViSy94YUt0YVdHYktZRXBmMUNrakFic3JuY2ZvZTFJbEpDWEJrbi9sK21ZWldSekw5eXdEOFhTWlRuaHBJVjBieU10cno3SUZUMDhVZk0vOXI5M09sZVhmOG5KOW9KOHZLMXJzNkdldklZV3JENlhjVk5HSVViVkRZL0VFb05BejlhZFMvNmtyTXhOUlp1T2swc1ZDMG54cGZUYVl3NXNkejhpTm9KUGk4S3VtTW9kTC9RNTEya1ZVS0hJNkNKbHZFMHJZVEp3b1RRQ3g3bC9JRkUxRURxVkNSWXdLc3dmTkF6a1laSFZ2TTZMd1A0Rm9mVFlBQUFCNDJtTmdaR0JnQUdJakZVdmxlSDZicnd6TUxBd2c4Tmh4d3dJRS9mOGxzd0RUWFNDWGc0RUpKQW9BQWs4S0p3QjQybU5nWkdCZ1p2alBBQ1E1R0ZUK1gyQVdZQUNLb0FCV0FFdFhBeHNBQUFKMkFBQURBQUFrQXdnQUt3TGJBRE1DOUFBbkFBQUFBQUJVQUxBQkRnR0FlTnBqWUdSZ1lHQmw4R1pnWmdBQlJnWTBBQUFJYndCV2VOcE5qckZxd3pBUWhqOVR4MUNuMEtrZE9oUk5HWVdOK3dDQkRKbXlaaXdra1FnT1NBcXlZOGdTK2dCOTZGNFVEVDNCOGQxM3Y0U0FtaHNGOXlwNFRmMWVKWlZNRDU0eDV5MXpKVWRscnZsZ3dSTkYrU3ptazJYbWtoZStNODk0NTVTNUV2K1R1ZWFMMzFWdzU4dG9vOW9FWTZNL09OZTN6ZGJHb1E5ZXRicDVpTFgxTnU1R2E5VCtxc3pVRDlQUnFVNDN1bU5Gd0hIbXdvZ2x5czgyWWt4aXowRjJqcDZXaG0xeWcweEJOa3FjRnZzL3NaYUVUNmxkZXMxSWFzOVZ1bUdTekNEOUtHbEZsKzVxdWovZjlEQzdBQUI0Mm1OZ1pzQUxBQUI5QUFRPSkgZm9ybWF0KCd3b2ZmJyk7fQp0ZXh0LmYwIHtmb250LWZhbWlseTpjbXN5MTA7Zm9udC1zaXplOjkuOTYyNjRweH0KdGV4dC5mMSB7Zm9udC1mYW1pbHk6Y21taTEwO2ZvbnQtc2l6ZTo5Ljk2MjY0cHh9CnRleHQuZjIge2ZvbnQtZmFtaWx5OmNtbWk3O2ZvbnQtc2l6ZTo2Ljk3Mzg0OHB4fQp0ZXh0LmYzIHtmb250LWZhbWlseTpjbXI3O2ZvbnQtc2l6ZTo2Ljk3Mzg0OHB4fQp0ZXh0LmY0IHtmb250LWZhbWlseTpjbXI1O2ZvbnQtc2l6ZTo0Ljk4MTMycHh9Cl1dPgo8L3N0eWxlPgo8ZyBpZD0ncGFnZTEnPgo8ZyBzdHJva2UtbWl0ZXJsaW1pdD0nMTAnIHRyYW5zZm9ybT0ndHJhbnNsYXRlKC0zLjEwMTcxMSwtNTYuODQ0Mzkpc2NhbGUoMC45OTYyNjQsLTAuOTk2MjY0KSc+CjxnIGZpbGw9JyMwMDAnIHN0cm9rZT0nIzAwMCc+CjxnIHN0cm9rZS13aWR0aD0nMC40Jz4KPGcgc3Ryb2tlLXdpZHRoPScwLjUnPgo8ZyB0cmFuc2Zvcm09J3RyYW5zbGF0ZSgtMTMuNjExMDgsLTIuNSknPgo8ZyBzdHJva2U9J25vbmUnIHRyYW5zZm9ybT0nc2NhbGUoLTEuMDAzNzUsMS4wMDM3NSl0cmFuc2xhdGUoLTMuMTAxNzExLC01Ni44NDQzOSlzY2FsZSgtMSwtMSknPgo8ZyBmaWxsPScjMDAwJz4KPGcgc3Ryb2tlPSdub25lJz4KPHRleHQgY2xhc3M9J2YxJyB4PSctMy4xMDE3MTEnIHk9Jy01Ni44NDQzOSc+QTwvdGV4dD4KPHRleHQgY2xhc3M9J2YwJyB4PSc2LjU4NDE1NCcgeT0nLTU2Ljg0NDM5Jz7DlzwvdGV4dD4KPHRleHQgY2xhc3M9J2YxJyB4PScxNi41NDY3NjgnIHk9Jy01Ni44NDQzOSc+QTwvdGV4dD4KPC9nPgo8L2c+CjwvZz4KPC9nPgo8ZyB0cmFuc2Zvcm09J3RyYW5zbGF0ZSg1Mi44NjIxLC0yLjUpJz4KPGcgc3Ryb2tlPSdub25lJyB0cmFuc2Zvcm09J3NjYWxlKC0xLjAwMzc1LDEuMDAzNzUpdHJhbnNsYXRlKC0zLjEwMTcxMSwtNTYuODQ0Mzkpc2NhbGUoLTEsLTEpJz4KPGcgZmlsbD0nIzAwMCc+CjxnIHN0cm9rZT0nbm9uZSc+Cjx0ZXh0IGNsYXNzPSdmMScgeD0nLTMuMTAxNzExJyB5PSctNTYuODQ0MzknPkI8L3RleHQ+CjwvZz4KPC9nPgo8L2c+CjwvZz4KPGcgdHJhbnNmb3JtPSd0cmFuc2xhdGUoLTYwLjg4NDY2LC0yLjUpJz4KPGcgc3Ryb2tlPSdub25lJyB0cmFuc2Zvcm09J3NjYWxlKC0xLjAwMzc1LDEuMDAzNzUpdHJhbnNsYXRlKC0zLjEwMTcxMSwtNTYuODQ0Mzkpc2NhbGUoLTEsLTEpJz4KPGcgZmlsbD0nIzAwMCc+CjxnIHN0cm9rZT0nbm9uZSc+Cjx0ZXh0IGNsYXNzPSdmMScgeD0nLTMuMTAxNzExJyB5PSctNTYuODQ0MzknPkU8L3RleHQ+CjwvZz4KPC9nPgo8L2c+CjwvZz4KPGcgdHJhbnNmb3JtPSd0cmFuc2xhdGUoLTYwLjgzNjc1LC01OS40MDU1KSc+CjxnIHN0cm9rZT0nbm9uZScgdHJhbnNmb3JtPSdzY2FsZSgtMS4wMDM3NSwxLjAwMzc1KXRyYW5zbGF0ZSgtMy4xMDE3MTEsLTU2Ljg0NDM5KXNjYWxlKC0xLC0xKSc+CjxnIGZpbGw9JyMwMDAnPgo8ZyBzdHJva2U9J25vbmUnPgo8dGV4dCBjbGFzcz0nZjEnIHg9Jy0zLjEwMTcxMScgeT0nLTU2Ljg0NDM5Jz5DPC90ZXh0Pgo8L2c+CjwvZz4KPC9nPgo8L2c+CjxwYXRoIGQ9J00xOC4xNjY2MyAzLjYxNjYySDQ3LjgwNjU2JyBmaWxsPSdub25lJy8+CjxnIHRyYW5zZm9ybT0ndHJhbnNsYXRlKDQ4LjA1NjU2LDMuNjE2NjIpJz4KPGcgc3Ryb2tlLWRhc2hhcnJheT0nbm9uZScgc3Ryb2tlLWRhc2hvZmZzZXQ9JzAuMCc+CiA8ZyBzdHJva2UtbGluZWNhcD0ncm91bmQnPgogPGcgc3Ryb2tlLWxpbmVqb2luPSdyb3VuZCc+CiA8cGF0aCBkPSdNLTIuMiAyLjU4MDYzQy0xLjc5ODA3IDEuMDMyMjMtLjkwMjQgLjMwMTA3IDAgMEMtLjkwMjQtLjMwMTA3LTEuNzk4MDctMS4wMzIyMy0yLjItMi41ODA2MycgZmlsbD0nbm9uZScvPgogPC9nPgogPC9nPgogPC9nPgo8L2c+CjxnIHRyYW5zZm9ybT0ndHJhbnNsYXRlKDI2LjYwNDk4LDcuNzg5NTQpJz4KPGcgc3Ryb2tlPSdub25lJyB0cmFuc2Zvcm09J3NjYWxlKC0xLjAwMzc1LDEuMDAzNzUpdHJhbnNsYXRlKC0zLjEwMTcxMSwtNTYuODQ0Mzkpc2NhbGUoLTEsLTEpJz4KPGcgZmlsbD0nIzAwMCc+CjxnIHN0cm9rZT0nbm9uZSc+Cjx0ZXh0IGNsYXNzPSdmMicgeD0nLTMuMTAxNzExJyB5PSctNTYuODQ0MzknPmY8dHNwYW4geD0nMS41NjQ4NzMnPs+APC90c3Bhbj48L3RleHQ+Cjx0ZXh0IGNsYXNzPSdmNCcgeD0nNi4yMjM3MTgnIHk9Jy01NS44NDgxMjYnPjE8L3RleHQ+CjwvZz4KPC9nPgo8L2c+CjwvZz4KPHBhdGggZD0nTTE4LjE2NjYzLTMuNjE2NjJINDcuODA2NTYnIGZpbGw9J25vbmUnLz4KPGcgdHJhbnNmb3JtPSd0cmFuc2xhdGUoNDguMDU2NTYsLTMuNjE2NjIpJz4KPGcgc3Ryb2tlLWRhc2hhcnJheT0nbm9uZScgc3Ryb2tlLWRhc2hvZmZzZXQ9JzAuMCc+CiA8ZyBzdHJva2UtbGluZWNhcD0ncm91bmQnPgogPGcgc3Ryb2tlLWxpbmVqb2luPSdyb3VuZCc+CiA8cGF0aCBkPSdNLTIuMiAyLjU4MDYzQy0xLjc5ODA3IDEuMDMyMjMtLjkwMjQgLjMwMTA3IDAgMEMtLjkwMjQtLjMwMTA3LTEuNzk4MDctMS4wMzIyMy0yLjItMi41ODA2MycgZmlsbD0nbm9uZScvPgogPC9nPgogPC9nPgogPC9nPgo8L2c+CjxnIHRyYW5zZm9ybT0ndHJhbnNsYXRlKDI2LjYwNDk4LC0xMS4yODk1NCknPgo8ZyBzdHJva2U9J25vbmUnIHRyYW5zZm9ybT0nc2NhbGUoLTEuMDAzNzUsMS4wMDM3NSl0cmFuc2xhdGUoLTMuMTAxNzExLC01Ni44NDQzOSlzY2FsZSgtMSwtMSknPgo8ZyBmaWxsPScjMDAwJz4KPGcgc3Ryb2tlPSdub25lJz4KPHRleHQgY2xhc3M9J2YyJyB4PSctMy4xMDE3MTEnIHk9Jy01Ni44NDQzOSc+Zjx0c3BhbiB4PScxLjU2NDg3Myc+z4A8L3RzcGFuPjwvdGV4dD4KPHRleHQgY2xhc3M9J2Y0JyB4PSc2LjIyMzcxOCcgeT0nLTU1Ljg0ODEyNic+MjwvdGV4dD4KPC9nPgo8L2c+CjwvZz4KPC9nPgo8cGF0aCBkPSdNLTQ2LjE3MDggMEgtMTguNjY2NjMnIGZpbGw9J25vbmUnLz4KPGcgdHJhbnNmb3JtPSdtYXRyaXgoLTEuMCwwLjAsMC4wLC0xLjAsLTQ1LjkyMDgsMC4wKSc+CjxnIHN0cm9rZS1kYXNoYXJyYXk9J25vbmUnIHN0cm9rZS1kYXNob2Zmc2V0PScwLjAnPgogPGcgc3Ryb2tlLWxpbmVjYXA9J3JvdW5kJz4KIDxnIHN0cm9rZS1saW5lam9pbj0ncm91bmQnPgogPHBhdGggZD0nTTIuMiAyLjU4MDYzQzEuNzk4MDcgMS4wMzIyMyAuOTAyNCAuMzAxMDcgMCAwQy45MDI0LS4zMDEwNyAxLjc5ODA3LTEuMDMyMjMgMi4yLTIuNTgwNjMnIGZpbGw9J25vbmUnLz4KIDwvZz4KIDwvZz4KIDwvZz4KPC9nPgo8ZyB0cmFuc2Zvcm09J3RyYW5zbGF0ZSgtMTguNDE2NjMsMC4wKSc+CjxnIHN0cm9rZS1kYXNoYXJyYXk9J25vbmUnIHN0cm9rZS1kYXNob2Zmc2V0PScwLjAnPgogPGcgc3Ryb2tlLWxpbmVjYXA9J3JvdW5kJz4KIDxnIHN0cm9rZS1saW5lam9pbj0ncm91bmQnPgogPHBhdGggZD0nTS0yLjIgMi41ODA2M0MtMS43OTgwNyAxLjAzMjIzLS45MDI0IC4zMDEwNyAwIDBDLS45MDI0LS4zMDEwNy0xLjc5ODA3LTEuMDMyMjMtMi4yLTIuNTgwNjMnIGZpbGw9J25vbmUnLz4KIDwvZz4KIDwvZz4KIDwvZz4KPC9nPgo8ZyB0cmFuc2Zvcm09J3RyYW5zbGF0ZSgtMzUuMTY1NzcsMi44MTE4MSknPgo8ZyBzdHJva2U9J25vbmUnIHRyYW5zZm9ybT0nc2NhbGUoLTEuMDAzNzUsMS4wMDM3NSl0cmFuc2xhdGUoLTMuMTAxNzExLC01Ni44NDQzOSlzY2FsZSgtMSwtMSknPgo8ZyBmaWxsPScjMDAwJz4KPGcgc3Ryb2tlPSdub25lJz4KPHRleHQgY2xhc3M9J2YyJyB4PSctMy4xMDE3MTEnIHk9Jy01Ni44NDQzOSc+ZTwvdGV4dD4KPC9nPgo8L2c+CjwvZz4KPC9nPgo8cGF0aCBkPSdNLTQ3LjExMDAyLTQ3LjEwN0wtNy41OTI0LTcuNTk2NTYnIGZpbGw9J25vbmUnLz4KPGcgdHJhbnNmb3JtPSdtYXRyaXgoLTAuNzA3MTUsLTAuNzA3MDMsMC43MDcwMywtMC43MDcxNSwtNDYuOTMzMjMsLTQ2LjkzMDI0KSc+CjxnIHN0cm9rZS1kYXNoYXJyYXk9J25vbmUnIHN0cm9rZS1kYXNob2Zmc2V0PScwLjAnPgogPGcgc3Ryb2tlLWxpbmVjYXA9J3JvdW5kJz4KIDxnIHN0cm9rZS1saW5lam9pbj0ncm91bmQnPgogPHBhdGggZD0nTTIuMiAyLjU4MDYzQzEuNzk4MDcgMS4wMzIyMyAuOTAyNCAuMzAxMDcgMCAwQy45MDI0LS4zMDEwNyAxLjc5ODA3LTEuMDMyMjMgMi4yLTIuNTgwNjMnIGZpbGw9J25vbmUnLz4KIDwvZz4KIDwvZz4KIDwvZz4KPC9nPgo8ZyB0cmFuc2Zvcm09J21hdHJpeCgwLjcwNzE1LDAuNzA3MDMsLTAuNzA3MDMsMC43MDcxNSwtNy40MTU2MiwtNy40MTk4KSc+CjxnIHN0cm9rZS1kYXNoYXJyYXk9J25vbmUnIHN0cm9rZS1kYXNob2Zmc2V0PScwLjAnPgogPGcgc3Ryb2tlLWxpbmVjYXA9J3JvdW5kJz4KIDxnIHN0cm9rZS1saW5lam9pbj0ncm91bmQnPgogPHBhdGggZD0nTS0yLjIgMi41ODA2M0MtMS43OTgwNyAxLjAzMjIzLS45MDI0IC4zMDEwNyAwIDBDLS45MDI0LS4zMDEwNy0xLjc5ODA3LTEuMDMyMjMtMi4yLTIuNTgwNjMnIGZpbGw9J25vbmUnLz4KIDwvZz4KIDwvZz4KIDwvZz4KPC9nPgo8ZyB0cmFuc2Zvcm09J3RyYW5zbGF0ZSgtMjQuNjg4NCwtMzYuMDE0NTcpJz4KPGcgc3Ryb2tlPSdub25lJyB0cmFuc2Zvcm09J3NjYWxlKC0xLjAwMzc1LDEuMDAzNzUpdHJhbnNsYXRlKC0zLjEwMTcxMSwtNTYuODQ0Mzkpc2NhbGUoLTEsLTEpJz4KPGcgZmlsbD0nIzAwMCc+CjxnIHN0cm9rZT0nbm9uZSc+Cjx0ZXh0IGNsYXNzPSdmMycgeD0nLTMuMTAxNzExJyB5PSctNTYuODQ0MzknPig8L3RleHQ+Cjx0ZXh0IGNsYXNzPSdmMicgeD0nLjAxMTYzMicgeT0nLTU2Ljg0NDM5Jz51LDx0c3BhbiB4PSc4LjQ0ODgwNCc+djwvdHNwYW4+PC90ZXh0Pgo8dGV4dCBjbGFzcz0nZjMnIHg9JzEyLjY4NDExMycgeT0nLTU2Ljg0NDM5Jz4pPC90ZXh0Pgo8L2c+CjwvZz4KPC9nPgo8L2c+CjxnIHN0cm9rZS1kYXNoYXJyYXk9JzMuMCwyLjAnIHN0cm9rZS1kYXNob2Zmc2V0PScwLjAnPgo8cGF0aCBkPSdNLTU2LjkwNTUtNDguNjYyNDZWLTYuOTA5NzMnIGZpbGw9J25vbmUnLz4KPGcgdHJhbnNmb3JtPSdtYXRyaXgoMC4wLDEuMCwtMS4wLDAuMCwtNTYuOTA1NSwtNi42NTk3MyknPgo8ZyBzdHJva2UtZGFzaGFycmF5PSdub25lJyBzdHJva2UtZGFzaG9mZnNldD0nMC4wJz4KIDxnIHN0cm9rZS1saW5lY2FwPSdyb3VuZCc+CiA8ZyBzdHJva2UtbGluZWpvaW49J3JvdW5kJz4KIDxwYXRoIGQ9J00tMi4yIDIuNTgwNjNDLTEuNzk4MDcgMS4wMzIyMy0uOTAyNCAuMzAxMDcgMCAwQy0uOTAyNC0uMzAxMDctMS43OTgwNy0xLjAzMjIzLTIuMi0yLjU4MDYzJyBmaWxsPSdub25lJy8+CiA8L2c+CiA8L2c+CiA8L2c+CjwvZz4KPGcgdHJhbnNmb3JtPSd0cmFuc2xhdGUoLTY2LjE0Mjc4LC0yOS4yODYxKSc+CjxnIHN0cm9rZT0nbm9uZScgdHJhbnNmb3JtPSdzY2FsZSgtMS4wMDM3NSwxLjAwMzc1KXRyYW5zbGF0ZSgtMy4xMDE3MTEsLTU2Ljg0NDM5KXNjYWxlKC0xLC0xKSc+CjxnIGZpbGw9JyMwMDAnPgo8ZyBzdHJva2U9J25vbmUnPgo8dGV4dCBjbGFzcz0nZjInIHg9Jy0zLjEwMTcxMScgeT0nLTU2Ljg0NDM5Jz53PC90ZXh0Pgo8L2c+CjwvZz4KPC9nPgo8L2c+CjwvZz4KPC9nPgo8L2c+CjwvZz4KPC9nPgo8L2c+Cjwvc3ZnPg==" /></fr:resource-content><fr:resource-source
+type="latex"
+part="preamble"><![CDATA[
+        
+  \RequirePackage {tikz}
+  \RequirePackage {amsmath}
+  \usetikzlibrary {backgrounds, intersections, calc, spath3, fit}
+
+  \definecolor {catccolor}{RGB}{255,244,138}
+  \tikzstyle {dot}=[circle, draw=black, fill=black, minimum size=1mm, inner sep=0mm]
+  \tikzstyle {catc}=[catccolor!60]
+  \tikzstyle {catd}=[orange!40]
+  \tikzstyle {cate}=[red!40]
+  \tikzstyle {catf}=[blue!10]
+  \tikzstyle {catg}=[green!25]
+
+
+  \tikzstyle {blue halo}=[fill=blue!10, opacity=0.7, rounded corners]
+  \tikzstyle {white halo}=[fill=white, opacity=0.7, rounded corners]
+
+  \NewDocumentCommand \CreateRect {D<>{} m m}{
+    \path 
+      coordinate (#1nw)
+      ++(#2,-#3) coordinate (#1se)
+      coordinate (#1sw) at (#1se -| #1nw)
+      coordinate (#1ne) at (#1nw -| #1se)
+    ;
+
+    \path [spath/save = #1north] (#1nw) to (#1ne);
+    \path [spath/save = #1west] (#1nw) to (#1sw);
+    \path [spath/save = #1east] (#1ne) to (#1se);
+    \path [spath/save = #1south] (#1sw) to (#1se);
+  }
+
+        
+   % appears to be necessary
+  \usepackage{tikz, tikz-cd, mathtools, amssymb, stmaryrd}
+  \usetikzlibrary{matrix,arrows}
+  \usetikzlibrary{backgrounds,fit,positioning,calc,shapes}
+  \usetikzlibrary{decorations.pathreplacing}
+  \usetikzlibrary{decorations.pathmorphing}
+  \usetikzlibrary{decorations.markings}
+
+  % basic settings
+  \tikzset{
+    diagram/.style = {
+      on grid,
+      node distance=2cm,
+      commutative diagrams/every diagram,
+      line width = .5pt,
+      every node/.append style = {
+        commutative diagrams/every cell,
+      },
+    },
+    morphism/.style = {
+      auto=left,
+      node font=\scriptsize,
+    },
+    phantom/.style = {
+      commutative diagrams/phantom,
+      node font=\scriptsize,
+      sloped,
+    },
+    between/.style args = {#1 and #2}{
+      at = ($(#1)!0.5!(#2)$)
+    },
+    desc/.style = {anchor=center,fill=white,inner sep=3pt},
+    offset/.style args = {#1} {commutative diagrams/shift right={#1}},
+    cross over/.style = {
+      commutative diagrams/crossing over
+    },
+    adjoint/.style = {
+      phantom,
+      every to/.append style = {
+        edge node = {node [sloped,allow upside down,auto=false] {$\dashv$}}
+      }
+    },
+  }
+
+  % pullback and pushout
+  \tikzset{
+    pullback/.style = {
+      append after command = {
+        \pgfextra{
+          \draw ($(\tikzlastnode) + (.2cm,-.5cm)$) -- ++(0.3cm,0) -- ++(0,0.3cm);
+        }
+      }
+    },
+    pushout/.style = {
+      append after command={
+        \pgfextra{
+          \draw ($(\tikzlastnode) + (-.2cm,.5cm)$) -- ++(-0.3cm,0) -- ++(0,-0.3cm);
+        }
+      }
+    },
+  }
+
+  % arrow styles
+  \tikzset{
+    exists/.style = {
+      densely dashed
+    },
+    embedding/.style = {
+      {right hook}->
+    },
+    into/.style = {
+      {right hook}->
+    },
+    cover/.style = {
+      -{Triangle[open]}
+    },
+    twocell/.style = {
+      double, -{implies}
+    }
+  }
+
+  \newlength{\dontworryaboutit} % no idea what it does
+
+  \tikzset{
+    inline diagram/.style = {
+      commutative diagrams/every diagram,
+      commutative diagrams/cramped,
+      line width = .5pt,
+      every node/.append style = {
+        commutative diagrams/every cell,
+        anchor = base,
+        inner sep = 0pt
+      },
+      every path/.append style = {
+        outer xsep = 2pt
+      }
+    }
+  }
+  
+  % macros for drawing commutative squares
+  % adapted from Jon Sterling's macros (https://git.sr.ht/~jonsterling/article-template/tree/main/item/local-tikz.sty)
+  \tikzset{
+    square/nw/.style = {},
+    square/ne/.style = {},
+    square/se/.style = {},
+    square/sw/.style = {},
+    square/north/.style = {->},
+    square/south/.style = {->},
+    square/west/.style = {->},
+    square/east/.style = {->},
+    square/north/node/.style = {above},
+    square/south/node/.style = {below},
+    square/west/node/.style = {left},
+    square/east/node/.style = {right},
+  }
+
+  \ExplSyntaxOn
+  \keys_define:nn { jon-tikz/diagram } {
+    nw .tl_set:N = \l_jon_tikz_diagram_nw,
+    sw .tl_set:N = \l_jon_tikz_diagram_sw,
+    ne .tl_set:N = \l_jon_tikz_diagram_ne,
+    se .tl_set:N = \l_jon_tikz_diagram_se,
+
+    width .tl_set:N = \l_jon_tikz_diagram_width,
+    height .tl_set:N = \l_jon_tikz_diagram_height,
+
+    north .tl_set:N = \l_jon_tikz_diagram_north,
+    south .tl_set:N = \l_jon_tikz_diagram_south,
+    west .tl_set:N = \l_jon_tikz_diagram_west,
+    east .tl_set:N = \l_jon_tikz_diagram_east,
+
+    nw/style .code:n = {\tikzset{square/nw/.style = {#1}}},
+    sw/style .code:n = {\tikzset{square/sw/.style = {#1}}},
+    ne/style .code:n = {\tikzset{square/ne/.style = {#1}}},
+    se/style .code:n = {\tikzset{square/se/.style = {#1}}},
+
+    north/style .code:n = {\tikzset{square/north/.style = {#1}}},
+    north/node/style .code:n = {\tikzset{square/north/node/.style = {#1}}},
+    south/style .code:n = {\tikzset{square/south/.style = {#1}}},
+    south/node/style .code:n = {\tikzset{square/south/node/.style = {#1}}},
+    west/style .code:n = {\tikzset{square/west/.style = {#1}}},
+    west/node/style .code:n = {\tikzset{square/west/node/.style = {#1}}},
+    east/style .code:n = {\tikzset{square/east/.style = {#1}}},
+    east/node/style .code:n = {\tikzset{square/east/node/.style = {#1}}},
+
+    draft .meta:n = {
+      nw = {nw},
+      sw = {sw},
+      se = {se},
+      ne = {ne},
+      north = {north},
+      south = {south},
+      west = {west},
+      east = {east},
+    }
+  }
+
+  \tl_set:Nn \l_jon_tikz_diagram_width { 2cm }
+  \tl_set:Nn \l_jon_tikz_diagram_height { 2cm }
+
+
+  \cs_new:Nn \__jon_tikz_render_square:nn {
+    \group_begin:
+    \keys_set:nn {jon-tikz/diagram} {#2} {
+      \node (#1nw) [square/nw] {$\l_jon_tikz_diagram_nw$};
+      \node (#1sw) [below = \l_jon_tikz_diagram_height~of~#1nw,square/sw] {$\l_jon_tikz_diagram_sw$};
+      \draw[morphism,square/west] (#1nw) to node [square/west/node] {$\l_jon_tikz_diagram_west$} (#1sw);
+
+      \node (#1ne) [right = \l_jon_tikz_diagram_width~of~#1nw,square/ne] {$\l_jon_tikz_diagram_ne$};
+      \node (#1se) [below = \l_jon_tikz_diagram_height~of~#1ne,square/se] {$\l_jon_tikz_diagram_se$};
+      \draw[morphism,square/north] (#1nw) to node [square/north/node] {$\l_jon_tikz_diagram_north$} (#1ne);
+      \draw[morphism,square/east] (#1ne) to node [square/east/node] {$\l_jon_tikz_diagram_east$} (#1se);
+      \draw[morphism,square/south] (#1sw) to node [square/south/node] {$\l_jon_tikz_diagram_south$} (#1se);
+    }
+    \group_end:
+  }
+
+  % the optional argument allows one to specify a prefix to positions
+  \NewDocumentCommand\SpliceDiagramSquare{O{}m}{
+    \__jon_tikz_render_square:nn {#1} {#2}
+  }
+
+  \NewDocumentCommand\DiagramSquare{O{}O{}m}{
+    \begin{tikzpicture}[diagram,#2,baseline=(#1sw.base)]
+      \__jon_tikz_render_square:nn {#1} {#3}
+    \end{tikzpicture}
+  }
+  \ExplSyntaxOff
+
+      ]]></fr:resource-source><fr:resource-source
+type="latex"
+part="body"><![CDATA[
+    \begin {tikzpicture}[diagram]
+      \node  (1) {$A \times  A$};
+      \node  (2) [right = of 1] {$B$};
+      \node  (3) [left = of 1] {$E$};
+      \node  (4) [below = of 3] {$C$};
+      \draw  [->,morphism,offset=-1.5] (1) to node {$f\pi _{1}$} (2);
+      \draw  [->,morphism,offset=1.5] (1) to node[swap] {$f\pi _{2}$} (2);
+      \draw  [>->,morphism] (3) to node {$e$} (1);
+      \draw  [>->,morphism] (4) to node[swap] {$(u,v)$} (1);
+      \draw  [->,morphism,exists] (4) to node {$w$} (3);
+    \end {tikzpicture}
+  ]]></fr:resource-source></fr:resource></fr:figure>
+    
+  
+  <fr:p>Thus, <fr:tex
+display="inline"><![CDATA[u = \pi _{1}(u,v) = \pi _{1}ew]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[v = \pi _{2}(u,v) = \pi _{2}ew]]></fr:tex>.
+    By assumption, <fr:tex
+display="inline"><![CDATA[\pi _{1}e = \pi _{2}e]]></fr:tex> so <fr:tex
+display="inline"><![CDATA[u = v]]></fr:tex>.</fr:p>
 </fr:mainmatter><fr:backmatter /></fr:tree>
     
   </fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>
