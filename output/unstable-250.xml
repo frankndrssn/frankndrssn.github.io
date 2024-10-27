@@ -7,19 +7,25 @@ show-heading="true"
 show-metadata="true"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>508</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>556</fr:anchor><fr:addr
 type="machine">#250</fr:addr><fr:route>unstable-250.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>25</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
-  It suffices to show the only if direction.
-  Suppose that <fr:tex
-display="inline"><![CDATA[A]]></fr:tex> is transitive.
-  Then observe that <fr:tex
-display="inline"><![CDATA[A = \bigcup  {\mathopen {}\{\alpha {^{+}}\colon \alpha  \in  A\}\mathclose {}}]]></fr:tex> is an ordinal by <fr:ref
-addr="set-001W"
-href="set-001W.xml"
-taxon="Lemma" /> and <fr:ref
-addr="set-0016"
-href="set-0016.xml"
-taxon="Lemma" />.
+  Suppose that there is some <fr:tex
+display="inline"><![CDATA[\beta  \in  \alpha ]]></fr:tex> such that <fr:tex
+display="inline"><![CDATA[\beta {^{+}} = \alpha ]]></fr:tex>.
+  In this case, we are done.
+  Suppose the contrary.
+  By <fr:ref
+addr="set-001Y"
+href="set-001Y.xml"
+taxon="Corollary" />, we have <fr:tex
+display="inline"><![CDATA[\alpha  \in  \beta {^{+}}]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[\alpha  = \beta {^{+}}]]></fr:tex> or <fr:tex
+display="inline"><![CDATA[\beta {^{+}} \in  \alpha ]]></fr:tex>.
+  The first case contradicts <fr:link
+type="local"
+href="set-0009.xml"
+addr="set-0009"
+title="Axiom of foundation">foundation</fr:link> and the second case contradicts the hypothesis, so they can be ruled out.
 </fr:mainmatter><fr:backmatter><fr:tree
 toc="false"
 numbered="false"
@@ -35,17 +41,24 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>509</fr:anchor><fr:addr
-type="user">set-001X</fr:addr><fr:route>set-001X.xml</fr:route><fr:title
-text="" /><fr:taxon>Corollary</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>25</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
-display="inline"><![CDATA[A]]></fr:tex> be a set of <fr:link
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>557</fr:anchor><fr:addr
+type="user">set-0020</fr:addr><fr:route>set-0020.xml</fr:route><fr:title
+text="" /><fr:taxon>Proposition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>25</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[\alpha ]]></fr:tex> be an <fr:link
 type="local"
 href="set-0011.xml"
 addr="set-0011"
-title="Ordinal">ordinals</fr:link>.
-  <fr:tex
-display="inline"><![CDATA[A]]></fr:tex> is an ordinal if and only if <fr:tex
-display="inline"><![CDATA[A]]></fr:tex> is transitive.</fr:p>
+title="Ordinal">ordinal</fr:link>.
+  Then <fr:tex
+display="inline"><![CDATA[\alpha ]]></fr:tex> is either a <fr:link
+type="local"
+href="set-001Z.xml"
+addr="set-001Z"
+title="Successor and limit ordinals">successor ordinal</fr:link> or a <fr:link
+type="local"
+href="set-001Z.xml"
+addr="set-001Z"
+title="Successor and limit ordinals">limit ordinal</fr:link>.</fr:p>
     
       
       <fr:tree
@@ -55,19 +68,25 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>453</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>460</fr:anchor><fr:addr
 type="machine">#250</fr:addr><fr:route>unstable-250.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>25</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
-  It suffices to show the only if direction.
-  Suppose that <fr:tex
-display="inline"><![CDATA[A]]></fr:tex> is transitive.
-  Then observe that <fr:tex
-display="inline"><![CDATA[A = \bigcup  {\mathopen {}\{\alpha {^{+}}\colon \alpha  \in  A\}\mathclose {}}]]></fr:tex> is an ordinal by <fr:ref
-addr="set-001W"
-href="set-001W.xml"
-taxon="Lemma" /> and <fr:ref
-addr="set-0016"
-href="set-0016.xml"
-taxon="Lemma" />.
+  Suppose that there is some <fr:tex
+display="inline"><![CDATA[\beta  \in  \alpha ]]></fr:tex> such that <fr:tex
+display="inline"><![CDATA[\beta {^{+}} = \alpha ]]></fr:tex>.
+  In this case, we are done.
+  Suppose the contrary.
+  By <fr:ref
+addr="set-001Y"
+href="set-001Y.xml"
+taxon="Corollary" />, we have <fr:tex
+display="inline"><![CDATA[\alpha  \in  \beta {^{+}}]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[\alpha  = \beta {^{+}}]]></fr:tex> or <fr:tex
+display="inline"><![CDATA[\beta {^{+}} \in  \alpha ]]></fr:tex>.
+  The first case contradicts <fr:link
+type="local"
+href="set-0009.xml"
+addr="set-0009"
+title="Axiom of foundation">foundation</fr:link> and the second case contradicts the hypothesis, so they can be ruled out.
 </fr:mainmatter><fr:backmatter /></fr:tree>
     
   </fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

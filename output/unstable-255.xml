@@ -7,34 +7,21 @@ show-heading="true"
 show-metadata="true"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>547</fr:anchor><fr:addr
-type="machine">#255</fr:addr><fr:route>unstable-255.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>24</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
-  <fr:p>(1) implies (2): Let <fr:tex
-display="inline"><![CDATA[X]]></fr:tex> be a set.
-    Consider the set <fr:tex
-display="inline"><![CDATA[W := {\mathopen {}\{R \subseteq  X \times  X\colon \text {$R$ well orders $\mathsf {supp}(R)$}\}\mathclose {}}]]></fr:tex>.
-    We define a partial order <fr:tex
-display="inline"><![CDATA[\sqsubseteq ]]></fr:tex> by <fr:tex
-display="inline"><![CDATA[R \sqsubseteq  R']]></fr:tex> if and only if <fr:tex
-display="inline"><![CDATA[R \subseteq  R']]></fr:tex> and for all <fr:tex
-display="inline"><![CDATA[x \in  \mathsf {supp}(R)]]></fr:tex> and <fr:tex
-display="inline"><![CDATA[y \in  \mathsf {supp}(R') \setminus  \mathsf {supp}(R)]]></fr:tex>, <fr:tex
-display="inline"><![CDATA[(x,y) \in  R']]></fr:tex>.
-    For any <fr:tex
-display="inline"><![CDATA[\sqsubseteq ]]></fr:tex>-chain <fr:tex
-display="inline"><![CDATA[C]]></fr:tex>, note that <fr:tex
-display="inline"><![CDATA[\bigcup  C]]></fr:tex> is an upper bound.
-    Then, the maximal element is what we seek.</fr:p>
-  <fr:p>(2) implies (3): Let <fr:tex
-display="inline"><![CDATA[F]]></fr:tex> be a family of non-empty sets.
-    Since every set can be well-ordered, we define the required choice function <fr:tex
-display="inline"><![CDATA[c\colon F\to \bigcup  F]]></fr:tex> by mapping each <fr:tex
-display="inline"><![CDATA[A \in  F]]></fr:tex> to its minimum element.</fr:p>
-  <fr:p>(3) implies (1): <fr:link
-type="local"
-href="todo.xml"
-addr="todo"
-title="TODO">TODO</fr:link></fr:p>
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>566</fr:anchor><fr:addr
+type="machine">#255</fr:addr><fr:route>unstable-255.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>25</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
+  Let <fr:tex
+display="inline"><![CDATA[f\colon A\to B]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[g\colon B\to A]]></fr:tex> be injections.
+  Consider the composite
+  <fr:tex
+display="block"><![CDATA[     \varphi  := \mathcal {P}(A) \xrightarrow {f_{!}} \mathcal {P}(B) \xrightarrow {\lnot _{B}} \mathcal {P}(B) \xrightarrow {g_{!}} \mathcal {P}(A) \xrightarrow {\lnot _{A}} \mathcal {P}(A)   ]]></fr:tex>
+  By Knaster-Tarski fixed-point theorem, <fr:tex
+display="inline"><![CDATA[\varphi ]]></fr:tex> has a fixed point <fr:tex
+display="inline"><![CDATA[C]]></fr:tex>.
+  Now define
+  <fr:tex
+display="block"><![CDATA[     h(a) =     \begin {cases}       f(a) & \text {if $a \in  C$,}\\       g^{-1}(a) & \text {otherwise.}     \end {cases}   ]]></fr:tex>
+  This is the required bijection.
 </fr:mainmatter><fr:backmatter><fr:tree
 toc="false"
 numbered="false"
@@ -50,23 +37,16 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>548</fr:anchor><fr:addr
-type="user">set-001N</fr:addr><fr:route>set-001N.xml</fr:route><fr:title
-text="" /><fr:taxon>Proposition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>24</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>The following statements are equivalent.</fr:p><fr:ol><fr:li><fr:link
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>567</fr:anchor><fr:addr
+type="user">set-001R</fr:addr><fr:route>set-001R.xml</fr:route><fr:title
+text="Cantor-Schröder-Bernstein">Cantor-Schröder-Bernstein</fr:title><fr:taxon>Theorem</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>25</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>If <fr:tex
+display="inline"><![CDATA[A]]></fr:tex> is <fr:link
 type="local"
-href="set-001L.xml"
-addr="set-001L"
-title="Zorn's lemma">Zorn's lemma</fr:link>.</fr:li>
-  <fr:li><fr:link
-type="local"
-href="set-001K.xml"
-addr="set-001K"
-title="Well-ordering principle">Well-ordering principle</fr:link>.</fr:li>
-  <fr:li><fr:link
-type="local"
-href="set-001H.xml"
-addr="set-001H"
-title="Axiom of choice">AC</fr:link>.</fr:li></fr:ol>
+href="set-001P.xml"
+addr="set-001P"
+title="Equinumerosity">at least as numerous as</fr:link> <fr:tex
+display="inline"><![CDATA[B]]></fr:tex> and vice-versa, then <fr:tex
+display="inline"><![CDATA[A \approx  B]]></fr:tex>.</fr:p>
     
       
       <fr:tree
@@ -76,34 +56,21 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>436</fr:anchor><fr:addr
-type="machine">#255</fr:addr><fr:route>unstable-255.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>24</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
-  <fr:p>(1) implies (2): Let <fr:tex
-display="inline"><![CDATA[X]]></fr:tex> be a set.
-    Consider the set <fr:tex
-display="inline"><![CDATA[W := {\mathopen {}\{R \subseteq  X \times  X\colon \text {$R$ well orders $\mathsf {supp}(R)$}\}\mathclose {}}]]></fr:tex>.
-    We define a partial order <fr:tex
-display="inline"><![CDATA[\sqsubseteq ]]></fr:tex> by <fr:tex
-display="inline"><![CDATA[R \sqsubseteq  R']]></fr:tex> if and only if <fr:tex
-display="inline"><![CDATA[R \subseteq  R']]></fr:tex> and for all <fr:tex
-display="inline"><![CDATA[x \in  \mathsf {supp}(R)]]></fr:tex> and <fr:tex
-display="inline"><![CDATA[y \in  \mathsf {supp}(R') \setminus  \mathsf {supp}(R)]]></fr:tex>, <fr:tex
-display="inline"><![CDATA[(x,y) \in  R']]></fr:tex>.
-    For any <fr:tex
-display="inline"><![CDATA[\sqsubseteq ]]></fr:tex>-chain <fr:tex
-display="inline"><![CDATA[C]]></fr:tex>, note that <fr:tex
-display="inline"><![CDATA[\bigcup  C]]></fr:tex> is an upper bound.
-    Then, the maximal element is what we seek.</fr:p>
-  <fr:p>(2) implies (3): Let <fr:tex
-display="inline"><![CDATA[F]]></fr:tex> be a family of non-empty sets.
-    Since every set can be well-ordered, we define the required choice function <fr:tex
-display="inline"><![CDATA[c\colon F\to \bigcup  F]]></fr:tex> by mapping each <fr:tex
-display="inline"><![CDATA[A \in  F]]></fr:tex> to its minimum element.</fr:p>
-  <fr:p>(3) implies (1): <fr:link
-type="local"
-href="todo.xml"
-addr="todo"
-title="TODO">TODO</fr:link></fr:p>
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>445</fr:anchor><fr:addr
+type="machine">#255</fr:addr><fr:route>unstable-255.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>25</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
+  Let <fr:tex
+display="inline"><![CDATA[f\colon A\to B]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[g\colon B\to A]]></fr:tex> be injections.
+  Consider the composite
+  <fr:tex
+display="block"><![CDATA[     \varphi  := \mathcal {P}(A) \xrightarrow {f_{!}} \mathcal {P}(B) \xrightarrow {\lnot _{B}} \mathcal {P}(B) \xrightarrow {g_{!}} \mathcal {P}(A) \xrightarrow {\lnot _{A}} \mathcal {P}(A)   ]]></fr:tex>
+  By Knaster-Tarski fixed-point theorem, <fr:tex
+display="inline"><![CDATA[\varphi ]]></fr:tex> has a fixed point <fr:tex
+display="inline"><![CDATA[C]]></fr:tex>.
+  Now define
+  <fr:tex
+display="block"><![CDATA[     h(a) =     \begin {cases}       f(a) & \text {if $a \in  C$,}\\       g^{-1}(a) & \text {otherwise.}     \end {cases}   ]]></fr:tex>
+  This is the required bijection.
 </fr:mainmatter><fr:backmatter /></fr:tree>
     
   </fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

@@ -7,21 +7,9 @@ show-heading="true"
 show-metadata="true"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>514</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>562</fr:anchor><fr:addr
 type="machine">#253</fr:addr><fr:route>unstable-253.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>25</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
-  Let <fr:tex
-display="inline"><![CDATA[f\colon A\to B]]></fr:tex> and <fr:tex
-display="inline"><![CDATA[g\colon B\to A]]></fr:tex> be injections.
-  Consider the composite
-  <fr:tex
-display="block"><![CDATA[     \varphi  := \mathcal {P}(A) \xrightarrow {f_{!}} \mathcal {P}(B) \xrightarrow {\lnot _{B}} \mathcal {P}(B) \xrightarrow {g_{!}} \mathcal {P}(A) \xrightarrow {\lnot _{A}} \mathcal {P}(A)   ]]></fr:tex>
-  By Knaster-Tarski fixed-point theorem, <fr:tex
-display="inline"><![CDATA[\varphi ]]></fr:tex> has a fixed point <fr:tex
-display="inline"><![CDATA[C]]></fr:tex>.
-  Now define
-  <fr:tex
-display="block"><![CDATA[     h(a) =     \begin {cases}       f(a) & \text {if $a \in  C$,}\\       g^{-1}(a) & \text {otherwise.}     \end {cases}   ]]></fr:tex>
-  This is the required bijection.
+  By inspection.
 </fr:mainmatter><fr:backmatter><fr:tree
 toc="false"
 numbered="false"
@@ -37,16 +25,16 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>515</fr:anchor><fr:addr
-type="user">set-001R</fr:addr><fr:route>set-001R.xml</fr:route><fr:title
-text="Cantor-Schröder-Bernstein">Cantor-Schröder-Bernstein</fr:title><fr:taxon>Theorem</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>25</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>If <fr:tex
-display="inline"><![CDATA[A]]></fr:tex> is <fr:link
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>563</fr:anchor><fr:addr
+type="user">set-001W</fr:addr><fr:route>set-001W.xml</fr:route><fr:title
+text="" /><fr:taxon>Lemma</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>25</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[A]]></fr:tex> be a set of <fr:link
 type="local"
-href="set-001P.xml"
-addr="set-001P"
-title="Equinumerosity">at least as numerous as</fr:link> <fr:tex
-display="inline"><![CDATA[B]]></fr:tex> and vice-versa, then <fr:tex
-display="inline"><![CDATA[A \approx  B]]></fr:tex>.</fr:p>
+href="set-0011.xml"
+addr="set-0011"
+title="Ordinal">ordinals</fr:link>.
+  Then <fr:tex
+display="inline"><![CDATA[\bigcup  A]]></fr:tex> is an ordinal.</fr:p>
     
       
       <fr:tree
@@ -56,21 +44,9 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>443</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>453</fr:anchor><fr:addr
 type="machine">#253</fr:addr><fr:route>unstable-253.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>25</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
-  Let <fr:tex
-display="inline"><![CDATA[f\colon A\to B]]></fr:tex> and <fr:tex
-display="inline"><![CDATA[g\colon B\to A]]></fr:tex> be injections.
-  Consider the composite
-  <fr:tex
-display="block"><![CDATA[     \varphi  := \mathcal {P}(A) \xrightarrow {f_{!}} \mathcal {P}(B) \xrightarrow {\lnot _{B}} \mathcal {P}(B) \xrightarrow {g_{!}} \mathcal {P}(A) \xrightarrow {\lnot _{A}} \mathcal {P}(A)   ]]></fr:tex>
-  By Knaster-Tarski fixed-point theorem, <fr:tex
-display="inline"><![CDATA[\varphi ]]></fr:tex> has a fixed point <fr:tex
-display="inline"><![CDATA[C]]></fr:tex>.
-  Now define
-  <fr:tex
-display="block"><![CDATA[     h(a) =     \begin {cases}       f(a) & \text {if $a \in  C$,}\\       g^{-1}(a) & \text {otherwise.}     \end {cases}   ]]></fr:tex>
-  This is the required bijection.
+  By inspection.
 </fr:mainmatter><fr:backmatter /></fr:tree>
     
   </fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

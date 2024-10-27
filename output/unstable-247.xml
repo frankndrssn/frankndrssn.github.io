@@ -7,34 +7,34 @@ show-heading="true"
 show-metadata="true"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>473</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>515</fr:anchor><fr:addr
 type="machine">#247</fr:addr><fr:route>unstable-247.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>26</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
-  <fr:p>By the recursion scheme (<fr:ref
-addr="set-0010"
-href="set-0010.xml"
-taxon="Proposition" />), there is a function <fr:tex
-display="inline"><![CDATA[f]]></fr:tex> with domain <fr:tex
-display="inline"><![CDATA[X]]></fr:tex> satisfying the following <fr:link
-type="local"
-href="set-001V.xml"
-addr="set-001V"
-title="Definable mapping">definable mapping</fr:link>.
+  <fr:p>Consider the set <fr:tex
+display="inline"><![CDATA[\alpha  := {\mathopen {}\{\mathsf {Ord}(\mathsf {supp}(R),R)\colon R \in  W\}\mathclose {}}]]></fr:tex>, where <fr:tex
+display="inline"><![CDATA[W := {\mathopen {}\{R \subseteq  X \times  X\colon \text {$R$ well orders its support}\}\mathclose {}}]]></fr:tex>.
     <fr:tex
-display="block"><![CDATA[       F(x,f{\upharpoonright }x) =       \begin {cases}         \mathsf {ran}(f{\upharpoonright }x) & \text {if $f{\upharpoonright }x$ is a function,}\\         \varnothing  & \text {otherwise.}       \end {cases}     ]]></fr:tex>
-    We take <fr:tex
-display="inline"><![CDATA[\mathsf {ran}(f)]]></fr:tex> to be the underlying set of <fr:tex
-display="inline"><![CDATA[\mathsf {Ord}(X,<)]]></fr:tex>.
-    As an example, consider <fr:tex
-display="inline"><![CDATA[X = \mathbb {N}]]></fr:tex> equipped with the usual ordering <fr:tex
-display="inline"><![CDATA[<]]></fr:tex>.
-    In this case, <fr:tex
-display="inline"><![CDATA[f]]></fr:tex> is the usual von Neumann encoding of natural numbers: <fr:tex
-display="inline"><![CDATA[f(0) = \varnothing ]]></fr:tex>, <fr:tex
-display="inline"><![CDATA[f(1) = {\mathopen {}\{\varnothing \}\mathclose {}}]]></fr:tex>, <fr:tex
-display="inline"><![CDATA[f(2) = {\mathopen {}\{\varnothing , {\mathopen {}\{\varnothing \}\mathclose {}}\}\mathclose {}}]]></fr:tex>, and so on.</fr:p>
-  <fr:p>It is routine to verify that <fr:tex
-display="inline"><![CDATA[(\mathsf {ran}(f),\in )]]></fr:tex> is an ordinal and <fr:tex
-display="inline"><![CDATA[f]]></fr:tex> is an order isomorphism.</fr:p>
+display="inline"><![CDATA[\alpha ]]></fr:tex> is a set by <fr:link
+type="local"
+href="set-0008.xml"
+addr="set-0008"
+title="Axiom schema of replacement">replacement</fr:link>.
+    It is routine to check that <fr:tex
+display="inline"><![CDATA[\alpha ]]></fr:tex> is transitive, so by <fr:ref
+addr="set-001X"
+href="set-001X.xml"
+taxon="Corollary" />, <fr:tex
+display="inline"><![CDATA[\alpha ]]></fr:tex> is an ordinal.
+    Indeed, <fr:tex
+display="inline"><![CDATA[\alpha ]]></fr:tex> consists of ordinals <fr:tex
+display="inline"><![CDATA[\beta ]]></fr:tex> such that <fr:tex
+display="inline"><![CDATA[\beta  \preceq  X]]></fr:tex>.
+    Thus, if <fr:tex
+display="inline"><![CDATA[\alpha  \preceq  X]]></fr:tex>, then we have <fr:tex
+display="inline"><![CDATA[\alpha  \in  \alpha ]]></fr:tex>, contradicting <fr:link
+type="local"
+href="set-0009.xml"
+addr="set-0009"
+title="Axiom of foundation">foundation</fr:link>.</fr:p>
 </fr:mainmatter><fr:backmatter><fr:tree
 toc="false"
 numbered="false"
@@ -50,20 +50,16 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>474</fr:anchor><fr:addr
-type="user">set-0021</fr:addr><fr:route>set-0021.xml</fr:route><fr:title
-text="Ordinal numbers"><fr:link
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>516</fr:anchor><fr:addr
+type="user">set-0023</fr:addr><fr:route>set-0023.xml</fr:route><fr:title
+text="Hartog's theorem">Hartog's theorem</fr:title><fr:taxon>Theorem</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>26</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>For any set <fr:tex
+display="inline"><![CDATA[X]]></fr:tex>, there is an <fr:link
 type="local"
 href="set-0011.xml"
 addr="set-0011"
-title="Ordinal">Ordinal</fr:link> numbers</fr:title><fr:taxon>Theorem</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>26</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>For any strict <fr:link
-type="local"
-href="set-000Y.xml"
-addr="set-000Y"
-title="Well orders">well order</fr:link> <fr:tex
-display="inline"><![CDATA[(X,<)]]></fr:tex>, there is an ordinal <fr:tex
-display="inline"><![CDATA[\mathsf {Ord}(X,<)]]></fr:tex> that is order isomorphic to <fr:tex
-display="inline"><![CDATA[(X,<)]]></fr:tex>.</fr:p>
+title="Ordinal">ordinal</fr:link> <fr:tex
+display="inline"><![CDATA[\alpha ]]></fr:tex> such that <fr:tex
+display="inline"><![CDATA[\alpha  \npreceq  X]]></fr:tex>.</fr:p>
     
       
       <fr:tree
@@ -73,34 +69,34 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>346</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>466</fr:anchor><fr:addr
 type="machine">#247</fr:addr><fr:route>unstable-247.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>26</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
-  <fr:p>By the recursion scheme (<fr:ref
-addr="set-0010"
-href="set-0010.xml"
-taxon="Proposition" />), there is a function <fr:tex
-display="inline"><![CDATA[f]]></fr:tex> with domain <fr:tex
-display="inline"><![CDATA[X]]></fr:tex> satisfying the following <fr:link
-type="local"
-href="set-001V.xml"
-addr="set-001V"
-title="Definable mapping">definable mapping</fr:link>.
+  <fr:p>Consider the set <fr:tex
+display="inline"><![CDATA[\alpha  := {\mathopen {}\{\mathsf {Ord}(\mathsf {supp}(R),R)\colon R \in  W\}\mathclose {}}]]></fr:tex>, where <fr:tex
+display="inline"><![CDATA[W := {\mathopen {}\{R \subseteq  X \times  X\colon \text {$R$ well orders its support}\}\mathclose {}}]]></fr:tex>.
     <fr:tex
-display="block"><![CDATA[       F(x,f{\upharpoonright }x) =       \begin {cases}         \mathsf {ran}(f{\upharpoonright }x) & \text {if $f{\upharpoonright }x$ is a function,}\\         \varnothing  & \text {otherwise.}       \end {cases}     ]]></fr:tex>
-    We take <fr:tex
-display="inline"><![CDATA[\mathsf {ran}(f)]]></fr:tex> to be the underlying set of <fr:tex
-display="inline"><![CDATA[\mathsf {Ord}(X,<)]]></fr:tex>.
-    As an example, consider <fr:tex
-display="inline"><![CDATA[X = \mathbb {N}]]></fr:tex> equipped with the usual ordering <fr:tex
-display="inline"><![CDATA[<]]></fr:tex>.
-    In this case, <fr:tex
-display="inline"><![CDATA[f]]></fr:tex> is the usual von Neumann encoding of natural numbers: <fr:tex
-display="inline"><![CDATA[f(0) = \varnothing ]]></fr:tex>, <fr:tex
-display="inline"><![CDATA[f(1) = {\mathopen {}\{\varnothing \}\mathclose {}}]]></fr:tex>, <fr:tex
-display="inline"><![CDATA[f(2) = {\mathopen {}\{\varnothing , {\mathopen {}\{\varnothing \}\mathclose {}}\}\mathclose {}}]]></fr:tex>, and so on.</fr:p>
-  <fr:p>It is routine to verify that <fr:tex
-display="inline"><![CDATA[(\mathsf {ran}(f),\in )]]></fr:tex> is an ordinal and <fr:tex
-display="inline"><![CDATA[f]]></fr:tex> is an order isomorphism.</fr:p>
+display="inline"><![CDATA[\alpha ]]></fr:tex> is a set by <fr:link
+type="local"
+href="set-0008.xml"
+addr="set-0008"
+title="Axiom schema of replacement">replacement</fr:link>.
+    It is routine to check that <fr:tex
+display="inline"><![CDATA[\alpha ]]></fr:tex> is transitive, so by <fr:ref
+addr="set-001X"
+href="set-001X.xml"
+taxon="Corollary" />, <fr:tex
+display="inline"><![CDATA[\alpha ]]></fr:tex> is an ordinal.
+    Indeed, <fr:tex
+display="inline"><![CDATA[\alpha ]]></fr:tex> consists of ordinals <fr:tex
+display="inline"><![CDATA[\beta ]]></fr:tex> such that <fr:tex
+display="inline"><![CDATA[\beta  \preceq  X]]></fr:tex>.
+    Thus, if <fr:tex
+display="inline"><![CDATA[\alpha  \preceq  X]]></fr:tex>, then we have <fr:tex
+display="inline"><![CDATA[\alpha  \in  \alpha ]]></fr:tex>, contradicting <fr:link
+type="local"
+href="set-0009.xml"
+addr="set-0009"
+title="Axiom of foundation">foundation</fr:link>.</fr:p>
 </fr:mainmatter><fr:backmatter /></fr:tree>
     
   </fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

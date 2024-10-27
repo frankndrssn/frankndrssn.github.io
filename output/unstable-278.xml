@@ -7,29 +7,25 @@ show-heading="true"
 show-metadata="true"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>732</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>787</fr:anchor><fr:addr
 type="machine">#278</fr:addr><fr:route>unstable-278.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
-  Let <fr:tex
-display="inline"><![CDATA[P]]></fr:tex> be a set such that <fr:tex
-display="inline"><![CDATA[\forall a.\mkern 5mua \in  P \Leftrightarrow  a = x \vee  a = y]]></fr:tex>.
-  It suffices, by <fr:link
-type="local"
-href="set-0001.xml"
-addr="set-0001"
-title="Axiom of extensionality">extensionality</fr:link>, to show that <fr:tex
-display="inline"><![CDATA[\forall b.\mkern 5mub \in  {\mathopen {}\{x,y\}\mathclose {}} \Leftrightarrow  b \in  P]]></fr:tex>.
-
-  If <fr:tex
-display="inline"><![CDATA[b \in  {\mathopen {}\{x,y\}\mathclose {}}]]></fr:tex>, then by <fr:link
+  By <fr:ref
+addr="set-000H"
+href="set-000H.xml"
+taxon="Proposition" />, <fr:tex
+display="inline"><![CDATA[{\mathopen {}\{x\}\mathclose {}}]]></fr:tex> exists.
+  By <fr:link
 type="local"
 href="set-0003.xml"
 addr="set-0003"
 title="Axiom of pairing">pairing</fr:link>, <fr:tex
-display="inline"><![CDATA[b = x]]></fr:tex> or <fr:tex
-display="inline"><![CDATA[b = y]]></fr:tex>.
-  Thus, it follows that <fr:tex
-display="inline"><![CDATA[b \in  P]]></fr:tex>.
-  The converse is completely analogous.
+display="inline"><![CDATA[{\mathopen {}\{x,y\}\mathclose {}}]]></fr:tex> exists.
+  By <fr:link
+type="local"
+href="set-0003.xml"
+addr="set-0003"
+title="Axiom of pairing">pairing</fr:link> again, <fr:tex
+display="inline"><![CDATA[{\mathopen {}\{{\mathopen {}\{x\}\mathclose {}},{\mathopen {}\{x,y\}\mathclose {}}\}\mathclose {}}]]></fr:tex> exists.
 </fr:mainmatter><fr:backmatter><fr:tree
 toc="false"
 numbered="false"
@@ -45,12 +41,16 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>733</fr:anchor><fr:addr
-type="user">set-000G</fr:addr><fr:route>set-000G.xml</fr:route><fr:title
-text="Uniqueness of pairing">Uniqueness of pairing</fr:title><fr:taxon>Proposition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>788</fr:anchor><fr:addr
+type="user">set-000J</fr:addr><fr:route>set-000J.xml</fr:route><fr:title
+text="Existence of ordered pairs">Existence of <fr:link
+type="local"
+href="set-000I.xml"
+addr="set-000I"
+title="Ordered pairs">ordered pairs</fr:link></fr:title><fr:taxon>Proposition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
 display="inline"><![CDATA[x,y]]></fr:tex> be sets.
-  Then the set <fr:tex
-display="inline"><![CDATA[{\mathopen {}\{x,y\}\mathclose {}}]]></fr:tex> is unique.</fr:p>
+  The ordered pair <fr:tex
+display="inline"><![CDATA[(x,y)]]></fr:tex> exists.</fr:p>
     
       
       <fr:tree
@@ -60,29 +60,25 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>362</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>372</fr:anchor><fr:addr
 type="machine">#278</fr:addr><fr:route>unstable-278.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
-  Let <fr:tex
-display="inline"><![CDATA[P]]></fr:tex> be a set such that <fr:tex
-display="inline"><![CDATA[\forall a.\mkern 5mua \in  P \Leftrightarrow  a = x \vee  a = y]]></fr:tex>.
-  It suffices, by <fr:link
-type="local"
-href="set-0001.xml"
-addr="set-0001"
-title="Axiom of extensionality">extensionality</fr:link>, to show that <fr:tex
-display="inline"><![CDATA[\forall b.\mkern 5mub \in  {\mathopen {}\{x,y\}\mathclose {}} \Leftrightarrow  b \in  P]]></fr:tex>.
-
-  If <fr:tex
-display="inline"><![CDATA[b \in  {\mathopen {}\{x,y\}\mathclose {}}]]></fr:tex>, then by <fr:link
+  By <fr:ref
+addr="set-000H"
+href="set-000H.xml"
+taxon="Proposition" />, <fr:tex
+display="inline"><![CDATA[{\mathopen {}\{x\}\mathclose {}}]]></fr:tex> exists.
+  By <fr:link
 type="local"
 href="set-0003.xml"
 addr="set-0003"
 title="Axiom of pairing">pairing</fr:link>, <fr:tex
-display="inline"><![CDATA[b = x]]></fr:tex> or <fr:tex
-display="inline"><![CDATA[b = y]]></fr:tex>.
-  Thus, it follows that <fr:tex
-display="inline"><![CDATA[b \in  P]]></fr:tex>.
-  The converse is completely analogous.
+display="inline"><![CDATA[{\mathopen {}\{x,y\}\mathclose {}}]]></fr:tex> exists.
+  By <fr:link
+type="local"
+href="set-0003.xml"
+addr="set-0003"
+title="Axiom of pairing">pairing</fr:link> again, <fr:tex
+display="inline"><![CDATA[{\mathopen {}\{{\mathopen {}\{x\}\mathclose {}},{\mathopen {}\{x,y\}\mathclose {}}\}\mathclose {}}]]></fr:tex> exists.
 </fr:mainmatter><fr:backmatter /></fr:tree>
     
   </fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

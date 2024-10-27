@@ -7,35 +7,19 @@ show-heading="true"
 show-metadata="true"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>512</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>560</fr:anchor><fr:addr
 type="machine">#252</fr:addr><fr:route>unstable-252.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>25</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
-  <fr:p>We show that for every <fr:tex
-display="inline"><![CDATA[x \in  X]]></fr:tex>, every subset <fr:tex
-display="inline"><![CDATA[A \subseteq  X]]></fr:tex> such that <fr:tex
-display="inline"><![CDATA[x \in  A]]></fr:tex> has a minimum.
-    By <fr:tex
-display="inline"><![CDATA[<]]></fr:tex>-induction, it suffices to show that if every <fr:tex
-display="inline"><![CDATA[x' \in  \mathsf {IS}_{<}(x)]]></fr:tex> has this property then so does <fr:tex
-display="inline"><![CDATA[x]]></fr:tex>.
-    Fix a subset <fr:tex
-display="inline"><![CDATA[A \subseteq  X]]></fr:tex> such that <fr:tex
-display="inline"><![CDATA[x \in  A]]></fr:tex>.
-    If none of the <fr:tex
-display="inline"><![CDATA[x' \in  \mathsf {IS}_{<}(x)]]></fr:tex> is in <fr:tex
-display="inline"><![CDATA[A]]></fr:tex>, then <fr:tex
-display="inline"><![CDATA[x]]></fr:tex> is the least element.
-    If some <fr:tex
-display="inline"><![CDATA[x' \in  \mathsf {IS}_{<}(x)]]></fr:tex>, then <fr:tex
-display="inline"><![CDATA[A]]></fr:tex> has a minimum by hypothesis.</fr:p>
-  <fr:p>Let <fr:tex
-display="inline"><![CDATA[P]]></fr:tex> be any subset such that <fr:tex
-display="inline"><![CDATA[\forall x \in  X.\mkern 5muP \subseteq  \mathsf {IS}_{<}(x) \Rightarrow  x \in  P]]></fr:tex>.
-    Consider the minimum <fr:tex
-display="inline"><![CDATA[m \in  X]]></fr:tex>.
-    Note that <fr:tex
-display="inline"><![CDATA[\mathsf {IS}_{<}(m) = \varnothing ]]></fr:tex>, so the hypothesis is equivalent to <fr:tex
-display="inline"><![CDATA[\forall x \in  X.\mkern 5mux \in  P]]></fr:tex>, i.e., <fr:tex
-display="inline"><![CDATA[P = X]]></fr:tex>.</fr:p>
+  It suffices to show the only if direction.
+  Suppose that <fr:tex
+display="inline"><![CDATA[A]]></fr:tex> is transitive.
+  Then observe that <fr:tex
+display="inline"><![CDATA[A = \bigcup  {\mathopen {}\{\alpha {^{+}}\colon \alpha  \in  A\}\mathclose {}}]]></fr:tex> is an ordinal by <fr:ref
+addr="set-001W"
+href="set-001W.xml"
+taxon="Lemma" /> and <fr:ref
+addr="set-0016"
+href="set-0016.xml"
+taxon="Lemma" />.
 </fr:mainmatter><fr:backmatter><fr:tree
 toc="false"
 numbered="false"
@@ -51,22 +35,17 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>513</fr:anchor><fr:addr
-type="user">set-001U</fr:addr><fr:route>set-001U.xml</fr:route><fr:title
-text="" /><fr:taxon>Proposition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>25</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
-display="inline"><![CDATA[<]]></fr:tex> be a strict linear order on <fr:tex
-display="inline"><![CDATA[X]]></fr:tex>.
-  Then <fr:tex
-display="inline"><![CDATA[<]]></fr:tex> exhibits <fr:link
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>561</fr:anchor><fr:addr
+type="user">set-001X</fr:addr><fr:route>set-001X.xml</fr:route><fr:title
+text="" /><fr:taxon>Corollary</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>25</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[A]]></fr:tex> be a set of <fr:link
 type="local"
-href="set-001T.xml"
-addr="set-001T"
-title="Well-founded induction">well-founded induction</fr:link> if and only if <fr:tex
-display="inline"><![CDATA[<]]></fr:tex> is a <fr:link
-type="local"
-href="set-000Y.xml"
-addr="set-000Y"
-title="Well orders">well order</fr:link>.</fr:p>
+href="set-0011.xml"
+addr="set-0011"
+title="Ordinal">ordinals</fr:link>.
+  <fr:tex
+display="inline"><![CDATA[A]]></fr:tex> is an ordinal if and only if <fr:tex
+display="inline"><![CDATA[A]]></fr:tex> is transitive.</fr:p>
     
       
       <fr:tree
@@ -76,35 +55,19 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>408</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>455</fr:anchor><fr:addr
 type="machine">#252</fr:addr><fr:route>unstable-252.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>25</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
-  <fr:p>We show that for every <fr:tex
-display="inline"><![CDATA[x \in  X]]></fr:tex>, every subset <fr:tex
-display="inline"><![CDATA[A \subseteq  X]]></fr:tex> such that <fr:tex
-display="inline"><![CDATA[x \in  A]]></fr:tex> has a minimum.
-    By <fr:tex
-display="inline"><![CDATA[<]]></fr:tex>-induction, it suffices to show that if every <fr:tex
-display="inline"><![CDATA[x' \in  \mathsf {IS}_{<}(x)]]></fr:tex> has this property then so does <fr:tex
-display="inline"><![CDATA[x]]></fr:tex>.
-    Fix a subset <fr:tex
-display="inline"><![CDATA[A \subseteq  X]]></fr:tex> such that <fr:tex
-display="inline"><![CDATA[x \in  A]]></fr:tex>.
-    If none of the <fr:tex
-display="inline"><![CDATA[x' \in  \mathsf {IS}_{<}(x)]]></fr:tex> is in <fr:tex
-display="inline"><![CDATA[A]]></fr:tex>, then <fr:tex
-display="inline"><![CDATA[x]]></fr:tex> is the least element.
-    If some <fr:tex
-display="inline"><![CDATA[x' \in  \mathsf {IS}_{<}(x)]]></fr:tex>, then <fr:tex
-display="inline"><![CDATA[A]]></fr:tex> has a minimum by hypothesis.</fr:p>
-  <fr:p>Let <fr:tex
-display="inline"><![CDATA[P]]></fr:tex> be any subset such that <fr:tex
-display="inline"><![CDATA[\forall x \in  X.\mkern 5muP \subseteq  \mathsf {IS}_{<}(x) \Rightarrow  x \in  P]]></fr:tex>.
-    Consider the minimum <fr:tex
-display="inline"><![CDATA[m \in  X]]></fr:tex>.
-    Note that <fr:tex
-display="inline"><![CDATA[\mathsf {IS}_{<}(m) = \varnothing ]]></fr:tex>, so the hypothesis is equivalent to <fr:tex
-display="inline"><![CDATA[\forall x \in  X.\mkern 5mux \in  P]]></fr:tex>, i.e., <fr:tex
-display="inline"><![CDATA[P = X]]></fr:tex>.</fr:p>
+  It suffices to show the only if direction.
+  Suppose that <fr:tex
+display="inline"><![CDATA[A]]></fr:tex> is transitive.
+  Then observe that <fr:tex
+display="inline"><![CDATA[A = \bigcup  {\mathopen {}\{\alpha {^{+}}\colon \alpha  \in  A\}\mathclose {}}]]></fr:tex> is an ordinal by <fr:ref
+addr="set-001W"
+href="set-001W.xml"
+taxon="Lemma" /> and <fr:ref
+addr="set-0016"
+href="set-0016.xml"
+taxon="Lemma" />.
 </fr:mainmatter><fr:backmatter /></fr:tree>
     
   </fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>
