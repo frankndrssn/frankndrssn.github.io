@@ -7,25 +7,16 @@ show-heading="true"
 show-metadata="true"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>787</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>782</fr:anchor><fr:addr
 type="machine">#278</fr:addr><fr:route>unstable-278.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
-  By <fr:ref
-addr="set-000H"
-href="set-000H.xml"
-taxon="Proposition" />, <fr:tex
-display="inline"><![CDATA[{\mathopen {}\{x\}\mathclose {}}]]></fr:tex> exists.
   By <fr:link
 type="local"
 href="set-0003.xml"
 addr="set-0003"
-title="Axiom of pairing">pairing</fr:link>, <fr:tex
-display="inline"><![CDATA[{\mathopen {}\{x,y\}\mathclose {}}]]></fr:tex> exists.
-  By <fr:link
-type="local"
-href="set-0003.xml"
-addr="set-0003"
-title="Axiom of pairing">pairing</fr:link> again, <fr:tex
-display="inline"><![CDATA[{\mathopen {}\{{\mathopen {}\{x\}\mathclose {}},{\mathopen {}\{x,y\}\mathclose {}}\}\mathclose {}}]]></fr:tex> exists.
+title="Axiom of pairing">pairing</fr:link>, there is a set <fr:tex
+display="inline"><![CDATA[p]]></fr:tex> such that <fr:tex
+display="inline"><![CDATA[\forall a.\mkern 5mua \in  p \Leftrightarrow  a = x \vee  a = x]]></fr:tex>, or equivalently, <fr:tex
+display="inline"><![CDATA[\forall a.\mkern 5mua \in  p \Leftrightarrow  a = x]]></fr:tex>.
 </fr:mainmatter><fr:backmatter><fr:tree
 toc="false"
 numbered="false"
@@ -41,16 +32,11 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>788</fr:anchor><fr:addr
-type="user">set-000J</fr:addr><fr:route>set-000J.xml</fr:route><fr:title
-text="Existence of ordered pairs">Existence of <fr:link
-type="local"
-href="set-000I.xml"
-addr="set-000I"
-title="Ordered pairs">ordered pairs</fr:link></fr:title><fr:taxon>Proposition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
-display="inline"><![CDATA[x,y]]></fr:tex> be sets.
-  The ordered pair <fr:tex
-display="inline"><![CDATA[(x,y)]]></fr:tex> exists.</fr:p>
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>783</fr:anchor><fr:addr
+type="user">set-000H</fr:addr><fr:route>set-000H.xml</fr:route><fr:title
+text="Existence of singletons">Existence of singletons</fr:title><fr:taxon>Proposition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>For any set <fr:tex
+display="inline"><![CDATA[x]]></fr:tex>, the set <fr:tex
+display="inline"><![CDATA[{\mathopen {}\{x\}\mathclose {}}]]></fr:tex> exists.</fr:p>
     
       
       <fr:tree
@@ -60,25 +46,16 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>372</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>365</fr:anchor><fr:addr
 type="machine">#278</fr:addr><fr:route>unstable-278.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
-  By <fr:ref
-addr="set-000H"
-href="set-000H.xml"
-taxon="Proposition" />, <fr:tex
-display="inline"><![CDATA[{\mathopen {}\{x\}\mathclose {}}]]></fr:tex> exists.
   By <fr:link
 type="local"
 href="set-0003.xml"
 addr="set-0003"
-title="Axiom of pairing">pairing</fr:link>, <fr:tex
-display="inline"><![CDATA[{\mathopen {}\{x,y\}\mathclose {}}]]></fr:tex> exists.
-  By <fr:link
-type="local"
-href="set-0003.xml"
-addr="set-0003"
-title="Axiom of pairing">pairing</fr:link> again, <fr:tex
-display="inline"><![CDATA[{\mathopen {}\{{\mathopen {}\{x\}\mathclose {}},{\mathopen {}\{x,y\}\mathclose {}}\}\mathclose {}}]]></fr:tex> exists.
+title="Axiom of pairing">pairing</fr:link>, there is a set <fr:tex
+display="inline"><![CDATA[p]]></fr:tex> such that <fr:tex
+display="inline"><![CDATA[\forall a.\mkern 5mua \in  p \Leftrightarrow  a = x \vee  a = x]]></fr:tex>, or equivalently, <fr:tex
+display="inline"><![CDATA[\forall a.\mkern 5mua \in  p \Leftrightarrow  a = x]]></fr:tex>.
 </fr:mainmatter><fr:backmatter /></fr:tree>
     
   </fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

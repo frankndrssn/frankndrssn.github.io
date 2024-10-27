@@ -7,31 +7,38 @@ show-heading="true"
 show-metadata="true"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>771</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>766</fr:anchor><fr:addr
 type="machine">#270</fr:addr><fr:route>unstable-270.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
-  Let <fr:tex
-display="inline"><![CDATA[x]]></fr:tex> be a set.
-  Suppose that <fr:tex
-display="inline"><![CDATA[x \in  x]]></fr:tex>.
-  Consider <fr:tex
-display="inline"><![CDATA[{\mathopen {}\{x\}\mathclose {}}]]></fr:tex>.
-  This is a non-empty set, so <fr:link
+  <fr:p>Fix <fr:tex
+display="inline"><![CDATA[m \in  N]]></fr:tex>.
+    Consider <fr:tex
+display="inline"><![CDATA[P := {\mathopen {}\{n \in  N\colon m \in  n \Rightarrow  s(m) \in  s(n)\}\mathclose {}}]]></fr:tex>.
+    Note that <fr:tex
+display="inline"><![CDATA[\varnothing  \in  P]]></fr:tex> vacuously.</fr:p>
+  <fr:p>Now let <fr:tex
+display="inline"><![CDATA[n \in  P]]></fr:tex>, i.e., <fr:tex
+display="inline"><![CDATA[m \in  n \Rightarrow  s(m) \in  s(n)]]></fr:tex>.
+    We need to show that <fr:tex
+display="inline"><![CDATA[s(n) \in  P]]></fr:tex>, i.e., <fr:tex
+display="inline"><![CDATA[m \in  s(n) \Rightarrow  s(m) \in  s(s(n))]]></fr:tex>.
+    Suppose that <fr:tex
+display="inline"><![CDATA[m \in  s(n) = n \cup  {\mathopen {}\{n\}\mathclose {}}]]></fr:tex>.
+    By <fr:link
 type="local"
-href="set-0009.xml"
-addr="set-0009"
-title="Axiom of foundation">foundation</fr:link> implies that there is a set <fr:tex
-display="inline"><![CDATA[z \in  {\mathopen {}\{x\}\mathclose {}}]]></fr:tex> such that <fr:tex
-display="inline"><![CDATA[z \cap  {\mathopen {}\{x\}\mathclose {}} = \varnothing ]]></fr:tex>.
-  By <fr:ref
+href="set-0004.xml"
+addr="set-0004"
+title="Axiom of union">union</fr:link>, <fr:tex
+display="inline"><![CDATA[m \in  n]]></fr:tex> or <fr:tex
+display="inline"><![CDATA[m \in  {\mathopen {}\{n\}\mathclose {}}]]></fr:tex>.
+    In the former case, we have <fr:tex
+display="inline"><![CDATA[s(m) \in  s(n) \subseteq  s(n) \cup  {\mathopen {}\{s(n)\}\mathclose {}} = s(s(n))]]></fr:tex>.
+    In the latter case, we have <fr:tex
+display="inline"><![CDATA[m = n]]></fr:tex> by <fr:ref
 addr="set-000H"
 href="set-000H.xml"
-taxon="Proposition" />, <fr:tex
-display="inline"><![CDATA[z = x]]></fr:tex>.
-  Then since <fr:tex
-display="inline"><![CDATA[x \in  x]]></fr:tex>, we have that <fr:tex
-display="inline"><![CDATA[x \in  z]]></fr:tex>.
-  Thus, <fr:tex
-display="inline"><![CDATA[x \in  z \cap  {\mathopen {}\{x\}\mathclose {}}]]></fr:tex>, which is a contradiction.
+taxon="Proposition" />.
+    Then <fr:tex
+display="inline"><![CDATA[s(m) = s(n) \in  s(n) \cup  {\mathopen {}\{s(n)\}\mathclose {}} = s(s(n))]]></fr:tex>.</fr:p>
 </fr:mainmatter><fr:backmatter><fr:tree
 toc="false"
 numbered="false"
@@ -47,11 +54,21 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>772</fr:anchor><fr:addr
-type="user">set-000X</fr:addr><fr:route>set-000X.xml</fr:route><fr:title
-text="The membership relation is irreflexive">The membership relation is irreflexive</fr:title><fr:taxon>Proposition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>For any set <fr:tex
-display="inline"><![CDATA[x]]></fr:tex>, <fr:tex
-display="inline"><![CDATA[x \notin  x]]></fr:tex>.</fr:p>
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>767</fr:anchor><fr:addr
+type="user">set-000W</fr:addr><fr:route>set-000W.xml</fr:route><fr:title
+text="" /><fr:taxon>Lemma</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[N]]></fr:tex> be an inductive set admitting the induction principle defined in <fr:link
+type="local"
+href="set-000T.xml"
+addr="set-000T"
+title="Natural number set">natural number set</fr:link>.
+  For each <fr:tex
+display="inline"><![CDATA[n \in  N]]></fr:tex>, we define <fr:tex
+display="inline"><![CDATA[s(n) := n \cup  {\mathopen {}\{n\}\mathclose {}}]]></fr:tex>.
+  Then for any <fr:tex
+display="inline"><![CDATA[m,n \in  N]]></fr:tex>, if <fr:tex
+display="inline"><![CDATA[m \in  n]]></fr:tex> then <fr:tex
+display="inline"><![CDATA[s(m) \in  s(n)]]></fr:tex>.</fr:p>
     
       
       <fr:tree
@@ -61,31 +78,38 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>368</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>398</fr:anchor><fr:addr
 type="machine">#270</fr:addr><fr:route>unstable-270.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
-  Let <fr:tex
-display="inline"><![CDATA[x]]></fr:tex> be a set.
-  Suppose that <fr:tex
-display="inline"><![CDATA[x \in  x]]></fr:tex>.
-  Consider <fr:tex
-display="inline"><![CDATA[{\mathopen {}\{x\}\mathclose {}}]]></fr:tex>.
-  This is a non-empty set, so <fr:link
+  <fr:p>Fix <fr:tex
+display="inline"><![CDATA[m \in  N]]></fr:tex>.
+    Consider <fr:tex
+display="inline"><![CDATA[P := {\mathopen {}\{n \in  N\colon m \in  n \Rightarrow  s(m) \in  s(n)\}\mathclose {}}]]></fr:tex>.
+    Note that <fr:tex
+display="inline"><![CDATA[\varnothing  \in  P]]></fr:tex> vacuously.</fr:p>
+  <fr:p>Now let <fr:tex
+display="inline"><![CDATA[n \in  P]]></fr:tex>, i.e., <fr:tex
+display="inline"><![CDATA[m \in  n \Rightarrow  s(m) \in  s(n)]]></fr:tex>.
+    We need to show that <fr:tex
+display="inline"><![CDATA[s(n) \in  P]]></fr:tex>, i.e., <fr:tex
+display="inline"><![CDATA[m \in  s(n) \Rightarrow  s(m) \in  s(s(n))]]></fr:tex>.
+    Suppose that <fr:tex
+display="inline"><![CDATA[m \in  s(n) = n \cup  {\mathopen {}\{n\}\mathclose {}}]]></fr:tex>.
+    By <fr:link
 type="local"
-href="set-0009.xml"
-addr="set-0009"
-title="Axiom of foundation">foundation</fr:link> implies that there is a set <fr:tex
-display="inline"><![CDATA[z \in  {\mathopen {}\{x\}\mathclose {}}]]></fr:tex> such that <fr:tex
-display="inline"><![CDATA[z \cap  {\mathopen {}\{x\}\mathclose {}} = \varnothing ]]></fr:tex>.
-  By <fr:ref
+href="set-0004.xml"
+addr="set-0004"
+title="Axiom of union">union</fr:link>, <fr:tex
+display="inline"><![CDATA[m \in  n]]></fr:tex> or <fr:tex
+display="inline"><![CDATA[m \in  {\mathopen {}\{n\}\mathclose {}}]]></fr:tex>.
+    In the former case, we have <fr:tex
+display="inline"><![CDATA[s(m) \in  s(n) \subseteq  s(n) \cup  {\mathopen {}\{s(n)\}\mathclose {}} = s(s(n))]]></fr:tex>.
+    In the latter case, we have <fr:tex
+display="inline"><![CDATA[m = n]]></fr:tex> by <fr:ref
 addr="set-000H"
 href="set-000H.xml"
-taxon="Proposition" />, <fr:tex
-display="inline"><![CDATA[z = x]]></fr:tex>.
-  Then since <fr:tex
-display="inline"><![CDATA[x \in  x]]></fr:tex>, we have that <fr:tex
-display="inline"><![CDATA[x \in  z]]></fr:tex>.
-  Thus, <fr:tex
-display="inline"><![CDATA[x \in  z \cap  {\mathopen {}\{x\}\mathclose {}}]]></fr:tex>, which is a contradiction.
+taxon="Proposition" />.
+    Then <fr:tex
+display="inline"><![CDATA[s(m) = s(n) \in  s(n) \cup  {\mathopen {}\{s(n)\}\mathclose {}} = s(s(n))]]></fr:tex>.</fr:p>
 </fr:mainmatter><fr:backmatter /></fr:tree>
     
   </fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

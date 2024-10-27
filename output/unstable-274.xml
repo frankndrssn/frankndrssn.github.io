@@ -7,27 +7,37 @@ show-heading="true"
 show-metadata="true"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>779</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>774</fr:anchor><fr:addr
 type="machine">#274</fr:addr><fr:route>unstable-274.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
-  Consider the subset <fr:tex
-display="inline"><![CDATA[P := {\mathopen {}\{x \in  N\colon s(x) \neq  x\}\mathclose {}}]]></fr:tex>.
-  By the induction principle, it suffices to show that <fr:tex
-display="inline"><![CDATA[0 \in  P]]></fr:tex> and for any <fr:tex
-display="inline"><![CDATA[x \in  N]]></fr:tex>, if <fr:tex
-display="inline"><![CDATA[x \in  P]]></fr:tex> then <fr:tex
-display="inline"><![CDATA[s(x) \in  P]]></fr:tex>.
-  First, <fr:tex
-display="inline"><![CDATA[0 \in  P]]></fr:tex> follows from the non-looping property.
-  Now assume that <fr:tex
-display="inline"><![CDATA[x \in  P]]></fr:tex>, i.e., <fr:tex
-display="inline"><![CDATA[s(x) \neq  x]]></fr:tex>.
-  Then if <fr:tex
-display="inline"><![CDATA[s(s(x)) = s(x)]]></fr:tex>, by injectivity, <fr:tex
-display="inline"><![CDATA[s(x) = x]]></fr:tex>, which is a contradiction.
+  The if direction is trivial.
+  For the only if direction, assume that <fr:tex
+display="inline"><![CDATA[f(a) = g(a)]]></fr:tex> for all <fr:tex
+display="inline"><![CDATA[a \in  A]]></fr:tex>.
+  By <fr:link
+type="local"
+href="set-0001.xml"
+addr="set-0001"
+title="Axiom of extensionality">extensionality</fr:link>, it suffices to show that <fr:tex
+display="inline"><![CDATA[(a,b) \in  f]]></fr:tex> if and only if <fr:tex
+display="inline"><![CDATA[(a,b) \in  g]]></fr:tex>.
+  Suppose that <fr:tex
+display="inline"><![CDATA[(a,b) \in  f]]></fr:tex>, then by <fr:link
+type="local"
+href="set-000O.xml"
+addr="set-000O"
+title="Functional relation">functionality</fr:link>, <fr:tex
+display="inline"><![CDATA[b = f(a)]]></fr:tex>.
+  By <fr:link
+type="local"
+href="set-000N.xml"
+addr="set-000N"
+title="Total relation">totality</fr:link>, <fr:tex
+display="inline"><![CDATA[(a,g(a)) \in  g]]></fr:tex>.
+  By hypothesis, <fr:tex
+display="inline"><![CDATA[(a,f(a)) = (a,g(a))]]></fr:tex>.
   Thus, <fr:tex
-display="inline"><![CDATA[s(s(x)) \neq  s(x)]]></fr:tex>.
-  In other words, <fr:tex
-display="inline"><![CDATA[s(x) \in  P]]></fr:tex>.
+display="inline"><![CDATA[(a,f(a)) \in  g]]></fr:tex>.
+  The converse is analogous.
 </fr:mainmatter><fr:backmatter><fr:tree
 toc="false"
 numbered="false"
@@ -43,17 +53,19 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>780</fr:anchor><fr:addr
-type="user">set-000U</fr:addr><fr:route>set-000U.xml</fr:route><fr:title
-text="" /><fr:taxon>Proposition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
-display="inline"><![CDATA[N]]></fr:tex> be a <fr:link
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>775</fr:anchor><fr:addr
+type="user">set-000S</fr:addr><fr:route>set-000S.xml</fr:route><fr:title
+text="Functional extensionality">Functional extensionality</fr:title><fr:taxon>Proposition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[f,g]]></fr:tex> be <fr:link
 type="local"
-href="set-000T.xml"
-addr="set-000T"
-title="Natural number set">natural number set</fr:link>.
-  Then for any <fr:tex
-display="inline"><![CDATA[n \in  N]]></fr:tex>, <fr:tex
-display="inline"><![CDATA[s(n) \neq  n]]></fr:tex>.</fr:p>
+href="set-000R.xml"
+addr="set-000R"
+title="Function">functions</fr:link> with domain <fr:tex
+display="inline"><![CDATA[A]]></fr:tex>.
+  Then <fr:tex
+display="inline"><![CDATA[f = g]]></fr:tex> if and only if for all <fr:tex
+display="inline"><![CDATA[a \in  A]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[f(a) = g(a)]]></fr:tex>.</fr:p>
     
       
       <fr:tree
@@ -63,27 +75,37 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>397</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>384</fr:anchor><fr:addr
 type="machine">#274</fr:addr><fr:route>unstable-274.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
-  Consider the subset <fr:tex
-display="inline"><![CDATA[P := {\mathopen {}\{x \in  N\colon s(x) \neq  x\}\mathclose {}}]]></fr:tex>.
-  By the induction principle, it suffices to show that <fr:tex
-display="inline"><![CDATA[0 \in  P]]></fr:tex> and for any <fr:tex
-display="inline"><![CDATA[x \in  N]]></fr:tex>, if <fr:tex
-display="inline"><![CDATA[x \in  P]]></fr:tex> then <fr:tex
-display="inline"><![CDATA[s(x) \in  P]]></fr:tex>.
-  First, <fr:tex
-display="inline"><![CDATA[0 \in  P]]></fr:tex> follows from the non-looping property.
-  Now assume that <fr:tex
-display="inline"><![CDATA[x \in  P]]></fr:tex>, i.e., <fr:tex
-display="inline"><![CDATA[s(x) \neq  x]]></fr:tex>.
-  Then if <fr:tex
-display="inline"><![CDATA[s(s(x)) = s(x)]]></fr:tex>, by injectivity, <fr:tex
-display="inline"><![CDATA[s(x) = x]]></fr:tex>, which is a contradiction.
+  The if direction is trivial.
+  For the only if direction, assume that <fr:tex
+display="inline"><![CDATA[f(a) = g(a)]]></fr:tex> for all <fr:tex
+display="inline"><![CDATA[a \in  A]]></fr:tex>.
+  By <fr:link
+type="local"
+href="set-0001.xml"
+addr="set-0001"
+title="Axiom of extensionality">extensionality</fr:link>, it suffices to show that <fr:tex
+display="inline"><![CDATA[(a,b) \in  f]]></fr:tex> if and only if <fr:tex
+display="inline"><![CDATA[(a,b) \in  g]]></fr:tex>.
+  Suppose that <fr:tex
+display="inline"><![CDATA[(a,b) \in  f]]></fr:tex>, then by <fr:link
+type="local"
+href="set-000O.xml"
+addr="set-000O"
+title="Functional relation">functionality</fr:link>, <fr:tex
+display="inline"><![CDATA[b = f(a)]]></fr:tex>.
+  By <fr:link
+type="local"
+href="set-000N.xml"
+addr="set-000N"
+title="Total relation">totality</fr:link>, <fr:tex
+display="inline"><![CDATA[(a,g(a)) \in  g]]></fr:tex>.
+  By hypothesis, <fr:tex
+display="inline"><![CDATA[(a,f(a)) = (a,g(a))]]></fr:tex>.
   Thus, <fr:tex
-display="inline"><![CDATA[s(s(x)) \neq  s(x)]]></fr:tex>.
-  In other words, <fr:tex
-display="inline"><![CDATA[s(x) \in  P]]></fr:tex>.
+display="inline"><![CDATA[(a,f(a)) \in  g]]></fr:tex>.
+  The converse is analogous.
 </fr:mainmatter><fr:backmatter /></fr:tree>
     
   </fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

@@ -7,44 +7,31 @@ show-heading="true"
 show-metadata="true"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>706</fr:anchor><fr:addr
-type="machine">#269</fr:addr><fr:route>unstable-269.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>21</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
-  <fr:p>By induction, one can show that <fr:tex
-display="inline"><![CDATA[\leq ]]></fr:tex> is reflexive, transitive, and linear.
-    It remains to show that <fr:tex
-display="inline"><![CDATA[\leq ]]></fr:tex> is a well order.
-    To this end, let <fr:tex
-display="inline"><![CDATA[X \subseteq  \mathbb {N}]]></fr:tex> be a non-empty subset.
-    Assume that <fr:tex
-display="inline"><![CDATA[X]]></fr:tex> has no least elements.
-    Consider <fr:tex
-display="inline"><![CDATA[P := {\mathopen {}\{x \in  \mathbb {N}\colon \forall m \leq  x.\mkern 5mum \notin  X\}\mathclose {}}]]></fr:tex>.
-    Note that <fr:tex
-display="inline"><![CDATA[\varnothing  \notin  X]]></fr:tex> since it would be a least element of <fr:tex
-display="inline"><![CDATA[X]]></fr:tex>.
-    Hence, <fr:tex
-display="inline"><![CDATA[0 \in  P]]></fr:tex>.</fr:p>
-  <fr:p>Now, suppose that <fr:tex
-display="inline"><![CDATA[x \in  P]]></fr:tex>, i.e., <fr:tex
-display="inline"><![CDATA[\forall m \leq  x.\mkern 5mum \notin  X]]></fr:tex>.
-    We need to show that <fr:tex
-display="inline"><![CDATA[s(x) \in  P]]></fr:tex>, i.e., <fr:tex
-display="inline"><![CDATA[\forall m \leq  s(x).\mkern 5mum \notin  X]]></fr:tex>.
-    Let <fr:tex
-display="inline"><![CDATA[m \leq  s(x)]]></fr:tex>.
-    By definition, we have <fr:tex
-display="inline"><![CDATA[m \in  s(x)]]></fr:tex> or <fr:tex
-display="inline"><![CDATA[m = s(x)]]></fr:tex>.
-    The latter case can be ruled out since it would be the least element of <fr:tex
-display="inline"><![CDATA[X]]></fr:tex>.
-    In the former case, we have <fr:tex
-display="inline"><![CDATA[m \leq  x]]></fr:tex>.
-    Thus, <fr:tex
-display="inline"><![CDATA[m \notin  X]]></fr:tex> follows from the hypothesis.</fr:p>
-  <fr:p>Since <fr:tex
-display="inline"><![CDATA[P = \mathbb {N}]]></fr:tex>, this shows that <fr:tex
-display="inline"><![CDATA[X = \varnothing ]]></fr:tex>, which contradicts the assumption that <fr:tex
-display="inline"><![CDATA[X]]></fr:tex> is a non-empty set.</fr:p>
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>764</fr:anchor><fr:addr
+type="machine">#269</fr:addr><fr:route>unstable-269.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
+  Let <fr:tex
+display="inline"><![CDATA[x]]></fr:tex> be a set.
+  Suppose that <fr:tex
+display="inline"><![CDATA[x \in  x]]></fr:tex>.
+  Consider <fr:tex
+display="inline"><![CDATA[{\mathopen {}\{x\}\mathclose {}}]]></fr:tex>.
+  This is a non-empty set, so <fr:link
+type="local"
+href="set-0009.xml"
+addr="set-0009"
+title="Axiom of foundation">foundation</fr:link> implies that there is a set <fr:tex
+display="inline"><![CDATA[z \in  {\mathopen {}\{x\}\mathclose {}}]]></fr:tex> such that <fr:tex
+display="inline"><![CDATA[z \cap  {\mathopen {}\{x\}\mathclose {}} = \varnothing ]]></fr:tex>.
+  By <fr:ref
+addr="set-000H"
+href="set-000H.xml"
+taxon="Proposition" />, <fr:tex
+display="inline"><![CDATA[z = x]]></fr:tex>.
+  Then since <fr:tex
+display="inline"><![CDATA[x \in  x]]></fr:tex>, we have that <fr:tex
+display="inline"><![CDATA[x \in  z]]></fr:tex>.
+  Thus, <fr:tex
+display="inline"><![CDATA[x \in  z \cap  {\mathopen {}\{x\}\mathclose {}}]]></fr:tex>, which is a contradiction.
 </fr:mainmatter><fr:backmatter><fr:tree
 toc="false"
 numbered="false"
@@ -60,20 +47,11 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>707</fr:anchor><fr:addr
-type="user">set-000Z</fr:addr><fr:route>set-000Z.xml</fr:route><fr:title
-text="Natural numbers are well ordered"><fr:link
-type="local"
-href="set-000V.xml"
-addr="set-000V"
-title="Natural numbers">Natural numbers</fr:link> are <fr:link
-type="local"
-href="set-000Y.xml"
-addr="set-000Y"
-title="Well orders">well ordered</fr:link></fr:title><fr:taxon>Proposition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>21</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>The relation <fr:tex
-display="inline"><![CDATA[\leq ]]></fr:tex> defined by <fr:tex
-display="inline"><![CDATA[a \leq  b \Leftrightarrow  a \in  s(b)]]></fr:tex> is a well order on <fr:tex
-display="inline"><![CDATA[\mathbb {N}]]></fr:tex>.</fr:p>
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>765</fr:anchor><fr:addr
+type="user">set-000X</fr:addr><fr:route>set-000X.xml</fr:route><fr:title
+text="The membership relation is irreflexive">The membership relation is irreflexive</fr:title><fr:taxon>Proposition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>For any set <fr:tex
+display="inline"><![CDATA[x]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[x \notin  x]]></fr:tex>.</fr:p>
     
       
       <fr:tree
@@ -83,44 +61,31 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>406</fr:anchor><fr:addr
-type="machine">#269</fr:addr><fr:route>unstable-269.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>21</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
-  <fr:p>By induction, one can show that <fr:tex
-display="inline"><![CDATA[\leq ]]></fr:tex> is reflexive, transitive, and linear.
-    It remains to show that <fr:tex
-display="inline"><![CDATA[\leq ]]></fr:tex> is a well order.
-    To this end, let <fr:tex
-display="inline"><![CDATA[X \subseteq  \mathbb {N}]]></fr:tex> be a non-empty subset.
-    Assume that <fr:tex
-display="inline"><![CDATA[X]]></fr:tex> has no least elements.
-    Consider <fr:tex
-display="inline"><![CDATA[P := {\mathopen {}\{x \in  \mathbb {N}\colon \forall m \leq  x.\mkern 5mum \notin  X\}\mathclose {}}]]></fr:tex>.
-    Note that <fr:tex
-display="inline"><![CDATA[\varnothing  \notin  X]]></fr:tex> since it would be a least element of <fr:tex
-display="inline"><![CDATA[X]]></fr:tex>.
-    Hence, <fr:tex
-display="inline"><![CDATA[0 \in  P]]></fr:tex>.</fr:p>
-  <fr:p>Now, suppose that <fr:tex
-display="inline"><![CDATA[x \in  P]]></fr:tex>, i.e., <fr:tex
-display="inline"><![CDATA[\forall m \leq  x.\mkern 5mum \notin  X]]></fr:tex>.
-    We need to show that <fr:tex
-display="inline"><![CDATA[s(x) \in  P]]></fr:tex>, i.e., <fr:tex
-display="inline"><![CDATA[\forall m \leq  s(x).\mkern 5mum \notin  X]]></fr:tex>.
-    Let <fr:tex
-display="inline"><![CDATA[m \leq  s(x)]]></fr:tex>.
-    By definition, we have <fr:tex
-display="inline"><![CDATA[m \in  s(x)]]></fr:tex> or <fr:tex
-display="inline"><![CDATA[m = s(x)]]></fr:tex>.
-    The latter case can be ruled out since it would be the least element of <fr:tex
-display="inline"><![CDATA[X]]></fr:tex>.
-    In the former case, we have <fr:tex
-display="inline"><![CDATA[m \leq  x]]></fr:tex>.
-    Thus, <fr:tex
-display="inline"><![CDATA[m \notin  X]]></fr:tex> follows from the hypothesis.</fr:p>
-  <fr:p>Since <fr:tex
-display="inline"><![CDATA[P = \mathbb {N}]]></fr:tex>, this shows that <fr:tex
-display="inline"><![CDATA[X = \varnothing ]]></fr:tex>, which contradicts the assumption that <fr:tex
-display="inline"><![CDATA[X]]></fr:tex> is a non-empty set.</fr:p>
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>367</fr:anchor><fr:addr
+type="machine">#269</fr:addr><fr:route>unstable-269.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
+  Let <fr:tex
+display="inline"><![CDATA[x]]></fr:tex> be a set.
+  Suppose that <fr:tex
+display="inline"><![CDATA[x \in  x]]></fr:tex>.
+  Consider <fr:tex
+display="inline"><![CDATA[{\mathopen {}\{x\}\mathclose {}}]]></fr:tex>.
+  This is a non-empty set, so <fr:link
+type="local"
+href="set-0009.xml"
+addr="set-0009"
+title="Axiom of foundation">foundation</fr:link> implies that there is a set <fr:tex
+display="inline"><![CDATA[z \in  {\mathopen {}\{x\}\mathclose {}}]]></fr:tex> such that <fr:tex
+display="inline"><![CDATA[z \cap  {\mathopen {}\{x\}\mathclose {}} = \varnothing ]]></fr:tex>.
+  By <fr:ref
+addr="set-000H"
+href="set-000H.xml"
+taxon="Proposition" />, <fr:tex
+display="inline"><![CDATA[z = x]]></fr:tex>.
+  Then since <fr:tex
+display="inline"><![CDATA[x \in  x]]></fr:tex>, we have that <fr:tex
+display="inline"><![CDATA[x \in  z]]></fr:tex>.
+  Thus, <fr:tex
+display="inline"><![CDATA[x \in  z \cap  {\mathopen {}\{x\}\mathclose {}}]]></fr:tex>, which is a contradiction.
 </fr:mainmatter><fr:backmatter /></fr:tree>
     
   </fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

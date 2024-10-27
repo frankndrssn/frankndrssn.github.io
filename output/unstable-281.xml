@@ -7,17 +7,15 @@ show-heading="true"
 show-metadata="true"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>793</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>788</fr:anchor><fr:addr
 type="machine">#281</fr:addr><fr:route>unstable-281.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
-  Let <fr:tex
-display="inline"><![CDATA[E]]></fr:tex> be a set such that <fr:tex
-display="inline"><![CDATA[\forall y.\mkern 5muy \notin  E]]></fr:tex>.
-  By <fr:link
-type="local"
-href="set-0001.xml"
-addr="set-0001"
-title="Axiom of extensionality">extensionality</fr:link>, it suffices to show that <fr:tex
-display="inline"><![CDATA[\forall y.\mkern 5muy \in  \varnothing  \Leftrightarrow  y \in  E]]></fr:tex>, but this holds vacuously.
+  Consider the set <fr:tex
+display="inline"><![CDATA[R := {\mathopen {}\{x\colon x \notin  x\}\mathclose {}}]]></fr:tex>.
+  If <fr:tex
+display="inline"><![CDATA[R \in  R]]></fr:tex> then by definition <fr:tex
+display="inline"><![CDATA[R \notin  R]]></fr:tex>, but if <fr:tex
+display="inline"><![CDATA[R \notin  R]]></fr:tex> then by definition <fr:tex
+display="inline"><![CDATA[R \in  R]]></fr:tex>, so we have a contradiction in both cases.
 </fr:mainmatter><fr:backmatter><fr:tree
 toc="false"
 numbered="false"
@@ -33,10 +31,9 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>794</fr:anchor><fr:addr
-type="user">set-000F</fr:addr><fr:route>set-000F.xml</fr:route><fr:title
-text="Uniqueness of the empty set">Uniqueness of the empty set</fr:title><fr:taxon>Proposition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>The empty set <fr:tex
-display="inline"><![CDATA[\varnothing ]]></fr:tex> is unique.</fr:p>
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>789</fr:anchor><fr:addr
+type="user">set-000E</fr:addr><fr:route>set-000E.xml</fr:route><fr:title
+text="Inconsistency of naive set theory">Inconsistency of naive set theory</fr:title><fr:taxon>Theorem</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Naive set theory is inconsistent.</fr:p>
     
       
       <fr:tree
@@ -46,17 +43,15 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>362</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>790</fr:anchor><fr:addr
 type="machine">#281</fr:addr><fr:route>unstable-281.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
-  Let <fr:tex
-display="inline"><![CDATA[E]]></fr:tex> be a set such that <fr:tex
-display="inline"><![CDATA[\forall y.\mkern 5muy \notin  E]]></fr:tex>.
-  By <fr:link
-type="local"
-href="set-0001.xml"
-addr="set-0001"
-title="Axiom of extensionality">extensionality</fr:link>, it suffices to show that <fr:tex
-display="inline"><![CDATA[\forall y.\mkern 5muy \in  \varnothing  \Leftrightarrow  y \in  E]]></fr:tex>, but this holds vacuously.
+  Consider the set <fr:tex
+display="inline"><![CDATA[R := {\mathopen {}\{x\colon x \notin  x\}\mathclose {}}]]></fr:tex>.
+  If <fr:tex
+display="inline"><![CDATA[R \in  R]]></fr:tex> then by definition <fr:tex
+display="inline"><![CDATA[R \notin  R]]></fr:tex>, but if <fr:tex
+display="inline"><![CDATA[R \notin  R]]></fr:tex> then by definition <fr:tex
+display="inline"><![CDATA[R \in  R]]></fr:tex>, so we have a contradiction in both cases.
 </fr:mainmatter><fr:backmatter /></fr:tree>
     
   </fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

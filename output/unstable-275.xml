@@ -7,37 +7,30 @@ show-heading="true"
 show-metadata="true"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>781</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>776</fr:anchor><fr:addr
 type="machine">#275</fr:addr><fr:route>unstable-275.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
-  The if direction is trivial.
-  For the only if direction, assume that <fr:tex
-display="inline"><![CDATA[f(a) = g(a)]]></fr:tex> for all <fr:tex
-display="inline"><![CDATA[a \in  A]]></fr:tex>.
+  Let <fr:tex
+display="inline"><![CDATA[a \in  A, b \in  B]]></fr:tex>.
   By <fr:link
 type="local"
-href="set-0001.xml"
-addr="set-0001"
-title="Axiom of extensionality">extensionality</fr:link>, it suffices to show that <fr:tex
-display="inline"><![CDATA[(a,b) \in  f]]></fr:tex> if and only if <fr:tex
-display="inline"><![CDATA[(a,b) \in  g]]></fr:tex>.
-  Suppose that <fr:tex
-display="inline"><![CDATA[(a,b) \in  f]]></fr:tex>, then by <fr:link
+href="set-000I.xml"
+addr="set-000I"
+title="Ordered pairs">definition</fr:link>, <fr:tex
+display="inline"><![CDATA[(a,b) = {\mathopen {}\{{\mathopen {}\{a\}\mathclose {}},{\mathopen {}\{a,b\}\mathclose {}}\}\mathclose {}}]]></fr:tex>.
+  Thus, by the <fr:link
 type="local"
-href="set-000O.xml"
-addr="set-000O"
-title="Functional relation">functionality</fr:link>, <fr:tex
-display="inline"><![CDATA[b = f(a)]]></fr:tex>.
+href="set-0006.xml"
+addr="set-0006"
+title="Axiom of powerset">powerset axiom</fr:link>, <fr:tex
+display="inline"><![CDATA[(a,b) \in  \mathcal {P}(\mathcal {P}(A \cup  B))]]></fr:tex>.
   By <fr:link
 type="local"
-href="set-000N.xml"
-addr="set-000N"
-title="Total relation">totality</fr:link>, <fr:tex
-display="inline"><![CDATA[(a,g(a)) \in  g]]></fr:tex>.
-  By hypothesis, <fr:tex
-display="inline"><![CDATA[(a,f(a)) = (a,g(a))]]></fr:tex>.
-  Thus, <fr:tex
-display="inline"><![CDATA[(a,f(a)) \in  g]]></fr:tex>.
-  The converse is analogous.
+href="set-0005.xml"
+addr="set-0005"
+title="Axiom schema of separation">separation</fr:link>,
+  <fr:tex
+display="block"><![CDATA[     A \times  B = {\mathopen {}\{p \in  \mathcal {P}(\mathcal {P}(A \cup  B))\colon \exists a.\mkern 5mu\exists b.\mkern 5mup = (a,b)\}\mathclose {}}   ]]></fr:tex>
+  is a set.
 </fr:mainmatter><fr:backmatter><fr:tree
 toc="false"
 numbered="false"
@@ -53,19 +46,12 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>782</fr:anchor><fr:addr
-type="user">set-000S</fr:addr><fr:route>set-000S.xml</fr:route><fr:title
-text="Functional extensionality">Functional extensionality</fr:title><fr:taxon>Proposition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
-display="inline"><![CDATA[f,g]]></fr:tex> be <fr:link
-type="local"
-href="set-000R.xml"
-addr="set-000R"
-title="Function">functions</fr:link> with domain <fr:tex
-display="inline"><![CDATA[A]]></fr:tex>.
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>777</fr:anchor><fr:addr
+type="user">set-000L</fr:addr><fr:route>set-000L.xml</fr:route><fr:title
+text="Cartesian product">Cartesian product</fr:title><fr:taxon>Proposition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
+display="inline"><![CDATA[A,B]]></fr:tex> be sets.
   Then <fr:tex
-display="inline"><![CDATA[f = g]]></fr:tex> if and only if for all <fr:tex
-display="inline"><![CDATA[a \in  A]]></fr:tex>, <fr:tex
-display="inline"><![CDATA[f(a) = g(a)]]></fr:tex>.</fr:p>
+display="inline"><![CDATA[A \times  B := {\mathopen {}\{(a,b)\colon a \in  A \wedge  b \in  B\}\mathclose {}}]]></fr:tex> is a set.</fr:p>
     
       
       <fr:tree
@@ -75,37 +61,30 @@ show-heading="true"
 show-metadata="false"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>385</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>375</fr:anchor><fr:addr
 type="machine">#275</fr:addr><fr:route>unstable-275.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
-  The if direction is trivial.
-  For the only if direction, assume that <fr:tex
-display="inline"><![CDATA[f(a) = g(a)]]></fr:tex> for all <fr:tex
-display="inline"><![CDATA[a \in  A]]></fr:tex>.
+  Let <fr:tex
+display="inline"><![CDATA[a \in  A, b \in  B]]></fr:tex>.
   By <fr:link
 type="local"
-href="set-0001.xml"
-addr="set-0001"
-title="Axiom of extensionality">extensionality</fr:link>, it suffices to show that <fr:tex
-display="inline"><![CDATA[(a,b) \in  f]]></fr:tex> if and only if <fr:tex
-display="inline"><![CDATA[(a,b) \in  g]]></fr:tex>.
-  Suppose that <fr:tex
-display="inline"><![CDATA[(a,b) \in  f]]></fr:tex>, then by <fr:link
+href="set-000I.xml"
+addr="set-000I"
+title="Ordered pairs">definition</fr:link>, <fr:tex
+display="inline"><![CDATA[(a,b) = {\mathopen {}\{{\mathopen {}\{a\}\mathclose {}},{\mathopen {}\{a,b\}\mathclose {}}\}\mathclose {}}]]></fr:tex>.
+  Thus, by the <fr:link
 type="local"
-href="set-000O.xml"
-addr="set-000O"
-title="Functional relation">functionality</fr:link>, <fr:tex
-display="inline"><![CDATA[b = f(a)]]></fr:tex>.
+href="set-0006.xml"
+addr="set-0006"
+title="Axiom of powerset">powerset axiom</fr:link>, <fr:tex
+display="inline"><![CDATA[(a,b) \in  \mathcal {P}(\mathcal {P}(A \cup  B))]]></fr:tex>.
   By <fr:link
 type="local"
-href="set-000N.xml"
-addr="set-000N"
-title="Total relation">totality</fr:link>, <fr:tex
-display="inline"><![CDATA[(a,g(a)) \in  g]]></fr:tex>.
-  By hypothesis, <fr:tex
-display="inline"><![CDATA[(a,f(a)) = (a,g(a))]]></fr:tex>.
-  Thus, <fr:tex
-display="inline"><![CDATA[(a,f(a)) \in  g]]></fr:tex>.
-  The converse is analogous.
+href="set-0005.xml"
+addr="set-0005"
+title="Axiom schema of separation">separation</fr:link>,
+  <fr:tex
+display="block"><![CDATA[     A \times  B = {\mathopen {}\{p \in  \mathcal {P}(\mathcal {P}(A \cup  B))\colon \exists a.\mkern 5mu\exists b.\mkern 5mup = (a,b)\}\mathclose {}}   ]]></fr:tex>
+  is a set.
 </fr:mainmatter><fr:backmatter /></fr:tree>
     
   </fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>
