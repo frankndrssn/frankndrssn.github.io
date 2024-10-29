@@ -7,7 +7,7 @@ show-heading="true"
 show-metadata="true"
 expanded="true"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>878</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>879</fr:anchor><fr:addr
 type="user">set-000I</fr:addr><fr:route>set-000I.xml</fr:route><fr:title
 text="Ordered pairs">Ordered pairs</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
 display="inline"><![CDATA[x,y]]></fr:tex> be sets.
@@ -28,7 +28,7 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>879</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>880</fr:anchor><fr:addr
 type="user">set-000D</fr:addr><fr:route>set-000D.xml</fr:route><fr:title
 text="Zermelo-Fraenkel set theory">Zermelo-Fraenkel set theory</fr:title><fr:taxon>Section</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
   <fr:tree
@@ -2682,7 +2682,7 @@ href="set-0024.xml"
 addr="set-0024"
 title="Initial ordinals">initial</fr:link> ordinal <fr:tex
 display="inline"><![CDATA[\beta ]]></fr:tex> such that <fr:tex
-display="inline"><![CDATA[\alpha  \cong  \beta ]]></fr:tex>.</fr:p>
+display="inline"><![CDATA[\alpha  \approx  \beta ]]></fr:tex>.</fr:p>
     
       
       <fr:tree
@@ -2695,14 +2695,39 @@ root="false"
 xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>467</fr:anchor><fr:addr
 type="machine">#246</fr:addr><fr:route>unstable-246.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>27</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
   <fr:p>Consider the subset <fr:tex
-display="inline"><![CDATA[B = {\mathopen {}\{\gamma  \in  \alpha {^{+}}\colon \gamma  \cong  \alpha \}\mathclose {}}]]></fr:tex>.
+display="inline"><![CDATA[B = {\mathopen {}\{\gamma  \in  \alpha {^{+}}\colon \gamma  \approx  \alpha \}\mathclose {}}]]></fr:tex>.
     Note that this is a non-empty subset, so it has a minimum <fr:tex
 display="inline"><![CDATA[\beta ]]></fr:tex>.</fr:p>
-  <fr:link
+  <fr:p>Let <fr:tex
+display="inline"><![CDATA[\gamma  \in  \beta ]]></fr:tex>, then the inclusion <fr:tex
+display="inline"><![CDATA[\gamma  \subseteq  \beta ]]></fr:tex> yields <fr:tex
+display="inline"><![CDATA[\gamma  \preceq  \beta ]]></fr:tex>.
+    It remains to rule out <fr:tex
+display="inline"><![CDATA[\gamma  \approx  \beta ]]></fr:tex>.
+    Suppose that <fr:tex
+display="inline"><![CDATA[\gamma  \approx  \beta ]]></fr:tex>, then we have <fr:tex
+display="inline"><![CDATA[\gamma  \approx  \beta  \approx  \alpha ]]></fr:tex>.
+    This means that <fr:tex
+display="inline"><![CDATA[\gamma  \in  B]]></fr:tex>, so <fr:tex
+display="inline"><![CDATA[\beta  \in  \gamma ]]></fr:tex>, but this contradicts <fr:link
 type="local"
-href="todo.xml"
-addr="todo"
-title="TODO">TODO</fr:link>
+href="set-0009.xml"
+addr="set-0009"
+title="Axiom of foundation">foundation</fr:link> since we would have <fr:tex
+display="inline"><![CDATA[\beta  \in  \gamma  \in  \beta ]]></fr:tex> in this case.</fr:p>
+  <fr:p>Suppose that <fr:tex
+display="inline"><![CDATA[\gamma ]]></fr:tex> is an initial ordinal such that <fr:tex
+display="inline"><![CDATA[\alpha  \approx  \gamma ]]></fr:tex>.
+    By <fr:ref
+addr="set-001Y"
+href="set-001Y.xml"
+taxon="Corollary" />, there are three cases <fr:tex
+display="inline"><![CDATA[\gamma  \in  \beta ]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[\alpha  = \beta ]]></fr:tex>, and <fr:tex
+display="inline"><![CDATA[\beta  \in  \gamma ]]></fr:tex>.
+    The first and the last cases can be ruled out since initiality implies <fr:tex
+display="inline"><![CDATA[\alpha  \approx  \gamma  \prec  \beta ]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[\alpha  \approx  \beta  \prec  \gamma ]]></fr:tex> these respective cases.</fr:p>
 </fr:mainmatter><fr:backmatter /></fr:tree>
     
   </fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
@@ -2804,7 +2829,7 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>880</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>881</fr:anchor><fr:addr
 type="user">set-000K</fr:addr><fr:route>set-000K.xml</fr:route><fr:title
 text="Ordered pair property"><fr:link
 type="local"
@@ -2910,7 +2935,7 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>881</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>882</fr:anchor><fr:addr
 type="user">set-000L</fr:addr><fr:route>set-000L.xml</fr:route><fr:title
 text="Cartesian product">Cartesian product</fr:title><fr:taxon>Proposition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>20</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Let <fr:tex
 display="inline"><![CDATA[A,B]]></fr:tex> be sets.
@@ -2958,7 +2983,7 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>882</fr:anchor><fr:addr
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>883</fr:anchor><fr:addr
 type="user">set-000J</fr:addr><fr:route>set-000J.xml</fr:route><fr:title
 text="Existence of ordered pairs">Existence of <fr:link
 type="local"

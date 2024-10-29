@@ -20,7 +20,7 @@ href="set-0024.xml"
 addr="set-0024"
 title="Initial ordinals">initial</fr:link> ordinal <fr:tex
 display="inline"><![CDATA[\beta ]]></fr:tex> such that <fr:tex
-display="inline"><![CDATA[\alpha  \cong  \beta ]]></fr:tex>.</fr:p>
+display="inline"><![CDATA[\alpha  \approx  \beta ]]></fr:tex>.</fr:p>
     
       
       <fr:tree
@@ -33,14 +33,39 @@ root="false"
 xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>467</fr:anchor><fr:addr
 type="machine">#246</fr:addr><fr:route>unstable-246.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>27</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
   <fr:p>Consider the subset <fr:tex
-display="inline"><![CDATA[B = {\mathopen {}\{\gamma  \in  \alpha {^{+}}\colon \gamma  \cong  \alpha \}\mathclose {}}]]></fr:tex>.
+display="inline"><![CDATA[B = {\mathopen {}\{\gamma  \in  \alpha {^{+}}\colon \gamma  \approx  \alpha \}\mathclose {}}]]></fr:tex>.
     Note that this is a non-empty subset, so it has a minimum <fr:tex
 display="inline"><![CDATA[\beta ]]></fr:tex>.</fr:p>
-  <fr:link
+  <fr:p>Let <fr:tex
+display="inline"><![CDATA[\gamma  \in  \beta ]]></fr:tex>, then the inclusion <fr:tex
+display="inline"><![CDATA[\gamma  \subseteq  \beta ]]></fr:tex> yields <fr:tex
+display="inline"><![CDATA[\gamma  \preceq  \beta ]]></fr:tex>.
+    It remains to rule out <fr:tex
+display="inline"><![CDATA[\gamma  \approx  \beta ]]></fr:tex>.
+    Suppose that <fr:tex
+display="inline"><![CDATA[\gamma  \approx  \beta ]]></fr:tex>, then we have <fr:tex
+display="inline"><![CDATA[\gamma  \approx  \beta  \approx  \alpha ]]></fr:tex>.
+    This means that <fr:tex
+display="inline"><![CDATA[\gamma  \in  B]]></fr:tex>, so <fr:tex
+display="inline"><![CDATA[\beta  \in  \gamma ]]></fr:tex>, but this contradicts <fr:link
 type="local"
-href="todo.xml"
-addr="todo"
-title="TODO">TODO</fr:link>
+href="set-0009.xml"
+addr="set-0009"
+title="Axiom of foundation">foundation</fr:link> since we would have <fr:tex
+display="inline"><![CDATA[\beta  \in  \gamma  \in  \beta ]]></fr:tex> in this case.</fr:p>
+  <fr:p>Suppose that <fr:tex
+display="inline"><![CDATA[\gamma ]]></fr:tex> is an initial ordinal such that <fr:tex
+display="inline"><![CDATA[\alpha  \approx  \gamma ]]></fr:tex>.
+    By <fr:ref
+addr="set-001Y"
+href="set-001Y.xml"
+taxon="Corollary" />, there are three cases <fr:tex
+display="inline"><![CDATA[\gamma  \in  \beta ]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[\alpha  = \beta ]]></fr:tex>, and <fr:tex
+display="inline"><![CDATA[\beta  \in  \gamma ]]></fr:tex>.
+    The first and the last cases can be ruled out since initiality implies <fr:tex
+display="inline"><![CDATA[\alpha  \approx  \gamma  \prec  \beta ]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[\alpha  \approx  \beta  \prec  \gamma ]]></fr:tex> these respective cases.</fr:p>
 </fr:mainmatter><fr:backmatter /></fr:tree>
     
   </fr:mainmatter><fr:backmatter><fr:tree
@@ -2712,7 +2737,7 @@ href="set-0024.xml"
 addr="set-0024"
 title="Initial ordinals">initial</fr:link> ordinal <fr:tex
 display="inline"><![CDATA[\beta ]]></fr:tex> such that <fr:tex
-display="inline"><![CDATA[\alpha  \cong  \beta ]]></fr:tex>.</fr:p>
+display="inline"><![CDATA[\alpha  \approx  \beta ]]></fr:tex>.</fr:p>
     
       
       <fr:tree
@@ -2725,14 +2750,39 @@ root="false"
 xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>467</fr:anchor><fr:addr
 type="machine">#246</fr:addr><fr:route>unstable-246.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>27</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
   <fr:p>Consider the subset <fr:tex
-display="inline"><![CDATA[B = {\mathopen {}\{\gamma  \in  \alpha {^{+}}\colon \gamma  \cong  \alpha \}\mathclose {}}]]></fr:tex>.
+display="inline"><![CDATA[B = {\mathopen {}\{\gamma  \in  \alpha {^{+}}\colon \gamma  \approx  \alpha \}\mathclose {}}]]></fr:tex>.
     Note that this is a non-empty subset, so it has a minimum <fr:tex
 display="inline"><![CDATA[\beta ]]></fr:tex>.</fr:p>
-  <fr:link
+  <fr:p>Let <fr:tex
+display="inline"><![CDATA[\gamma  \in  \beta ]]></fr:tex>, then the inclusion <fr:tex
+display="inline"><![CDATA[\gamma  \subseteq  \beta ]]></fr:tex> yields <fr:tex
+display="inline"><![CDATA[\gamma  \preceq  \beta ]]></fr:tex>.
+    It remains to rule out <fr:tex
+display="inline"><![CDATA[\gamma  \approx  \beta ]]></fr:tex>.
+    Suppose that <fr:tex
+display="inline"><![CDATA[\gamma  \approx  \beta ]]></fr:tex>, then we have <fr:tex
+display="inline"><![CDATA[\gamma  \approx  \beta  \approx  \alpha ]]></fr:tex>.
+    This means that <fr:tex
+display="inline"><![CDATA[\gamma  \in  B]]></fr:tex>, so <fr:tex
+display="inline"><![CDATA[\beta  \in  \gamma ]]></fr:tex>, but this contradicts <fr:link
 type="local"
-href="todo.xml"
-addr="todo"
-title="TODO">TODO</fr:link>
+href="set-0009.xml"
+addr="set-0009"
+title="Axiom of foundation">foundation</fr:link> since we would have <fr:tex
+display="inline"><![CDATA[\beta  \in  \gamma  \in  \beta ]]></fr:tex> in this case.</fr:p>
+  <fr:p>Suppose that <fr:tex
+display="inline"><![CDATA[\gamma ]]></fr:tex> is an initial ordinal such that <fr:tex
+display="inline"><![CDATA[\alpha  \approx  \gamma ]]></fr:tex>.
+    By <fr:ref
+addr="set-001Y"
+href="set-001Y.xml"
+taxon="Corollary" />, there are three cases <fr:tex
+display="inline"><![CDATA[\gamma  \in  \beta ]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[\alpha  = \beta ]]></fr:tex>, and <fr:tex
+display="inline"><![CDATA[\beta  \in  \gamma ]]></fr:tex>.
+    The first and the last cases can be ruled out since initiality implies <fr:tex
+display="inline"><![CDATA[\alpha  \approx  \gamma  \prec  \beta ]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[\alpha  \approx  \beta  \prec  \gamma ]]></fr:tex> these respective cases.</fr:p>
 </fr:mainmatter><fr:backmatter /></fr:tree>
     
   </fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
@@ -2967,6 +3017,46 @@ show-metadata="true"
 expanded="false"
 root="false"
 xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>479</fr:anchor><fr:addr
+type="user">set-001Y</fr:addr><fr:route>set-001Y.xml</fr:route><fr:title
+text="" /><fr:taxon>Corollary</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>25</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>For any two <fr:link
+type="local"
+href="set-0011.xml"
+addr="set-0011"
+title="Ordinal">ordinals</fr:link> <fr:tex
+display="inline"><![CDATA[\alpha ,\beta ]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[\alpha  \in  \beta ]]></fr:tex>, <fr:tex
+display="inline"><![CDATA[\alpha  = \beta ]]></fr:tex>, or <fr:tex
+display="inline"><![CDATA[\beta  \in  \alpha ]]></fr:tex>.</fr:p>
+    
+      
+      <fr:tree
+toc="false"
+numbered="true"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>454</fr:anchor><fr:addr
+type="machine">#251</fr:addr><fr:route>unstable-251.xml</fr:route><fr:taxon>Proof</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>25</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter>
+  Note that <fr:tex
+display="inline"><![CDATA[\alpha ,\beta  \in  \alpha {^{+}} \cup  \beta {^{+}}]]></fr:tex>.
+  The latter is an ordinal by <fr:ref
+addr="set-0016"
+href="set-0016.xml"
+taxon="Lemma" /> and <fr:ref
+addr="set-001W"
+href="set-001W.xml"
+taxon="Lemma" />, so linearity yields the thesis.
+</fr:mainmatter><fr:backmatter /></fr:tree>
+    
+  </fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>480</fr:anchor><fr:addr
 type="user">set-0011</fr:addr><fr:route>set-0011.xml</fr:route><fr:title
 text="Ordinal">Ordinal</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>10</fr:month><fr:day>21</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>An <fr:em><fr:strong>ordinal</fr:strong></fr:em> is a set <fr:tex
 display="inline"><![CDATA[\alpha ]]></fr:tex> such that
@@ -2984,10 +3074,7 @@ show-heading="true"
 show-metadata="true"
 expanded="false"
 root="false"
-xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>480</fr:anchor><fr:addr
-type="user">todo</fr:addr><fr:route>todo.xml</fr:route><fr:title
-text="TODO">TODO</fr:title><fr:authors><fr:author><fr:link
-type="local"
-href="frankndrssn.xml"
-addr="frankndrssn"
-title="Frank Tsai">Frank Tsai</fr:link></fr:author></fr:authors></fr:frontmatter><fr:mainmatter /><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>481</fr:anchor><fr:addr
+type="user">set-0009</fr:addr><fr:route>set-0009.xml</fr:route><fr:title
+text="Axiom of foundation">Axiom of foundation</fr:title><fr:taxon>Axiom</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>9</fr:month><fr:day>18</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p><fr:tex
+display="inline"><![CDATA[\forall x.\mkern 5mu(\exists y.\mkern 5muy \in  x) \Rightarrow  \exists z.\mkern 5muz \in  x \wedge  (\lnot \exists a.\mkern 5mua \in  x \wedge  a \in  z)]]></fr:tex></fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>
