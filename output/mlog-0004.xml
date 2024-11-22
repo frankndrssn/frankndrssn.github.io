@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="true"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>350</fr:anchor><fr:addr
+type="user">mlog-0004</fr:addr><fr:route>mlog-0004.xml</fr:route><fr:title
+text="P-morphic images"><fr:tex
+display="inline"><![CDATA[p]]></fr:tex>-morphic images</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>11</fr:month><fr:day>22</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>By dropping the condition on valuations in <fr:ref
+addr="mlog-0001"
+href="mlog-0001.xml"
+taxon="Definition" />, one obtains a notion of <fr:link
+type="local"
+href="mlog-0003.xml"
+addr="mlog-0003"
+title="P-morphism"><fr:em><fr:strong><fr:tex
+display="inline"><![CDATA[p]]></fr:tex>-morphisms</fr:strong></fr:em></fr:link> between frames.
+  If there is a surjective <fr:tex
+display="inline"><![CDATA[p]]></fr:tex>-morphism <fr:tex
+display="inline"><![CDATA[F_1 \to  F_2]]></fr:tex>, we say that <fr:tex
+display="inline"><![CDATA[F_2]]></fr:tex> is a <fr:em><fr:strong><fr:tex
+display="inline"><![CDATA[p]]></fr:tex>-morphic image</fr:strong></fr:em> of <fr:tex
+display="inline"><![CDATA[F_1]]></fr:tex>.</fr:p></fr:mainmatter><fr:backmatter><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
+text="Backlinks">Backlinks</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>351</fr:anchor><fr:addr
+type="user">mlog-0005</fr:addr><fr:route>mlog-0005.xml</fr:route><fr:title
+text="" /><fr:taxon>Theorem</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>11</fr:month><fr:day>22</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>Taking <fr:link
+type="local"
+href="mlog-0004.xml"
+addr="mlog-0004"
+title="P-morphic images"><fr:tex
+display="inline"><![CDATA[p]]></fr:tex>-morphic images</fr:link> preserves frame validity.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
+text="Related">Related</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>352</fr:anchor><fr:addr
+type="user">mlog-0003</fr:addr><fr:route>mlog-0003.xml</fr:route><fr:title
+text="P-morphism"><fr:tex
+display="inline"><![CDATA[p]]></fr:tex>-morphism</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>11</fr:month><fr:day>22</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>A <fr:em><fr:strong><fr:tex
+display="inline"><![CDATA[p]]></fr:tex>-morphism</fr:strong></fr:em> from <fr:tex
+display="inline"><![CDATA[M = (W_1,R_1,V_1)]]></fr:tex> to <fr:tex
+display="inline"><![CDATA[N = (W_2,R_2,V_2)]]></fr:tex> is a function <fr:tex
+display="inline"><![CDATA[f\colon W_1\to W_2]]></fr:tex> that is also a <fr:link
+type="local"
+href="mlog-0001.xml"
+addr="mlog-0001"
+title="Bisimulation">bisimulation</fr:link>.</fr:p></fr:mainmatter><fr:backmatter /></fr:tree><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>353</fr:anchor><fr:addr
+type="user">mlog-0001</fr:addr><fr:route>mlog-0001.xml</fr:route><fr:title
+text="Bisimulation">Bisimulation</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>11</fr:month><fr:day>22</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>A <fr:em><fr:strong>bisimulation</fr:strong></fr:em> is a binary relation <fr:tex
+display="inline"><![CDATA[E]]></fr:tex> between the worlds of two pointed models <fr:tex
+display="inline"><![CDATA[M,s]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[N,t]]></fr:tex> such that <fr:tex
+display="inline"><![CDATA[sEt]]></fr:tex> and, for any worlds <fr:tex
+display="inline"><![CDATA[x,y]]></fr:tex>, if <fr:tex
+display="inline"><![CDATA[xEy]]></fr:tex>, then</fr:p><fr:ul><fr:li><fr:tex
+display="inline"><![CDATA[V_M(p)(x) = V_N(p)(y)]]></fr:tex> for all propositional variable <fr:tex
+display="inline"><![CDATA[p]]></fr:tex>;</fr:li>
+  <fr:li>if <fr:tex
+display="inline"><![CDATA[xR_Mz]]></fr:tex> in <fr:tex
+display="inline"><![CDATA[M]]></fr:tex>, then there is a world <fr:tex
+display="inline"><![CDATA[u]]></fr:tex> in <fr:tex
+display="inline"><![CDATA[N]]></fr:tex> such that <fr:tex
+display="inline"><![CDATA[yR_Nu]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[zEu]]></fr:tex>;</fr:li>
+  <fr:li>if <fr:tex
+display="inline"><![CDATA[yR_Nu]]></fr:tex> in <fr:tex
+display="inline"><![CDATA[N]]></fr:tex>, then there is a world <fr:tex
+display="inline"><![CDATA[z]]></fr:tex> in <fr:tex
+display="inline"><![CDATA[M]]></fr:tex> such that <fr:tex
+display="inline"><![CDATA[xR_Mz]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[zEu]]></fr:tex>.</fr:li></fr:ul></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>

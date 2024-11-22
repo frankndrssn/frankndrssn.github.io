@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="default.xsl"?>
+<fr:tree
+toc="true"
+numbered="true"
+show-heading="true"
+show-metadata="true"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>360</fr:anchor><fr:addr
+type="user">mlog-0002</fr:addr><fr:route>mlog-0002.xml</fr:route><fr:title
+text="Invariance lemma">Invariance lemma</fr:title><fr:taxon>Lemma</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>11</fr:month><fr:day>22</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>For any <fr:link
+type="local"
+href="mlog-0001.xml"
+addr="mlog-0001"
+title="Bisimulation">bisimulation</fr:link> <fr:tex
+display="inline"><![CDATA[E]]></fr:tex> between models <fr:tex
+display="inline"><![CDATA[M]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[N]]></fr:tex> and any two worlds <fr:tex
+display="inline"><![CDATA[x,y]]></fr:tex> with <fr:tex
+display="inline"><![CDATA[xEy]]></fr:tex>,
+  <fr:tex
+display="block"><![CDATA[     M,x \Vdash  \varphi ~\text {iff}~N,y \Vdash  \varphi ~\text {for all modal formulas $\varphi $.}   ]]></fr:tex></fr:p></fr:mainmatter><fr:backmatter><fr:tree
+toc="false"
+numbered="false"
+show-heading="true"
+show-metadata="false"
+expanded="true"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:title
+text="Related">Related</fr:title><fr:authors /></fr:frontmatter><fr:mainmatter><fr:tree
+toc="true"
+numbered="false"
+show-heading="true"
+show-metadata="true"
+expanded="false"
+root="false"
+xmlns:fr="http://www.jonmsterling.com/jms-005P.xml"><fr:frontmatter><fr:anchor>361</fr:anchor><fr:addr
+type="user">mlog-0001</fr:addr><fr:route>mlog-0001.xml</fr:route><fr:title
+text="Bisimulation">Bisimulation</fr:title><fr:taxon>Definition</fr:taxon><fr:date><fr:year>2024</fr:year><fr:month>11</fr:month><fr:day>22</fr:day></fr:date><fr:authors /></fr:frontmatter><fr:mainmatter><fr:p>A <fr:em><fr:strong>bisimulation</fr:strong></fr:em> is a binary relation <fr:tex
+display="inline"><![CDATA[E]]></fr:tex> between the worlds of two pointed models <fr:tex
+display="inline"><![CDATA[M,s]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[N,t]]></fr:tex> such that <fr:tex
+display="inline"><![CDATA[sEt]]></fr:tex> and, for any worlds <fr:tex
+display="inline"><![CDATA[x,y]]></fr:tex>, if <fr:tex
+display="inline"><![CDATA[xEy]]></fr:tex>, then</fr:p><fr:ul><fr:li><fr:tex
+display="inline"><![CDATA[V_M(p)(x) = V_N(p)(y)]]></fr:tex> for all propositional variable <fr:tex
+display="inline"><![CDATA[p]]></fr:tex>;</fr:li>
+  <fr:li>if <fr:tex
+display="inline"><![CDATA[xR_Mz]]></fr:tex> in <fr:tex
+display="inline"><![CDATA[M]]></fr:tex>, then there is a world <fr:tex
+display="inline"><![CDATA[u]]></fr:tex> in <fr:tex
+display="inline"><![CDATA[N]]></fr:tex> such that <fr:tex
+display="inline"><![CDATA[yR_Nu]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[zEu]]></fr:tex>;</fr:li>
+  <fr:li>if <fr:tex
+display="inline"><![CDATA[yR_Nu]]></fr:tex> in <fr:tex
+display="inline"><![CDATA[N]]></fr:tex>, then there is a world <fr:tex
+display="inline"><![CDATA[z]]></fr:tex> in <fr:tex
+display="inline"><![CDATA[M]]></fr:tex> such that <fr:tex
+display="inline"><![CDATA[xR_Mz]]></fr:tex> and <fr:tex
+display="inline"><![CDATA[zEu]]></fr:tex>.</fr:li></fr:ul></fr:mainmatter><fr:backmatter /></fr:tree></fr:mainmatter><fr:backmatter /></fr:tree></fr:backmatter></fr:tree>
